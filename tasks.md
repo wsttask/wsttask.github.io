@@ -46,7 +46,7 @@ taskkill /f /im erwin.exe
 
 如何快速比较两个文件内容之间的差异，有专门门的软件
 
-[HopWeb • 概述 | HopWeb Offical Webpage (venter.top)](https://venter.top/hopweb/index.html)
+[HopWeb • 概述](https://venter.top/hopweb/index.html)
 
 [把网站放在手机桌面，像APP那样使用 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/54907494)
 
@@ -58,7 +58,7 @@ python自动化
 
 autohotkey
 
-[5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1T34y1o73U/?spm_id_from=333.788.recommend_more_video.1&vd_source=ec2d561dc8bd6d2bdcc13e464af382d0)
+[5分钟，教你做个自动化软件拿来办公、刷副本、回微信](https://www.bilibili.com/video/BV1T34y1o73U/?spm_id_from=333.788.recommend_more_video.1&vd_source=ec2d561dc8bd6d2bdcc13e464af382d0)
 
 [计算机算法分析与设计（10）---租用游艇问题(含C++代码)_租用游艇问题 复杂度分析-CSDN博客](https://blog.csdn.net/m0_62881487/article/details/133833781?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&utm_relevant_index=2)
 
@@ -133,7 +133,7 @@ idea使用git
 
 idea配置javaweb 项目，
 
-[oj | Home](http://10.216.217.131:9999/)
+[oj ](http://10.216.217.131:9999/)
 
 mysql中sql语句
 
