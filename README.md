@@ -19,7 +19,7 @@ title: README
 
 # [CHARACTER](./summary/character)
 
-# [PORTAL](https://tunanab.github.io)
+# PORTAL
 
 - [希腊字符](./accumulation/knowledge/computer/希腊字符的书写方式.md)
 - [微积分](./courses/math/calculus)

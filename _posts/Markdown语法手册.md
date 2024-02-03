@@ -1,11 +1,4 @@
----
-layout: post
-title: markdown语法守则
-categories: [markdown]
----
-
 ### 1. 斜体和粗体
-
 代码：
 
 
