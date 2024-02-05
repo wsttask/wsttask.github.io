@@ -11,9 +11,11 @@
         <link rel="stylesheet" href="{{site.url}}/styles/font.css">
     </head>
     <body>
-        <div class="content">
-            {% include navigatebar.html %}
-            {{ content }}
+        {% include navigatebar.html %}
+        <div class="content content-global">
+            <div>
+                {{ content }}
+            </div>
         </div>
     </body>
 </html>
