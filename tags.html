@@ -1,25 +1,53 @@
----
-layout: tags
-title: Categories
----
+<!DOCTYPE html>
 
-<div class="content-box">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Categories</title>
+
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/tags.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/tags_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Categories</title>
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">index</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/README.html">README</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tasks.html">Tasks</a>
+    </div>
+</div>
+
+        <div class="tag-box">
+            <div class="content-box">
     <div id="archives">
-        {% for category in site.categories %}
+        
         <div class="archive-group">
-            {% capture category_name %}{{ category | first }}{% endcapture %}
-            <div id="#{{ category_name | slugize }}"></div>
+            
+            <div id="#markdown"></div>
             <p></p>
 
-            <a name="{{ category_name }}"><div class="category-head">「{{ category_name }}」</div></a>
-            <a name="{{ category_name | slugize }}"></a>
-            {% for post in site.categories[category_name] %}
+            <a name="markdown"><div class="category-head">「markdown」</div></a>
+            <a name="markdown"></a>
+            
             <article class="archive-item">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+                <a href="/markdown/2024/02/05/Markdown.html">markdown语法手册</a>
             </article>
-            {% endfor %}
+            
         </div>
-        {% endfor %}
+        
     </div>
 
     <div class="categories-area">
@@ -27,18 +55,22 @@ title: Categories
             [Tags]
         </div>
 
-        {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
+        
+        
         <a
             class="category-item"
-            href="{{ site.url }}/tags.html#{{ category_name }}">
+            href="http://localhost:4000/tags.html#markdown">
             <div class="category-name">
-                {{ category_name }}
+                markdown
             </div>
             <div class="category-number">
-                [{{ site.categories[category_name].size }}]
+                [1]
             </div>
         </a>
-        {% endfor %}
+        
     </div>
 </div>
+
+        </div>
+    </body>
+</html>

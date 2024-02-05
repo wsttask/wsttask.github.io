@@ -1,60 +1,563 @@
----
-layout: home
-title: wsttask
----
+<!DOCTYPE html>
 
-<div class="slogan">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>wsttask</title>
+
+
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="http://localhost:4000/styles/home.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="http://localhost:4000/styles/home_mobile.css">
+        <link rel="stylesheet" href="http://localhost:4000/styles/font.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/index.html">index</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tags.html">Tags</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/README.html">README</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="http://localhost:4000/tasks.html">Tasks</a>
+    </div>
+</div>
+
+        <div class="content content-global">
+            <div>
+                <div class="slogan">
   「纵有疾风起 人生不言弃」
 </div>
 
 <ul>
   <div class="char-total-counter">
-    {% assign count = 0 %}
-    {% for post in site.posts %}
-    {% assign single_count = post.content | strip_html | strip_newlines | remove: " " | size %}
-    {% assign count = count | plus: single_count %}
-    {% endfor %}
+    
+    
 
-    {{ site.posts.size }}篇文章
-    {{ count }}字
+    14篇文章
+    16582字
   </div>
 
-  {% for post in site.posts %}
+  
 
   <li class="post-line">
     <a
       class="post-title"
-      href="{{ site.baseurl }}{{ post.url }}">
-      {{ post.title }}
+      href="/2024/02/05/html%E6%B3%A8%E9%87%8A%E6%A0%BC%E5%BC%8F.html">
+      html注释格式
     </a>
 
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="/2024/02/05/html%E6%B3%A8%E9%87%8A%E6%A0%BC%E5%BC%8F.html">
       <div class="post-summary">
-        {{ post.content | strip_html | truncate: 80, " ..." }}
+        注释
+
+&lt;!-- --&gt;
+
+
+
       </div>
     </a>
     <div class="post-info">
       <div class="category-area">
-        {% for category in post.categories %}
-        <a href="{{ site.url }}/tags.html#{{ category }}">
-          <div class="category">
-            {{ category }}
-          </div>
-        </a>
-        {% endfor %}
+        
       </div>
       <div class="right-info-area">
         <div class="char-counter">
-          {{ post.content | strip_html | strip_newlines | remove: " " | size }}字
+          15字
         </div>
         
         <div class="post-date">
-          {{ post.date | date: "%Y-%m-%d" }}
+          2024-02-05
         </div>
       </div>
     </div>
   </li>
 
-  {% endfor %}
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2024/02/05/dispaly.html">
+      Dispaly
+    </a>
+
+    <a href="/2024/02/05/dispaly.html">
+      <div class="post-summary">
+        行内元素
+
+div {
+    display: inline;
+}
+
+
+一行共存多个，宽高属性不生效，宽高由内容撑开
+
+块级元素
+
+div {
+    ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          189字
+        </div>
+        
+        <div class="post-date">
+          2024-02-05
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/markdown/2024/02/05/Markdown.html">
+      markdown语法手册
+    </a>
+
+    <a href="/markdown/2024/02/05/Markdown.html">
+      <div class="post-summary">
+        1. 斜体和粗体
+
+代码：
+
+*斜体*或_斜体_
+**粗体**
+***加粗斜体***
+~~删除线~~
+
+
+显示效果：
+
+
+  这是一段斜体
+  这是一段 ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+        <a href="http://localhost:4000/tags.html#markdown">
+          <div class="category">
+            markdown
+          </div>
+        </a>
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          2370字
+        </div>
+        
+        <div class="post-date">
+          2024-02-05
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2024/02/05/position.html">
+      Position
+    </a>
+
+    <a href="/2024/02/05/position.html">
+      <div class="post-summary">
+        position
+
+
+
+
+
+  static，默认值，元素无设置的时候就是static
+  relative，相对定位，对于当前位置进行调整
+  abs ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          214字
+        </div>
+        
+        <div class="post-date">
+          2024-02-05
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2024/02/04/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B.html">
+      盒子模型
+    </a>
+
+    <a href="/2024/02/04/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B.html">
+      <div class="post-summary">
+        盒子模型
+
+
+  padding
+    
+      内边距
+    
+  
+  border
+    
+      边框线
+    
+  
+  ma ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          56字
+        </div>
+        
+        <div class="post-date">
+          2024-02-04
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2024/02/04/html.html">
+      Html
+    </a>
+
+    <a href="/2024/02/04/html.html">
+      <div class="post-summary">
+        HTML是什么
+
+1.超文本标记语言（Hyper Text Mark-up Language）
+
+2.用来设计网页的标记语言
+
+3.用该语言编写的文件， ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          3662字
+        </div>
+        
+        <div class="post-date">
+          2024-02-04
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2024/02/02/css.html">
+      Css
+    </a>
+
+    <a href="/2024/02/02/css.html">
+      <div class="post-summary">
+        层叠样式表（Caacading Style Sheets)css，是一种样式表语言，用来描述html文档的呈现（美化内容）
+
+书写位置：title标签下 ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          404字
+        </div>
+        
+        <div class="post-date">
+          2024-02-02
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/28/WebDav.html">
+      Webdav
+    </a>
+
+    <a href="/2023/12/28/WebDav.html">
+      <div class="post-summary">
+        (62 封私信 / 81 条消息) 2022年还有哪些支持WebDAV的网盘？ - 知乎 (zhihu.com)
+
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          48字
+        </div>
+        
+        <div class="post-date">
+          2023-12-28
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/27/vscode.html">
+      Vscode
+    </a>
+
+    <a href="/2023/12/27/vscode.html">
+      <div class="post-summary">
+        快速生成骨架
+
+!+enter/tab
+
+
+VSCode以其轻量且强大的代码编辑功能和丰富的插件生态系统，独受前端工师的青睐。网上有很多vscode的配 ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          93字
+        </div>
+        
+        <div class="post-date">
+          2023-12-27
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/27/README.html">
+      Readme
+    </a>
+
+    <a href="/2023/12/27/README.html">
+      <div class="post-summary">
+        html一般是使用vscode编写
+
+
+  
+    
+      [HTML 头部
+      菜鸟教程 (runoob.com)](https:// ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          85字
+        </div>
+        
+        <div class="post-date">
+          2023-12-27
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/27/html5%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83.html">
+      Html5文件规范
+    </a>
+
+    <a href="/2023/12/27/html5%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83.html">
+      <div class="post-summary">
+        HTML 5 &lt;!DOCTYPE&gt; 标签
+
+定义和用法
+
+&lt;!DOCTYPE&gt; 声明必须位于 HTML5 文档中的第一行，也就是 ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          8891字
+        </div>
+        
+        <div class="post-date">
+          2023-12-27
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/23/yddict_readme.html">
+      Yddict_readme
+    </a>
+
+    <a href="/2023/12/23/yddict_readme.html">
+      <div class="post-summary">
+        yddict/test at master · tunanAB/yddict (github.com)
+
+先安装node.js
+
+node.js中就有n ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          89字
+        </div>
+        
+        <div class="post-date">
+          2023-12-23
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/23/npm.html">
+      Npm
+    </a>
+
+    <a href="/2023/12/23/npm.html">
+      <div class="post-summary">
+        npm 与 package.json 快速入门教程-CSDN博客
+
+yydict是一个命令行查询单词的工具
+
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          48字
+        </div>
+        
+        <div class="post-date">
+          2023-12-23
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
+
+  <li class="post-line">
+    <a
+      class="post-title"
+      href="/2023/12/01/asdfaasdf.html">
+      Asdfaasdf
+    </a>
+
+    <a href="/2023/12/01/asdfaasdf.html">
+      <div class="post-summary">
+        RequestDispatcher 的 forward 方法是在服务器端进行请求转发，这意味着整个请求都在服务器内部进行，不涉及客户端（浏览器）的直接参 ...
+      </div>
+    </a>
+    <div class="post-info">
+      <div class="category-area">
+        
+      </div>
+      <div class="right-info-area">
+        <div class="char-counter">
+          418字
+        </div>
+        
+        <div class="post-date">
+          2023-12-01
+        </div>
+      </div>
+    </div>
+  </li>
+
+  
 
 </ul>
+
+            </div>
+        </div>
+    </body>
+</html>
