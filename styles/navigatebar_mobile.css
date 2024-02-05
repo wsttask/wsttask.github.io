@@ -1,18 +1,25 @@
 .navigatebar {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 60%;
+
+    margin: 0 auto;
 
     padding-top: 20px;
     padding-bottom: 20px;
+
+    position: relative;
 }
 
 .navigatebar-button {
+    margin-left: 10px;
     margin-right: 10px;
     color: #888;
-    font-size: 20px;
-    font-family: jinkaiFont;
+    font-size: 28px;
+    /* font-family: angelinaFont; */
+    z-index: 100;
 }
 
 .navigatebar-button a {
@@ -24,13 +31,10 @@
     color: #73BC83;
 }
 
-.navigatebar-slogan {
-    display: none;
-}
-
 .navigatebar-mine {
     margin-left: 20px;
 }
 
 .navigatebar-about {
+    margin-right: 20px;
 }
