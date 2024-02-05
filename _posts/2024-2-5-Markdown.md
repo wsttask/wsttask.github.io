@@ -1,4 +1,12 @@
+---
+layout: post
+title: markdown语法手册
+categories: [markdown]
+---
+
+
 ### 1. 斜体和粗体
+
 代码：
 
 
