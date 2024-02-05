@@ -11,18 +11,12 @@
     position: relative;
 }
 
-@media screen and (max-width: 600px) {
-    .navigatebar {
-        width: 80%;
-    }
-}
-
 .navigatebar-button {
     margin-left: 10px;
     margin-right: 10px;
     color: #888;
     font-size: 28px;
-    font-family: angelinaFont;
+    /* font-family: angelinaFont; */
     z-index: 100;
 }
 
@@ -33,19 +27,6 @@
 
 .navigatebar-button a:hover {
     color: #73BC83;
-}
-
-.navigatebar-slogan {
-    flex: 1;
-    text-align: center;
-    color: #888;
-    font-size: 18px;
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 70px;
 }
 
 .navigatebar-mine {
