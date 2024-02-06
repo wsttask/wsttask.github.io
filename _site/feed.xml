@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-06T21:04:18+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Git_command</title><link href="https://wsttask.github.io/2024/02/06/git_command.html" rel="alternate" type="text/html" title="Git_command" /><published>2024-02-06T12:11:26+08:00</published><updated>2024-02-06T12:11:26+08:00</updated><id>https://wsttask.github.io/2024/02/06/git_command</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/git_command.html"><![CDATA[<h3 id="初始化仓库并与远程仓库建立连接">初始化仓库，并与远程仓库建立连接</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-06T22:11:35+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Jekyll</title><link href="https://wsttask.github.io/2024/02/06/jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2024-02-06T20:39:47+08:00</published><updated>2024-02-06T20:39:47+08:00</updated><id>https://wsttask.github.io/2024/02/06/jekyll</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/jekyll.html"><![CDATA[<pre><code class="language-cmd">//实时渲染网页
+//在自动构建过程中对 _config.yml 的修改将不会被包含其中
+jekyll server --watch
+
+$ jekyll build
+# =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中。
+
+$ jekyll build --destination &lt;destination&gt;
+# =&gt; 当前文件夹中的内容将会生成到目标文件夹&lt;destination&gt;中。
+
+$ jekyll build --source &lt;source&gt; --destination &lt;destination&gt;
+# =&gt; 指定源文件夹&lt;source&gt;中的内容将会生成到目标文件夹&lt;destination&gt;中。
+
+$ jekyll build --watch
+# =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中，
+#    查看改变，并且自动再生成。
+</code></pre>]]></content><author><name></name></author><summary type="html"><![CDATA[```cmd //实时渲染网页 //在自动构建过程中对 _config.yml 的修改将不会被包含其中 jekyll server –watch]]></summary></entry><entry><title type="html">Git_command</title><link href="https://wsttask.github.io/2024/02/06/git_command.html" rel="alternate" type="text/html" title="Git_command" /><published>2024-02-06T12:11:26+08:00</published><updated>2024-02-06T12:11:26+08:00</updated><id>https://wsttask.github.io/2024/02/06/git_command</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/git_command.html"><![CDATA[<h3 id="初始化仓库并与远程仓库建立连接">初始化仓库，并与远程仓库建立连接</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 初始化仓库，无参数代表初始化本目录为仓库
 git init &lt;filename&gt;
@@ -218,7 +234,9 @@ git remote add origin https://github.com/<span class="k">***</span>.git //重新
 
 <p>​	解决冲突：如果合并过程中存在冲突，Git会暂停合并操作，并让用户手动解决冲突。解决冲突后，用户需要使用git add命令将修改内容标记为已解决，然后使用git commit命令提交代码。</p>
 
-<p>​	更新分支指针：合并完成后，Git会更新当前分支的指针，指向合并后的最新提交记录。同时，如果存在其他分支指针指向合并前的某个提交记录，也会被更新到指向合并后的最新提交记录。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[git 常用命令]]></summary></entry><entry><title type="html">Vpn</title><link href="https://wsttask.github.io/2024/02/05/vpn.html" rel="alternate" type="text/html" title="Vpn" /><published>2024-02-05T20:22:09+08:00</published><updated>2024-02-05T20:22:09+08:00</updated><id>https://wsttask.github.io/2024/02/05/vpn</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login</p>
+<p>​	更新分支指针：合并完成后，Git会更新当前分支的指针，指向合并后的最新提交记录。同时，如果存在其他分支指针指向合并前的某个提交记录，也会被更新到指向合并后的最新提交记录。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[git 常用命令]]></summary></entry><entry><title type="html">copy命令</title><link href="https://wsttask.github.io/bat/2024/02/06/copy.html" rel="alternate" type="text/html" title="copy命令" /><published>2024-02-06T00:00:00+08:00</published><updated>2024-02-06T00:00:00+08:00</updated><id>https://wsttask.github.io/bat/2024/02/06/copy</id><content type="html" xml:base="https://wsttask.github.io/bat/2024/02/06/copy.html"><![CDATA[<pre><code class="language-cmd">copy &lt;源文件&gt; &lt;目标文件夹/没有默认是当前目录&gt;
+/? 查看帮助
+</code></pre>]]></content><author><name></name></author><category term="bat" /><summary type="html"><![CDATA[copy &lt;源文件&gt; &lt;目标文件夹/没有默认是当前目录&gt; /? 查看帮助]]></summary></entry><entry><title type="html">Vpn</title><link href="https://wsttask.github.io/2024/02/05/vpn.html" rel="alternate" type="text/html" title="Vpn" /><published>2024-02-05T20:22:09+08:00</published><updated>2024-02-05T20:22:09+08:00</updated><id>https://wsttask.github.io/2024/02/05/vpn</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login</p>
 
 <p><a href="https://sockboom.link/user/">sockboom.link</a></p>
 
@@ -228,9 +246,7 @@ git remote add origin https://github.com/<span class="k">***</span>.git //重新
 
 <p>ilink	这个是edge的扩展</p>]]></content><author><name></name></author><summary type="html"><![CDATA[https://ikuuu.org/auth/login]]></summary></entry><entry><title type="html">Websites</title><link href="https://wsttask.github.io/2024/02/05/websites.html" rel="alternate" type="text/html" title="Websites" /><published>2024-02-05T20:21:54+08:00</published><updated>2024-02-05T20:21:54+08:00</updated><id>https://wsttask.github.io/2024/02/05/websites</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/websites.html"><![CDATA[<p><a href="https://www.axutongxue.top/">万事屋的阿虚 (axutongxue.top)</a></p>
 
-<p><a href="https://www.toolhelper.cn/EncodeDecode/UnicodeChineseEncodeDecode">符号与unicode转换</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[万事屋的阿虚 (axutongxue.top)]]></summary></entry><entry><title type="html">Jekyll</title><link href="https://wsttask.github.io/2024/02/05/jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2024-02-05T17:27:40+08:00</published><updated>2024-02-05T17:27:40+08:00</updated><id>https://wsttask.github.io/2024/02/05/jekyll</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/jekyll.html"><![CDATA[<pre><code class="language-cmd">//实时渲染网页
-jekyll server --watch
-</code></pre>]]></content><author><name></name></author><summary type="html"><![CDATA[//实时渲染网页 jekyll server --watch]]></summary></entry><entry><title type="html">markdown语法手册</title><link href="https://wsttask.github.io/markdown/2024/02/05/Markdown.html" rel="alternate" type="text/html" title="markdown语法手册" /><published>2024-02-05T00:00:00+08:00</published><updated>2024-02-05T00:00:00+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/05/Markdown</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/05/Markdown.html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
+<p><a href="https://www.toolhelper.cn/EncodeDecode/UnicodeChineseEncodeDecode">符号与unicode转换</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[万事屋的阿虚 (axutongxue.top)]]></summary></entry><entry><title type="html">markdown语法手册</title><link href="https://wsttask.github.io/markdown/2024/02/05/Markdown.html" rel="alternate" type="text/html" title="markdown语法手册" /><published>2024-02-05T00:00:00+08:00</published><updated>2024-02-05T00:00:00+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/05/Markdown</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/05/Markdown.html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
 
 <p>代码：</p>
 
@@ -504,6 +520,4 @@ int main(void)
 {
     printf("Hello world\n");
 }
-</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[1. 斜体和粗体]]></summary></entry><entry><title type="html">7 Zip</title><link href="https://wsttask.github.io/2024/02/01/7-zip.html" rel="alternate" type="text/html" title="7 Zip" /><published>2024-02-01T13:32:08+08:00</published><updated>2024-02-01T13:32:08+08:00</updated><id>https://wsttask.github.io/2024/02/01/7-zip</id><content type="html" xml:base="https://wsttask.github.io/2024/02/01/7-zip.html"><![CDATA[<p><a href="https://7-zip.org/">7-拉链 (7-zip.org)</a></p>
-
-<p><strong>7-Zip</strong> 是<strong>开源</strong>的免费软件。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[7-拉链 (7-zip.org)]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[1. 斜体和粗体]]></summary></entry></feed>
