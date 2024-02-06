@@ -8,7 +8,7 @@ categories: [README]
 
 # [TIME.is](https://beijing-time.org/)
 
-# [TASKS](https://wasttask.github.io/tasks.html)
+# [TASKS](https://wsttask.github.io/tasks.html)
 
 - linux学习
 - 前端学习
