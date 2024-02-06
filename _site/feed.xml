@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-06T22:20:44+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Jekyll</title><link href="https://wsttask.github.io/2024/02/06/jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2024-02-06T20:39:47+08:00</published><updated>2024-02-06T20:39:47+08:00</updated><id>https://wsttask.github.io/2024/02/06/jekyll</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/jekyll.html"><![CDATA[<pre><code class="language-cmd">//实时渲染网页
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-06T23:00:14+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">excerpt one</title><link href="https://wsttask.github.io/excerpt/2024/02/06/1.html" rel="alternate" type="text/html" title="excerpt one" /><published>2024-02-06T22:25:59+08:00</published><updated>2024-02-06T22:25:59+08:00</updated><id>https://wsttask.github.io/excerpt/2024/02/06/1</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/02/06/1.html"><![CDATA[<p>1.骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。</p>
+
+<p>2.太平本是将军定，不许将军见太平。</p>
+
+<p>3.人生当如蜡烛一样，从头燃到尾，始终光明。</p>
+
+<p>4.人少，则慕父母；知好色，则慕少艾；有妻子，则慕妻子；仕则慕君，不得于君则热中。大孝终身慕父母。五十而慕者，予于大舜见之矣。</p>
+
+<p>5.朱泙漫学屠龙于支离益,殚千金之家,三年技成,而无所用其巧。</p>
+
+<p>6.我还是从前那个少年，没有一丝丝改变，时间只不过是考验，种在心中信念丝毫未减，眼前这个少年，还是最初那张脸。</p>
+
+<p>7.我希望躺在向日葵上，即使沮丧，也能朝着阳光。</p>
+
+<p>8.喜欢是很贵的，哪有那么容易消费得起，所以要存起来，只给一个人，一瓶装的草莓味的喜欢。</p>
+
+<p>9.我想不出来第一次看见你的时候，你穿的衣服是什么颜色，是晴天还是雨天，因为我从未想过，到那天之后我会喜欢你。</p>
+
+<p>10.佛曰：人生有八苦，生，老，病，死；爱别离，怨长久，求不得，放不下。</p>
+
+<p>11.何谓恩爱别苦？室家内外，兄弟妻子，共相恋慕，一朝破亡，为人抄劫，各自分张，父东子西，母南女北，非唯一处，为人奴婢，各自悲呼，心内断绝，窈窈冥冥，无有相见之期。”</p>
+
+<p>12.也许努力有些煎熬，但真的，熬过去就好了。</p>
+
+<p>13.想尝试一下早睡早起，规律三餐，晒半个小时太阳，日读两个小时书的生活。</p>
+
+<p>14.我好像抱抱你闻闻你身上的味道，把下巴搁在你的肩上，然后乖乖睡着。</p>
+
+<p>15.佛不要你皈依，佛要你欢喜。</p>
+
+<p>16.世人慌慌张张，不过图碎银几两，偏偏着碎银几两，压断了多少人的脊梁。</p>
+
+<p>17.剑气纵横三千里，一剑寒光十九州。</p>
+
+<p>18.十八年风雨，半生鸿业，说与枯骨听。</p>
+
+<p>19.世人多媚骨，唯有君如故。</p>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[1.骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。]]></summary></entry><entry><title type="html">Jekyll</title><link href="https://wsttask.github.io/2024/02/06/jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2024-02-06T20:39:47+08:00</published><updated>2024-02-06T20:39:47+08:00</updated><id>https://wsttask.github.io/2024/02/06/jekyll</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/jekyll.html"><![CDATA[<pre><code class="language-cmd">//实时渲染网页
 //在自动构建过程中对 _config.yml 的修改将不会被包含其中
 jekyll server --watch
 
@@ -246,278 +282,4 @@ git remote add origin https://github.com/<span class="k">***</span>.git //重新
 
 <p>ilink	这个是edge的扩展</p>]]></content><author><name></name></author><summary type="html"><![CDATA[https://ikuuu.org/auth/login]]></summary></entry><entry><title type="html">Websites</title><link href="https://wsttask.github.io/2024/02/05/websites.html" rel="alternate" type="text/html" title="Websites" /><published>2024-02-05T20:21:54+08:00</published><updated>2024-02-05T20:21:54+08:00</updated><id>https://wsttask.github.io/2024/02/05/websites</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/websites.html"><![CDATA[<p><a href="https://www.axutongxue.top/">万事屋的阿虚 (axutongxue.top)</a></p>
 
-<p><a href="https://www.toolhelper.cn/EncodeDecode/UnicodeChineseEncodeDecode">符号与unicode转换</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[万事屋的阿虚 (axutongxue.top)]]></summary></entry><entry><title type="html">markdown语法手册</title><link href="https://wsttask.github.io/markdown/2024/02/05/Markdown.html" rel="alternate" type="text/html" title="markdown语法手册" /><published>2024-02-05T00:00:00+08:00</published><updated>2024-02-05T00:00:00+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/05/Markdown</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/05/Markdown.html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*斜体*或_斜体_
-**粗体**
-***加粗斜体***
-~~删除线~~
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<ul>
-  <li><em>这是一段斜体</em></li>
-  <li><strong>这是一段粗体</strong></li>
-  <li><strong><em>这是一段加粗斜体</em></strong></li>
-  <li><del>这是一段删除线</del></li>
-</ul>
-
-<h3 id="2-分级标题">2. 分级标题</h3>
-<p>第一种写法：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>这是一个一级标题
-============================
-这是一个二级标题
---------------------------------------------------
-</code></pre></div></div>
-
-<p>第二种写法：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-</code></pre></div></div>
-
-<p>由于用了[TOC]标记编辑器会把所有标题写到目录大纲中，在这里写的演示标题也会列进去，所以就不演示了。同学们自己在编辑器中观察，很简单，一级标题字号最大，依级递减。</p>
-
-<h3 id="3-超链接">3. 超链接</h3>
-<p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p>
-
-<h4 id="31-行内式">3.1. 行内式</h4>
-<p>语法说明：</p>
-<ul>
-  <li>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。<a href="链接地址 “链接标题”">链接文字</a>’这样的形式。链接地址与链接标题前有一个空格。</li>
-</ul>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)
-欢迎来到[梵居闹市](http://blog.leanote.com/freewalk "梵居闹市")
-
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<p>欢迎来到<a href="http://blog.leanote.com/freewalk">梵居闹市</a></p>
-
-<p>欢迎来到<a href="http://blog.leanote.com/freewalk" title="梵居闹市">梵居闹市</a></p>
-
-<h3 id="4-锚点">4. 锚点</h3>
-<p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
-
-<p>注意：</p>
-<ol>
-  <li>Markdown Extra 只支持在标题后插入锚点，其它地方无效。</li>
-  <li>Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。</li>
-</ol>
-
-<p>语法描述：</p>
-
-<p>在你准备跳转到的指定标题后插入锚点{#标记}，然后在文档的其它地方写上连接到锚点的链接。</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.## 0. 目录{#index}
-2.
-3.跳转到[目录](#index)
-</code></pre></div></div>
-
-<h3 id="5-列表">5. 列表</h3>
-
-<h4 id="51-无序列表">5.1. 无序列表</h4>
-
-<p>使用 *，+，- 表示无序列表。</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 无序列表项 一
-- 无序列表项 二
-- 无序列表项 三
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<ul>
-  <li>无序列表项 一</li>
-  <li>无序列表项 二</li>
-  <li>无序列表项 三</li>
-</ul>
-
-<h4 id="52-有序列表">5.2. 有序列表</h4>
-
-<p>有序列表则使用数字接着一个英文句点。</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 有序列表项 一
-2. 有序列表项 二
-3. 有序列表项 三
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<ol>
-  <li>有序列表项 一</li>
-  <li>有序列表项 二</li>
-  <li>有序列表项 三</li>
-</ol>
-
-<h3 id="6-引用">6. 引用</h3>
-
-<p>语法说明：</p>
-
-<p>引用需要在被引用的文本前加上&gt;符号。</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 这是一个有两段文字的引用,
-&gt; 无意义的占行文字1.
-&gt; 无意义的占行文字2.
-&gt; 
-&gt; 无意义的占行文字3.
-&gt; 无意义的占行文字4.
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<blockquote>
-  <p>这是一个有两段文字的引用,
-无意义的占行文字1.
-无意义的占行文字2.</p>
-
-  <p>无意义的占行文字3.
-无意义的占行文字4.</p>
-</blockquote>
-
-<p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt; ：</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 这是一个有两段文字的引用,
-无意义的占行文字1.
-无意义的占行文字2.
-&gt; 无意义的占行文字3.
-无意义的占行文字4.
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<blockquote>
-  <p>这是一个有两段文字的引用,
-无意义的占行文字1.
-无意义的占行文字2.
-无意义的占行文字3.
-无意义的占行文字4.</p>
-</blockquote>
-
-<h3 id="7-插入图像">7. 插入图像</h3>
-
-<p>图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。</p>
-
-<p>语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。</p>
-
-<h4 id="71-行内式">7.1. 行内式</h4>
-
-<p>语法说明：<img src="图片地址 “图片Title”" alt="图片Alt" /></p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-1. 美丽花儿： 
-2. ![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<p>美丽花儿：</p>
-
-<h4 id="72-参考式">7.2. 参考式</h4>
-<p>语法说明：</p>
-
-<p>在文档要插入图片的地方写![图片Alt][标记]</p>
-
-<p>在文档的最后写上[标记]:图片地址 “Title”</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 美丽花儿：
-2. ![美丽花儿][flower]
-3. 
-4. [flower]:http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg  "美丽花儿"
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<p>美丽花儿：</p>
-
-<h3 id="8-代码">8. 代码</h3>
-
-<p>对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用`符号（一般在ESC键下方）包裹代码。</p>
-
-<p>语法说明：</p>
-
-<p>插入行内代码，即插入一个单词或者一句代码的情况，使用<code class="language-plaintext highlighter-rouge">code</code>这样的形式插入。</p>
-
-<p>插入多行代码，可以使用缩进或者```,具体看示例。</p>
-
-<p>注意： 缩进式插入前方必须有空行</p>
-
-<h4 id="81-行内式">8.1. 行内式</h4>
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C语言里的函数 `scanf()` 怎么使用？
-</code></pre></div></div>
-<p>显示效果：</p>
-
-<p>C语言里的函数 <code class="language-plaintext highlighter-rouge">scanf()</code> 怎么使用？</p>
-
-<h4 id="82-缩进式多行代码">8.2. 缩进式多行代码</h4>
-<p>缩进 4 个空格或是 1 个制表符</p>
-
-<p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
-
-<p>代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    #include &lt;stdio.h&gt;
-    int main(void)
-    {
-        printf("Hello world\n");
-    }
-
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
-int main(void)
-{
-    printf("Hello world\n");
-}
-</code></pre></div></div>
-
-<p>8.3. 用六个`包裹多行代码
-代码：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\```
-#include &lt;stdio.h&gt;
-int main(void)
-{
-    printf("Hello world\n");
-}
-\```
-</code></pre></div></div>
-
-<p>显示效果：</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
-int main(void)
-{
-    printf("Hello world\n");
-}
-</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[1. 斜体和粗体]]></summary></entry></feed>
+<p><a href="https://www.toolhelper.cn/EncodeDecode/UnicodeChineseEncodeDecode">符号与unicode转换</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[万事屋的阿虚 (axutongxue.top)]]></summary></entry></feed>
