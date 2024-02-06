@@ -1,0 +1,35 @@
+
+<p>（通常情况下，我们要进入其他盘符下的任意目录，需要在CMD窗口运行两次命令：第一次，进入盘符，第二次进入指定目录</p>
+
+<pre><code class="language-cmd">#进入D盘
+d:
+#进入D盘下的test目录
+cd test
+</code></pre>
+<p>通过使用CD命令，并加入参数 /d ，可以通过一个步骤，直接进入指定盘符下的任意文件夹。</p>
+
+<pre><code class="language-cmd">#一个步骤进入D盘下的test目录
+cd /d d:\test
+cd /d %~dp0
+</code></pre>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%0代表批处理本身 d:\qq\a.bat
+%~dp0 就是进入这个批处理所在的文件夹
+~dp是变量扩充
+d既是扩充到分区号 d:
+p就是扩充到路径 \qq
+dp就是扩充到分区号路径 d:\qq
+
+%cd% 可以用在批处理文件中，也可以用在命令行中；展开后，是驱动器盘符:+当前目录，如：
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rem 进入批处理文件所在磁盘根目录
+%~d0
+
+rem 进入批处理文件所在目录
+cd %~dp0
+
+rem 上面2条语句可以合并成一条语句。。。：）
+cd /d %~dp0
+</code></pre></div></div>
+
