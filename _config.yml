@@ -1,4 +1,5 @@
-url: //wsttask.github.io
+url: /wsttask.github.io
+site.url: /wsttask.github.io 
 timezone: Asia/Shanghai
 # markdown: kramdown
 # kramdown:
