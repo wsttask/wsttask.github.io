@@ -44,14 +44,13 @@ edge 的扩展上可以下载vpn？怎么搞的
 通过命令杀死进程
 taskkill /f /im erwin.exe
 
+这是测试行
 
 
 
-
-```html
+```c
 <div class="content content-global">
     <div style="width: 90%; margin: 0 auto;">
-        {{ content }}
     </div>
 </div>
 为什么div内标签与外标签宽度不一样？
