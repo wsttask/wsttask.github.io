@@ -1,6 +1,7 @@
 ---
 layout: post
 title: readme
+categories: [README]
 ---
 
 # [STOP](#)
