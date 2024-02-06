@@ -46,6 +46,19 @@ taskkill /f /im erwin.exe
 
 
 
+
+
+```html
+<div class="content content-global">
+    <div style="width: 90%; margin: 0 auto;">
+        {{ content }}
+    </div>
+</div>
+为什么div内标签与外标签宽度不一样？
+```
+
+
+
 如何快速比较两个文件内容之间的差异，有专门门的软件
 
 [HopWeb • 概述](https://venter.top/hopweb/index.html)
