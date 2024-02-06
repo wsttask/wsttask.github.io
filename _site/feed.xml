@@ -1,4 +1,236 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-06T20:42:34+08:00</updated><id>/wsttask.github.io/feed.xml</id><entry><title type="html">markdown语法手册</title><link href="/wsttask.github.io/markdown/2024/02/05/Markdown.html" rel="alternate" type="text/html" title="markdown语法手册" /><published>2024-02-05T00:00:00+08:00</published><updated>2024-02-05T00:00:00+08:00</updated><id>/wsttask.github.io/markdown/2024/02/05/Markdown</id><content type="html" xml:base="/wsttask.github.io/markdown/2024/02/05/Markdown.html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-06T21:04:18+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Git_command</title><link href="https://wsttask.github.io/2024/02/06/git_command.html" rel="alternate" type="text/html" title="Git_command" /><published>2024-02-06T12:11:26+08:00</published><updated>2024-02-06T12:11:26+08:00</updated><id>https://wsttask.github.io/2024/02/06/git_command</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/git_command.html"><![CDATA[<h3 id="初始化仓库并与远程仓库建立连接">初始化仓库，并与远程仓库建立连接</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 初始化仓库，无参数代表初始化本目录为仓库
+git init &lt;filename&gt;
+// 使用 git remote add 命令将本地仓库与远程仓库进行关联，其中 origin 是远程仓库的别名，也可以是其他的名字
+git remote add origin https://github.com/xu-xiaoya/Elegent.git
+//
+
+</code></pre></div></div>
+
+<h3 id="git-push详解">git push详解</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 命令格式
+git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;
+// 如果本地分支名与远程分支名相同，则可以省略冒号与远程分支名
+git push &lt;远程主机名&gt; &lt;本地分支名&gt;
+
+example:
+// 以下命令将本地的 master 分支推送到 origin 主机的 master 分支。
+git push origin master
+
+// 如果本地版本与远程版本有差异，但又要强制推送可以使用 <span class="nt">--force</span> 参数：
+git push <span class="nt">--force</span> origin master
+
+</code></pre></div></div>
+
+<p><a href="https://blog.csdn.net/Lakers2015/article/details/111318801">git push 的 -u 参数含义_git push -u-CSDN博客</a></p>
+
+<h3 id="git-remote">git remote</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote <span class="nt">-v</span> //查看git对应的远程仓库地址
+
+git remote remove &lt;remote_name&gt;//从当前仓库中删除指定的远程仓库。
+
+git remote <span class="nt">-v</span> //查看是否删除成功，如果没有任何返回结果，表示OK
+
+git remote rename &lt;old_name&gt; &lt;new_name&gt;//将已配置的远程仓库重命名。
+
+git remote add origin https://github.com/<span class="k">***</span>.git //重新关联git远程仓库地址
+</code></pre></div></div>
+
+<h3 id="git-substree">git substree</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<h3 id="git-pull">git pull</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[初始化仓库，并与远程仓库建立连接]]></summary></entry><entry><title type="html">Git_gitignore</title><link href="https://wsttask.github.io/2024/02/06/GIT_gitignore.html" rel="alternate" type="text/html" title="Git_gitignore" /><published>2024-02-06T11:53:39+08:00</published><updated>2024-02-06T11:53:39+08:00</updated><id>https://wsttask.github.io/2024/02/06/GIT_gitignore</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/GIT_gitignore.html"><![CDATA[<p>[<a href="https://zhuanlan.zhihu.com/p/52885189">Git].gitignore文件的配置使用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[[Git].gitignore文件的配置使用 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">Spacedesk</title><link href="https://wsttask.github.io/2024/02/06/spacedesk.html" rel="alternate" type="text/html" title="Spacedesk" /><published>2024-02-06T11:28:09+08:00</published><updated>2024-02-06T11:28:09+08:00</updated><id>https://wsttask.github.io/2024/02/06/spacedesk</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/spacedesk.html"><![CDATA[<table>
+  <tbody>
+    <tr>
+      <td>[【屏幕扩展】spacedesk vBeta v2.1.0 简单汉化版【12/12更新】 - 『原创发布区』 - 吾爱破解 - LCG - LSG</td>
+      <td>安卓破解</td>
+      <td>病毒分析</td>
+      <td>www.52pojie.cn](https://www.52pojie.cn/thread-1862830-1-1.html)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>文件保存在 百度网盘的 工具类</p>
+
+<p><a href="https://blog.csdn.net/tfnmdmx/article/details/126084099">spacedesk-笔记本、平板、扩展屏幕-解决平板字体太小的问题_spacedesk 网页端拓展屏幕-CSDN博客</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[[【屏幕扩展】spacedesk vBeta v2.1.0 简单汉化版【12/12更新】 - 『原创发布区』 - 吾爱破解 - LCG - LSG 安卓破解 病毒分析 www.52pojie.cn](https://www.52pojie.cn/thread-1862830-1-1.html)]]></summary></entry><entry><title type="html">Git_升级版本</title><link href="https://wsttask.github.io/2024/02/06/GIT_%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html" rel="alternate" type="text/html" title="Git_升级版本" /><published>2024-02-06T09:26:22+08:00</published><updated>2024-02-06T09:26:22+08:00</updated><id>https://wsttask.github.io/2024/02/06/GIT_%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/GIT_%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC.html"><![CDATA[<p><a href="https://blog.csdn.net/yuwentao4761901/article/details/107858129">升级Git版本到最新的方法_git 版本升级git-2.34.5-CSDN博客</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[升级Git版本到最新的方法_git 版本升级git-2.34.5-CSDN博客]]></summary></entry><entry><title type="html">Git</title><link href="https://wsttask.github.io/2024/02/06/git.html" rel="alternate" type="text/html" title="Git" /><published>2024-02-06T09:20:19+08:00</published><updated>2024-02-06T09:20:19+08:00</updated><id>https://wsttask.github.io/2024/02/06/git</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/git.html"><![CDATA[<h4 id="git-常用命令">git 常用命令</h4>
+
+<blockquote>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 查看git所有配置</span>
+<span class="nv">$ </span>git config <span class="nt">-l</span>
+
+<span class="c"># 查看系统的配置，其中--system是筛选条件   </span>
+<span class="nv">$ </span>git config <span class="nt">--system</span> <span class="nt">--list</span>   、Git<span class="se">\e</span>tc<span class="se">\g</span>itconfig:Git安装目录下的 gitconfig <span class="nt">--system</span> 系统级
+
+<span class="c"># 查看缓存大小</span>
+<span class="nv">$ </span>git config <span class="nt">--get</span> http.postBuffer 
+
+<span class="c"># 重新设置缓存大小为1024M</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> http.postBuffer 1024M 
+
+<span class="c"># 查看个人的配置</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> <span class="nt">--list</span>     、C:<span class="se">\U</span>sers<span class="se">\A</span>dministrator<span class="se">\ </span>.gitconfig   只适用于当前登录用户的配置  <span class="nt">--global</span> 全局
+
+<span class="c"># 配置user.name</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"Sheng"</span> 
+
+<span class="c"># 配置user.email</span>
+<span class="nv">$ </span>git config <span class="nt">--global</span> user.email <span class="s2">"704341315@qq.com"</span> 
+
+<span class="o">(</span>所有的配置，都是以文件形式保存在本地文件中<span class="o">)</span> 
+注意：git config <span class="nt">--global</span> 参数，有了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然你也可以对某个仓库指定的不同的用户名和邮箱。
+
+<span class="c"># 克隆远程仓库</span>
+<span class="nv">$ </span>git clone <span class="s2">"adress"</span> 
+注意文件名中不能包含 <span class="se">\ </span>/ : <span class="k">*</span> ? <span class="s2">" &lt; &gt; ||
+
+# 在当前目录新建一个Git代码库
+</span><span class="nv">$ </span><span class="s2">git init 
+
+# 查看指定文件状态
+</span><span class="nv">$ </span><span class="s2">git status [filename]
+
+#查看所有文件状态
+</span><span class="nv">$ </span><span class="s2">git status 
+
+# 添加所有文件到暂存区
+</span><span class="nv">$ </span><span class="s2">git add . 
+
+# 提交暂存区中的内容到本地仓库 -m 提交信息
+</span><span class="nv">$ </span><span class="s2">git commit -m "</span>消息内容<span class="s2">"    
+
+# 把repository中的内容提交到远程仓库
+</span><span class="nv">$ </span><span class="s2">git push 
+
+# 返回上一次修改
+</span><span class="nv">$ </span><span class="s2">git reset --hard HEAD^
+
+# 返回该版本，直接更改workspace中的内容
+</span><span class="nv">$ </span><span class="s2">git reset --hard  [版本号]
+
+# 不加参数即默认比较工作区与暂存区
+</span><span class="nv">$ </span><span class="s2">git diff [file] 
+注意只能比较index和workspace中已有文件的差异，如果workspace中新增加了一个文件，那么就比较不出来这个文件
+
+# 显示工作目录与当前git仓库之间的差异
+</span><span class="nv">$ </span><span class="s2">git diff HEAD 
+
+# 显示工作目录与上一个版本git仓库之间的差异，或者可以说是git pull 之后查看修改
+</span><span class="nv">$ </span><span class="s2">git diff HEAD^
+
+# 查看日志
+</span><span class="nv">$ </span><span class="s2">git log
+
+# 查看日志
+</span><span class="nv">$ </span><span class="s2">git reflog 
+
+# 可以丢弃工作区的修改，在index区进行检索file文件
+</span><span class="nv">$ </span><span class="s2">git checkout -- file
+
+1.readme.txt自动修改后，还没有放到暂存区，使用 撤销修改就回到和版本库一模一样的状态。
+2.另外一种是readme.txt已经放入暂存区了，接着又作了修改，撤销修改就回到添加暂存区后的状态
+3.可以恢复在工作区误删的文件file，只要repository区中有
+
+# 列出所有本地分支
+</span><span class="nv">$ </span><span class="s2">git branch
+
+# 列出所有远程分支
+</span><span class="nv">$ </span><span class="s2">git branch -r
+
+# 列出所有本地分支和远程分支
+</span><span class="nv">$ </span><span class="s2">git branch -a
+
+# 新建一个分支，但依然停留在当前分支
+</span><span class="nv">$ </span><span class="s2">git branch [branch-name]
+
+# 新建一个分支，并切换到该分支
+</span><span class="nv">$ </span><span class="s2">git checkout -b [branch]
+
+# 新建一个分支，指向指定commit
+</span><span class="nv">$ </span><span class="s2">git branch [branch] [commit]
+
+# 新建一个分支，与指定的远程分支建立追踪关系
+</span><span class="nv">$ </span><span class="s2">git branch --track [branch] [remote-branch]
+
+# 切换到指定分支，并更新工作区
+</span><span class="nv">$ </span><span class="s2">git checkout [branch-name]
+
+# 切换到上一个分支
+</span><span class="nv">$ </span><span class="s2">git checkout -
+
+# 建立追踪关系，在现有分支与指定的远程分支之间
+</span><span class="nv">$ </span><span class="s2">git branch --set-upstream [branch] [remote-branch]
+
+# 合并指定分支到当前分支
+</span><span class="nv">$ </span><span class="s2">git merge [branch]
+
+# 选择一个commit，合并进当前分支
+</span><span class="nv">$ </span><span class="s2">git cherry-pick [commit]
+
+# 删除分支
+</span><span class="nv">$ </span><span class="s2">git branch -d [branch-name]
+
+# 删除远程分支
+</span><span class="nv">$ </span><span class="s2">git push origin --delete [branch-name]
+</span><span class="nv">$ </span><span class="s2">git branch -dr [remote/branch]
+
+
+# 展示当前关联的其他仓库列表
+</span><span class="nv">$ </span><span class="s2">git remote -v 
+</span></code></pre></div>  </div>
+</blockquote>
+
+<h3 id="关于git-pull">关于git pull</h3>
+
+<p>git pull 会自动和本地提交合并，与本地有冲突时需要手动合并。</p>
+
+<p>未提交本地代码进行 git pull 时，会提示异常提醒先 commit 后再进行 pull</p>
+
+<p>也就是说，如果git pull拉下来的改变，你没有修改，就不会提示异常，</p>
+
+<p><code class="language-plaintext highlighter-rouge">git pull</code>实际上是<code class="language-plaintext highlighter-rouge">git fetch</code>和<code class="language-plaintext highlighter-rouge">git merge</code>两个命令的组合，它从远程仓库获取最新的代码并自动合并到当前分支。</p>
+
+<h3 id="git合并分支的具体步骤如下">Git合并分支的具体步骤如下：</h3>
+
+<p>确认当前分支的状态：在执行合并分支命令之前，我们需要确认当前分支的状态，即是否有未提交的修改。可以通过git status命令查看当前分支的状态。</p>
+
+<p>切换到要合并的分支：使用git checkout命令切换到要合并的分支，具体语法是git checkout <branch-name>，其中<branch-name>表示要合并的分支名。</branch-name></branch-name></p>
+
+<p>合并分支：使用git merge命令合并分支，具体语法是git merge <branch-to-merge>，其中<branch-to-merge>表示要合并的分支名。</branch-to-merge></branch-to-merge></p>
+
+<p>处理合并冲突：如果合并过程中存在冲突，需要手动解决冲突并提交代码。</p>
+
+<p>确认合并结果：合并完成后，我们需要确认合并后分支的状态是否正确。可以使用git log命令查看分支的提交记录，或者使用git diff命令比较合并前后代码的差异。</p>
+
+<p><strong>底层原理如下</strong></p>
+
+<p>​	Git在底层存储时，使用了一种名为”commit graph”的数据结构来管理提交记录，该数据结构可以看作是一个<strong>有向无环图</strong>(DAG)，其中每个节点表示一个提交记录，每条有向边表示一个提交记录的父节点。在Git中，合并分支实际上是将两个分支的提交记录合并到一起，创建一个新的提交记录。合并分支的过程中，Git会执行以下操作：</p>
+
+<p>​	找到两个分支最近的共同祖先：在合并分支前，Git会找到两个分支最近的共同祖先，这个祖先节点是合并操作的基础。</p>
+
+<p>​	创建一个新的提交记录：Git会在共同祖先的基础上创建一个新的提交记录，该记录包含合并前两个分支的所有修改内容。这个新的提交记录将成为合并后分支的最新提交记录。</p>
+
+<p>​	解决冲突：如果合并过程中存在冲突，Git会暂停合并操作，并让用户手动解决冲突。解决冲突后，用户需要使用git add命令将修改内容标记为已解决，然后使用git commit命令提交代码。</p>
+
+<p>​	更新分支指针：合并完成后，Git会更新当前分支的指针，指向合并后的最新提交记录。同时，如果存在其他分支指针指向合并前的某个提交记录，也会被更新到指向合并后的最新提交记录。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[git 常用命令]]></summary></entry><entry><title type="html">Vpn</title><link href="https://wsttask.github.io/2024/02/05/vpn.html" rel="alternate" type="text/html" title="Vpn" /><published>2024-02-05T20:22:09+08:00</published><updated>2024-02-05T20:22:09+08:00</updated><id>https://wsttask.github.io/2024/02/05/vpn</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login</p>
+
+<p><a href="https://sockboom.link/user/">sockboom.link</a></p>
+
+<p><a href="https://sockboom.buzz/user/">SockBoom</a></p>
+
+<p>sockboom域名更新了</p>
+
+<p>ilink	这个是edge的扩展</p>]]></content><author><name></name></author><summary type="html"><![CDATA[https://ikuuu.org/auth/login]]></summary></entry><entry><title type="html">Websites</title><link href="https://wsttask.github.io/2024/02/05/websites.html" rel="alternate" type="text/html" title="Websites" /><published>2024-02-05T20:21:54+08:00</published><updated>2024-02-05T20:21:54+08:00</updated><id>https://wsttask.github.io/2024/02/05/websites</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/websites.html"><![CDATA[<p><a href="https://www.axutongxue.top/">万事屋的阿虚 (axutongxue.top)</a></p>
+
+<p><a href="https://www.toolhelper.cn/EncodeDecode/UnicodeChineseEncodeDecode">符号与unicode转换</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[万事屋的阿虚 (axutongxue.top)]]></summary></entry><entry><title type="html">Jekyll</title><link href="https://wsttask.github.io/2024/02/05/jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2024-02-05T17:27:40+08:00</published><updated>2024-02-05T17:27:40+08:00</updated><id>https://wsttask.github.io/2024/02/05/jekyll</id><content type="html" xml:base="https://wsttask.github.io/2024/02/05/jekyll.html"><![CDATA[<pre><code class="language-cmd">//实时渲染网页
+jekyll server --watch
+</code></pre>]]></content><author><name></name></author><summary type="html"><![CDATA[//实时渲染网页 jekyll server --watch]]></summary></entry><entry><title type="html">markdown语法手册</title><link href="https://wsttask.github.io/markdown/2024/02/05/Markdown.html" rel="alternate" type="text/html" title="markdown语法手册" /><published>2024-02-05T00:00:00+08:00</published><updated>2024-02-05T00:00:00+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/05/Markdown</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/05/Markdown.html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
 
 <p>代码：</p>
 
@@ -272,4 +504,6 @@ int main(void)
 {
     printf("Hello world\n");
 }
-</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[1. 斜体和粗体]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[1. 斜体和粗体]]></summary></entry><entry><title type="html">7 Zip</title><link href="https://wsttask.github.io/2024/02/01/7-zip.html" rel="alternate" type="text/html" title="7 Zip" /><published>2024-02-01T13:32:08+08:00</published><updated>2024-02-01T13:32:08+08:00</updated><id>https://wsttask.github.io/2024/02/01/7-zip</id><content type="html" xml:base="https://wsttask.github.io/2024/02/01/7-zip.html"><![CDATA[<p><a href="https://7-zip.org/">7-拉链 (7-zip.org)</a></p>
+
+<p><strong>7-Zip</strong> 是<strong>开源</strong>的免费软件。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[7-拉链 (7-zip.org)]]></summary></entry></feed>

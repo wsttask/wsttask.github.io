@@ -1,0 +1,413 @@
+<h1 id="命令行">命令行</h1>
+
+<h2 id="cmd与powershell">cmd与PowerShell</h2>
+
+<p>cmd是power shell的子集。</p>
+
+<h2 id="说明">说明</h2>
+
+<ul>
+  <li>不区分大小写</li>
+  <li>按上下键可以查看历史命令</li>
+  <li>Tab键可以自动补全</li>
+  <li>使用<code class="language-plaintext highlighter-rouge">/?</code>或<code class="language-plaintext highlighter-rouge">/help</code>可以查看命令用法，用法中的<code class="language-plaintext highlighter-rouge">[]</code>代表可选</li>
+  <li>命令基本格式<code class="language-plaintext highlighter-rouge">命令 参数列表 </code></li>
+</ul>
+
+<h2 id="基本命令">基本命令</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">echo</code></td>
+      <td>显示</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pause</code></td>
+      <td>暂停</td>
+      <td><code class="language-plaintext highlighter-rouge">pause &gt; nul</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cls</code></td>
+      <td>清屏</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">exit</code></td>
+      <td>退出</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="常用命令">常用命令</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>显示文件内容</td>
+      <td><code class="language-plaintext highlighter-rouge">type 1.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">find</code></td>
+      <td>查找字符串</td>
+      <td><code class="language-plaintext highlighter-rouge">find "abc" 2.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fc</code></td>
+      <td>比较文件内容</td>
+      <td><code class="language-plaintext highlighter-rouge">fc 1.txt 2.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>显示/修改日期</td>
+      <td><code class="language-plaintext highlighter-rouge">date /T</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time</code></td>
+      <td>显示/修改时间</td>
+      <td><code class="language-plaintext highlighter-rouge">time /T</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ping</code></td>
+      <td>网络连接测试</td>
+      <td><code class="language-plaintext highlighter-rouge">ping www.baidu.com</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ipconfig</code></td>
+      <td>TCP/IP信息</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">set /a</code></td>
+      <td>计算表达式</td>
+      <td><code class="language-plaintext highlighter-rouge">set /a 6%4</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">shutdown</code></td>
+      <td>关机</td>
+      <td><code class="language-plaintext highlighter-rouge">shutdown /s /t 60</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="多命令">多命令</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;  顺序执行多条命令，不管命令是否执行成功
+<span class="o">&amp;&amp;</span> 顺序执行多条命令，前面的命令错误则不执行后面的命令
+<span class="o">||</span> 顺序执行多条命令，碰到执行正确的命令后将不执行后面的命令
+
+abc &amp; <span class="nb">dir</span> &amp; bcd
+abc <span class="o">&amp;&amp;</span> <span class="nb">dir</span> <span class="o">&amp;&amp;</span> bcd
+abc <span class="o">||</span> <span class="nb">dir</span> <span class="o">||</span> bcd
+</code></pre></div></div>
+
+<h3 id="重定向">重定向</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span>  输出重定向
+<span class="o">&gt;&gt;</span> 追加重定向
+&lt;  输入重定向
+
+<span class="nb">date</span> /t <span class="o">&gt;</span> 1.txt
+<span class="nb">time</span> /t <span class="o">&gt;&gt;</span> 1.txt
+find <span class="s2">"/"</span> &lt; 1.txt
+</code></pre></div></div>
+
+<h3 id="管道">管道</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| 前一个命令的输出作为后一个命令的输入
+
+<span class="nb">dir</span> | find <span class="s2">"txt"</span>
+</code></pre></div></div>
+
+<h2 id="文件操作命令">文件操作命令</h2>
+
+<p><strong>路径分隔符</strong>：<code class="language-plaintext highlighter-rouge">\</code></p>
+
+<p><strong>当前目录</strong>：<code class="language-plaintext highlighter-rouge">.</code></p>
+
+<p><strong>上一级目录</strong>：<code class="language-plaintext highlighter-rouge">..</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dir</code></td>
+      <td>显示文件夹内容</td>
+      <td><code class="language-plaintext highlighter-rouge">dir /A</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tree</code></td>
+      <td>显示文件夹树形结构</td>
+      <td><code class="language-plaintext highlighter-rouge">tree /F</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">盘符:</code></td>
+      <td>进入指定磁盘</td>
+      <td><code class="language-plaintext highlighter-rouge">c:</code> <code class="language-plaintext highlighter-rouge">d:</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cd</code></td>
+      <td>切换目录</td>
+      <td><code class="language-plaintext highlighter-rouge">cd test</code> <code class="language-plaintext highlighter-rouge">cd ..</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mkdir</code>或<code class="language-plaintext highlighter-rouge">md</code></td>
+      <td>创建目录</td>
+      <td><code class="language-plaintext highlighter-rouge">mkdir test</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rmdir</code>或<code class="language-plaintext highlighter-rouge">rd</code></td>
+      <td>删除目录</td>
+      <td><code class="language-plaintext highlighter-rouge">rmdir test</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">del</code></td>
+      <td>删除文件</td>
+      <td><code class="language-plaintext highlighter-rouge">del 1.txt</code> <code class="language-plaintext highlighter-rouge">del /q/a/f *.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rename</code>或<code class="language-plaintext highlighter-rouge">ren</code></td>
+      <td>重命名</td>
+      <td><code class="language-plaintext highlighter-rouge">rename a.txt b.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">copy</code></td>
+      <td>复制文件</td>
+      <td><code class="language-plaintext highlighter-rouge">copy a\1.txt b\1.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">move</code></td>
+      <td>移动文件/重命名</td>
+      <td><code class="language-plaintext highlighter-rouge">move a\1.txt 2.txt</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="批处理">批处理</h1>
+
+<h2 id="基本结构">基本结构</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off		<span class="c"># 关闭回显</span>
+......
+pause			<span class="c"># 暂停。或 pause &gt; nul</span>
+</code></pre></div></div>
+
+<h2 id="-命令">@ 命令</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>表示不显示@后面的命令，<span class="o">(</span>在入侵过程中自然不能让对方看到你使用的命令啦<span class="o">)</span>
+@ 与 <span class="nb">echo </span>off 相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行<span class="o">(</span>只能影响当前行<span class="o">)</span>。
+Sample： @echo off <span class="o">(</span>此语句常用于开头，表示不显示所有的命令行信息，包括此句<span class="o">)</span>
+Sample： @echo please <span class="nb">wait </span>a minite...
+Sample： @format X: /q/u/autoset
+<span class="o">(</span>format 这个命令是不可以使用/y这个参数的，可喜的是微软留了个autoset这个参数给我们，效果和/y是一样的。<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="call-命令">Call 命令</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>语法: call <span class="o">[[</span>Drive:][Path] FileName <span class="o">[</span>BatchParameters]] <span class="o">[</span>:label <span class="o">[</span>arguments]]
+参数: <span class="o">[</span>Drive:][Path] FileName 指定要调用的批处理程序的位置和名称。filename 参数必须具有 .bat 或 .cmd 扩展名。
+调用另一个批处理程序，并且不终止父批处理程序。
+如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令。
+call 命令接受用作调用目标的标签。如果在脚本或批处理文件外使用 Call，它将不会在命令行起作用。
+Sample：call<span class="o">=</span><span class="s2">"%cd%</span><span class="se">\t</span><span class="s2">est2.bat"</span> haha kkk aaa <span class="o">(</span>调用指定目录下的 test2.bat，且输入3个参数给他<span class="o">)</span>
+Sample：call test2.bat arg1 arg2 <span class="o">(</span>调用同目录下的 test2.bat，且输入2个参数给他<span class="o">)</span>
+注：可以调用自身<span class="o">(</span>死循环、递归<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="运行方式">运行方式</h2>
+
+<ul>
+  <li>双击运行</li>
+  <li>在cmd中运行（可以传参）</li>
+</ul>
+
+<h2 id="变量">变量</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 设置变量</span>
+<span class="nb">set </span>变量名<span class="o">=</span>变量值
+<span class="nb">set</span> /a 变量名<span class="o">=</span>表达式
+
+<span class="c"># 取消变量</span>
+<span class="nb">set </span>变量名<span class="o">=</span>
+
+<span class="c"># 打印变量</span>
+<span class="nb">set </span>变量名
+
+<span class="c"># 列出变量</span>
+<span class="nb">set</span>
+
+<span class="c"># 引用变量</span>
+%变量名%
+
+<span class="c"># 输入变量值</span>
+<span class="nb">set</span> /p 变量名<span class="o">=</span>提示文字
+</code></pre></div></div>
+
+<h3 id="预定义的变量">预定义的变量</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>变量名</th>
+      <th>值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%cd%</code></td>
+      <td>当前目录</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%date%</code></td>
+      <td>当前日期</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%time%</code></td>
+      <td>当前时间</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%random%</code></td>
+      <td>0~32767之间的随机数</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%path%</code></td>
+      <td>环境变量</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%errorlevel%</code></td>
+      <td>上一个命令的返回值，0表示执行成功</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%0</code>、<code class="language-plaintext highlighter-rouge">%1</code>、<code class="language-plaintext highlighter-rouge">%2</code>……</td>
+      <td>参数。<code class="language-plaintext highlighter-rouge">%0</code>表示命令名</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="调用">调用</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>call 可执行文件 <span class="o">[</span>参数列表]
+</code></pre></div></div>
+
+<h2 id="条件">条件</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span>not] 条件 <span class="o">(</span>
+	语句块
+<span class="o">)</span> <span class="k">else</span> <span class="o">(</span>
+	语句块
+<span class="o">)</span>
+
+<span class="c"># 条件：</span>
+errorlevel number	<span class="c"># 上一个程序的返回值大于等于number则为true</span>
+<span class="nv">string1</span><span class="o">==</span>string2	<span class="c"># 两个字符串匹配则为true</span>
+exist filename		<span class="c"># 文件名存在则为true</span>
+<span class="o">[</span>/I] string1 compare-op string2		<span class="c"># 比较数值或字符串</span>
+	<span class="c"># /I	忽略大小写</span>
+	<span class="c"># compare-op包括：</span>
+	<span class="c">#	equ	等于</span>
+	<span class="c"># 	neq	不等于</span>
+	<span class="c">#	lss	小于</span>
+	<span class="c">#	leq	小于等于</span>
+	<span class="c">#	gtr	大于</span>
+	<span class="c">#	geq	大于等于</span>
+defined variable	<span class="c"># 如果定义了该变量则为true</span>
+</code></pre></div></div>
+
+<h2 id="跳转">跳转</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>goto label		<span class="c"># 跳转到标签所在行</span>
+:label			<span class="c"># 标签以冒号开头</span>
+</code></pre></div></div>
+
+<h2 id="循环">循环</h2>
+
+<p><strong>基本语法</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
+	语句块
+<span class="o">)</span>
+
+<span class="c"># 循环变量用 %% 指定，只能是单字母</span>
+<span class="c"># set表示文件集合（也可以是空文件），元素之间以逗号或空格分隔，支持通配符</span>
+
+<span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span>a,b,c<span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+<span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span><span class="k">*</span>.<span class="k">*</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+</code></pre></div></div>
+
+<p><strong>扩展语法</strong></p>
+
+<ul>
+  <li>
+    <p>只遍历文件夹</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /d %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>遍历指定文件夹下的所有文件，不指定则表示当前目录。如果set为<code class="language-plaintext highlighter-rouge">.</code>表示枚举目录树</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /r <span class="o">[[</span>drive:]path] %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do
+    
+  for</span> /r %%i <span class="k">in</span> <span class="o">(</span><span class="k">*</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+  <span class="k">for</span> /r d:<span class="se">\u</span>p %%i <span class="k">in</span> <span class="o">(</span>.<span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>遍历数字序列</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /l %%i <span class="k">in</span> <span class="o">(</span>start,step,end<span class="o">)</span> <span class="k">do</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>遍历文件内容</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /f <span class="o">[</span><span class="s2">"options"</span><span class="o">]</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="通配符">通配符</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?		<span class="c"># 单个字符</span>
+<span class="k">*</span>		<span class="c"># 任意字符</span>
+</code></pre></div></div>
+
+<h2 id="例子">例子</h2>
+
+<p>按顺序为文件夹中的文件命名。</p>
+
+<p><a href="https://blog.csdn.net/Dandelion_gong/article/details/78067501">批处理中for循环的自增自减问题_Dandelion_gong的博客-CSDN博客_bat for 自增</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off
+setlocal enabledelayedexpansion
+<span class="nb">set </span><span class="nv">cnt</span><span class="o">=</span>0
+<span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span>%1<span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
+    rename %%i <span class="o">!</span>cnt!.txt
+    <span class="nb">set</span> /a <span class="nv">cnt</span><span class="o">=!</span>cnt! + 1
+<span class="o">)</span>
+pause
+</code></pre></div></div>
+

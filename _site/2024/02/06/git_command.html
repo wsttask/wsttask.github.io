@@ -1,0 +1,50 @@
+<h3 id="初始化仓库并与远程仓库建立连接">初始化仓库，并与远程仓库建立连接</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 初始化仓库，无参数代表初始化本目录为仓库
+git init &lt;filename&gt;
+// 使用 git remote add 命令将本地仓库与远程仓库进行关联，其中 origin 是远程仓库的别名，也可以是其他的名字
+git remote add origin https://github.com/xu-xiaoya/Elegent.git
+//
+
+</code></pre></div></div>
+
+<h3 id="git-push详解">git push详解</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 命令格式
+git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;
+// 如果本地分支名与远程分支名相同，则可以省略冒号与远程分支名
+git push &lt;远程主机名&gt; &lt;本地分支名&gt;
+
+example:
+// 以下命令将本地的 master 分支推送到 origin 主机的 master 分支。
+git push origin master
+
+// 如果本地版本与远程版本有差异，但又要强制推送可以使用 <span class="nt">--force</span> 参数：
+git push <span class="nt">--force</span> origin master
+
+</code></pre></div></div>
+
+<p><a href="https://blog.csdn.net/Lakers2015/article/details/111318801">git push 的 -u 参数含义_git push -u-CSDN博客</a></p>
+
+<h3 id="git-remote">git remote</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote <span class="nt">-v</span> //查看git对应的远程仓库地址
+
+git remote remove &lt;remote_name&gt;//从当前仓库中删除指定的远程仓库。
+
+git remote <span class="nt">-v</span> //查看是否删除成功，如果没有任何返回结果，表示OK
+
+git remote rename &lt;old_name&gt; &lt;new_name&gt;//将已配置的远程仓库重命名。
+
+git remote add origin https://github.com/<span class="k">***</span>.git //重新关联git远程仓库地址
+</code></pre></div></div>
+
+<h3 id="git-substree">git substree</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<h3 id="git-pull">git pull</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+</code></pre></div></div>
+

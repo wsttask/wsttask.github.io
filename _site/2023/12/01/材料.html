@@ -1,0 +1,147 @@
+<h1 id="猪王">猪王</h1>
+
+<p>1、怪物肉不能兑换金子，但是怪物肉干可以，玩家也可以用怪物肉喂鸟获得鸟蛋，再用鸟蛋兑换金子。</p>
+
+<p>2、猪皮属于肉类，可以送给猪王。肉类换取金子每天都有数量上限，超过上限后将不能再获取金子。</p>
+
+<p>3、材料兑换：象鼻、猪皮、蝙蝠翅膀等如果用不到就可以拿去送给猪王，每个材料可以换一个金子。</p>
+
+<p>4、玩具兑换：地图中经常能看到有散落的玩具，玩家在挖坟还有捕捉风滚草时也有可能开出玩具，这些玩具是猪王的心爱物品，送给猪王可以获得数额不等的金子，比送食物回报高得多。</p>
+
+<h1 id="初期">初期</h1>
+
+<p>1.二本：4木板4木头，2石砖3石头，2电子元件2金1石砖</p>
+
+<p>2.背包：</p>
+
+<p>3.鸟笼：莎草纸，金，种子</p>
+
+<p>4.捕鸟陷阱：蛛丝</p>
+
+<p>5.冰箱，石砖，齿轮，金</p>
+
+<p>6.提灯：</p>
+
+<h1 id="养牛">养牛</h1>
+
+<p>1.荧光果，花瓣，不加饱食度但也可以加顺从度</p>
+
+<p>2.毛刷刷毛可以直接增加40的顺从度</p>
+
+<p>3.给牛剃毛，攻击牛会丢失100的顺从度</p>
+
+<p>4.顺从度低于40会把鞍具甩掉，并损失一定耐久</p>
+
+<p>5.驯化度影响骑乘时间</p>
+
+<h1 id="四锅">四锅</h1>
+
+<p>1.9*9的四个角放锅，旁边的四个冰箱放到国中间，而不是紧挨着</p>
+
+<h1 id="六锅">六锅</h1>
+
+<p>1.先放冰箱，冰箱左右两边最近距离放锅</p>
+
+<p>2.上下均在可放锅的外角</p>
+
+<h1 id="猪人">猪人</h1>
+
+<p>1.群体仇恨</p>
+
+<p>2.当在雇佣时攻击未雇佣的猪人时，会出现内斗</p>
+
+<p>3.给猪喂四个怪物肉，猪人变成疯猪</p>
+
+<p>4.疯猪固定掉落一个猪皮，两个大肉</p>
+
+<h1 id="兔人">兔人</h1>
+
+<p>1.晚上兔人出来不会有仇恨</p>
+
+<p>2.兔人一天一刷</p>
+
+<h1 id="温蒂">温蒂</h1>
+
+<p>1.温蒂杀蜘蛛最简单，可以轻松获取大量怪物肉，换蛋换金子，换疯猪，很难挨饿，制作火腿棒很简单</p>
+
+<p>2.温蒂建议开局就养牛</p>
+
+<p>3.温蒂不擅长打架</p>
+
+<h1 id="地图全开指令">地图全开指令</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minimap = TheSim:FindFirstEntityWithTag("minimap")TheWorld.minimap.MiniMap:ShowArea (0,0,0,10000)
+
+for x=-1600,1600,35 do for y=-1600,1600,35 do ThePlayer.player_classified.MapExplorer:RevealArea(x,0,y) end end
+</code></pre></div></div>
+
+<p><a href="https://zhuanlan.zhihu.com/p/34134405">「饥荒生存攻略」联机版 · 终极代码大全 - 知乎 (zhihu.com)</a></p>
+
+<h1 id="指令">指令</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for k,v in pairs (AllPlayers) do v:PushEvent ('respawnfromghost') end
+群体复活
+require("debugcommands") d_resetskilltree()
+技能全开，重新选择技能
+
+c_sethealth(百分数)
+可以把生命值（不是上限）设置为百分之多少，注：使用小数代替百分数，如0.8=80%
+c_setsanity(百分数)
+设置精神值为50%，则输入：c_setsanity(0.5)
+c_sethunger(百分数)
+设置饥饿值为50%，则输入：c_sethunger(0.5)
+
+c_give(“XX”,数量)——直接放包里
+c_spawn(“XX”，数量)——放鼠标指针指示的地上
+footballhat：猪皮头盔
+armormarble：大理石甲
+hambat:火腿棒
+cane：步行手杖
+cutgrass：草
+twigs：树枝
+log：木头
+
+
+c_gonext("代码")
+把你传送到附近的“代码”的位置
+
+TheInput:GetWorldEntityUnderMouse():Remove()
+删除鼠标位置的东西
+
+GetClock():NextPhase()
+跳过当前时间段，比如白天跳到黄昏
+
+C_save
+存档
+</code></pre></div></div>
+
+<h1 id="羽毛扇">羽毛扇</h1>
+
+<p>不可以修补</p>
+
+<h1 id="野牛迁移">野牛迁移</h1>
+
+<p>1.牛铃牵回家</p>
+
+<p>2.断绝联系，攻击一下</p>
+
+<p>3.上下线</p>
+
+<h1 id="绿洲">绿洲</h1>
+
+<p>不知道你的绿洲在不在沙漠边缘，机制并不是说沙漠和绿洲不会自燃，是你站在沙漠里你旁边一定范围的东西不会自燃。所以在沙漠边缘的绿洲很鸡肋，夏天当你路过绿洲但是没踩到沙漠，你的绿洲还是会自燃。。。因为你的绿洲太靠近沙漠边缘了。。这样的位置是不正常的。此外，如果家里有牛或者狗牙陷阱或者其他动物，容易把火狗打死在家里烧起来。。</p>
+
+<p>需要注意的是，如果在蚁狮沙漠的边缘建家，人站在沙漠外，家在沙漠内但是属于人物加载范围，家也会有自燃的几率</p>
+
+<h1 id="食谱">食谱</h1>
+
+<p>波兰水饺可以由<a href="https://dontstarve.huijiwiki.com/wiki/烹饪">烹饪</a>产生，制作配方为：<a href="https://dontstarve.huijiwiki.com/wiki/肉度">肉度</a>大于0，<a href="https://dontstarve.huijiwiki.com/wiki/蛋度">蛋度</a>大于0，<a href="https://dontstarve.huijiwiki.com/wiki/蔬菜度">蔬菜度</a>大于等于0.5，没有<a href="https://dontstarve.huijiwiki.com/wiki/不可食用度">不可食用度</a>。优先级为5，需要花费20秒。</p>
+
+<h1 id="克劳斯">克劳斯</h1>
+
+<p>第三个地皮左上顶点向上数一格向左数三格</p>
+
+<p>赃物袋卡不住克劳斯了，使用两个食人花卡</p>
+
+<h1 id="蜂后">蜂后</h1>
+
+<p>狂暴克劳斯打恐惧之眼到狂暴，狂暴双子魔眼打蜂后，泰拉之盒一定要放在巨大蜂巢旁边，大约四分之一天多打完</p>
