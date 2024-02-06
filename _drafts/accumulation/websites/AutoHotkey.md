@@ -1,0 +1,1 @@
+[Google划词翻译 – AutoAHK](https://www.autoahk.com/archives/35086#H2-0)

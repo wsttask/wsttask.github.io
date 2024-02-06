@@ -1,0 +1,1 @@
+Setting->Editer->General->Auto Import，点击Auto Import，把下图红框前面都打上勾选中，然后就OK了！

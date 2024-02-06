@@ -1,0 +1,1 @@
+edit configurations ->single instance only 的勾去掉

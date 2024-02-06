@@ -1,0 +1,1 @@
+[解决Windows下SSH登陆时的“Bad owner or permissions”的问题另类办法-CSDN博客](https://blog.csdn.net/weixin_43145361/article/details/108882983)

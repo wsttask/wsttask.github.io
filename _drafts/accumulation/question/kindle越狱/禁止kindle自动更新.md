@@ -1,0 +1,1 @@
+[如何禁止 Kindle 自动更新（四招阻止固件升级） – 书伴 (bookfere.com)](https://bookfere.com/post/472.html)

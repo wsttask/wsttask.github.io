@@ -1,0 +1,1 @@
+[Kindle 越狱插件资源下载及详细安装步骤 – 书伴 (bookfere.com)](https://bookfere.com/post/311.html#p_8)

@@ -1,0 +1,1 @@
+[【精选】WINDOWS安装多个JDK，并随意切换JDK版本_安装了多个jdk怎么知道自己用的是哪个-CSDN博客](https://blog.csdn.net/weixin_41753664/article/details/121633553?ops_request_misc=&request_id=&biz_id=102&utm_term=假定我在windows电脑上安装了多个版本的JDK，如何查看&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-121633553.nonecase&spm=1018.2226.3001.4187)
