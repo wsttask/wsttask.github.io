@@ -1,0 +1,1 @@
+[Jekyll 安装第三方模版 - Solomon's 技术专栏 - SegmentFault 思否](https://segmentfault.com/a/1190000018004632)

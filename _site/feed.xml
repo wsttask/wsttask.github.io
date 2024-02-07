@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-07T20:36:08+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/portal/2024/02/07/portal.html" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-07T20:35:50+08:00</published><updated>2024-02-07T20:35:50+08:00</updated><id>https://wsttask.github.io/portal/2024/02/07/portal</id><content type="html" xml:base="https://wsttask.github.io/portal/2024/02/07/portal.html"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-07T21:23:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">A系列，B系列纸张大小来源</title><link href="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html" rel="alternate" type="text/html" title="A系列，B系列纸张大小来源" /><published>2024-02-07T21:23:04+08:00</published><updated>2024-02-07T21:23:04+08:00</updated><id>https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1</id><content type="html" xml:base="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/357055986?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1738577194182594560&amp;utm_source=wechat_session">纸张尺寸 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="knowledge" /><summary type="html"><![CDATA[纸张尺寸 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/07/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-07T21:18:02+08:00</published><updated>2024-02-07T21:18:02+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/07/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/07/YAML.html"><![CDATA[<ul>
+  <li>
+    <p>$layout:$ 使用的模板</p>
+  </li>
+  <li>$title:$ 标题名</li>
+  <li>$categories:$ 分类</li>
+  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">Liquid语法网址</title><link href="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html" rel="alternate" type="text/html" title="Liquid语法网址" /><published>2024-02-07T20:52:28+08:00</published><updated>2024-02-07T20:52:28+08:00</updated><id>https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80</id><content type="html" xml:base="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html"><![CDATA[<table>
+  <tbody>
+    <tr>
+      <td>[操作符 – Liquid 模板语言中文文档</td>
+      <td>Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name></name></author><summary type="html"><![CDATA[[操作符 – Liquid 模板语言中文文档 Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-07T20:49:55+08:00</published><updated>2024-02-07T20:49:55+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -93,104 +107,4 @@ UTF-8的编码规则很简单，只有二条：
 
 <h4 id="gbk">GBK</h4>
 
-<p>汉字的GBK编码占用两字节,由于 GB2312 只收录 6763 个汉字，有不少汉字，部分人名用字（如朱总理的“镕”字），台湾及香港使用的繁体字等，并未收录在内。所以国家于 1995 年 12 月制定了汉字内码扩展规范，简称 GBK。GBK 同样对汉字采用双字节编码，可以说是对 GB2312 编码的扩充，向下完全兼容 GB2312-80 编码</p>]]></content><author><name></name></author><category term="字符编码" /><summary type="html"><![CDATA[UTF: Unicode Transformation Format ISO: International Organization for Standardization GBK: gb:国标]]></summary></entry><entry><title type="html">excerpt one</title><link href="https://wsttask.github.io/excerpt/2024/02/06/1.html" rel="alternate" type="text/html" title="excerpt one" /><published>2024-02-06T22:25:59+08:00</published><updated>2024-02-06T22:25:59+08:00</updated><id>https://wsttask.github.io/excerpt/2024/02/06/1</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/02/06/1.html"><![CDATA[<p>1.骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。</p>
-
-<p>2.太平本是将军定，不许将军见太平。</p>
-
-<p>3.人生当如蜡烛一样，从头燃到尾，始终光明。</p>
-
-<p>4.人少，则慕父母；知好色，则慕少艾；有妻子，则慕妻子；仕则慕君，不得于君则热中。大孝终身慕父母。五十而慕者，予于大舜见之矣。</p>
-
-<p>5.朱泙漫学屠龙于支离益,殚千金之家,三年技成,而无所用其巧。</p>
-
-<p>6.我还是从前那个少年，没有一丝丝改变，时间只不过是考验，种在心中信念丝毫未减，眼前这个少年，还是最初那张脸。</p>
-
-<p>7.我希望躺在向日葵上，即使沮丧，也能朝着阳光。</p>
-
-<p>8.喜欢是很贵的，哪有那么容易消费得起，所以要存起来，只给一个人，一瓶装的草莓味的喜欢。</p>
-
-<p>9.我想不出来第一次看见你的时候，你穿的衣服是什么颜色，是晴天还是雨天，因为我从未想过，到那天之后我会喜欢你。</p>
-
-<p>10.佛曰：人生有八苦，生，老，病，死；爱别离，怨长久，求不得，放不下。</p>
-
-<p>11.何谓恩爱别苦？室家内外，兄弟妻子，共相恋慕，一朝破亡，为人抄劫，各自分张，父东子西，母南女北，非唯一处，为人奴婢，各自悲呼，心内断绝，窈窈冥冥，无有相见之期。”</p>
-
-<p>12.也许努力有些煎熬，但真的，熬过去就好了。</p>
-
-<p>13.想尝试一下早睡早起，规律三餐，晒半个小时太阳，日读两个小时书的生活。</p>
-
-<p>14.我好像抱抱你闻闻你身上的味道，把下巴搁在你的肩上，然后乖乖睡着。</p>
-
-<p>15.佛不要你皈依，佛要你欢喜。</p>
-
-<p>16.世人慌慌张张，不过图碎银几两，偏偏着碎银几两，压断了多少人的脊梁。</p>
-
-<p>17.剑气纵横三千里，一剑寒光十九州。</p>
-
-<p>18.十八年风雨，半生鸿业，说与枯骨听。</p>
-
-<p>19.世人多媚骨，唯有君如故。</p>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[1.骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。]]></summary></entry><entry><title type="html">Jekyll</title><link href="https://wsttask.github.io/2024/02/06/jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2024-02-06T20:39:47+08:00</published><updated>2024-02-06T20:39:47+08:00</updated><id>https://wsttask.github.io/2024/02/06/jekyll</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/jekyll.html"><![CDATA[<pre><code class="language-cmd">//实时渲染网页
-//在自动构建过程中对 _config.yml 的修改将不会被包含其中
-jekyll server --watch
-
-$ jekyll build
-# =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中。
-
-$ jekyll build --destination &lt;destination&gt;
-# =&gt; 当前文件夹中的内容将会生成到目标文件夹&lt;destination&gt;中。
-
-$ jekyll build --source &lt;source&gt; --destination &lt;destination&gt;
-# =&gt; 指定源文件夹&lt;source&gt;中的内容将会生成到目标文件夹&lt;destination&gt;中。
-
-$ jekyll build --watch
-# =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中，
-#    查看改变，并且自动再生成。
-</code></pre>]]></content><author><name></name></author><summary type="html"><![CDATA[```cmd //实时渲染网页 //在自动构建过程中对 _config.yml 的修改将不会被包含其中 jekyll server –watch]]></summary></entry><entry><title type="html">Git_command</title><link href="https://wsttask.github.io/2024/02/06/git_command.html" rel="alternate" type="text/html" title="Git_command" /><published>2024-02-06T12:11:26+08:00</published><updated>2024-02-06T12:11:26+08:00</updated><id>https://wsttask.github.io/2024/02/06/git_command</id><content type="html" xml:base="https://wsttask.github.io/2024/02/06/git_command.html"><![CDATA[<h3 id="初始化仓库并与远程仓库建立连接">初始化仓库，并与远程仓库建立连接</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 初始化仓库，无参数代表初始化本目录为仓库
-git init &lt;filename&gt;
-// 使用 git remote add 命令将本地仓库与远程仓库进行关联，其中 origin 是远程仓库的别名，也可以是其他的名字
-git remote add origin https://github.com/xu-xiaoya/Elegent.git
-//
-
-</code></pre></div></div>
-
-<h3 id="git-push详解">git push详解</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 命令格式
-git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;
-// 如果本地分支名与远程分支名相同，则可以省略冒号与远程分支名
-git push &lt;远程主机名&gt; &lt;本地分支名&gt;
-
-example:
-// 以下命令将本地的 master 分支推送到 origin 主机的 master 分支。
-git push origin master
-
-// 如果本地版本与远程版本有差异，但又要强制推送可以使用 <span class="nt">--force</span> 参数：
-git push <span class="nt">--force</span> origin master
-
-</code></pre></div></div>
-
-<p><a href="https://blog.csdn.net/Lakers2015/article/details/111318801">git push 的 -u 参数含义_git push -u-CSDN博客</a></p>
-
-<h3 id="git-remote">git remote</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote <span class="nt">-v</span> //查看git对应的远程仓库地址
-
-git remote remove &lt;remote_name&gt;//从当前仓库中删除指定的远程仓库。
-
-git remote <span class="nt">-v</span> //查看是否删除成功，如果没有任何返回结果，表示OK
-
-git remote rename &lt;old_name&gt; &lt;new_name&gt;//将已配置的远程仓库重命名。
-
-git remote add origin https://github.com/<span class="k">***</span>.git //重新关联git远程仓库地址
-</code></pre></div></div>
-
-<h3 id="git-substree">git substree</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
-
-<h3 id="git-pull">git pull</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[初始化仓库，并与远程仓库建立连接]]></summary></entry></feed>
+<p>汉字的GBK编码占用两字节,由于 GB2312 只收录 6763 个汉字，有不少汉字，部分人名用字（如朱总理的“镕”字），台湾及香港使用的繁体字等，并未收录在内。所以国家于 1995 年 12 月制定了汉字内码扩展规范，简称 GBK。GBK 同样对汉字采用双字节编码，可以说是对 GB2312 编码的扩充，向下完全兼容 GB2312-80 编码</p>]]></content><author><name></name></author><category term="字符编码" /><summary type="html"><![CDATA[UTF: Unicode Transformation Format ISO: International Organization for Standardization GBK: gb:国标]]></summary></entry></feed>

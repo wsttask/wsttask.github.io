@@ -1,0 +1,1 @@
+[bundle install 长时间无响应解决办法_could not reach host index.rubygems.org. check you-CSDN博客](https://blog.csdn.net/qq_24395387/article/details/103893335)

@@ -2,6 +2,7 @@
 layout: post
 title: 移动端浏览器主页
 categories: [portal]
+permalink: /browser
 ---
 
 # gitee
