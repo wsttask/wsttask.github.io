@@ -1,3 +1,12 @@
+---
+layout: post
+title: ASCLL码表
+date: 2024-02-06
+categories: [ascll]
+---
+
+
+
 十进制DEC|八进制OCT|十六进制HEX|二进制BIN|符号Symbol|HTML实体编码|中文解释
 -|-|-|-|-|-|-
 0|000|00|00000000|NUL|&#000;|空字符 终止符

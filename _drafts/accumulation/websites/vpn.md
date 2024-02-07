@@ -1,3 +1,11 @@
+---
+layout: post
+title: vpn
+categories: [vpn]
+---
+
+
+
 https://ikuuu.org/auth/login
 
 [sockboom.link](https://sockboom.link/user/)
@@ -6,4 +14,4 @@ https://ikuuu.org/auth/login
 
 sockboom域名更新了
 
-ilink	这个是edge的扩展
+ilink	这个是edge的扩展，很好用
