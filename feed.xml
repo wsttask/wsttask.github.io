@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-07T21:18:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/07/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-07T21:18:02+08:00</published><updated>2024-02-07T21:18:02+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/07/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/07/YAML.html"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-07T21:23:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">A系列，B系列纸张大小来源</title><link href="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html" rel="alternate" type="text/html" title="A系列，B系列纸张大小来源" /><published>2024-02-07T21:23:04+08:00</published><updated>2024-02-07T21:23:04+08:00</updated><id>https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1</id><content type="html" xml:base="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/357055986?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1738577194182594560&amp;utm_source=wechat_session">纸张尺寸 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="knowledge" /><summary type="html"><![CDATA[纸张尺寸 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/07/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-07T21:18:02+08:00</published><updated>2024-02-07T21:18:02+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/07/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/07/YAML.html"><![CDATA[<ul>
   <li>
     <p>$layout:$ 使用的模板</p>
   </li>
@@ -107,40 +107,4 @@ UTF-8的编码规则很简单，只有二条：
 
 <h4 id="gbk">GBK</h4>
 
-<p>汉字的GBK编码占用两字节,由于 GB2312 只收录 6763 个汉字，有不少汉字，部分人名用字（如朱总理的“镕”字），台湾及香港使用的繁体字等，并未收录在内。所以国家于 1995 年 12 月制定了汉字内码扩展规范，简称 GBK。GBK 同样对汉字采用双字节编码，可以说是对 GB2312 编码的扩充，向下完全兼容 GB2312-80 编码</p>]]></content><author><name></name></author><category term="字符编码" /><summary type="html"><![CDATA[UTF: Unicode Transformation Format ISO: International Organization for Standardization GBK: gb:国标]]></summary></entry><entry><title type="html">excerpt one</title><link href="https://wsttask.github.io/excerpt/2024/02/06/1.html" rel="alternate" type="text/html" title="excerpt one" /><published>2024-02-06T22:25:59+08:00</published><updated>2024-02-06T22:25:59+08:00</updated><id>https://wsttask.github.io/excerpt/2024/02/06/1</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/02/06/1.html"><![CDATA[<p>1.骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。</p>
-
-<p>2.太平本是将军定，不许将军见太平。</p>
-
-<p>3.人生当如蜡烛一样，从头燃到尾，始终光明。</p>
-
-<p>4.人少，则慕父母；知好色，则慕少艾；有妻子，则慕妻子；仕则慕君，不得于君则热中。大孝终身慕父母。五十而慕者，予于大舜见之矣。</p>
-
-<p>5.朱泙漫学屠龙于支离益,殚千金之家,三年技成,而无所用其巧。</p>
-
-<p>6.我还是从前那个少年，没有一丝丝改变，时间只不过是考验，种在心中信念丝毫未减，眼前这个少年，还是最初那张脸。</p>
-
-<p>7.我希望躺在向日葵上，即使沮丧，也能朝着阳光。</p>
-
-<p>8.喜欢是很贵的，哪有那么容易消费得起，所以要存起来，只给一个人，一瓶装的草莓味的喜欢。</p>
-
-<p>9.我想不出来第一次看见你的时候，你穿的衣服是什么颜色，是晴天还是雨天，因为我从未想过，到那天之后我会喜欢你。</p>
-
-<p>10.佛曰：人生有八苦，生，老，病，死；爱别离，怨长久，求不得，放不下。</p>
-
-<p>11.何谓恩爱别苦？室家内外，兄弟妻子，共相恋慕，一朝破亡，为人抄劫，各自分张，父东子西，母南女北，非唯一处，为人奴婢，各自悲呼，心内断绝，窈窈冥冥，无有相见之期。”</p>
-
-<p>12.也许努力有些煎熬，但真的，熬过去就好了。</p>
-
-<p>13.想尝试一下早睡早起，规律三餐，晒半个小时太阳，日读两个小时书的生活。</p>
-
-<p>14.我好像抱抱你闻闻你身上的味道，把下巴搁在你的肩上，然后乖乖睡着。</p>
-
-<p>15.佛不要你皈依，佛要你欢喜。</p>
-
-<p>16.世人慌慌张张，不过图碎银几两，偏偏着碎银几两，压断了多少人的脊梁。</p>
-
-<p>17.剑气纵横三千里，一剑寒光十九州。</p>
-
-<p>18.十八年风雨，半生鸿业，说与枯骨听。</p>
-
-<p>19.世人多媚骨，唯有君如故。</p>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[1.骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。]]></summary></entry></feed>
+<p>汉字的GBK编码占用两字节,由于 GB2312 只收录 6763 个汉字，有不少汉字，部分人名用字（如朱总理的“镕”字），台湾及香港使用的繁体字等，并未收录在内。所以国家于 1995 年 12 月制定了汉字内码扩展规范，简称 GBK。GBK 同样对汉字采用双字节编码，可以说是对 GB2312 编码的扩充，向下完全兼容 GB2312-80 编码</p>]]></content><author><name></name></author><category term="字符编码" /><summary type="html"><![CDATA[UTF: Unicode Transformation Format ISO: International Organization for Standardization GBK: gb:国标]]></summary></entry></feed>
