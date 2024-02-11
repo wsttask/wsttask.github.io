@@ -21,3 +21,11 @@ permalink: /browser
 
 ### [tasks](https://www.kdocs.cn/l/coVFRqQ7x1UZ)
 
+# Mail
+
+### [outlook](https://outlook.live.com/mail)
+
+# TIME
+
+### [北京时间](https://beijing-time.org/)
+

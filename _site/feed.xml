@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-07T21:23:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">A系列，B系列纸张大小来源</title><link href="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html" rel="alternate" type="text/html" title="A系列，B系列纸张大小来源" /><published>2024-02-07T21:23:04+08:00</published><updated>2024-02-07T21:23:04+08:00</updated><id>https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1</id><content type="html" xml:base="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/357055986?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1738577194182594560&amp;utm_source=wechat_session">纸张尺寸 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="knowledge" /><summary type="html"><![CDATA[纸张尺寸 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/07/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-07T21:18:02+08:00</published><updated>2024-02-07T21:18:02+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/07/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/07/YAML.html"><![CDATA[<ul>
-  <li>
-    <p>$layout:$ 使用的模板</p>
-  </li>
-  <li>$title:$ 标题名</li>
-  <li>$categories:$ 分类</li>
-  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">Liquid语法网址</title><link href="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html" rel="alternate" type="text/html" title="Liquid语法网址" /><published>2024-02-07T20:52:28+08:00</published><updated>2024-02-07T20:52:28+08:00</updated><id>https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80</id><content type="html" xml:base="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html"><![CDATA[<table>
-  <tbody>
-    <tr>
-      <td>[操作符 – Liquid 模板语言中文文档</td>
-      <td>Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)</td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name></name></author><summary type="html"><![CDATA[[操作符 – Liquid 模板语言中文文档 Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-07T20:49:55+08:00</published><updated>2024-02-07T20:49:55+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-11T22:58:24+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-11T22:58:08+08:00</published><updated>2024-02-11T22:58:08+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -26,7 +12,29 @@
 
 <h1 id="wps">WPS</h1>
 
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">vpn</title><link href="https://wsttask.github.io/vpn/2024/02/07/vpn.html" rel="alternate" type="text/html" title="vpn" /><published>2024-02-07T20:26:30+08:00</published><updated>2024-02-07T20:26:30+08:00</updated><id>https://wsttask.github.io/vpn/2024/02/07/vpn</id><content type="html" xml:base="https://wsttask.github.io/vpn/2024/02/07/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login</p>
+<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
+
+<h1 id="mail">Mail</h1>
+
+<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
+
+<h1 id="time">TIME</h1>
+
+<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">A系列，B系列纸张大小来源</title><link href="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html" rel="alternate" type="text/html" title="A系列，B系列纸张大小来源" /><published>2024-02-07T21:23:04+08:00</published><updated>2024-02-07T21:23:04+08:00</updated><id>https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1</id><content type="html" xml:base="https://wsttask.github.io/knowledge/2024/02/07/A4%E7%BA%B8%E5%BC%A0%E5%A4%A7%E5%B0%8F%E7%9A%84%E7%BC%98%E7%94%B1.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/357055986?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1738577194182594560&amp;utm_source=wechat_session">纸张尺寸 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="knowledge" /><summary type="html"><![CDATA[纸张尺寸 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/07/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-07T21:18:02+08:00</published><updated>2024-02-07T21:18:02+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/07/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/07/YAML.html"><![CDATA[<ul>
+  <li>
+    <p>$layout:$ 使用的模板</p>
+  </li>
+  <li>$title:$ 标题名</li>
+  <li>$categories:$ 分类</li>
+  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">Liquid语法网址</title><link href="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html" rel="alternate" type="text/html" title="Liquid语法网址" /><published>2024-02-07T20:52:28+08:00</published><updated>2024-02-07T20:52:28+08:00</updated><id>https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80</id><content type="html" xml:base="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html"><![CDATA[<table>
+  <tbody>
+    <tr>
+      <td>[操作符 – Liquid 模板语言中文文档</td>
+      <td>Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name></name></author><summary type="html"><![CDATA[[操作符 – Liquid 模板语言中文文档 Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)]]></summary></entry><entry><title type="html">vpn</title><link href="https://wsttask.github.io/vpn/2024/02/07/vpn.html" rel="alternate" type="text/html" title="vpn" /><published>2024-02-07T20:26:30+08:00</published><updated>2024-02-07T20:26:30+08:00</updated><id>https://wsttask.github.io/vpn/2024/02/07/vpn</id><content type="html" xml:base="https://wsttask.github.io/vpn/2024/02/07/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login</p>
 
 <p><a href="https://sockboom.link/user/">sockboom.link</a></p>
 
