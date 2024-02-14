@@ -1,0 +1,31 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+#define MAXSIZE 100
+int i, j, k;
+int a[MAXSIZE][MAXSIZE];
+
+typedef struct
+{
+	int row;
+	int column;//row:行,column:列
+	int data;
+}Triple;//triple:三部分的，即三元组。
+
+typedef struct
+{
+	Triple a[MAXSIZE];
+	int m, n, len;
+}TSMatrix;
+
+Triple* CreatTriple(Triple* p, int n)
+{
+	p = (Triple*)malloc(sizeof(Triple) * n);
+	if (p == NULL)
+	{
+		return NULL;
+	}
+	memset(p, 0, sizeof(Triple) * n);
+}

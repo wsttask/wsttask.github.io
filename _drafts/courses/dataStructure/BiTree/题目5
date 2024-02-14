@@ -1,0 +1,92 @@
+/*************************************************************
+二叉排序树的判别(耿8.6)
+Description
+试编写程序，判别给定的二叉树是否为二叉排序树。设此二叉树以二叉链表作存储结构，且树中结点的关键字均不同。
+lnput
+按先序输入二叉树各结点（结点值大于0)，其中-1表示取消建立子树结点。
+Output
+若该二叉树为二叉排序树，则输出yes;否则，输出no。
+Sample Input
+12 8 4 -1 -1 10 -1 -1 1613 -1 -1 18 -1 -1
+Sample Output
+yes
+*************************************************************/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+typedef struct Node
+{
+	int data;
+	struct Node* Lchild, * Rchild;
+}BiNode, *BiTree;
+
+void CreatBiTree(BiTree* L)//先序建立二叉树
+{
+	int x;
+	scanf("%d", &x);
+	
+	if (x == -1)
+	{
+
+	}
+	else
+	{
+		(*L) = (BiTree)malloc(sizeof(BiNode));
+		memset((*L), 0, sizeof(BiNode));//清零要注意，毕竟memset申请的空间并不会初始化。
+		(*L)->data = x;
+		CreatBiTree(&((*L)->Lchild));
+		CreatBiTree(&((*L)->Rchild));
+	}
+}
+
+int PreOrder(BiTree root)
+{
+	if (root != NULL)
+	{
+		if (root->Lchild == NULL && root->Rchild == NULL)
+		{
+			
+		}
+		else if (root->Lchild == NULL)
+		{
+			if (root->data > root->Rchild->data)
+			{
+				printf("no");
+				return 0;
+			}
+		}
+		else if (root->Rchild == NULL)
+		{
+			if (root->data < root->Lchild->data)
+			{
+				printf("no");
+				return 0;
+			}
+		}
+		else
+		{
+			if (root->data > root->Rchild->data || root->data < root->Lchild->data)
+			{
+				printf("no");
+				return 0;
+			}
+		}
+		PreOrder(root->Lchild);
+		PreOrder(root->Rchild);
+	}
+	return 1;
+
+}
+
+int main()
+{
+	BiTree L;
+	CreatBiTree(&L);
+	int a = PreOrder(L);
+	if (a == 1)
+	{
+		printf("yes");
+	}
+	return 0;
+}

@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define MAXSIZE 100
+typedef struct
+{
+	int data[MAXSIZE];
+	int front;
+	int rear;
+	int tag;
+}SeqQueue;
+
+void InitQueue(SeqQueue* Q)
+{
+	Q->front = Q->rear = 0;
+	Q->tag = 0;
+}
+void EnterQueue(SeqQueue* Q, int x)
+{
+	if ((Q->rear == Q->front)&&Q->tag==1)
+	{
+		printf("queue is full");
+		return;
+	}
+	Q->data[Q->rear+1] = x;
+	Q->rear = (Q->rear + 1) % MAXSIZE;
+	if (Q->rear == Q->front)
+	{
+		Q->tag = 1;
+	}
+}
+
+void DeleteQueue(SeqQueue* Q, int x)
+{
+	if (Q->rear == Q->front && Q->tag == 0)
+	{
+		printf("queue is empty");
+		return;
+	}
+	Q->front = (Q->front + 1) % MAXSIZE;
+	Q->tag = 0;
+}

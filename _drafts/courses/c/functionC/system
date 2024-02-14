@@ -1,0 +1,4 @@
+#include<stdlib.h>
+
+system("pause");
+//暂停程序

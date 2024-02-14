@@ -1,0 +1,126 @@
+/***************************************
+Description
+给一个赋权图（无向图），求0号结点到其余所有结点的最短路径的长度。
+
+Input
+先输入一个小于等于100的正整数n，然后输入赋权图的邻接矩阵（10000表示无穷大，并且任意一条简单路径的长度都小于10000）
+
+Output
+按结点编号的顺序输出0号结点所有结点的最短路径的长度。
+
+使用prim算法
+****************************************/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+#define MAX_VERTEX_NUM 6
+
+int i, j, k;
+
+typedef struct ArcNode
+{
+	int power;
+	//其他信息；
+};
+
+typedef struct AdjMatrix//邻接矩阵表示法
+{
+	ArcNode* arcs;//定义一个一位数组，但是用作二维
+	//ArcNode arcs[MAX_VERTEX_NUM][MAX_VERTEX_NUM];
+	//int vex, arc;//图的定点数和弧数；
+}AdjMatrix;//(Adjacency Matrix Graph)
+
+
+
+void MiniSpanTree_Prim(AdjMatrix* G,int n)//prim算法.0号节点
+{
+	int temp1 = 10000, temp2 = -1;
+	int* U, * Edge_power;
+	U = (int*)malloc(sizeof(int) * n);
+	Edge_power = (int*)malloc(sizeof(int) * n);
+	memset(U, 0, sizeof(int) * n);
+	memset(Edge_power, 0, sizeof(int) * n);
+
+	U[0] = 0;
+	U[1] = -1;
+
+	for (i = 1; i < n; i++)//跳过0找
+	{
+		if (G->arcs[i].power < temp1)
+		{
+			temp1 = G->arcs[i].power;
+			U[1] = i;
+			Edge_power[1] = temp1;
+		}
+	}
+
+	//还需要一个记录边的数组，
+	for (int m = 2; m < n; m++)
+	{
+		temp1 = 10000;
+		for (i = 0; i < m; i++)
+		{
+			for (j = 0; j < n; j++)
+			{
+				int p = 0;
+				for (k = 0; k < m; k++)
+				{
+					if (U[k] == j)
+					{
+						p = 1;
+						break;
+					}
+				}
+				if (p == 1)
+				{
+					continue;
+				}//找到不在U中的 j
+				if (G->arcs[U[i] * n + j].power < temp1 && G->arcs[U[i] * n + j].power != 0)
+				{
+					temp1 = G->arcs[U[i] * n + j].power;
+					U[m] = j;
+					Edge_power[m] = temp1+Edge_power[m-1];
+				}
+
+			}
+		}
+	}
+
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			if (U[j] == i)
+			{
+				printf("%d\n", Edge_power[j]);
+				break;
+			}
+		}
+	}
+}
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	
+	AdjMatrix G;
+
+	memset(&G, 0, sizeof(G));
+	G.arcs = (ArcNode*)malloc(sizeof(ArcNode) * n * n);
+	memset(G.arcs, 0, sizeof(ArcNode) * n * n);
+
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			scanf("%d", &G.arcs[i * n + j]);
+		}
+	}
+
+	MiniSpanTree_Prim(&G, n);
+	return 0;
+
+}
+

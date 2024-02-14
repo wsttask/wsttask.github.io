@@ -1,0 +1,8 @@
+char* strcpy(char* destination,const char* source);
+
+1.函数的参数：
+char* destination---------目标字符串的首地址
+const char* source------源地址：被复制的字符串的首地址，用const修饰，避免修改掉被拷贝的字符串
+
+2.函数的返回值类型：
+char*：返回的是目标字符串的首地址 

@@ -1,0 +1,12 @@
+头文件：stdlib
+函数原型：int rand(void)
+返回值：一个随机数
+
+头文件：
+函数原型：void srand(unsigned int seed);
+返回值：无
+
+-rand函数调用
+rand()函数每次调用前都会查询是否调用过srand(seed)，是否给seed设定了一个值，
+如果有那么它会自动调用srand(seed)一次来初始化它的起始值，若之前没有调用srand（seed）
+那么系统会自动给seed赋初始值，即srand（1）自动调用它一次

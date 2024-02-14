@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+#define MAXSIZE 100
+char s[MAXSIZE];
+char a;
+
+int i, j;
+
+int main()
+{
+	fgets(s, 100, stdin);
+	/*fgets（str，10，fp） 其中fp是指针，也可以写stdin。
+	实际上只读n - 1个,最后一个是给\0的；遇到\n就停止，它是第9个那就读，
+	第十个就按只读n - 1个，第8个就只读8个。会把\n读入*/
+	printf("%s", s);
+	fprintf(stdout, "%s", s);
+	fprintf(stdout, "%s %s %s %d", "we", "are", "in", 2022);
+	puts(s);
+
+	char arr[10];
+	scanf("%s", arr);//用scanf输入字符串会在最后加入'\0'，但是如果位置不够加\0，那就不会加，导致程序错误
+	printf("%s\n", arr);
+
+	a = getchar();//读入一个缓存中的字符，什么都可以，包括\n
+	printf("%c1\n", a);
+
+	a = fgetc(stdin);//读入一个缓存中的字符，什么都可以，包括\n
+	printf("%c2\n", a);
+
+	a = getc(stdin);//读入一个缓存中的字符，什么都可以，包括\n
+	printf("%c3", a);
+
+
+
+	return 0;
+
+}

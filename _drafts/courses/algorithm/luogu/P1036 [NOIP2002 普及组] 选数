@@ -1,0 +1,61 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<iostream>
+#include<math.h>
+
+int x[20];
+
+
+
+bool isprime(int n) 
+{//判断是否质数
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
+
+int rule(int choose_left_num, int already_sum, int start, int end)
+{
+    //choose_left_num为剩余的k，already_sum为前面累加的和，start和end为全组合剩下数字的选取范围；
+    //调用递归生成全组合，在过程中逐渐把K个数相加，当选取的数个数为0时，直接返回前面的累加和是否为质数即可
+    if (choose_left_num == 0)
+        return isprime(already_sum);
+    int sum = 0;
+    for (int i = start; i <= end; i++)
+    {
+        sum += rule(choose_left_num - 1, already_sum + x[i], i + 1, end);
+    }//这一行代码不太懂，为什么是这样。
+    return sum;
+}
+/*有点看不懂，为什么把sum=0放到了递归里面，那这样的话每次都会定义sum，嗯，然后返回，有什么意义，、
+* 关键是看出来他是怎么调用递归生成全组合的
+*/
+int ans = 0;
+void rules(int choose_left_num, int already_sum, int start, int end)
+{
+    if (choose_left_num == 0)
+    {
+        if (isprime(already_sum))
+        {
+            ans++;
+        }
+    }
+    for (int i = start; i <= end; i++)
+    {
+        rules(choose_left_num - 1, already_sum + x[i], i + 1, end);
+    }
+
+}
+
+int main() 
+{
+    int n, k;//依照题目所设
+    scanf("%d%d", &n, &k);
+    for (int i = 0; i < n; i++)
+        scanf("%d", &x[i]);
+    printf("%d", rule(k, 0, 0, n - 1));//调用递归,k是要选取的个数
+    rules(k, 0, 0, n - 1);
+    printf("\n%d", ans);
+}

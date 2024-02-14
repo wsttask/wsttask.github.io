@@ -1,0 +1,88 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+#define MAX1  100//max1 是指数组最大
+#define MAX2 10000//max2 是指边的权为无穷大
+
+int i, j, k;
+
+//typedef struct ArcNode
+//{
+//	int power;
+//};
+//
+//typedef struct AdjMatrix//邻接矩阵表示法
+//{
+//	ArcNode* arcs;//定义一个一维数组，但是用作二维
+//}AdjMatrix;//(Adjacency Matrix Graph)
+
+typedef struct AdjMatrix
+{
+	int* spot;//定义一个一维数组，但是用作二维
+}AdjMatrix;//(Adjacency Matrix Graph)
+
+int min(int x, int y)
+{
+	if (x > y)return y;
+	return x;
+}
+
+
+void prim(int n, AdjMatrix G)
+{
+	int res = 0;//res用来计算最小生成树的权值和
+	int* dist, * book;
+	dist = (int*)malloc(sizeof(int) * n); book = (int*)malloc(sizeof(int) * n);
+	memset(dist, 0, sizeof(int) * n); memset(book, 0, sizeof(int) * n);
+
+	dist[0] = 0;//把点0加入集合S，点0在集合S中，将它到集合的距离初始化为0
+	book[0] = 1;//表示点0已经加入到了S集合中
+	for (i = 1; i < n; i++)dist[i] = min(dist[i], G.spot[i]);//用点1去更新dist[]
+	for (i = 1; i < n; i++)
+	{
+		int temp = MAX2;//初始化距离
+		int t = -1;//接下来去寻找离集合S最近的点加入到集合中，用t记录这个点的下标。
+		for (j = 1; j < n; j++)//检查除0外其他节点是否在book中
+		{
+			if (!book[j] && dist[j] < temp)//如果这个点没有加入集合S，而且这个点到集合的距离小于temp就将下标赋给t
+			{
+				temp = dist[j];//更新集合V到集合S的最小值
+				t = j;//把点赋给t
+			}
+		}
+		if (t == -1) { res = -1; return; }
+		//如果t==-1，意味着在集合V找不到边连向集合S，生成树构建失败，将res赋值-1表示构建失败，结束函数
+		book[t] = 1;//如果找到了这个点，就把它加入集合S
+		res += dist[t];//加上这个点到集合S的距离
+		for (int j = 1; j <= n; j++)dist[j] = min(dist[j], G.spot[t * n + j]);//用新加入的点更新dist[]
+	}
+	//结束之后dist中储存的就是边和点。
+	//注意，该邻接矩阵表示图，斜对角线应该是MAX2,不需要，因为此时该点已经加入集合中了
+	free(book);
+	free(dist);
+}
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+
+	AdjMatrix G;
+
+	memset(&G, 0, sizeof(G));
+	G.spot = (int*)malloc(sizeof(int) * n * n);
+	memset(G.spot, 0, sizeof(int) * n * n);
+
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			scanf("%d", &G.spot[i * n + j]);
+		}
+	}
+
+	prim(n, G);
+
+	return 0;
+}

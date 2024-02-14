@@ -1,0 +1,70 @@
+/**********************************************************
+建立二叉树的二叉链表储存结构，并先序遍历输出
+例：A(B(#,D),C(E(#,F),#))
+输出：AB#DCE#F#
+***********************************************************/
+#include<stdio.h>
+#include <stdlib.h>
+
+
+typedef struct Node
+{
+    char data;
+    struct Node* LChild;
+    struct Node* RChild;
+}BiTNode, * BiTree;
+
+//构建二叉树
+
+void CreateBiTree(BiTree* p)
+{
+    char c, s;
+    (*p) = (BiTree)malloc(sizeof(BiTNode));//申请空间初始化
+    c = getchar();
+    s = c;
+    c = getchar();
+    (*p)->LChild = NULL;
+    (*p)->RChild = NULL;
+    if (s == ',')//如果，出现说明该节点是上一个节点的右子树
+    {
+        (*p)->data = c;
+        s = getchar();
+        if (s == '(')//(出现说明要开辟新的子节点
+        {
+            CreateBiTree(&((*p)->LChild));
+            CreateBiTree(&((*p)->RChild));
+        }
+    }
+    else //没有，说明后面要创建新的子树
+    {
+        (*p)->data = s;
+        if (c == '(')
+        {
+            CreateBiTree(&((*p)->LChild));
+            CreateBiTree(&((*p)->RChild));
+        }
+    }
+}
+
+void visit(char c)//这里要求遍历操作是输出节点的值，将visit函数独立还可以通过修改visit函数实现其他操作
+{
+    printf("%c", c);
+}
+
+void PreOrder(BiTree root)//先序遍历二叉树
+{
+    if (root != NULL)
+    {
+        visit(root->data);
+        PreOrder(root->LChild);
+        PreOrder(root->RChild);
+    }
+}
+
+int main()
+{
+    BiTree p;
+    CreateBiTree(&p);
+    PreOrder(p);
+    return 0;
+}

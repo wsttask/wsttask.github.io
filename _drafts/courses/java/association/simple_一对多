@@ -1,0 +1,81 @@
+simple：一对多
+
+//类： 电话
+public class Phone {
+
+    // 属性：型号
+    private String type;
+
+    // 属性：颜色
+    private String color;
+
+    // 属性：品牌
+    private String brand;
+
+    // 构造方法
+    public Phone() {
+
+    }
+
+    // Getters and Setters
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+}
+
+
+//类：人
+public class Person {
+    
+    //数组
+    private Phone[]  phones0 ;
+
+    //集合
+    private List<Phone> phones;
+
+    private Set<Phone> phones2;
+
+    private Map<String, Phone> phone3;
+
+    public Person() {
+        
+        this.phones0 = new Phone[3];
+
+        phones = new ArrayList<Phone>();
+
+    }
+
+}
+        this.color = color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+}

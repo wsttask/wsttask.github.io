@@ -1,0 +1,70 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct tagNode
+{
+	int data;
+	struct tagNode* next;
+}Node, * LinkList;
+
+void InitLinkList(LinkList* L)
+{
+	(*L) = (LinkList)malloc(sizeof(Node));//用malloc申请内存一定要检查内存是否申请成功！！！
+	if ((*L) == NULL)
+	{
+		printf("error");
+		return;
+	}
+	(*L)->next = NULL;
+}
+
+void InsertLink(LinkList L, int x)
+{
+	LinkList s, temp;
+	s = (LinkList)malloc(sizeof(Node));
+	if (s == NULL)
+	{
+		printf("error");
+	}
+	s->data = x;
+	temp = L;
+	temp->data = 3;
+
+	for (;;)
+	{
+		if (temp->next == NULL)
+		{
+			break;
+		}
+		temp = temp->next;
+	}
+	temp->next = s;
+	s->next = NULL;
+}
+
+int main()
+{
+	LinkList* L, head;
+	L = &head;
+	InitLinkList(L);//这样是为了可以修改头指针。而且所用的InitLinkList函数就不用返回值了。
+    head->next=NULL;//这一句必须写在上一句的后面，如果不那此时链表还没有创建，也就没有->next了
+
+	int n, x;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)
+	{
+		scanf("%d", &x);
+		InsertLink(*L, x);
+	}
+
+	LinkList ptemp = *L;
+	for (;;)
+	{
+		ptemp = ptemp->next;
+		printf("%d ", ptemp->data);
+		if (ptemp->next == NULL)
+			break;
+	}
+	return 0;
+}

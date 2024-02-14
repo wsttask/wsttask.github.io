@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+typedef struct queue
+{
+    int* data;
+    int front;
+    int rear;
+    int length;
+    int tag;
+}Queue;
+
+void CreatQueue(Queue* q, int n)
+{
+    q->length = n;
+    q->data = (int*)malloc(sizeof(int) * (q->length));//需要free才能把空间释放
+    q->tag = 0;
+    q->front = q->rear = 0;
+
+}
+int EnterQueue(Queue* q, int x)//其中x是入队列的元素
+{
+    if ((q->rear + 1) % (q->length) == q->front) //条件判断要看懂，记住队列的下标是从0，开始。
+        return 0;//0代表入队失败，及队满。
+    //if (q->tag == 1) return 0;
+    q->data[q->rear] = x;
+    q->rear = (q->rear + 1) % (q->length);
+    if (q->rear == q->front)
+    {
+        q->tag = 1;
+    }
+    else
+    {
+        q->tag = 0;
+    }
+    return 1;
+}
+int DeleteQueue(Queue* q)
+{
+    if (q->front == q->rear && q->tag == 0) return 0;
+    q->front = (q->front + 1) % (q->length);
+    q->tag = 0;
+    return 1;
+}

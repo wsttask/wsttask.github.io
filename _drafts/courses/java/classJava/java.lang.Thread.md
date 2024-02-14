@@ -1,0 +1,65 @@
+```java
+public class Thread implements Runnable {}
+
+Runnable作为一个接口，内部只有一个方法run()
+    
+Java中如何创建一个线程Thread，可以继承Thread类、实现Runnable或者Callable接口进行显式的创建线程。
+```
+
+
+
+@构造函数
+
+```java
+Thread();//创建一个默认设置的线程对象实例
+Thread(Runnable target);//创建一个包含可执行对象的线程实例
+Thread(Runnable target, String name) ：创建一个包含可执行对象，指定名称的线程对象
+Thread(String name)：创建一个指定名称的线程对象
+Thread(ThreadGroup group, Runnable target) ：创建一个指定线程组，包含可执行对象的线程对象实例
+Thread(ThreadGroup group, Runnable target, String name) ：创建一个指定线程组，包含可执行对象，指定线程名称的线程对象实例
+Thread(ThreadGroup group, Runnable target, String name, long stackSize) ：创建一个指定线程组、包含可执行对象、指定名称以及堆栈大小的线程对象实例
+Thread(ThreadGroup group, String name)：创建一个指定线程组，线程名称的线程实例
+```
+
+@方法
+
+```java
+public State getState();//获得线程的状态
+/*
+NEW(新建状态)：新创建后尚未启动的线程处于这种状态
+
+RUNNABLE(运行状态)：Java虚拟机中处于该状态的线程，对应操作系统状态中的Running和Ready，表示该线程正在执行或者等待操作系统分配执行时间
+
+BLOCKED(阻塞状态)：当多个线程进行资源争抢，等待获取一个排他锁的线程会处于该状态，当线程获取到锁之后状态会变为RUNNABLE状态，其他等待锁的线程继续处于BLOCKED状态，一般被synchronized关键字修饰或者ReentrantLock包裹的代码快会触发不可到到达线程处于该状态。
+
+WAITING(无限期等待状态)：处于该状态的线程不会被分配执行时间，需要等待被其他线程显式唤醒，调用Thread中以下方法会触发线程处于该状态：
+Object.wait() with no timeout
+Thread.join() with no timeout
+LockSupport.park()
+
+TIMED_WAITING(限期等待状态)：计时等待状态的线程，不会被操作系统分配执行时间，也不需要被其他线程显式唤醒，在计时结束后由操作系统自动唤醒，Thread中的以下方法会触发线程进入此状态：
+Thread.sleep()
+Object.wait() with timeout
+Thread.join() with timeout
+LockSupport.parkNanos()
+LockSupport.parkUntil()
+
+TERMINATED(终止状态)：线程任务执行结束时处于这种状态
+*/
+public synchronized void start();//开始这个线程
+
+/*
+start（）方法来启动线程，真正实现了多线程运行。
+start方法的作用就是将线程由NEW状态，变为RUNABLE状态。当线程创建成功时，线程处于NEW（新建）状态，如果你不调用start( )方法，那么线程永远处于NEW状态。调用start( )后，才会变为RUNABLE状态，线程才可以运行。
+*/
+
+public void run();//线程运行
+/*
+run（）方法当作普通方法的方式调用
+run( )其实是一个普通方法，只不过当线程调用了start( )方法后，一旦线程被CPU调度，处于运行状态，那么线程才会去调用这个run（）方法；
+上面说了，run（）方法是一个普通的对象方法，因此，不需要线程调用start（）后才可以调用的。可以线程对象可以随时随地调用run方法。
+
+start方法是用于启动线程的，可以实现并发，而run方法只是一个普通方法，是不能实现并发的，只是在并发执行的时候会调用。
+*/
+```
+

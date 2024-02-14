@@ -1,0 +1,46 @@
+格式：this.属性名称                
+作用：指的是访问类中的成员变量，用来区分成员变量和局部变量（重名问题）
+
+格式：this.方法名称              
+作用：用来访问本类的成员方法
+格式：this();                              
+作用：访问本类的构造方法，()中可以有参数的 如果有参数 就是调用指定的有参构造
+
+Simple：
+class Test_08{
+	public static void main(String [] args){
+		//调用无参构造函数，
+		Person p1 = new Person();
+		p1.setAge(20);
+		p1.setName("张三");
+		p1.setGender("男");
+		System.out.println(""+p1.getName()+" 今年"+p1.getAge()+"岁 性别为："+p1.getGender());
+	}
+	
+}
+class Person{
+	private String name;
+	private int age;
+	private String gender;
+
+	Person(){
+    }
+	public void setName(String name){
+		name = name;//这里不用set方法便不会对成员变量进行赋值，形参名称与成员变量名称一样。
+	}//改成this.name = name;
+	public String getName(){
+		return name;
+	}
+	public void setAge(int age){
+		age = age;
+	}
+	public int getAge(){
+		return age;
+	}
+	public void setGender(String gender){
+		gender = gender;
+	}
+	public String getGender(){
+		return gender;
+	}
+}

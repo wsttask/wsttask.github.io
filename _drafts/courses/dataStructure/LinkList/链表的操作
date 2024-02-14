@@ -1,0 +1,116 @@
+typedef struct tagLink//单链表的节点定义
+{
+	int data;
+	struct tagLink* next;
+}Node,*LinkList;
+
+void InitLink(LinkList* L)//单链表的初始化
+{
+	(*L) = (LinkList)malloc(sizeof(Node));
+	if ((*L) == NULL)
+	{
+		printf("error");
+		return;
+	}
+	(*L)->next = NULL;
+}
+
+void CreatLinkF(LinkList* L, int n)//头插法建立单链表(不含初始化与输入)，n是链表的长度
+{
+	LinkList s;
+	for (; n > 0; n--)
+	{
+		s = (LinkList)malloc(sizeof(Node));
+		if (s == NULL)
+		{
+			printf("error");
+			return;
+		}
+		s->next = (*L) - next;
+		(*L) - next = s;
+	}
+}
+
+void CreatLinkR(LinkList* L, int n)//头插法建立单链表含初始化(不含输入)，n是链表的长度
+{
+	LinkList s，head;
+    L=&head;
+	(*L) = (LinkList)malloc(sizeof(Node));
+	if ((*L) == NULL)
+	{
+		printf("error");
+		return;
+	}
+	for (; n > 0; n--)
+	{
+		s = (LinkList)malloc(sizeof(Node));
+		if (s == NULL)
+		{
+			printf("error");
+			return;
+		}
+		s->next = (*L) - next;
+		(*L) - next = s;
+	}
+}
+
+void CreatLinkR(LinkList* L, int n)//尾插法建立单链表(不含初始化和输入),n是链表的长度。
+{
+	LinkList rear, s;
+	for (; n > 0; n--)
+	{
+		s = (LinkList)malloc(sizeof(Node));
+		rear->next = s;
+		rear = s;
+	}
+	rear->next = NULL;
+}
+
+typedef struct dtagLink//双链表的节点定义
+{
+	int data;
+	struct dtagLink* front;
+	struct dtagLink* next;
+	int freq;
+}dNode, * dLinkList;
+
+void dInitLink(dLinkList* L)//双链表的初始化
+{
+	(*L) = (dLinkList)malloc(sizeof(dNode));
+	if ((*L) == NULL)
+	{
+		printf("error");
+		return;
+	}
+	(*L)->front = NULL;
+	(*L)->next = NULL;
+}
+
+void CreatdLinkListF(dLinkList* L, int n)//双链表的创建，含初始化(不含输入)，头插法，n是链表的长度
+{
+	(*L) = (dLinkList)malloc(sizeof(dNode));
+	if ((*L) == NULL)
+	{
+		printf("error");
+		return NULL;
+	}
+	(*L)->next = (*L)->front = NULL;
+	dLinkList s = NULL;
+	for (; n > 0; n--)
+	{
+		s = (dLinkList)malloc(sizeof(dNode));
+		if (s == NULL)
+		{
+			printf("error");
+			return NULL;
+		}
+		s->data = 0;//看需要添加，一定需要清零吗？
+		if ((*L)->next != NULL)
+		{
+			(*L)->next->front = s;
+		}
+		s->front = (*L);
+		s->next = (*L)->next;
+		(*L)->next = s;
+	}
+}

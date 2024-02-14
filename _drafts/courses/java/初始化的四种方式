@@ -1,0 +1,100 @@
+//Java 尽量保证所有变量在使用前都能得到恰当的初始化，否则会报异常
+//Java中提供了四种初始化方法：默认初始化、显式赋值初始化、调用类对象初始化和调用方法初始化。
+
+//错误写法
+void f() {
+    int i;
+    i++;
+}
+//执行时会报异常，原因是变量i没有初始化
+
+
+
+## 成员变量初始化方式之一————默认初始化：
+
+public class InitialValues {
+    boolean t;
+    char c;
+    byte b;
+    short s;
+    int i;
+    long l;
+    float f;
+    double d;
+    InitialValues reference;
+
+    void printInitialValues() {
+        System.out.println("Data type Initial value");
+        System.out.println("boolean " + t);
+        System.out.println("char[" + c + "]");
+        System.out.println("byte " + b);
+        System.out.println("short " + s);
+        System.out.println("int " + i);
+        System.out.println("long " + l);
+        System.out.println("float " + f);
+        System.out.println("double " + d);
+        System.out.println("reference " + reference);
+    }
+
+    public static void main(String[] args) {
+        new InitialValues().printInitialValues();
+    }
+}
+输出：
+Data type Initial value
+boolean false  
+char[]   //char 的默认值为 0或者写为'\u0000'，所以显示为空白
+byte 0
+short 0
+int 0
+long 0   //0L
+float 0.0  //0.0F
+double 0.0  
+reference null
+
+## 成员变量初始化方式之二————显式赋值：
+public class InitialValues2 {
+	 boolean bool = true;
+	 char ch = 'x';
+	 byte b = 47;
+	 short s = 0xff;
+	 int i = 999;
+	 long lng = 1;
+	 float f = 3.14f;
+	 double d = 3.14159;
+}
+
+## 成员变量初始化方式之三————调用对象进行初始化赋值：
+class Depth {
+}
+public class Measurement {
+    Depth d = new Depth();
+    // ...
+}
+//注意：如果没有为 d 赋予初值就尝试使用它，就会出现运行时错误，会产生异常。
+
+## 成员变量初始化方式之四————调用方法进行初始化赋值：
+//1、调用无参方法
+public class MethodInit {
+    int i = f();
+    
+    int f() {
+        return 11;
+    }
+    
+}
+
+//2、调用有参方法
+public class MethodInit2 {
+    int i = f();
+    int j = g(i);
+    
+    int f() {
+        return 11;
+    }
+    
+    int g(int n) {
+        return n * 10;
+    }
+}
+//注意：调用有参方法时，方法中的参数不能是未初始化的类成员变量，否则会报异常

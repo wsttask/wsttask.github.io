@@ -1,0 +1,75 @@
+simple：双向关联
+
+//类： 电话
+public class Phone {
+
+    // 属性：型号
+    private String type;
+
+    // 属性：颜色
+    private String color;
+
+    // 属性：品牌
+    private String brand;
+
+    // 属性：所有者
+    private Person owner;
+
+    // 构造方法：默认的
+    public Phone() {
+
+    }
+
+    // Getters and Setters
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public Person getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Person owner) {
+        this.owner = owner;
+    }
+
+}
+
+//类：人
+public class Person {
+
+    private Phone phone;
+
+    public Person() {
+        
+    }
+
+    public Phone getPhone() {
+        return phone;
+    }
+
+    public void setPhone(Phone phone) {
+        this.phone = phone;
+    }
+
+}

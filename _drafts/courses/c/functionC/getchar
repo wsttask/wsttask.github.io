@@ -1,0 +1,6 @@
+头文件：<stdio.h>
+函数原型：int getchar(void);  
+返回值：1.getchar返回的是字符的ASCII码值（整数）。
+        2.getchar在读取结束或者失败的时候，会返回EOF。
+         (EOF意思是end of file,本质上是-1）
+功能：从I/O流中读字符

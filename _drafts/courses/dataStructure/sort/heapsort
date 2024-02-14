@@ -1,0 +1,66 @@
+#include<stdio.h>
+
+int i, j, k;
+#define false 0
+#define true 1
+
+/*重建堆*/
+/*大根堆的筛选是把大数上移*/
+void sift(int a[], int l, int r)//其中r[]是完全二叉树，且为大根堆。
+{
+	int i;
+	int t, finished;
+	t = a[l];//暂存根记录r[k]
+	i = l;
+	j = 2 * i + 1;//注意这里左子树是乘2加1，因为是从零开始的
+	finished = false;
+	while (j <= r && !finished)
+	{
+		if (j + 1 <= r && a[j] < a[j + 1])// 若存在右子树，且右子树根的关键字大，则沿右分支筛选。
+			j++;
+		if (t >= a[j])finished = true;//主要是防止在建初堆时
+		else 
+		{
+			a[i] = a[j];
+			i = j;//i指现在的空位置
+			j = 2 * i;//左子树
+		}
+	}
+	a[i] = t;
+}
+
+/*建初堆*/
+void crt_heap(int a[], int n)
+{
+	for (i = n / 2; i >= 0; --i)
+	{
+		sift(a, i, n);
+	}
+}
+
+/*堆排序*/
+void HeapSort(int a[], int n)
+{
+	int b, r;
+	int l = 0;
+	crt_heap(a, n);
+	for (r = n; r >= 1; --r)
+	{
+		b = a[l];//将堆顶记录和堆尾记录互换
+		a[l] = a[r];
+		a[r] = b;
+		sift(a, l, r - 1);
+	}
+}
+int main()
+{
+	int a[] = { 100,500,3,14,6,64,9 };//7个数
+	int n = 6;
+	crt_heap(a, n);
+	HeapSort(a, n);
+	for (i = 0; i <= n; i++)
+	{
+		printf("%d ", a[i]);
+	}
+	return 0;
+}

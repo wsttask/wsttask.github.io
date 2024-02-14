@@ -1,0 +1,67 @@
+/*************************************************
+计算二叉树叶子结点数目（耿6.14)
+Description
+二叉树按照二叉链表方式存储，编写程序，计算二叉树中叶子结点的数目。
+Input
+按先序输入二叉树各结点，其中#表示取消建立子树结点。
+Output
+输出二叉树中叶子节点的数目。
+Sample Input
+ABD##EH###CF#I##G##
+Sample Output
+4
+*************************************************/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int i, j, k;
+int count;
+
+typedef struct treeNode
+{
+	char data;
+	struct treeNode* Lchild, * Rchild;
+}BiNode,*BiTree;
+
+void CreatBiTree(BiTree* L)//先序建立二叉树
+{
+	char x;
+	x = getchar();
+	if (x == '#')
+	{
+
+	}
+	
+	else
+	{
+		(*L) = (BiTree)malloc(sizeof(BiNode));
+		memset((*L), 0, sizeof(BiNode));//清零要注意，毕竟memset申请的空间并不会初始化。
+		(*L)->data = x;
+		CreatBiTree(&((*L)->Lchild));
+		CreatBiTree(&((*L)->Rchild));
+	}
+
+}
+
+void LeafOrder(BiTree root)
+{
+	if (root != NULL)
+	{
+		LeafOrder(root->Lchild);
+		LeafOrder(root->Rchild);
+		if (root->Lchild == NULL && root->Rchild == NULL)
+		{
+			count++;
+		}
+	}
+}
+
+int main()
+{
+	BiTree L;
+	CreatBiTree(&L);//这里注意，我传送了L的地址，一样可以更改L的数据；并不一定要是指向L的指针。
+	LeafOrder(L);
+	printf("%d", count);
+	return 0;
+}

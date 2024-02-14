@@ -1,0 +1,23 @@
+头文件：<stdio.h>
+函数原型：char *fgets(char *s, int size, FILE *stream);
+返回值：成功则返回指向这个字符串的指针，失败则返回空指针
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+#define MAXSIZE 100
+char s[MAXSIZE];
+char a;
+
+int i, j;
+
+int main()
+{
+	fgets(s, 100, stdin);
+	/*fgets（str，10，fp） 其中fp是指针，也可以写stdin。
+	实际上只读n - 1个,最后一个是给\0的；遇到\n就停止，它是第9个那就读，
+	第十个就按只读n - 1个，第8个就只读8个。会把\n读入*/
+	printf("%s", s);
+	return 0;
+
+}

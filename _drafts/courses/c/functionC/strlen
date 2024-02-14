@@ -1,0 +1,17 @@
+所在函数库：<string.h>
+函数原型：size_t strlen(const char *str)
+返回值：字符串str的长度
+
+#include<stdio.h>
+
+#define SIZE 100
+
+char s[SIZE];
+
+int main()
+{
+    fgets(s,100,stdin);
+    int a=strlen(s);//其中a是字符串s的长度，不包括\0
+    printf("%d",a);
+    return 0；
+}

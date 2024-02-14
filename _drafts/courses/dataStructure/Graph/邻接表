@@ -1,0 +1,135 @@
+/**********************************本题写错了
+试基于图的深度优先搜索策略编写程序，判别以邻接表方式存储的有向图中，是否存在由顶点vi到顶点vj的路径(i不等于j)
+Input
+第一行输入有向图的顶点数n和边数m,用空格隔开;第_行输入顶点信息;分m行输入有向图边的信息，例如顶点对1 ,2表示
+从顶点1到顶点2的一条弧。最后一行输入待判别的顶点对vi,vj.(0<m,n< 100)
+Output
+若有向图中存在由顶点vi到顶点vj的路径(i不等于j) ， 则输出yes;否则输出no。
+***********************************/
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+#define MAX_VERTEX_NUM 100
+#define false 0
+#define true 1
+
+int i, j, k;
+
+typedef int VertexData;
+
+
+typedef struct ArcNode//弧节点
+{
+	int adjvex;//存放的是弧节点的顶点的在邻接表的位置
+	struct ArcNode* next;
+}ArcNode;
+
+typedef struct VertexNode//表头结点
+{
+	VertexData data;
+	ArcNode* firstarc;
+}VertexNode;
+
+typedef struct graph
+{
+	VertexNode vertex[MAX_VERTEX_NUM];
+	int vexnum, arcnum;//图的顶点数和弧数
+}AdjList;//Adjacency List Graph//邻接 表 图，基于邻接表的图
+
+void CreatVertexList(AdjList* g)
+{
+	int a, b;
+	for (i = 0; i < g->vexnum; i++)
+	{
+		scanf("%d", &(g->vertex[i].data));
+	}
+	for (i = 0; i < g->arcnum; i++)
+	{
+		scanf("%d%d", &a, &b);
+		for (j = 0; j < g->vexnum; j++)
+		{
+			if (g->vertex[j].data == a)
+			{
+				
+				ArcNode* s = (ArcNode*)malloc(sizeof(ArcNode)), * temp=g->vertex[j].firstarc;
+				memset(s, 0, sizeof(ArcNode));
+				for (k = 0; k < g->vexnum; k++)
+				{
+					if (g->vertex[k].data == b)
+						break;
+				}
+				s->adjvex = k;//把 adjex填上
+				if (temp != NULL)//把弧节点连上
+				{
+					while (temp->next != NULL)
+						temp = temp->next;
+					temp->next = s;
+				}
+				else
+				{
+					g->vertex[j].firstarc = s;
+				}
+				break;
+			}
+		}
+	}
+}
+
+int  Find(int m, int n, AdjList* g)
+{
+	for (i = 0; i < g->vexnum; i++)
+	{
+		if (g->vertex[i].data == m)
+		{
+			break;
+		}
+	}
+	if (i == g->vexnum)
+	{
+		
+		printf("no");
+		return false;
+	}
+	else
+	{
+		ArcNode* a;
+		a = g->vertex[i].firstarc;
+		if (a == NULL) 
+		{
+			printf("no");
+			return false;
+		}
+		/*if (g->vertex[a->adjvex].data == n)
+		{
+			printf("yes");
+			return true;
+		}*/
+		while (a != NULL)
+		{
+			if (g->vertex[a->adjvex].data == n)
+			{
+				printf("yes");
+				return true;
+			}
+			a = a->next;
+		}
+		printf("no");
+	}
+}
+
+int main()
+{
+	int m, n;
+	scanf("%d%d", &n, &m);
+	AdjList G;
+	memset(&G, 0, sizeof(AdjList));
+	G.vexnum = n;
+	G.arcnum = m;
+	CreatVertexList(&G);
+	scanf("%d%d", &m, &n);
+	
+	Find(m, n, &G);
+	return 0;
+}

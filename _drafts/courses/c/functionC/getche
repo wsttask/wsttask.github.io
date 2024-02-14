@@ -1,0 +1,4 @@
+头文件：conio.h
+函数原型：int getche(void)；
+返回值：字符的ASCLL码
+功能：从控制台取字符(带回显)

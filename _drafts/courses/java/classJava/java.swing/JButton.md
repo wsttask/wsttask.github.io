@@ -1,0 +1,31 @@
+#### JButton 常用构造方法:
+```
+// 创建不带有设置文本或图标的按钮
+JButton()
+
+// 创建一个带文本的按钮
+JButton(String text)
+
+// 创建一个带图标的按钮
+JButton(Icon icon)
+```
+#### JButton 常用方法:
+```
+// 设置按钮的 文本、字体 和 字体颜色
+void setText(String text)
+void setFont(Font font)
+void setForeground(Color fg)
+
+/* 以下方法定义在 javax.swing.AbstractButton 基类中 */
+
+// 设置按钮是否可用
+void setEnabled(boolean enable)
+
+// 设置按钮在 默认、按下、不可用 时显示的图片
+void setIcon(Icon defaultIcon)
+void setPressedIcon(Icon pressedIcon)
+void setDisabledIcon(Icon disabledIcon)
+
+// 是否绘制边框（设置不绘制边框，再结合上面三个设置按钮状态图片的方法，可实现自定义按钮）
+void setBorderPainted(boolean b);
+```

@@ -1,0 +1,77 @@
+super的作用：
+    1.通过super可以访问父类的构造方法 
+    2.通过super可以访问父类的属性（非私有）
+    3.通过super可以访问父类的方法（非私有的方法）
+
+1.通过super可以访问父类的构造方法 
+调用父类构造方法的代码必须放在子类构造方法的第一行，不这样执行会报错(规定的格式)，用super调用属性时不用遵守。
+当父类没有无参构造方法时，不能直接使用super();调用父类构造方法
+ 
+public class Person {
+    private int age;
+    private String name;
+ 
+    public Person() {
+        System.out.println("父类无参构造方法被调用");//无参构造函数
+    }
+ 
+    public Person(int age, String name) {
+    //有参构造函数
+        this.age = age;
+        this.name = name;
+    }
+ 
+    public int getAge() {
+        return age;
+    }
+ 
+    public void setAge(int age) {
+        this.age = age;
+    }
+ 
+    public String getName() {
+        return name;
+    }
+ 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age &&
+                Objects.equals(name, person.name);
+    }
+ 
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, name);
+    }
+ 
+    @Override
+    public String toString() {
+        return "姓名"+this.name+"，年龄"+this.age;
+    }
+ 
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void say(){
+//父类中的say方法
+        System.out.println("我叫"+name+"今年"+age+"岁了");
+    }
+}
+
+class Teacher extends Person{
+    public Teacher() {//子类的构造方法
+ 
+            super(14,"李四");//调用父类中有参构造方法
+        }
+}
+
+2.   通过super可以访问父类的属性（非私有）
+我们在父类属性中添加一个public属性 
+在子类方法中通过super操作Person父类中sex属性
+super.sex = "男"
+
+3.通过super可以访问父类的方法（非私有的方法）
+利于super调用Person父类中的setName()方法修改Teacher对象的姓名属性

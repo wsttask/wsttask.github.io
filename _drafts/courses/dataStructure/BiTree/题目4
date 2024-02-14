@@ -1,0 +1,87 @@
+/***********************************************************************
+建立二叉树的二叉链表（严6.65)
+
+Description
+已知一棵二叉树的前序序列和中序序列分别存于两个一维数组中，试编写算法建立该二叉树的二叉链表。
+lnput
+分两行分别输入一棵二叉树的前序序列和中序序列。
+Output
+输出该二叉树的后序序列。
+Output
+输出该二叉树的后序序列。
+Sample Input
+ABDFGCEH
+BFDGACEH
+Sample Output
+FGDBHECA
+***************************************************************************/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+typedef struct Node
+{
+    char data;
+    struct Node* LChild;
+    struct Node* RChild;
+}BiNode, * BiTree;
+
+//构建二叉树
+
+int findelem(char* a, char* b, int pos_a, int pos_le, int pos_ri)//在中序的字符串找到前序的元素
+{
+    for (int i = pos_le; i <= pos_ri; i++) {
+        if (a[pos_a] == b[i]) {
+            return i;
+        }
+    }
+    return 0;
+
+}
+BiTree Createtree(char* a, char* b, int* pos_a, int pos_le, int pos_ri)
+//pos_a是所要建立的二叉树头元素在a字符串的位置
+//pos_le.pos_ri是b字符串中需要建立二叉树部分的左右位置信息，以此来区别接下来要建立的是左子树还是右子树
+{
+    BiTree p;
+    p = (BiTree)malloc(sizeof(BiNode));
+    p->data = a[*pos_a];//因为每次赋予节点的值都不一样，所以用指针每次更改pos_a
+    p->LChild = NULL;
+    p->RChild = NULL;
+    (*pos_a)++;
+    int pos_b;//在b字符串中定义一个位置
+    pos_b = findelem(a, b, *pos_a - 1, pos_le, pos_ri);//查找a数组d对应元素在b的位置来判断是左子树还是右子树
+
+    if (pos_b > pos_le)//对应位置左端有元素，左子树存在
+    {
+        p->LChild = Createtree(a, b, pos_a, pos_le, pos_b - 1);//对b字符串左边递归建立左子树
+    }
+
+    if (pos_b < pos_ri)//对应位置左子树不存在右子树存在
+    {
+        p->RChild = Createtree(a, b, pos_a, pos_b + 1, pos_ri);//对b字符串右边递归建立左子树
+    }
+    return p;
+}
+
+void InOrder(BiTree root)//后续输出
+{
+    if (root != NULL)
+    {
+        InOrder(root->LChild);
+        InOrder(root->RChild);
+        printf("%c", root->data);
+    }
+}
+
+
+int main()
+{
+    BiTree p;
+    char pre[100], mid[100];
+    scanf("%s%s", pre, mid);
+    int pos_p = 0, len_pre;
+    len_pre = strlen(pre);//字符串长度
+    p = Createtree(pre, mid, &pos_p, 0, len_pre - 1);
+    InOrder(p);
+    return 0;
+}

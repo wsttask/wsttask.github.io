@@ -1,0 +1,86 @@
+Java的包装类
+
+#### 一、什么是包装类
+包装类（Wrapper Class）： Java是一个面向对象的编程语言，但是Java中的八种基本数据类型却是不面向对象的，为了使用方便和解决这个不足，在设计类时为每个基本数据类型设计了一个对应的类进行代表，这样八种基本数据类型对应的类统称为包装类(Wrapper Class)，包装类均位于java.lang包。
+
+#### 二、包装类和基本数据类型的转换
+1、为了使用方便Java中将8种基本数据类型进行了封装：除了Integer和Character类以外，其它六个类的类名和基本数据类型一直，只是类名的第一个字母大写即可。
+
+
+```
+boolean —> Boolean 
+char —> Character 
+byte —> Byte 
+short —> Short 
+long —> Long 
+int —> Integer 
+float—> Float 
+double—> Double
+```
+
+
+2、int和integer类之间的转换
+在实际转换时，使用Integer类的构造方法和Integer类内部的intValue方法实现这些类型之间的相互转换：
+
+
+```
+int n=5;
+Integer n1=new Integer(n);
+System.out.println("int类型转换为integer类："+n1);
+Integer i=new Integer(50);
+int i1 = i.intValue();
+System.out.println("integer类转换为int类型："+i1);
+```
+
+
+3、自动拆装箱
+JDK自从1.5版本以后，就引入了自动拆装箱的语法，也就是在进行基本数据类型和对应的包装类转换时，系统将自动进行，这将大大方便程序员的代码书写。
+自动装箱：将 基本数据类型 封装为对象类型，来符合java的面向对象的思想。
+自动拆箱：将对象重新转化为基本数据类型。
+
+
+```
+//5是基本数据类型，通过自动装箱变成对象类型。
+    Integer i=5;  //编译器执行了Integer i = Integer.valueOf(5)
+    int i2=i;  //自动拆箱，实际上执行了 int i2 = i.intValue()
+    System.out.println(i2);
+```
+
+
+valueOf（）源码分析：
+
+
+```
+public static Integer valueOf(int i) {
+       assert IntegerCache.high>= 127;
+       if (i >= IntegerCache.low&& i <= IntegerCache.high)
+       		return IntegerCache.cache[i+ (-IntegerCache.low)];
+       return new Integer(i);  
+}
+```
+
+
+
+说明：Integer iii=5;相当于编译器执行了Integer iii = Integer.valueOf(5)操作。这个方法就是返回一个 Integer 对象，只是在返回之前，看作了一个判断，判断当前 i 的值是否在 [-128,127] 区间，且 IntegerCache 中是否存在此对象，如果存在，则直接返回引用，否则，调用构造器执行类型转换！
+
+4.包装类的缓存值
+各个包装类缓存值范围 ：
+
+
+```
+boolean：true和false
+byte：-128～127
+char：0～127
+short：-128～127
+int：-128～127
+long：-128～127
+```
+
+
+特别注意：对于float和double没有缓存。
+注意点：在对上述值进行装箱的时候,并不是创建一个新对象而是使用缓存中的对象，如果超出范围才需要新建立对象。
+
+#### 三、转成包装类有什么好处呢？
+1、首先包装类是一种类，类就有定义好的属性或方法，这些方法对应就完成了一些特定的功能，我们可以调用这些方法完成一些工作，简化了我们自己的编码量，没有这些方法，我们需要这些功能时就要自己编程去实现。
+
+2、基本数据类型都用隐式的默认值，不是类的对象，不能为null，很多时候我们可能需要我们的这些类型可以为null，这时就需要用包装类了！

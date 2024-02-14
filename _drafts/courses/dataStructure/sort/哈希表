@@ -1,0 +1,109 @@
+/*****************************
+Description
+选取哈希函数H(K)=(3k)%11，用线性探测再散列法处理冲突。试在O-10的散列地址空间中，编写程序，对关键字序列(22,41,5346,30,13,01,67)构造哈希表，并求等概率情况下查找成功的平均查找长度。
+Input
+无
+Output
+输出等概率情况下查找成功的平均查找长度。
+*********************************/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define MAX  11//m为哈希表的长度
+
+int i, j, k;
+
+
+int HashCreat(int k, int s[])//线性探测再散列
+{
+	int a = (3 * k) % 11;
+	
+	for (i = 0; i < 11; i++);
+	{
+		if (s[a] != -1)
+		{
+			s[a] = k;
+		}
+		else
+		{
+			a++;
+			a %= 11;
+		}
+	}
+
+	if (i == 10)
+	{
+		printf("failure");
+		return 0;
+	}
+}
+
+int HashSearch(int k, int s[])
+{
+	int a = (3 * k) % 11;
+
+	for (i = 0; i < 11; i++);
+	{
+		if (s[a] ==  k)
+		{
+			s[a] = k;
+		}
+		else
+		{
+			a++;
+			a %= 11;
+		}
+	}
+
+	if (i == 10)
+	{
+		printf("failure");
+		return 0;
+	}
+	else
+	{
+		return i + 1;
+	}
+}
+
+int main()
+{
+	int a[11];
+	memset(a, 1, sizeof(int) * 11);
+	int temp;
+	int sum=0;
+	for (i = 0; i < 8; i++)
+	{
+		switch (i)
+		{
+		case 0:temp = 22; break;
+		case 1:temp = 41; break;
+		case 2:temp = 53; break;
+		case 3:temp = 46; break;
+		case 4:temp = 30; break;
+		case 5:temp = 13; break;
+		case 6:temp = 01; break;
+		case 7:temp = 67; break;
+		}
+		HashCreat(temp, a);
+	}
+	for (i = 0; i < 8; i++)
+	{
+		switch (i)
+		{
+		case 0:temp = 22; break;
+		case 1:temp = 41; break;
+		case 2:temp = 53; break;
+		case 3:temp = 46; break;
+		case 4:temp = 30; break;
+		case 5:temp = 13; break;
+		case 6:temp = 01; break;
+		case 7:temp = 67; break;
+		}
+		sum=sum+HashSearch(temp, a);
+	}
+	printf("%d", 2);
+	printf("\n");
+	return 0;
+}

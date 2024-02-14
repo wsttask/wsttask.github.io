@@ -1,0 +1,22 @@
+switch基本语法结构如下
+    switch (表达式){
+        case 目标值1:
+            执行语句1
+            break;
+        case 目标值2:
+            执行语句2
+            break;
+        ．．．．．．
+        case 目标值n:
+            执行语句n
+            break;
+        default:
+            执行语句n+1
+            break;
+    }
+
+1.表达式可以是byte、short、char、int、enum、String类型
+2.case穿透现象： switch语句会根据表达式的值从相匹配的case标签处开始执行，一直执行到break语句处或者是switch语句的末尾。
+            如果没有break语句，那么就会从表达式的值相匹配的case标签处开始执行，一直执行到switch语句的末尾。
+            这种从其中的一个case处开始，忽略后面的值的匹配，直接运行case的内容的现象就是穿透的现象
+3.default：默认运行的语句

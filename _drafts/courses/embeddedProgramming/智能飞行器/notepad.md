@@ -1,0 +1,3 @@
+[一个简单STM32工程目录下的文件简介_stm32在.c文件是什么意思_allezMZ的博客-CSDN博客](https://blog.csdn.net/weixin_41885516/article/details/95729954)
+
+[用keil-MDK建立STM32标准库工程空模板（超详细图文并茂）_keil stm32_学会善于沟通的博客-CSDN博客](https://blog.csdn.net/qq_44418204/article/details/127305889?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-127305889-blog-105931486.235^v38^pc_relevant_anti_vip&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-127305889-blog-105931486.235^v38^pc_relevant_anti_vip&utm_relevant_index=6)

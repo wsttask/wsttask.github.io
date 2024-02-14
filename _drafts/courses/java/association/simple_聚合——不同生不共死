@@ -1,0 +1,87 @@
+simple：聚合——不同生不共死
+
+//人类
+public class People {
+	private String name;
+	private String age;
+	private Phone[] phones;
+	
+	public People() {
+		// TODO Auto-generated constructor stub
+	}//在构造函数中并没有构造Phone
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public Phone[] getPhones() {
+		return phones;
+	}
+
+	public void setPhones(Phone[] phones) {
+		this.phones = phones;
+	}
+
+//电话类
+public class Phone {
+	
+	private String color;
+	private String num;
+	
+	public Phone() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getNum() {
+		return num;
+	}
+
+	public void setNum(String num) {
+		this.num = num;
+	}
+
+	@Override
+	public String toString() {
+		return "Phone [color=" + color + ", num=" + num + "]";
+	}
+}
+
+//测试类
+public class Client {
+	public Client() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		People people = new People();
+		Phone[] phones = new Phone[3];
+		
+		
+		people.setPhones(phones);
+		
+		people = null ; 
+		System.out.println(phones);
+		System.out.println(people.getPhones());
+		
+	}
+}

@@ -1,0 +1,83 @@
+simple:组合——同生共死
+public class People {
+	private String name;
+	private String age;
+	private Phone[] phones;//初始即定义了有Phone
+	
+	public People() {
+		phones = new Phone[3];//创建类People的时候，就声明类People有3个Phone
+	}//如果不确定有几个，可以用ArrayList
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public Phone[] getPhones() {
+		return phones;
+	}
+
+	public void setPhones(Phone[] phones) {
+		this.phones = phones;
+	}
+
+	@Override
+	public String toString() {
+		return "People [name=" + name + ", age=" + age + ", phones=" + Arrays.toString(phones) + "]";
+	}
+	
+	
+}
+
+//电话类
+public class Phone {
+	private String color;
+	private String num;
+	
+	public Phone() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getNum() {
+		return num;
+	}
+
+	public void setNum(String num) {
+		this.num = num;
+	}
+
+	@Override
+	public String toString() {
+		return "Phone [color=" + color + ", num=" + num + "]";
+	}
+	
+	
+}
+
+//测试
+public class Client {
+	public static void main(String[] args) {
+		People people = new People();
+		people = null;
+		System.out.println(people.getPhones());
+	}
+}

@@ -1,0 +1,81 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+
+int i, j, k;
+
+typedef struct tagNode
+{
+	int data;
+	struct tagNode* front;
+	struct tagNode* next;
+}Node,*LinkList;
+
+LinkList rear;
+
+void InitLink(LinkList* L)//这里是双链表初始化，也可以说是创建一个空的双链表，操作和单链表差不多
+{
+	(*L) = (LinkList)malloc(sizeof(Node));
+	if ((*L) == NULL)
+	{
+		printf("error");
+		return;
+	}
+	(*L)->next = NULL;
+	(*L)->front = NULL;
+}
+
+void InsertLink(LinkList* L,int x)//插入一个数，这个是头插法，直接倒序；
+{
+	LinkList s = (LinkList)malloc(sizeof(Node));
+	if (s == NULL)
+	{
+		printf("error");
+		return;
+	}
+	s->data = x;
+
+	s->next = (*L)->next;
+	if ((*L)->next != NULL) (*L)->next->front = s;
+	(*L)->next = s;
+	s->front = (*L);
+
+	if (i == 0)
+	{
+		rear = s;
+	}
+}
+
+void Linkprintf(LinkList* L)
+{
+	LinkList temp = (*L);
+	for (;;)
+	{
+		temp = temp->next;
+		printf("%d ", temp->data);
+		if (temp->next == NULL)
+		{
+			break;
+		}
+	}
+}
+
+int main()
+{
+	LinkList* L, head;
+	L = &head;//注意在main函数中如何建立一个链表
+	InitLink(L);
+	
+	int n,x;
+	scanf("%d", &n);
+
+	for (i = 0; i < n; i++)
+	{
+		scanf("%d", &x);
+		InsertLink(L, x);
+	}
+
+	Linkprintf(L);
+
+	return 0;
+}

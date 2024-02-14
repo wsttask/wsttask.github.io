@@ -1,0 +1,109 @@
+/******************************************************************************************
+实验4.2:用迪杰斯特拉算法求赋权图中的最短路径
+Description
+用迪杰斯特拉算法求一点到其余所有结点的最短路径。
+Input
+先输入一个小于100的正整数n，然后输入图的邻接矩阵（10000表示无穷大，即两点之间没有边)，最后输入两个0到n-1的整数表示两个点。
+Output
+先用迪杰斯特拉算法求给定的第一个点到其余所有结点的最短路径。
+然后再输出给定的两个点之间的最短路径(按顺序输出最短路径上的每一个点，每个数据占一行
+simple intput
+6
+0 1 12 10000 10000 10000
+10000 0 9 3 10000 10000
+10000 10000 0 10000 5 10000
+10000 10000 4 0 13 15
+10000 10000 10000 10000 0 4
+10000 10000 10000 10000 10000 0
+0
+simple Output
+0
+1
+8
+4
+13
+17
+******************************************************************************************/
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int i, j, k;
+
+#define MAX1 10000
+
+typedef struct AdjMatrix//邻接矩阵表示法
+{
+	int* spot;//定义一个一位数组，但是用作二维
+}AdjMatrix;//(Adjacency Matrix Graph)
+
+void CreatChart(int n, int**s)
+{
+	(*s) = (int*)malloc(sizeof(int) * n * n);
+	memset((*s), 0, sizeof(int) * n * n);
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			scanf("%d", &(*s)[i * n + j]);
+		}
+	}
+}
+
+int Dijkstra(int n, AdjMatrix* A,int inital)
+{
+	int* dist, * book;
+	dist = (int*)malloc(sizeof(int) * n); book = (int*)malloc(sizeof(int) * n);
+	memset(dist, 0, sizeof(int) * n); memset(book, 0, sizeof(int) * n);
+	//dist[inital] = 0;//a点离a点的距离为0
+	book[inital] = 1;//表示a点已被加入集合中
+
+	//for (i = 0; i < n; i++) { dist[i] = A->spot[inital * n + i]; }
+	////更新之后，dist中存的就是起点到其余所有点之间的距离，其中10000代表不存在，然后到a是0
+	for (k = 0; k < n - 1; k++)//每次加入一个点，要加入n-1个点
+	{
+		int temp = MAX1;
+		int t = -1;//记录点的下标
+		for (i = 0; i < n; i++)//目的是找到距离a最近的点！！
+		{
+			if (book[i])//首先找到集合V中的点
+			{
+				for (j = 0; j < n; j++)
+				{
+					if (!book[j] && temp > A->spot[i * n + j] + dist[i])//然后找到非集合中的点
+					//其中temp存的是a点到其他点的距离
+					{
+						temp = A->spot[i * n + j] + dist[i];
+						t = j;
+					}
+				}
+
+			}
+		}
+		if (t == -1)
+		{
+			printf("false");
+			return 0;//找不到点，构建结束。
+		}
+		book[t] = 1;
+		dist[t] = temp;
+	}
+	for (i = 0; i < n; i++)
+	{
+		printf("%d\n", dist[i]);
+	}
+}
+
+int main()
+{
+	int n, a, b;
+	scanf("%d", &n);
+	AdjMatrix Adj;
+	CreatChart(n, &(Adj.spot));
+	scanf("%d", &a);
+	Dijkstra(n, &Adj, a);
+	return 0;
+}
+
+

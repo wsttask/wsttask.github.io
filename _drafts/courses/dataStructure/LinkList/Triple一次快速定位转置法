@@ -1,0 +1,98 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+/************************************************************************************
+实验2.1∶稀疏矩阵转置
+Description
+输出稀疏矩阵的转置矩阵。(行列均不大于20)
+lnput
+第一行输入两个正整数n和m,分别表示矩阵的行数和列数，然后输入矩阵三元组，
+最后输入(0 0 0）表示结束输入。
+Output
+转置后的矩阵。
+
+Simple
+Input
+4 4
+1 1 1
+2 1 2
+3 2 3
+0 0 0
+Ouput
+1 1 1
+1 2 2
+2 3 3
+***************************************************************************************/
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int i, j, k;
+#define MAX1 100
+#define true 1
+#define false 0
+
+typedef struct Triple
+{
+	int row; int column;
+	int data;
+}Triple;
+
+typedef struct
+{
+	Triple a[MAX1];
+	int row, column, len;//这里面的len是指三元组的数目，而不是最高三元组的下表
+}TSMatrix;
+
+//一次定位快速转置法
+void FastTransposeTSMatrix(TSMatrix T, TSMatrix* T1)
+{
+	int num[MAX1];
+	memset(num, 0, sizeof(int) * MAX1);
+	T1->len = T.len; T1->row = T.column; T1->column = T.row;
+	//为num赋值,num代表的是转置后矩阵每一行的元素个数
+	for (i = 0; i < T.len; i++)
+	{
+		num[T.a[i].column]++;
+	}
+	//把num变成position
+	for (i = 1; i < T.column; i++)
+	{
+		num[i] = num[i] + num[i - 1];
+	}
+	for (i = 0; i < T.len; i++)
+	{
+		int pos = num[T.a[i].column - 1];
+		num[T.a[i].column - 1]++;
+		T1->a[pos].column = T.a[i].row;
+		T1->a[pos].row = T.a[i].column;
+		T1->a[pos].data = T.a[i].data;
+	}
+}
+
+int main()
+{
+	TSMatrix T, T1;
+	int n, m;
+	scanf("%d%d", &n, &m);
+	T.row = n; T.column = m;
+
+
+	//循环输入三元组，并确定三元组的长度。
+	for (i = 0;; i++)
+	{
+		scanf("%d%d%d", &T.a[i].row, &T.a[i].column, &T.a[i].data);
+		if (T.a[i].row + T.a[i].column + T.a[i].data == 0)
+		{
+			break;
+		}
+	}
+	T.len = i;
+
+	//转置函数
+	FastTransposeTSMatrix(T, &T1);
+	for (i = 0; i < T.len; i++)
+	{
+		printf("%d %d %d\n", T1.a[i].row, T1.a[i].column, T1.a[i].data);
+	}
+	return 0;
+
+}

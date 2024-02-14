@@ -1,0 +1,58 @@
+所在函数库：<stdlib.h>
+函数原型：extern void *malloc(unsigned int num_bytes);
+返回值：如果分配成功则返回指向被分配内存的指针，否则返回空指针NULL。
+
+malloc用于动态分配内存
+在子函数中使用malloc函数，在该子函数结束后不会随子函数一起释放，只有free才可以
+
+malloc申请的函数无论什么时候都不会自动清零。
+#include<stdio.h>
+#include<stdlib.h>
+
+int a = (int)malloc(sizeof(int));
+
+int * sdfa(int* a)
+{
+	a = (int*)malloc(sizeof(int));
+	return a;
+}
+
+int main()
+{
+	int c = (int)malloc(sizeof(int));
+	int* b = NULL;
+	b = sdfa(b);
+	printf("%d %d %d", a, *b, c);
+	return 0;
+}
+
+
+postscript：注意子函数不能返回局部变量的地址，因为该局部变量已经被释放，不再受到编译器的控制
+#include <stdio.h>
+ 
+ 
+int* fa();
+void main()
+{
+    int *p=fa();
+    printf("%d\n",*p);
+}
+ 
+int* fa()
+{
+    int i=97;
+    return &i;
+}
+
+其实这么引用很危险，非常不推荐。
+fa()执行完毕后，i被释放，其实是指将编译器中对于该地址的控制给释放。
+这块地址是存在的，但是已经没有受控的指针指向它。
+&i目前也就成为我们所说的野地址。
+当前这块地址有可能已经被其他程序/系统其他进程所使用，
+也有可能还没有被使用。
+ 
+所以当前*p指向的内容是不可预测的。
+ 
+但是由于这个程序执行非常快，很大可能是&i这个地址内的值还是原先赋的值。
+ 
+但是这么访问很危险，一旦这块地址已经被系统或者其他应用程序使用，对于它的访问，有可能导致异常。

@@ -1,0 +1,24 @@
+String 字符串(系统类)
+
+public class Kll {
+    public static void main(String[] args) {
+        /*String s1 = "abcd";
+        s1 = "kll";
+        System.out.println(s1);
+        */
+        //直接声明:abcd 是声明在常量池中
+        String s2 = "abcd";
+		//new 声明在堆内存中
+        String s3 = new String("abcd");
+        String s4 = "abcd";
+        //== 比较的是对象的地址
+        //equals 比较的是 字符场中每一个字符是否相等(比较的是字符串的值)
+        System.out.println(s2 == s3);//false
+        System.out.println(s2.equals(s3));//true
+        System.out.println(s2 == s4);//true
+        //s2和s3的区别
+        /*
+         s2表示的是一个对象 s3表示的是两个对象(new 和常量)
+         */
+    }
+}

@@ -1,0 +1,1 @@
+private 不能用来修饰 interface

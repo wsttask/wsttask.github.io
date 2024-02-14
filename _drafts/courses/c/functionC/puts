@@ -1,0 +1,4 @@
+int puts(const char *string);
+
+puts与printf不同的地方在于，puts会多一个\n
+即自动换行

@@ -1,0 +1,243 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int i, j, k;
+
+typedef struct triple//三元组十字链表节点的结构体构建
+{
+	int row, column;
+	int data;
+	struct triple* down;
+	struct triple* right;
+}TriNode,*TriLink;
+
+typedef struct
+{
+	TriLink* row_head, * column_head;//行、列链表的头指针向量，指的是指向一个 指向TriNode的指针数组　
+	int m, n, len;//系数矩阵的行数，列数，非零元素的个数
+}CrossList;
+
+CrossList* CreatCrossList(CrossList* M, int m, int n)//创建十字链表
+{
+	M = (CrossList*)malloc(sizeof(CrossList));//为指针申请指向的空间。
+	if (M == NULL) return NULL;
+
+	M->m = m; M->n = n; //M->len = len;
+	M->row_head = (TriLink*)malloc(sizeof(TriLink) * m);//TriLink是指向TriNode的指针
+	if (M->row_head == NULL) return 0;
+	memset(M->row_head, 0, sizeof(TriLink) * m);
+
+	M->column_head = (TriLink*)malloc(sizeof(TriLink) * m);
+	if (M->column_head == NULL) return 0;
+	memset(M->column_head, 0, sizeof(TriLink) * n);
+
+	return M;
+}
+
+void ScanfList(CrossList* M, TriLink a)//输入三元组，并把它连在十字链表中，注意三元组表一定是 “顺序的” 
+{
+	TriLink temp;//你要修改这个变量，要用指向它的指针，如果只是读的话可以只复制这个指针。
+	if (M->row_head[(*a).row] == NULL)//本题目十字链表是TriLink，但是节点都是TriNode。
+	{
+		M->row_head[(*a).row] = a;
+	}
+	else
+	{
+		temp = M->row_head[(*a).row];//( *(M->row_head) )[a.row] = &a;注意看一下错误在哪！！！！！
+		while (temp->right != NULL)
+		{
+			temp = temp->right;
+		}
+		temp->right = a;
+	}
+
+
+	if (M->column_head[(*a).column] == NULL)
+	{
+		M->column_head[(*a).column] == a;
+	}
+	else 
+	{
+		temp = M->column_head[(*a).column];
+		while (temp->down != NULL)
+		{
+			temp = temp->down;
+		}
+		temp->down = a;
+	}
+}
+
+void addList(CrossList* M, TriLink a)
+{
+	TriLink temp = NULL;
+
+	if (M->row_head[(*a).row] == NULL)//第一种情况 ，即row=NULL，
+	{
+		M->row_head[(*a).row] = a;
+	}
+	else//第二种情况，及row不等于NULL
+	{
+		temp = M->row_head[(*a).row];
+		if (temp->column > a->column)//row的第一个的column就超过a的column了
+		{
+			M->row_head[(*a).row] = a;
+			a->right = temp;
+		}
+		else if (temp->column == a->column)//第一个等于
+		{
+			temp->data += a->data;
+			free(a);
+			goto L1;
+		}
+		else//第一个小于
+		{
+			TriLink tep = temp;
+			int tag = 0;
+			
+			while (temp->right != NULL)//中间超过了
+			{
+				temp = temp->right;
+
+				if (temp->column == a->column)//等于的情况
+				{
+					temp->data += a->data;
+					tag = 1;
+					free(a);
+					goto L1;
+				}
+
+				if (temp->column > a->column);
+				{
+					tep->right = a;
+					a->right = temp;
+					tag = 1;
+				}
+				tep = temp;
+			}
+			if (tag == 0)//如果一直到最后都没超过
+			{
+				temp->right = a;
+			}
+		}
+	}
+
+	if (M->column_head[(*a).column] == NULL)
+	{
+		M->column_head[(*a).column] = a;
+	}
+	else //这时候不需要考虑等于的情况
+	{
+		temp = M->column_head[(*a).column];//row==null,但是column不是NULL
+		if (temp->row > a->row)//column的第一个大于row
+		{
+			M->column_head[(*a).column] = a;
+			a->down = temp;
+		}
+		else//不是大于那么肯定是小于
+		{
+			TriLink tep = temp;
+			int tag = 0;
+			while (temp->down != NULL)
+			{
+				temp = temp->down;
+				if (temp->row > a->row);
+				{
+					tep->down = a;
+					a->down = temp;
+					tag = 1;
+				}
+				tep = temp;
+			}
+			if (tag == 0)
+			{
+				temp->down = a;
+			}
+		}
+	}
+L1:
+	if (temp->data == 0)
+	{
+		TriLink tp;
+		tp = M->row_head[temp->row];
+		if (tp == temp)
+		{
+			M->row_head[temp->row] = tp->right;
+		}
+		else
+		{
+			if (tp->right == temp)
+			{
+				tp = tp->right;
+			}
+			tp = tp->right;
+		}
+
+		tp = M->column_head[temp->column];
+		if (tp == temp)
+		{
+			M->column_head[temp->column] = tp->down;
+		}
+		else
+		{
+			if (tp->down == temp)
+			{
+				tp = tp->down;
+			}
+			tp = tp->down;
+		}
+		free(temp);
+	}
+}
+
+void PrintfCrossList(CrossList* M,int n)//等会想办法删去变量n
+{
+	TriLink temp;
+	for (i=0;i<n;i++)
+	{
+		temp = M->row_head[i];
+		while (temp != NULL)
+		{
+			printf("%d %d %d\n", temp->row, temp->column, temp->data);
+			temp = temp->right;
+		}
+	}
+}
+
+int main()
+{
+	CrossList* M = NULL;
+	int m, n, t1, t2;
+	scanf("%d%d%d%d", &m, &n, &t1, &t2);
+	TriNode* a;
+	M = CreatCrossList(M, m+1, n+1);
+
+	for (i = 0; i < t1; i++)
+	{
+		a = (TriLink)malloc(sizeof(TriNode));//不断的动态申请TriNode，并且把它赋给一个数，这样的话，十字链表，以及节点都是可以free掉的
+		if (a == NULL)
+		{
+			printf("error");
+			return 0;
+		}
+		scanf("%d%d%d", &(*a).row, &( * a).column, &(*a).data);
+		(*a).right = (*a).down = NULL;
+		ScanfList(M, a);
+	}
+
+	for (i = 0; i < t2; i++)
+	{
+		a = (TriLink)malloc(sizeof(TriNode));
+		if (a == NULL)
+		{
+			printf("error");
+			return 0;
+		}
+		scanf("%d%d%d", &(*a).row, &(*a).column, &(*a).data);
+		(*a).right = (*a).down = NULL;
+		addList(M, a);
+	}
+	PrintfCrossList(M, m+1);
+	return 0;
+}
