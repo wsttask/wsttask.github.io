@@ -1,0 +1,24 @@
+组件：单行文本框
+
+@构造方法
+    TextField()
+    TextField(int columns)：创建一个columns列（即长度）的单行文本框
+    TextField(String text): 创建一个有初始内容text的单行文本框
+    TextField(String text, int columns)
+
+@方法
+    void addTextListener(TextListener l)    (监控textField的文本的变化)创建一个TextField的事件监听器，一般：textField.addTextField(new TextListener {})
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+注：
+public synchronized void addTextListener(TextListener l)

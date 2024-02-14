@@ -1,0 +1,25 @@
+<h1 id="javadoc注释格式">Javadoc注释格式</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1) 单行注释格式
+/** body text */
+2) 多行程序注释格式
+/**
+ * body text
+ * body text
+ */
+</code></pre></div></div>
+
+<h1 id="javadoc标签编写规范">Javadoc标签编写规范</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>javadoc规定，可被解析的标签必须按照以下规格书写：
+/**
+ * @标签名 [标签参数][注释体]
+ */
+1) 标签名：标签的名字，描述了注释体中的内容，指定了Javadoc命令解析此条注释的方式；
+2) 标签参数：可选内容，为标签提供额外信息
+3) 注释体：可选内容，注释的主体部分或对标签的说明 # Java常用标签的阐释。
+1) @author：作用于类，声明作者信息。
+2) @version：作用于类，描述该源文件的版本
+3) @param：作用于构造函数和方法，用于描述方法的传入参数。
+4) @return：作用于方法，描述方法的返回值信息。
+5) @exception (或 @throws)return：作用于构造函数和方法，描述方法可能抛出的异常。
+6) @see：作用于类、属性或方法。
+</code></pre></div></div>

@@ -11,11 +11,12 @@ package Experiment2;
 import java.util.Arrays;
 
 public class Back_TSP {
-    public static int[][] city_graph = {{0, 0, 0, 0, 0},
+    public static int[][] city_graph = { 
+        {0, 0, 0, 0, 0},
                                         {0,-1, 30, 6, 4},
                                         {0,30, -1, 5, 10},
                                         {0,6, 5, -1, 20},
-                                        {0,4, 10, 20, -1}};
+                                        {0,4, 10, 20, -1} };
     public static int path_num = city_graph.length;
     public static int[] is_in = new int[path_num]; //用来检测该节点是否已经添加到路径中
     public static int[] path = new int[path_num];//用于储存路径
@@ -96,11 +97,12 @@ public class Back_TSP {
     }
 
     public static void main(String[] args) {
-        int[][] city_graph = {{0, 0, 0, 0, 0},
-                {0,-1, 30, 6, 4},
-                {0,30, -1, 5, 10},
-                {0,6, 5, -1, 20},
-                {0,4, 10, 20, -1}};
+        int[][] city_graph = { 
+            {0, 0, 0, 0, 0},
+                			   {0,-1, 30, 6, 4},
+                			   {0,30, -1, 5, 10},
+                			   {0,6, 5, -1, 20},
+                			   {0,4, 10, 20, -1}};
 
         int[][] b = { { 0, 0, 0, 0, 0 }, { 0, -1, 9, 19, 13 }, { 0, 21, -1, -1, 14 }, { 0, 1, 40, -1, 17 },
                 { 0, 41, 80, 10, -1 } };

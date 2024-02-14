@@ -1,0 +1,20 @@
+<h2 id="路径">路径</h2>
+<p>../ 的意思是当前位置的前一个位置</p>
+
+<h2 id="输入输出">输入输出</h2>
+
+<p>输入流：本机从外部获取信息</p>
+
+<p>输出流：本机向外部输出信息</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ObjectOutputStream把对象变成字节流</span><span class="o">,</span><span class="nc">ObjectOutputStream把字节流变成对象</span><span class="err">，</span><span class="n">这样的话就可以把对象传输到其他地方使用了</span><span class="err">。</span>
+</code></pre></div></div>
+
+<h2 id="缓冲流和非缓冲流">缓冲流和非缓冲流</h2>
+
+<p>非缓冲输入输出流就是逐个字节（对于字节流）或逐个字符（对于字符流）地进行输入和输出。这意味着每个读取操作都直接从底层输入流（如文件、网络连接等）中读取一个字节或一个字符，每个写入操作都直接将一个字节或一个字符写入底层输出流。</p>
+
+<p>相比之下，缓冲输入输出流则引入了缓冲区的概念。它们通过在内存中维护一个缓冲区，允许程序一次读取或写入一块数据，而不是一个字节或字符。这提高了性能，因为直接操作底层流可能涉及多次系统调用，而使用缓冲可以减少这些调用的次数。</p>
+
+<p>非缓冲输入输出流的例子包括<code class="language-plaintext highlighter-rouge">FileInputStream</code>和<code class="language-plaintext highlighter-rouge">FileOutputStream</code>（字节流），以及<code class="language-plaintext highlighter-rouge">FileReader</code>和<code class="language-plaintext highlighter-rouge">FileWriter</code>（字符流）。这些流提供了逐个字节或逐个字符的读写方法，没有内置缓冲机制。</p>
+

@@ -1,0 +1,84 @@
+<h5 id="依概率收敛">依概率收敛</h5>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>随机变量序列的通项为$Y_n$，若有另一个随机变量$Y$，使得当$n\rightarrow \infty$时，对于任意小的正数$\varepsilon&gt;0$，总有：$lim_{n\rightarrow\infty}P{</td>
+        <td>Y_n-Y</td>
+        <td>&gt;\varepsilon}=0$，则称随机变量序列${Y_n}$依概率收敛于随机变量$Y$。即$Y_\ \stackrel{P}\longrightarrow1$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<h5 id="依分布收敛">依分布收敛</h5>
+
+<blockquote>
+  <p>随机变量序列的通项</p>
+</blockquote>
+
+<h4 id="大数定律因该是所有能写出概率密度函数的都满足的">大数定律因该是所有能写出概率密度函数的都满足的</h4>
+
+<h5 id="标准正态分布">标准正态分布</h5>
+
+<p>$X\sim N(\mu,\sigma^2)\rightarrow Y=\frac{X-\mu}{\sigma} \rightarrow N(0,1)$</p>
+
+<h5 id="定理46林德伯格-莱维中心极限定理独立同分布中心极限定理">定理4.6（林德伯格-莱维中心极限定理）（独立同分布中心极限定理）</h5>
+
+<p>${X_i}独立同分布就满足$</p>
+
+<p>$\lim\limits_{n\rightarrow\infty}P{\frac{\sum_{i=1}^{n}X_i-n\mu}{\sqrt{n}\sigma}\le x}=\Psi(x)=$$\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}dx$</p>
+
+<h5 id="定理47-棣莫弗-拉普拉斯定理">定理4.7 （棣莫弗-拉普拉斯定理）</h5>
+
+<p>$设随机变量Y_n\sim B(n,p)(n=1,2,…),则对任意x，有\lim\limits_{n\rightarrow\infty}P{\frac{Y_n-np}{\sqrt{np(1-p)}}\le x}=\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2}dx$</p>
+
+<p><code class="language-plaintext highlighter-rouge">定理4.7的实质是用正态分布对二项分布作近似计算，常称为“二项分布的正态相似”，它与“二项分布的泊松分布近似”都要求n很大。</code></p>
+
+<p><img src="./images4/image-20230228212630160.png" alt="image-20230228212630160" /></p>
+
+<p><img src="./images4/image-20230228213253100.png" alt="image-20230228213253100" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>大数定律</th>
+      <th>对随机变量序列${X_n}$的要求</th>
+      <th>算数平均值$\frac1{n}\sum_{i=1}^{n}X_i$依概率收敛于</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>切比雪夫大数定律</td>
+      <td>两两不相关，方差存在且有共同上界</td>
+      <td>数学期望的平均值</td>
+    </tr>
+    <tr>
+      <td>辛钦大数定律</td>
+      <td>独立同分布，期望存在</td>
+      <td>共同的数学期望</td>
+    </tr>
+    <tr>
+      <td>伯努利大数定律</td>
+      <td>$X_n\sim B(1,P)$</td>
+      <td>共同的数学期望</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="./images4/image-20230228213757374.png" alt="image-20230228213757374" /></p>
+
+<p><img src="./images4/image-20230228214353121.png" alt="image-20230228214353121" /></p>
+
+<h1 id="sum_k1inftyfrac1k2fracpi26">$\sum_{k=1}^{\infty}\frac1{k^2}=\frac{\pi^2}6$</h1>
+
+<p><img src="./images4/image-20230228232243385.png" alt="image-20230228232243385" /></p>
+
+<p><img src="./images4/image-20230228232352843.png" alt="image-20230228232352843" /></p>
+
+<p><img src="./images4/image-20230228232418404.png" alt="image-20230228232418404" /></p>
+
+<p>中心极限定理就是套个公式</p>
+
+<p><img src="./images4/image-20230228232438242.png" alt="image-20230228232438242" /></p>

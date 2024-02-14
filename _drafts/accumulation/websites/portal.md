@@ -32,3 +32,11 @@ permalink: /browser
 # GAME
 
 ### [aknight](https://ak.hypergryph.com/)
+
+# 音标
+
+### [英语兔](https://www.bilibili.com/video/BV1iV411z7Nj/)
+
+# 视频
+
+### [YouTube](https://www.youtube.com/)

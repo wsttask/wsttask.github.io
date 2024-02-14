@@ -1,0 +1,129 @@
+<h5 id="定义51在数理统计中一个随机变量x或分布函数fx称为一个总体">定义5.1：在数理统计中，一个随机变量$X$或分布函数$F(x)$称为一个总体</h5>
+
+<blockquote>
+  <font color="red">样本</font>
+  <p>：从一个总体$X$中随机抽取的$n$个个体$X_1,X_2,X_3,…,X_n$,称为来自总体$X$的容量为$n$的样本，通常记为$(X_1,X_2,…,X_n)$。由于每一个个体都是从总体中随机抽出来的，每一个个体都是一个随机变量了,因此样本$(X_1,X_2,…,X_n)$就是一个$n$维随机变量。</p>
+
+  <font color="red">样本值</font>
+  <p>：一次具体的抽取的观察结果$(x_1,x_2,x_3,…,x_n)$是完全确定的一组数值，称之为样本值，一个样本值就是样本空间的$\Omega$的一个样本点</p>
+
+  <font color="red">样本空间</font>
+  <p>：$(X_1,X_2,X_3,…,X_n)$所有可能取值的全体称为样本空间，记为$\Omega$</p>
+</blockquote>
+
+<blockquote>
+  <font color="red">简单随机样本</font>
+  <p>：</p>
+
+  <p>（1）代表性：样本的每个分量$X_i$与总体$X$有相同的分布</p>
+
+  <p>（2）独立性：样本的所有分量相互独立</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301154126962.png" alt="	" /></p>
+
+<p><img src="./images4/image-20230301154157099.png" alt="image-20230301154157099" /></p>
+
+<p><img src="./images4/image-20230301154242235.png" alt="image-20230301154242235" /></p>
+
+<p><img src="./images4/image-20230301104702187.png" alt="image-20230301104702187" /></p>
+
+<blockquote>
+  <p>$样本均值\overline{X}=\frac1{n}\sum_{i=1}^{n}X_i$</p>
+
+  <p>$样本方差S_n^2=\frac1{n}\sum_{i=1}^{n}(X_i^2)-\overline{X}^2=\frac1{n}\sum_{i=1}^{n}(X_i-\overline{X})^2$</p>
+
+  <p>$修正样本方差S_n^{*2}=\frac{n}{n-1}S_n^2$</p>
+
+  <p>$样本k阶原点矩A_k=\frac1{n}\sum_{i=1}^{n}X_i^k$</p>
+
+  <p>$B_k=\frac1{n}\sum_{i=1}^{n}(X_i-\overline{X})^k$</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301104910268.png" alt="image-20230301104910268" /></p>
+
+<blockquote>
+  <p>性质1：$E(\overline{X})=E(X)$</p>
+
+  <p>性质2：$D(\overline{X})=\frac{1}{n}D(X)$</p>
+
+  <p>性质3：$E(S_n^2)=\frac{n-1}{n}D(X)$</p>
+
+  <p>性质4：$E(S_n^{*2})=D(X)$</p>
+
+  <p>性质5：$E(A_k)=\alpha_k$</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301154027742.png" alt="image-20230301154027742" /></p>
+
+<p><img src="./images4/image-20230301154317669.png" alt="image-20230301154317669" /></p>
+
+<p><img src="./images4/image-20230301153843754.png" alt="image-20230301153843754" /></p>
+
+<p><img src="./images4/image-20230301154407628.png" alt="image-20230301154407628" /></p>
+
+<p><img src="./images4/image-20230301154807401.png" alt="image-20230301154807401" /></p>
+
+<h5 id="卡方分布">卡方分布</h5>
+
+<p>$若样本(X_1,X_2,X_3,…,X_n)来自标准正态分布X\sim N(0,1),则称随机变量\chi^2<em>n=\sum</em>{i=1}^nX_i^2=X_1^2+X_2^2+…+X_n^2服从自由度为n的\chi^2的分布，记作\chi^2_n\sim\chi^2(n)$</p>
+
+<blockquote>
+  <p>$(1)E(\chi^2_n)=n,D(\chi_n^2)=2n$</p>
+
+  <p>$(2)两相互独立的服从\chi^2分布的随机变量，其和仍服从\chi^2分布，自由度为它们的和$</p>
+
+  <p>$(3)\chi^2\sim AN(n,2n)$</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301155259329.png" alt="image-20230301155259329" /></p>
+
+<p><img src="images4/image-20230301155457302.png" alt="image-20230301155457302" /></p>
+
+<h5 id="t分布">t分布</h5>
+
+<blockquote>
+  <p>$(1)E(T)=0,D(T)=\frac{n}{n-2}(n&gt;2)$</p>
+
+  <p>$(2)分布密度函数是对称的(偶函数)$</p>
+
+  <p>$(3)T\sim AN(0,1)$</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301160111645.png" alt="image-20230301160111645" /></p>
+
+<p><img src="./images4/image-20230301160256007.png" alt="image-20230301160256007" /></p>
+
+<h5 id="f分布">F分布</h5>
+
+<blockquote>
+  <p>$(1)\frac1F\sim F(n_2,n_1)$</p>
+
+  <p>$(2)T^2\sim F(1,n)$</p>
+
+  <p>$(3)E(F)=\frac{n_2}{n_2-2}(n_2&gt;2),D(F)=\frac{2n_2^2(n_1+n_2-2)}{n_1(n_2-2)^2(n_2-4)}(n_2&gt;4)$</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301160628329.png" alt="image-20230301160628329" /></p>
+
+<p><img src="./images4/image-20230301160854364.png" alt="image-20230301160854364" /></p>
+
+<h5 id="上alpha分位点">上$\alpha$分位点</h5>
+
+<blockquote>
+  <p>$(1)\Phi(u_\alpha)=1-\alpha,u_\alpha=-u_{1-\alpha}$</p>
+
+  <p>$(2)$</p>
+
+  <p>$(3)t_\alpha(n)=-t_{1-\alpha}(n)$</p>
+
+  <p>$(4)F_\alpha(n_1,n_2)=\frac{1}{F_{1-\alpha}(n_2,n_1)}$</p>
+</blockquote>
+
+<p><img src="./images4/image-20230301161045748.png" alt="image-20230301161045748" /></p>
+
+<p><img src="./images4/image-20230301161146219.png" alt="image-20230301161146219" /></p>
+
+<p><img src="./images4/image-20230301161218754.png" alt="image-20230301161218754" /></p>
+
+<p><img src="./images4/image-20230301161312534.png" alt="image-20230301161312534" /></p>

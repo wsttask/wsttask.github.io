@@ -1,0 +1,41 @@
+<p>1.什么是构造函数
+构造函数也称构造方法，是java中的一种特殊的函数
+2.作用于特点
+作用：创建新对象时给对象初始化
+特点：-函数名与类名相同，没有返回值，不可以写return。
+        -可以有多个构造函数（参数列表不同），各个构造函数之间属于方法重载</p>
+
+<p>##Simple：
+class Box { 
+    double width; 
+    double height; 
+    double depth;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Box() { 
+System.out.println("Constructing Box");
+width = 10; 
+height = 10; 
+depth = 10; 
+} 
+double volume() {   
+    return width * height * depth; 
+}  }  class BoxDemo6 { 
+public static void main(String args[]) { 
+Box mybox1 = new Box(); 
+Box mybox2 = new Box(); 
+double vol; 
+vol = mybox1.volume(); 
+System.out.println("Volume is " + vol); 
+vol = mybox2.volume(); 
+System.out.println("Volume is " + vol); 
+}  } 
+</code></pre></div></div>
+
+<p>##输出
+Constructing Box 
+Constructing Box 
+Volume is 1000.0 
+Volume is 1000.0</p>
+
+<p>-当mybox1和mybox2被创建时，它们两个都被Box构造函数初始化。
+-构造函数将所有的盒子赋为一样的尺寸，长、宽、高都是10，它们将有一样的体积。</p>

@@ -1,0 +1,85 @@
+<h4 id="jlable常用构造方法">JLable常用构造方法</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*
+ * 构造方法中的参数含义:
+ *     text: 标签显示的 文本
+ *     image: 标签显示的 图片
+ *     horizontalAlignment: 标签内容（在标签内）的水平对其方式（竖直方向默认居中, 可通过方法设置）
+ */
+JLabel()
+
+JLabel(String text)
+
+JLabel(String text, int horizontalAlignment)
+
+JLabel(Icon image) 
+
+JLabel(Icon image, int horizontalAlignment) 
+
+JLabel(String text, Icon image, int horizontalAlignment) 
+</code></pre></div></div>
+
+<h4 id="jlabel的常用方法">JLabel的常用方法</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 设置 文本 和 图片
+void setText(String text)
+void setIcon(Icon icon)
+
+// 设置文本相对于图片的位置（文本默认在图片右边垂直居中）
+void setHorizontalTextPosition(int textPosition)
+void setVerticalTextPosition(int textPosition)
+
+// 设置标签内容（在标签内）的对其方式（默认左对齐并垂直居中）
+void setHorizontalAlignment(int alignment)
+void setVerticalAlignment(int alignment)
+
+// 设置图片和文本之间的间隙
+void setIconTextGap(int iconTextGap)
+
+/* 
+ * 下面的方法定义在 JComponent 基类中
+ */
+// 设置文本的字体类型、样式 和 大小
+void setFont(Font font)
+
+// 设置字体颜色
+void setForeground(Color fg)
+
+// 当鼠标移动到组件上时显示的提示文本
+void setToolTipText(String text)
+
+// 设置组件的背景
+void setBackground(Color bg)
+
+// 设置组件是否可见
+void setVisible(boolean visible)
+
+// 设置组件是否为 不透明，JLabel默认为透明，设置为不透明后才能显示背景
+void setOpaque(boolean isOpaque)
+
+// 设置组件的 首选 大小
+void setPreferredSize(Dimension preferredSize)
+
+// 设置组件的 最小 大小
+void setMinimumSize(Dimension minimumSize)
+
+// 设置组件的 最大 大小
+void setMaximumSize(Dimension maximumSize)
+
+/*
+ * 上面的对齐参数具体的取值常量参考 DocsApi；
+ * setXXX(...) 方法往往都对应着 getXXX() 方法。
+ */
+</code></pre></div></div>
+
+<h4 id="imageicon-的构造方法">ImageIcon 的构造方法</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 使用 本地路径 图片创建 ImageIcon
+ImageIcon(String filename)
+
+// 使用 网络路径 图片创建 ImageIcon
+ImageIcon(URL location)
+
+// 使用图片文件的字节数组创建 ImageIcon
+ImageIcon(byte[] imageData)
+
+// 使用 java.awt.Image 实例创建 ImageIcon
+ImageIcon(java.awt.Image image)
+</code></pre></div></div>

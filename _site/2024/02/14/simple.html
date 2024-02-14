@@ -1,0 +1,410 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">cn.edu.nwpu.soft</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">com.alibaba.fastjson2.JSON</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.alibaba.fastjson2.JSONArray</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.alibaba.fastjson2.JSONObject</span><span class="o">;</span>
+<span class="c1">//import jdk.nashorn.internal.parser.JSONParser;</span>
+<span class="kn">import</span> <span class="nn">org.dom4j.Document</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.dom4j.DocumentException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.dom4j.DocumentHelper</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.dom4j.Element</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.dom4j.io.SAXReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.text.ParseException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.text.SimpleDateFormat</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Date</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">BufferedReader</span> <span class="n">stdIn</span> <span class="o">=</span>
+            <span class="k">new</span>  <span class="nf">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">PrintWriter</span> <span class="n">stdOut</span> <span class="o">=</span>
+            <span class="k">new</span>  <span class="nf">PrintWriter</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">PrintWriter</span>  <span class="n">stdErr</span> <span class="o">=</span>
+            <span class="k">new</span>  <span class="nf">PrintWriter</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">err</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+    
+    <span class="kd">private</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">UndergraduateStudent</span><span class="o">&gt;</span> <span class="n">undergraduateStudents</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">UndergraduateStudent</span><span class="o">&gt;();</span>
+    <span class="kd">private</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">GraduateStudent</span><span class="o">&gt;</span> <span class="n">graduateStudents</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">GraduateStudent</span><span class="o">&gt;();</span>
+    <span class="kd">private</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">DoctoralStudent</span><span class="o">&gt;</span> <span class="n">doctoralStudents</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">DoctoralStudent</span><span class="o">&gt;();</span>
+
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">,</span> <span class="nc">ParseException</span><span class="o">{</span>
+        <span class="nc">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Student</span><span class="o">();</span>
+        <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Please enter characters to implement the function\n"</span><span class="o">+</span>
+                <span class="s">"[A]打印全部学生信息\n"</span> <span class="o">+</span>
+                <span class="s">"[B]新增一个本科生\n"</span> <span class="o">+</span>
+                <span class="s">"[C]新增一个研究生\n"</span> <span class="o">+</span>
+                <span class="s">"[D]新增一个博士生\n"</span> <span class="o">+</span>
+                <span class="s">"[E]按学号查找学生\n"</span> <span class="o">+</span>
+                <span class="s">"[F]按姓名查找学生\n"</span> <span class="o">+</span>
+                <span class="s">"[G]学生排序"</span><span class="o">);</span>
+        <span class="n">student</span><span class="o">.</span><span class="na">readUS</span><span class="o">();</span>
+        <span class="n">student</span><span class="o">.</span><span class="na">readGS</span><span class="o">();</span>
+        <span class="n">student</span><span class="o">.</span><span class="na">readDS</span><span class="o">();</span>
+        <span class="n">student</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayInfo</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="nc">BufferedReader</span> <span class="n">br1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"us.txt"</span><span class="o">));</span>
+        <span class="nc">BufferedReader</span> <span class="n">br2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"gs.json"</span><span class="o">));</span>
+        <span class="nc">BufferedReader</span> <span class="n">br3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"ds.xml"</span><span class="o">));</span>
+        <span class="nc">String</span> <span class="n">str1</span><span class="o">;</span>
+        <span class="k">while</span><span class="o">((</span><span class="n">str1</span> <span class="o">=</span> <span class="n">br1</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str1</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="nc">String</span> <span class="n">str2</span><span class="o">;</span>
+        <span class="k">while</span><span class="o">((</span><span class="n">str2</span> <span class="o">=</span> <span class="n">br2</span><span class="o">.</span><span class="na">readLine</span><span class="o">())!=</span> <span class="kc">null</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str2</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="nc">String</span> <span class="n">str3</span><span class="o">;</span>
+        <span class="k">while</span><span class="o">((</span><span class="n">str3</span> <span class="o">=</span> <span class="n">br3</span><span class="o">.</span><span class="na">readLine</span><span class="o">())!=</span> <span class="kc">null</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str3</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">{</span>
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+        <span class="k">while</span><span class="o">(</span><span class="n">str</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="s">"A"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span>
+            <span class="o">{</span>
+                <span class="n">displayInfo</span><span class="o">();</span>
+            <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="s">"B"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"请输入学生信息，中间用_分隔"</span><span class="o">);</span>
+                <span class="n">addUndergraduateStudent</span><span class="o">();</span>
+            <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="s">"C"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"请输入学生信息，中间用_分隔"</span><span class="o">);</span>
+                <span class="n">addGraduateStudent</span><span class="o">();</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="s">"D"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span> <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"请输入学生信息，中间用_分隔"</span><span class="o">);</span>
+                <span class="n">addDoctoralStudent</span><span class="o">();</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="s">"E"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span> <span class="o">{</span>
+                <span class="nc">String</span> <span class="n">number</span> <span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+                <span class="n">findStudentByNumber</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
+            <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="s">"F"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span>
+            <span class="o">{</span>
+                <span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+                <span class="n">findStudentByName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="s">"G"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">str</span><span class="o">))</span> <span class="o">{</span>
+                <span class="n">sort</span><span class="o">();</span>
+            <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"输入不合法，请重新输入"</span><span class="o">);</span>
+            <span class="o">}</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+        <span class="o">}</span>
+    
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">readUS</span><span class="o">(){</span>
+        <span class="k">try</span><span class="o">{</span>
+            <span class="nc">FileReader</span> <span class="n">readFile</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"us.txt"</span><span class="o">);</span>
+            <span class="nc">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="n">readFile</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+            <span class="k">while</span><span class="o">(</span><span class="n">str</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">StringTokenizer</span> <span class="n">tokenizer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">,</span><span class="s">"_"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">studentNumber</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">studentName</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">g</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="kt">char</span> <span class="n">gander</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="s">"男"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g</span><span class="o">))</span>
+                <span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'男'</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'女'</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">SimpleDateFormat</span> <span class="n">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                <span class="nc">Date</span> <span class="n">birthday</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+                <span class="nc">String</span> <span class="n">academy</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">major</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">tutor</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="n">undergraduateStudents</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">UndergraduateStudent</span><span class="o">(</span><span class="n">studentNumber</span><span class="o">,</span> <span class="n">studentName</span><span class="o">,</span> <span class="n">gander</span><span class="o">,</span> <span class="n">birthday</span><span class="o">,</span> <span class="n">academy</span><span class="o">,</span> <span class="n">major</span><span class="o">,</span><span class="n">tutor</span><span class="o">));</span>
+                <span class="n">str</span><span class="o">=</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="o">|</span> <span class="nc">ParseException</span> <span class="n">e</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"US Read exception!"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addUndergraduateStudent</span><span class="o">(){</span>
+        <span class="k">while</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">try</span><span class="o">{</span>
+                <span class="nc">String</span> <span class="n">s</span><span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+                <span class="nc">StringTokenizer</span> <span class="n">tokenizer</span><span class="o">=</span><span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">s</span><span class="o">,</span><span class="s">"_"</span><span class="o">);</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">countTokens</span><span class="o">()!=</span><span class="mi">7</span><span class="o">)</span>
+                <span class="o">{</span>
+                    <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The input information parameter is incorrect, please re-enter it"</span><span class="o">);</span>
+                    <span class="k">continue</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">String</span> <span class="n">studentNumber</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">studentName</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">g</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="kt">char</span> <span class="n">gander</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="s">"男"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g</span><span class="o">))</span>
+                <span class="o">{</span>
+    
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'男'</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'女'</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">SimpleDateFormat</span> <span class="n">formatter</span><span class="o">=</span><span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                <span class="nc">Date</span> <span class="n">birthday</span><span class="o">=</span><span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+                <span class="nc">String</span> <span class="n">academy</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">major</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">tutor</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">UndergraduateStudent</span> <span class="n">undergraduateStudent</span><span class="o">=</span><span class="k">new</span> <span class="nc">UndergraduateStudent</span><span class="o">(</span><span class="n">studentNumber</span><span class="o">,</span> <span class="n">studentName</span><span class="o">,</span> <span class="n">gander</span><span class="o">,</span> <span class="n">birthday</span><span class="o">,</span> <span class="n">academy</span><span class="o">,</span> <span class="n">major</span><span class="o">,</span><span class="n">tutor</span><span class="o">);</span>
+                <span class="nc">FileWriter</span> <span class="n">fileWriter</span><span class="o">=</span><span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"us.txt"</span><span class="o">,</span><span class="kc">true</span><span class="o">);</span>
+                <span class="n">fileWriter</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"\n"</span><span class="o">+</span><span class="n">s</span><span class="o">);</span>
+                <span class="n">fileWriter</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+                <span class="n">undergraduateStudents</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">undergraduateStudent</span><span class="o">);</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Added successfully"</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="nc">ParseException</span> <span class="o">|</span> <span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The input format is incorrect, please re-enter"</span><span class="o">);</span>
+            <span class="o">}</span>
+    
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">readGS</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">,</span> <span class="nc">ParseException</span> <span class="o">{</span>
+        <span class="k">try</span><span class="o">{</span>
+            <span class="nc">FileReader</span> <span class="n">readFile</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="s">"gs.json"</span><span class="o">);</span>
+            <span class="nc">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="n">readFile</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+            <span class="nc">StringBuilder</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">());</span>
+            <span class="k">while</span><span class="o">(</span><span class="n">str</span><span class="o">!=</span><span class="kc">null</span><span class="o">){</span>
+                <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+                <span class="n">str</span><span class="o">=</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+            <span class="o">}</span>
+            <span class="nc">JSONArray</span> <span class="n">array</span><span class="o">=</span><span class="nc">JSONArray</span><span class="o">.</span><span class="na">parseArray</span><span class="o">(</span><span class="n">sb</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">array</span><span class="o">.</span><span class="na">size</span><span class="o">();</span><span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="nc">JSONObject</span> <span class="n">jsonObject</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="na">getJSONObject</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">studentNumber</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"studentNumber"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">studentName</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"studentName"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">g</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"gander"</span><span class="o">);</span>
+                <span class="kt">char</span> <span class="n">gander</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="s">"男"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g</span><span class="o">))</span> <span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'男'</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'女'</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">SimpleDateFormat</span> <span class="n">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                <span class="nc">Date</span> <span class="n">birthday</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"birthday"</span><span class="o">));</span>
+                <span class="nc">String</span> <span class="n">academy</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"academy"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">major</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"major"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">supervisor</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"supervisor"</span><span class="o">);</span>
+                <span class="n">graduateStudents</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">GraduateStudent</span><span class="o">(</span><span class="n">studentNumber</span><span class="o">,</span><span class="n">studentName</span><span class="o">,</span><span class="n">gander</span><span class="o">,</span><span class="n">birthday</span><span class="o">,</span><span class="n">academy</span><span class="o">,</span><span class="n">major</span><span class="o">,</span><span class="n">supervisor</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="o">|</span> <span class="nc">ParseException</span> <span class="n">e</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"GS Read exception"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addGraduateStudent</span><span class="o">(){</span>
+        <span class="k">while</span><span class="o">(</span><span class="kc">true</span><span class="o">){</span>
+            <span class="k">try</span><span class="o">{</span>
+                <span class="nc">String</span> <span class="n">s</span> <span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+                <span class="nc">StringTokenizer</span> <span class="n">tokenizer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">s</span><span class="o">,</span><span class="s">"_"</span><span class="o">);</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">countTokens</span><span class="o">()</span> <span class="o">!=</span> <span class="mi">7</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The input information parameter is incorrect, please re-enter it"</span><span class="o">);</span>
+                    <span class="k">continue</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">String</span> <span class="n">studentNumber</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">studentName</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">g</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="kt">char</span> <span class="n">gander</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="s">"男"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g</span><span class="o">))</span> <span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'男'</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'女'</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">SimpleDateFormat</span> <span class="n">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                <span class="nc">Date</span> <span class="n">birthday</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+                <span class="nc">String</span> <span class="n">academy</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">major</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">supervisor</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">GraduateStudent</span> <span class="n">graduateStudent</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">GraduateStudent</span><span class="o">(</span><span class="n">studentNumber</span><span class="o">,</span> <span class="n">studentName</span><span class="o">,</span> <span class="n">gander</span><span class="o">,</span> <span class="n">birthday</span><span class="o">,</span>
+                        <span class="n">academy</span><span class="o">,</span> <span class="n">major</span><span class="o">,</span><span class="n">supervisor</span><span class="o">);</span>
+                <span class="n">graduateStudents</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">graduateStudent</span><span class="o">);</span>
+                <span class="nc">FileWriter</span> <span class="n">fileWriter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"gs.json"</span><span class="o">,</span><span class="kc">false</span><span class="o">);</span>
+                <span class="n">fileWriter</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="nc">JSONArray</span><span class="o">.</span><span class="na">toJSONString</span><span class="o">(</span><span class="n">graduateStudents</span><span class="o">));</span>
+                <span class="n">fileWriter</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Added successfully"</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="nc">ParseException</span> <span class="o">|</span> <span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The input format is incorrect, please re-enter"</span><span class="o">);</span>
+            <span class="o">}</span>
+    
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">readDS</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="k">try</span><span class="o">{</span>
+            <span class="nc">SAXReader</span> <span class="n">reader</span> <span class="o">=</span>  <span class="k">new</span> <span class="nc">SAXReader</span><span class="o">();</span>
+            <span class="n">org</span><span class="o">.</span><span class="na">dom4j</span><span class="o">.</span><span class="na">Document</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="s">"ds.xml"</span><span class="o">));</span>
+            <span class="nc">Element</span> <span class="n">root</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="na">getRootElement</span><span class="o">();</span>
+            <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Element</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="na">elements</span><span class="o">();</span>
+            <span class="nc">List</span><span class="o">&lt;</span><span class="nc">DoctoralStudent</span><span class="o">&gt;</span> <span class="n">dsList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">DoctoralStudent</span><span class="o">&gt;();</span>
+            <span class="k">for</span><span class="o">(</span><span class="nc">Element</span> <span class="nl">ds:</span><span class="n">list</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">Element</span> <span class="n">numberEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"studentNumber"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">studentNumber</span> <span class="o">=</span> <span class="n">numberEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="nc">Element</span> <span class="n">nameEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"studentName"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">studentName</span> <span class="o">=</span> <span class="n">nameEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="nc">Element</span> <span class="n">ganderEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"gander"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">g</span> <span class="o">=</span> <span class="n">ganderEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="kt">char</span> <span class="n">gander</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="s">"男"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g</span><span class="o">))</span> <span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'男'</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'女'</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">Element</span> <span class="n">dateEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"birthday"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">date</span> <span class="o">=</span> <span class="n">dateEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="nc">SimpleDateFormat</span> <span class="n">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                <span class="nc">Date</span> <span class="n">birthday</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">date</span><span class="o">);</span>
+                <span class="nc">Element</span> <span class="n">academyEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"academy"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">academy</span> <span class="o">=</span> <span class="n">academyEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="nc">Element</span> <span class="n">majorEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"major"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">major</span> <span class="o">=</span> <span class="n">majorEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="nc">Element</span> <span class="n">supervisorEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"supervisor"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">supervisor</span> <span class="o">=</span> <span class="n">supervisorEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="nc">Element</span> <span class="n">researchFieldsEle</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="na">element</span><span class="o">(</span><span class="s">"researchFields"</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">researchFields</span> <span class="o">=</span> <span class="n">researchFieldsEle</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+                <span class="n">doctoralStudents</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">DoctoralStudent</span><span class="o">(</span><span class="n">studentNumber</span><span class="o">,</span><span class="n">studentName</span><span class="o">,</span><span class="n">gander</span><span class="o">,</span><span class="n">birthday</span><span class="o">,</span><span class="n">academy</span><span class="o">,</span><span class="n">major</span><span class="o">,</span><span class="n">supervisor</span><span class="o">,</span><span class="n">researchFields</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="nc">DocumentException</span> <span class="o">|</span> <span class="nc">ParseException</span> <span class="n">e</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"DS Read exception"</span><span class="o">);</span>
+        <span class="o">}</span>
+    
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addDoctoralStudent</span><span class="o">(){</span>
+        <span class="k">while</span><span class="o">(</span><span class="kc">true</span><span class="o">){</span>
+            <span class="k">try</span><span class="o">{</span>
+                <span class="nc">String</span> <span class="n">s</span><span class="o">=</span> <span class="n">stdIn</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+                <span class="nc">StringTokenizer</span> <span class="n">tokenizer</span><span class="o">=</span><span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">s</span><span class="o">,</span><span class="s">"_"</span><span class="o">);</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">countTokens</span><span class="o">()!=</span><span class="mi">8</span><span class="o">)</span>
+                <span class="o">{</span>
+                    <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The input information parameter is incorrect, please re-enter it"</span><span class="o">);</span>
+                    <span class="k">continue</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">String</span> <span class="n">studentNumber</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">studentName</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">g</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="kt">char</span> <span class="n">gander</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="s">"男"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">g</span><span class="o">))</span>
+                <span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'男'</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                    <span class="n">gander</span><span class="o">=</span><span class="sc">'女'</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="nc">SimpleDateFormat</span> <span class="n">formatter</span><span class="o">=</span><span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                <span class="nc">Date</span> <span class="n">birthday</span><span class="o">=</span><span class="n">formatter</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+                <span class="nc">String</span> <span class="n">academy</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">major</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">supervisor</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">String</span> <span class="n">researchFields</span><span class="o">=</span><span class="n">tokenizer</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                <span class="nc">DoctoralStudent</span> <span class="n">doctoralStudent</span><span class="o">=</span><span class="k">new</span> <span class="nc">DoctoralStudent</span><span class="o">(</span><span class="n">studentNumber</span><span class="o">,</span> <span class="n">studentName</span><span class="o">,</span> <span class="n">gander</span><span class="o">,</span> <span class="n">birthday</span><span class="o">,</span> <span class="n">academy</span><span class="o">,</span> <span class="n">major</span><span class="o">,</span><span class="n">supervisor</span><span class="o">,</span><span class="n">researchFields</span><span class="o">);</span>
+                <span class="n">doctoralStudents</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">doctoralStudent</span><span class="o">);</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Added successfully"</span><span class="o">);</span>
+                <span class="nc">Document</span> <span class="n">document</span> <span class="o">=</span> <span class="nc">DocumentHelper</span><span class="o">.</span><span class="na">createDocument</span><span class="o">();</span>
+                <span class="nc">Element</span> <span class="n">root</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"doctoralStudents"</span><span class="o">);</span>
+                <span class="k">for</span><span class="o">(</span><span class="nc">DoctoralStudent</span> <span class="n">ds</span> <span class="o">:</span> <span class="n">doctoralStudents</span><span class="o">){</span>
+                    <span class="nc">Element</span> <span class="n">root1</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"studentInfo"</span><span class="o">);</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"studentNumber"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getStudentNumber</span><span class="o">());</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"studentName"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getStudentName</span><span class="o">());</span>
+                    <span class="nc">String</span> <span class="n">string</span> <span class="o">=</span> <span class="nc">Character</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getGander</span><span class="o">());</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"gander"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">string</span><span class="o">);</span>
+                    <span class="nc">SimpleDateFormat</span> <span class="n">simpleDateFormat</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy年MM月dd日"</span><span class="o">);</span>
+                    <span class="nc">String</span> <span class="n">transformDate</span> <span class="o">=</span> <span class="n">simpleDateFormat</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getBirthday</span><span class="o">());</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"birthday"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">transformDate</span><span class="o">);</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"academy"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getAcademy</span><span class="o">());</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"major"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getMajor</span><span class="o">());</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"supervisor"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getSupervisor</span><span class="o">());</span>
+                    <span class="n">root1</span><span class="o">.</span><span class="na">addElement</span><span class="o">(</span><span class="s">"researchFields"</span><span class="o">).</span><span class="na">addText</span><span class="o">(</span><span class="n">ds</span><span class="o">.</span><span class="na">getResearchFields</span><span class="o">());</span>
+                <span class="o">}</span>
+                <span class="nc">FileWriter</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileWriter</span><span class="o">(</span><span class="s">"ds.xml"</span><span class="o">,</span><span class="kc">false</span><span class="o">);</span>
+                <span class="n">document</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">out</span><span class="o">);</span>
+                <span class="n">out</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="nc">ParseException</span> <span class="o">|</span> <span class="nc">IOException</span> <span class="n">nfe</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">nfe</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The input format is incorrect, please re-enter"</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">findStudentByNumber</span><span class="o">(</span><span class="nc">String</span> <span class="n">number</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">UndergraduateStudent</span> <span class="nl">undergraduateStudent:</span><span class="n">undergraduateStudents</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">number</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">undergraduateStudent</span><span class="o">.</span><span class="na">getStudentNumber</span><span class="o">()))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">undergraduateStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">GraduateStudent</span> <span class="nl">graduateStudent:</span><span class="n">graduateStudents</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">number</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">graduateStudent</span><span class="o">.</span><span class="na">getStudentNumber</span><span class="o">()))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">graduateStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">DoctoralStudent</span> <span class="nl">doctoralStudent:</span><span class="n">doctoralStudents</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">number</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">doctoralStudent</span><span class="o">.</span><span class="na">getStudentNumber</span><span class="o">()))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">doctoralStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">findStudentByName</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">UndergraduateStudent</span> <span class="nl">undergraduateStudent:</span><span class="n">undergraduateStudents</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">name</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">undergraduateStudent</span><span class="o">.</span><span class="na">getStudentName</span><span class="o">()))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">undergraduateStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">GraduateStudent</span> <span class="nl">graduateStudent:</span><span class="n">graduateStudents</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">name</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">graduateStudent</span><span class="o">.</span><span class="na">getStudentName</span><span class="o">()))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">graduateStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">DoctoralStudent</span> <span class="nl">doctoralStudent:</span><span class="n">doctoralStudents</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">name</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">doctoralStudent</span><span class="o">.</span><span class="na">getStudentName</span><span class="o">()))</span>
+            <span class="o">{</span>
+                <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">doctoralStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="nc">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">undergraduateStudents</span><span class="o">);</span>
+        <span class="nc">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">graduateStudents</span><span class="o">);</span>
+        <span class="nc">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">doctoralStudents</span><span class="o">);</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">UndergraduateStudent</span> <span class="nl">undergraduateStudent:</span><span class="n">undergraduateStudents</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">undergraduateStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+        <span class="o">}</span>
+        <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">JSONArray</span><span class="o">.</span><span class="na">toJSONString</span><span class="o">(</span><span class="n">graduateStudents</span><span class="o">));</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">DoctoralStudent</span> <span class="n">doctoralStudent</span> <span class="o">:</span> <span class="n">doctoralStudents</span><span class="o">){</span>
+            <span class="n">stdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">doctoralStudent</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>

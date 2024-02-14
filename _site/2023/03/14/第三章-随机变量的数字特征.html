@@ -1,0 +1,192 @@
+<h5 id="数学期望的定义和计算">数学期望的定义和计算</h5>
+
+<p>$离散型随机变量:E(X)=\sum_{n=1}^\infty x_nP_n$</p>
+
+<p>$连续型随机变量:E(X)=\int_{-\infty}^{+\infty}xp(x)dx$</p>
+
+<blockquote>
+  <p>注意，随机变量的<font color="red">数学期望</font>并不是都存在！只有上述的无穷级数/广义积分绝对收敛，数学期望才存在</p>
+
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>分布形式</th>
+      <th>0-1分布X~B(1,p)</th>
+      <th>二项分布X~B(n,p)</th>
+      <th>几何分布X~Geo(p)</th>
+      <th>泊松分布X~P($\lambda$)</th>
+      <th>指数分布X~Exp($\lambda$)</th>
+      <th>正态分布X~N($\mu,\sigma^2$)</th>
+      <th>均匀分布X~U(a,b)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>数学期望</td>
+      <td>$p$</td>
+      <td>$np$</td>
+      <td>$\frac1p$</td>
+      <td>$\lambda$</td>
+      <td>$\frac1\lambda$</td>
+      <td>$\mu$</td>
+      <td>$(a+b)$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="随机变量函数的数学期望">随机变量函数的数学期望</h6>
+
+<blockquote>
+  <p>当$Y=f(X)$时</p>
+
+  <p>$E(Y)=\sum_{n=1}^\infty f(x_n)p_n$</p>
+
+  <p>$E(Y)=\int_{-\infty}^{+\infty}f(x)p(x)dx$</p>
+</blockquote>
+
+<blockquote>
+  <p>当$Z=f(X,Y)$时</p>
+
+  <p>$E(Z)=\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}f(x_i,y_j)p_{ij}$</p>
+
+  <p>$E(Z)=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}f(x,y)dxdy$</p>
+</blockquote>
+
+<h6 id="随机变量数学期望的性质">随机变量数学期望的性质</h6>
+
+<blockquote>
+  <p>性质1：若$C$为常数，则$E(C)=C$ ,即常数的期望是它本身</p>
+
+  <p>性质2：若$C$为常数，$X$为随机变量，则$E(CX)=CE(X)$，即求期望时，随机变量的常系数可以直接提出</p>
+
+  <p>性质3：若$X,Y$为随机变量，则$E(X+Y)=E(X)+E(Y)$，即随机变量的和的期望，等于它们期望的和</p>
+
+  <p>性质4：若$X,Y$为相互独立的随机变量，则$E(XY)=E(X)E(Y)$，<font color="red">但是反之不成立！</font>，即相互独立的随机变量乘积的期望，等于期望的积</p>
+</blockquote>
+
+<h5 id="随机变量的方差的定义和计算">随机变量的方差的定义和计算</h5>
+
+<p>$离散型随机变量:D(X)=\sum_{n=1}^\infty[x_i-E(X)]^2p_n),其中随机变量X的分布律为P{X=x_n}=p_n$</p>
+
+<p>$连续型随机变量:D(X)=\int_{-\infty}^{+\infty}[x-E(X)]^2p(x)dx,其中随机变量X的密度函数为p(x)$</p>
+
+<blockquote>
+  <p>计算方差的重要公式：<font color="red">$D(X)=E(X^2)-[E(X)]^2$</font>，非常常用！</p>
+
+  <p>可以通过$X$和$X^2$的期望来求方差，也可以用方差和$X$的期望来求$X^2$的期望</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>分布形式</th>
+      <th>0-1分布X~B(1,p)</th>
+      <th>二项分布X~B(n,p)</th>
+      <th>几何分布X~Geo(p)</th>
+      <th>泊松分布X~P($\lambda$)</th>
+      <th>指数分布X~Exp($\lambda$)</th>
+      <th>正态分布X~N($\mu,\sigma^2$)</th>
+      <th>均匀分布X~U(a,b)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>方差</td>
+      <td>$p(1-p)$</td>
+      <td>$np(1-p)$</td>
+      <td>$\frac{(1-p)}{p^2}$</td>
+      <td>$\lambda$</td>
+      <td>$\frac1{\lambda^2}$</td>
+      <td>$\sigma^2$</td>
+      <td>$\frac{(b-a)^2}{12}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="随机变量的方差的性质">随机变量的方差的性质</h6>
+
+<blockquote>
+  <p>性质1：若$C$为常数，则$D(C)=0$；反之也成立</p>
+
+  <p>性质2：若$k$为常数，$X$为随机变量，则$D(kX)=k^2D(X)$</p>
+
+  <p>性质3：若$X,Y$为相互独立的随机变量，则$D(X\pm Y)=D(X)+D(Y)$</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>性质4：若$X$存在期望$E(X)=\mu,D(X)=\sigma^2$，则对于任意正数$\varepsilon$，$P{</td>
+        <td>X-\mu</td>
+        <td>\ge \varepsilon}\le \frac{\sigma^2}{\varepsilon^2}$，切比雪夫不等式，可在仅知期望和方差的情况下，估计随机变量偏离均值之概率的取值</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<h5 id="随机变量的矩">随机变量的矩</h5>
+
+<blockquote>
+  <p>k阶原点矩：$a_k=E(X^k)$</p>
+
+  <p>$a_k=\sum_{n=1}^{\infty}x^kp(x)dx$</p>
+
+  <p>$a_k=\int_{-\infty}^{+\infty}x^kp(x)dx$</p>
+</blockquote>
+
+<blockquote>
+  <p>k阶中心矩：$\mu_k=E[X-E(X)]^k$</p>
+
+  <p>$\mu_k=\sum_{n=1}^{\infty}(x_n-E(X))^kp_n$</p>
+
+  <p>$a_k=\int_{-\infty}^{+\infty}(x-E(X))^kp(x)dx$</p>
+</blockquote>
+
+<h5 id="协方差">协方差</h5>
+
+<blockquote>
+  <p>$cov(X,Y)=E{[X-E(X)][Y-E(Y)]}=E(XY)-E(X)E(Y)$</p>
+
+  <p>$D(X\pm Y)=D(X)+D(Y)\pm 2cov(X,Y)$</p>
+</blockquote>
+
+<h5 id="相关系数">相关系数</h5>
+
+<blockquote>
+  <p>$\rho_{XY}=\frac{cov(X,Y)}{\sigma_X\sigma_Y}$</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>$</td>
+        <td>\rho_{XY}</td>
+        <td>\le 1$</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>相关系数越接近于1，相关性越强</p>
+</blockquote>
+
+<p><img src="./images4/image-20230228184506495.png" alt="image-20230228184506495" /></p>
+
+<p><img src="./images4/image-20230228182826577.png" alt="image-20230228182826577" /></p>
+
+<p><img src="./images4/image-20230228185116235.png" alt="image-20230228185116235" /></p>
+
+<p><img src="./images4/image-20230228190431603.png" alt="j" /></p>
+
+<p><img src="./images4/image-20230228190700318.png" alt="image-20230228190700318" /></p>
+
+<blockquote>
+
+</blockquote>
+
+<p><img src="./images4/image-20230228190959681.png" alt="image-20230228190959681" /></p>
+
+<blockquote>
+
+</blockquote>
+
+<p><img src="./images4/image-20230228192126737.png" alt="image-20230228192126737" /></p>

@@ -1,0 +1,24 @@
+<p>@构造方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">public</span> <span class="nf">SimpleDateFormat</span><span class="o">(</span><span class="nc">String</span> <span class="n">pattern</span><span class="o">);</span>
+ <span class="nc">SimpleDateFormat</span> <span class="n">sdf</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy-MM-dd HH:mm:ss"</span><span class="o">);</span><span class="c1">//上述示例中，"yyyy-MM-dd HH:mm:ss" 就是日期和时间的格式模式，定义了年、月、日、时、分、秒的显示方式。</span>
+ <span class="n">年</span><span class="err">：</span>
+ 
+ <span class="c1">//y：年份，例如 "yy" 表示两位年份，"yyyy" 表示四位年份。</span>
+ <span class="c1">//M：月份，"M" 表示月份，"MM" 表示两位月份。</span>
+ <span class="c1">//d：日期，"d" 表示日期，"dd" 表示两位日期。</span>
+ <span class="c1">//H：小时（24小时制），"H" 表示小时，"HH" 表示两位小时。</span>
+ <span class="c1">//m：分钟，"m" 表示分钟，"mm" 表示两位分钟。</span>
+ <span class="c1">//s：秒，"s" 表示秒，"ss" 表示两位秒。</span>
+ <span class="c1">//S：毫秒，"S" 表示毫秒。</span>
+ <span class="c1">//E：星期几，"E" 表示星期的缩写，"EEEE" 表示星期的全名。</span>
+ <span class="c1">//z：时区，"z" 表示时区的缩写，"zzzz" 表示时区的全名。</span>
+</code></pre></div></div>
+
+<p>@方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="nc">String</span> <span class="nf">format</span><span class="o">(</span><span class="nc">Date</span> <span class="n">date</span><span class="o">);</span><span class="c1">//将Date对象格式化为字符串。</span>
+
+<span class="kd">public</span> <span class="nc">Date</span> <span class="nf">parse</span><span class="o">(</span><span class="nc">String</span> <span class="n">source</span><span class="o">);</span><span class="c1">//将字符串解析为Date对象。</span>
+</code></pre></div></div>
+

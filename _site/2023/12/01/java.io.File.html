@@ -1,0 +1,59 @@
+<p>注意：File 类不能访问文件内容本身，如果需要访问文件内容本身，则需要使用输入/输出流。</p>
+
+<h3 id="构造方法">@构造方法</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">File</span><span class="o">(</span><span class="nc">String</span> <span class="n">path</span><span class="o">);</span><span class="c1">//如果 path 是实际存在的路径，则该 File 对象表示的是目录；如果 path 是文件名，则该 File 对象表示的是文件。</span>
+<span class="nc">File</span><span class="o">(</span><span class="nc">String</span> <span class="n">path</span><span class="o">,</span> <span class="nc">String</span> <span class="n">name</span><span class="o">);</span><span class="c1">//path 是路径名，name 是文件名。</span>
+<span class="nc">File</span><span class="o">(</span><span class="nc">File</span> <span class="n">dir</span><span class="o">,</span> <span class="nc">String</span> <span class="n">name</span><span class="o">);</span><span class="c1">//dir 是路径对象，name 是文件名。</span>
+</code></pre></div></div>
+<h3 id="方法">@方法</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">boolean</span> <span class="nf">canRead</span><span class="o">()</span>	<span class="n">测试应用程序是否能从指定的文件中进行读取</span>
+<span class="kt">boolean</span> <span class="nf">canWrite</span><span class="o">()</span>	<span class="n">测试应用程序是否能写当前文件</span>
+<span class="kt">boolean</span> <span class="nf">delete</span><span class="o">()</span>	<span class="n">删除当前对象指定的文件</span>
+<span class="kt">boolean</span> <span class="nf">exists</span><span class="o">()</span>	<span class="n">测试当前</span> <span class="nc">File</span> <span class="n">是否存在</span>
+<span class="nc">String</span> <span class="nf">getAbsolutePath</span><span class="o">()</span>	<span class="n">返回由该对象表示的文件的绝对路径名</span>
+<span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span>	<span class="n">返回表示当前对象的文件名或路径名</span><span class="err">（</span><span class="n">如果是路径</span><span class="err">，</span><span class="n">则返回最后一级子路径名</span><span class="err">）</span>
+<span class="nc">String</span> <span class="nf">getParent</span><span class="o">()</span>	<span class="n">返回当前</span> <span class="nc">File</span> <span class="n">对象所对应目录</span><span class="err">（</span><span class="n">最后一级子目录</span><span class="err">）</span><span class="n">的父目录名</span>
+<span class="kt">boolean</span> <span class="nf">isAbsolute</span><span class="o">()</span>	<span class="n">测试当前</span> <span class="nc">File</span> <span class="n">对象表示的文件是否为一个绝对路径名</span><span class="err">。</span><span class="n">该方法消除了不同平台的差异</span><span class="err">，</span><span class="n">可以直接判断</span> <span class="n">file</span> <span class="n">对象是否为绝对路径</span><span class="err">。</span><span class="n">在</span> <span class="no">UNIX</span><span class="o">/</span><span class="nc">Linux</span><span class="o">/</span><span class="no">BSD</span> <span class="n">等系统上</span><span class="err">，</span><span class="n">如果路径名开头是一条斜线</span><span class="o">/</span><span class="err">，</span><span class="n">则表明该</span> <span class="nc">File</span> <span class="n">对象对应一个绝对路径</span><span class="err">；</span><span class="n">在</span> <span class="nc">Windows</span> <span class="n">等系统上</span><span class="err">，</span><span class="n">如果路径开头是盘符</span><span class="err">，</span><span class="n">则说明它是一个绝对路径</span><span class="err">。</span>
+<span class="kt">boolean</span> <span class="nf">isDirectory</span><span class="o">()</span>	<span class="n">测试当前</span> <span class="nc">File</span> <span class="n">对象表示的文件是否为一个路径</span>
+<span class="kt">boolean</span> <span class="nf">isFile</span><span class="o">()</span>	<span class="n">测试当前</span> <span class="nc">File</span> <span class="n">对象表示的文件是否为一个</span><span class="err">“</span><span class="n">普通</span><span class="err">”</span><span class="n">文件</span>
+<span class="kt">long</span> <span class="nf">lastModified</span><span class="o">()</span>	<span class="n">返回当前</span> <span class="nc">File</span> <span class="n">对象表示的文件最后修改的时间</span>
+<span class="kt">long</span> <span class="nf">length</span><span class="o">()</span>	<span class="n">返回当前</span> <span class="nc">File</span> <span class="n">对象表示的文件长度</span>
+<span class="nc">String</span><span class="o">[]</span> <span class="nf">list</span><span class="o">()</span>	<span class="n">返回当前</span> <span class="nc">File</span> <span class="n">对象指定的路径文件列表</span>
+<span class="nc">String</span><span class="o">[]</span> <span class="nf">list</span><span class="o">(</span><span class="nc">FilenameFilter</span><span class="o">)</span>	<span class="n">返回当前</span> <span class="nc">File</span> <span class="n">对象指定的目录中满足指定过滤器的文件列表</span>
+<span class="kt">boolean</span> <span class="nf">mkdir</span><span class="o">()</span>	<span class="n">创建一个目录</span><span class="err">，</span><span class="n">它的路径名由当前</span> <span class="nc">File</span> <span class="n">对象指定</span>
+<span class="kt">boolean</span> <span class="nf">mkdirs</span><span class="o">()</span>	<span class="n">创建一个目录</span><span class="err">，</span><span class="n">它的路径名由当前</span> <span class="nc">File</span> <span class="n">对象指定</span>
+<span class="kt">boolean</span> <span class="nf">renameTo</span><span class="o">(</span><span class="nc">File</span><span class="o">)</span>	<span class="n">将当前</span> <span class="nc">File</span> <span class="n">对象指定的文件更名为给定参数</span> <span class="nc">File</span> <span class="n">指定的路径名</span>
+</code></pre></div></div>
+<h3 id="常量">@常量</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">File</span> <span class="n">类中有以下两个常用常量</span><span class="err">：</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">pathSeparator</span><span class="err">：</span><span class="n">指的是分隔连续多个路径字符串的分隔符</span><span class="err">，</span><span class="nc">Windows</span> <span class="n">下指</span><span class="o">;</span><span class="err">。</span><span class="n">例如</span> <span class="n">java</span> <span class="o">-</span><span class="n">cp</span> <span class="n">test</span><span class="o">.</span><span class="na">jar</span><span class="o">;</span><span class="n">abc</span><span class="o">.</span><span class="na">jar</span> <span class="nc">HelloWorld</span><span class="err">。</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">separator</span><span class="err">：</span><span class="n">用来分隔同一个路径字符串中的目录的</span><span class="err">，</span><span class="nc">Windows</span> <span class="n">下指</span><span class="o">/</span><span class="err">。</span><span class="n">例如</span> <span class="nl">C:</span><span class="o">/</span><span class="nc">Program</span> <span class="nc">Files</span><span class="o">/</span><span class="nc">Common</span> <span class="nc">Files</span><span class="err">。</span>
+</code></pre></div></div>
+
+<h3 id="相对路径和绝对路径">相对路径和绝对路径</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">绝对路径</span><span class="err">：</span><span class="n">是一个固定的路径</span><span class="o">,</span><span class="n">从盘符开始</span>
+<span class="n">相对路径</span><span class="err">：</span><span class="n">是相对于某个位置开始</span>
+	<span class="err">·</span><span class="n">main</span><span class="err">（）</span><span class="n">方法中的相对路径是相对于当前工程</span>
+	<span class="err">·</span><span class="n">单元测试方法中的相对路径是相对于当前模块</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">路径中的每级目录之间用一个路径分隔符隔开</span><span class="err">。</span>
+<span class="n">路径分隔符和系统有关</span><span class="err">：</span>
+	<span class="err">·</span><span class="n">windows和DOS系统默认使用</span><span class="s">"\"来表示
+	·UNIX和URL使用"</span><span class="o">/</span><span class="err">"</span><span class="n">来表示</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Java程序支持跨平台运行</span><span class="err">，</span><span class="n">因此路径分隔符要慎用</span><span class="err">。</span>
+<span class="n">为了解决这个隐患</span><span class="err">，</span><span class="nc">File类提供了一个常量</span><span class="err">：</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="nl">separator:</span><span class="n">根据操作系统</span><span class="err">，</span><span class="n">动态的提供分隔符</span><span class="err">。</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">File</span> <span class="n">file1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="s">"d:\\atguigu\\info.txt"</span><span class="o">);</span>
+<span class="nc">File</span> <span class="n">file2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="s">"d:"</span> <span class="o">+</span> <span class="nc">File</span><span class="o">.</span><span class="na">separator</span> <span class="o">+</span> <span class="s">"atguigu"</span> <span class="o">+</span> <span class="nc">File</span><span class="o">.</span><span class="na">separator</span> <span class="o">+</span> <span class="s">"info.txt"</span><span class="o">);</span>
+<span class="nc">File</span> <span class="n">file3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="s">"d:/atguigu"</span><span class="o">);</span>
+</code></pre></div></div>
+

@@ -1,0 +1,58 @@
+<h5 id="按位异或"><em>按位异或”^”</em></h5>
+
+<p>“ ^ ”的异或指的是二进制中，对应的对应二进制位==相同为零==，==相异为一==</p>
+
+<blockquote>
+  <p>示例演示“OR”和“XOR”的区别：
+第一段：
+A:这个系统当你按下紧急按钮 或者 房间有大量烟雾发生的时候，警报就会响起
+B:这个 或者 是排他性吗？
+A：什么意思？
+B：就是当你按下紧急按钮并且房间有大量烟雾发生的时候，警报会响起吗？
+A：当然会啦！</p>
+
+  <p>第二段：
+A：现在C博士应该在北京 或者 上海开讲座。
+B：这个 或者 是排他性吗？
+A：你在说什么？
+B ：就是C 博士可能在北京 又在 上海吗？
+A：当然不会啦！</p>
+
+  <p>显然，这两段对话中的“或者”代表的意思并不相同。
+第一个“或者”并不排他，也就是普通或者 在Python中用逻辑运算符 or 表示。
+第二个“或者”是排他的，也就是我们说的异或（xor）在Python中则用 ^ 表示。</p>
+</blockquote>
+
+<p>==异或异为一，同为零==</p>
+
+<p>0^0=0</p>
+
+<p>1^1=0</p>
+
+<p>0^1=1</p>
+
+<p>1^0=1</p>
+
+<p>规律一：这里我们也可看出，大小相同的数字异或结果一定为0，而0与任何数字进行异或大小不会改变。</p>
+
+<p>规律二：自反性：其实就是用规律一推出A^B^B=A，那它本质上就是大小相同的数字异或结果为0</p>
+
+<p>规律三：二进制的异或运算符合结合律和交换律</p>
+
+<blockquote>
+  <p>题目一：1.数组$nums$包含从0到n的所有整数，但其中缺了一个。请编写代码找出那个缺失的整数。你有办法在O(n)时间内完成吗？（源自$leetcode$面试题 17.04. 消失的数字）</p>
+</blockquote>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">missingNumber</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">nums</span><span class="p">,</span><span class="kt">int</span> <span class="n">numsSize</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">numsSize</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">x</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">numsSize</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">x</span><span class="o">^=</span><span class="n">i</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>思路：首先把nums中所有的数字相异或，再和1和2和3一直到n异或，根据相同为零，相同的全部消掉，只剩唯一一个没有消掉的。</p>
+
+<p>扩展思考：可以用这个做二元消消乐，两个一样就是0了！</p>

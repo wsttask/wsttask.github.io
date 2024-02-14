@@ -1,0 +1,14 @@
+<p>@接口定义</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@FunctionalInterface</span>
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Comparator</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
+ 
+    <span class="kt">int</span> <span class="nf">compare</span><span class="o">(</span><span class="no">T</span> <span class="n">o1</span><span class="o">,</span> <span class="no">T</span> <span class="n">o2</span><span class="o">);</span>
+ 
+    <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="nc">Object</span> <span class="n">obj</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>若一个类要实现Comparator接口：它一定要实现<code class="language-plaintext highlighter-rouge">compareTo(T o1, T o2)</code> 函数，但可以不实现 <code class="language-plaintext highlighter-rouge">equals(Object obj)</code> 函数。经过网上查阅得知，这是因为任何类，默认都是已经实现了<code class="language-plaintext highlighter-rouge">equals(Object obj)</code>的。 Java中的一切类都是继承于<code class="language-plaintext highlighter-rouge">java.lang.Object</code>，在<code class="language-plaintext highlighter-rouge">Object.java</code>中实现了equals(Object obj)函数；所以，其它所有的类也相当于都实现了该函数。这里可以用反编译去验证，就不在这写了。</p>
+
+<p>外部比较器</p>

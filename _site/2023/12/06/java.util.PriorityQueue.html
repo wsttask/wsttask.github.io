@@ -1,0 +1,79 @@
+<p>@定义</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PriorityQueue</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span> <span class="kd">extends</span> <span class="nc">AbstractQueue</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span>
+    <span class="kd">implements</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span><span class="o">{}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>PriorityQueue不是线程安全的。如果多个线程中的任意线程从结构上修改了列表， 则这些线程不应同时访问 PriorityQueue 实例，这时请使用线程安全的PriorityBlockingQueue 类。</li>
+  <li>不允许插入 null 元素。</li>
+  <li>PriorityQueue实现插入方法（offer、poll、remove() 和 add 方法） 的时间复杂度是O(log(n)) ；实现 remove(Object) 和 contains(Object) 方法的时间复杂度是O(n) ；实现检索方法（peek、element 和 size）的时间复杂度是O(1)。所以在遍历时，若不需要删除元素，则以peek的方式遍历每个元素。</li>
+  <li>方法iterator()中提供的迭代器并不保证以有序的方式遍历优PriorityQueue中的元素。</li>
+</ul>
+
+<p>@构造函数</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 注意比较器中的E和Priorityqueue&lt;E&gt;是一样的，即泛型定义和比较器中的泛型定义是一样的
+ *
+ */</span>
+<span class="kd">public</span> <span class="nf">PriorityQueue</span><span class="o">(</span><span class="nc">Comparator</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="no">E</span><span class="o">&gt;</span> <span class="n">comparator</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>@常用方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="no">E</span> <span class="nf">peek</span><span class="o">();</span><span class="c1">//返回队首元素</span>
+<span class="n">poll</span><span class="o">()</span><span class="c1">//返回队首元素，队首元素出队列</span>
+<span class="n">add</span><span class="o">();</span><span class="c1">//添加元素，如果队列已满，则抛出一个IIIegaISlabEepeplian异常</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">offer</span><span class="o">(</span><span class="no">E</span> <span class="n">e</span><span class="o">);</span><span class="c1">//添加元素，如果队列已满，则返回false</span>
+<span class="n">size</span><span class="o">()</span><span class="c1">//返回队列元素个数</span>
+<span class="n">isEmpty</span><span class="o">()</span><span class="c1">//判断队列是否为空，为空返回true,不空返回false</span>
+</code></pre></div></div>
+
+<p>@example</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Node</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="nf">Node</span><span class="o">(</span><span class="kt">int</span> <span class="n">chang</span><span class="o">,</span><span class="kt">int</span> <span class="n">kuan</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">chang</span><span class="o">=</span><span class="n">chang</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">kuan</span><span class="o">=</span><span class="n">kuan</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kt">int</span> <span class="n">chang</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">kuan</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+<span class="err">　　　　</span><span class="c1">//自定义比较类，先比较长，长升序排列，若长相等再比较宽，宽降序</span>
+    <span class="kd">static</span> <span class="nc">Comparator</span><span class="o">&lt;</span><span class="nc">Node</span><span class="o">&gt;</span> <span class="n">cNode</span><span class="o">=</span><span class="k">new</span> <span class="nc">Comparator</span><span class="o">&lt;</span><span class="nc">Node</span><span class="o">&gt;()</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compare</span><span class="o">(</span><span class="nc">Node</span> <span class="n">o1</span><span class="o">,</span> <span class="nc">Node</span> <span class="n">o2</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">o1</span><span class="o">.</span><span class="na">chang</span><span class="o">!=</span><span class="n">o2</span><span class="o">.</span><span class="na">chang</span><span class="o">)</span>
+                <span class="k">return</span> <span class="n">o1</span><span class="o">.</span><span class="na">chang</span><span class="o">-</span><span class="n">o2</span><span class="o">.</span><span class="na">chang</span><span class="o">;</span>
+            <span class="k">else</span>
+                <span class="k">return</span> <span class="n">o2</span><span class="o">.</span><span class="na">kuan</span><span class="o">-</span><span class="n">o1</span><span class="o">.</span><span class="na">kuan</span><span class="o">;</span>
+        <span class="o">}</span>
+        
+    <span class="o">};</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Queue</span><span class="o">&lt;</span><span class="nc">Node</span><span class="o">&gt;</span> <span class="n">q</span><span class="o">=</span><span class="k">new</span> <span class="nc">PriorityQueue</span><span class="o">&lt;&gt;(</span><span class="n">cNode</span><span class="o">);</span>
+        <span class="nc">Node</span> <span class="n">n1</span><span class="o">=</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="nc">Node</span> <span class="n">n2</span><span class="o">=</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
+        <span class="nc">Node</span> <span class="n">n3</span><span class="o">=</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+        <span class="nc">Node</span> <span class="n">n4</span><span class="o">=</span><span class="k">new</span> <span class="nc">Node</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">q</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">n1</span><span class="o">);</span>
+        <span class="n">q</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">n2</span><span class="o">);</span>
+        <span class="n">q</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">n3</span><span class="o">);</span>
+        <span class="nc">Node</span> <span class="n">n</span><span class="o">;</span>
+        <span class="k">while</span><span class="o">(!</span><span class="n">q</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span>
+        <span class="o">{</span>
+            <span class="n">n</span><span class="o">=</span><span class="n">q</span><span class="o">.</span><span class="na">poll</span><span class="o">();</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"长: "</span><span class="o">+</span><span class="n">n</span><span class="o">.</span><span class="na">chang</span><span class="o">+</span><span class="s">" 宽："</span> <span class="o">+</span><span class="n">n</span><span class="o">.</span><span class="na">kuan</span><span class="o">);</span>
+        <span class="o">}</span>
+<span class="err">　　　　　</span><span class="cm">/**
+　　　　　　* 输出结果
+　　　　　　* 长: 1 宽：2
+　　　　　　* 长: 2 宽：5
+　　　　　　* 长: 2 宽：3
+　　　　　　*/</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>

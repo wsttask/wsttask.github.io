@@ -1,0 +1,18 @@
+<p>@Object类简介</p>
+
+<p>Object类是Javajava.lang包下的核心类，Object类是所有类的父类，何一个类时候如果没有明确的继承一个父类的话，那么它就是Object的子类；</p>
+
+<p>以下两种类的定义的最终效果是完全相同的：</p>
+
+<p>(1) class Person</p>
+
+<p>(2) class Person extends Object</p>
+
+<p>@方法：</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 判断两个对象变量的地址是否一样。
+ */</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="nc">Object</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+	<span class="k">return</span> <span class="o">(</span><span class="k">this</span> <span class="o">==</span> <span class="n">obj</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>

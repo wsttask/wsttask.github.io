@@ -1,0 +1,117 @@
+<p>Windows 的系统目录</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Program Files 存放系统软件，平时软件安装时，默认的安装路径，个人不建议将应用软件装到系统盘。
+2. Program File (x86) 32位软件，与 Program File 类似，只是其主要存放32位的软件。
+3. Windows  系统级目录，该目录是 Windows 操作系统的主要文件存放的目录。
+4. ProgramData 软件数据，存放 Windows系统中软件的系统级配置文件。
+5. 用户/User 普通账户的目录，普通账户的所有文件，包括桌面、应用数据、下载等等。
+</code></pre></div></div>
+
+<p>Linux 的系统目录</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/  根目录，系统的最顶层目录
+/bin  用户二进制文件，存放二进制可执行文件，比如一些系统命令和用户的可执行文件
+/boot  引导程序及文件，包含内核的 initrd、vmlinux、grub文件
+/dev  设备文件，包含系统中所以的外部设备
+/etc  配置文件，包含系统和程序中要用到的配置文件
+/home 用户目录，存放普通用户的主目录，目录名为用户名
+/lib  库目录，包含/bin和/sbin中文件所依赖的共享库文件
+/lost+found 文件系统损坏后找回的文件所存放的目录，一般为空
+/mnt  挂载目录，用于临时挂载
+/media 可移动媒体挂载目录，用于临时挂载可移动设备，如U盘、光盘等
+/opt  可选程序，可以用来存放附加的用户程序
+/proc  进程信息目录，包含系统进程的信息和一些系统信息
+/root  超级用户目录，root用户的主目录，需要root权限访问
+/sbin  系统二进制文件，和/bin类似，但/sbin存放的命令基本是需要root权限的系统管理命令
+/srv  服务数据，包含服务启动时需要的数据
+/sys  系统配置，包含系统设备的配置信息，同时可以修改这些信息实现对系统设备配置的修改
+/tmp  临时文件，存放系统和用户产生的临时文件，系统重启会清空数据
+/usr  用户程序，包含用户程序及程序所需的文件，如/usr/bin、/usr/lib等
+/var  变量文件，包含系统日志、系统临时文件、数据库文件等
+</code></pre></div></div>
+
+<p>Windows系统目录
+├—WINDOWS
+│ ├—system32（存放Windows的系统文件和硬件驱动程序）
+│ │ ├—config（用户配置信息和密码信息）
+│ │ │ └—systemprofile（系统配置信息，用于恢复系统）
+│ │ ├—drivers（用来存放硬件驱动文件，不建议删除）
+│ │ ├—spool（用来存放系统打印文件。包括打印的色彩、打印预存等）
+│ │ ├—wbem（存放WMI测试程序，用于查看和更改公共信息模型类、实例和方法等。请勿删除）
+│ │ ├—IME（用来存放系统输入法文件，类似WINDOWS下的IME文件夹）
+│ │ ├—CatRoot（计算机启动测试信息目录，包括了计算机启动时检测的硬软件信息）
+│ │ ├—Com（用来存放组件服务文件）
+│ │ ├—ReinstallBackups（电脑中硬件的驱动程序备份）
+│ │ ├—DllCache（用来存放系统缓存文件。当系统文件被替换时，文件保护机制会复制这个文件夹下的文件去覆盖非系统文件）
+│ │ ├—GroupPolicy（组策略文件夹）
+│ │
+│ ├—system（系统文件夹，用来存放系统虚拟设备文件）
+│ ├—N t U n i n s t a l l NtUninstallNtUninstall（每给系统打一个补丁，系统就会自动创建这样的一个目录，可删除）
+│ ├—security（系统安全文件夹，用来存放系统重要的数据文件）
+│ ├—srchasst（搜索助手文件夹，用来存放系统搜索助手文件，与msagent文件夹类似）
+│ ├—repair（系统修复文件夹，用来存放修复系统时所需的配置文件）
+│ ├—Downloaded Program Files（下载程序文件夹，用来存放扩展IE功能的ActiveX等插件）
+│ ├—inf（用来存放INF文件。INF文件最常见的应用是为硬件设备提供驱动程序服务，不建议删除其中文件）
+│ ├—Help（Windows帮助文件）
+│ ├—Config（系统配置文件夹，用来存放系统的一些临时配置的文件）
+│ ├—msagent（微软助手文件夹，存放动态的卡通形象，协助你更好地使用系统。若觉得没有必要，可直接删除）
+│ ├—Cursors（鼠标指针文件夹）
+│ ├—Media（声音文件夹，开关机等wav文件存放于此）
+│ ├—Mui（多语言包文件夹，用来存放多国语言文件。简体中文系统中这个文件夹默认是空的，但不建议删除此文件夹）
+│ ├—java（存放Java运行的组件及其程序文件。不建议删除其中文件）
+│ ├—Web
+│ │ ├—Wall*****（存放桌面壁纸的文件夹）
+│ │
+│ ├—addins（系统附加文件夹，用来存放系统附加功能的文件）
+│ ├—Connection Wizard（连接向导文件夹，用来存放“Internet连接向导”的相关文件）
+│ ├—Driver Cache（驱动缓存文件夹，用来存放系统已知硬件的驱动文件）
+│ │ └—i386（Windows操作系统自带的已知硬件驱动文件，可删除以节省空间）
+│ ├—TEMP（系统临时文件夹，其中内容可以全部删除）
+│ ├—twain_32（扫描仪相关）
+│ ├—AppPatch（应用程序修补备份文件夹，用来存放应用程序的修补文件）
+│ ├—Debug（系统调试文件夹，用来存放系统运行过程中调试模块的日志文件）
+│ ├—Resources（系统资源文件夹，用来存放系统SHELL资源文件，就是我们在桌面上所看到的主题）
+│ │ └—Themes（桌面主题都存放于此，可删除无用主题）
+│ ├—WinSxS（存储各个版本的Windows XP组件，减少因为DLL文件而引起的配置问题）
+│ ├—ime（输入法信息）
+│ ├—PCHealth（用来存放协调、配置和管理计算机正常运行的文件）
+│ │ └—HelpCtr（帮助和支持）
+│ │ ├—Binaries（我们常用的msconfig就在这里哟）
+│ ├—Offline Web Pages（脱机浏览文件存放于此）
+│ ├—Prefetch（预读取文件夹，用来存放系统已访问过的文件的预读信息(此信息是系统在访问时自动生成的新信息)，以加快文件的访问速度，其扩展名为“PF”。可以将此文件夹中的文件删除）
+│ ├—ShellNew
+│ ├—Fonts（字体文件夹。要安装某种字体只需将字体文件复制到该目录下即可）
+│ ├—pss（用来备份系统启动配置文件的，一般对“Boot.ini”、“System.ini”和“Win.ini”三个文件进行备份，扩展名为“backup”。如果系统原有的这三个文件损坏的话，可以从这里进行恢复。不建议删除）
+│ ├—Registration（注册文件夹，用来存放用于系统COM+或者其他组件注册的相关文件。不建议删除这里的文件）
+│ └—Downloaded Installations（存放一些使用Windows Installer技术的安装程序，主要用来对程序进行修复等操作）
+├—Documents and Settings
+│ ├—Default User
+│ │ ├—Application Data（通用应用程序数据文件夹。此处存放着已经安装的一些应用程序的专用数据）
+│ │ ├—桌面
+│ │ ├—Favorites（收藏夹）
+│ │ ├—NetHood（网络共享目录）
+│ │ ├—My Documents（我的文档）
+│ │ ├—PrintHood（打印共享目录）
+│ │ ├—Recent（最近打开的文档）
+│ │ ├—SendTo（鼠标右键发送到）
+│ │ ├—「开始」菜单
+│ │ ├—Templates（模板文件夹，可能有Word、Excel等的模板文件）
+│ │ └—Local Settings
+│ │ ├—Application Data
+│ │ └—Temp（临时文件目录。在系统和软件的运行过程中产生的临时文件就存放在于此。需定期清理）
+│ │ └—Temporary Internet Files（Internet临时文件夹。需定期清理）
+│ ├—All Users（所有用户文件夹，这里的更改对所有用户有效）
+│ └—Administrator（系统管理员帐户的文件夹）
+├—Program Files
+│ ├—Common Files（共享的应用程序文件存放于此）
+│ ├—Internet Explorer（IE浏览器）
+│ ├—ComPlus Applications（COM+ 组件的配置和跟踪，一般为空）
+│ ├—Windows Media Player（WINDOWS媒体播放器）
+│ ├—WindowsUpdate（用于Windows的升级，可删除）
+│ ├—InstallShield Installation Information
+│ ├—Uninstall Information（存放软件卸载信息，删除后可能导致部分软件无法卸载）
+├—wmpub（windowsmedia service的目录）
+├—boot（一键还原等软件的文件夹）
+├—Inetpub（IIS文件夹）
+├—Downloads(Flashget默认下载文件夹)
+├—System Volume Information(系统还原文件夹)</p>

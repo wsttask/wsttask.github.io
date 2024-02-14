@@ -1,0 +1,111 @@
+<h4 id="1复变函数积分的概念"><font color="green">1.复变函数积分的概念</font></h4>
+
+<font color="blue">复变函数积分存在条件</font>
+<p>如果$f(z)$是连续函数而<strong>$C$是是光滑曲线时</strong>，积分$\int_cf(z)dz$一定存在</p>
+
+<font color="blue">复变函数积分计算方法</font>
+<p>(第二类曲线积分)</p>
+
+<p>$\int_cf(z)dz=\int_c(u+iv)(dx+idy) \ =\int_cudx-vdy+i\int_cvdx+udy \ =\int_cf[z(t)]z’(t)dt$</p>
+
+<font color="grey">例三</font>
+<p>求$\oint_c\frac{1}{(z-z_0)^{n+1}}dz,C$为以$z_0$中心，$r$为半径的正向圆周，$n$为整数</p>
+
+<font color="green">还有一件事，分类讨论</font>
+
+<font color="orange">$\oint\limits_{|z-z_0=r|}\frac{1}{(z-z_0)^{n+1}}dz=\begin{cases} 2\pi i,n=0 \\ 0, n\ne0 \end{cases}$</font>
+
+<p><img src="../images/QQ图片20230403152811.jpg" alt="QQ图片20230403152811" /></p>
+
+<h4 id="三积分的性质">三、积分的性质</h4>
+
+<table><tr><td bgcolor="orange">复变函数积分和实变函数的定积分有相同的性质</td></tr></table>
+
+<h5 id="柯西-古萨基本定理"><font color="blue">柯西-古萨基本定理</font></h5>
+
+<p>如果函数$f(z)$==在单连通域$B$内处处解析==，那末函数$f(z)$沿$B$内的任何一条封闭曲线$C$的积分为零：$\oint_cf(z)dz=0$</p>
+
+<p>定理中的C可以不是简单曲线</p>
+
+<blockquote>
+  <p>复变函数闭合回路积分为零</p>
+</blockquote>
+
+<h5 id="闭路变形原理"><font color="blue">闭路变形原理</font></h5>
+
+<p>解析函数沿闭曲线的积分, 不因闭曲线在区域内作连续变形而改变它的值.</p>
+
+<h5 id="复合闭路定理"><font color="blue">复合闭路定理</font></h5>
+
+<p>设$C$为多连通域$D$内的一条简单闭曲线，$C_1,C_2,…,C_n$是在$C$内部的简单闭曲线，它们互不包含也互不相交，并且以$C,C_1,C_2,…,C_n$为边界的区域全含于$D$,如果$f(z)$在$D$内解析，那么</p>
+
+<p>(1)$\oint_Cf(z)dz=\sum\limits_{k=1}^n\oint_{C_k}f(z)dz$</p>
+
+<p>(2)$\oint_Ff(z)dz=0$</p>
+
+<h6 id="推论"><strong>推论</strong></h6>
+
+<p>当$C$为以$z_0$为中心的正向圆周时，$\oint_c\frac{dz}{z-z_0}=2\pi i$，所以，根据闭路变形原理，对于==包含$z_0$的任何一条正向简单闭曲线==$F$都有$\oint_F\frac{dz}{z-z_0}=2\pi i$。</p>
+
+<p>定理一 ：如果函数$f(z)$在单连通区域$B$内处处解析，那么积分$\int_cf(z)dz$与连结起点及终点的路线$C$无关。</p>
+
+<p>定理二：如果$f(z)$在单连通区域$B$内处处解析，那么函数$F(z)$必为$B$内的一个解析函数，并且$F’(z)=f(z)$。</p>
+
+<h5 id="柯西积分公式"><font color="violet">柯西积分公式</font></h5>
+
+<p>如果$f(z)$在区域$D$内处处解析，$C$为$D$内任何一条正向简单闭曲线，它的内部完全含于$D$，$z_0$为$C$内的任一点，那么
+\(f(z_0)=\frac{1}{2\pi i}\oint_c\frac{f(z)}{z-z_0}dz\)</p>
+
+<p>用留数来证明：</p>
+
+<p>​	$\frac{f(z)}{z-z_0}$的奇点为，$z_0$，且为一级极点，则$Res[h(z),z_0]=f(z_0)$，$\oint h(z)dz=f(z_0)·2\pi i$</p>
+
+<p>​		注意：留数定理是由柯西积分公式推理出来的，这里用留数来证明只是因为，留数更加方便好记</p>
+
+<h6 id="推论-1"><strong>推论</strong></h6>
+
+<p>如果$C$是圆周$z=z_0+Re^{i\theta}$，那么柯西积分公式变为
+\(f(z_0)=\frac1{2\pi}\int_0^{2\pi}f(z_0+Re^{i\theta})d\theta\)
+即：==一个解析函数在圆心处的值等于它在圆周上的平均值。==</p>
+
+<h5 id="高阶导数公式"><font color="violet">高阶导数公式</font></h5>
+
+<p>解析函数$f(z)$的导数仍为解析函数，它的$n$阶导数为：
+\(f^{(n)}(z_0)=\frac{n!}{2\pi i}\oint_C\frac{f(z_0)}{(z-z_0)^{n+1}}dz \quad (n=1,2,...)\)
+其中$C$为在函数$f(z)$的解析区域$D$内围绕$z_0$任何一条正向简单闭曲线，而且它的内部全含于$D$.</p>
+
+<p>用留数来证明：</p>
+
+<p>​		$h(z)=\frac{f(z_0)}{(z-z_0)^{n+1}}$的奇点为，$z_0$，且是n+1级极点，$Res[h(z),z_0]=\frac1{n!}\frac{d^{n-1}}{dz^{n-1}}\lim\limits_{z\rightarrow z_0}f(z)$</p>
+
+<p>​		注意：留数定理是由柯西积分公式推理出来的，这里用留数来证明只是因为，留数更加方便好记</p>
+
+<p>倘若$z_0$不在积分区域$C$里面，那么，该积分就deng’yu</p>
+
+<h4 id="调和函数">调和函数</h4>
+
+<h5 id="定义">定义</h5>
+
+<p>​	如果二元实变函数$\phi(x,y)$在区域$D$内具有二阶连续偏导数，并且满足拉普拉斯方程
+\(\frac{\partial^2\phi}{\partial x^2}+\frac{\partial^2\phi}{\partial y^2}=0\)
+那么称$\phi(x,y)$为区域$D$内的调和函数</p>
+
+<table><tr><td bgcolor="orange">实质：二元函数的二阶偏导数的和为零，该二元函数即为调和函数</td></tr></table>
+
+<p>定理：任何在区域$D$内解析的函数，它的实部和虚部都是$D$内的调和函数。</p>
+
+<p><code class="language-plaintext highlighter-rouge">c-R方程就可以直接推导出拉普拉斯方程</code></p>
+
+<p>共轭调和函数</p>
+
+<p>==满足$C-R$方程的两个二元函数构成调和函数。==</p>
+
+<p>==注意是虚部为实部的共轭调和函数==，实部不是虚部的</p>
+
+<p>偏积分法求共轭调和函数</p>
+
+<p><img src="../images/image-20230412172958103.png" alt="image-20230412172958103" /></p>
+
+<p>不定积分法求共轭调和函数</p>
+
+<p><img src="../images/image-20230412173142739.png" alt="image-20230412173142739" /></p>

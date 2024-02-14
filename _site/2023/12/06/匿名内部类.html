@@ -1,0 +1,24 @@
+<h1 id="匿名内部类">匿名内部类</h1>
+
+<p>匿名：没有名字的意思。内部类：写在其他类内部的类。匿名内部类的作用是简化代码。</p>
+
+<p>原本我们需要创建子类或者实现类，去继承父类和实现接口，才能重写其中的方法。但是有时候我们这样做了，然而子类和实现类却只使用了一次（定义了一个对象）。这个时候我们就可以使用匿名内部类，不用去写子类和实现类，起到简化代码的作用。</p>
+
+<p>匿名内部类的格式：父类/接口  对象 = new 父类/接口（）{   重写父类/接口中的方法   }；</p>
+
+<p>这样做就把子类继承父类，重写父类中的方法，创建子类对象，合成了一步完成，减少了其中创建子类的过程。或者将实现类实现接口，重写接口中的方法，创建实现类对象，合成了一步完成，减少了其中创建实现类的过程。下面将会用代码演示如何使用匿名内部类。</p>
+
+<h1 id="lambda">lambda</h1>
+
+<p>下文内容默认以JDK8为前提</p>
+
+<p>什么是Lambda</p>
+
+<p>Lambda 表达式是 JDK8 的一个新特性，可以取代大部分的匿名内部类，写出更优雅的Java代码，尤其在集合的遍历和其他集合操作中，可以极大地优化代码结构。</p>
+
+<p>通过 <code class="language-plaintext highlighter-rouge">@FunctionalInterface</code> 标记的接口可以通过 Lambda 表达式创建实例。</p>
+
+<p><code class="language-plaintext highlighter-rouge">@FunctionalInterface</code>修饰函数式接口的，要求<strong>接口中的抽象方法只有一个</strong>。有多个抽象方法编译将报错</p>
+
+<p>加不加<code class="language-plaintext highlighter-rouge">@FunctionalInterface</code>对于接口是不是函数式接口没有影响，该注解知识提醒编译器去检查该接口是否仅包含一个抽象方法</p>
+

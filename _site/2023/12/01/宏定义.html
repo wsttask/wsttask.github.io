@@ -1,0 +1,195 @@
+<p>#ifndef, define, 和endif是C/C++中的预处理指令，用于条件编译。它们的作用如下：</p>
+
+<ol>
+  <li>#ifndef：这个指令检测指定的预处理变量是否未定义。如果未定义，那么跟在后面的代码会被处理，直到#endif指令。如果已定义，那么#ifndef测试为假，该指令和#endif指令之间的代码都会被忽略。</li>
+  <li>#define：这个指令用于定义预处理变量。一般情况下，我们会在#ifndef之前使用#define指令来定义预处理变量。这样，如果该预处理变量已经被定义过了，ifndef指令就会测试为假，代码就会被跳过。</li>
+  <li>endif：这个指令用于结束条件编译块。在#ifndef之后的代码如果通过了条件编译，那么在#endif之后的代码会被处理。否则，这些代码会被忽略。</li>
+</ol>
+
+<p>总的来说，ifndef, define, endif 可以用来避免头文件中的重复定义错误和优化编译速度。当我们在.h文件中定义了全局变量时，如果一个C文件包含了该.h文件多次，通过使用#ifndef和#define指令，可以确保这些全局变量只被定义一次，避免了重复定义的错误。这样的做法也可以提高编译速度，避免不必要的重复编译。</p>
+
+<h2 id="一预处理">一、预处理</h2>
+
+<p>​	编译一个C语言程序的第一步骤就是预处理阶段，这一阶段就是宏发挥作用的阶段。C预处理器在源代码编译之前对其进行一些文本性质的操作，主要任务包括<strong>删除注释</strong>、<strong>插入被#include进来的文件内容</strong>、<strong>定义和替换由#define 定义的符号以及确定代码部分内容是否根据条件编译（#if )来进行编译</strong>。”文本性质”的操作，就是指一段文本替换成另外一段文本，而不考虑其中任何的语义内容。<strong>宏仅仅是在C预处理阶段的一种文本替换工具</strong>，编译完之后对二进制代码不可见</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*宏展开规律*/</span>
+<span class="err">宏的展开</span>
+<span class="err">预处理器在展开宏的时候，大体按以下逻辑进行：</span>
+<span class="mi">1</span><span class="p">.</span><span class="err">使用宏的实参代替形参，将实参代入宏文本中</span>
+<span class="mi">2</span><span class="p">.</span><span class="err">若实参也是宏，则进一步展开实参（递归进行）</span>
+<span class="mi">3</span><span class="p">.</span><span class="err">实参代入并展开完毕后，若得到的宏文本仍包含宏，则继续展开</span>
+<span class="err">需要注意的是：若实参代入宏文本后，实参被#或##处理，实参不再展开。</span>
+    
+<span class="err">所以顺序的影响不大</span>
+</code></pre></div></div>
+
+<h2 id="二宏定义用法">二、宏定义用法</h2>
+
+<h3 id="1宏常量">1.宏常量</h3>
+
+<p>​	我们最常使用到的#define的用法就是用#define来定义一个符号常量，而要修改时,只需修改#define这条语句就行了,不必每处代码都修改</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">"stdio.h"</span><span class="cp">
+#define PI 3.14
+#define STR "圆周率约等于"
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%s %f"</span><span class="p">,</span><span class="n">STR</span><span class="p">,</span><span class="n">PI</span><span class="p">);</span> <span class="c1">//预处理时会被替换为 printf("%s %f","圆周率约等于",3.14);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="2宏语句">2.宏语句</h3>
+
+<p>​	我们还可以用宏定义一条或多条语句</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">"stdio.h"</span><span class="cp">
+#define Print printf("hello world!")
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">Print</span><span class="p">;</span>  <span class="c1">//预处理时会被替换为 printf("hello world!");</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3宏函数">3.宏函数</h3>
+
+<p>​	我们还可以用宏来定义函数，因为宏定义也可以带参数</p>
+
+<p>带参宏定义的一般形式为： 　#define 宏名(形参表) 字符串</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">"stdio.h"</span><span class="cp">
+#define Print(str) printf("%s",str)
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">Print</span><span class="p">(</span><span class="s">"这是一个只有一条语句的宏函数!"</span><span class="p">);</span>
+    <span class="c1">//预处理时会被替换为 printf("%s","这是一个只有一条语句的宏函数!")</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4其他">4.其他</h3>
+
+<h4 id="1undef-是用来撤销宏定义的用法如下">1.#undef 是用来撤销宏定义的，用法如下：</h4>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define PI 3.141592654
+</span><span class="p">...</span>
+<span class="c1">// code</span>
+<span class="cp">#undef PI
+</span><span class="c1">//下面开始 PI 就失效了</span>
+</code></pre></div></div>
+
+<h4 id="2使用ifndef防止文件被重复包含和编译">2.使用ifndef防止文件被重复包含和编译</h4>
+
+<p>​	这是宏定义的一种，它可以根据是否已经定义了一个变量来进行分支选择，一般用于调试等等.实际上确切的说这应该是预处理功能中三种（宏定义，文件包含和条件编译）中的一种—-条件编译。 C语言在对程序进行编译时，会先根据预处理命令进行“预处理”。C语言编译系统包括预处理，编译和链接等部分。</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef x //先测试x是否被宏定义过
+#define x //如果没有宏定义下面就宏定义x并编译下面的语句
+</span><span class="p">...</span>
+<span class="p">...</span>
+<span class="p">...</span>
+<span class="cp">#endif //如果已经定义了则编译#endif后面的语句
+</span></code></pre></div></div>
+
+<p>条件指示符#ifndef检查预编译常量在前面是否已经被宏定义。如果在前面没有被宏定义,则条件指示符的值为真，于是从#ifndef到#endif之间的所有语句都被包含进来进行编译处理。相反，如果#ifndef指示符的值为假，则它与#endif指示符之间的行将被忽略。条件指示符#ifndef 的最主要目的是防止头文件的重复包含和编译。
+　　千万不要忽略了头件的中的#ifndef，这是一个很关键的东西。比如你有两个C文件，这两个C文件都include了同一个头文件。而编译时，这两个C文件要一同编译成一个可运行文件，于是问题来了，大量的声明冲突。</p>
+
+<h2 id="三宏定义相关作用符">三、宏定义相关作用符</h2>
+
+<h3 id="2字符串化符">2.字符串化符“#”</h3>
+
+<p>  ”#”是“字符串化”的意思，将出现在宏定义中的#是把跟在后面的参数转换成一个字符串。
+例:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">"stdio.h"</span><span class="cp">
+#define Print(str)
+</span><span class="p">{</span>
+	<span class="n">printf</span><span class="p">(</span><span class="err">#</span><span class="n">str</span><span class="s">"的值是%d"</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span>
+	<span class="n">Print</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">);</span> <span class="c1">//此处等价于printf("x+y""的值是%d",x+y);</span>
+	            <span class="c1">//#str等价于"x+y",所以#str不需要再用双引号引起来 </span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3片段连接符">3.片段连接符”##“</h3>
+
+<p>  “##”是一种分隔连接方式，它的作用是先分隔，然后进行强制连接。在普通的宏定义中，预处理器一般把空格解释成分段标志，对于每一段和前面比较，相同的就被替换。但是这样做的结果是，被替换段之间存在一些空格。如果我们不希望出现这些空格，就可以通过添加一些##来替代空格。</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">"stdio.h"</span><span class="cp">
+#define Add(n,value)
+</span><span class="p">{</span>
+	<span class="n">num</span><span class="err">##</span><span class="n">n</span><span class="o">+=</span><span class="n">value</span><span class="p">;</span>
+ <span class="p">}</span> 
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">num1</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">num2</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+	<span class="n">Add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span> <span class="c1">//等价于num2+=10; 这里把num和2连接成了num2 </span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">" num1=%d</span><span class="se">\n</span><span class="s"> num2=%d"</span><span class="p">,</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">);</span> 
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="4c标准中的一些预定义宏">4.C标准中的一些预定义宏</h2>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">__DATE__</span> 
+<span class="c1">//进行预处理的日期（“Mmm dd yyyy”形式的字符串文字，如May 27 2006）</span>
+
+<span class="n">__FILE__</span> 
+<span class="c1">//代表当前源代码文件名的字符串文字 ，包含了详细路径，如G:/program/study/c+/test1.c</span>
+
+<span class="n">__LINE__</span> 
+<span class="c1">//代表当前源代码中的行号的整数常量</span>
+
+<span class="n">__TIME__</span>
+<span class="c1">//源文件编译时间，格式微“hh：mm：ss”，如：09:11:10；</span>
+
+<span class="n">__func__</span> 
+<span class="c1">//当前所在函数名，在编译器的较高版本中支持</span>
+
+<span class="n">__PRETTY_FUNCTION__</span>
+<span class="c1">//当前所在函数名带参数，</span>
+    
+<span class="cm">/*****************************************************    
+对于__FILE__，LINE，func，FUNCTION 这样的宏，在调试程序时是很有用的，因为你可以很容易的知道程序运行到了哪个文件的那一行，是哪个函数。
+而对于__DATE__，__TIME__则可以获取编译时间，如如下代码通过宏获取编译时间，并通过sscanf（）从中获取具体的年月日时分秒数据，可在代码中做相应使用。我的代码中是根据此数据作为版本标识，并依此判断哪个版本新些及是否需要升级。
+*****************************************************/</span>
+</code></pre></div></div>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//例子:</span>
+<span class="kt">void</span> <span class="nf">why_me</span><span class="p">();</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"The file is %s/n"</span><span class="p">,</span> <span class="n">__FILE__</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"The date is %s/n"</span><span class="p">,</span> <span class="n">__DATE__</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"The time is %s/n"</span><span class="p">,</span> <span class="n">__TIME__</span> <span class="p">);</span>
+    <span class="c1">//printf("The version is %s/n",__STDC__VERSION__);</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"This is line %d/n"</span><span class="p">,</span> <span class="n">__LINE__</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"This function is %s/n "</span><span class="p">,</span> <span class="n">__func__</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"This function is %s/n "</span><span class="p">,</span> <span class="n">__PRETTY_FUNCTION__</span><span class="p">);</span>
+   <span class="c1">//why_me();</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">why_me</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"This function is %s/n"</span><span class="p">,</span> <span class="n">__func__</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span> <span class="s">"This is line %d/n"</span><span class="p">,</span> <span class="n">__LINE__</span> <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//__PRETTY_FUNCTION__和__func__的区别</span>
+<span class="kt">int</span> <span class="nf">myfunc</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">){</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">__func__</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">__PRETTY_FUNCTION__</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*输出结果*/</span>
+<span class="n">myfunc</span>
+<span class="n">myfunc</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+

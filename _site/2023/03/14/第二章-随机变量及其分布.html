@@ -1,0 +1,184 @@
+<p>定义2.2：称</p>
+
+<blockquote>
+  <p>$F(x)=P{ \varepsilon(\omega)\leq x } (-\infty&lt;x&lt;+\infty)$</p>
+</blockquote>
+
+<p>为随机变量 $\varepsilon(\omega)$的分布函数。</p>
+
+<p>由上式可得，对于$a\in R,b\in R,a&lt;b$,</p>
+
+<blockquote>
+  <p>$P{a&lt;\varepsilon(\omega)\le b}=F(b)-F(a)$</p>
+</blockquote>
+
+<h5 id="性质21-分布函数有以下性质">性质2.1 分布函数有以下性质：</h5>
+
+<p>(1)  $0 \le F(x) \le 1,x\in R;$</p>
+
+<p>(2)  $F(x)是单调不减的；$</p>
+
+<p>(3)  $F(-\infty)=\lim\limits_{x\rightarrow - \infty}F(x)=0$</p>
+
+<p>$F(+\infty)=\lim\limits_{x\rightarrow+\infty}F(x)=1$</p>
+
+<p>(4)  $F(x)为右连续的，即\lim\limits_{x\rightarrow x_0+0}F(x)=F(x_0)(x_0 \in R)$</p>
+
+<h5 id="213-离散型随机变量">2.1.3 离散型随机变量</h5>
+
+<p>随机变量$X$的分布函数为$F(x)=\sum\limits_{x_k \le x}P{X=x_k}$</p>
+
+<p>1.几何分布</p>
+
+<p>$P{X=k}=(1-P)^{k-1}P$          第k次首次发生，前k-1次不发生</p>
+
+<p>2.二项分布</p>
+
+<p>$P{X=k}=C_n^kp^k(1-p)^{n-k}$        在n次中发生k次的概率</p>
+
+<blockquote>
+  <p>X~B$(n,p)$</p>
+</blockquote>
+
+<p>3.泊松分布</p>
+
+<p>$p{X=k}=\frac{\lambda^k}{k!}e^{-\lambda},k=0,1,2,3……$</p>
+
+<blockquote>
+  <p>X~P$(n,pn)$</p>
+
+  <p>$\lambda=np$</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">泊松分布一般当作n很大时，二项分布的极限分布</code></p>
+
+<h5 id="214-连续型随机变量">2.1.4 连续型随机变量</h5>
+
+<h6 id="随机变量x的密度函数py">随机变量X的密度函数$p(y)$</h6>
+
+<p>$F(x)=\int_{-\infty}^{x}p(y)dy$</p>
+
+<blockquote>
+  <p>其性质为</p>
+
+  <p>$(1)p(x)\ge0$</p>
+
+  <p>$(2)\int_{-\infty}^{+\infty}p(x)dx=1$</p>
+
+  <p>$(3)P{a&lt;X\le b}=\int_a^bp(x)dx$</p>
+
+  <p>$(4)P{X=c}=0$<code class="language-plaintext highlighter-rouge">连续型随机变量取单点值的概率为0</code></p>
+</blockquote>
+
+<h6 id="1正态分布">1.正态分布</h6>
+
+<p>$\psi(x)=\frac1{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}},(-\infty&lt;x&lt;+\infty)$</p>
+
+<blockquote>
+  <p>$\sigma$越小，分布越集中在$x=0$附近（瘦高），$\sigma$越大分布越平坦（矮胖）</p>
+
+  <p>X~N$(\mu,\sigma^2)$</p>
+
+  <p>对称轴是$x=\mu$</p>
+</blockquote>
+
+<p>$标准正态分布:\phi(x)=\frac1{\sqrt{2\pi}}e^{-\frac{x^2}2},-\infty&lt;x&lt;+\infty$</p>
+
+<p>$相应的分布函数:\Phi(x)=\frac1{\sqrt{2\pi}}\int_{-\infty}^xe^{-\frac{t^2}2}dt,-\infty&lt;x&lt;+\infty$</p>
+
+<h6 id="2指数分布">2.指数分布</h6>
+
+<p>$p(x)=\begin{cases}
+\lambda e^{-\lambda x},x\ge0<br />
+0,x&lt;0 \end{cases}$</p>
+
+<p>$F(x)=\begin{cases}
+1-e^{-\lambda x},x&gt;0<br />
+0,x\le0 \end{cases}$</p>
+
+<blockquote>
+  <p>X~Exp$(\lambda)$</p>
+</blockquote>
+
+<blockquote>
+  <p>指数分布具有“无记忆性”的特点</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>即$P{X&gt;s+t</td>
+        <td>X&gt;s}=P{X&gt;s+t}/P{X&gt;s}=e^{-\lambda t}=P{X&gt;t}$</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>某种产品或零件经过一段时间的工作后,仍然如同新的产品一样,不影响以后的工作寿命值，或者说，经过一段时间的工作之后，该产品的寿命分布与原来还未工作时的寿命分布相同</p>
+
+  <p>即，一个灯泡在工作10年的情况下，再工作10年的概率，和一个新灯泡工作10年的概率一样</p>
+</blockquote>
+
+<h5 id="2二维连续型随机变量">2.二维连续型随机变量</h5>
+
+<p>$F(x,y)=\int_{-\infty}^x\int_{-\infty}^yp(u,v)dudv$</p>
+
+<blockquote>
+  <p>称$(X,Y)$为二维连续型随机变量，$p(x,y)$称为联合密度函数</p>
+</blockquote>
+
+<h6 id="224边缘分布">2.2.4边缘分布</h6>
+
+<p>$F_X(x)=P{X\le x}=P{X \le x,Y &lt; +\infty}=F(x,+\infty)$</p>
+
+<p>$F_Y(y)=P{Y\le y}=P{X &lt; +\infty,Y \le y}=F(+\infty,y)$</p>
+
+<blockquote>
+  <p>$X,Y的边缘密度函数是$</p>
+
+  <p>$p_X(x)=\int_{-\infty}^{+\infty}p(x,y)dy$</p>
+
+  <p>$P_Y(y)=\int_{-\infty}^{+\infty}p(x,y)dx$</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">联合分布可以唯一确定两个边缘分布，但是反之不行，任意的两个随机变量不能唯一确定一个联合分布！</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">二维正态分布的边缘分布也是正态分布，但是两个边缘分布都是正态分布的分布不一定是正态分布</code></p>
+
+<p>对于离散型随机变量，其独立的充要条件是$p_{ij}=p_i·p_j$</p>
+
+<p>对于连续型随机变量，其独立的充要条件是$p(x,y)=p_X(x)p_Y(y)$</p>
+
+<h5 id="23-随机变量的函数及其分布">2.3 随机变量的函数及其分布</h5>
+
+<blockquote>
+  <p>离散型随机变量：</p>
+
+  <p>由$X$的分布列，计算出$Y=f(X)$的分布列，然后合并（把相同项的概率相加）</p>
+</blockquote>
+
+<blockquote>
+  <p>连续型随机变量：</p>
+
+  <p>$F_Y(y)=P{Y\le y}
+\=P{f(X)\le y}
+\=P{X\le f^{-1}(y)}$</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>$p_Y(y)=p_x[f^{-1}(y)]·</td>
+        <td>[f^{-1}(y)]’</td>
+        <td>$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p><img src="./images4/image-20230228164858519.png" alt="image-20230228164858519" /></p>
+
+<p><img src="./images4/image-20230228165549084.png" alt="image-20230228165549084" /></p>
+
+<p><img src="./images4/image-20230228170519571.png" alt="image-20230228170519571" /></p>
+
+<p><img src="images4/image-20230301202444146.png" alt="image-20230301202444146" /></p>
+
+<p><img src="images4/image-20230301202529786.png" alt="image-20230301202529786" /></p>

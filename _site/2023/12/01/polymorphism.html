@@ -1,0 +1,90 @@
+<p>多态的概念：同一个方法，在不同的情境下会有不同的表现</p>
+
+<p>多态的核心体现主要有以下两点：</p>
+
+<p>一、方法的多态性
+（1）方法的重载
+定义：同一个方法名可以根据参数列表的不同调用不同的方法体
+（2）方法的覆写
+定义：同一个父类的方法，可以根据实例化子类的不同也有不同的表现</p>
+
+<p>二、对象的多态性
+前提：方法覆写
+（1）对象的向上转型
+    父类 父类对象=new 子类（）;</p>
+
+<p>核心作用：操作参数统一</p>
+
+<p>Simple：</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"1.我是人类！"</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+
+
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"2.我是学生！"</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Worker</span> <span class="kd">extends</span> <span class="nc">Person</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"3.我是工人！"</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">whoYouAre</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">());</span>
+		<span class="n">whoYouAre</span><span class="o">(</span><span class="k">new</span> <span class="nc">Worker</span><span class="o">());</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">whoYouAre</span><span class="o">(</span><span class="nc">Person</span> <span class="n">per</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">per</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>（2）对象的向下转型</p>
+
+<p>什么时候需要向下转型：当父类没有子类的方法，但又想使用时就向下转型；</p>
+
+<p>父类 父类对象=new 子类（）;
+子类 子类对象=（子类）父类对象;</p>
+
+<p>要向下转型必须先向上转型，这里存在安全隐患</p>
+
+<p>错误示例：</p>
+
+<p>父类 父类对象=new 父类（）;
+子类 子类对象=（子类）父类对象;</p>
+
+<p>这样是不行的，虽然说两者有关系，但是前提并没有发生关系，因而不能强转，会报错ClassCastException</p>
+
+<p>那么该怎么解决呢，这里可以使用instanceof关键字实现，先判断new的是否是子类，若是，再进行下一步：</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//Student student= (Student) new Person();//这里会报错ClassCastException，因为没有向上转型</span>
+        <span class="c1">//Person person=new Person();</span>
+        <span class="c1">//Student student0=(Student) person;//这里也会报错ClassCastException，上面那个是匿名Person对象，这个不是匿名，实际上表达式一样的</span>
+        <span class="c1">//先向上转型，才能实现向下转型</span>
+        <span class="nc">Person</span> <span class="n">person1</span><span class="o">=</span><span class="k">new</span> <span class="nc">Student</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">person1</span> <span class="k">instanceof</span> <span class="nc">Student</span><span class="o">){</span>
+            <span class="nc">Student</span> <span class="n">student1</span><span class="o">=(</span><span class="nc">Student</span><span class="o">)</span> <span class="n">person1</span><span class="o">;</span>
+            <span class="n">student1</span><span class="o">.</span><span class="na">study</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Person</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">study</span><span class="o">(){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"有人在学习"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="nc">Person</span><span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">study</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"学生在学习"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>

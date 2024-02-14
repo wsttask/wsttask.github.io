@@ -1,0 +1,12 @@
+@构造方法
+    Color(int rgb)
+    Color(int r, int g, int b)
+@方法
+    brighter()： 返回一个比当前颜色浅一级的Color对象
+    darker()： 返回一个比当前颜色深一级的Color对象
+    equals(Object)： 比较两个颜色对象是否颜色相同
+    getColor(String)： 获取某个字符串的系统属性的值，所对应的颜色，返回一个Color对象，否则返回null
+    getColor(String,Color)： 同上，如果Sring对应的系统属性值为null，则返回Color值
+    getColor(String,int)： 同上，否则返回int值所对应的Color对象
+@成员
+    public static final Color black     通过Color.black可以直接调用该成员。

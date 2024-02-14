@@ -1,14 +1,24 @@
+---
+layout: post
+title: 音标
+categories: [pronunciation]
+---
+
+
+
 ## 元音
-详解|视频
--|-
-[/e/](./0065.md)|[/e/](https://www.bilibili.com/video/BV1iV411z7Nj?p=11)
-[/æ/](./00E6.md)|[/æ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=16)
-[/ə/](./0259.md)|[/ə/](https://www.bilibili.com/video/BV1iV411z7Nj?p=13)
-[/aʊ/](./0061_028A.md)|[/aʊ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=22)
-[/aɪ/](./0061_026A.md)|[/aɪ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=21)
-[/ɪ/](./026A.md)|[/ɪ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=8)
-[/ɑː/](./0251.md)|[/ɑː/](https://www.bilibili.com/video/BV1iV411z7Nj?p=17)
-[/s/](./s-z.md)-[/z/](./s-z.md)|[/s/-/z/](https://www.bilibili.com/video/BV1iV411z7Nj?p=33)
+
+详解|视频|网页版详解
+-|-|-
+[/e/](./0065.md)|[/e/](https://www.bilibili.com/video/BV1iV411z7Nj?p=11)|1
+[/æ/](./00E6.md)|[/æ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=16)|1
+[/ə/](./0259.md)|[/ə/](https://www.bilibili.com/video/BV1iV411z7Nj?p=13)|1
+[/aʊ/](./0061_028A.md)|[/aʊ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=22)|1
+[/aɪ/](./0061_026A.md)|[/aɪ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=21)|1
+[/ɪ/](./026A.md)|[/ɪ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=8)|1
+[/ɑː/](./0251.md)|[/ɑː/](https://www.bilibili.com/video/BV1iV411z7Nj?p=17)|1
+[/s/](./s-z.md)-[/z/](./s-z.md)|[/s/-/z/](https://www.bilibili.com/video/BV1iV411z7Nj?p=33)|1
+
 ## 辅音
 
 1. **元音（Vowels）:**

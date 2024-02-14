@@ -1,0 +1,63 @@
+<h3 id="description">Description</h3>
+
+<p>对于一个给定的整数数组<strong>targets</strong>，小明需要根据它来创建一个新的有序数组，首先创建一个空数组<strong>nums</strong>，小明需要从左到右遍历<strong>targets</strong>中的元素，将其插入<strong>nums</strong>中。每次插入的代价为以下规则中的较小值：</p>
+
+<p>1.<strong>nums</strong>中<strong>严格小于targets[i]</strong>的数字数目；</p>
+
+<p>2.<strong>nums</strong>中<strong>严格大于targets[i]</strong>的数字数目；</p>
+
+<p>举例说明：将 3插入到<strong>nums</strong>= [1, 2, 3, 5]，那么插入操作的<strong>代价</strong>为<strong>min</strong>(2, 1)(元素 1 和 2小于 3，元素 5大于 3)，插入后<strong>nums</strong>= [1, 2, 3, 3, 5]。</p>
+
+<p>小明需要返回将<strong>targets</strong>中所有元素依次插入<strong>nums</strong>后的<strong>总最小代价</strong>。请你帮帮他，由于答案会很大，请将它对<strong>10^9 + 7</strong><strong>取余</strong>后返回。</p>
+
+<h3 id="input">Input</h3>
+
+<p>输入目标的整数数组，整数之间用空格隔开(1≤targets.length, targets[i]≤100000)</p>
+
+<h3 id="output">Output</h3>
+
+<p>输出总最小代价，对结果10^9 + 7取余后返回</p>
+
+<p><img src="images/Snipaste_2023-12-21_21-00-00.png" alt="" /></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.TreeMap</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="no">MOD</span> <span class="o">=</span> <span class="mi">1000000007</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">createSortedArray</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">targets</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">long</span> <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="nc">TreeMap</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TreeMap</span><span class="o">&lt;&gt;();</span>
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">target</span> <span class="o">:</span> <span class="n">targets</span><span class="o">)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">lessThan</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">headMap</span><span class="o">(</span><span class="n">target</span><span class="o">).</span><span class="na">values</span><span class="o">().</span><span class="na">stream</span><span class="o">().</span><span class="na">mapToInt</span><span class="o">(</span><span class="nl">Integer:</span><span class="o">:</span><span class="n">intValue</span><span class="o">).</span><span class="na">sum</span><span class="o">();</span>
+            <span class="kt">int</span> <span class="n">greaterThan</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">tailMap</span><span class="o">(</span><span class="n">target</span> <span class="o">+</span> <span class="mi">1</span><span class="o">).</span><span class="na">values</span><span class="o">().</span><span class="na">stream</span><span class="o">().</span><span class="na">mapToInt</span><span class="o">(</span><span class="nl">Integer:</span><span class="o">:</span><span class="n">intValue</span><span class="o">).</span><span class="na">sum</span><span class="o">();</span>
+
+            <span class="n">cost</span> <span class="o">+=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">lessThan</span><span class="o">,</span> <span class="n">greaterThan</span><span class="o">);</span>
+            <span class="n">cost</span> <span class="o">%=</span> <span class="no">MOD</span><span class="o">;</span>
+
+            <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">map</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="mi">0</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">cost</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="nc">BufferedReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+        <span class="nc">String</span><span class="o">[]</span> <span class="n">nums</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">readLine</span><span class="o">().</span><span class="na">split</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">cost</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">];</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">cost</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+        <span class="o">}</span>
+
+        <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">createSortedArray</span><span class="o">(</span><span class="n">cost</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
+
+        <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+

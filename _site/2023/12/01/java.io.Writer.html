@@ -1,0 +1,24 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Writer</span>
+</code></pre></div></div>
+<p>@构造方法</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">protected</span> <span class="nf">Writer</span><span class="o">();</span>
+</code></pre></div></div>
+<p>@方法</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="kt">int</span> <span class="n">c</span><span class="o">);</span> <span class="c1">//向输出流中写入一个字符</span>
+
+<span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="kt">char</span><span class="o">[]</span> <span class="n">cbuf</span><span class="o">);</span> <span class="c1">//把参数 cbuf 指定的字符数组中的所有字符写到输出流中</span>
+
+<span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="kt">char</span><span class="o">[]</span> <span class="n">cbuf</span><span class="o">,</span><span class="kt">int</span> <span class="n">off</span><span class="o">,</span><span class="kt">int</span> <span class="n">len</span><span class="o">);</span><span class="c1">//把参数 cbuf 指定的字符数组中的若干字符写到输出流中。其中，off 指定字符数组中的起始下标，len 表示元素个数</span>
+
+<span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="nc">String</span> <span class="n">str</span><span class="o">);</span><span class="c1">//向输出流中写入一个字符串</span>
+
+<span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="nc">String</span> <span class="n">str</span><span class="o">,</span> <span class="kt">int</span> <span class="n">off</span><span class="o">,</span><span class="kt">int</span> <span class="n">len</span><span class="o">);</span><span class="c1">//向输出流中写入一个字符串中的部分字符。其中，off 指定字符串中的起始偏移量，len 表示字符个数</span>
+
+<span class="n">append</span><span class="o">(</span><span class="kt">char</span> <span class="n">c</span><span class="o">);</span><span class="c1">//将参数 c 指定的字符添加到输出流中</span>
+
+<span class="n">append</span><span class="o">(</span><span class="n">charSequence</span> <span class="n">esq</span><span class="o">);</span><span class="c1">//	将参数 esq 指定的字符序列添加到输出流中</span>
+
+<span class="n">append</span><span class="o">(</span><span class="n">charSequence</span> <span class="n">esq</span><span class="o">,</span><span class="kt">int</span> <span class="n">start</span><span class="o">,</span><span class="kt">int</span> <span class="n">end</span><span class="o">);</span><span class="c1">//将参数 esq 指定的字符序列的子序列添加到输出流中。其中，start 指定子序列的第一个字符的索引，end 指定子序列中最后一个字符后面的字符的索引，也就是说子序列的内容包含 start 索引处的字符，但不包括 end索引处的字符</span>
+
+<span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">();</span>
+</code></pre></div></div>
