@@ -1,0 +1,55 @@
+<h3 id="pattern">Pattern</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">Pattern</span>
+    <span class="kd">implements</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span>
+</code></pre></div></div>
+
+<h5 id="构造方法">@构造方法</h5>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="nf">Pattern</span><span class="o">(</span><span class="nc">String</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">f</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">pattern</span> <span class="o">=</span> <span class="n">p</span><span class="o">;</span>
+    <span class="n">flags</span> <span class="o">=</span> <span class="n">f</span><span class="o">;</span>
+
+    <span class="c1">// Reset group index count</span>
+    <span class="n">capturingGroupCount</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="n">localCount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="k">if</span> <span class="o">(</span><span class="n">pattern</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">compile</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Start</span><span class="o">(</span><span class="n">lastAccept</span><span class="o">);</span>
+        <span class="n">matchRoot</span> <span class="o">=</span> <span class="n">lastAccept</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="c1">//构造器私有，所以不能使用new创建</span>
+</code></pre></div></div>
+
+<p>@常量</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+  * The original regular-expression pattern string.
+  *
+  * @serial
+  */</span>
+<span class="kd">private</span> <span class="nc">String</span> <span class="n">pattern</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>@常用方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 调用静态方法compile返回Pattern实例。
+ */</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="nc">Pattern</span> <span class="nf">compile</span><span class="o">(</span><span class="nc">String</span> <span class="n">regex</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">Pattern</span><span class="o">(</span><span class="n">regex</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="cm">/**
+ * 返回正则表达式
+ */</span>
+<span class="kd">public</span> <span class="nc">String</span> <span class="nf">pattern</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">pattern</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="nc">Matcher</span> <span class="nf">matcher</span><span class="o">(</span><span class="nc">CharSequence</span> <span class="n">input</span><span class="o">)</span> 
+<span class="c1">//返回一个Matcher对象，Pattern类只能做一些简单的匹配操作,要想得到更强更便捷的正则匹配操作,那就需要将Pattern与Matcher一起合作</span>
+</code></pre></div></div>
+

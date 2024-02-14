@@ -1,0 +1,48 @@
+<p>@构造函数</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ArrayList</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;();</span>
+</code></pre></div></div>
+<p>@成员变量</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * The array buffer into which the elements of the ArrayList are stored.
+ * 存储ArrayList元素的数组缓冲区
+ */</span>
+<span class="kd">transient</span> <span class="nc">Object</span><span class="o">[]</span> <span class="n">elementData</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>@ArrayList<E> 常用方法：</E></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">int</span> <span class="nf">size</span><span class="o">();</span><span class="c1">//返回容器中容纳的元素数</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">add</span><span class="o">(</span><span class="no">E</span> <span class="n">o</span><span class="o">);</span><span class="c1">//将指定的元素o添加到列表末尾</span>
+<span class="kd">public</span> <span class="no">E</span> <span class="nf">get</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">);</span><span class="c1">//返回容器列表中指定位置的元素 #第一个的索引为0，即get(0)</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">remove</span><span class="o">(</span><span class="nc">Object</span> <span class="n">o</span><span class="o">);</span><span class="c1">//从容器列表中删除指定对象元素实例</span>
+<span class="kd">public</span> <span class="no">E</span> <span class="nf">remove</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">);</span><span class="c1">//从容器列表中删除指定索引的元素实例</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">indexOf</span><span class="o">(</span><span class="nc">Object</span> <span class="mi">0</span><span class="o">);</span><span class="c1">//返回列表中指定元素的索引，无则返回-1</span>
+<span class="cm">/**
+ * 返回一个迭代器,注意Itr是一个内部类
+ */</span>
+<span class="kd">public</span> <span class="nc">Iterator</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span> <span class="nf">iterator</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">Itr</span><span class="o">();</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<p>@内部类</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kd">class</span> <span class="nc">Itr</span> <span class="kd">implements</span> <span class="nc">Iterator</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;;</span>
+</code></pre></div></div>
+
+<p>@迭代器Iterator<E></E></p>
+
+<ul>
+  <li>所有继承java.util.Collection的容器都有一个方法iterator(),该方法可以返回一个Iterator<E>对象。
+​        方法的声明：
+​            public Iterator<E> iterator()
+​        迭代所用元素的声明：
+​            Iterator<String> e = a.iterator(); #其中a对象是容器类型。</String></E></E></li>
+</ul>
+
+<p>@Iterator<E> 常用方法：</E></p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">E</span> <span class="nf">next</span><span class="o">();</span><span class="c1">//返回所访问容器中的下一个元素，第一次调用next()方法时，它返回容器中的第一个元素。get(0)</span>
+<span class="nc">Bollean</span> <span class="nf">hasNext</span><span class="o">();</span><span class="c1">//判断容器中是否还有元素可以通过next()方法进行访问并返回。</span>
+<span class="kt">void</span> <span class="nf">remove</span><span class="o">();</span><span class="c1">//删除next指针刚刚跳过去的元素。所以在调用它之前必须调用一次next()方法。</span>
+</code></pre></div></div>

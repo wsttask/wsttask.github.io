@@ -1,0 +1,69 @@
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//结构体的定义:</span>
+<span class="k">struct</span> <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="p">{</span>
+    <span class="n">Type1</span> <span class="n">type1</span><span class="p">;</span>
+    <span class="n">Type2</span> <span class="n">type2</span><span class="p">;</span>
+    <span class="p">......</span>
+<span class="p">};</span>
+<span class="c1">//定义结构体变量</span>
+<span class="k">struct</span> <span class="n">Student</span> <span class="n">stu</span><span class="p">;</span>
+
+<span class="c1">//定义结构体的同时定义变量</span>
+<span class="k">struct</span> <span class="n">Student</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="p">}</span><span class="n">stu</span><span class="p">;</span>
+
+<span class="c1">//直接定义结构体类型变量，省略类型名，可以之定义一个，保证了该结构体是唯一的</span>
+<span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">stu</span><span class="p">;</span>
+
+<span class="c1">//通过typedef直接定义别名</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">STU</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//结构体的注意点</span>
+<span class="c1">//1.结构体不允许对本身进行递归定义</span>
+<span class="k">struct</span> <span class="n">Student</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">Student</span> <span class="n">stu</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="c1">//该定义方法错误</span>
+
+<span class="c1">//2.结构体内可以包含别的结构体；</span>
+</code></pre></div></div>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//结构体成员的访问</span>
+<span class="c1">//STU.year</span>
+<span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span><span class="k">struct</span> <span class="n">Date</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">day</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">struct</span> <span class="n">Student</span>
+<span class="p">{</span>
+	<span class="kt">char</span> <span class="n">s_name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+	<span class="k">struct</span> <span class="n">Date</span> <span class="n">birthday</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">score</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="k">struct</span> <span class="n">Student</span> <span class="n">stu</span> <span class="o">=</span> <span class="p">{</span> <span class="s">"liuwen"</span><span class="p">,</span><span class="mi">2000</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">99</span><span class="p">.</span><span class="mi">9</span> <span class="p">};</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"name=%s</span><span class="se">\n</span><span class="s">birtyday=%d.%d.%d</span><span class="se">\n</span><span class="s">score=%f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">s_name</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">birthday</span><span class="p">.</span><span class="n">year</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">birthday</span><span class="p">.</span><span class="n">month</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">birthday</span><span class="p">.</span><span class="n">day</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">score</span><span class="p">);</span>
+	<span class="n">stu</span><span class="p">.</span><span class="n">score</span> <span class="o">=</span> <span class="mi">77</span><span class="p">;</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"name=%s</span><span class="se">\n</span><span class="s">birtyday=%d.%d.%d</span><span class="se">\n</span><span class="s">score=%f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">s_name</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">birthday</span><span class="p">.</span><span class="n">year</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">birthday</span><span class="p">.</span><span class="n">month</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">birthday</span><span class="p">.</span><span class="n">day</span><span class="p">,</span> <span class="n">stu</span><span class="p">.</span><span class="n">score</span><span class="p">);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    
+    
+<span class="c1">//结构体变量和指针中的</span>
+<span class="c1">//(*p).成员名,.的优先级高于*，（*p）两边括号不能少</span>
+<span class="c1">//p-&gt;成员名（-&gt;指向符）</span>
+</code></pre></div></div>
+

@@ -1,0 +1,33 @@
+<p>@语句结构：
+    for ( 变量类型  变量名 : 数组名 ) { <br />
+        需要执行的循环语句;
+    }</p>
+
+<p>simple：</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="kt">int</span> <span class="o">[]</span> <span class="n">data</span> <span class="o">=</span> <span class="o">{</span><span class="mi">56</span><span class="o">,</span> <span class="mi">75</span><span class="o">,</span> <span class="mi">68</span><span class="o">,</span> <span class="mi">45</span><span class="o">,</span> <span class="mi">24</span><span class="o">,</span> <span class="mi">245</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">22</span><span class="o">,</span> <span class="mi">27</span><span class="o">,</span> <span class="mi">5</span><span class="o">};</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="nc">Scanner</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span> <span class="o">(</span> <span class="nc">System</span><span class="o">.</span><span class="na">in</span> <span class="o">);</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+
+    <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="k">for</span> <span class="o">(</span> <span class="kt">int</span> <span class="n">k</span> <span class="o">:</span> <span class="n">data</span> <span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span> <span class="n">k</span><span class="o">==</span><span class="n">x</span> <span class="o">)</span> <span class="o">{</span>
+            <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+            <span class="k">break</span><span class="o">;</span>
+    	<span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="k">if</span> <span class="o">(</span> <span class="n">found</span> <span class="o">)</span>	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"找到了"</span><span class="o">);</span>
+    <span class="k">else</span> 	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"没找到"</span><span class="o">);</span>
+
+    <span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+	
+
+<span class="o">}</span>
+</code></pre></div></div>

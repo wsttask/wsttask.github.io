@@ -1,0 +1,112 @@
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>问题描述：
+旅行商问题，需要走一圈再回来
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">Experiment2</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Back_TSP</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[][]</span> <span class="n">city_graph</span> <span class="o">=</span> <span class="o">{</span> 
+        <span class="o">{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">},</span>
+                                        <span class="o">{</span><span class="mi">0</span><span class="o">,-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">30</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">4</span><span class="o">},</span>
+                                        <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">30</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">10</span><span class="o">},</span>
+                                        <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">20</span><span class="o">},</span>
+                                        <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span> <span class="mi">10</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">}</span> <span class="o">};</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">path_num</span> <span class="o">=</span> <span class="n">city_graph</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">is_in</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">path_num</span><span class="o">];</span> <span class="c1">//用来检测该节点是否已经添加到路径中</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">path</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">path_num</span><span class="o">];</span><span class="c1">//用于储存路径</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">best_path</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">path_num</span><span class="o">];</span><span class="c1">//用于储存最优路径</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">best_length</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span><span class="c1">//初始化最优路径的路程总和</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">now_length</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="cm">/**
+     * 注意递归返回时，全局变量并不会返回，而是保留深层递归的值，需要你手动取消
+     * 递归返回跟随返回的值只有i,j,k这种局部变量,递归一次相当于重新创建了一个局部变量
+     *
+     * @param t 代表递归深度，递归到城市数目加一的时候结束
+     */</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">TSP</span><span class="o">(</span><span class="kt">int</span> <span class="n">t</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">t</span> <span class="o">&gt;</span> <span class="n">path_num</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 搜索至叶子节点</span>
+            <span class="nc">StringBuilder</span> <span class="nc">ThePath</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
+
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">path_num</span><span class="o">;</span> <span class="o">++</span><span class="n">i</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 输出当前路径</span>
+                <span class="nc">ThePath</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">path</span><span class="o">[</span><span class="n">i</span><span class="o">]).</span><span class="na">append</span><span class="o">(</span><span class="s">"-&gt;"</span><span class="o">);</span>
+            <span class="o">}</span>
+            <span class="c1">//temp是最后一个城市</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">path</span><span class="o">[</span><span class="n">path_num</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
+
+            <span class="k">if</span> <span class="o">(</span><span class="n">city_graph</span><span class="o">[</span><span class="n">temp</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 判断是否存在回路</span>
+                <span class="nc">ThePath</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="sc">'1'</span><span class="o">);</span>  <span class="c1">// 路径加上回路回到城市1</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"当前路径:"</span> <span class="o">+</span> <span class="nc">ThePath</span><span class="o">);</span>
+
+                <span class="kt">int</span> <span class="n">back_length</span> <span class="o">=</span> <span class="n">now_length</span> <span class="o">+</span> <span class="n">city_graph</span><span class="o">[</span><span class="n">temp</span><span class="o">][</span><span class="mi">1</span><span class="o">];</span> <span class="c1">// 回路路程也需要相加</span>
+                <span class="c1">//System.out.println("当前路径总和:" + back_length);</span>
+
+                <span class="k">if</span> <span class="o">(</span><span class="n">back_length</span> <span class="o">&lt;</span> <span class="n">best_length</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 更新最优解</span>
+                    <span class="nc">System</span><span class="o">.</span><span class="na">arraycopy</span><span class="o">(</span><span class="n">path</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">best_path</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">path_num</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+
+                    <span class="n">best_length</span> <span class="o">=</span> <span class="n">back_length</span><span class="o">;</span>
+                    <span class="c1">// 更新最优路径</span>
+                    <span class="c1">//System.out.println("更新最优路径");</span>
+                <span class="o">}</span>
+                <span class="k">return</span><span class="o">;</span>  <span class="c1">// 返回</span>
+            <span class="o">}</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">path_num</span><span class="o">;</span> <span class="o">++</span><span class="n">j</span><span class="o">)</span> <span class="o">{</span>
+                <span class="c1">//图大1,可以不用对初始条件做分类讨论</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">city_graph</span><span class="o">[</span><span class="n">path</span><span class="o">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="o">]][</span><span class="n">j</span><span class="o">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">is_in</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="o">))</span> <span class="o">{</span> <span class="c1">// 两城市间存在路径并且还未走过</span>
+                    <span class="n">is_in</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="c1">// 表示该城市已经来过</span>
+                    <span class="n">path</span><span class="o">[</span><span class="n">t</span><span class="o">]</span> <span class="o">=</span> <span class="n">j</span><span class="o">;</span> <span class="c1">// 将该城市存至path中</span>
+                    <span class="n">now_length</span> <span class="o">=</span> <span class="n">now_length</span> <span class="o">+</span> <span class="n">city_graph</span><span class="o">[</span><span class="n">path</span><span class="o">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="o">]][</span><span class="n">j</span><span class="o">];</span> <span class="c1">// 加路径对应路程和</span>
+
+                    <span class="c1">//剪支</span>
+                    <span class="k">if</span><span class="o">(</span><span class="n">now_length</span><span class="o">&gt;</span><span class="n">best_length</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="c1">//此时不需要再向下搜索,不需要迭代了</span>
+                        <span class="c1">//System.out.println(Arrays.toString(path));</span>
+                    <span class="o">}</span>
+                    <span class="k">else</span> <span class="o">{</span>
+                        <span class="no">TSP</span><span class="o">(</span><span class="n">t</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+                    <span class="o">}</span>
+                    <span class="n">is_in</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span><span class="c1">//递归结束,开始回退,先把城市去掉</span>
+                    <span class="n">path</span><span class="o">[</span><span class="n">t</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span><span class="c1">//把路径中的去掉</span>
+                    <span class="n">now_length</span> <span class="o">=</span> <span class="n">now_length</span> <span class="o">-</span> <span class="n">city_graph</span><span class="o">[</span><span class="n">path</span><span class="o">[</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="o">]][</span><span class="n">j</span><span class="o">];</span><span class="c1">//把路程减回去</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**
+     *
+     * @param city_graph 这个图必须和test测试用例一样,第一行第一列均为零,即下表为0为无效点
+     */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">Back_TSP</span><span class="o">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">city_graph</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Back_TSP</span><span class="o">.</span><span class="na">city_graph</span> <span class="o">=</span> <span class="n">city_graph</span><span class="o">;</span>
+        <span class="n">path_num</span> <span class="o">=</span> <span class="n">city_graph</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">path_num</span><span class="o">];</span>
+        <span class="n">best_path</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">path_num</span><span class="o">];</span>
+        <span class="n">is_in</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">path_num</span><span class="o">];</span>
+        <span class="no">TSP</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">best_path</span><span class="o">));</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">best_length</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">city_graph</span> <span class="o">=</span> <span class="o">{</span> 
+            <span class="o">{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">},</span>
+                			   <span class="o">{</span><span class="mi">0</span><span class="o">,-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">30</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">4</span><span class="o">},</span>
+                			   <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">30</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">10</span><span class="o">},</span>
+                			   <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">20</span><span class="o">},</span>
+                			   <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span> <span class="mi">10</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">}};</span>
+
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">b</span> <span class="o">=</span> <span class="o">{</span> <span class="o">{</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span> <span class="o">},</span> <span class="o">{</span> <span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">19</span><span class="o">,</span> <span class="mi">13</span> <span class="o">},</span> <span class="o">{</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">21</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">14</span> <span class="o">},</span> <span class="o">{</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">40</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">17</span> <span class="o">},</span>
+                <span class="o">{</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">41</span><span class="o">,</span> <span class="mi">80</span><span class="o">,</span> <span class="mi">10</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">}</span> <span class="o">};</span>
+        <span class="n">Back_TSP</span><span class="o">(</span><span class="n">city_graph</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+
+</code></pre></div></div>
+

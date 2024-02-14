@@ -1,0 +1,64 @@
+<p>start命令是Windows命令行中的一个内置命令，用于打开一个新的窗口或者运行一个程序。下面是start命令的基本使用方法和一些常见情况：</p>
+
+<ol>
+  <li>打开一个新的命令行窗口：</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start
+</code></pre></div></div>
+
+<p>这会打开一个新的命令行窗口。</p>
+
+<ol>
+  <li>打开指定路径下的文件或文件夹：</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start "窗口标题" "路径"
+</code></pre></div></div>
+
+<p>这会打开一个新的窗口，并在其中打开指定路径下的文件或文件夹。窗口标题可以留空，如果路径中包含空格或特殊字符，需要使用引号将路径括起来。</p>
+
+<ol>
+  <li>运行指定的程序：</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start "窗口标题" "程序路径" 参数
+</code></pre></div></div>
+
+<p>这会打开一个新的窗口，并运行指定的程序。窗口标题可以留空，如果程序路径中包含空格或特殊字符，需要使用引号将路径括起来。参数可以是程序的命令行参数。</p>
+
+<ol>
+  <li>打开指定URL的网页：</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start "窗口标题" "URL"
+</code></pre></div></div>
+
+<p>这会打开一个新的窗口，并在默认浏览器中打开指定URL的网页。窗口标题可以留空。</p>
+
+<ol>
+  <li>打开默认关联的程序：</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start "窗口标题" 文件扩展名
+</code></pre></div></div>
+
+<p>这会打开一个新的窗口，并用默认关联的程序打开指定扩展名的文件。窗口标题可以留空。</p>
+
+<p>这些只是start命令的一些基本用法和常见情况，实际上start命令还有更多的选项和参数可以使用，你可以通过在命令行中输入<code class="language-plaintext highlighter-rouge">start /?</code>来查看完整的帮助文档。</p>
+
+<h3 id="使用start命令简单打开百度翻译查询单词start">使用start命令简单打开百度翻译查询单词start</h3>
+
+<p>首先在环境变量中加入变量</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fanyi=https://fanyi.baidu.com/#en/zh/
+</code></pre></div></div>
+
+<p>然后使用</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>start %fanyi%start
+</code></pre></div></div>
+
+<p>查询单词</p>
+
+<p><a href="https://blog.csdn.net/andr0id/article/details/79620669">关于start命令中的文件路径中含空格的问题_start 路径有空格-CSDN博客</a></p>

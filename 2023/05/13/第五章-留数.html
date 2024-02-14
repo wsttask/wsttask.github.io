@@ -1,0 +1,101 @@
+<h4 id="第一节孤立奇点">第一节、孤立奇点</h4>
+
+<p>定义:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>​	如果函数$f(z)$虽在$z_0$不解析，但在$z_0$的某一个去心邻域$0&lt;</td>
+      <td>z-z_0</td>
+      <td>&lt;\delta$内处处解析，那么$z_0$称为$f(z)$的孤立奇点。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>1.可去奇点</p>
+
+<p>2.极点</p>
+
+<p>3.本性奇点</p>
+
+<h5 id="4函数的零点与奇点的关系">4.函数的零点与奇点的关系</h5>
+
+<p>==零点的定义：==</p>
+
+<p>如果$f(z)$在$z_0$解析，那么$z_0$为$f(z)$的$m$级零点的充要条件是
+\(f^{(n)}(z_0)=0,\quad(n=0,1,2,...,m-1),\quad f^{(m)}(z_0)\ne 0\)</p>
+
+<blockquote>
+  <p>从第m阶开始在$z_0$的导数不为零</p>
+</blockquote>
+
+<p>定理</p>
+
+<p>​	如果$z_0$是$f(z)$的$m$级极点，那么$z_0$就是$\frac{1}{f(z)}$的$m$级零点，==反过来也成立==</p>
+
+<p>注意：</p>
+
+<p>再求函数的孤立奇点的时候，不能仅仅从函数的表面形式出发，</p>
+
+<p>$\frac{e^z-1}{z^2}$，初看$z=0$是二级极点，根据<strong>幂级数展开</strong>或<strong>零点定义</strong>可以得出是一级极点</p>
+
+<h5 id="5函数在无穷远点的性态">5.函数在无穷远点的性态</h5>
+
+<p>首先复变函数在无穷远点的性态是在扩充复平面上进行研究的</p>
+
+<p>定义：</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>​	如果函数$f(z)$在无穷远点$z=\infty$的去心邻域$R&lt;</td>
+      <td>z</td>
+      <td>&lt;+\infty$内解析，那么称点$\infty$为$f(z)$的孤立奇点</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>与孤立奇点的对比来看，是否直接把复变函数在无穷远处规定为不可导？</p>
+
+<h4 id="第二节留数">第二节、留数</h4>
+
+<h5 id="1留数的定义">1、留数的定义</h5>
+
+<p>​	$f(z)$在$z_0$的留数就是$f(z)$在以$z_0$为中心的圆环域内的洛朗级数中的复幂项$c_{-1}(z-z_0)^{-1}$的系数</p>
+
+<h6 id="留数定理">留数定理</h6>
+
+<p>​	设函数$f(z)$在区域$D$内除有限个孤立奇点$z_1,z_2,z_3,…,z_n$外处处解析，$C$是$D$内包围诸奇点的一条正向简单闭曲线，那么
+\(\oint f(z)dz=2\pi i\sum\limits_{k=1}^{n}Res[f(z),z_k]\)</p>
+
+<h5 id="2留数的计算规则">2、留数的计算规则</h5>
+
+<p>​	规则一：如果$z_0$为$f(z)$的一级极点，那么
+\(Res[f(z),z_0]=\lim\limits_{z\rightarrow z_0}(z-z_0)f(z)\)</p>
+
+<p>​	规则二：如果$z_0$是$f(z)$的m级极点，那么
+\(Res[f(z),z_0]=\frac1{(m-1)!}\lim\limits_{z\rightarrow z_0}\frac{d^{m-1}}{dz^{m-1}}\{(z-z_0)^mf(z)\}\)
+​	可去奇点的留数为零</p>
+
+<p>​	本性奇点的留数通常只能通过洛朗级数展开来求$c_{-1}$</p>
+
+<h4 id="第三节留数在定积分计算上的应用">第三节、留数在定积分计算上的应用</h4>
+
+<h5 id="1int_02pircosthetasinthetadtheta">1.$\int_{0}^{2\pi}R(cos\theta,sin\theta)d\theta$</h5>
+
+<p>​	令$z=e^{i\theta}$，则$dz=ie^{i\theta}d\theta$</p>
+
+<p>​		$sin\theta=\frac{z^2-1}{2iz}$</p>
+
+<p>​		$cos\theta=\frac{z^2+1}{2z}$</p>
+
+<p>​	通过该转换规则，可以把该积分转化成
+\(\oint\limits_{|z|=1}f(z)dz\)</p>
+
+<h5 id="2int_-inftyinftyrxdx">2.$\int_{-\infty}^{+\infty}R(x)dx$</h5>
+
+<p>​	$\int_{-\infty}^{+\infty}R(x)dx=2\pi i\sum Res[R(z),z_k]$</p>
+
+<h5 id="3intinfty_-inftyrxeaixdx">3.$\int^{+\infty}_{-\infty}R(x)e^{aix}dx$</h5>
+
+<p>​	$\int_{-\infty}^{+\infty}R(x)e^{aiz}dx=2\pi i\sum Res[R(z)e^{aiz},z_k]$</p>

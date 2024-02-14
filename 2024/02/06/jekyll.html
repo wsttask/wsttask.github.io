@@ -1,0 +1,18 @@
+<pre><code class="language-cmd">//实时渲染网页
+//在自动构建过程中对 _config.yml 的修改将不会被包含其中
+jekyll server --watch
+
+$ jekyll build
+# =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中。
+
+$ jekyll build --destination &lt;destination&gt;
+# =&gt; 当前文件夹中的内容将会生成到目标文件夹&lt;destination&gt;中。
+
+$ jekyll build --source &lt;source&gt; --destination &lt;destination&gt;
+# =&gt; 指定源文件夹&lt;source&gt;中的内容将会生成到目标文件夹&lt;destination&gt;中。
+
+$ jekyll build --watch
+# =&gt; 当前文件夹中的内容将会生成到 ./_site 文件夹中，
+#    查看改变，并且自动再生成。
+</code></pre>
+

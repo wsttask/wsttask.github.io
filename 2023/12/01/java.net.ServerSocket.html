@@ -1,0 +1,14 @@
+<p>@构造方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ServerSocket</span><span class="o">()</span><span class="kd">throws</span> <span class="nc">IOException</span><span class="o">;</span>
+<span class="nc">ServerSocket</span><span class="o">(</span><span class="kt">int</span> <span class="n">port</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">;</span> 
+<span class="nc">ServerSocket</span><span class="o">(</span><span class="kt">int</span> <span class="n">port</span><span class="o">,</span> <span class="kt">int</span> <span class="n">backlog</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">;</span>
+<span class="nc">ServerSocket</span><span class="o">(</span><span class="kt">int</span> <span class="n">port</span><span class="o">,</span> <span class="kt">int</span> <span class="n">backlog</span><span class="o">,</span> <span class="nc">InetAddress</span> <span class="n">bindAddr</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">;</span> 
+<span class="c1">//参数port指定服务器要绑定的端口（服务器要监听的端口），参数backlog指定客户连接请求队列的长度，参数bindAddr指定服务器要绑定的IP地址。</span>
+</code></pre></div></div>
+
+<p>@方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="nc">Socket</span> <span class="nf">accept</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">;</span><span class="c1">//ServerSocket 的 accept() 方法从连接请求队列中取出一个客户的连接请求，然后创建与客户连接的 Socket 对象，井将它返回。如果队列中没有连接请求，accept() 方法就会一直等待下去</span>
+</code></pre></div></div>
+

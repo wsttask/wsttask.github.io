@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>字符集与字符编码</title>
+
+
+        <link rel="stylesheet" href="https://wsttask.github.io/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="https://wsttask.github.io/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/index.html">index</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/tags.html">Tags</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/README.html">README</a>
+    </div>
+</div>
+ 
+        <div class="content-area">
+            <div class="title">
+                字符集与字符编码
+            </div>
+            <div class="category-area">
+                「
+                <a href="https://wsttask.github.io/tags.html#字符编码">
+                    <div class="category">
+                        字符编码
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+              2024-02-07 1919字
+            </div>
+            <div class="content">
+                <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UTF: Unicode Transformation Format
+ISO: International Organization for Standardization
+GBK: gb:国标
+</code></pre></div></div>
+
+<h3 id="utf-8编码"><code class="language-plaintext highlighter-rouge">UTF-8</code>编码</h3>
+
+<p><img src="images/v2-dbce93b579f762fa75e78a455cd1b74c_1440w.webp" alt="img" /></p>
+
+<h3 id="utf-16-编码"><code class="language-plaintext highlighter-rouge">UTF-16</code> 编码</h3>
+
+<p><code class="language-plaintext highlighter-rouge">UTF-16</code> 也是一种变长字符编码, 这种编码方式比较特殊, 它将字符编码成 2 字节 或者 4 字节</p>
+
+<p>具体的编码规则如下:</p>
+
+<ol>
+  <li>对于 Unicode 码小于 <code class="language-plaintext highlighter-rouge">0x10000</code> 的字符， 使用 <strong>2</strong> 个字节存储，并且是直接存储 Unicode 码，不用进行编码转换</li>
+  <li>对于 Unicode 码在 <code class="language-plaintext highlighter-rouge">0x10000</code> 和 <code class="language-plaintext highlighter-rouge">0x10FFFF</code> 之间的字符，使用 <strong>4</strong> 个字节存储，这 <strong>4</strong> 个字节分成前后两部分，每个部分各两个字节，其中，前面两个字节的前 <strong>6</strong> 位二进制固定为 <strong>110110</strong>，后面两个字节的前 6 位二进制固定为 <strong>110111</strong>, 前后部分各剩余 10 位二进制表示符号的 Unicode 码 减去 <code class="language-plaintext highlighter-rouge">0x10000</code> 的结果</li>
+  <li>大于 <code class="language-plaintext highlighter-rouge">0x10FFFF</code> 的 Unicode 码无法用 <code class="language-plaintext highlighter-rouge">UTF-16</code> 编码</li>
+</ol>
+
+<h3 id="utf-32-编码"><code class="language-plaintext highlighter-rouge">UTF-32</code> 编码</h3>
+
+<p><code class="language-plaintext highlighter-rouge">UTF-32</code> 是固定长度的编码，始终占用 4 个字节，足以容纳所有的 Unicode 字符，所以直接存储 Unicode 码即可，不需要任何编码转换。虽然浪费了空间，但提高了效率。</p>
+
+<p><a href="https://blog.csdn.net/qq_42068856/article/details/83792174?ops_request_misc=%7B%22request%5Fid%22%3A%22170306177316800211514352%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;request_id=170306177316800211514352&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-83792174-null-null.142^v96^pc_search_result_base5&amp;utm_term=字符集&amp;spm=1018.2226.3001.4187">字符集详解（学习，看一篇就够了）-CSDN博客</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/260192496">字符、字符集、字符编码的基础知识科普 - 知乎 (zhihu.com)</a></p>
+
+<p><img src="images/QQ图片20231220164138.jpg" alt="" /></p>
+
+<p>利用InputStreamReader读入的charsetName格式的编码其实也是字符吧，只是解析用charsetName罢了。</p>
+
+<h4 id="字符集和字符集编码是两回事">“字符集”和”字符集编码”是两回事</h4>
+
+<p>字符集(Charset Set)，仅仅是一套从【字符】到【数字】的映射字典，它只规定了应该用什么数字来标识字符，仅此而已，至于计算机在存储的时候应该用什么字节来标识，字符集是根本不管这事的。Unicode, GB2312, ASCII都属于字符集。字符集编码(Character Encoding)，专门规定了字符集中的字符在计算机中应该如何存储，说白了就是怎么用字节来表示他们。UTF8, UTF16, 都属于字符集编码。</p>
+
+<h4 id="有人既是字符集又是字符集编码">有人既是字符集，又是字符集编码</h4>
+
+<p>注意这里有一个地方非常容易混淆，那就是有的人【既是字符集，又是字符集编码】。比如GB2312作为字符集的时候，规定了“你”这个汉字用十六进制的0xC4E3来表示，同时GB2312又是编码规范，因此在计算机中，可以直接使用0xC4E3来存储“你”。ASCLL也是同理，都属于字符集跟其编码完全一致的玩意。而Unicode就不一样了，想要存储Unicode中规定的字符，就必须使用另一种编码方式对其进行编码，比如UTF8就是一种使用1~3个字节来表示的一种编码方式。</p>
+
+<h4 id="unicode字符集">Unicode字符集</h4>
+
+<p>ASCII码字符集，总共才能容纳256个字符，对于全世界各国语言来说，很难全部包含在内，所有后来就出现了Unicode字符集。Unicode字符集是一个很大的字符集合，现在的规模可以容纳100多万个符号。每个符号的编码都不一样，比如，U+0639表示阿拉伯字母Ain，U+0041表示英语的大写字母A，U+4E25表示汉字“严”。需要注意的是，Unicode只是一个字符集，它只规定了符号的二进制代码，却没有规定这个二进制代码应该如何编码如何存储。</p>
+
+<h4 id="utf-8编码-1">UTF-8编码</h4>
+
+<p>一个常用汉字的UTF-8编码占用3个字节;
+UTF-8的编码规则很简单，只有二条：
+1.对于单字节的符号，字节的第一位设为0，后面7位为这个符号的unicode码。因此对于英语字母，UTF-8编码和ASCII码是相同的。
+2.对于n字节的符号（n&gt;1），第一个字节的前n位都设为1，第n+1位设为0，后面字节的前两位一律设为10。剩下的没有提及的二进制位，全部为这个符号的unicode码。</p>
+
+<h4 id="iso-8859-1">ISO-8859-1</h4>
+
+<p>后来计算机传入欧洲，ASCII 字符集包含的字符不能满足欧洲人民的使用，如一些希腊字母，所以西欧又制定了 ISO-8859-1 字符集，同样是单字节编码，向下兼容 ASCII。
+其编码范围是 0x00-0xFF，0x00-0x7F 之间完全和 ASCII 一致，0x80-0x9F 之间是控制字符，0xA0-0xFF 之间是文字符号。</p>
+
+<h4 id="gb2312">GB2312</h4>
+
+<p>当计算机被引进到中国之后，当时只有欧美国家的字符集，而没有中文的字符编码集，于是国家 1981 年 5 月 1 日发布了简体中文汉字编码国家标准，也就是 GB2312。</p>
+
+<h4 id="gbk">GBK</h4>
+
+<p>汉字的GBK编码占用两字节,由于 GB2312 只收录 6763 个汉字，有不少汉字，部分人名用字（如朱总理的“镕”字），台湾及香港使用的繁体字等，并未收录在内。所以国家于 1995 年 12 月制定了汉字内码扩展规范，简称 GBK。GBK 同样对汉字采用双字节编码，可以说是对 GB2312 编码的扩充，向下完全兼容 GB2312-80 编码</p>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Servlet</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">init</span><span class="o">(</span><span class="nc">ServletConfig</span> <span class="n">var1</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">ServletException</span><span class="o">;</span>
+
+    <span class="nc">ServletConfig</span> <span class="nf">getServletConfig</span><span class="o">();</span>
+
+    <span class="kt">void</span> <span class="nf">service</span><span class="o">(</span><span class="nc">ServletRequest</span> <span class="n">var1</span><span class="o">,</span> <span class="nc">ServletResponse</span> <span class="n">var2</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">ServletException</span><span class="o">,</span> <span class="nc">IOException</span><span class="o">;</span>
+
+    <span class="nc">String</span> <span class="nf">getServletInfo</span><span class="o">();</span>
+
+    <span class="kt">void</span> <span class="nf">destroy</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>@方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">doGet</span><span class="o">(</span><span class="nc">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="nc">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">;</span><span class="c1">//当浏览器请求的时候就会调用get方法</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">doPost</span><span class="o">(</span><span class="nc">HttpServletRequest</span> <span class="n">req</span><span class="o">,</span> <span class="nc">HttpServletResponse</span> <span class="n">res</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">ServletException</span><span class="o">,</span> <span class="nc">IOException</span><span class="o">;</span><span class="c1">//通过表单使用 POST 方法： 当 HTML 表单的 method 属性设置为 POST 时，提交表单会触发 POST 请求。服务器会调用相应的 doPost() 方法来处理表单提交。</span>
+</code></pre></div></div>
+

@@ -1,0 +1,101 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">test</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.rmi.registry.LocateRegistry</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.rmi.registry.Registry</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Server</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="no">PORT</span> <span class="o">=</span> <span class="mi">1099</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">HOST</span> <span class="o">=</span> <span class="s">"127.0.0.1"</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="c1">// 本地主机上的远程对象注册表Registry的实例,默认端口1099</span>
+            <span class="nc">Registry</span> <span class="n">registry</span> <span class="o">=</span> <span class="nc">LocateRegistry</span><span class="o">.</span><span class="na">createRegistry</span><span class="o">(</span><span class="no">PORT</span><span class="o">);</span>
+            <span class="c1">// 创建一个远程对象</span>
+            <span class="nc">InterfaceImplement</span> <span class="n">interfaceImplement</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">InterfaceImplement</span><span class="o">();</span>
+            <span class="c1">// 把远程对象注册到RMI注册服务器上，并命名为HelloRegistry</span>
+            <span class="n">registry</span><span class="o">.</span><span class="na">rebind</span><span class="o">(</span><span class="s">"Test"</span><span class="o">,</span> <span class="n">interfaceImplement</span><span class="o">);</span>
+            <span class="c1">// 添加远程对象的另一种方法，这样直接写LocateRegistry.createRegistry(PORT);就可以了</span>
+            <span class="c1">//Naming.rebind("rmi://127.0.0.1:1099/Test",interfaceImplement);</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"======= 启动RMI服务成功! ======="</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">test</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.net.MalformedURLException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.rmi.Naming</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.rmi.NotBoundException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.rmi.RemoteException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Client</span> <span class="o">{</span>
+
+    <span class="nc">RegistryInterface</span> <span class="no">RMI</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">HOST</span> <span class="o">=</span> <span class="s">"127.0.0.1"</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">PORT</span> <span class="o">=</span> <span class="s">"1099"</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Client</span> <span class="n">meetingClient</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Client</span><span class="o">();</span>
+        <span class="c1">// Naming类提供存储和获得“远程对象注册表”上远程对象的引用的方法。</span>
+        <span class="c1">// Naming 类的每个方法都可将某个名称作为其一个参数，该名称是使用以下形式的 URL 格式</span>
+        <span class="c1">// 的 java.lang.String：//host:port/name</span>
+        <span class="c1">// lookup()返回与指定 name 关联的远程对象的引用（一个 stub）。</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">meetingClient</span><span class="o">.</span><span class="na">RMI</span> <span class="o">=</span> <span class="o">(</span><span class="nc">RegistryInterface</span><span class="o">)</span> <span class="nc">Naming</span><span class="o">.</span><span class="na">lookup</span><span class="o">(</span><span class="s">"//"</span> <span class="o">+</span> <span class="no">HOST</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="no">PORT</span> <span class="o">+</span> <span class="s">"/Test"</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">str</span><span class="o">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="n">meetingClient</span><span class="o">.</span><span class="na">RMI</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">NotBoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">MalformedURLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">RemoteException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">test</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.rmi.Remote</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.rmi.RemoteException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">TestInterface</span> <span class="kd">extends</span> <span class="nc">Remote</span> <span class="o">{</span>
+    <span class="cm">/**
+     *
+     * @return
+     * @throws RemoteException
+     */</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">print</span> <span class="o">()</span> <span class="kd">throws</span> <span class="nc">RemoteException</span><span class="o">;</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">test</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.rmi.RemoteException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.rmi.server.UnicastRemoteObject</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">InterfaceImplement</span> <span class="kd">extends</span> <span class="nc">UnicastRemoteObject</span> <span class="kd">implements</span> <span class="nc">RegistryInterface</span> <span class="o">{</span>
+
+    <span class="kd">protected</span> <span class="nf">InterfaceImplement</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">RemoteException</span> <span class="o">{</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">print</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">RemoteException</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"this is test1"</span><span class="o">);</span>
+        <span class="k">return</span> <span class="s">"test1"</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+

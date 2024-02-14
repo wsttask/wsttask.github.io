@@ -1,0 +1,73 @@
+<p>层叠样式表（Caacading Style Sheets)css，是一种样式表语言，用来描述html文档的呈现（美化内容）</p>
+
+<p>书写位置：title标签下方添加style双标签，style标签里面书写CSS代码</p>
+
+<h2 id="css引入方式">CSS引入方式</h2>
+
+<ul>
+  <li>内部样式表
+    <ul>
+      <li>CSS代码写在style标签里面</li>
+      <li>style标签写在title标签下面</li>
+    </ul>
+  </li>
+  <li>外部样式表
+    <ul>
+      <li>CSS代码写在单独的CSS文件中（.css）</li>
+      <li>在HTML使用link标签引入
+        <ul>
+          <li>link标签写在title标签下面</li>
+          <li>
+            <link rel="stylesheet" href="./my.css" />
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>行内样式：配合JavaScript使用</li>
+</ul>
+
+<h2 id="选择器">选择器</h2>
+
+<ul>
+  <li>标签选择器（都是标签）
+    <ul>
+      <li>直接设置所有标签都是这样</li>
+      <li>例如：p，h1，div，</li>
+    </ul>
+  </li>
+  <li>类选择器
+    <ul>
+      <li>首先定义类选择器
+        <ul>
+          <li>.类名</li>
+        </ul>
+      </li>
+      <li>使用类选择器
+        <ul>
+          <li>标签添加class=”类名“</li>
+        </ul>
+      </li>
+      <li>类选择器用几次都行</li>
+    </ul>
+  </li>
+  <li>id选择器
+    <ul>
+      <li>定义id选择器名
+        <ul>
+          <li>#id名</li>
+        </ul>
+      </li>
+      <li>使用id选择器
+        <ul>
+          <li>标签添加 id=”id名“</li>
+        </ul>
+      </li>
+      <li>id选择器只能用一次</li>
+    </ul>
+  </li>
+</ul>
+
+<p>开发习惯：类名见名知意，多个单词使用-连接，例如：news-hd</p>
+
+<p><a href="https://www.bilibili.com/video/BV1kM4y127Li/?p=37&amp;spm_id_from=pageDriver&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">36-字体族_哔哩哔哩_bilibili</a></p>

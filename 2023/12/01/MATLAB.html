@@ -1,0 +1,17 @@
+<h5 id="subplot">subplot</h5>
+
+<p>是的，如果<code class="language-plaintext highlighter-rouge">subplot</code>函数的前两个参数发生变化，它仍然会工作，但是会调整子图网格的布局。让我来解释一下：</p>
+
+<p>当你使用<code class="language-plaintext highlighter-rouge">subplot(m, n, p)</code>函数时：</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">m</code> 表示子图网格的行数。</li>
+  <li><code class="language-plaintext highlighter-rouge">n</code> 表示子图网格的列数。</li>
+  <li><code class="language-plaintext highlighter-rouge">p</code> 表示当前子图在网格中的位置。</li>
+</ul>
+
+<p>如果你改变<code class="language-plaintext highlighter-rouge">m</code>和<code class="language-plaintext highlighter-rouge">n</code>的值，那么子图网格的布局会相应地改变。例如，如果你使用<code class="language-plaintext highlighter-rouge">subplot(2, 2, 3)</code>，它会将当前图形定位到一个包含2行2列的子图网格中的第3个位置，即第一行的第二列。</p>
+
+<h3 id="hold-onhold-off">hold on,hold off</h3>
+
+<p>前面是让你画的图维持住，不被刷新，后面是让你画的图可以被刷新掉</p>

@@ -1,0 +1,19 @@
+<p>@定义</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Iterator</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>所有继承Java.util.Collection的容器都提供了一个方法iterator()</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Collection</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span> <span class="kd">extends</span> <span class="nc">Iterable</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="nc">Iterator</span><span class="o">&lt;</span><span class="no">E</span><span class="o">&gt;</span> <span class="nf">iterator</span><span class="o">();</span>
+<span class="o">}</span>
+<span class="c1">//所有继承Java.util.Collection的容器都提供了一个方法iterator()</span>
+</code></pre></div></div>
+
+<p>@方法：</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">E</span> <span class="nf">next</span><span class="o">();</span><span class="c1">//返回容器中的下一个元素，第一次使用时，返回第一个元素。</span>
+<span class="nc">Boolean</span> <span class="nf">hasNext</span><span class="o">();</span><span class="c1">//判断容器中是否还有元素可以通过next()方法返回。</span>
+<span class="kt">void</span> <span class="nf">remove</span><span class="o">();</span><span class="c1">//删去刚刚跳过的元素，所以在用remove之前必须调用一次next()</span>
+</code></pre></div></div>

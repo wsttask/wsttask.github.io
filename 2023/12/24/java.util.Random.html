@@ -1,0 +1,24 @@
+<h3 id="random">@Random</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Random</span> <span class="kd">implements</span> <span class="nc">RandomGenerator</span><span class="o">,</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span>
+</code></pre></div></div>
+
+<h3 id="构造方法">@构造方法</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="nf">Random</span><span class="o">();</span><span class="c1">//创建一个新的随机数生成器。默认当前系统时间的毫秒数作为种子数</span>
+<span class="kd">public</span> <span class="nf">Random</span><span class="o">(</span><span class="kt">long</span> <span class="n">seed</span><span class="o">);</span><span class="c1">//构造Random对象的时候指定种子</span>
+</code></pre></div></div>
+
+<h3 id="常用方法">@常用方法</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 返回0-bound(不包括)之间的任意一个值
+ */</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">nextInt</span><span class="o">(</span><span class="kt">int</span> <span class="n">bound</span><span class="o">);</span>
+
+<span class="cm">/**
+ * 返回[0,1)之间的随机一个数
+ */</span>
+<span class="kd">public</span> <span class="kt">double</span> <span class="nf">nextDouble</span><span class="o">();</span>
+</code></pre></div></div>
+

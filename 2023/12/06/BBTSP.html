@@ -1,0 +1,124 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">no_edge</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span><span class="c1">//什么情况是没有边的情况</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">minCost</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">Vector</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">bestH</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Vector</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;();</span>
+
+    <span class="nc">Comparator</span><span class="o">&lt;</span><span class="nc">HeapNode</span><span class="o">&gt;</span> <span class="n">cmp</span> <span class="o">=</span> <span class="o">(</span><span class="n">e1</span><span class="o">,</span> <span class="n">e2</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">e2</span><span class="o">.</span><span class="na">l_cost</span> <span class="o">-</span> <span class="n">e1</span><span class="o">.</span><span class="na">l_cost</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">PriorityQueue</span><span class="o">&lt;</span><span class="nc">HeapNode</span><span class="o">&gt;</span> <span class="n">priorHeap</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PriorityQueue</span><span class="o">&lt;</span><span class="nc">HeapNode</span><span class="o">&gt;(</span><span class="n">cmp</span><span class="o">);</span>
+
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">HeapNode</span> <span class="kd">implements</span> <span class="nc">Comparable</span><span class="o">{</span>
+        <span class="nc">Vector</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">cityArrange</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Vector</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;();</span><span class="c1">//在这个节点经过的路径</span>
+        <span class="kt">int</span> <span class="n">cost</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">l_cost</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">level</span><span class="o">;</span>
+        <span class="c1">//创建一个空节点</span>
+        <span class="kd">public</span> <span class="nf">HeapNode</span><span class="o">(){</span>
+
+        <span class="o">}</span>
+        <span class="kd">public</span> <span class="nf">HeapNode</span><span class="o">(</span><span class="nc">Vector</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">cities</span><span class="o">,</span><span class="kt">int</span> <span class="n">lb</span><span class="o">,</span> <span class="kt">int</span> <span class="n">lev</span><span class="o">){</span>
+            <span class="n">cityArrange</span><span class="o">.</span><span class="na">addAll</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">cities</span><span class="o">);</span><span class="c1">//为什么不直接指向，而是重新创建一个？</span>
+            <span class="n">l_cost</span> <span class="o">=</span> <span class="n">lb</span><span class="o">;</span>
+            <span class="n">level</span> <span class="o">=</span> <span class="n">lev</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compareTo</span><span class="o">(</span><span class="nc">Object</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span><span class="c1">//比较lcost的大小，也就是int的大小</span>
+            <span class="kt">int</span> <span class="n">xu</span><span class="o">=((</span><span class="nc">HeapNode</span><span class="o">)</span><span class="n">x</span><span class="o">).</span><span class="na">l_cost</span><span class="o">;</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">l_cost</span> <span class="o">&lt;</span><span class="n">xu</span><span class="o">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">l_cost</span> <span class="o">==</span><span class="n">xu</span><span class="o">)</span> <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+            <span class="k">return</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="nc">Object</span> <span class="n">x</span><span class="o">){</span>
+            <span class="k">return</span> <span class="n">l_cost</span> <span class="o">==((</span><span class="nc">HeapNode</span><span class="o">)</span><span class="n">x</span><span class="o">).</span><span class="na">l_cost</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="c1">//没有必要，太罗嗦了，节点中就包含这些信息</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">computeLB</span><span class="o">(</span><span class="nc">HeapNode</span> <span class="n">node</span><span class="o">,</span> <span class="kt">int</span><span class="o">[][]</span> <span class="n">cMatrix</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">cMatrix</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">lb</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">cost</span><span class="o">;</span>
+
+        <span class="c1">// 遍历未访问的城市到最近访问的城市的最小代价,下界其实找的不太好，不准确，找第二小的</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(!</span><span class="n">node</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">i</span><span class="o">))</span> <span class="o">{</span>
+                <span class="kt">int</span> <span class="n">minCost</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="k">if</span><span class="o">(</span><span class="n">cMatrix</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="n">no_edge</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="n">minCost</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">minCost</span><span class="o">,</span> <span class="n">cMatrix</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">i</span><span class="o">]);</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+                <span class="n">lb</span> <span class="o">+=</span> <span class="n">minCost</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">lb</span><span class="o">;</span>
+    <span class="o">}</span>
+
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">bbTSP</span><span class="o">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">cMatrix</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n</span><span class="o">)</span><span class="c1">//n是指城市数目</span>
+    <span class="o">{</span>
+        <span class="c1">//构造初始节点</span>
+        <span class="nc">HeapNode</span> <span class="n">root</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HeapNode</span><span class="o">();</span>
+        <span class="n">root</span><span class="o">.</span><span class="na">cityArrange</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Vector</span><span class="o">&lt;&gt;();</span><span class="c1">//建立了一个int的动态数组，城市排列</span>
+        <span class="n">root</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span><span class="c1">//空出一个城市，与cMatrix一致</span>
+        <span class="n">root</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+        <span class="n">root</span><span class="o">.</span><span class="na">level</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span><span class="c1">//0-level的城市是已经排好的</span>
+        <span class="n">root</span><span class="o">.</span><span class="na">l_cost</span> <span class="o">=</span> <span class="n">computeLB</span><span class="o">(</span><span class="n">root</span><span class="o">,</span><span class="n">cMatrix</span><span class="o">)</span> <span class="o">;</span> <span class="c1">//代价的下界</span>
+
+        <span class="n">priorHeap</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">root</span><span class="o">);</span><span class="c1">//添加节点</span>
+
+        <span class="k">while</span> <span class="o">(!</span><span class="n">priorHeap</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+            <span class="nc">HeapNode</span> <span class="n">node</span> <span class="o">=</span> <span class="n">priorHeap</span><span class="o">.</span><span class="na">poll</span><span class="o">();</span><span class="c1">//优先队列，根据lcost排列，为什么要用优先队列，普通也可以把？</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">l_cost</span> <span class="o">&gt;=</span> <span class="n">minCost</span><span class="o">)</span> <span class="k">continue</span><span class="o">;</span> <span class="c1">// 如果当前节点的下界大于等于已知的最小代价，剪枝</span>
+
+            <span class="c1">//产生子节点</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(!</span><span class="n">node</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">i</span><span class="o">))</span> <span class="o">{</span>
+                    <span class="nc">HeapNode</span> <span class="n">child</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HeapNode</span><span class="o">();</span>
+                    <span class="n">child</span><span class="o">.</span><span class="na">cityArrange</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Vector</span><span class="o">&lt;&gt;(</span><span class="n">node</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">);</span>
+                    <span class="n">child</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span><span class="c1">//添加子节点的路径</span>
+                    <span class="n">child</span><span class="o">.</span><span class="na">level</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">level</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+                    <span class="n">child</span><span class="o">.</span><span class="na">l_cost</span> <span class="o">=</span> <span class="n">computeLB</span><span class="o">(</span><span class="n">child</span><span class="o">,</span> <span class="n">cMatrix</span><span class="o">);</span>
+                    <span class="n">child</span><span class="o">.</span><span class="na">cost</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">cost</span> <span class="o">+</span> <span class="n">cMatrix</span><span class="o">[</span><span class="n">node</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">level</span><span class="o">)][</span><span class="n">i</span><span class="o">];</span>
+
+
+                    <span class="k">if</span> <span class="o">(</span><span class="n">child</span><span class="o">.</span><span class="na">level</span> <span class="o">==</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 到达叶子节点</span>
+                        <span class="kt">int</span> <span class="n">tep</span> <span class="o">=</span> <span class="n">cMatrix</span><span class="o">[</span><span class="n">child</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">child</span><span class="o">.</span><span class="na">level</span><span class="o">)][</span><span class="mi">1</span><span class="o">];</span>
+                        <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="na">cost</span> <span class="o">+</span> <span class="n">tep</span><span class="o">;</span>
+                        <span class="k">if</span> <span class="o">(</span><span class="n">temp</span> <span class="o">&lt;</span> <span class="n">minCost</span> <span class="o">&amp;&amp;</span> <span class="n">tep</span> <span class="o">!=</span> <span class="n">no_edge</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="n">minCost</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+                            <span class="n">bestH</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="na">cityArrange</span><span class="o">;</span>
+                        <span class="o">}</span>
+                    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                        <span class="k">if</span> <span class="o">(</span><span class="n">child</span><span class="o">.</span><span class="na">l_cost</span> <span class="o">&lt;</span> <span class="n">minCost</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="n">priorHeap</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">child</span><span class="o">);</span>
+                        <span class="o">}</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">minCost</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMinCost</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">minCost</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Main</span> <span class="n">bb4TSP</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Main</span><span class="o">();</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">b</span> <span class="o">=</span> <span class="o">{</span> <span class="o">{</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">},</span> <span class="o">{</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">19</span><span class="o">,</span> <span class="mi">13</span> <span class="o">},</span> <span class="o">{</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">21</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">14</span> <span class="o">},</span> <span class="o">{</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">40</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">17</span> <span class="o">},</span>
+                <span class="o">{</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">41</span><span class="o">,</span> <span class="mi">80</span><span class="o">,</span> <span class="mi">10</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">}</span> <span class="o">};</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+        <span class="n">bb4TSP</span><span class="o">.</span><span class="na">bbTSP</span><span class="o">(</span><span class="n">b</span><span class="o">,</span> <span class="n">n</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">bb4TSP</span><span class="o">.</span><span class="na">getMinCost</span><span class="o">());</span>
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+
+</code></pre></div></div>
+

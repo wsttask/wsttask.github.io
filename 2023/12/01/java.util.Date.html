@@ -1,0 +1,52 @@
+<p>@构造方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="nf">Date</span><span class="o">();</span><span class="c1">//使用无参构造，可以自动设置当前系统时间的毫秒时刻；</span>
+<span class="kd">public</span> <span class="nf">Date</span><span class="o">(</span><span class="kt">long</span> <span class="n">date</span><span class="o">);</span><span class="c1">//将指定参数的毫秒值date,转换成Date对象，分配Date对象并初始化此对象，以表示自从标准基准时间（称为“历元（epoch）”，即1970年1月1日00:00:00 GMT）以来的指定毫秒数。</span>
+</code></pre></div></div>
+
+<p>@方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">long</span> <span class="nf">getTime</span><span class="o">();</span><span class="c1">//把日期对象转换成对应的时间毫秒值。</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setTime</span><span class="o">(</span><span class="kt">long</span> <span class="n">time</span><span class="o">);</span><span class="c1">//把方法参数给定的毫秒值设置给日期对象</span>
+
+
+    
+<span class="cm">/**
+* 1.如果两个日期相等，则返回值为0。
+* 2.如果Date在date参数之后，则返回值大于0。
+* 3.如果Date在date参数之前，则返回值小于0。
+*/</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">compareTo</span><span class="o">(</span><span class="nc">Date</span> <span class="n">anotherDate</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">long</span> <span class="n">thisTime</span> <span class="o">=</span> <span class="n">getMillisOf</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="kt">long</span> <span class="n">anotherTime</span> <span class="o">=</span> <span class="n">getMillisOf</span><span class="o">(</span><span class="n">anotherDate</span><span class="o">);</span>
+    <span class="k">return</span> <span class="o">(</span><span class="n">thisTime</span><span class="o">&lt;</span><span class="n">anotherTime</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="o">(</span><span class="n">thisTime</span><span class="o">==</span><span class="n">anotherTime</span> <span class="o">?</span> <span class="mi">0</span> <span class="o">:</span> <span class="mi">1</span><span class="o">));</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">after</span><span class="o">(</span><span class="nc">Date</span> <span class="n">when</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="nf">getMillisOf</span><span class="o">(</span><span class="k">this</span><span class="o">)</span> <span class="o">&gt;</span> <span class="n">getMillisOf</span><span class="o">(</span><span class="n">when</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">before</span><span class="o">(</span><span class="nc">Date</span> <span class="n">when</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="nf">getMillisOf</span><span class="o">(</span><span class="k">this</span><span class="o">)</span> <span class="o">&lt;</span> <span class="n">getMillisOf</span><span class="o">(</span><span class="n">when</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="nc">Object</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">obj</span> <span class="k">instanceof</span> <span class="nc">Date</span> <span class="o">&amp;&amp;</span> <span class="n">getTime</span><span class="o">()</span> <span class="o">==</span> <span class="o">((</span><span class="nc">Date</span><span class="o">)</span> <span class="n">obj</span><span class="o">).</span><span class="na">getTime</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>@例子</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">// 创建日期对象，把当前的时间</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">());</span> <span class="c1">// Tue Jan 16 14:37:35 CST 2020</span>
+<span class="c1">// 创建日期对象，把当前的毫秒值转成日期对象</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">(</span><span class="mi">0L</span><span class="o">));</span> <span class="c1">// Thu Jan 01 08:00:00 CST 1970</span>
+
+<span class="c1">//tips:在使用println方法时，会自动调用Date类中的toString方法。Date类对Object类中的toString方法进行了覆盖重写，所以结果为指定格式的字符串。</span>
+
+
+<span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span><span class="c1">//查了一下发现是用来获取当前的总毫秒数</span>
+<span class="n">date</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">()+</span><span class="mi">1000</span><span class="o">);</span><span class="c1">//一秒等于一千毫秒</span>
+
+</code></pre></div></div>
+
