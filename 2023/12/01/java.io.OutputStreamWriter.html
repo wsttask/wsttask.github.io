@@ -1,9 +1,0 @@
-<p>字符流适用于文本文件的读写，OutputStreamWriter类其实也是借助FileOutputStream类实现的，故其构造方法是FileOutputStream的对象</p>
-
-<p>@构造函数</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">OutputStreamWriter</span><span class="o">(</span><span class="nc">OutputStream</span> <span class="n">out</span><span class="o">);</span><span class="c1">//   使用默认的字符集构造OutputStreamReader流</span>
-<span class="nc">OutputStreamWriter</span><span class="o">(</span><span class="nc">OutputStream</span> <span class="n">out</span><span class="o">,</span> <span class="nc">CharsetEncoder</span> <span class="n">enc</span><span class="o">);</span><span class="c1">// 使用指定的字符集名称构造OutputStreamReader流</span>
-</code></pre></div></div>
-<p>@方法</p>
-
-<p>注意：一般的txt格式的编码都是UTF-8</p>

@@ -1,6 +1,0 @@
-@构造方法
-    ByteArrayOutputStream()：创建一个字节数组输出流，输出流缓冲区的初始容量大小为 32 字节。
-    ByteArrayOutputStream(int size)：创建一个字节数组输出流，输出流缓冲区的初始容量大小由参数 size 指定。
-@方法
-    intsize()：返回缓冲区中的当前字节数。
-    byte[] toByteArray()：以字节数组的形式返回输出流中的当前内容。

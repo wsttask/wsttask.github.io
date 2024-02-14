@@ -1,8 +1,0 @@
-Panel extends Container implements Accessible
-
-@构造方法
-    Panel()     默认按照流式布局构造面板
-    Panel(LayoutManager layout)     按照layout布局构造面板     
-
-@方法
-    void setLayout(LayoutManager mgr)      可以重新设置面板的布局
