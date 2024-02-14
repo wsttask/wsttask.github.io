@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-14T20:08:28+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Simple</title><link href="https://wsttask.github.io/2024/02/14/simple.html" rel="alternate" type="text/html" title="Simple" /><published>2024-02-14T20:06:25+08:00</published><updated>2024-02-14T20:06:25+08:00</updated><id>https://wsttask.github.io/2024/02/14/simple</id><content type="html" xml:base="https://wsttask.github.io/2024/02/14/simple.html"><![CDATA[<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">cn.edu.nwpu.soft</span><span class="o">;</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-14T20:09:43+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">音标</title><link href="https://wsttask.github.io/pronunciation/2024/02/14/README.html" rel="alternate" type="text/html" title="音标" /><published>2024-02-14T20:09:31+08:00</published><updated>2024-02-14T20:09:31+08:00</updated><id>https://wsttask.github.io/pronunciation/2024/02/14/README</id><content type="html" xml:base="https://wsttask.github.io/pronunciation/2024/02/14/README.html"><![CDATA[<h2 id="元音">元音</h2>
+
+<p>详解|视频</p>
+<ul>
+  <li>|-
+<a href="./0065.md">/e/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=11">/e/</a>
+<a href="./00E6.md">/æ/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=16">/æ/</a>
+<a href="./0259.md">/ə/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=13">/ə/</a>
+<a href="./0061_028A.md">/aʊ/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=22">/aʊ/</a>
+<a href="./0061_026A.md">/aɪ/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=21">/aɪ/</a>
+<a href="./026A.md">/ɪ/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=8">/ɪ/</a>
+<a href="./0251.md">/ɑː/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=17">/ɑː/</a>
+<a href="./s-z.md">/s/</a>-<a href="./s-z.md">/z/</a>|<a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=33">/s/-/z/</a>
+    <h2 id="辅音">辅音</h2>
+  </li>
+</ul>
+
+<ol>
+  <li><strong>元音（Vowels）:</strong>
+    <ul>
+      <li>[i] - U+0069 e</li>
+      <li>[e] - U+0065</li>
+      <li>[ə] - U+0259</li>
+      <li>[æ] - U+00E6</li>
+      <li>[ɑ] - U+0251</li>
+      <li>[ɔ] - U+0254</li>
+      <li>[u] - U+0075</li>
+      <li>[o] - U+006F</li>
+    </ul>
+  </li>
+  <li><strong>辅音（Consonants）:</strong>
+    <ul>
+      <li>[p] - U+0070</li>
+      <li>[t] - U+0074</li>
+      <li>[k] - U+006B</li>
+      <li>[b] - U+0062</li>
+      <li>[d] - U+0064</li>
+      <li>[ɡ] - U+0261</li>
+      <li>[f] - U+0066</li>
+      <li>[v] - U+0076</li>
+      <li>[θ] - U+03B8</li>
+      <li>[ð] - U+00F0</li>
+      <li>[s] - U+0073</li>
+      <li>[z] - U+007A</li>
+      <li>[ʃ] - U+0283</li>
+      <li>[ʒ] - U+0292</li>
+      <li>[h] - U+0068</li>
+      <li>[m] - U+006D</li>
+      <li>[n] - U+006E</li>
+      <li>[ŋ] - U+014B</li>
+      <li>[l] - U+006C</li>
+      <li>[r] - U+0072</li>
+      <li>[j] - U+006A</li>
+      <li>[w] - U+0077</li>
+    </ul>
+  </li>
+  <li><strong>调音符号（Suprasegmental Symbols）:</strong>
+    <ul>
+      <li>[ˈ] - U+02C8 (Primary Stress)</li>
+      <li>[ˌ] - U+02CC (Secondary Stress)</li>
+      <li>[ː] - U+02D0 (Length Mark)</li>
+      <li>[ˑ] - U+02D1 (Half-Length Mark)</li>
+    </ul>
+  </li>
+</ol>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[元音]]></summary></entry><entry><title type="html">Simple</title><link href="https://wsttask.github.io/2024/02/14/simple.html" rel="alternate" type="text/html" title="Simple" /><published>2024-02-14T20:06:25+08:00</published><updated>2024-02-14T20:06:25+08:00</updated><id>https://wsttask.github.io/2024/02/14/simple</id><content type="html" xml:base="https://wsttask.github.io/2024/02/14/simple.html"><![CDATA[<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">cn.edu.nwpu.soft</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">com.alibaba.fastjson2.JSON</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">com.alibaba.fastjson2.JSONArray</span><span class="o">;</span>
@@ -650,54 +714,4 @@ ID:<span class="o">(</span>instruction decoder<span class="o">)</span>指令解�
 
 <p>　　终极丞相何故发笑</p>
 
-<p>　　众将问：“丞相何又大笑?”操曰：“人皆言周瑜、诸葛亮足智多谋，以吾观之，到底是无能之辈。若使此处伏一旅之师，吾等皆束手受缚矣。”斋言未毕，一声炮响，两边五百校刀手摆开，为首大将关云长…</p>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[1.你若不放在心上，别人知之又何妨？你若心里常思，无人知之也自想。]]></summary></entry><entry><title type="html">excerpt two</title><link href="https://wsttask.github.io/excerpt/2024/02/14/2.html" rel="alternate" type="text/html" title="excerpt two" /><published>2024-02-14T18:19:47+08:00</published><updated>2024-02-14T18:19:47+08:00</updated><id>https://wsttask.github.io/excerpt/2024/02/14/2</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/02/14/2.html"><![CDATA[<p>1.人有冲天之志，非运不可自通。人这一辈子里必须要有贵人，而现在白昼的那位老板，就是他当下的贵人。</p>
-
-<p>2.罗璇没有上楼，只是轻轻的说道：”月亮很亮，亮也没用，没用也亮；我喜欢你，喜欢没用，没用也喜欢。“</p>
-
-<p>3.都是鱼肉，只是砧板不同罢了。【百妖谱】</p>
-
-<p>4.人比花娇花无色，花在人前亦黯然。它是找对主人了</p>
-
-<p>5.知我者谓我心忧，不知我者谓我何求!6.我想背你去看绚丽的山岚，去看秀丽的溪谷，去看灿烂的星河，去看壮阔的海洋。</p>
-
-<p>7.儒畏天命，是故修身以俟；佛惧因果，不知业不可逃；唯我道家，独欲长生不死，变化飞升，直面天命，无惧因果，力抗自然，勇猛何如哉！</p>
-
-<p>8.天视自我民视，天听自我民听。【尚书.泰势】</p>
-
-<p>9.子言未发而哀乐具乎其前</p>
-
-<p>10.经师易遇，人师难遇；桃李不言，下自成蹊。</p>
-
-<p>11.逆，不惶妥，危，不惊惧。胸有激雷而面如平湖者，可拜上将军！</p>
-
-<p>11.胜，不妄喜，败，不惶妥，胸中有激雷而面如平湖者，可拜上将。</p>
-
-<p>12.七尺男儿，身已许国，再难许卿。</p>
-
-<p>13.无王无帝定乾坤，来自田间第一人，好把旧书多读到，义言一出见英明。 【推背图】</p>
-
-<p>14.尹夫子，贩夫走卒社稷之镜也，夫授者重其德业以为人之师表啊！</p>
-
-<p>15.青青子衿，悠悠我心。纵我不往，子宁不嗣音？青青子衿，悠悠我思。纵我不往，子宁不来？</p>
-
-<p>16.其言必信，其行必果，己诺必诚。</p>
-
-<p>17.为大事者，不拘小节，我辈行事，当不为细枝末节所惑，直面本心。这等事情，即便做下到头来我也得不到任何东西，反倒传扬出去，为人诟病，吾不屑为之。</p>
-
-<p>18.飞雪连天射白鹿，笑书神侠倚碧鸳。</p>
-
-<p>19.凭一口气，点一盏灯，念念不忘，必有回响。</p>
-
-<p>20.来时凡骨凡胎重，得道身轻体亦轻。举世无人肯立志，立志修玄玄自名。</p>
-
-<p>21.难，难，难！不遇至人传妙诀，空言口困舌头干22.奄奄不忘兴亡事，岂教风雨误佳期。</p>
-
-<p>23.此剑虽锋，但却终是一人敌，十人敌，百人敌。</p>
-
-<p>24.孩儿便要铸那天子之剑，以七国为锋，山海为锷，制以五行，开以阴阳，持以春夏，行以秋冬，举世无双，天下归服。</p>
-
-<p>25.生来双目苍茫，却依此见人间冷暖，初醒由衷彷徨，未明晰前路迷茫，吼天地不得声，哭苍生不闻泣，既如此，笑又何妨。平心，静气，且看壶中烟波浩渺，豁然开朗！</p>
-
-<p>26.此去经年，应是良辰好景虚设。</p>
-
-<p>27.小小寰球，有几个苍蝇碰壁。嗡嗡叫，几声凄厉，几声抽泣。</p>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[1.人有冲天之志，非运不可自通。人这一辈子里必须要有贵人，而现在白昼的那位老板，就是他当下的贵人。]]></summary></entry></feed>
+<p>　　众将问：“丞相何又大笑?”操曰：“人皆言周瑜、诸葛亮足智多谋，以吾观之，到底是无能之辈。若使此处伏一旅之师，吾等皆束手受缚矣。”斋言未毕，一声炮响，两边五百校刀手摆开，为首大将关云长…</p>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[1.你若不放在心上，别人知之又何妨？你若心里常思，无人知之也自想。]]></summary></entry></feed>
