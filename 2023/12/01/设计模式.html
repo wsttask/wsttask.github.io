@@ -1,0 +1,30 @@
+<h5 id="111单一实例模式">11.1单一实例模式</h5>
+
+<blockquote>
+  <p>（1）：该类包含一个静态私有属性<code class="language-plaintext highlighter-rouge">singletonInstance</code>，并且该属性的数据类型是类自身<code class="language-plaintext highlighter-rouge">Singleton</code>，在类图中该属性的下画线表示“静态的”。</p>
+
+  <p>（2）：类的构造方法<code class="language-plaintext highlighter-rouge">Singletion()</code>被定义成私有，以防止用户适用<code class="language-plaintext highlighter-rouge">new</code>关键字构造实例</p>
+
+  <p>（3）：一个公共的静态方法<code class="language-plaintext highlighter-rouge">getSingletonInstance()</code>，该静态方法通过调用该类内的私有构造方法<code class="language-plaintext highlighter-rouge">Singletion()</code>返回该类的唯一对象。该静态方法的方法会判断类对象是否已经存在，如果不存在，则构造一个，否则直接返回已存在的对象</p>
+</blockquote>
+
+<h5 id="112策略设计模式的应用">11.2策略设计模式的应用</h5>
+
+<blockquote>
+  <p>在策略模式的设计中，3种格式展示雇员基本信息的代码将会费别封装在不同的3个类<code class="language-plaintext highlighter-rouge">PlainTextEmployeesFormatter</code>,<code class="language-plaintext highlighter-rouge">HTMLEmployeesFormatter</code>,<code class="language-plaintext highlighter-rouge">XMLEmployeesFormatter</code>中</p>
+</blockquote>
+
+<blockquote>
+  <p>（1）包含一个私有属性<code class="language-plaintext highlighter-rouge">employees</code>储存所有雇员的信息</p>
+
+  <p>（2）包含一个接口类型<code class="language-plaintext highlighter-rouge">EmployeesFormater</code>的私有关联变量<code class="language-plaintext highlighter-rouge">employeesFormater</code></p>
+
+  <p>（3）方法<code class="language-plaintext highlighter-rouge">setEmployeesFormater(newFormatter:EmployeesFormater)</code>根据用户的选择对变量<code class="language-plaintext highlighter-rouge">employeesFormater</code>进行赋值，其值可能是类<code class="language-plaintext highlighter-rouge">PlainTextEmployeesFormater</code>的对象、类<code class="language-plaintext highlighter-rouge">HTMLEmployeesFormater</code>的对象或者是类<code class="language-plaintext highlighter-rouge">XMLEmployeesFormater</code>的对象</p>
+
+  <p>（4）方法<code class="language-plaintext highlighter-rouge">displayEmployees()</code>将通过接口类型的变量<code class="language-plaintext highlighter-rouge">employeesFormater</code>，激活方法<code class="language-plaintext highlighter-rouge">formatEmployees()</code>，根据方法的多态性，该方法的调用会根据变量<code class="language-plaintext highlighter-rouge">employeesFormater</code>指向的真正型别进行方法体的绑定。</p>
+</blockquote>
+
+<h5 id="113简单工厂设计模式的应用">11.3简单工厂设计模式的应用</h5>
+
+<h5 id="114观察设计模式的应用">11.4观察设计模式的应用</h5>
+

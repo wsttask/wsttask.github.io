@@ -1,0 +1,41 @@
+<p>具有自动行刷新的缓冲字符输出流，特点是可以按行写出字符串，并且可以自动行刷新。</p>
+
+<ol>
+  <li></li>
+</ol>
+
+<p>@构造方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">PrintWriter</span><span class="o">(</span><span class="nc">File</span> <span class="n">f</span><span class="o">);</span><span class="c1">//传文件名</span>
+<span class="nc">PrintWriter</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">,);</span><span class="c1">//传路径</span>
+<span class="kd">public</span> <span class="nf">PrintWriter</span><span class="o">(</span><span class="nc">Writer</span> <span class="n">out</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">autoFlush</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>PrintWriter创建时如果有参数true时，会有行刷新。PrintWriter调用println()方法有行刷新。</p>
+
+<p>当创建PW时第一个参数为一个流时，</p>
+
+<p>那么就可以再传入一个boolean值类型的参数，</p>
+
+<p>若该值为true，那么当前PW久具有自动行刷新的功能，</p>
+
+<p>即：每当使用println方法写出一行字符串后就会自动调用flush</p>
+
+<p>注：使用自动行刷新可以提高写出数据的即时性，</p>
+
+<p>但是由于会提高写出次数，必然会导致写效率降低</p>
+
+<p>java.io.BufferedWriter是缓冲字符输出流，内部有缓冲区可以进行块写操作提供效率，而PrintWriter就是通过连接它实现的缓冲功能（PW的很多构造方法内部自动连接它）。</p>
+
+<ol>
+  <li>PW是一个高级流</li>
+  <li>* 实际上PW包装了字节流、字符流和字符缓冲流。</li>
+  <li>* PW负责自动行刷新</li>
+  <li>* bw负责提高效率</li>
+  <li>* osw负责读字符</li>
+  <li>* fos负责写字节</li>
+  <li>
+    <p>* 最后PW能够按行很快地把一个字符串变成字节写在文件</p>
+  </li>
+  <li>缓冲字符流中所有构造方法中第一个参数都是Reader或Writer对象。</li>
+</ol>

@@ -1,0 +1,25 @@
+<p>#String与StringBuilder的主要区别</p>
+
+<p>​    String类的内容是不可变的，StringBuilder的内容是可变的
+​    二者之间的区别主要是拼接字符串上的区别</p>
+
+<p>#StringBuilder内部对象</p>
+
+<p>​    StringBuilder对象则代表一个字符序列可变的字符串，StringBuilder内部维护了一个char[]类型的value</p>
+
+<p>#用法</p>
+
+<p>​    通过StringBuilder构造好字符串之后，通过stringBuilder.toString()方法。</p>
+
+<p>@构造方法</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">StringBuilder</span><span class="o">();</span>	<span class="c1">//StringBuilder默认的初始容量是16</span>
+<span class="nc">StringBuilder</span><span class="o">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="o">);</span><span class="c1">//设置一定容量的StringBuilder</span>
+<span class="nc">StringBuilder</span><span class="o">(</span><span class="nc">String</span> <span class="n">str</span><span class="o">);</span><span class="c1">//设置初始状态中StringBuilder的存储的字符串，可以通过这个构造函数，把String变成StringBuilder</span>
+</code></pre></div></div>
+<p>@方法</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">StringBuilder</span> <span class="nf">append</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">b</span><span class="o">);</span><span class="c1">//字符串连接</span>
+<span class="nc">StringBuilder</span> <span class="nf">insert</span><span class="o">(</span><span class="kt">int</span> <span class="n">offset</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">b</span><span class="o">);</span><span class="c1">//在指定位置offset插入b，会导致offset及以后的所有值都向后挪。</span>
+<span class="nc">String</span> <span class="nf">toString</span><span class="o">();</span><span class="c1">//将StringBuilder变成String类型返回</span>
+</code></pre></div></div>
+<p>注：
+    1.  Object、String、StringBuffer、CharSequence、char[]、boolean、char、int、long、float、double都是StringBuilder可以append的对象</p>

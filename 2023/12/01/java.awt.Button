@@ -1,0 +1,6 @@
+组件
+
+@构造方法
+    Button()
+@方法
+    addMouseListener(MouseListener l):  添加一个鼠标事件监听器

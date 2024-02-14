@@ -1,0 +1,70 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">LocateRegistry</span>
+</code></pre></div></div>
+
+<p>@方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 这个方法是在本地主机上创建并导出 Registry实例，该实例接受指定的 port上的请求。
+ * 
+ * @param port the port on which the registry accepts requests
+ */</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="nc">Registry</span> <span class="nf">createRegistry</span><span class="o">(</span><span class="kt">int</span> <span class="n">port</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">RemoteException</span><span class="o">;</span>
+
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="nc">Registry</span> <span class="nf">getRegistry</span><span class="o">(</span><span class="nc">String</span> <span class="n">host</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">RemoteException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="nc">Registry</span> <span class="nf">getRegistry</span><span class="o">(</span><span class="nc">String</span> <span class="n">host</span><span class="o">,</span> <span class="kt">int</span> <span class="n">port</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">RemoteException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="nc">Registry</span> <span class="nf">createRegistry</span><span class="o">(</span><span class="kt">int</span> <span class="n">port</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">RemoteException</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>如果多次调用createRegisty会创建多个注册表吗，createRegistry是绑定在哪个IP地址的端口上的？</p>
+
+<p>在 Java RMI 中，<code class="language-plaintext highlighter-rouge">LocateRegistry.createRegistry(int port)</code> 方法用于创建一个远程对象注册表。如果你多次调用 <code class="language-plaintext highlighter-rouge">createRegistry</code>，它不会创建多个注册表，而是返回对现有注册表的引用，除非之前的注册表已经被关闭。</p>
+
+<p>具体来说，<code class="language-plaintext highlighter-rouge">createRegistry</code> 方法的行为如下：</p>
+
+<ol>
+  <li>如果在指定的端口上已经存在注册表，它会返回对该注册表的引用，而不会创建新的注册表。</li>
+  <li>如果在指定的端口上不存在注册表，它会创建一个新的注册表，并返回对新注册表的引用。</li>
+</ol>
+
+<p>默认绑定在localhost上，但是我不到如何绑定在其他上面</p>
+
+<p>如果多次调用的createRegistry的端口号不一样可以吗</p>
+
+<p>在 Java RMI 中，<code class="language-plaintext highlighter-rouge">createRegistry(int port)</code> 方法用于创建一个远程对象注册表并绑定到指定的端口号。如果多次调用 <code class="language-plaintext highlighter-rouge">createRegistry</code> 且指定的端口号不同，会在每个不同的端口上创建一个独立的注册表。</p>
+
+<p>每个调用 <code class="language-plaintext highlighter-rouge">createRegistry</code> 的实例都会创建一个新的注册表，因此如果你在不同的端口上调用 <code class="language-plaintext highlighter-rouge">createRegistry</code>，将会创建多个不同端口上的注册表。这些注册表将独立存在，而不会相互影响。</p>
+
+<p>请问如果create时指定端口号为1099，但是get时指定其他的可以吗</p>
+
+<p>在 Java RMI 中，如果你在创建注册表时指定了端口号，然后在获取注册表时指定了不同的端口号，它会导致问题。具体而言，<code class="language-plaintext highlighter-rouge">createRegistry(int port)</code> 方法创建了一个注册表并绑定到指定的端口号，而 <code class="language-plaintext highlighter-rouge">getRegistry(String host, int port)</code> 方法尝试获取一个已知端口号的注册表引用。</p>
+
+<p>如果在创建注册表时使用了 <code class="language-plaintext highlighter-rouge">createRegistry(1099)</code>，那么后续使用 <code class="language-plaintext highlighter-rouge">getRegistry("example.com", 8080)</code> 将无法成功，因为它会尝试获取一个在 <code class="language-plaintext highlighter-rouge">example.com</code> 主机上端口为 <code class="language-plaintext highlighter-rouge">8080</code> 的注册表，而不是 <code class="language-plaintext highlighter-rouge">1099</code>。在这种情况下，<code class="language-plaintext highlighter-rouge">getRegistry</code> 方法会抛出 <code class="language-plaintext highlighter-rouge">java.rmi.ConnectException</code> 异常，因为它找不到指定端口上的注册表。</p>
+
+<p>如果客户端和服务端不在一个电脑那么，host应该填什么呢</p>
+
+<p>如果客户端和服务端不在同一台电脑上，你需要将主机（host）参数设置为服务端所在的实际 IP 地址或者主机名。这样客户端就可以通过网络连接到服务端。</p>
+
+<p>host可以写127.0.0.1吗</p>
+
+<p>是的，你可以在 Java RMI 中将主机（host）参数指定为 “127.0.0.1”。在 RMI 中，这个参数表示远程对象注册表所在的主机。使用 “127.0.0.1” 意味着你在本地主机上寻找远程对象注册表。</p>
+
+<p>如果服务端和客户端不在一台电脑上，为什么就不能写了呢，不都是指代本机吗</p>
+
+<p>如果服务端和客户端不在同一台电脑上，填写主机地址的重要性在于告诉客户端去哪里寻找远程服务。当客户端连接到服务端时，它需要知道服务端的网络地址以建立连接。</p>
+
+<p>如果填写 “127.0.0.1”，那么客户端将尝试连接到本地机器上的服务。而在实际情况下，服务端在另一台机器上，因此客户端将无法找到服务端。</p>
+
+<p>正确的做法是填写服务端的实际 IP 地址或者主机名。这样客户端就能够通过网络找到服务端。如果服务端在一个内部网络中，你可能需要填写内部网络的 IP 地址或者主机名。如果服务端在互联网上，你可能需要填写公共 IP 地址或者域名。</p>
+
+<p>总的来说，填写正确的主机地址是确保客户端能够正确连接到服务端的关键。</p>
+
+<p>一个电脑可能有多个ip地址，所以在创建注册表的时候要指定IP地址</p>
+
+<p>同一个端口不同的IP是否属于端口占用</p>
+
+<p>不属于, 一个网卡也可以分配多个IP, 每个 IP 都有自己的端口对应, 比如你有一个ip: 192.168.1.1</p>
+
+<p>但同时你也一定有一个回环 ip 127.0.0.1, 如果某个程序监听了 127.0.0.1 的 1234 端口, 那192.168.1.1:1234端口仍没有被占用.</p>

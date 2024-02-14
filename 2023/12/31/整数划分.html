@@ -1,0 +1,8 @@
+<p><a href="https://blog.csdn.net/XZ2585458279/article/details/89444888">整数划分-CSDN博客</a></p>
+
+<pre><code class="language-math">f(1,m) = 1 n = 1
+f(n,1) = 1 m = 1
+f(n,m) = f(n,n) m &gt; n
+f(n,n) = 1 + f(n,n−1) m = n 
+f(n,m) = f(n,m−1) + f(n−m,m) , n &gt; m &gt; 1 
+</code></pre>

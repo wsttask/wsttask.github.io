@@ -1,0 +1,20 @@
+<p>@构造方法</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//创建一个新的缓冲输出流，以将数据写入指定的底层输出流。</span>
+<span class="kd">public</span> <span class="nf">BufferedOutputStream</span><span class="o">(</span><span class="nc">OutputStream</span> <span class="n">out</span><span class="o">);</span>
+
+<span class="c1">//创建一个新的缓冲输出流，以将具有指定缓冲区大小的数据写入指定的底层输出流。</span>
+<span class="kd">public</span> <span class="nf">BufferedOutputStream</span><span class="o">(</span><span class="nc">OutputStream</span> <span class="n">out</span><span class="o">,</span><span class="kt">int</span> <span class="n">size</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>@常用方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//向输出流中输出一个字节</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="kt">int</span> <span class="n">b</span><span class="o">);</span>
+
+<span class="c1">//将指定 byte 数组中从偏移量 off 开始的 len 个字节写入此缓冲的输出流。</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span><span class="o">,</span><span class="kt">int</span> <span class="n">off</span><span class="o">,</span><span class="kt">int</span> <span class="n">len</span><span class="o">);</span>
+
+<span class="c1">//刷新此缓冲的输出流。这迫使所有缓冲的输出字节被写出到底层输出流中。</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">flush</span><span class="o">();</span>
+</code></pre></div></div>
+

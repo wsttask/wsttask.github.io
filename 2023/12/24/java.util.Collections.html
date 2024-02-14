@@ -1,0 +1,22 @@
+<p>@定义</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Collections</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>@常用方法</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="no">T</span> <span class="kd">extends</span> <span class="nc">Comparable</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="no">T</span><span class="o">&gt;&gt;</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">);</span>
+<span class="cm">/**
+ * @param c 这是一个list的比较器(Comparator&lt;T&gt;)，其中重写了compareTO方法
+ */</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="nc">Comparator</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="no">T</span><span class="o">&gt;</span> <span class="n">c</span><span class="o">);</span>
+
+<span class="cm">/**
+ * 随机改变集合的顺序
+ */</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">shuffle</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;?&gt;</span> <span class="n">list</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>Collections类是Java中针对集合类的一个工具类，其中提供一系列静态方法。</p>
+
+<p>其中重写的最多的就是很多重载的sort</p>

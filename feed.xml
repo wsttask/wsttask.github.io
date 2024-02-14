@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-14T18:23:11+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">excerpt four</title><link href="https://wsttask.github.io/excerpt/2024/02/14/4.html" rel="alternate" type="text/html" title="excerpt four" /><published>2024-02-14T18:20:15+08:00</published><updated>2024-02-14T18:20:15+08:00</updated><id>https://wsttask.github.io/excerpt/2024/02/14/4</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/02/14/4.html"><![CDATA[<ol>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-14T19:25:04+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">公式集合</title><link href="https://wsttask.github.io/calculus/2024/02/14/README.html" rel="alternate" type="text/html" title="公式集合" /><published>2024-02-14T19:07:06+08:00</published><updated>2024-02-14T19:07:06+08:00</updated><id>https://wsttask.github.io/calculus/2024/02/14/README</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/02/14/README.html"><![CDATA[<h1 id="求导公式">求导公式</h1>
+
+<p><img src="https://github.com/wsttask/picture/images/courses/math/calculus/1.jpg" alt="" /></p>
+
+<h1 id="三角函数公式">三角函数公式</h1>
+
+<p><img src="https://github.com/wsttask/picture/images/courses/math/calculus/2.jpg" alt="" /></p>
+
+<p><img src="https://github.com/wsttask/picture/images/courses/math/calculus/3.jpg" alt="" /></p>
+
+<h1 id="常用等价无穷小">常用等价无穷小</h1>
+
+<p><img src="https://github.com/wsttask/picture/images/courses/math/calculus/4.jpg" alt="" /></p>
+
+<p><img src="https://github.com/wsttask/picture/images/courses/math/calculus/5.jpg" alt="" /></p>
+
+<p><img src="https://github.com/wsttask/picture/images/courses/math/calculus/6.jpg" alt="" /></p>
+
+<p><a href="https://www.zhihu.com/question/20829733">(63 封私信 / 81 条消息) 如何巧记「积化和差」与「和差化积」公式？ - 知乎 (zhihu.com)</a></p>
+
+<p>积化和差</p>
+
+<p>正余余正，正加正减；</p>
+
+<p>余余正正，余加负余减</p>
+
+<p>和差化积</p>
+
+<p>正加正，正在前；</p>
+
+<p>正减正，余在前；</p>
+
+<p>余加余，余并肩；</p>
+
+<p>余减余，负正弦。</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[求导公式]]></summary></entry><entry><title type="html">对数计算公式</title><link href="https://wsttask.github.io/2024/02/14/%E5%AF%B9%E6%95%B0%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="对数计算公式" /><published>2024-02-14T18:24:41+08:00</published><updated>2024-02-14T18:24:41+08:00</updated><id>https://wsttask.github.io/2024/02/14/%E5%AF%B9%E6%95%B0%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/2024/02/14/%E5%AF%B9%E6%95%B0%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/440303039">对数运算性质公式推导 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[对数运算性质公式推导 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">excerpt four</title><link href="https://wsttask.github.io/excerpt/2024/02/14/4.html" rel="alternate" type="text/html" title="excerpt four" /><published>2024-02-14T18:20:15+08:00</published><updated>2024-02-14T18:20:15+08:00</updated><id>https://wsttask.github.io/excerpt/2024/02/14/4</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/02/14/4.html"><![CDATA[<ol>
   <li>未知全貌，不予置评</li>
   <li>一个人最好的生活状态：是该看书时看书，该玩时尽情玩，看见优秀的人欣赏，看到落魄的人也不轻视，有自己的生活和小情趣，不用想去改变世界，努力去活出自己，没人爱时专注自己，有人爱时，有能力拥抱彼此</li>
   <li>早上起床你有两个选择，盖上被子做你没做完的梦，掀开被子完成你没完成的梦。</li>
@@ -175,19 +209,4 @@
   <li>$title:$ 标题名</li>
   <li>$categories:$ 分类</li>
   <li>$permalink:$ 以 $/name$ 作为永久地址</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">Liquid语法网址</title><link href="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html" rel="alternate" type="text/html" title="Liquid语法网址" /><published>2024-02-07T20:52:28+08:00</published><updated>2024-02-07T20:52:28+08:00</updated><id>https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80</id><content type="html" xml:base="https://wsttask.github.io/2024/02/07/liquid%E8%AF%AD%E6%B3%95%E7%BD%91%E5%9D%80.html"><![CDATA[<table>
-  <tbody>
-    <tr>
-      <td>[操作符 – Liquid 模板语言中文文档</td>
-      <td>Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)</td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name></name></author><summary type="html"><![CDATA[[操作符 – Liquid 模板语言中文文档 Liquid 中文网 (bootcss.com)](https://liquid.bootcss.com/basics/operators/)]]></summary></entry><entry><title type="html">vpn</title><link href="https://wsttask.github.io/vpn/2024/02/07/vpn.html" rel="alternate" type="text/html" title="vpn" /><published>2024-02-07T20:26:30+08:00</published><updated>2024-02-07T20:26:30+08:00</updated><id>https://wsttask.github.io/vpn/2024/02/07/vpn</id><content type="html" xml:base="https://wsttask.github.io/vpn/2024/02/07/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login</p>
-
-<p><a href="https://sockboom.link/user/">sockboom.link</a></p>
-
-<p><a href="https://sockboom.buzz/user/">SockBoom</a></p>
-
-<p>sockboom域名更新了</p>
-
-<p>ilink	这个是edge的扩展，很好用</p>]]></content><author><name></name></author><category term="vpn" /><summary type="html"><![CDATA[https://ikuuu.org/auth/login]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry></feed>

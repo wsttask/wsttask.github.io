@@ -1,0 +1,80 @@
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*************************************
+输出以二叉树表示的算术表达式
+
+例：
+input：
+*+a(###b#)##c##
+
+output:
+(a+b)*c
+
+*************************************/</span>
+<span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">Node</span>
+<span class="p">{</span>
+	<span class="k">struct</span> <span class="n">Node</span><span class="o">*</span> <span class="n">Lchild</span><span class="p">,</span> <span class="o">*</span> <span class="n">Rchild</span><span class="p">;</span>
+	<span class="kt">char</span> <span class="n">data</span><span class="p">;</span>
+<span class="p">}</span><span class="n">BiNode</span><span class="p">,</span> <span class="o">*</span> <span class="n">BiTree</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">CreatBiTree</span><span class="p">(</span><span class="n">BiTree</span><span class="o">*</span> <span class="n">L</span><span class="p">)</span><span class="c1">//递归定义，递归终止条件</span>
+<span class="p">{</span>
+	<span class="kt">char</span> <span class="n">a</span><span class="p">;</span>
+	<span class="n">a</span> <span class="o">=</span> <span class="n">getchar</span><span class="p">();</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="sc">'#'</span><span class="p">)</span> <span class="p">{}</span>
+	<span class="k">else</span>
+	<span class="p">{</span>
+		<span class="p">(</span><span class="o">*</span><span class="n">L</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">BiTree</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">BiNode</span><span class="p">));</span>
+		<span class="p">(</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">Lchild</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">Rchild</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+		<span class="p">(</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+		<span class="n">CreatBiTree</span><span class="p">(</span><span class="o">&amp;</span><span class="p">((</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">Lchild</span><span class="p">));</span>
+		<span class="n">CreatBiTree</span><span class="p">(</span><span class="o">&amp;</span><span class="p">((</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">Rchild</span><span class="p">));</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">Visit</span><span class="p">(</span><span class="kt">char</span> <span class="n">a</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">InOrder</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">root</span><span class="p">)</span><span class="c1">//中序输出二叉树</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">InOrder</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">Lchild</span><span class="p">);</span>
+		<span class="n">Visit</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+		<span class="n">InOrder</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">Rchild</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">PreOrder</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">root</span><span class="p">)</span><span class="c1">//先序输出二叉树</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">Visit</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+		<span class="n">PreOrder</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">Lchild</span><span class="p">);</span>
+		<span class="n">PreOrder</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">Rchild</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">PostOrder</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">root</span><span class="p">)</span><span class="c1">//后序输出二叉树</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">PostOrder</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">Lchild</span><span class="p">);</span>
+		<span class="n">PostOrder</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">Rchild</span><span class="p">);</span>
+		<span class="n">Visit</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">BiTree</span> <span class="n">L</span><span class="p">;</span>
+	<span class="n">CreatBiTree</span><span class="p">(</span><span class="o">&amp;</span><span class="n">L</span><span class="p">);</span>
+	<span class="n">InOrder</span><span class="p">(</span><span class="n">L</span><span class="p">);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>

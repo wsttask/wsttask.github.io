@@ -1,0 +1,38 @@
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Override</span>
+</code></pre></div></div>
+<p>是注解,表示重写(当然不写也可以)，不过写上有如下好处:</p>
+
+<ul>
+  <li>
+    <p>可以当注释用,方便阅读；</p>
+  </li>
+  <li>
+    <p>编译器可以给你验证@Override下面的方法名是否是你父类中所有的，如果没有则报错。例如，你如果没写@Override，而你下面的方法名又写错了，这时你的编译器是可以编译通过的，因为编译器以为这个方法是你的子类中自己增加的方法。</p>
+  </li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@SuppressWarnings</span><span class="o">(</span><span class="s">"rawtypes"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>注解，标识忽略这些错误。</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 
+ *
+ */</span>
+<span class="nd">@FunctionalInterface</span>
+</code></pre></div></div>
+
+ 	根据Java语言规范的定义，一个使用了该注释的接口类型声明将被视为一个函数式接口。从概念上讲，<strong>一个函数式接口有且只有一个抽象方法</strong>。由于<strong>默认方法</strong>已经有了实现，所以它们<strong>不是抽象方法</strong>。如果一个接口中声明的抽象方法是<strong>重写</strong>了超类Object类中任意一个public方法，那么这些抽象方法并<strong>不会算入接口的抽象方法数量</strong>中。因为任何接口的实现都会从其父类Object或其它地方获得这些方法的实现。
+
+<p>​        注意：函数式接口的实现可以由Lambda表达式、方法引用、构造器引用等方式实现。</p>
+
+<p>​        如果一个类型使用了该注释，那么编译器将会生成一个错误信息，除非这个类型是一个接口类型，而不是一个注释类型、枚举或类。同时使用该注释的接口满足函数式接口的要求，即一个函数式接口有且只有一个抽象方法。</p>
+
+<p>​        但是编译器会将所有定义为函数式接口（满足函数式接口要求）的接口视为函数式接口，而不管这个接口声明中是否使用了函数式接口的注释（即<code class="language-plaintext highlighter-rouge">@FunctionalInterface</code>）。</p>
+
+<ol>
+  <li>一个函数式接口有且只有一个抽象方法。</li>
+  <li>默认方法不是抽象方法，因为它们已经实现了。</li>
+  <li>重写了超类Object类中任意一个public方法的方法并不算接口中的抽象方法</li>
+</ol>

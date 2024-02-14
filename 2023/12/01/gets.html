@@ -1,0 +1,14 @@
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+char *gets(char *str);
+</code></pre></div></div>
+<p>特点</p>
+
+<p>（1）代入参数只有一个。</p>
+
+<p>（2）读取一整行，终止于换行符。</p>
+
+<p>（3）丢弃换行符并换成空字符进行存储。</p>
+
+<p>gets() 函数的功能是从输入缓冲区中读取一个字符串存储到字符指针变量 str 所指向的内存空间。</p>
+
+<p>使用 gets() 时，系统会将最后“敲”的换行符从缓冲区中取出来，然后丢弃，所以缓冲区中不会遗留换行符。这就意味着，如果前面使用过 gets()，而后面又要从键盘给字符变量赋值的话就不需要吸收回车清空缓冲区了，因为缓冲区的回车已经被 gets() 取出来扔掉了。</p>

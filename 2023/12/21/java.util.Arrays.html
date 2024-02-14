@@ -1,0 +1,50 @@
+<h3 id="定义">@定义</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Arrays</span>
+</code></pre></div></div>
+
+<h3 id="构造方法">@构造方法</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="nf">Arrays</span><span class="o">()</span>
+</code></pre></div></div>
+<h3 id="方法">@方法</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * 如果a==null,输出null
+ * 如果a为空,输出"[]"
+ * 否则输出a中所有数据
+ */</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="nf">toString</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="k">return</span> <span class="s">"null"</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">iMax</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">iMax</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span>
+        <span class="k">return</span> <span class="s">"[]"</span><span class="o">;</span>
+
+    <span class="nc">StringBuilder</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
+    <span class="n">b</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="sc">'['</span><span class="o">);</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">iMax</span><span class="o">)</span>
+            <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="sc">']'</span><span class="o">).</span><span class="na">toString</span><span class="o">();</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="s">", "</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="cm">/**
+ * 将传入的数组或元素转换为一个 List 对象
+ */</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="nc">List</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="nf">asList</span><span class="o">(</span><span class="no">T</span><span class="o">...</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;(</span><span class="n">a</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="cm">/**
+ *注意这里没有返回值，它是直接把int[] a;里面的a中的顺序给改变了
+ *
+ */</span>
+<span class="kd">static</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">);</span><span class="c1">//默认按照升序排序long[],short[],char[],byte[],float[],double[]同理</span>
+<span class="kd">static</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">fromIndex</span><span class="o">,</span> <span class="kt">int</span> <span class="n">toIndex</span><span class="o">);</span><span class="c1">//从fromIndex开始排序，排第toIndex个。</span>
+<span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">a2</span><span class="o">);</span><span class="c1">//判断两个数组的内容是否完全一样</span>
+<span class="kt">int</span> <span class="nc">Arrays</span><span class="o">.</span><span class="na">binarySearch</span><span class="o">(</span> <span class="nc">Datatype</span><span class="o">[],</span> <span class="nc">Datatype</span> <span class="n">key</span><span class="o">)</span><span class="c1">//二分查找，查找指定元素，返回其下标，注意前提是有序数组</span>
+</code></pre></div></div>
+
