@@ -15,7 +15,9 @@ permalink: /browser
 
 # tanslation
 
-### [youdao](https://m.youdao.com/translate?vendor=fanyi.web)
+### [youdao](https://fanyi.youdao.com/index.html#/)
+
+### [youdao](https://m.youdao.com/)
 
 # WPS
 
@@ -24,6 +26,8 @@ permalink: /browser
 # Mail
 
 ### [outlook](https://outlook.live.com/mail)
+
+### [gmail](https://mail.google.com/mail)
 
 # TIME
 

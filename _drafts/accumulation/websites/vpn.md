@@ -6,11 +6,13 @@ categories: [vpn]
 
 
 
-https://ikuuu.org/auth/login
+https://ikuuu.org/auth/login 12
 
 [sockboom.link](https://sockboom.link/user/)
 
-[SockBoom](https://sockboom.buzz/user/)
+[SockBoom](https://sockboom.buzz/user/) 8
+
+狗急加速，30+
 
 sockboom域名更新了
 
