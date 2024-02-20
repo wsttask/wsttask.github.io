@@ -15,9 +15,11 @@ permalink: /browser
 
 # tanslation
 
-### [youdao](https://fanyi.youdao.com/index.html#/)
-
 ### [youdao](https://m.youdao.com/)
+
+# ChatGPT
+
+### [openai](https://chat.openai.com/)
 
 # WPS
 
@@ -43,4 +45,12 @@ permalink: /browser
 
 # 视频
 
+### [bilibili](https://www.bilibili.com/)
+
 ### [YouTube](https://www.youtube.com/)
+
+# 西工大
+
+### [翱翔门户](https://ecampus.nwpu.edu.cn/main.html#/Index)
+
+### [西工大研招网](https://yzb.nwpu.edu.cn/info/1174/8628.htm)

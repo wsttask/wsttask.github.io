@@ -46,8 +46,6 @@ taskkill /f /im erwin.exe
 
 这是测试行
 
-
-
 ```c
 <div class="content content-global">
     <div style="width: 90%; margin: 0 auto;">
@@ -55,8 +53,6 @@ taskkill /f /im erwin.exe
 </div>
 为什么div内标签与外标签宽度不一样？
 ```
-
-
 
 如何快速比较两个文件内容之间的差异，有专门门的软件
 
@@ -219,5 +215,4 @@ JavaScript脚本
 
 - 代码大全，深入浅出计算机网络
 
-- 1856819697 这个号重新找回来
 - [2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)](https://kaoyan.eol.cn/e_ky/zt/common/zhenti/)  
