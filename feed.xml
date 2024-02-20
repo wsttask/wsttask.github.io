@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-17T20:51:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-17T20:50:57+08:00</published><updated>2024-02-17T20:50:57+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-20T20:41:51+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Happy</title><link href="https://wsttask.github.io/2024/02/20/happy.html" rel="alternate" type="text/html" title="Happy" /><published>2024-02-20T20:41:33+08:00</published><updated>2024-02-20T20:41:33+08:00</updated><id>https://wsttask.github.io/2024/02/20/happy</id><content type="html" xml:base="https://wsttask.github.io/2024/02/20/happy.html"><![CDATA[<h4 id="花间小会所">花间小会所</h4>
+
+<p>黄河路，振兴路左上</p>]]></content><author><name></name></author><summary type="html"><![CDATA[花间小会所]]></summary></entry><entry><title type="html">Gi加速器</title><link href="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html" rel="alternate" type="text/html" title="Gi加速器" /><published>2024-02-18T20:53:42+08:00</published><updated>2024-02-18T20:53:42+08:00</updated><id>https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8</id><content type="html" xml:base="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html"><![CDATA[<p><a href="https://www.gijsq.com/">GI加速器-免费游戏加速器【官网】 (gijsq.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[GI加速器-免费游戏加速器【官网】 (gijsq.com)]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-17T20:50:57+08:00</published><updated>2024-02-17T20:50:57+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -577,44 +579,4 @@
         <span class="o">}</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[```java package cn.edu.nwpu.soft;]]></summary></entry><entry><title type="html">名词解释</title><link href="https://wsttask.github.io/operatingsystem/2024/02/14/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A.html" rel="alternate" type="text/html" title="名词解释" /><published>2024-02-14T20:04:46+08:00</published><updated>2024-02-14T20:04:46+08:00</updated><id>https://wsttask.github.io/operatingsystem/2024/02/14/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A</id><content type="html" xml:base="https://wsttask.github.io/operatingsystem/2024/02/14/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A.html"><![CDATA[<ul>
-  <li>
-    <p>进程：进程是进程实体的运行过程，它是系统进行资源分配和调度的一个独立单位。</p>
-  </li>
-  <li>
-    <p>原语：由若干条机器指令组成的，完成一种特定功能的程序段；这段程序在执行期间不允许被分割，必须一次性执行完，用来创建，撤销以及改变进程的状态</p>
-  </li>
-  <li>进程同步：相互协调的几个进程在某些确定点上协调它们的工作，一个进程到达了这些点后，除非 另一进程已完成了某些操作，否则就需要停下来等待这些操作的完成。</li>
-  <li>进程互斥：两个或两个以上的进程由于不能同时使用同一资源，只能一个进程使用完了另一个进程才能使用的现象。</li>
-  <li>临界资源：一次仅允许一个进程访问的资源。</li>
-  <li>
-    <p>临界区：临界段，在每个程序中，访问临界资源的那段程序。</p>
-  </li>
-  <li>进程通信：指进程之间可直接以较高的效率传递较多数据的信息交换方式。</li>
-</ul>
-
-<p>实时系统：</p>
-
-<ul>
-  <li>能够实现在指定或者确定的时间内完成系统功能和对外部或内部、同步或异步时间做出响应的系统</li>
-  <li>在实时计算中，系统的正确性不仅仅依赖于计算的逻辑结果，而且依赖于结果产生的时间</li>
-</ul>]]></content><author><name></name></author><category term="operatingSystem" /><summary type="html"><![CDATA[进程：进程是进程实体的运行过程，它是系统进行资源分配和调度的一个独立单位。]]></summary></entry><entry><title type="html">名词解释</title><link href="https://wsttask.github.io/computernetwork/2024/02/14/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A.html" rel="alternate" type="text/html" title="名词解释" /><published>2024-02-14T20:03:58+08:00</published><updated>2024-02-14T20:03:58+08:00</updated><id>https://wsttask.github.io/computernetwork/2024/02/14/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A</id><content type="html" xml:base="https://wsttask.github.io/computernetwork/2024/02/14/%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A.html"><![CDATA[<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VC:virual circuit:虚电路网络
-数据报:datagram network
-
-CIDR:Classess Interdomain Routing:无类别域间路由选择
-
-DHCP:dynamic host configuration:dong'ta
-
-域名系统（Domain Name System ，DNS）
-
-SMTP:(Simple mail transfer protocol):简单邮件传输协议
-
-HTTP
-
-POP3
-
-IMTP
-
-ARP:(Address Resolution Protocol)地址解析协议
-
-</code></pre></div></div>]]></content><author><name></name></author><category term="computerNetwork" /><summary type="html"><![CDATA[``` VC:virual circuit:虚电路网络 数据报:datagram network]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[```java package cn.edu.nwpu.soft;]]></summary></entry></feed>
