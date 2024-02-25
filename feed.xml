@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-25T21:36:54+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-25T21:43:29+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
+  <li>
+    <p>$layout:$ 使用的模板</p>
+  </li>
+  <li>$title:$ 标题名</li>
+  <li>$categories:$ 分类</li>
+  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
 
 <p><a href="https://github.com/">github</a></p>
 
@@ -308,13 +315,4 @@ taskkill /f /im erwin.exe</p>
 
 <p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201447590.png" alt="image-20230622201447590" /></p>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201524989.png" alt="image-20230622201524989" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[/æ/]]></summary></entry><entry><title type="html">Kramdown</title><link href="https://wsttask.github.io/kramdown/2024/02/14/Kramdown.html" rel="alternate" type="text/html" title="Kramdown" /><published>2024-02-14T20:20:45+08:00</published><updated>2024-02-14T20:20:45+08:00</updated><id>https://wsttask.github.io/kramdown/2024/02/14/Kramdown</id><content type="html" xml:base="https://wsttask.github.io/kramdown/2024/02/14/Kramdown.html"><![CDATA[<p>Kramdown 是 Jekyll 的默认 Markdown 渲染器，通常无需额外配置即可运行良好。但是，它确实支持许多配置选项。</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>[Home</td>
-      <td>kramdown (gettalong.org)](https://kramdown.gettalong.org/)</td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name></name></author><category term="kramdown" /><summary type="html"><![CDATA[Kramdown 是 Jekyll 的默认 Markdown 渲染器，通常无需额外配置即可运行良好。但是，它确实支持许多配置选项。]]></summary></entry></feed>
+<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201524989.png" alt="image-20230622201524989" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[/æ/]]></summary></entry></feed>
