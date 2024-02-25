@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-25T21:45:06+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
-  <li>
-    <p>$layout:$ 使用的模板</p>
-  </li>
-  <li>$title:$ 标题名</li>
-  <li>$categories:$ 分类</li>
-  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
-
-<p><a href="https://github.com/">github</a></p>
-
-<p><a href="https://www.zhihu.com/">知乎</a></p>
-
-<p><a href="https://uis.nwpu.edu.cn/cas/login">翱翔门户</a></p>
-
-<p><a href="https://www.bilibili.com/">bilibili</a></p>
-
-<p><a href="https://fanyi.baidu.com/">百度翻译</a></p>
-
-<p><a href="https://www.gushiwen.cn/">古诗文网</a></p>
-
-<p><a href="https://www.csdn.net/">csdn</a></p>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-20T20:45:26+08:00</published><updated>2024-02-20T20:45:26+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-25T21:52:03+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-25T21:51:52+08:00</published><updated>2024-02-25T21:51:52+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -38,6 +17,10 @@
 <h1 id="wps">WPS</h1>
 
 <h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
+
+<h1 id="搜索引擎">搜索引擎</h1>
+
+<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
 
 <h1 id="mail">Mail</h1>
 
@@ -67,7 +50,28 @@
 
 <h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
 
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Happy</title><link href="https://wsttask.github.io/2024/02/20/happy.html" rel="alternate" type="text/html" title="Happy" /><published>2024-02-20T20:41:33+08:00</published><updated>2024-02-20T20:41:33+08:00</updated><id>https://wsttask.github.io/2024/02/20/happy</id><content type="html" xml:base="https://wsttask.github.io/2024/02/20/happy.html"><![CDATA[<h4 id="花间小会所">花间小会所</h4>
+<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
+  <li>
+    <p>$layout:$ 使用的模板</p>
+  </li>
+  <li>$title:$ 标题名</li>
+  <li>$categories:$ 分类</li>
+  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
+
+<p><a href="https://github.com/">github</a></p>
+
+<p><a href="https://www.zhihu.com/">知乎</a></p>
+
+<p><a href="https://uis.nwpu.edu.cn/cas/login">翱翔门户</a></p>
+
+<p><a href="https://www.bilibili.com/">bilibili</a></p>
+
+<p><a href="https://fanyi.baidu.com/">百度翻译</a></p>
+
+<p><a href="https://www.gushiwen.cn/">古诗文网</a></p>
+
+<p><a href="https://www.csdn.net/">csdn</a></p>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Happy</title><link href="https://wsttask.github.io/2024/02/20/happy.html" rel="alternate" type="text/html" title="Happy" /><published>2024-02-20T20:41:33+08:00</published><updated>2024-02-20T20:41:33+08:00</updated><id>https://wsttask.github.io/2024/02/20/happy</id><content type="html" xml:base="https://wsttask.github.io/2024/02/20/happy.html"><![CDATA[<h4 id="花间小会所">花间小会所</h4>
 
 <p>黄河路，振兴路左上</p>]]></content><author><name></name></author><summary type="html"><![CDATA[花间小会所]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/task/2024/02/20/tasks.html" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-20T20:17:20+08:00</published><updated>2024-02-20T20:17:20+08:00</updated><id>https://wsttask.github.io/task/2024/02/20/tasks</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/20/tasks.html"><![CDATA[<h2 id="recent-tasks">recent tasks</h2>
 
