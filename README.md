@@ -2,13 +2,14 @@
 layout: post
 title: readme
 categories: [README]
+permalink: /tasks
 ---
 
 # [STOP](#)
 
 # [TIME.is](https://beijing-time.org/)
 
-# [TASKS](https://wsttask.github.io/tasks.html)
+# [TASKS](https://wsttask.github.io/tasks)
 
 - linux学习
 - 前端学习
