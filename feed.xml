@@ -1,116 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-25T21:52:03+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-25T21:51:52+08:00</published><updated>2024-02-25T21:51:52+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:16:11+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">graduate tasks</title><link href="https://wsttask.github.io/tasks/graduate" rel="alternate" type="text/html" title="graduate tasks" /><published>2024-02-26T17:15:59+08:00</published><updated>2024-02-26T17:15:59+08:00</updated><id>https://wsttask.github.io/tasks/graduate</id><content type="html" xml:base="https://wsttask.github.io/tasks/graduate"><![CDATA[<h3 id="english">English</h3>
 
-<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
+<h3 id="math">math</h3>
 
-<h1 id="github">github</h1>
+<h3 id="computer">computer</h3>
 
-<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
-
-<h1 id="tanslation">tanslation</h1>
-
-<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
-
-<h1 id="chatgpt">ChatGPT</h1>
-
-<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
-
-<h1 id="wps">WPS</h1>
-
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
-
-<h1 id="搜索引擎">搜索引擎</h1>
-
-<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
-
-<h1 id="mail">Mail</h1>
-
-<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
-
-<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
-
-<h1 id="time">TIME</h1>
-
-<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
-
-<h1 id="game">GAME</h1>
-
-<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
-
-<h1 id="音标">音标</h1>
-
-<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
-
-<h1 id="视频">视频</h1>
-
-<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
-
-<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
-
-<h1 id="西工大">西工大</h1>
-
-<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
-
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
-  <li>
-    <p>$layout:$ 使用的模板</p>
-  </li>
-  <li>$title:$ 标题名</li>
-  <li>$categories:$ 分类</li>
-  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
-
-<p><a href="https://github.com/">github</a></p>
-
-<p><a href="https://www.zhihu.com/">知乎</a></p>
-
-<p><a href="https://uis.nwpu.edu.cn/cas/login">翱翔门户</a></p>
-
-<p><a href="https://www.bilibili.com/">bilibili</a></p>
-
-<p><a href="https://fanyi.baidu.com/">百度翻译</a></p>
-
-<p><a href="https://www.gushiwen.cn/">古诗文网</a></p>
-
-<p><a href="https://www.csdn.net/">csdn</a></p>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Happy</title><link href="https://wsttask.github.io/2024/02/20/happy.html" rel="alternate" type="text/html" title="Happy" /><published>2024-02-20T20:41:33+08:00</published><updated>2024-02-20T20:41:33+08:00</updated><id>https://wsttask.github.io/2024/02/20/happy</id><content type="html" xml:base="https://wsttask.github.io/2024/02/20/happy.html"><![CDATA[<h4 id="花间小会所">花间小会所</h4>
-
-<p>黄河路，振兴路左上</p>]]></content><author><name></name></author><summary type="html"><![CDATA[花间小会所]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/task/2024/02/20/tasks.html" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-20T20:17:20+08:00</published><updated>2024-02-20T20:17:20+08:00</updated><id>https://wsttask.github.io/task/2024/02/20/tasks</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/20/tasks.html"><![CDATA[<h2 id="recent-tasks">recent tasks</h2>
-
-<ul>
-  <li>web学习</li>
-  <li>微积分学习</li>
-  <li>线性代数学习</li>
-  <li>任务管理器
-    <ul>
-      <li>基于md文件使用python/java/c编写一个任务管理器</li>
-      <li>使用数据库和md文档同时存储数据</li>
-      <li>手机也能配置一个软件</li>
-      <li>希望是.exe文件</li>
-      <li>拥有添加，修改，删除功能</li>
-      <li>希望可以部署到cmd上</li>
-      <li>可以通过浏览器打开，这样可以用web做一个界面</li>
-    </ul>
-  </li>
-  <li>快捷指令模块
-    <ul>
-      <li>利用AutoHotkey/python或其他方式做一个快速指令集合</li>
-      <li>space+r，输入open web\可以打开对应目录
-        <ul>
-          <li>解析web，只输入后面的东西</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="badtime-tasks">badtime tasks</h2>
-
-<h2 id="autohotkey-tasks">AutoHotkey tasks</h2>
+<h3 id="politics">politics</h3>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[English]]></summary></entry><entry><title type="html">AutoHotkey tasks</title><link href="https://wsttask.github.io/task/2024/02/26/AutoHotkey.html" rel="alternate" type="text/html" title="AutoHotkey tasks" /><published>2024-02-26T17:14:05+08:00</published><updated>2024-02-26T17:14:05+08:00</updated><id>https://wsttask.github.io/task/2024/02/26/AutoHotkey</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/26/AutoHotkey.html"><![CDATA[<h2 id="autohotkey-tasks">AutoHotkey tasks</h2>
 
 <ul>
   <li>为什么要写return？</li>
   <li>添加一个快速打开keepass的方式</li>
   <li>添加ctrl+d删除一行快捷键</li>
 </ul>
+
+<p>任务管理器</p>
+
+<ul>
+  <li>基于md文件使用python/java/c编写一个任务管理器</li>
+  <li>使用数据库和md文档同时存储数据</li>
+  <li>手机也能配置一个软件</li>
+  <li>希望是.exe文件</li>
+  <li>拥有添加，修改，删除功能</li>
+  <li>希望可以部署到cmd上</li>
+  <li>可以通过浏览器打开，这样可以用web做一个界面</li>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[AutoHotkey tasks]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/task/2024/02/26/tasks.html" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:13:33+08:00</published><updated>2024-02-26T17:13:33+08:00</updated><id>https://wsttask.github.io/task/2024/02/26/tasks</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/26/tasks.html"><![CDATA[<h2 id="badtime-tasks">badtime tasks</h2>
 
 <h2 id="phone-data-keep">phone data keep</h2>
 
@@ -301,22 +213,79 @@ taskkill /f /im erwin.exe</p>
   <li>
     <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
   </li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[recent tasks]]></summary></entry><entry><title type="html">Gi加速器</title><link href="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html" rel="alternate" type="text/html" title="Gi加速器" /><published>2024-02-18T20:53:42+08:00</published><updated>2024-02-18T20:53:42+08:00</updated><id>https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8</id><content type="html" xml:base="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html"><![CDATA[<p><a href="https://www.gijsq.com/">GI加速器-免费游戏加速器【官网】 (gijsq.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[GI加速器-免费游戏加速器【官网】 (gijsq.com)]]></summary></entry><entry><title type="html">sms</title><link href="https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html" rel="alternate" type="text/html" title="sms" /><published>2024-02-17T20:38:58+08:00</published><updated>2024-02-17T20:38:58+08:00</updated><id>https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81</id><content type="html" xml:base="https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html"><![CDATA[<p><a href="https://sms-activate.org/cn">SMS-Activate是在线接受短信的虚拟号码服务</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[SMS-Activate是在线接受短信的虚拟号码服务]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-15T18:49:06+08:00</published><updated>2024-02-15T18:49:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/20240215184454.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">vpn</title><link href="https://wsttask.github.io/vpn/2024/02/15/vpn.html" rel="alternate" type="text/html" title="vpn" /><published>2024-02-15T01:19:36+08:00</published><updated>2024-02-15T01:19:36+08:00</updated><id>https://wsttask.github.io/vpn/2024/02/15/vpn</id><content type="html" xml:base="https://wsttask.github.io/vpn/2024/02/15/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login 12</p>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[badtime tasks]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-25T21:51:52+08:00</published><updated>2024-02-25T21:51:52+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
-<p><a href="https://sockboom.link/user/">sockboom.link</a></p>
+<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
-<p><a href="https://sockboom.buzz/user/">SockBoom</a> 8</p>
+<h1 id="github">github</h1>
 
-<p>狗急加速，30+</p>
+<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
 
-<p>sockboom域名更新了</p>
+<h1 id="tanslation">tanslation</h1>
 
-<p>ilink	这个是edge的扩展，可以用</p>
+<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
 
-<p>狐猴浏览器，可以使用edge，chrome的扩展</p>]]></content><author><name></name></author><category term="vpn" /><summary type="html"><![CDATA[https://ikuuu.org/auth/login 12]]></summary></entry><entry><title type="html">/æ/</title><link href="https://wsttask.github.io/00E6" rel="alternate" type="text/html" title="/æ/" /><published>2024-02-14T20:24:54+08:00</published><updated>2024-02-14T20:24:54+08:00</updated><id>https://wsttask.github.io/00E6</id><content type="html" xml:base="https://wsttask.github.io/00E6"><![CDATA[<h1 id="æ">/æ/</h1>
+<h1 id="chatgpt">ChatGPT</h1>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/image-20230620195235627.png" alt="image-20230620195235627" /></p>
+<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201447590.png" alt="image-20230622201447590" /></p>
+<h1 id="wps">WPS</h1>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201524989.png" alt="image-20230622201524989" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[/æ/]]></summary></entry></feed>
+<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
+
+<h1 id="搜索引擎">搜索引擎</h1>
+
+<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
+
+<h1 id="mail">Mail</h1>
+
+<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
+
+<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
+
+<h1 id="time">TIME</h1>
+
+<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
+
+<h1 id="game">GAME</h1>
+
+<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
+
+<h1 id="音标">音标</h1>
+
+<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
+
+<h1 id="视频">视频</h1>
+
+<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
+
+<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
+
+<h1 id="西工大">西工大</h1>
+
+<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
+
+<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
+  <li>
+    <p>$layout:$ 使用的模板</p>
+  </li>
+  <li>$title:$ 标题名</li>
+  <li>$categories:$ 分类</li>
+  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
+
+<p><a href="https://github.com/">github</a></p>
+
+<p><a href="https://www.zhihu.com/">知乎</a></p>
+
+<p><a href="https://uis.nwpu.edu.cn/cas/login">翱翔门户</a></p>
+
+<p><a href="https://www.bilibili.com/">bilibili</a></p>
+
+<p><a href="https://fanyi.baidu.com/">百度翻译</a></p>
+
+<p><a href="https://www.gushiwen.cn/">古诗文网</a></p>
+
+<p><a href="https://www.csdn.net/">csdn</a></p>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Happy</title><link href="https://wsttask.github.io/2024/02/20/happy.html" rel="alternate" type="text/html" title="Happy" /><published>2024-02-20T20:41:33+08:00</published><updated>2024-02-20T20:41:33+08:00</updated><id>https://wsttask.github.io/2024/02/20/happy</id><content type="html" xml:base="https://wsttask.github.io/2024/02/20/happy.html"><![CDATA[<h4 id="花间小会所">花间小会所</h4>
+
+<p>黄河路，振兴路左上</p>]]></content><author><name></name></author><summary type="html"><![CDATA[花间小会所]]></summary></entry><entry><title type="html">Gi加速器</title><link href="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html" rel="alternate" type="text/html" title="Gi加速器" /><published>2024-02-18T20:53:42+08:00</published><updated>2024-02-18T20:53:42+08:00</updated><id>https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8</id><content type="html" xml:base="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html"><![CDATA[<p><a href="https://www.gijsq.com/">GI加速器-免费游戏加速器【官网】 (gijsq.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[GI加速器-免费游戏加速器【官网】 (gijsq.com)]]></summary></entry><entry><title type="html">sms</title><link href="https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html" rel="alternate" type="text/html" title="sms" /><published>2024-02-17T20:38:58+08:00</published><updated>2024-02-17T20:38:58+08:00</updated><id>https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81</id><content type="html" xml:base="https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html"><![CDATA[<p><a href="https://sms-activate.org/cn">SMS-Activate是在线接受短信的虚拟号码服务</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[SMS-Activate是在线接受短信的虚拟号码服务]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-15T18:49:06+08:00</published><updated>2024-02-15T18:49:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/20240215184454.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry></feed>
