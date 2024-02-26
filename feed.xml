@@ -1,28 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:16:11+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">graduate tasks</title><link href="https://wsttask.github.io/tasks/graduate" rel="alternate" type="text/html" title="graduate tasks" /><published>2024-02-26T17:15:59+08:00</published><updated>2024-02-26T17:15:59+08:00</updated><id>https://wsttask.github.io/tasks/graduate</id><content type="html" xml:base="https://wsttask.github.io/tasks/graduate"><![CDATA[<h3 id="english">English</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:18:24+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:18:18+08:00</published><updated>2024-02-26T17:18:18+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<h1 id="graduate"><a href="./tasks/graduate">graduate</a></h1>
 
-<h3 id="math">math</h3>
-
-<h3 id="computer">computer</h3>
-
-<h3 id="politics">politics</h3>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[English]]></summary></entry><entry><title type="html">AutoHotkey tasks</title><link href="https://wsttask.github.io/task/2024/02/26/AutoHotkey.html" rel="alternate" type="text/html" title="AutoHotkey tasks" /><published>2024-02-26T17:14:05+08:00</published><updated>2024-02-26T17:14:05+08:00</updated><id>https://wsttask.github.io/task/2024/02/26/AutoHotkey</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/26/AutoHotkey.html"><![CDATA[<h2 id="autohotkey-tasks">AutoHotkey tasks</h2>
-
-<ul>
-  <li>为什么要写return？</li>
-  <li>添加一个快速打开keepass的方式</li>
-  <li>添加ctrl+d删除一行快捷键</li>
-</ul>
-
-<p>任务管理器</p>
-
-<ul>
-  <li>基于md文件使用python/java/c编写一个任务管理器</li>
-  <li>使用数据库和md文档同时存储数据</li>
-  <li>手机也能配置一个软件</li>
-  <li>希望是.exe文件</li>
-  <li>拥有添加，修改，删除功能</li>
-  <li>希望可以部署到cmd上</li>
-  <li>可以通过浏览器打开，这样可以用web做一个界面</li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[AutoHotkey tasks]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/task/2024/02/26/tasks.html" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:13:33+08:00</published><updated>2024-02-26T17:13:33+08:00</updated><id>https://wsttask.github.io/task/2024/02/26/tasks</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/26/tasks.html"><![CDATA[<h2 id="badtime-tasks">badtime tasks</h2>
+<h2 id="badtime-tasks">badtime tasks</h2>
 
 <h2 id="phone-data-keep">phone data keep</h2>
 
@@ -213,7 +191,31 @@ taskkill /f /im erwin.exe</p>
   <li>
     <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
   </li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[badtime tasks]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-25T21:51:52+08:00</published><updated>2024-02-25T21:51:52+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[graduate]]></summary></entry><entry><title type="html">graduate tasks</title><link href="https://wsttask.github.io/tasks/graduate" rel="alternate" type="text/html" title="graduate tasks" /><published>2024-02-26T17:15:59+08:00</published><updated>2024-02-26T17:15:59+08:00</updated><id>https://wsttask.github.io/tasks/graduate</id><content type="html" xml:base="https://wsttask.github.io/tasks/graduate"><![CDATA[<h3 id="english">English</h3>
+
+<h3 id="math">math</h3>
+
+<h3 id="computer">computer</h3>
+
+<h3 id="politics">politics</h3>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[English]]></summary></entry><entry><title type="html">AutoHotkey tasks</title><link href="https://wsttask.github.io/task/2024/02/26/AutoHotkey.html" rel="alternate" type="text/html" title="AutoHotkey tasks" /><published>2024-02-26T17:14:05+08:00</published><updated>2024-02-26T17:14:05+08:00</updated><id>https://wsttask.github.io/task/2024/02/26/AutoHotkey</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/26/AutoHotkey.html"><![CDATA[<h2 id="autohotkey-tasks">AutoHotkey tasks</h2>
+
+<ul>
+  <li>为什么要写return？</li>
+  <li>添加一个快速打开keepass的方式</li>
+  <li>添加ctrl+d删除一行快捷键</li>
+</ul>
+
+<p>任务管理器</p>
+
+<ul>
+  <li>基于md文件使用python/java/c编写一个任务管理器</li>
+  <li>使用数据库和md文档同时存储数据</li>
+  <li>手机也能配置一个软件</li>
+  <li>希望是.exe文件</li>
+  <li>拥有添加，修改，删除功能</li>
+  <li>希望可以部署到cmd上</li>
+  <li>可以通过浏览器打开，这样可以用web做一个界面</li>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[AutoHotkey tasks]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-25T21:51:52+08:00</published><updated>2024-02-25T21:51:52+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
