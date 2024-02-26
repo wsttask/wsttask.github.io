@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:32:35+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">md中link通过jekyll的转换</title><link href="https://wsttask.github.io/jekyll/2024/02/26/link.html" rel="alternate" type="text/html" title="md中link通过jekyll的转换" /><published>2024-02-26T17:32:23+08:00</published><updated>2024-02-26T17:32:23+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/26/link</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/26/link.html"><![CDATA[<p>使用jekyll生成_site</p>
-
-<p>_site中的href标签和md中的link中填的值是一样的</p>
-
-<p>如果都设置绝对地址，那么就可以通过./来访问文件</p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[使用jekyll生成_site]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:31:10+08:00</published><updated>2024-02-26T17:31:10+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<h1 id="graduate"><a href="./tasks/graduate">graduate</a></h1>
-
-<h2 id="badtime-tasks">badtime tasks</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:34:11+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:33:44+08:00</published><updated>2024-02-26T17:33:44+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<h1 id="graduate"><a href="./tasks/graduate">graduate</a></h1>
 
 <h2 id="phone-data-keep">phone data keep</h2>
 
@@ -195,7 +189,11 @@ taskkill /f /im erwin.exe</p>
   <li>
     <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
   </li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[graduate]]></summary></entry><entry><title type="html">graduate tasks</title><link href="https://wsttask.github.io/tasks/graduate" rel="alternate" type="text/html" title="graduate tasks" /><published>2024-02-26T17:15:59+08:00</published><updated>2024-02-26T17:15:59+08:00</updated><id>https://wsttask.github.io/tasks/graduate</id><content type="html" xml:base="https://wsttask.github.io/tasks/graduate"><![CDATA[<h3 id="english">English</h3>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[graduate]]></summary></entry><entry><title type="html">md中link通过jekyll的转换</title><link href="https://wsttask.github.io/jekyll/2024/02/26/link.html" rel="alternate" type="text/html" title="md中link通过jekyll的转换" /><published>2024-02-26T17:32:23+08:00</published><updated>2024-02-26T17:32:23+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/26/link</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/26/link.html"><![CDATA[<p>使用jekyll生成_site</p>
+
+<p>_site中的href标签和md中的link中填的值是一样的</p>
+
+<p>如果都设置绝对地址，那么就可以通过./来访问文件</p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[使用jekyll生成_site]]></summary></entry><entry><title type="html">graduate tasks</title><link href="https://wsttask.github.io/tasks/graduate" rel="alternate" type="text/html" title="graduate tasks" /><published>2024-02-26T17:15:59+08:00</published><updated>2024-02-26T17:15:59+08:00</updated><id>https://wsttask.github.io/tasks/graduate</id><content type="html" xml:base="https://wsttask.github.io/tasks/graduate"><![CDATA[<h3 id="english">English</h3>
 
 <h3 id="math">math</h3>
 
