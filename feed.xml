@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:34:11+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:33:44+08:00</published><updated>2024-02-26T17:33:44+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<h1 id="graduate"><a href="./tasks/graduate">graduate</a></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-26T17:42:04+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-26T17:40:05+08:00</published><updated>2024-02-26T17:40:05+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+
+<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
+
+<h1 id="github">github</h1>
+
+<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
+
+<h1 id="tanslation">tanslation</h1>
+
+<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
+
+<h1 id="chatgpt">ChatGPT</h1>
+
+<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
+
+<h1 id="wps">WPS</h1>
+
+<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
+
+<h1 id="搜索引擎">搜索引擎</h1>
+
+<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
+
+<h1 id="mail">Mail</h1>
+
+<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
+
+<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
+
+<h1 id="time">TIME</h1>
+
+<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
+
+<h1 id="game">GAME</h1>
+
+<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
+
+<h1 id="音标">音标</h1>
+
+<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
+
+<h1 id="视频">视频</h1>
+
+<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
+
+<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
+
+<h1 id="西工大">西工大</h1>
+
+<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
+
+<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>
+
+<h1 id="中国考试教育网">中国考试教育网</h1>
+
+<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-26T17:33:44+08:00</published><updated>2024-02-26T17:33:44+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<h1 id="graduate"><a href="./tasks/graduate">graduate</a></h1>
 
 <h2 id="phone-data-keep">phone data keep</h2>
 
@@ -217,59 +273,7 @@ taskkill /f /im erwin.exe</p>
   <li>拥有添加，修改，删除功能</li>
   <li>希望可以部署到cmd上</li>
   <li>可以通过浏览器打开，这样可以用web做一个界面</li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[AutoHotkey tasks]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-25T21:51:52+08:00</published><updated>2024-02-25T21:51:52+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
-
-<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
-
-<h1 id="github">github</h1>
-
-<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
-
-<h1 id="tanslation">tanslation</h1>
-
-<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
-
-<h1 id="chatgpt">ChatGPT</h1>
-
-<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
-
-<h1 id="wps">WPS</h1>
-
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
-
-<h1 id="搜索引擎">搜索引擎</h1>
-
-<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
-
-<h1 id="mail">Mail</h1>
-
-<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
-
-<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
-
-<h1 id="time">TIME</h1>
-
-<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
-
-<h1 id="game">GAME</h1>
-
-<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
-
-<h1 id="音标">音标</h1>
-
-<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
-
-<h1 id="视频">视频</h1>
-
-<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
-
-<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
-
-<h1 id="西工大">西工大</h1>
-
-<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
-
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[AutoHotkey tasks]]></summary></entry><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
   <li>
     <p>$layout:$ 使用的模板</p>
   </li>
