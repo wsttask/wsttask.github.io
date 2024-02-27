@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T21:08:48+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-27T21:08:40+08:00</published><updated>2024-02-27T21:08:40+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T21:17:57+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">markdown中使用LaTex</title><link href="https://wsttask.github.io/markdown/2024/02/27/LaTex.html" rel="alternate" type="text/html" title="markdown中使用LaTex" /><published>2024-02-27T21:17:42+08:00</published><updated>2024-02-27T21:17:42+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/27/LaTex</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/27/LaTex.html"><![CDATA[<p>竖线：</p>
+
+<p><code class="language-plaintext highlighter-rouge">$\vert$</code></p>
+
+<p>$\vert$</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Markdown表格数学公式中使用绝对值“</td>
+      <td> </td>
+      <td>”或竖杠”</td>
+      <td>“_markdown 绝对值-CSDN博客](https://blog.csdn.net/skytruine/article/details/105710349)</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[竖线：]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-27T21:15:06+08:00</published><updated>2024-02-27T21:15:06+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
 
 <h4 id="导数定义">导数定义</h4>
 
@@ -9,14 +24,7 @@
 
   <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
 
-  <table>
-    <tbody>
-      <tr>
-        <td>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}</td>
-        <td>_{x=x_0}$</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
 </blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-02-27T21:08:15+08:00</published><updated>2024-02-27T21:08:15+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/calculus/1"><![CDATA[<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
 
 <ol>
@@ -168,8 +176,4 @@
 
 <h1 id="元音图">元音图</h1>
 
-<p><img src="../../../images/image-20230620200328929.png" alt="image-20230620200328929" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[音标]]></summary></entry><entry><title type="html">/e/</title><link href="https://wsttask.github.io/pronunciation/0065" rel="alternate" type="text/html" title="/e/" /><published>2024-02-26T21:31:06+08:00</published><updated>2024-02-26T21:31:06+08:00</updated><id>https://wsttask.github.io/pronunciation/0065</id><content type="html" xml:base="https://wsttask.github.io/pronunciation/0065"><![CDATA[<h1 id="e">/e/</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230620194352744.png" alt="image-20230620194352744" /></p>
-
-<p>​</p>]]></content><author><name></name></author><category term="e" /><summary type="html"><![CDATA[/e/]]></summary></entry></feed>
+<p><img src="../../../images/image-20230620200328929.png" alt="image-20230620200328929" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[音标]]></summary></entry></feed>
