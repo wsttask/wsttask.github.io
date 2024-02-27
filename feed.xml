@@ -1,4 +1,249 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T22:11:04+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">强制不外放声音</title><link href="https://wsttask.github.io/task/2024/02/27/andoridSoft.html" rel="alternate" type="text/html" title="强制不外放声音" /><published>2024-02-27T22:10:53+08:00</published><updated>2024-02-27T22:10:53+08:00</updated><id>https://wsttask.github.io/task/2024/02/27/andoridSoft</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/27/andoridSoft.html"><![CDATA[<p>开发一个android软件，强制不外放声音</p>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[开发一个android软件，强制不外放声音]]></summary></entry><entry><title type="html">jekyll使用LaTex</title><link href="https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex.html" rel="alternate" type="text/html" title="jekyll使用LaTex" /><published>2024-02-27T21:20:18+08:00</published><updated>2024-02-27T21:20:18+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex.html"><![CDATA[<p><a href="https://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html#">如何向 jekyll 添加 mathjax 支持 (ualberta.ca)</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T22:34:23+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">柯西中值定理</title><link href="https://wsttask.github.io/theorem/2024/02/27/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="柯西中值定理" /><published>2024-02-27T22:33:07+08:00</published><updated>2024-02-27T22:33:07+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/27/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/27/%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="柯西中值定理">柯西中值定理</h3>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/Snipaste_2024-02-27_22-30-43.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[柯西中值定理]]></summary></entry><entry><title type="html">达布中值定理</title><link href="https://wsttask.github.io/theorem/2024/02/27/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="达布中值定理" /><published>2024-02-27T22:27:13+08:00</published><updated>2024-02-27T22:27:13+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/27/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/27/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="达布中值定理">达布中值定理</h3>
+
+<blockquote>
+  <p>设 $y=f(x)$ 在 $(A,B)$ 区间可导，且 $[a,b]$ 包含于 $(A,B)$ ，$f’(a)&lt;f’(b)$ ，则对于任意给定的 $\eta \quad [f’(a)&lt;\eta&lt;f’(b)]$ ，都存在一点 $\xi\in(a,b)$ ，使得 $f’(\xi)=\eta$</p>
+</blockquote>
+
+<p><a href="https://zhuanlan.zhihu.com/p/486060686?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1745752610869686273&amp;utm_source=wechat_session">导数的介值定理(达布中值定理)的证明及应用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[达布中值定理]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-27T22:19:50+08:00</published><updated>2024-02-27T22:19:50+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<h1 id="graduate"><a href="./tasks/graduate">graduate</a></h1>
+
+<p>使用达布中值定理证明。。。。</p>
+
+<h2 id="phone-data-keep">phone data keep</h2>
+
+<ul>
+  <li>微信，qq聊天记录保存</li>
+</ul>
+
+<p>gitbook</p>
+
+<p>edge 的扩展上可以下载vpn？怎么搞的</p>
+
+<p>在autohotkey中无法含参命令</p>
+
+<p>通过命令杀死进程
+taskkill /f /im erwin.exe</p>
+
+<p>这是测试行</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">"content content-global"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s">"width: 90%; margin: 0 auto;"</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="err">为什么</span><span class="n">div</span><span class="err">内标签与外标签宽度不一样？</span>
+</code></pre></div></div>
+
+<p>如何快速比较两个文件内容之间的差异，有专门门的软件</p>
+
+<p><a href="https://venter.top/hopweb/index.html">HopWeb • 概述</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/54907494">把网站放在手机桌面，像APP那样使用 - 知乎 (zhihu.com)</a></p>
+
+<p>微分方程齐次与非其次，线性与非线性</p>
+
+<p>在autohotkey中输入文件夹，自动查询并打开</p>
+
+<p>python自动化</p>
+
+<p>autohotkey</p>
+
+<p><a href="https://www.bilibili.com/video/BV1T34y1o73U/?spm_id_from=333.788.recommend_more_video.1&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">5分钟，教你做个自动化软件拿来办公、刷副本、回微信 </a></p>
+
+<p><a href="https://blog.csdn.net/m0_62881487/article/details/133833781?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&amp;utm_relevant_index=2">计算机算法分析与设计（10）—租用游艇问题(含C++代码)_租用游艇问题 复杂度分析-CSDN博客</a></p>
+
+<p><a href="https://blog.csdn.net/sinat_35678407/article/details/82874216">分治——最近点对问题_分治算法 closet pair of points-CSDN博客</a></p>
+
+<p><a href="https://blog.csdn.net/sinat_35678407/article/details/82874216">分治——最近点对问题_分治算法 closet pair of points-CSDN博客</a></p>
+
+<p><strong>华为云</strong></p>
+
+<p><a href="https://www.bilibili.com/video/BV1Y84y1L7Nn/?spm_id_from=333.337.search-card.all.click&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">黑马程序员前端JavaScript入门到精通全套视频教程，javascript核心进阶ES6语法、API、js高级等基础知识和实战教程_哔哩哔哩_bilibili</a></p>
+
+<p>AutoHotkey</p>
+
+<p>git提交gitee仓库显示太大了.git文件怎么清理</p>
+
+<p>gitee，github同步，背后原理是什么？</p>
+
+<p>git仓库提交的原理是什么？</p>
+
+<p>1.git中保存着所有提交信息，git仓库与远程仓库是同步的，所以只上传更改信息，</p>
+
+<p>最近和多人合作一个项目，</p>
+
+<p>git pull 并不会删除掉自己的更改，这是怎么做到的</p>
+
+<p><strong>编码格式；运行中书写的字符串是什么格式，传到cmd是什么格式，传到powershell又是什么格式</strong></p>
+
+<p><a href="https://blog.csdn.net/m0_50762431/article/details/130179618">电脑端(PC)按键精灵2023——入门小白 详细 教程_按键精灵pc-CSDN博客</a></p>
+
+<p>PowerToys</p>
+
+<p>运行中更改tasks.md添加新的文字.bat实现</p>
+
+<p>半角和全角的区别</p>
+
+<p>输入法,中英文符号</p>
+
+<p>寻找一个新的md文件编辑器</p>
+
+<p>git 的push记录是怎么保存的</p>
+
+<p><strong><a href="https://www.bilibili.com/video/BV1FN4y1r7Gv/?spm_id_from=pageDriver&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">上海年轻人万圣节发疯，“好得很”还是“糟得很”？_哔哩哔哩_bilibili</a></strong></p>
+
+<p>kindle使用的是什么系统?linux?这些插件是使用什么语言写的?</p>
+
+<p>浏览器不解释换行符号\n</p>
+
+<p><strong><a href="https://zhuanlan.zhihu.com/p/440303039">对数运算性质公式推导 - 知乎 (zhihu.com)</a></strong></p>
+
+<p>扔六面色子，扔到2023的概率有多大</p>
+
+<p>hibernate官方文档</p>
+
+<p><a href="https://www.bilibili.com/video/BV1a34y167AZ?p=2&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">01.初识Node-浏览器中的JavaScript运行环境_哔哩哔哩_bilibili</a></p>
+
+<p>javahash表实现</p>
+
+<p>wox + everything</p>
+
+<p>javase和javaee</p>
+
+<p>getCompleteTokenInBuffer先看matcher</p>
+
+<p>scanner源码解释</p>
+
+<p>java中的char基本数据类型是unicode编码，但是unicode编码大于两个字节了怎么办？</p>
+
+<p><a href="https://www.cnblogs.com/dragon2012/p/5020259.html">utf16编码格式 - c_dragon - 博客园 (cnblogs.com)</a></p>
+
+<p>idea使用git</p>
+
+<p>idea配置javaweb 项目，</p>
+
+<p><a href="http://10.216.217.131:9999/">oj</a></p>
+
+<p>mysql中sql语句</p>
+
+<p>注解开发hibernate</p>
+
+<p>mysql两张表互为外键</p>
+
+<p>idea查看错误提示</p>
+
+<p>贝叶斯公式</p>
+
+<p>mysql数据类型</p>
+
+<p>mysql索引</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/82320492">jar包的一些事儿 - 知乎 (zhihu.com)</a></p>
+
+<p>厉害数</p>
+
+<p>埃氏筛法</p>
+
+<p>JAVA 类型擦除<a href="https://zhuanlan.zhihu.com/p/346486993">Java泛型中的类型擦除详解 - 知乎 (zhihu.com)</a></p>
+
+<p>JAVA Arrays.asList 以数组作为底层实现</p>
+
+<p>JAVA 变长参数</p>
+
+<p>java 泛型能否为静态的？</p>
+
+<p><a href="https://www.jianshu.com/p/c738c8262087">分支限界法——对解空间的一种策略搜索（广度优先搜索） - 简书 (jianshu.com)</a></p>
+
+<p>ARP解析，socket编程</p>
+
+<p>汇编语言的学习</p>
+
+<p>软件测试中junit4.jar</p>
+
+<p>新建文档时，有md文件并且有快捷键</p>
+
+<p>word的用法（论文）</p>
+
+<p>开发者工具的用法</p>
+
+<p>电脑的组成，网卡，等知识</p>
+
+<p>VBScript脚本</p>
+
+<p>html文件格式，html文件编辑器（前端）</p>
+
+<p>JavaScript脚本</p>
+
+<p>安卓系统的简单软件（手机实现禅定空间）</p>
+
+<p><a href="https://blog.csdn.net/Daydream_Z/article/details/129788166?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-4-129788166-blog-83616085.235^v38^pc_relevant_anti_vip&amp;spm=1001.2101.3001.4242.3&amp;utm_relevant_index=7">(95条消息) 【Win10】Win10右键 新增/删除 新建文件_不·韦的博客-CSDN博客</a></p>
+
+<p>博客园</p>
+
+<p><a href="https://blog.csdn.net/qq_25593079/article/details/83616085?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=Win10使用快捷键新建文件夹和.txt文本文档&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-83616085.nonecase&amp;spm=1018.2226.3001.4187">(90条消息) Win10 利用快捷键，快速新建TXT文档_win10新建文本文档_funtty的博客-CSDN博客</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/34611958">Windows自定义运行 - 知乎 (zhihu.com)</a></p>
+
+<p>更改typora的原码，ctrl+k插入超链接的地方</p>
+
+<p>关机前自动上传代码，检查是否上传，并提示</p>
+
+<p>开机后自动拉代码</p>
+
+<h2 id="remote-tasks">remote tasks</h2>
+
+<ul>
+  <li>
+    <p>代码大全，深入浅出计算机网络</p>
+  </li>
+  <li>
+    <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[graduate]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-27T22:19:08+08:00</published><updated>2024-02-27T22:19:08+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+
+<h4 id="导数定义">导数定义</h4>
+
+<blockquote>
+  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+
+  <p>​		$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+
+  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+
+  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
+</blockquote>
+
+<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
+
+<blockquote>
+  <p>充分不必要条件：导函数是连续函数</p>
+</blockquote>
+
+<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
+
+<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-02-27T22:14:41+08:00</published><updated>2024-02-27T22:14:41+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/calculus/1"><![CDATA[<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
+
+<ol>
+  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
+  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
+  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
+  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+  <li><strong>介值定理</strong>：设$a&lt;b$ ，$f:[a,b]\rightarrow R$ 是$[a,b]$ 上的连续函数，则对任意的 $\eta\in[f(a),f(b)]$ ，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+</ol>
+
+<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
+
+<p>准则1：夹逼准则</p>
+
+<p>可推出第一个重要极限$\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
+
+<p>根据$\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
+
+<p>准则2：单调有界准则</p>
+
+<p>可推出第二个重要极限$\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
+
+<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[闭区间上连续函数的性质]]></summary></entry><entry><title type="html">强制不外放声音</title><link href="https://wsttask.github.io/task/2024/02/27/andoridSoft.html" rel="alternate" type="text/html" title="强制不外放声音" /><published>2024-02-27T22:10:53+08:00</published><updated>2024-02-27T22:10:53+08:00</updated><id>https://wsttask.github.io/task/2024/02/27/andoridSoft</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/27/andoridSoft.html"><![CDATA[<p>开发一个android软件，强制不外放声音</p>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[开发一个android软件，强制不外放声音]]></summary></entry><entry><title type="html">jekyll使用LaTex</title><link href="https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex.html" rel="alternate" type="text/html" title="jekyll使用LaTex" /><published>2024-02-27T21:20:18+08:00</published><updated>2024-02-27T21:20:18+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex.html"><![CDATA[<p><a href="https://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html#">如何向 jekyll 添加 mathjax 支持 (ualberta.ca)</a></p>
 
 <p><a href="https://blog.csdn.net/qq_38980083/article/details/107122729?ops_request_misc=%7B%22request%5Fid%22%3A%22170903723516800182729188%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;request_id=170903723516800182729188&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-107122729-null-null.142^v99^pc_search_result_base2&amp;utm_term=jekyll latex&amp;spm=1018.2226.3001.4187">Jekyll 渲染 LaTeX 数学公式_textarea渲染latex-CSDN博客</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[如何向 jekyll 添加 mathjax 支持 (ualberta.ca)]]></summary></entry><entry><title type="html">markdown中使用LaTex</title><link href="https://wsttask.github.io/markdown/2024/02/27/LaTex.html" rel="alternate" type="text/html" title="markdown中使用LaTex" /><published>2024-02-27T21:17:42+08:00</published><updated>2024-02-27T21:17:42+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/27/LaTex</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/27/LaTex.html"><![CDATA[<p>竖线：</p>
 
@@ -15,147 +260,4 @@
       <td>“_markdown 绝对值-CSDN博客](https://blog.csdn.net/skytruine/article/details/105710349)</td>
     </tr>
   </tbody>
-</table>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[竖线：]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-27T21:15:06+08:00</published><updated>2024-02-27T21:15:06+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
-
-<h4 id="导数定义">导数定义</h4>
-
-<blockquote>
-  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
-
-  <p>​		$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
-
-  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
-
-  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-02-27T21:08:15+08:00</published><updated>2024-02-27T21:08:15+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/calculus/1"><![CDATA[<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
-
-<ol>
-  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
-  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
-  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
-  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-</ol>
-
-<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
-
-<p>准则1：夹逼准则</p>
-
-<p>可推出第一个重要极限$\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
-
-<p>根据$\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
-
-<p>准则2：单调有界准则</p>
-
-<p>可推出第二个重要极限$\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
-
-<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[闭区间上连续函数的性质]]></summary></entry><entry><title type="html">在githubPage中使用LaTex公式</title><link href="https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex.html" rel="alternate" type="text/html" title="在githubPage中使用LaTex公式" /><published>2024-02-27T21:07:23+08:00</published><updated>2024-02-27T21:07:23+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex.html"><![CDATA[<p><a href="https://blog.csdn.net/ColdWindHA/article/details/108763643?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=github jekyll latex&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-108763643.142^v99^pc_search_result_base2&amp;spm=1018.2226.3001.4187">在github.io中使用LaTeX编辑数学公式_github.io支持latex-CSDN博客</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[在github.io中使用LaTeX编辑数学公式_github.io支持latex-CSDN博客]]></summary></entry><entry><title type="html">拉格朗日中值定理</title><link href="https://wsttask.github.io/calculus/Theorem/la" rel="alternate" type="text/html" title="拉格朗日中值定理" /><published>2024-02-26T23:42:17+08:00</published><updated>2024-02-26T23:42:17+08:00</updated><id>https://wsttask.github.io/calculus/Theorem/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/Theorem/la"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/4.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-26T23:34:42+08:00</published><updated>2024-02-26T23:34:42+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/3.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">罗尔定理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="罗尔定理" /><published>2024-02-26T23:31:06+08:00</published><updated>2024-02-26T23:31:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/1.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/2.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">音标</title><link href="https://wsttask.github.io/pronunciation" rel="alternate" type="text/html" title="音标" /><published>2024-02-26T23:22:30+08:00</published><updated>2024-02-26T23:22:30+08:00</updated><id>https://wsttask.github.io/README</id><content type="html" xml:base="https://wsttask.github.io/pronunciation"><![CDATA[<h2 id="元音">元音</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>详解</th>
-      <th>视频</th>
-      <th>网页版详解</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="/028A.md">/ʊ/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=10">/ʊ/</a></td>
-      <td><a href="./pronunciation/028A">/ʊ/</a></td>
-    </tr>
-    <tr>
-      <td><a href="./0065.md">/e/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=11">/e/</a></td>
-      <td><a href="./pronunciation/0065">/e/</a></td>
-    </tr>
-    <tr>
-      <td><a href="./00E6.md">/æ/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=16">/æ/</a></td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="./0259.md">/ə/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=13">/ə/</a></td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="./0061_028A.md">/aʊ/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=22">/aʊ/</a></td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="./0061_026A.md">/aɪ/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=21">/aɪ/</a></td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="./026A.md">/ɪ/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=8">/ɪ/</a></td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="./0251.md">/ɑː/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=17">/ɑː/</a></td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="./s-z.md">/s/</a>-<a href="./s-z.md">/z/</a></td>
-      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=33">/s/-/z/</a></td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="辅音">辅音</h2>
-
-<ol>
-  <li><strong>元音（Vowels）:</strong>
-    <ul>
-      <li>[i] - U+0069 e</li>
-      <li>[e] - U+0065</li>
-      <li>[ə] - U+0259</li>
-      <li>[æ] - U+00E6</li>
-      <li>[ɑ] - U+0251</li>
-      <li>[ɔ] - U+0254</li>
-      <li>[u] - U+0075</li>
-      <li>[o] - U+006F</li>
-    </ul>
-  </li>
-  <li><strong>辅音（Consonants）:</strong>
-    <ul>
-      <li>[p] - U+0070</li>
-      <li>[t] - U+0074</li>
-      <li>[k] - U+006B</li>
-      <li>[b] - U+0062</li>
-      <li>[d] - U+0064</li>
-      <li>[ɡ] - U+0261</li>
-      <li>[f] - U+0066</li>
-      <li>[v] - U+0076</li>
-      <li>[θ] - U+03B8</li>
-      <li>[ð] - U+00F0</li>
-      <li>[s] - U+0073</li>
-      <li>[z] - U+007A</li>
-      <li>[ʃ] - U+0283</li>
-      <li>[ʒ] - U+0292</li>
-      <li>[h] - U+0068</li>
-      <li>[m] - U+006D</li>
-      <li>[n] - U+006E</li>
-      <li>[ŋ] - U+014B</li>
-      <li>[l] - U+006C</li>
-      <li>[r] - U+0072</li>
-      <li>[j] - U+006A</li>
-      <li>[w] - U+0077</li>
-    </ul>
-  </li>
-  <li><strong>调音符号（Suprasegmental Symbols）:</strong>
-    <ul>
-      <li>[ˈ] - U+02C8 (Primary Stress)</li>
-      <li>[ˌ] - U+02CC (Secondary Stress)</li>
-      <li>[ː] - U+02D0 (Length Mark)</li>
-      <li>[ˑ] - U+02D1 (Half-Length Mark)</li>
-    </ul>
-  </li>
-</ol>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[元音]]></summary></entry></feed>
+</table>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[竖线：]]></summary></entry><entry><title type="html">在githubPage中使用LaTex公式</title><link href="https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex.html" rel="alternate" type="text/html" title="在githubPage中使用LaTex公式" /><published>2024-02-27T21:07:23+08:00</published><updated>2024-02-27T21:07:23+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex.html"><![CDATA[<p><a href="https://blog.csdn.net/ColdWindHA/article/details/108763643?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=github jekyll latex&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-108763643.142^v99^pc_search_result_base2&amp;spm=1018.2226.3001.4187">在github.io中使用LaTeX编辑数学公式_github.io支持latex-CSDN博客</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[在github.io中使用LaTeX编辑数学公式_github.io支持latex-CSDN博客]]></summary></entry><entry><title type="html">拉格朗日中值定理</title><link href="https://wsttask.github.io/calculus/Theorem/la" rel="alternate" type="text/html" title="拉格朗日中值定理" /><published>2024-02-26T23:42:17+08:00</published><updated>2024-02-26T23:42:17+08:00</updated><id>https://wsttask.github.io/calculus/Theorem/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/Theorem/la"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/4.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry></feed>
