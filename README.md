@@ -2,7 +2,7 @@
 layout: post
 title: readme
 categories: [README]
-permalink: /tasks
+permalink: /readme
 ---
 
 # [STOP](#)

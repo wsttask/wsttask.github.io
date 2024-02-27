@@ -2,6 +2,7 @@
 layout: post
 title: 音标
 categories: [pronunciation]
+permalink: /pronunciation
 ---
 
 
@@ -10,7 +11,8 @@ categories: [pronunciation]
 
 详解|视频|网页版详解
 -|-|-
-[/e/](./0065.md)|[/e/](https://www.bilibili.com/video/BV1iV411z7Nj?p=11)|1
+[/ʊ/](/028A.md)|[/ʊ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=10)|[/ʊ/](./pronunciation/028A)
+[/e/](./0065.md)|[/e/](https://www.bilibili.com/video/BV1iV411z7Nj?p=11)|[/e/](./pronunciation/0065)
 [/æ/](./00E6.md)|[/æ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=16)|1
 [/ə/](./0259.md)|[/ə/](https://www.bilibili.com/video/BV1iV411z7Nj?p=13)|1
 [/aʊ/](./0061_028A.md)|[/aʊ/](https://www.bilibili.com/video/BV1iV411z7Nj?p=22)|1

@@ -2,34 +2,10 @@
 layout: post
 title: Tasks
 categories: [task]
+permalink: /tasks
 ---
 
-## recent tasks
-
-- web学习
-- 微积分学习
-- 线性代数学习
-- 任务管理器
-  - 基于md文件使用python/java/c编写一个任务管理器
-  - 使用数据库和md文档同时存储数据
-  - 手机也能配置一个软件
-  - 希望是.exe文件
-  - 拥有添加，修改，删除功能
-  - 希望可以部署到cmd上
-  - 可以通过浏览器打开，这样可以用web做一个界面
-  
-- 快捷指令模块
-  - 利用AutoHotkey/python或其他方式做一个快速指令集合 
-  - space+r，输入open web\可以打开对应目录
-    - 解析web，只输入后面的东西
-
-## badtime tasks
-
-## AutoHotkey tasks
-
-- 为什么要写return？
-- 添加一个快速打开keepass的方式
-- 添加ctrl+d删除一行快捷键
+# [graduate](./tasks/graduate)
 
 ## phone data keep
 

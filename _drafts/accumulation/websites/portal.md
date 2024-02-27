@@ -25,6 +25,10 @@ permalink: /browser
 
 ### [tasks](https://www.kdocs.cn/l/coVFRqQ7x1UZ)
 
+# 搜索引擎
+
+### [baidu](https://www.baidu.com/)
+
 # Mail
 
 ### [outlook](https://outlook.live.com/mail)
@@ -54,3 +58,7 @@ permalink: /browser
 ### [翱翔门户](https://ecampus.nwpu.edu.cn/main.html#/Index)
 
 ### [西工大研招网](https://yzb.nwpu.edu.cn/info/1174/8628.htm)
+
+# 中国考试教育网
+
+### [四六级查分](https://cjcx.neea.edu.cn/)

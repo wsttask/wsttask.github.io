@@ -1,7 +1,7 @@
 url: https://wsttask.github.io
 site.url: https://wsttask.github.io 
 timezone: Asia/Shanghai
-# markdown: kramdown
+markdown: kramdown
 # kramdown:
 #   input: GFM
 #   syntax_highlighter: rouge

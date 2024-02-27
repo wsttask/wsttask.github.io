@@ -1,318 +1,185 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-25T21:45:06+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">jekyll YAML头信息</title><link href="https://wsttask.github.io/jekyll/2024/02/25/YAML.html" rel="alternate" type="text/html" title="jekyll YAML头信息" /><published>2024-02-25T21:42:21+08:00</published><updated>2024-02-25T21:42:21+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/25/YAML</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/25/YAML.html"><![CDATA[<ul>
-  <li>
-    <p>$layout:$ 使用的模板</p>
-  </li>
-  <li>$title:$ 标题名</li>
-  <li>$categories:$ 分类</li>
-  <li>$permalink:$ 以 $/name$ 作为永久地址</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[$layout:$ 使用的模板]]></summary></entry><entry><title type="html">pc端浏览器主页</title><link href="https://wsttask.github.io/browserpc" rel="alternate" type="text/html" title="pc端浏览器主页" /><published>2024-02-20T20:46:04+08:00</published><updated>2024-02-20T20:46:04+08:00</updated><id>https://wsttask.github.io/portal-pc</id><content type="html" xml:base="https://wsttask.github.io/browserpc"><![CDATA[<p><a href="https://gitee.com/">gitee</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T20:41:59+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-02-27T00:07:08+08:00</published><updated>2024-02-27T00:07:08+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/calculus/1"><![CDATA[<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
 
-<p><a href="https://github.com/">github</a></p>
+<ol>
+  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
+  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
+  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
+  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+</ol>
 
-<p><a href="https://www.zhihu.com/">知乎</a></p>
+<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
 
-<p><a href="https://uis.nwpu.edu.cn/cas/login">翱翔门户</a></p>
+<p>准则1：夹逼准则</p>
 
-<p><a href="https://www.bilibili.com/">bilibili</a></p>
+<p>可推出第一个重要极限$\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
 
-<p><a href="https://fanyi.baidu.com/">百度翻译</a></p>
+<p>根据$\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
 
-<p><a href="https://www.gushiwen.cn/">古诗文网</a></p>
+<p>准则2：单调有界准则</p>
 
-<p><a href="https://www.csdn.net/">csdn</a></p>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-02-20T20:45:26+08:00</published><updated>2024-02-20T20:45:26+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<p>可推出第二个重要极限$\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
 
-<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
+<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[闭区间上连续函数的性质]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-26T23:58:30+08:00</published><updated>2024-02-26T23:58:30+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
 
-<h1 id="github">github</h1>
+<h4 id="导数定义">导数定义</h4>
 
-<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
+<blockquote>
+  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
 
-<h1 id="tanslation">tanslation</h1>
+  <p>​		$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
 
-<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
+  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
 
-<h1 id="chatgpt">ChatGPT</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}</td>
+        <td>_{x=x_0}$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">拉格朗日中值定理</title><link href="https://wsttask.github.io/calculus/Theorem/la" rel="alternate" type="text/html" title="拉格朗日中值定理" /><published>2024-02-26T23:42:17+08:00</published><updated>2024-02-26T23:42:17+08:00</updated><id>https://wsttask.github.io/calculus/Theorem/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/Theorem/la"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/4.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-26T23:34:42+08:00</published><updated>2024-02-26T23:34:42+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/3.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">罗尔定理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="罗尔定理" /><published>2024-02-26T23:31:06+08:00</published><updated>2024-02-26T23:31:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/1.jpg" alt="" /></p>
 
-<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/2.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">音标</title><link href="https://wsttask.github.io/pronunciation" rel="alternate" type="text/html" title="音标" /><published>2024-02-26T23:22:30+08:00</published><updated>2024-02-26T23:22:30+08:00</updated><id>https://wsttask.github.io/README</id><content type="html" xml:base="https://wsttask.github.io/pronunciation"><![CDATA[<h2 id="元音">元音</h2>
 
-<h1 id="wps">WPS</h1>
+<table>
+  <thead>
+    <tr>
+      <th>详解</th>
+      <th>视频</th>
+      <th>网页版详解</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/028A.md">/ʊ/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=10">/ʊ/</a></td>
+      <td><a href="./pronunciation/028A">/ʊ/</a></td>
+    </tr>
+    <tr>
+      <td><a href="./0065.md">/e/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=11">/e/</a></td>
+      <td><a href="./pronunciation/0065">/e/</a></td>
+    </tr>
+    <tr>
+      <td><a href="./00E6.md">/æ/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=16">/æ/</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="./0259.md">/ə/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=13">/ə/</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="./0061_028A.md">/aʊ/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=22">/aʊ/</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="./0061_026A.md">/aɪ/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=21">/aɪ/</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="./026A.md">/ɪ/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=8">/ɪ/</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="./0251.md">/ɑː/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=17">/ɑː/</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="./s-z.md">/s/</a>-<a href="./s-z.md">/z/</a></td>
+      <td><a href="https://www.bilibili.com/video/BV1iV411z7Nj?p=33">/s/-/z/</a></td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
+<h2 id="辅音">辅音</h2>
 
-<h1 id="mail">Mail</h1>
-
-<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
-
-<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
-
-<h1 id="time">TIME</h1>
-
-<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
-
-<h1 id="game">GAME</h1>
-
-<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
-
-<h1 id="音标">音标</h1>
-
-<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
-
-<h1 id="视频">视频</h1>
-
-<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
-
-<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
-
-<h1 id="西工大">西工大</h1>
-
-<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
-
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Happy</title><link href="https://wsttask.github.io/2024/02/20/happy.html" rel="alternate" type="text/html" title="Happy" /><published>2024-02-20T20:41:33+08:00</published><updated>2024-02-20T20:41:33+08:00</updated><id>https://wsttask.github.io/2024/02/20/happy</id><content type="html" xml:base="https://wsttask.github.io/2024/02/20/happy.html"><![CDATA[<h4 id="花间小会所">花间小会所</h4>
-
-<p>黄河路，振兴路左上</p>]]></content><author><name></name></author><summary type="html"><![CDATA[花间小会所]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/task/2024/02/20/tasks.html" rel="alternate" type="text/html" title="Tasks" /><published>2024-02-20T20:17:20+08:00</published><updated>2024-02-20T20:17:20+08:00</updated><id>https://wsttask.github.io/task/2024/02/20/tasks</id><content type="html" xml:base="https://wsttask.github.io/task/2024/02/20/tasks.html"><![CDATA[<h2 id="recent-tasks">recent tasks</h2>
-
-<ul>
-  <li>web学习</li>
-  <li>微积分学习</li>
-  <li>线性代数学习</li>
-  <li>任务管理器
+<ol>
+  <li><strong>元音（Vowels）:</strong>
     <ul>
-      <li>基于md文件使用python/java/c编写一个任务管理器</li>
-      <li>使用数据库和md文档同时存储数据</li>
-      <li>手机也能配置一个软件</li>
-      <li>希望是.exe文件</li>
-      <li>拥有添加，修改，删除功能</li>
-      <li>希望可以部署到cmd上</li>
-      <li>可以通过浏览器打开，这样可以用web做一个界面</li>
+      <li>[i] - U+0069 e</li>
+      <li>[e] - U+0065</li>
+      <li>[ə] - U+0259</li>
+      <li>[æ] - U+00E6</li>
+      <li>[ɑ] - U+0251</li>
+      <li>[ɔ] - U+0254</li>
+      <li>[u] - U+0075</li>
+      <li>[o] - U+006F</li>
     </ul>
   </li>
-  <li>快捷指令模块
+  <li><strong>辅音（Consonants）:</strong>
     <ul>
-      <li>利用AutoHotkey/python或其他方式做一个快速指令集合</li>
-      <li>space+r，输入open web\可以打开对应目录
-        <ul>
-          <li>解析web，只输入后面的东西</li>
-        </ul>
-      </li>
+      <li>[p] - U+0070</li>
+      <li>[t] - U+0074</li>
+      <li>[k] - U+006B</li>
+      <li>[b] - U+0062</li>
+      <li>[d] - U+0064</li>
+      <li>[ɡ] - U+0261</li>
+      <li>[f] - U+0066</li>
+      <li>[v] - U+0076</li>
+      <li>[θ] - U+03B8</li>
+      <li>[ð] - U+00F0</li>
+      <li>[s] - U+0073</li>
+      <li>[z] - U+007A</li>
+      <li>[ʃ] - U+0283</li>
+      <li>[ʒ] - U+0292</li>
+      <li>[h] - U+0068</li>
+      <li>[m] - U+006D</li>
+      <li>[n] - U+006E</li>
+      <li>[ŋ] - U+014B</li>
+      <li>[l] - U+006C</li>
+      <li>[r] - U+0072</li>
+      <li>[j] - U+006A</li>
+      <li>[w] - U+0077</li>
     </ul>
   </li>
-</ul>
-
-<h2 id="badtime-tasks">badtime tasks</h2>
-
-<h2 id="autohotkey-tasks">AutoHotkey tasks</h2>
-
-<ul>
-  <li>为什么要写return？</li>
-  <li>添加一个快速打开keepass的方式</li>
-  <li>添加ctrl+d删除一行快捷键</li>
-</ul>
-
-<h2 id="phone-data-keep">phone data keep</h2>
-
-<ul>
-  <li>微信，qq聊天记录保存</li>
-</ul>
-
-<p>gitbook</p>
-
-<p>edge 的扩展上可以下载vpn？怎么搞的</p>
-
-<p>在autohotkey中无法含参命令</p>
-
-<p>通过命令杀死进程
-taskkill /f /im erwin.exe</p>
-
-<p>这是测试行</p>
-
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">"content content-global"</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s">"width: 90%; margin: 0 auto;"</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="err">为什么</span><span class="n">div</span><span class="err">内标签与外标签宽度不一样？</span>
-</code></pre></div></div>
-
-<p>如何快速比较两个文件内容之间的差异，有专门门的软件</p>
-
-<p><a href="https://venter.top/hopweb/index.html">HopWeb • 概述</a></p>
-
-<p><a href="https://zhuanlan.zhihu.com/p/54907494">把网站放在手机桌面，像APP那样使用 - 知乎 (zhihu.com)</a></p>
-
-<p>微分方程齐次与非其次，线性与非线性</p>
-
-<p>在autohotkey中输入文件夹，自动查询并打开</p>
-
-<p>python自动化</p>
-
-<p>autohotkey</p>
-
-<p><a href="https://www.bilibili.com/video/BV1T34y1o73U/?spm_id_from=333.788.recommend_more_video.1&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">5分钟，教你做个自动化软件拿来办公、刷副本、回微信 </a></p>
-
-<p><a href="https://blog.csdn.net/m0_62881487/article/details/133833781?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&amp;utm_relevant_index=2">计算机算法分析与设计（10）—租用游艇问题(含C++代码)_租用游艇问题 复杂度分析-CSDN博客</a></p>
-
-<p><a href="https://blog.csdn.net/sinat_35678407/article/details/82874216">分治——最近点对问题_分治算法 closet pair of points-CSDN博客</a></p>
-
-<p><a href="https://blog.csdn.net/sinat_35678407/article/details/82874216">分治——最近点对问题_分治算法 closet pair of points-CSDN博客</a></p>
-
-<p><strong>华为云</strong></p>
-
-<p><a href="https://www.bilibili.com/video/BV1Y84y1L7Nn/?spm_id_from=333.337.search-card.all.click&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">黑马程序员前端JavaScript入门到精通全套视频教程，javascript核心进阶ES6语法、API、js高级等基础知识和实战教程_哔哩哔哩_bilibili</a></p>
-
-<p>AutoHotkey</p>
-
-<p>git提交gitee仓库显示太大了.git文件怎么清理</p>
-
-<p>gitee，github同步，背后原理是什么？</p>
-
-<p>git仓库提交的原理是什么？</p>
-
-<p>1.git中保存着所有提交信息，git仓库与远程仓库是同步的，所以只上传更改信息，</p>
-
-<p>最近和多人合作一个项目，</p>
-
-<p>git pull 并不会删除掉自己的更改，这是怎么做到的</p>
-
-<p><strong>编码格式；运行中书写的字符串是什么格式，传到cmd是什么格式，传到powershell又是什么格式</strong></p>
-
-<p><a href="https://blog.csdn.net/m0_50762431/article/details/130179618">电脑端(PC)按键精灵2023——入门小白 详细 教程_按键精灵pc-CSDN博客</a></p>
-
-<p>PowerToys</p>
-
-<p>运行中更改tasks.md添加新的文字.bat实现</p>
-
-<p>半角和全角的区别</p>
-
-<p>输入法,中英文符号</p>
-
-<p>寻找一个新的md文件编辑器</p>
-
-<p>git 的push记录是怎么保存的</p>
-
-<p><strong><a href="https://www.bilibili.com/video/BV1FN4y1r7Gv/?spm_id_from=pageDriver&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">上海年轻人万圣节发疯，“好得很”还是“糟得很”？_哔哩哔哩_bilibili</a></strong></p>
-
-<p>kindle使用的是什么系统?linux?这些插件是使用什么语言写的?</p>
-
-<p>浏览器不解释换行符号\n</p>
-
-<p><strong><a href="https://zhuanlan.zhihu.com/p/440303039">对数运算性质公式推导 - 知乎 (zhihu.com)</a></strong></p>
-
-<p>扔六面色子，扔到2023的概率有多大</p>
-
-<p>hibernate官方文档</p>
-
-<p><a href="https://www.bilibili.com/video/BV1a34y167AZ?p=2&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">01.初识Node-浏览器中的JavaScript运行环境_哔哩哔哩_bilibili</a></p>
-
-<p>javahash表实现</p>
-
-<p>wox + everything</p>
-
-<p>javase和javaee</p>
-
-<p>getCompleteTokenInBuffer先看matcher</p>
-
-<p>scanner源码解释</p>
-
-<p>java中的char基本数据类型是unicode编码，但是unicode编码大于两个字节了怎么办？</p>
-
-<p><a href="https://www.cnblogs.com/dragon2012/p/5020259.html">utf16编码格式 - c_dragon - 博客园 (cnblogs.com)</a></p>
-
-<p>idea使用git</p>
-
-<p>idea配置javaweb 项目，</p>
-
-<p><a href="http://10.216.217.131:9999/">oj</a></p>
-
-<p>mysql中sql语句</p>
-
-<p>注解开发hibernate</p>
-
-<p>mysql两张表互为外键</p>
-
-<p>idea查看错误提示</p>
-
-<p>贝叶斯公式</p>
-
-<p>mysql数据类型</p>
-
-<p>mysql索引</p>
-
-<p><a href="https://zhuanlan.zhihu.com/p/82320492">jar包的一些事儿 - 知乎 (zhihu.com)</a></p>
-
-<p>厉害数</p>
-
-<p>埃氏筛法</p>
-
-<p>JAVA 类型擦除<a href="https://zhuanlan.zhihu.com/p/346486993">Java泛型中的类型擦除详解 - 知乎 (zhihu.com)</a></p>
-
-<p>JAVA Arrays.asList 以数组作为底层实现</p>
-
-<p>JAVA 变长参数</p>
-
-<p>java 泛型能否为静态的？</p>
-
-<p><a href="https://www.jianshu.com/p/c738c8262087">分支限界法——对解空间的一种策略搜索（广度优先搜索） - 简书 (jianshu.com)</a></p>
-
-<p>ARP解析，socket编程</p>
-
-<p>汇编语言的学习</p>
-
-<p>软件测试中junit4.jar</p>
-
-<p>新建文档时，有md文件并且有快捷键</p>
-
-<p>word的用法（论文）</p>
-
-<p>开发者工具的用法</p>
-
-<p>电脑的组成，网卡，等知识</p>
-
-<p>VBScript脚本</p>
-
-<p>html文件格式，html文件编辑器（前端）</p>
-
-<p>JavaScript脚本</p>
-
-<p>安卓系统的简单软件（手机实现禅定空间）</p>
-
-<p><a href="https://blog.csdn.net/Daydream_Z/article/details/129788166?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-4-129788166-blog-83616085.235^v38^pc_relevant_anti_vip&amp;spm=1001.2101.3001.4242.3&amp;utm_relevant_index=7">(95条消息) 【Win10】Win10右键 新增/删除 新建文件_不·韦的博客-CSDN博客</a></p>
-
-<p>博客园</p>
-
-<p><a href="https://blog.csdn.net/qq_25593079/article/details/83616085?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=Win10使用快捷键新建文件夹和.txt文本文档&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-83616085.nonecase&amp;spm=1018.2226.3001.4187">(90条消息) Win10 利用快捷键，快速新建TXT文档_win10新建文本文档_funtty的博客-CSDN博客</a></p>
-
-<p><a href="https://zhuanlan.zhihu.com/p/34611958">Windows自定义运行 - 知乎 (zhihu.com)</a></p>
-
-<p>更改typora的原码，ctrl+k插入超链接的地方</p>
-
-<p>关机前自动上传代码，检查是否上传，并提示</p>
-
-<p>开机后自动拉代码</p>
-
-<h2 id="remote-tasks">remote tasks</h2>
-
-<ul>
-  <li>
-    <p>代码大全，深入浅出计算机网络</p>
+  <li><strong>调音符号（Suprasegmental Symbols）:</strong>
+    <ul>
+      <li>[ˈ] - U+02C8 (Primary Stress)</li>
+      <li>[ˌ] - U+02CC (Secondary Stress)</li>
+      <li>[ː] - U+02D0 (Length Mark)</li>
+      <li>[ˑ] - U+02D1 (Half-Length Mark)</li>
+    </ul>
   </li>
-  <li>
-    <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
-  </li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[recent tasks]]></summary></entry><entry><title type="html">Gi加速器</title><link href="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html" rel="alternate" type="text/html" title="Gi加速器" /><published>2024-02-18T20:53:42+08:00</published><updated>2024-02-18T20:53:42+08:00</updated><id>https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8</id><content type="html" xml:base="https://wsttask.github.io/2024/02/18/GI%E5%8A%A0%E9%80%9F%E5%99%A8.html"><![CDATA[<p><a href="https://www.gijsq.com/">GI加速器-免费游戏加速器【官网】 (gijsq.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[GI加速器-免费游戏加速器【官网】 (gijsq.com)]]></summary></entry><entry><title type="html">sms</title><link href="https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html" rel="alternate" type="text/html" title="sms" /><published>2024-02-17T20:38:58+08:00</published><updated>2024-02-17T20:38:58+08:00</updated><id>https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81</id><content type="html" xml:base="https://wsttask.github.io/2024/02/17/%E8%99%9A%E6%8B%9F%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81.html"><![CDATA[<p><a href="https://sms-activate.org/cn">SMS-Activate是在线接受短信的虚拟号码服务</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[SMS-Activate是在线接受短信的虚拟号码服务]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-15T18:49:06+08:00</published><updated>2024-02-15T18:49:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/15/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/20240215184454.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">vpn</title><link href="https://wsttask.github.io/vpn/2024/02/15/vpn.html" rel="alternate" type="text/html" title="vpn" /><published>2024-02-15T01:19:36+08:00</published><updated>2024-02-15T01:19:36+08:00</updated><id>https://wsttask.github.io/vpn/2024/02/15/vpn</id><content type="html" xml:base="https://wsttask.github.io/vpn/2024/02/15/vpn.html"><![CDATA[<p>https://ikuuu.org/auth/login 12</p>
+</ol>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[元音]]></summary></entry><entry><title type="html">ʊ</title><link href="https://wsttask.github.io/pronunciation/028A" rel="alternate" type="text/html" title="ʊ" /><published>2024-02-26T23:21:55+08:00</published><updated>2024-02-26T23:21:55+08:00</updated><id>https://wsttask.github.io/pronunciation/028A</id><content type="html" xml:base="https://wsttask.github.io/pronunciation/028A"><![CDATA[<h1 id="ʊ">ʊ</h1>
 
-<p><a href="https://sockboom.link/user/">sockboom.link</a></p>
+<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230622194727083.png" alt="image-20230622194727083" /></p>
 
-<p><a href="https://sockboom.buzz/user/">SockBoom</a> 8</p>
+<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230622194649883.png" alt="image-20230622194649883" /></p>
 
-<p>狗急加速，30+</p>
+<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230622194755731.png" alt="image-20230622194755731" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[ʊ]]></summary></entry><entry><title type="html">音标</title><link href="https://wsttask.github.io/2024/02/26/%E9%9F%B3%E6%A0%87.html" rel="alternate" type="text/html" title="音标" /><published>2024-02-26T23:17:26+08:00</published><updated>2024-02-26T23:17:26+08:00</updated><id>https://wsttask.github.io/2024/02/26/%E9%9F%B3%E6%A0%87</id><content type="html" xml:base="https://wsttask.github.io/2024/02/26/%E9%9F%B3%E6%A0%87.html"><![CDATA[<h1 id="音标">音标</h1>
 
-<p>sockboom域名更新了</p>
+<p>英语国际音标是国际音标（IPA，International Phonetic Alphabet）的一部分。IPA 对应的 Unicode 编码见如下链接：</p>
 
-<p>ilink	这个是edge的扩展，可以用</p>
+<p>VUC：微软输入法输入unicode字符</p>
 
-<p>狐猴浏览器，可以使用edge，chrome的扩展</p>]]></content><author><name></name></author><category term="vpn" /><summary type="html"><![CDATA[https://ikuuu.org/auth/login 12]]></summary></entry><entry><title type="html">/æ/</title><link href="https://wsttask.github.io/00E6" rel="alternate" type="text/html" title="/æ/" /><published>2024-02-14T20:24:54+08:00</published><updated>2024-02-14T20:24:54+08:00</updated><id>https://wsttask.github.io/00E6</id><content type="html" xml:base="https://wsttask.github.io/00E6"><![CDATA[<h1 id="æ">/æ/</h1>
+<p><a href="./U0250.pdf">U0250</a></p>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/image-20230620195235627.png" alt="image-20230620195235627" /></p>
+<p><a href="https://www.unicode.org/charts/PDF/U0250.pdf">The Unicode Standard, Version 15.1</a></p>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201447590.png" alt="image-20230622201447590" /></p>
+<p><img src="../../../images/image-20230620195632470.png" alt="image-20230620195632470" /></p>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronuncitaion/images/image-20230622201524989.png" alt="image-20230622201524989" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[/æ/]]></summary></entry></feed>
+<h1 id="元音图">元音图</h1>
+
+<p><img src="../../../images/image-20230620200328929.png" alt="image-20230620200328929" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[音标]]></summary></entry><entry><title type="html">/e/</title><link href="https://wsttask.github.io/pronunciation/0065" rel="alternate" type="text/html" title="/e/" /><published>2024-02-26T21:31:06+08:00</published><updated>2024-02-26T21:31:06+08:00</updated><id>https://wsttask.github.io/pronunciation/0065</id><content type="html" xml:base="https://wsttask.github.io/pronunciation/0065"><![CDATA[<h1 id="e">/e/</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230620194352744.png" alt="image-20230620194352744" /></p>
+
+<p>​</p>]]></content><author><name></name></author><category term="e" /><summary type="html"><![CDATA[/e/]]></summary></entry><entry><title type="html">program</title><link href="https://wsttask.github.io/english/2024/02/26/program.html" rel="alternate" type="text/html" title="program" /><published>2024-02-26T18:13:29+08:00</published><updated>2024-02-26T18:13:29+08:00</updated><id>https://wsttask.github.io/english/2024/02/26/program</id><content type="html" xml:base="https://wsttask.github.io/english/2024/02/26/program.html"><![CDATA[<p>API</p>
+
+<p><a href="https://fanyi.baidu.com/#en/zh/Application%20Programming%20Interface">Application Programming Interface</a></p>
+
+<p>HTML</p>
+
+<p><a href="https://fanyi.baidu.com/#en/zh/Hyper%20Text%20Mark-up%20Language">Hyper Text Mark-up Language</a></p>
+
+<p>ide</p>
+
+<p><a href="https://fanyi.baidu.com/#en/zh/Integrated%20Development%20Environment">Integrated Development Environment</a></p>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[API]]></summary></entry></feed>
