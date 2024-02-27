@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T21:04:22+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-02-27T20:53:02+08:00</published><updated>2024-02-27T20:53:02+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/calculus/1"><![CDATA[<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T21:08:48+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-27T21:08:40+08:00</published><updated>2024-02-27T21:08:40+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+
+<h4 id="导数定义">导数定义</h4>
+
+<blockquote>
+  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+
+  <p>​		$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+
+  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}</td>
+        <td>_{x=x_0}$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-02-27T21:08:15+08:00</published><updated>2024-02-27T21:08:15+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/calculus/1"><![CDATA[<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
 
 <ol>
   <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
@@ -19,26 +38,7 @@
 
 <p>可推出第二个重要极限$\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
 
-<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[闭区间上连续函数的性质]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-02-26T23:58:30+08:00</published><updated>2024-02-26T23:58:30+08:00</updated><id>https://wsttask.github.io/calculus/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
-
-<h4 id="导数定义">导数定义</h4>
-
-<blockquote>
-  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
-
-  <p>​		$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
-
-  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
-
-  <table>
-    <tbody>
-      <tr>
-        <td>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}</td>
-        <td>_{x=x_0}$</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">拉格朗日中值定理</title><link href="https://wsttask.github.io/calculus/Theorem/la" rel="alternate" type="text/html" title="拉格朗日中值定理" /><published>2024-02-26T23:42:17+08:00</published><updated>2024-02-26T23:42:17+08:00</updated><id>https://wsttask.github.io/calculus/Theorem/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/Theorem/la"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/4.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-26T23:34:42+08:00</published><updated>2024-02-26T23:34:42+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/3.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">罗尔定理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="罗尔定理" /><published>2024-02-26T23:31:06+08:00</published><updated>2024-02-26T23:31:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/1.jpg" alt="" /></p>
+<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[闭区间上连续函数的性质]]></summary></entry><entry><title type="html">在githubPage中使用LaTex公式</title><link href="https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex.html" rel="alternate" type="text/html" title="在githubPage中使用LaTex公式" /><published>2024-02-27T21:07:23+08:00</published><updated>2024-02-27T21:07:23+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/27/github%E4%BD%BF%E7%94%A8latex.html"><![CDATA[<p><a href="https://blog.csdn.net/ColdWindHA/article/details/108763643?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=github jekyll latex&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-108763643.142^v99^pc_search_result_base2&amp;spm=1018.2226.3001.4187">在github.io中使用LaTeX编辑数学公式_github.io支持latex-CSDN博客</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[在github.io中使用LaTeX编辑数学公式_github.io支持latex-CSDN博客]]></summary></entry><entry><title type="html">拉格朗日中值定理</title><link href="https://wsttask.github.io/calculus/Theorem/la" rel="alternate" type="text/html" title="拉格朗日中值定理" /><published>2024-02-26T23:42:17+08:00</published><updated>2024-02-26T23:42:17+08:00</updated><id>https://wsttask.github.io/calculus/Theorem/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/Theorem/la"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/4.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-02-26T23:34:42+08:00</published><updated>2024-02-26T23:34:42+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/3.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">罗尔定理</title><link href="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="罗尔定理" /><published>2024-02-26T23:31:06+08:00</published><updated>2024-02-26T23:31:06+08:00</updated><id>https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/02/26/%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/1.jpg" alt="" /></p>
 
 <p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/2.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">音标</title><link href="https://wsttask.github.io/pronunciation" rel="alternate" type="text/html" title="音标" /><published>2024-02-26T23:22:30+08:00</published><updated>2024-02-26T23:22:30+08:00</updated><id>https://wsttask.github.io/README</id><content type="html" xml:base="https://wsttask.github.io/pronunciation"><![CDATA[<h2 id="元音">元音</h2>
 
@@ -172,14 +172,4 @@
 
 <p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230620194352744.png" alt="image-20230620194352744" /></p>
 
-<p>​</p>]]></content><author><name></name></author><category term="e" /><summary type="html"><![CDATA[/e/]]></summary></entry><entry><title type="html">program</title><link href="https://wsttask.github.io/english/2024/02/26/program.html" rel="alternate" type="text/html" title="program" /><published>2024-02-26T18:13:29+08:00</published><updated>2024-02-26T18:13:29+08:00</updated><id>https://wsttask.github.io/english/2024/02/26/program</id><content type="html" xml:base="https://wsttask.github.io/english/2024/02/26/program.html"><![CDATA[<p>API</p>
-
-<p><a href="https://fanyi.baidu.com/#en/zh/Application%20Programming%20Interface">Application Programming Interface</a></p>
-
-<p>HTML</p>
-
-<p><a href="https://fanyi.baidu.com/#en/zh/Hyper%20Text%20Mark-up%20Language">Hyper Text Mark-up Language</a></p>
-
-<p>ide</p>
-
-<p><a href="https://fanyi.baidu.com/#en/zh/Integrated%20Development%20Environment">Integrated Development Environment</a></p>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[API]]></summary></entry></feed>
+<p>​</p>]]></content><author><name></name></author><category term="e" /><summary type="html"><![CDATA[/e/]]></summary></entry></feed>
