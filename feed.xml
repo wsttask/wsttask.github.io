@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T21:17:57+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">markdown中使用LaTex</title><link href="https://wsttask.github.io/markdown/2024/02/27/LaTex.html" rel="alternate" type="text/html" title="markdown中使用LaTex" /><published>2024-02-27T21:17:42+08:00</published><updated>2024-02-27T21:17:42+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/27/LaTex</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/27/LaTex.html"><![CDATA[<p>竖线：</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T21:20:28+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">jekyll使用LaTex</title><link href="https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex.html" rel="alternate" type="text/html" title="jekyll使用LaTex" /><published>2024-02-27T21:20:18+08:00</published><updated>2024-02-27T21:20:18+08:00</updated><id>https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex</id><content type="html" xml:base="https://wsttask.github.io/jekyll/2024/02/27/jekyll%E4%BD%BF%E7%94%A8LaTex.html"><![CDATA[<p><a href="https://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html#">如何向 jekyll 添加 mathjax 支持 (ualberta.ca)</a></p>
+
+<p><a href="https://blog.csdn.net/qq_38980083/article/details/107122729?ops_request_misc=%7B%22request%5Fid%22%3A%22170903723516800182729188%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;request_id=170903723516800182729188&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-107122729-null-null.142^v99^pc_search_result_base2&amp;utm_term=jekyll latex&amp;spm=1018.2226.3001.4187">Jekyll 渲染 LaTeX 数学公式_textarea渲染latex-CSDN博客</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[如何向 jekyll 添加 mathjax 支持 (ualberta.ca)]]></summary></entry><entry><title type="html">markdown中使用LaTex</title><link href="https://wsttask.github.io/markdown/2024/02/27/LaTex.html" rel="alternate" type="text/html" title="markdown中使用LaTex" /><published>2024-02-27T21:17:42+08:00</published><updated>2024-02-27T21:17:42+08:00</updated><id>https://wsttask.github.io/markdown/2024/02/27/LaTex</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/02/27/LaTex.html"><![CDATA[<p>竖线：</p>
 
 <p><code class="language-plaintext highlighter-rouge">$\vert$</code></p>
 
@@ -162,18 +164,4 @@
 
 <p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230622194649883.png" alt="image-20230622194649883" /></p>
 
-<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230622194755731.png" alt="image-20230622194755731" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[ʊ]]></summary></entry><entry><title type="html">音标</title><link href="https://wsttask.github.io/2024/02/26/%E9%9F%B3%E6%A0%87.html" rel="alternate" type="text/html" title="音标" /><published>2024-02-26T23:17:26+08:00</published><updated>2024-02-26T23:17:26+08:00</updated><id>https://wsttask.github.io/2024/02/26/%E9%9F%B3%E6%A0%87</id><content type="html" xml:base="https://wsttask.github.io/2024/02/26/%E9%9F%B3%E6%A0%87.html"><![CDATA[<h1 id="音标">音标</h1>
-
-<p>英语国际音标是国际音标（IPA，International Phonetic Alphabet）的一部分。IPA 对应的 Unicode 编码见如下链接：</p>
-
-<p>VUC：微软输入法输入unicode字符</p>
-
-<p><a href="./U0250.pdf">U0250</a></p>
-
-<p><a href="https://www.unicode.org/charts/PDF/U0250.pdf">The Unicode Standard, Version 15.1</a></p>
-
-<p><img src="../../../images/image-20230620195632470.png" alt="image-20230620195632470" /></p>
-
-<h1 id="元音图">元音图</h1>
-
-<p><img src="../../../images/image-20230620200328929.png" alt="image-20230620200328929" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[音标]]></summary></entry></feed>
+<p><img src="https://wsttask.github.io/picture/images/courses/pronunciation/image-20230622194755731.png" alt="image-20230622194755731" /></p>]]></content><author><name></name></author><category term="pronunciation" /><summary type="html"><![CDATA[ʊ]]></summary></entry></feed>
