@@ -5,24 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
+    MathJax.Hub.Config({
     tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']],
     processEscapes: true
     }
-});
-</script>
-    
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
     });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    
 <title>第二章、导数与微分</title>
 
 
@@ -60,7 +52,7 @@ MathJax.Hub.Config({
                 」
             </div>
             <div class="char-counter">
-              2024-02-26 280字
+              2024-02-27 393字
             </div>
             <div class="content">
                 <h2 id="第一节基本概念">第一节、基本概念</h2>
@@ -74,15 +66,18 @@ MathJax.Hub.Config({
 
   <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
 
-  <table>
-    <tbody>
-      <tr>
-        <td>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}</td>
-        <td>_{x=x_0}$</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
 </blockquote>
+
+<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
+
+<blockquote>
+  <p>充分不必要条件：导函数是连续函数</p>
+</blockquote>
+
+<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
+
+<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>
 
             </div>
         </div>

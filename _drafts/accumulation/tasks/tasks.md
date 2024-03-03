@@ -5,11 +5,21 @@ categories: [task]
 permalink: /tasks
 ---
 
-# [graduate](./tasks/graduate)
+永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘
 
-## phone data keep
+### [graduate](./tasks/graduate)
 
-- 微信，qq聊天记录保存
+### [pyqt](./pyqt.md)
+
+### [jekyll_blog](./jekyllBlog.md)
+
+使用达布中值定理证明。。。。
+
+证明柯西中值定理
+
+
+
+微信，qq聊天记录保存
 
 gitbook
 

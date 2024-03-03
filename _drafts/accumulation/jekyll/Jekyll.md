@@ -5,3 +5,7 @@
 [Jekyll 教程——快速上手-CSDN博客](https://blog.csdn.net/FeeLang/article/details/126989525)
 
 bundle exec jekyll serve
+
+[Jekyll 4.2 简体中文 (runebook.dev)](https://runebook.dev/zh/docs/jekyll/-index-)
+
+[Jekyll个人博客添加分类Category功能 (zoharandroid.github.io)](https://zoharandroid.github.io/2019-08-02-Jekyll个人博客添加分类Category功能/)

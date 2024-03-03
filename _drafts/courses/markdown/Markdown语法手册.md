@@ -1,4 +1,13 @@
+---
+layout: post
+title: markdown语法手册
+categories: [markdown]
+---
+
+[Markdown详细教程+技巧总结_markdown课程-CSDN博客](https://blog.csdn.net/NSJim/article/details/89697630)
+
 ### 1. 斜体和粗体
+
 代码：
 
 

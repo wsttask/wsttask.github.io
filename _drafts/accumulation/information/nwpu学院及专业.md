@@ -1,0 +1,1 @@
+[学院设置-西北工业大学 (nwpu.edu.cn)](https://www.nwpu.edu.cn/xysz.htm)

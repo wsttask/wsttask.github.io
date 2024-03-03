@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    
+<title>jekyll blog</title>
+
+
+        <link rel="stylesheet" href="https://wsttask.github.io/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="https://wsttask.github.io/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/index.html">index</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/tags.html">Tags</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/readme.html">README</a>
+    </div>
+</div>
+ 
+        <div class="content-area">
+            <div class="title">
+                jekyll blog
+            </div>
+            <div class="category-area">
+                「
+                <a href="https://wsttask.github.io/tags.html#task">
+                    <div class="category">
+                        task
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+              2024-03-01 604字
+            </div>
+            <div class="content">
+                <h3 id="示例">示例</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Jekyll 的 Categories 设计</td>
+      <td>Cotes’ Blog](https://cotes.page/posts/jekyll-categroies-design/)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="目标">目标</h3>
+
+<ul>
+  <li>读取_drafts中的目录结构，根据目录结构进行 jekyll 的Categories的设计
+    <ul>
+      <li>懂每个文件的Front matter约定是怎么做的</li>
+      <li>然后python脚本撰写categories</li>
+    </ul>
+  </li>
+  <li>目录可以与文件共存</li>
+  <li>只允许markdown文件</li>
+  <li>注意表示参考文件</li>
+</ul>
+
+<h3 id="问题">问题</h3>
+
+<ul>
+  <li>文件资源过多会不会卡顿？
+    <ul>
+      <li>不至于吧，到时候卡顿再说</li>
+    </ul>
+  </li>
+  <li>每一级目录都需要进行一个页面设计？
+    <ul>
+      <li>方案1，干脆直接展示所有文件</li>
+      <li>方案2，像资源管理器那样展示本级目录下的所有文件</li>
+      <li>方案3，展示本级目录下的文件夹，不展示md文件</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Jekyll 的 Categories 设计</td>
+      <td>Cotes’ Blog](https://cotes.page/posts/jekyll-categroies-design/)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="设计">设计</h3>
+
+<ul>
+  <li>layout中设计categoires.html，展示categoires界面</li>
+  <li>layout中设计category.html，展示单级目录</li>
+</ul>
+
+<h3 id="学习">学习</h3>
+
+<ul>
+  <li>Liquid</li>
+  <li>python</li>
+  <li>箭头展开，应该是js</li>
+  <li>bootstrap</li>
+</ul>
+
+<h3 id="问题-1">问题</h3>
+
+<ul>
+  <li>无法做出多重嵌套的效果</li>
+</ul>
+
+<h3 id="方案">方案</h3>
+
+<ul>
+  <li>使用permalink，这样生成的_site就是多级结构的样子
+    <ul>
+      <li>如何做目录呢</li>
+    </ul>
+  </li>
+  <li>我想是通过python写一个脚本，生成一个目录文件，里面按照结构生成目录文件，这样不需要jekyll进行读取，</li>
+</ul>
+
+            </div>
+        </div>
+    </body>
+</html>

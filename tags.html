@@ -5,7 +5,8 @@ title: Categories
 
 <div class="content-box">
     <div id="archives">
-        {% for category in site.categories %}
+        {% assign sorted_categories = site.categories | sort %}
+        {% for category in sorted_categories %}
         <div class="archive-group">
             {% capture category_name %}{{ category | first }}{% endcapture %}
             <div id="#{{ category_name | slugize }}"></div>
@@ -27,7 +28,7 @@ title: Categories
             [Tags]
         </div>
 
-        {% for category in site.categories %}
+        {% for category in sorted_categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <a
             class="category-item"

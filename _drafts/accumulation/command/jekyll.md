@@ -1,7 +1,7 @@
 ```cmd
 //实时渲染网页
 //在自动构建过程中对 _config.yml 的修改将不会被包含其中
-jekyll server --watch
+jekyll server --watch --drafts
 
 $ jekyll build
 # => 当前文件夹中的内容将会生成到 ./_site 文件夹中。
