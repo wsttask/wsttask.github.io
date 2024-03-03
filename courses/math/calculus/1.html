@@ -15,7 +15,7 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     
-<title>pyqt</title>
+<title>第一章、一元函数的极限与连续</title>
 
 
         <link rel="stylesheet" href="https://wsttask.github.io/styles/font.css">
@@ -40,40 +40,44 @@
  
         <div class="content-area">
             <div class="title">
-                pyqt
+                第一章、一元函数的极限与连续
             </div>
             <div class="category-area">
                 「
-                <a href="https://wsttask.github.io/tags.html#task">
+                <a href="https://wsttask.github.io/tags.html#calculus">
                     <div class="category">
-                        task
+                        calculus
                     </div>
                 </a>
                 」
             </div>
             <div class="char-counter">
-              2024-02-29 411字
+              2024-03-01 618字
             </div>
             <div class="content">
-                <p>首先看下相关的文章和视频，了解pyqt的基本使用方法。
-然后参考一下开源项目，理解每个模块的实现原理，最好能将其复现，然后做一些修改也能运行成功。
-最后需要实现一个识别系统（先不局限于文字，可以是物品等）。基本要求是：1.输入图片地址的按钮，能够加载图片；2.识别按钮，点击后在相应区域呈现识别的内容。；扩展要求：美化界面。</p>
+                <h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
 
-<h3 id="入门文章">入门文章</h3>
+<ol>
+  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
+  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
+  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
+  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+  <li><strong>介值定理</strong>：设$a&lt;b$ ，$f:[a,b]\rightarrow R$ 是$[a,b]$ 上的连续函数，则对任意的 $\eta\in[f(a),f(b)]$ ，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+</ol>
 
-<p>https://blog.csdn.net/m0_57021623/article/details/123459038</p>
+<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
 
-<h3 id="一个项目参考">一个项目参考</h3>
+<p>准则1：夹逼准则</p>
 
-<p><a href="https://blog.csdn.net/yue200403/article/details/107247161?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170894900116800215097793%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=170894900116800215097793&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-107247161-null-null.142^v99^pc_search_result_base3&amp;utm_term=pyqt%E8%AF%86%E5%88%AB&amp;spm=1018.2226.3001.4187">1</a></p>
+<p>可推出第一个重要极限$\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
 
-<h3 id="入门视频">入门视频</h3>
+<p>根据$\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
 
-<p>https://www.bilibili.com/video/BV1LT4y1e72X/?spm_id_from=333.337.search-card.all.click&amp;vd_source=0054dba367e1300a27c2e38a41bd2a6b</p>
+<p>准则2：单调有界准则</p>
 
-<p>以上仅为部分参考，如有疑问可自行查找其他工具。
-另外，使用gpt辅助生成代码是不错的办法。</p>
+<p>可推出第二个重要极限$\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
 
+<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>
 
             </div>
         </div>
