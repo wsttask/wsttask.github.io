@@ -5,7 +5,7 @@ title: Categories
 
 <div class="content-box">
     <div id="archives">
-        {% assign sorted_categories = site.categories | sort %}
+        {% assign sorted_categories = site.categories | sort_natural %}
         {% for category in sorted_categories %}
         <div class="archive-group">
             {% capture category_name %}{{ category | first }}{% endcapture %}
