@@ -62,6 +62,14 @@ a {
     order: 2;
 }
 
+.footer {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 54px;
+    height: 54px;
+}
+
 .archive-group {
     box-sizing: border-box;
     background-color: #FFF;

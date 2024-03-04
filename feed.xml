@@ -1,4 +1,355 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-04T15:55:06+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">常用等价无穷小</title><link href="https://wsttask.github.io/calculus/2024/03/04/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html" rel="alternate" type="text/html" title="常用等价无穷小" /><published>2024-03-04T15:54:57+08:00</published><updated>2024-03-04T15:54:57+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/04/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/04/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-04T16:55:07+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">符号网站</title><link href="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="符号网站" /><published>2024-03-04T16:27:23+08:00</published><updated>2024-03-04T16:27:23+08:00</updated><id>https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html"><![CDATA[<p><a href="https://symbl.cc/cn/">SYMBL (◕‿◕) 符号、Emoji、字符、脚本、字母表、象形文字和整个Unicode</a></p>
+
+<p><a href="https://symbl.cc/cn/tools/emoji-keyboard/">表情符号键盘: 复制和粘贴任何表情符号 🔥 (◕‿◕) SYMBL</a></p>
+
+<p><a href="https://www.iconfont.cn/">iconfont-阿里巴巴矢量图标库</a></p>
+
+<p><a href="https://www.flaticon.com/">Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS (flaticon.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[SYMBL (◕‿◕) 符号、Emoji、字符、脚本、字母表、象形文字和整个Unicode]]></summary></entry><entry><title type="html">markdown中使用LaTex数学公式</title><link href="https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="markdown中使用LaTex数学公式" /><published>2024-03-04T16:19:24+08:00</published><updated>2024-03-04T16:19:24+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html"><![CDATA[<h3 id="在线latex编辑网站"><a href="https://www.latexlive.com/">在线LaTex编辑网站</a></h3>
+
+<p><a href="https://blog.csdn.net/NSJim/article/details/109045914\">LaTeX数学公式-详细教程_latex怎么输入公式-CSDN博客</a></p>
+
+<h3 id="插入latex的方法">插入LaTex的方法</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;</span> <span class="nt">img</span> <span class="na">src=</span><span class="s">"http://latex.codecogs.com/gif.latex?\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^2}"</span> <span class="nt">/&gt;</span>
+![](http://latex.codecogs.com/gif.latex?\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^2})
+</code></pre></div></div>
+
+<p><img src="http://latex.codecogs.com/gif.latex?%5Csqrt%7B%5Csum%5Climits_%7Bi=1%7D%5E%7Bn%7D(x_%7Bi%7D-y_%7Bi%7D)%5E2%7D" alt="" /></p>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[在线LaTex编辑网站]]></summary></entry><entry><title type="html">Snipaste</title><link href="https://wsttask.github.io/2024/03/04/snipaste.html" rel="alternate" type="text/html" title="Snipaste" /><published>2024-03-04T16:18:11+08:00</published><updated>2024-03-04T16:18:11+08:00</updated><id>https://wsttask.github.io/2024/03/04/snipaste</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/snipaste.html"><![CDATA[<p>微软的一款贴图截图软件，很好用</p>
+
+<p><a href="https://zh.snipaste.com/">Snipaste - 截图 + 贴图</a></p>
+
+<p>F1 截图，再按 F3 贴图</p>]]></content><author><name></name></author><summary type="html"><![CDATA[微软的一款贴图截图软件，很好用]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-04T16:16:20+08:00</published><updated>2024-03-04T16:16:20+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="极限的性质">极限的性质</h3>
+
+<ol>
+  <li>
+    <p><strong>唯一性</strong>：若极限存在，则极限一定唯一</p>
+  </li>
+  <li>
+    <p><strong>保号性</strong>：设 $\displaystyle\lim_{x\rightarrow a}f(x)=A&gt;0\quad(或\quad A&lt;0)$ ，则存在 $\delta&gt;0$ ，当$0&lt;\mid x-a \mid&lt;\delta$ 时，有$f(x)&gt;0\quad (或 \quad f(x)&lt;0)$</p>
+  </li>
+  <li>
+    <p><strong>有界性</strong>：</p>
+
+    <ol>
+      <li>
+        <p><strong>数列极限的有界性</strong></p>
+      </li>
+      <li>
+        <p><strong>函数极限的局部有界性</strong></p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
+
+<ol>
+  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
+  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
+  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
+  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+  <li><strong>介值定理</strong>：设$a&lt;b$ ，$f:[a,b]\rightarrow R$ 是$[a,b]$ 上的连续函数，则对任意的 $\eta\in[f(a),f(b)]$ ，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
+</ol>
+
+<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
+
+<p>准则1：夹逼准则</p>
+
+<p>可推出第一个重要极限 $\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
+
+<p>根据 $\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
+
+<p>准则2：单调有界准则</p>
+
+<p>可推出第二个重要极限 $\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
+
+<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极限的性质]]></summary></entry><entry><title type="html">markdown语法手册</title><link href="https://wsttask.github.io/markdown/2024/03/04/Markdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C.html" rel="alternate" type="text/html" title="markdown语法手册" /><published>2024-03-04T15:56:38+08:00</published><updated>2024-03-04T15:56:38+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/04/Markdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/04/Markdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C.html"><![CDATA[<p><a href="https://blog.csdn.net/NSJim/article/details/89697630">Markdown详细教程+技巧总结_markdown课程-CSDN博客</a></p>
+
+<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*斜体*或_斜体_
+**粗体**
+***加粗斜体***
+~~删除线~~
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<ul>
+  <li><em>这是一段斜体</em></li>
+  <li><strong>这是一段粗体</strong></li>
+  <li><strong><em>这是一段加粗斜体</em></strong></li>
+  <li><del>这是一段删除线</del></li>
+</ul>
+
+<h3 id="2-分级标题">2. 分级标题</h3>
+
+<p>第一种写法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>这是一个一级标题
+============================
+这是一个二级标题
+--------------------------------------------------
+</code></pre></div></div>
+
+<p>第二种写法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre></div></div>
+
+<p>由于用了[TOC]标记编辑器会把所有标题写到目录大纲中，在这里写的演示标题也会列进去，所以就不演示了。同学们自己在编辑器中观察，很简单，一级标题字号最大，依级递减。</p>
+
+<h3 id="3-超链接">3. 超链接</h3>
+
+<p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p>
+
+<h4 id="31-行内式">3.1. 行内式</h4>
+
+<p>语法说明：</p>
+
+<ul>
+  <li>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。<a href="链接地址 “链接标题”">链接文字</a>’这样的形式。链接地址与链接标题前有一个空格。</li>
+</ul>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)
+欢迎来到[梵居闹市](http://blog.leanote.com/freewalk "梵居闹市")
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<p>欢迎来到<a href="http://blog.leanote.com/freewalk">梵居闹市</a></p>
+
+<p>欢迎来到<a href="http://blog.leanote.com/freewalk" title="梵居闹市">梵居闹市</a></p>
+
+<h3 id="4-锚点">4. 锚点</h3>
+
+<p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
+
+<p>注意：</p>
+
+<ol>
+  <li>Markdown Extra 只支持在标题后插入锚点，其它地方无效。</li>
+  <li>Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。</li>
+</ol>
+
+<p>语法描述：</p>
+
+<p>在你准备跳转到的指定标题后插入锚点{#标记}，然后在文档的其它地方写上连接到锚点的链接。</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.## 0. 目录{#index}
+2.
+3.跳转到[目录](#index)
+</code></pre></div></div>
+
+<h3 id="5-列表">5. 列表</h3>
+
+<h4 id="51-无序列表">5.1. 无序列表</h4>
+
+<p>使用 *，+，- 表示无序列表。</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 无序列表项 一
+- 无序列表项 二
+- 无序列表项 三
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<ul>
+  <li>无序列表项 一</li>
+  <li>无序列表项 二</li>
+  <li>无序列表项 三</li>
+</ul>
+
+<h4 id="52-有序列表">5.2. 有序列表</h4>
+
+<p>有序列表则使用数字接着一个英文句点。</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 有序列表项 一
+2. 有序列表项 二
+3. 有序列表项 三
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<ol>
+  <li>有序列表项 一</li>
+  <li>有序列表项 二</li>
+  <li>有序列表项 三</li>
+</ol>
+
+<h3 id="6-引用">6. 引用</h3>
+
+<p>语法说明：</p>
+
+<p>引用需要在被引用的文本前加上&gt;符号。</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 这是一个有两段文字的引用,
+&gt; 无意义的占行文字1.
+&gt; 无意义的占行文字2.
+&gt; 
+&gt; 无意义的占行文字3.
+&gt; 无意义的占行文字4.
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<blockquote>
+  <p>这是一个有两段文字的引用,
+无意义的占行文字1.
+无意义的占行文字2.</p>
+
+  <p>无意义的占行文字3.
+无意义的占行文字4.</p>
+</blockquote>
+
+<p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt; ：</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 这是一个有两段文字的引用,
+无意义的占行文字1.
+无意义的占行文字2.
+&gt; 无意义的占行文字3.
+无意义的占行文字4.
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<blockquote>
+  <p>这是一个有两段文字的引用,
+无意义的占行文字1.
+无意义的占行文字2.
+无意义的占行文字3.
+无意义的占行文字4.</p>
+</blockquote>
+
+<h3 id="7-插入图像">7. 插入图像</h3>
+
+<p>图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。</p>
+
+<p>语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。</p>
+
+<h4 id="71-行内式">7.1. 行内式</h4>
+
+<p>语法说明：<img src="图片地址 “图片Title”" alt="图片Alt" /></p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 美丽花儿： 
+2. ![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<p>美丽花儿：</p>
+
+<h4 id="72-参考式">7.2. 参考式</h4>
+
+<p>语法说明：</p>
+
+<p>在文档要插入图片的地方写![图片Alt][标记]</p>
+
+<p>在文档的最后写上[标记]:图片地址 “Title”</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 美丽花儿：
+2. ![美丽花儿][flower]
+3. 
+4. [flower]:http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg  "美丽花儿"
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<p>美丽花儿：</p>
+
+<h3 id="8-代码">8. 代码</h3>
+
+<p>对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用`符号（一般在ESC键下方）包裹代码。</p>
+
+<p>语法说明：</p>
+
+<p>插入行内代码，即插入一个单词或者一句代码的情况，使用<code class="language-plaintext highlighter-rouge">code</code>这样的形式插入。</p>
+
+<p>插入多行代码，可以使用缩进或者```,具体看示例。</p>
+
+<p>注意： 缩进式插入前方必须有空行</p>
+
+<h4 id="81-行内式">8.1. 行内式</h4>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C语言里的函数 `scanf()` 怎么使用？
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<p>C语言里的函数 <code class="language-plaintext highlighter-rouge">scanf()</code> 怎么使用？</p>
+
+<h4 id="82-缩进式多行代码">8.2. 缩进式多行代码</h4>
+
+<p>缩进 4 个空格或是 1 个制表符</p>
+
+<p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
+
+<p>代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    #include &lt;stdio.h&gt;
+    int main(void)
+    {
+        printf("Hello world\n");
+    }
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+int main(void)
+{
+    printf("Hello world\n");
+}
+</code></pre></div></div>
+
+<p>8.3. 用六个`包裹多行代码
+代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\```
+#include &lt;stdio.h&gt;
+int main(void)
+{
+    printf("Hello world\n");
+}
+\```
+</code></pre></div></div>
+
+<p>显示效果：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+int main(void)
+{
+    printf("Hello world\n");
+}
+</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[Markdown详细教程+技巧总结_markdown课程-CSDN博客]]></summary></entry><entry><title type="html">markdown 中常用的html标签</title><link href="https://wsttask.github.io/markdown/2024/03/04/%E5%B8%B8%E7%94%A8html.html" rel="alternate" type="text/html" title="markdown 中常用的html标签" /><published>2024-03-04T15:56:34+08:00</published><updated>2024-03-04T15:56:34+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/04/%E5%B8%B8%E7%94%A8html</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/04/%E5%B8%B8%E7%94%A8html.html"><![CDATA[<h4 id="超链接">超链接</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"url"</span><span class="nt">&gt;</span>链接文本<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[超链接]]></summary></entry><entry><title type="html">常用等价无穷小</title><link href="https://wsttask.github.io/calculus/2024/03/04/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html" rel="alternate" type="text/html" title="常用等价无穷小" /><published>2024-03-04T15:54:57+08:00</published><updated>2024-03-04T15:54:57+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/04/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/04/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
 
 <h4 id="与x相关">与x相关</h4>
 
@@ -12,10 +363,7 @@
 
 <p>$ln(1+x) \sim x$</p>
 
-<p>$e^x -1 \sim x$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">markdown 中常用的html标签</title><link href="https://wsttask.github.io/markdown/2024/03/04/%E5%B8%B8%E7%94%A8html.html" rel="alternate" type="text/html" title="markdown 中常用的html标签" /><published>2024-03-04T15:49:46+08:00</published><updated>2024-03-04T15:49:46+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/04/%E5%B8%B8%E7%94%A8html</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/04/%E5%B8%B8%E7%94%A8html.html"><![CDATA[<h4 id="超链接">超链接</h4>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"url"</span><span class="nt">&gt;</span>链接文本<span class="nt">&lt;/a&gt;</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[超链接]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-04T15:49:23+08:00</published><updated>2024-03-04T15:49:23+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<p>$e^x -1 \sim x$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-04T15:49:23+08:00</published><updated>2024-03-04T15:49:23+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -902,56 +1250,4 @@ checked: 默认选中
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"main.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
 <span class="c">&lt;!-- rel="stylesheet" 代表引入的href是层叠样式表 --&gt;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[HTML是什么]]></summary></entry><entry><title type="html">电子书资源网站</title><link href="https://wsttask.github.io/2024/03/04/%E7%94%B5%E5%AD%90%E4%B9%A6%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="电子书资源网站" /><published>2024-03-04T15:25:28+08:00</published><updated>2024-03-04T15:25:28+08:00</updated><id>https://wsttask.github.io/2024/03/04/%E7%94%B5%E5%AD%90%E4%B9%A6%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/%E7%94%B5%E5%AD%90%E4%B9%A6%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99.html"><![CDATA[<p><a href="https://xmsoushu.com/#/">熊猫搜书_熊猫搜索_一站式读书学习导航站_聚合电子书及科研文档搜索_学习资料检索和分享_xmsoushu_xmsearch</a></p>
-
-<p><a href="https://www.jiumodiary.com/">Jiumo Search 鸠摩搜索 - 文档搜索引擎 (jiumodiary.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[熊猫搜书_熊猫搜索_一站式读书学习导航站_聚合电子书及科研文档搜索_学习资料检索和分享_xmsoushu_xmsearch]]></summary></entry><entry><title type="html">LaTex介绍</title><link href="https://wsttask.github.io/latex/2024/03/04/LaTex.html" rel="alternate" type="text/html" title="LaTex介绍" /><published>2024-03-04T15:24:16+08:00</published><updated>2024-03-04T15:24:16+08:00</updated><id>https://wsttask.github.io/latex/2024/03/04/LaTex</id><content type="html" xml:base="https://wsttask.github.io/latex/2024/03/04/LaTex.html"><![CDATA[<p><a href="https://blog.csdn.net/wji15/article/details/126649986?ops_request_misc=%7B%22request%5Fid%22%3A%22170912185116800182128893%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fall.%22%7D&amp;request_id=170912185116800182128893&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-126649986-null-null.142^v99^pc_search_result_base2&amp;utm_term=科普 LaTex&amp;spm=1018.2226.3001.4187">【科普向】LaTeX简介</a></p>
-
-<p><a href="https://blog.csdn.net/NSJim/article/details/109066847?ops_request_misc=%7B%22request%5Fid%22%3A%22170911015216800197041901%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;request_id=170911015216800197041901&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-109066847-null-null.142^v99^pc_search_result_base2&amp;utm_term=Latex&amp;spm=1018.2226.3001.4187">LaTeX详细教程+技巧总结_csdn latex-CSDN博客</a></p>]]></content><author><name></name></author><category term="LaTex" /><summary type="html"><![CDATA[【科普向】LaTeX简介]]></summary></entry><entry><title type="html">markdown中使用LaTex数学公式</title><link href="https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="markdown中使用LaTex数学公式" /><published>2024-03-04T15:24:13+08:00</published><updated>2024-03-04T15:24:13+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html"><![CDATA[<h3 id="在线latex编辑网站"><a href="https://www.latexlive.com/">在线LaTex编辑网站</a></h3>
-
-<p>[LaTeX数学公式-详细教程_latex怎么输入公式-CSDN博客](https://blog.csdn.net/NSJim/article/details/109045914\</p>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[在线LaTex编辑网站]]></summary></entry><entry><title type="html">公式集合</title><link href="https://wsttask.github.io/calculus/2024/03/04/README.html" rel="alternate" type="text/html" title="公式集合" /><published>2024-03-04T15:17:49+08:00</published><updated>2024-03-04T15:17:49+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/04/README</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/04/README.html"><![CDATA[<h1 id="求导公式">求导公式</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/1.jpg" alt="" /></p>
-
-<h1 id="三角函数公式">三角函数公式</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/2.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/3.jpg" alt="" /></p>
-
-<h1 id="常用等价无穷小">常用等价无穷小</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/4.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/5.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/6.jpg" alt="" /></p>
-
-<p><a href="https://www.zhihu.com/question/20829733">(63 封私信 / 81 条消息) 如何巧记「积化和差」与「和差化积」公式？ - 知乎 (zhihu.com)</a></p>
-
-<p>积化和差</p>
-
-<p>正余余正，正加正减；</p>
-
-<p>余余正正，余加负余减</p>
-
-<p>和差化积</p>
-
-<p>正加正，正在前；</p>
-
-<p>正减正，余在前；</p>
-
-<p>余加余，余并肩；</p>
-
-<p>余减余，负正弦。</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[求导公式]]></summary></entry><entry><title type="html">积分的计算方法</title><link href="https://wsttask.github.io/2024/03/04/%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95.html" rel="alternate" type="text/html" title="积分的计算方法" /><published>2024-03-04T15:14:24+08:00</published><updated>2024-03-04T15:14:24+08:00</updated><id>https://wsttask.github.io/2024/03/04/%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95.html"><![CDATA[<font color="orange">并不是所有的数学定义都有对应的物理（现实）意义，先学会不明白其物理意义是什么也能计算。</font>
-
-<p>题目一：</p>
-
-<p>:question:计算$\int_c1dx$</p>
-
-<p>:heavy_check_mark:物理意义是这条曲线终末两个点的在$x$轴上的分量的差乘一，方法一，数形结合，联系物理意义。</p>
-
-<p>题目二：</p>
-
-<p>:question:计算$\int_cdu(x,y)$</p>
-
-<p>:heavy_check_mark:相当于计算$\int_c1du(x,y)$，及求$u(x,y)$关于1的原函数，即$u(x,y)$，再用曲线的两个端点相减，即积分结果与路径无关，方法二:求积分既是求原函数，可以利用原函数来求,把函数整个看成一个整体。求其原函数。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[并不是所有的数学定义都有对应的物理（现实）意义，先学会不明白其物理意义是什么也能计算。]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[HTML是什么]]></summary></entry></feed>
