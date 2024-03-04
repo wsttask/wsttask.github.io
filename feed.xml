@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-04T17:00:07+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">符号网站</title><link href="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="符号网站" /><published>2024-03-04T16:27:23+08:00</published><updated>2024-03-04T16:27:23+08:00</updated><id>https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html"><![CDATA[<p><a href="https://symbl.cc/cn/">SYMBL (◕‿◕) 符号、Emoji、字符、脚本、字母表、象形文字和整个Unicode</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-04T17:20:43+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">极值点、拐点、驻点、专题总结</title><link href="https://wsttask.github.io/calculus/2024/03/04/%E6%9E%81%E5%80%BC%E7%82%B9-%E9%A9%BB%E7%82%B9-%E6%8B%90%E7%82%B9.html" rel="alternate" type="text/html" title="极值点、拐点、驻点、专题总结" /><published>2024-03-04T17:19:00+08:00</published><updated>2024-03-04T17:19:00+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/04/%E6%9E%81%E5%80%BC%E7%82%B9%E3%80%81%E9%A9%BB%E7%82%B9%E3%80%81%E6%8B%90%E7%82%B9</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/04/%E6%9E%81%E5%80%BC%E7%82%B9-%E9%A9%BB%E7%82%B9-%E6%8B%90%E7%82%B9.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/676730495">极值点、拐点、驻点、专题总结 - 知乎 (zhihu.com)</a></p>
+
+<ul>
+  <li>
+    <p><strong>极值点</strong>：函数在某一点的值大于该点邻域内任意一点的值 </p>
+
+    <ul>
+      <li>
+        <p>极值点可能是驻点，驻点也可能是极值点</p>
+      </li>
+      <li>
+        <p>极值点只能出现在导数为0的点和不可导点</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>驻点</strong>：函数在一点处的一阶导数为零</p>
+  </li>
+  <li>
+    <p><strong>拐点</strong>：出现在二阶导为零或不可导点</p>
+
+    <ul>
+      <li>二阶可导时，拐点一定能推出二阶导数为0，但是二阶导数为0不一定是拐点。</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极值点、拐点、驻点、专题总结 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">jekyll blog</title><link href="https://wsttask.github.io/task/2024/03/04/jekyllBlog.html" rel="alternate" type="text/html" title="jekyll blog" /><published>2024-03-04T17:11:23+08:00</published><updated>2024-03-04T17:11:23+08:00</updated><id>https://wsttask.github.io/task/2024/03/04/jekyllBlog</id><content type="html" xml:base="https://wsttask.github.io/task/2024/03/04/jekyllBlog.html"><![CDATA[<h3 id="示例">示例</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Jekyll 的 Categories 设计</td>
+      <td>Cotes’ Blog](https://cotes.page/posts/jekyll-categroies-design/)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="目标">目标</h3>
+
+<ul>
+  <li>
+    <p>读取_drafts中的目录结构，根据目录结构进行 jekyll 的Categories的设计</p>
+
+    <ul>
+      <li>懂每个文件的Front matter约定是怎么做的</li>
+      <li>然后python脚本撰写categories</li>
+    </ul>
+  </li>
+  <li>
+    <p>目录可以与文件共存</p>
+  </li>
+  <li>
+    <p>只允许markdown文件</p>
+  </li>
+  <li>
+    <p>注意表示参考文件</p>
+  </li>
+</ul>
+
+<h3 id="问题">问题</h3>
+
+<ul>
+  <li>文件资源过多会不会卡顿？
+    <ul>
+      <li>不至于吧，到时候卡顿再说</li>
+    </ul>
+  </li>
+  <li>每一级目录都需要进行一个页面设计？
+    <ul>
+      <li>方案1，干脆直接展示所有文件</li>
+      <li>方案2，像资源管理器那样展示本级目录下的所有文件</li>
+      <li>方案3，展示本级目录下的文件夹，不展示md文件</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Jekyll 的 Categories 设计</td>
+      <td>Cotes’ Blog](https://cotes.page/posts/jekyll-categroies-design/)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="设计">设计</h3>
+
+<ul>
+  <li>layout中设计categoires.html，展示categoires界面</li>
+  <li>layout中设计category.html，展示单级目录</li>
+</ul>
+
+<h3 id="学习">学习</h3>
+
+<ul>
+  <li>Liquid</li>
+  <li>python</li>
+  <li>箭头展开，应该是js</li>
+  <li>bootstrap</li>
+</ul>
+
+<h3 id="问题-1">问题</h3>
+
+<ul>
+  <li>无法做出多重嵌套的效果</li>
+</ul>
+
+<h3 id="方案">方案</h3>
+
+<ul>
+  <li>使用permalink，这样生成的_site就是多级结构的样子
+    <ul>
+      <li>如何做目录呢</li>
+    </ul>
+  </li>
+  <li>我想是通过python写一个脚本，生成一个目录文件，里面按照结构生成目录文件，这样不需要jekyll进行读取，</li>
+</ul>
+
+<p>js手机版可以，电脑版不行</p>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[示例]]></summary></entry><entry><title type="html">Zoomit</title><link href="https://wsttask.github.io/2024/03/04/zoomit.html" rel="alternate" type="text/html" title="Zoomit" /><published>2024-03-04T17:05:06+08:00</published><updated>2024-03-04T17:05:06+08:00</updated><id>https://wsttask.github.io/2024/03/04/zoomit</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/zoomit.html"><![CDATA[<p>zoomit</p>]]></content><author><name></name></author><summary type="html"><![CDATA[zoomit]]></summary></entry><entry><title type="html">符号网站</title><link href="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="符号网站" /><published>2024-03-04T16:27:23+08:00</published><updated>2024-03-04T16:27:23+08:00</updated><id>https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html"><![CDATA[<p><a href="https://symbl.cc/cn/">SYMBL (◕‿◕) 符号、Emoji、字符、脚本、字母表、象形文字和整个Unicode</a></p>
 
 <p><a href="https://symbl.cc/cn/tools/emoji-keyboard/">表情符号键盘: 复制和粘贴任何表情符号 🔥 (◕‿◕) SYMBL</a></p>
 
@@ -363,891 +480,4 @@ int main(void)
 
 <p>$ln(1+x) \sim x$</p>
 
-<p>$e^x -1 \sim x$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-04T15:49:23+08:00</published><updated>2024-03-04T15:49:23+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
-
-<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
-
-<h1 id="github">github</h1>
-
-<h3 id="web-1"><a href="https://github.com/wsttask/web">web</a></h3>
-
-<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
-
-<h1 id="tanslation">tanslation</h1>
-
-<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
-
-<h1 id="chatgpt">ChatGPT</h1>
-
-<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
-
-<h1 id="latex">LaTex</h1>
-
-<h3 id="latex在线编辑器"><a href="https://www.latexlive.com/">LaTex在线编辑器</a></h3>
-
-<h1 id="图形计算器">图形计算器</h1>
-
-<h3 id="desmos"><a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos</a></h3>
-
-<h1 id="wps">WPS</h1>
-
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
-
-<h1 id="搜索引擎">搜索引擎</h1>
-
-<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
-
-<h1 id="mail">Mail</h1>
-
-<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
-
-<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
-
-<h1 id="time">TIME</h1>
-
-<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
-
-<h1 id="game">GAME</h1>
-
-<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
-
-<h1 id="音标">音标</h1>
-
-<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
-
-<h1 id="视频">视频</h1>
-
-<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
-
-<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
-
-<h1 id="西工大">西工大</h1>
-
-<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
-
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>
-
-<h1 id="中国考试教育网">中国考试教育网</h1>
-
-<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Html5文件规范</title><link href="https://wsttask.github.io/2024/03/04/html5%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83.html" rel="alternate" type="text/html" title="Html5文件规范" /><published>2024-03-04T15:38:47+08:00</published><updated>2024-03-04T15:38:47+08:00</updated><id>https://wsttask.github.io/2024/03/04/html5%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/html5%E6%96%87%E4%BB%B6%E8%A7%84%E8%8C%83.html"><![CDATA[<h1 id="html-5-doctype-标签">HTML 5 &lt;!DOCTYPE&gt; 标签</h1>
-
-<h2 id="定义和用法">定义和用法</h2>
-
-<p>&lt;!DOCTYPE&gt;</p>
-
-<p>声明必须位于 HTML5 文档中的第一行，也就是位于 &lt;html&gt; 标签之前。该标签告知浏览器文档所使用的 HTML 规范。</p>
-
-<p>doctype 声明不属于 HTML 标签；tag; 它是一条指令，告诉浏览器编写页面所用的标记的版本。</p>
-
-<p>doctype：document type</p>
-
-<p><strong>注释：</strong>&lt;!DOCTYPE&gt; 标签没有结束标签！</p>
-
-<p><strong>提示：</strong>&lt;!DOCTYPE&gt; 对大小写不敏感。</p>
-
-<h2 id="什么是-html5">什么是 HTML5？</h2>
-
-<p>HTML5 是最新的 HTML 标准。</p>
-
-<p>HTML5 是专门为承载丰富的 web 内容而设计的，并且无需额外插件。</p>
-
-<p>HTML5 拥有新的语义、图形以及多媒体元素。</p>
-
-<p>HTML5 提供的新元素和新的 API 简化了 web 应用程序的搭建。</p>
-
-<p>HTML5 是跨平台的，被设计为在不同类型的硬件（PC、平板、手机、电视机等等）之上运行。</p>
-
-<h1 id="head">head</h1>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>First webpage<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!--
-        viewport窗口
-meta name="viewport" content="width=device-width, initial-scale=1"
-    可以让网页的宽度自动适应手机屏幕的宽度    
-    --&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-</code></pre></div></div>
-
-<h1 id="注释">注释</h1>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!--
-这是html的注释规范
---&gt;</span>
-</code></pre></div></div>
-
-<h1 id="img">img</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>属性</th>
-      <th>属性值</th>
-      <th>说明</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>src</td>
-      <td>图片路径</td>
-      <td>必须属性</td>
-    </tr>
-    <tr>
-      <td>alt</td>
-      <td>文本</td>
-      <td>替换文本。图像不能显示的文字</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>文本</td>
-      <td>提示文本。鼠标悬停在图像上显示的文字</td>
-    </tr>
-    <tr>
-      <td>width</td>
-      <td>像素</td>
-      <td>设置宽度</td>
-    </tr>
-    <tr>
-      <td>height</td>
-      <td>像素</td>
-      <td>设置高度</td>
-    </tr>
-    <tr>
-      <td>border</td>
-      <td>像素</td>
-      <td>设置边框粗细</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>当您同时指定height和 时width，图像可能会丢失其纵横比。您可以通过仅指定width并设置height为auto使用 CSS 属性来保留纵横比。</p>
-
-<h1 id="a">a</h1>
-
-<p>1）a 标签的 href 属性值如果是以 http 开头的，那么浏览器会马上去解释该网址：首先会在本地机器去找一个 hosts 文件， 如果在 hosts 文件上该域名没有对应的主机，那么浏览器就去到对应的 dns 服务器去寻找该域名对应的主机号。如果找到了对应的主机，那么该请求就会发给对应的主机，最后打开该页面。
-2）如果 a 标签的 href 属性值没有以任何协议开头，那么浏览就会启动 file 协议解释器去解释该资源路径。
-3）如果 a 标签的 href 属性值并不是以 http 协议，而且其他的一些协议，那么这时候浏览器就会到我们本地电脑的注册表中去查找是否有处理这种协议的应用程序，如果有，那么马上启动该应用程序处理该协议。</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://bilibili.com"</span><span class="nt">&gt;</span>网址直接跳转<span class="nt">&lt;/a&gt;</span> 
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"images/1.webp"</span><span class="nt">&gt;</span>相对路径跳转<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"hello.exe"</span><span class="nt">&gt;</span>如果是打不开的文件，则下载之<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>空链接是刷新<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>#是回到顶部<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span><span class="nt">&gt;</span>禁止链接跳转<span class="nt">&lt;/a&gt;</span>
-
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://bilibili.com"</span> <span class="na">tatget=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>新窗口打开网页<span class="nt">&lt;/a&gt;</span> 
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://bilibili.com"</span> <span class="na">tatget=</span><span class="s">"_self"</span><span class="nt">&gt;</span>当前窗口打开网页<span class="nt">&lt;/a&gt;</span> 
-</code></pre></div></div>
-
-<h1 id="label">label</h1>
-
-<p>显示关联</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>爱好：
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'checkbox'</span> <span class="na">name=</span><span class="s">'basket'</span> <span class="na">id=</span><span class="s">'basketball'</span><span class="nt">&gt;</span>   
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"basketball"</span><span class="nt">&gt;</span>篮球<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'checkbox'</span> <span class="na">name=</span><span class="s">'football'</span> <span class="na">id=</span><span class="s">'football'</span><span class="nt">&gt;</span>   
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"football"</span><span class="nt">&gt;</span>足球<span class="nt">&lt;/label&gt;</span>
-</code></pre></div></div>
-
-<p><strong>优点</strong>：减少标签嵌套层数；label标签和表单可以在不同的位置
-<strong>缺点</strong>：控件需要定义id属性；label标签和表单控件不利于作为一个整体来控制</p>
-
-<p>隐式关联</p>
-
-<p>直接将表单控件放到label标签内，这种情况下，label标签只能包含一个表单元素，包含多个只对第一个有效</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>点击我可使文本框获得焦点
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">name=</span><span class="s">'theinput'</span> <span class="na">id=</span><span class="s">'theinput'</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-</code></pre></div></div>
-
-<p><strong>优点</strong>：控件无需定义id；标签和控件方便作为一个整体控制
-<strong>缺点</strong>：增加了标签嵌套层数；不能将标签和关联控件放到不同的位置</p>
-
-<h1 id="css类选择器和id选择器的异同">CSS类选择器和ID选择器的异同</h1>
-
-<p>1.id属性是标准属性，任何元素都可以有id属性。
-2.使用id选择器时，要在id值前加上”#”
-3.id选择器只能选中一个元素，同一个页面要保证id的唯一性(不同元素有相同id，也属于非法)
-4.定义id时，必须要以字母开头，可以包含数字、下划线等符号。
-5.定义id时，不要与标签名相同</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>ID选择器<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-        <span class="nf">#one</span><span class="p">{</span>
-            <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="nf">#two</span><span class="p">{</span>
-            <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;ul&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">"one"</span><span class="nt">&gt;</span>ID选择器1<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">"two"</span><span class="nt">&gt;</span>ID选择器2<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>ID选择器3<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>ID选择器4<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>ID选择器5<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>ID选择器6<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<p>1.class属性是标准属性，任何元素都可以有class属性。
-2.使用class选择器时，要在class值前加上”.”
-3.class选择器可以被多个元素共同使用，不同元素可以有相同的class值
-4.同一个元素可以有多个类名，多个类名时要用空格隔开
-5.尽量使用类选择器，而不是id选择器。(id一般是js使用，class是css使用)</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>类选择器<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-        <span class="nc">.one</span><span class="p">{</span>
-            <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
-            <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="nc">.two</span><span class="p">{</span>
-            <span class="nl">font-size</span><span class="p">:</span><span class="m">30px</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"one"</span><span class="nt">&gt;</span>我要自学网1<span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"one two"</span><span class="nt">&gt;</span>我要自学网2<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"one"</span><span class="nt">&gt;</span>我要自学网3<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"two"</span><span class="nt">&gt;</span>Strong元素下我要自学网<span class="nt">&lt;/strong&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h1 id="div">div</h1>
-
-<p>div 是 division 的简写，division 意为分割、区域、分组。比方说，当你将一系列的链接组合在一起，就形成了文档的一个 division。</p>
-
-<p>div 可定义文档中的分区或节（division/section）。div标签可以把文档分割为独立的、不同的部分。它可以用作严格的组织工具，并且不使用任何格式与其关联。如果用 id 或 class 来标记 ，那么该标签的作用会变得更加有效。</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">class</span><span class="err">：</span>
-<span class="nt">footer</span>
-
-<span class="nt">id</span><span class="err">：</span> 
-<span class="nt">footer</span>
-
-<span class="nt">定义class的css是用点</span><span class="err">：“</span><span class="o">.</span><span class="err">”，</span><span class="nt">如</span><span class="nc">.footer</span>
-<span class="nt">定义id的css是用井号</span><span class="err">“#”，</span><span class="nt">如</span><span class="nf">#footer</span>
-
-<span class="nt">如下面</span><span class="err">：</span>
-<span class="o">*</span> <span class="p">{</span>
- <span class="nl">margin</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
- <span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">body</span><span class="p">{</span>
- <span class="nl">width</span><span class="p">:</span><span class="m">910px</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
- <span class="nl">margin-left</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span><span class="c">/*左右自动可以居中*/</span>
- <span class="nl">margin-right</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
- <span class="p">}</span>
-<span class="nc">.header</span><span class="p">{</span>
- <span class="nl">background-color</span><span class="p">:</span> <span class="m">#F6F</span><span class="p">;</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">910px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.content</span><span class="p">{</span>
- <span class="nl">background-color</span><span class="p">:</span> <span class="m">#FCF</span><span class="p">;</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">910px</span><span class="p">;</span>
- <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
- <span class="nl">padding-bottom</span><span class="p">:</span><span class="m">20px</span><span class="p">;</span>
-
- <span class="p">}</span>
-<span class="nc">.left</span><span class="p">{</span>
- <span class="nl">background-color</span><span class="p">:</span> <span class="m">#930</span><span class="p">;</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">290px</span><span class="p">;</span>
- <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
- <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
- <span class="nl">display</span><span class="p">:</span><span class="nb">inline</span><span class="p">;</span><span class="c">/*先把这个去掉看下，边距的问题，在IE6下双边据。加上这个就正常了*/</span>
- <span class="nl">margin-right</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
- <span class="p">}</span>
-<span class="nc">.mid</span><span class="p">{</span>
- <span class="nl">background-color</span><span class="p">:</span> <span class="m">#F06</span><span class="p">;</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">290px</span><span class="p">;</span>
- <span class="nl">margin-top</span><span class="p">:</span><span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.right</span><span class="p">{</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">290px</span><span class="p">;</span>
- <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
- <span class="nl">background-color</span><span class="p">:</span><span class="m">#0F0</span><span class="p">;</span>
- <span class="nl">margin-right</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
- <span class="nl">display</span><span class="p">:</span><span class="nb">inline</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.kuai</span><span class="p">{</span>
- <span class="nl">background-color</span><span class="p">:</span> <span class="m">#00F</span><span class="p">;</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">890px</span><span class="p">;</span>
- <span class="nl">margin-left</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
- <span class="nl">display</span><span class="p">:</span><span class="nb">inline</span><span class="p">;</span>
- <span class="nl">margin-top</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.footer</span><span class="p">{</span>
- <span class="nl">background-color</span><span class="p">:</span> <span class="m">#000</span><span class="p">;</span>
- <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
- <span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
- <span class="nl">width</span><span class="p">:</span> <span class="m">910px</span><span class="p">;</span>
- <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h1 id="css调用">css调用</h1>
-
-<p>1.HTML文件顶部植入样式表</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-    <span class="nt">&lt;style </span><span class="na">tpye=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-        <span class="o">&lt;!</span><span class="nt">--</span>
-        <span class="nt">H1</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span> <span class="nl">font-family</span><span class="p">:</span> <span class="n">impact</span> <span class="p">}</span>
-        <span class="nt">P</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span> <span class="nl">font-family</span><span class="p">:</span> <span class="n">courier</span> <span class="p">}</span>
-        <span class="nt">--</span><span class="o">&gt;</span>
-    <span class="nt">&lt;/style&gt;</span>
-
-
-    <span class="nt">&lt;head&gt;</span>
-        <span class="nt">&lt;title&gt;</span>My First Stylesheet<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;/head&gt;</span>
-
-
-    <span class="nt">&lt;body&gt;</span>
-        <span class="nt">&lt;h1&gt;</span>Stylesheets: The Tool of the Web Design Gods<span class="nt">&lt;/h1&gt;</span>
-        <span class="nt">&lt;p&gt;</span>Amaze your friends! Squash your enemies!<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<p>2.HTML页面头部HEAD元素中调用</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span> <span class="c">&lt;!--页面头部内容开始--&gt;</span>
-    <span class="nt">&lt;title&gt;</span>头部调用样式<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;style&gt;</span>
-        <span class="nc">.content</span> <span class="p">{</span>
-            <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
-            <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
-            <span class="nl">color</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span>
-            <span class="nl">background</span><span class="p">:</span> <span class="m">#333333</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/head&gt;</span> <span class="c">&lt;!--页面头部内容结束--&gt;</span>
-
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>这是一个页面头部调用样式的示例。<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!--调用CSS样式--&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-</code></pre></div></div>
-
-<p>3.HTML元素中直接调用</p>
-
-<p>元素中直接使用样式的写法如下：</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;元素名称</span> <span class="na">style=</span><span class="s">"属性:属性值"</span><span class="nt">&gt;&lt;/元素名称&gt;</span>
-</code></pre></div></div>
-
-<p>说明：样式中直接使用CSS，语法是使用style标签。其中”“中，样式的语法结构和独立样式表中完全相同。</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width:400px; height:100px; background-color:#cccccc;font-size:18px;"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
-<p>4.使用link元素外部调用</p>
-
-<p>你可以将多个HTML文件都链接到一个中心样式表文件，这里是样式表功能发挥得淋漓尽致的地方，把CSS声明做成一个CSS文件有3个好处：网速处理速度会更快一些，尤其是多个网页共用一份CSS样式表时更为出色；维护方便，只需要一次修改CSS文件就可以批量改变网页；维护个人知识产权，防止别人直接通过源码查看CSS语言．</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
-    <span class="nt">&lt;head&gt;</span>
-        <span class="nt">&lt;title&gt;</span>my first stylesheet
-        <span class="nt">&lt;/title&gt;</span>
-        <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">stylesheet</span> <span class="na">href=</span><span class="s">"style.css"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/head&gt;</span>
-
-    <span class="nt">&lt;body&gt;</span>
-        <span class="nt">&lt;h1&gt;</span>stylesheets: the tool of the web design gods<span class="nt">&lt;/h1&gt;</span>
-        <span class="nt">&lt;p&gt;</span>amaze your friends! squash your enemies!<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">H1</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span> <span class="nl">font-family</span><span class="p">:</span> <span class="n">impact</span> <span class="p">}</span>
-<span class="nt">P</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span> <span class="nl">font-family</span><span class="p">:</span> <span class="n">courier</span> <span class="p">}</span>
-</code></pre></div></div>
-
-<h1 id="form">form</h1>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>  
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>    
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>提交按钮<span class="nt">&lt;/button</span> <span class="nt">&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</code></pre></div></div>
-
-<p>txt文本框</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入框：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"这是输入框"</span><span class="nt">&gt;&lt;br/&gt;</span>
-</code></pre></div></div>
-
-<p>password密码框</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>密码框：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">placeholder=</span><span class="s">"这是密码框"</span><span class="nt">&gt;&lt;br/&gt;</span>
-</code></pre></div></div>
-
-<p>radio单选框（name属性一样才能有只选择一个的效果）</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>单选框：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gender"</span><span class="nt">&gt;</span>男<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gender"</span><span class="nt">&gt;</span>女
-</code></pre></div></div>
-
-<p>radio单选框（<strong>如果想要设置默认选择则必须添加checked属性值，页面打开后就会默认选中一个选项</strong>）</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>单选框：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gender"</span> <span class="nt">&gt;</span>男<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gender"</span> <span class="na">checked</span><span class="nt">&gt;</span>女
-</code></pre></div></div>
-
-<p>checkbox多选框</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>多选框：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
-<p>submit提交按钮</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="n">value</span><span class="o">=</span><span class="s">"提交按钮上字体"</span><span class="o">&gt;</span>
-</code></pre></div></div>
-
-<p>select option下拉菜单（selected 初始选择）</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>下拉菜单
-<span class="nt">&lt;select&gt;</span>
-    <span class="nt">&lt;option&gt;</span>广州市<span class="nt">&lt;/option&gt;</span>
-    <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>海珠区<span class="nt">&lt;/option&gt;</span>
-    <span class="nt">&lt;option&gt;</span>月秀区<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-</code></pre></div></div>
-
-<p>textarea文本域</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>评论：<span class="nt">&lt;br/&gt;</span>
-<span class="nt">&lt;textarea&gt;&lt;/textarea&gt;</span>
-</code></pre></div></div>
-
-<p>lable标签</p>
-
-<ul>
-  <li>解释<strong>lable标签其实就是标签的说明文本</strong></li>
-  <li>作用：<strong>增大表单控件的点击范围</strong></li>
-  <li>运用范围：<strong>文本框、密码框、文件、单选框、多选框、下拉菜单、文本域等</strong></li>
-</ul>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>用户名：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"请输入用户名"</span><span class="nt">&gt;&lt;/label&gt;</span>
-<span class="nt">&lt;label&gt;</span>密码：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">placeholder=</span><span class="s">"请输入密码"</span><span class="nt">&gt;&lt;/label&gt;</span>
-</code></pre></div></div>
-
-<h1 id="列表标签">列表标签</h1>
-
-<h2 id="无序列表标签ul">无序列表标签&lt;ul&gt;</h2>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;body&gt;</span>
-    <span class="c">&lt;!-- 快捷生成多个子列表项：ul&gt;li*3或li*5或ul.li{$}*5 --&gt;</span>
-    <span class="nt">&lt;ul&gt;</span>
-        <span class="c">&lt;!-- 列表项的默认样式是实心圆 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项一<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项二<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项三<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-
-    <span class="nt">&lt;ul</span> <span class="na">type=</span><span class="s">"circle"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定列表项的样式是空心点 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项一<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项二<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项三<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">type=</span><span class="s">"square"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定列表项的样式是实心方块 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项一<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项二<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项三<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">type=</span><span class="s">"none"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定列表项不显示符号 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项一<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项二<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>我是列表项三<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-</code></pre></div></div>
-
-<h2 id="有序列表标签">有序列表标签</h2>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 默认是阿拉伯数字123排序 --&gt;</span>
-    <span class="nt">&lt;ol&gt;</span>
-        <span class="nt">&lt;li&gt;</span>张三<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>李四<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>王五<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"a"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定用小写字母a开始排序 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>张三<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>李四<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>王五<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"A"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定用大写字母A开始排序 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>张三<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>李四<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>王五<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"i"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定用小写罗马字母i开始排序 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>张三<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>李四<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>王五<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"I"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 指定用大写罗马字母I开始排序 --&gt;</span>
-        <span class="nt">&lt;li&gt;</span>张三<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>李四<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>王五<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-</code></pre></div></div>
-
-<h2 id="有序列表前无符号显示">有序列表前无符号显示</h2>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>清除有序列表前面的符号<span class="nt">&lt;/title&gt;</span>
-    <span class="c">&lt;!-- 方法二：通过引入外部样式里，有默认清除 --&gt;</span>
-    <span class="c">&lt;!-- &lt;link rel="stylesheet" href="rest.css"&gt; --&gt;</span>
-
-    <span class="c">&lt;!-- 方法一：直接给ol加一个样式就可以清除前面的符号 --&gt;</span>
-    <span class="nt">&lt;style&gt;</span>
-        <span class="c">/* 直接给ol加一个样式就可以清除前面的符号了，也可以通过引入外部样式里，有默认清除 */</span>
-        <span class="nt">ol</span> <span class="p">{</span>
-            <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-
-<span class="nt">&lt;body&gt;</span>
-    <span class="c">&lt;!-- 注意，有序列表顾名思义就是要有顺序，如果非要有序列表没有顺序的话，它是不支持type属性的值为none的。那么如果硬要有序列表前面不显示符号，方法是：给它加一个list-style:none的样式（可以直接添加在内部样式里或是引入外部样式默认清除样式）
- --&gt;</span>
-    <span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"I"</span><span class="nt">&gt;</span>
-       <span class="nt">&lt;p&gt;</span>这是有序列表但是我可以通过设置list-style: none属性值去掉符号<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;li&gt;</span>张三<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>李四<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>王五<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ol&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[HTML 5 &lt;!DOCTYPE&gt; 标签]]></summary></entry><entry><title type="html">Html</title><link href="https://wsttask.github.io/2024/03/04/html.html" rel="alternate" type="text/html" title="Html" /><published>2024-03-04T15:38:42+08:00</published><updated>2024-03-04T15:38:42+08:00</updated><id>https://wsttask.github.io/2024/03/04/html</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/html.html"><![CDATA[<h3 id="html是什么"><strong>HTML是什么</strong></h3>
-
-<p>1.超文本标记语言（Hyper Text Mark-up Language）</p>
-
-<p>2.用来设计网页的标记语言</p>
-
-<p>3.用该语言编写的文件，以.html或.htm为后缀</p>
-
-<p>4.由浏览器解释执行</p>
-
-<p>5.不区分大小写，建议小写</p>
-
-<h3 id="html标签"><strong>HTML标签</strong></h3>
-
-<p>1.HTML用于描述功能的符号成为“标签”</p>
-
-<p>2.标签都封装在一对尖括号“&lt;…&gt;”之中，如&lt;html&gt;就是一个标签</p>
-
-<p>3.封闭类型标记（也叫标记），必须成对出现，如&lt;p&gt;&lt;/p&gt;</p>
-
-<p>非封闭类型标记，也叫空标记，或者但标记，如</p>
-
-<p>web浏览器的作用是读取HTML文档，并以网页的形式显示出它们。浏览器不会显示HTML标签，而是使用标签来解释网页的内容。</p>
-
-<h3 id="html骨架">HTML骨架</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-
-输入!在vscode中可以自动生成
-</code></pre></div></div>
-
-<h3 id="html标题标签">HTML标题标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;&lt;/h2&gt;</span>
-......
-<span class="nt">&lt;h6&gt;&lt;/h6&gt;</span>
-</code></pre></div></div>
-
-<p>标题独占一行</p>
-
-<h3 id="html段落标签">HTML段落标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-</code></pre></div></div>
-
-<p>特点</p>
-
-<ul>
-  <li>独占一行</li>
-  <li>段落之间存在间隙</li>
-</ul>
-
-<h3 id="html换行水平线标签">HTML换行水平线标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;br&gt;</span>
-换行
-<span class="nt">&lt;hr&gt;</span>
-水平线
-</code></pre></div></div>
-
-<h3 id="文本格式化标签">文本格式化标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;strong&gt;</span>加粗<span class="nt">&lt;/strong&gt;</span>
-<span class="nt">&lt;b&gt;</span>加粗<span class="nt">&lt;/b&gt;</span>
-<span class="nt">&lt;em&gt;</span>倾斜<span class="nt">&lt;/em&gt;</span>
-<span class="nt">&lt;i&gt;</span>倾斜<span class="nt">&lt;/i&gt;</span>
-<span class="nt">&lt;ins&gt;</span>下划线<span class="nt">&lt;/ins&gt;</span>
-<span class="nt">&lt;u&gt;</span>下划线<span class="nt">&lt;/u&gt;</span>
-<span class="nt">&lt;del&gt;</span>删除线<span class="nt">&lt;/del&gt;</span>
-<span class="nt">&lt;s&gt;</span>删除线<span class="nt">&lt;/s&gt;</span>
-</code></pre></div></div>
-
-<h3 id="图片标签">图片标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"图片的URL"</span><span class="nt">&gt;</span>
-标签属性
-alt 替换文本:图片加载不出来,替换的文本
-title 提示文本:鼠标悬停上的时候提示的文本
-width 图片宽度
-height 图片高度
-属性写在标签名后面,不用区分先后顺序
-</code></pre></div></div>
-
-<h3 id="超链接">超链接</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a&gt;</span>这是一个超链接<span class="nt">&lt;/a&gt;</span>
-标签属性
-href 网址;必须属性;#代表空链接
-target _blank:打开新窗口;
-</code></pre></div></div>
-
-<h3 id="音频标签">音频标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio&gt;</span>这是一个音频<span class="nt">&lt;/audio&gt;</span>
-标签属性
-src 必须属性;
-controls 显示音频控制面板;在html5里面,如果属性名和属性值完全一样,可以简写为一个单词
-loop 循环播放;
-autoplay 自动播放;
-</code></pre></div></div>
-
-<h3 id="视频标签">视频标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video&gt;</span>这是一个视频<span class="nt">&lt;/video&gt;</span>
-src 必须属性;
-controls 视频控制面板;
-loop 循环播放;
-muted 静音播放;
-autoplay 自动播放;为了提升用户体验,浏览器支持静音自动播放
-</code></pre></div></div>
-
-<h2 id="列表标签">列表标签</h2>
-
-<h4 id="ul">ul</h4>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
-    <span class="nt">&lt;li&gt;</span>第一项<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>第二项<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span>
-ul 是无序列表;只能包裹li标签
-li 是列表条目;可以包裹任何内容
-</code></pre></div></div>
-
-<h3 id="ol">ol</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;/li&gt;</span>
-<span class="nt">&lt;/ol&gt;</span>
-</code></pre></div></div>
-
-<h3 id="定义列表">定义列表</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
-    <span class="nt">&lt;dt&gt;</span>标题<span class="nt">&lt;/dt&gt;</span>
-    <span class="nt">&lt;dd&gt;</span>详情1<span class="nt">&lt;/dd&gt;</span>
-    <span class="nt">&lt;dd&gt;</span>详情2<span class="nt">&lt;/dd&gt;</span>
-<span class="nt">&lt;/dl&gt;</span>    
-dl 只能包含dt和dd;dt和dd里面可以包含任何内容
-</code></pre></div></div>
-
-<h4 id="表格">表格</h4>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;th&gt;</span>第一列<span class="nt">&lt;/th&gt;</span>
-        <span class="nt">&lt;th&gt;</span>第二列<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td&gt;</span>第二行第一列<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>第二行第二列<span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-
-tr 里面包裹一行
-th 表示表头单元格;有居中加粗的效果
-td 内容单元格
-border 设置是否有边框线;"1"代表边框线的粗细
-</code></pre></div></div>
-
-<p>表格中里面内容会把表格撑大</p>
-
-<h3 id="表格结构标签">表格结构标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;thead&gt;</span>
-<span class="nt">&lt;/thead&gt;</span>
-
-<span class="nt">&lt;tbody&gt;</span>
-<span class="nt">&lt;/tbody&gt;</span>
-
-<span class="nt">&lt;tfoot&gt;</span>
-<span class="nt">&lt;/tfoot&gt;</span>
-可以不写
-浏览器解析更方便
-</code></pre></div></div>
-
-<h3 id="合并单元格">合并单元格</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
-
-<p>1.明确合并的目标</p>
-
-<p>2.保留最左最上的单元格，添加属性（取值是数字，标识需要合并的单元格的数量）</p>
-
-<p>​    跨行合并，保留最上单元格，添加属性rowspan</p>
-
-<p>​    跨列合并，保留最左单元格，添加属性colspan</p>
-
-<p>3.删除其他单元格</p>
-
-<p>tips</p>
-
-<p>合并单元格只能在自己结构中合并，比如head，body，不能跨结构合并</p>
-
-<h3 id="表单input标签">表单：input标签</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-type = text: 文本框;单行文本,不换行
-type = password: 密码框;和text一样,只是都是以点代替的
-type = radio: 单选框;是个小圆点
-type = checkbox: 多选框;是个小方框
-type = file: 上传文件
-</code></pre></div></div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-placeholder: 提示信息;提示信息是灰色;可以在文本框密码框中使用
-</code></pre></div></div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"..."</span> <span class="na">checked</span><span class="nt">&gt;</span>
-name: 组名称;多个单选框组名相同,只能有一个被选中
-checked: 默认选中;属性名与值相同,只写一个checked就行
-</code></pre></div></div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">mutiple</span><span class="nt">&gt;</span>
-mutiple: 可以选择多个文件
-</code></pre></div></div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-checked: 默认选中
-</code></pre></div></div>
-
-<h3 id="表单下拉菜单">表单：下拉菜单</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;select&gt;</span>
-    <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;&lt;/option&gt;</span>
-    <span class="nt">&lt;option&gt;&lt;/option&gt;</span>
-    <span class="nt">&lt;option&gt;&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-</code></pre></div></div>
-
-<h3 id="表单label标签增大radio的点击范围">表单：label标签：增大radio的点击范围</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=&lt;device-width&gt;, initial-scale=1.0"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="c">&lt;!-- 增大点击范围 --&gt;</span>
-    <span class="c">&lt;!-- 完成写法 id与for相同--&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gender"</span> <span class="na">id=</span><span class="s">"man"</span><span class="nt">&gt;</span> <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"man"</span><span class="nt">&gt;</span>男<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gender"</span> <span class="nt">&gt;</span>女<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h3 id="字符实体">字符实体</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="c">&lt;!-- 在网页中显示预留字符 --&gt;</span>
-    <span class="c">&lt;!-- 主要是空格，大于号，小于号三个字符 --&gt;</span>
-    <span class="c">&lt;!-- 在代码中有很多空格，网页只识别一个 --&gt;</span>
-    乾坤未定，你我皆是黑          马
-    <span class="nt">&lt;br&gt;</span>
-    乾坤未定，你我皆是黑      马
-    <span class="nt">&lt;P&gt;</span>
-    <span class="nt">&lt;p&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h2 id="link">link</h2>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"main.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
-<span class="c">&lt;!-- rel="stylesheet" 代表引入的href是层叠样式表 --&gt;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[HTML是什么]]></summary></entry></feed>
+<p>$e^x -1 \sim x$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry></feed>
