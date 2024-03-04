@@ -33,7 +33,7 @@ web浏览器的作用是读取HTML文档，并以网页的形式显示出它们�
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 
@@ -155,7 +155,7 @@ li 是列表条目;可以包裹任何内容
     <dt>标题</dt>
     <dd>详情1</dd>
     <dd>详情2</dd>
-</dl>	
+</dl>    
 dl 只能包含dt和dd;dt和dd里面可以包含任何内容
 ```
 
@@ -164,12 +164,12 @@ dl 只能包含dt和dd;dt和dd里面可以包含任何内容
 ```html
 <table>
     <tr>
-    	<th>第一列</th>
+        <th>第一列</th>
         <th>第二列</th>
     </tr>
     <tr>
-    	<td>第二行第一列</td>
-    	<td>第二行第二列</td>
+        <td>第二行第一列</td>
+        <td>第二行第二列</td>
     </tr>
 </table>
 
@@ -206,9 +206,9 @@ border 设置是否有边框线;"1"代表边框线的粗细
 
 2.保留最左最上的单元格，添加属性（取值是数字，标识需要合并的单元格的数量）
 
-​	跨行合并，保留最上单元格，添加属性rowspan
+​    跨行合并，保留最上单元格，添加属性rowspan
 
-​	跨列合并，保留最左单元格，添加属性colspan
+​    跨列合并，保留最左单元格，添加属性colspan
 
 3.删除其他单元格
 
@@ -293,9 +293,9 @@ checked: 默认选中
     <!-- 在代码中有很多空格，网页只识别一个 -->
     乾坤未定，你我皆是黑          马
     <br>
-    乾坤未定，你我皆是黑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;马
+    乾坤未定，你我皆是黑      马
     <P>
-    &lt;p&gt;
+    <p>
 </body>
 </html>
 ```
@@ -306,4 +306,3 @@ checked: 默认选中
 <link href="main.css" rel="stylesheet" />
 <!-- rel="stylesheet" 代表引入的href是层叠样式表 -->
 ```
-

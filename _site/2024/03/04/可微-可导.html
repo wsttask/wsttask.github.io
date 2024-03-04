@@ -1,0 +1,91 @@
+<h4 id="heavy_exclamation_mark在一元函数中可导一定连续连续不一定可导">:heavy_exclamation_mark:在一元函数中，可导一定连续，连续不一定可导</h4>
+
+<p>==一元函数连续的定义：==</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\forall\varepsilon&gt;0,\exists\delta&gt;0,当</td>
+      <td>x-x_0</td>
+      <td>&lt;\delta时，</td>
+      <td>f(x)-f(x_0)</td>
+      <td>&lt;\varepsilon$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>可导要满足两个条件</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="n">左右导数存在</span>
+<span class="mi">2</span><span class="err">、</span><span class="n">左右导数相等</span>
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>比如 $y=</td>
+      <td>x</td>
+      <td>$，在 $x=0$ 处不满足第二条，所以在 $x=0$ 处不可导</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>连续只是表征函数图像不间断，而可导则要求其是光滑的（一个点存在一个斜率），可导的条件更强。</p>
+
+<h4 id="heavy_exclamation_mark在多元函数中可导不一定连续连续也不一定可导">:heavy_exclamation_mark:在多元函数中，可导不一定连续，连续也不一定可导</h4>
+
+<p>==二元函数连续的定义：==</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\forall\varepsilon&gt;0,\exist\delta&gt;0,当p\in U(p_0,\delta)\bigcap D时,</td>
+      <td>f(p)-f(p_0)</td>
+      <td>&lt;\varepsilon$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>:question:</p>
+
+<blockquote>
+  <p>注意到二元函数在定义连续的概念的时候并不是要求函数必须在连续点 $x_0$ 的某一邻域 $U(x_0)$ 上有定义，只要保证该点是函数的聚点即可，并且对于不是聚点的孤立点仍然可以定义其为连续点（只需要将孤立点带入二元函数连续性的定义加以验证即可发现孤立点也满足该连续性的定义）。因此在二元函数中，聚点和孤立点是连续点的必要条件，即二元函数的连续点必是该函数的聚点或孤立点中的一种。</p>
+</blockquote>
+
+<p>:heavy_minus_sign:<font color="blue">可导不连续的例子</font>：</p>
+
+<p>$f(x)=\begin{cases} \frac{xy}{x^2+y^2},x^2+y^2\ne0 \ 0,x^2+y^2=0 \end{cases}$</p>
+
+<p>在$x^2+y^2\ne0$这个范围内，$f(x,y)$ 的分子分母都是初等函数，其具有连续性。</p>
+
+<p>$f(x,y)$在点$(0,0)$不连续</p>
+
+<p>但是两个偏导都存在，即$f(x,y)$在点$(0,0)$可导</p>
+
+<p>:heavy_minus_sign:<font color="blue">连续不可导的例子</font></p>
+
+<p>$f(x,y)=\sqrt{x^2+y^2}(圆锥)$</p>
+
+<h4 id="heavy_exclamation_mark可积不一定连续连续一定可积">:heavy_exclamation_mark:可积不一定连续，连续一定可积</h4>
+
+<p>可积意味着可以进行积分运算，允许可去间断点，和跳跃间断点，但是连续不允许</p>
+
+<h4 id="heavy_exclamation_mark在一元函数中可导与可微等价">:heavy_exclamation_mark:在一元函数中：可导与可微等价</h4>
+
+<h4 id="heavy_exclamation_mark在二元函数中偏导连续是可微的充分条件">:heavy_exclamation_mark:在二元函数中，偏导连续是可微的充分条件</h4>
+
+<p>总之，二元函数可微从直观上讲就是要有唯一切平面，理论上只要两个偏导数在且连续就是可微的。</p>
+
+<h4 id="heavy_exclamation_mark在多元函数中可微一定可导可导不一定可微">:heavy_exclamation_mark:在多元函数中：可微一定可导，可导不一定可微</h4>
+
+<p>偏导数连续是可微的充分条件，但是不必要</p>
+
+<h4 id="heavy_exclamation_mark复变函数可导和可微等价">:heavy_exclamation_mark:复变函数可导和可微等价</h4>
+
+<h4 id="first_quarter_moon更准确的说全微分存在偏导数偏微分一定存在偏导数偏微分存在全微分不一定存在">:first_quarter_moon:更准确的说：全微分存在偏导数、偏微分一定存在；偏导数、偏微分存在全微分不一定存在。</h4>
+
+<p>而多元函数可导指的是在每一个分量上的偏导数存在，而任意方向的切线不一定存在，如果其存在，那么可微，而可导只表明了在坐标轴方向存在切线，没有说明其它方向，所以多元函数可导不能推出可微。而一元函数只存在坐标轴方向(即x轴正方向)。</p>
+
+<h4 id="heavy_exclamation_mark导数定义">:heavy_exclamation_mark:导数定义</h4>
+
+<p>$\lim_\limits{z\rightarrow z_0}f(z)=\frac{f(z)-f(z_0)}{z-z_0}=\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}$</p>

@@ -4,25 +4,8 @@ title: Categories
 ---
 
 <div class="content-box">
-    <div id="archives">
-        {% assign sorted_categories = site.categories | sort_natural %}
-        {% for category in sorted_categories %}
-        <div class="archive-group">
-            {% capture category_name %}{{ category | first }}{% endcapture %}
-            <div id="#{{ category_name | slugize }}"></div>
-            <p></p>
 
-            <a name="{{ category_name }}"><div class="category-head">「{{ category_name }}」</div></a>
-            <a name="{{ category_name | slugize }}"></a>
-            {% for post in site.categories[category_name] %}
-            <article class="archive-item">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
-            </article>
-            {% endfor %}
-        </div>
-        {% endfor %}
-    </div>
-
+    {% assign sorted_categories = site.categories | sort %}
     <div class="categories-area">
         <div class="categories-area-title">
             [Tags]
@@ -40,6 +23,23 @@ title: Categories
                 [{{ site.categories[category_name].size }}]
             </div>
         </a>
+        {% endfor %}
+    </div>
+    <div id="archives">
+        {% for category in sorted_categories %}
+        <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <div id="#{{ category_name | slugize }}"></div>
+            <p></p>
+
+            <a name="{{ category_name }}"><div class="category-head">「{{ category_name }}」</div></a>
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+            </article>
+            {% endfor %}
+        </div>
         {% endfor %}
     </div>
 </div>

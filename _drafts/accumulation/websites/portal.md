@@ -11,6 +11,8 @@ permalink: /browser
 
 # github
 
+### [web](https://github.com/wsttask/web)
+
 ### [wsttask.github.io](https://wsttask.github.io/index.html)
 
 # tanslation
@@ -20,6 +22,14 @@ permalink: /browser
 # ChatGPT
 
 ### [openai](https://chat.openai.com/)
+
+# LaTex
+
+### [LaTex在线编辑器](https://www.latexlive.com/)
+
+# 图形计算器
+
+### [Desmos](https://www.desmos.com/calculator?lang=zh-CN)
 
 # WPS
 

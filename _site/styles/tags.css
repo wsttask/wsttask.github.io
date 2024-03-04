@@ -66,6 +66,14 @@ a:hover {
     font-weight: bold;
 }
 
+.footer {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 54px;
+    height: 54px;
+}
+
 .category-number {
     font-size: 16px;
 }

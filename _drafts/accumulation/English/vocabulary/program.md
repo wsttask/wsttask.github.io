@@ -1,7 +1,7 @@
 ---
 layout: post
 title: program
-categories: [English]
+categories: english
 ---
 
 

@@ -1,0 +1,95 @@
+<h5 id="第一类曲线积分">第一类曲线积分</h5>
+
+<blockquote>
+  <p>可以用来求曲线型构件的质量</p>
+</blockquote>
+
+<p>$\int_Lf(x,y)ds=\int_\alpha^\beta f[\phi(t),\psi(t)]\sqrt{[\phi’(t)]^2+[\psi’(t)]^2}dt \ =\int_\alpha^\beta f[x,\phi(x)]\sqrt{[1+\phi’(x)]^2}dx$</p>
+
+<p>性质1：（线性性质）</p>
+
+<p>$\forall\alpha,\beta\in R^1 \ \int_L[\alpha f(x,y)+\beta g(x,y)]ds=\alpha\int_Lf(x,y)ds+\beta\int_Lg(x,y)ds$</p>
+
+<p>性质2：（积分弧段的可加性）</p>
+
+<p>$\int_Lf(x,y)ds=\int_{L1}f(x,y)ds+\int_{L2}f(x,y)ds$</p>
+
+<h5 id="第二类曲线积分">第二类曲线积分</h5>
+
+<blockquote>
+  <p>用来求变力沿曲线作的功</p>
+</blockquote>
+
+<p>$\int_L\overrightarrow{F}(x,y)d\overrightarrow{s}=\int_LP(x,y)dx+Q(x,y)dy \ \int_a^b{P[\phi(t),\psi(t)]\phi’(t)+Q[\phi(t),\psi(t)]\psi’(t)}dt$</p>
+
+<h5 id="一二类曲线积分之间的联系">一、二类曲线积分之间的联系</h5>
+
+<p>$\int_LF(x,y)·dr=\int_LF(x,y)·e_Lds$</p>
+
+<p>$\int_LP(x,y)dx+Q(x,y)dy=\int_L[P(x,y)i+Q(x,y)j]·[cos\alpha i+cos\beta j]ds \ =\int_L[P(x,y)cos\alpha+Q(x,y)cos\beta]ds$</p>
+
+<h5 id="定理103格林公式">定理10.3：格林公式</h5>
+
+<p>设平面闭区域$D$的正向边界曲线$\partial D^+$是分段光滑的，函数$P(x,y),Q(x,y)$在$D$上具有一阶连续偏导数，则</p>
+
+<p>$\iint_\limits{D}(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})dxdy=\int_{\partial D^+}P(x,y)dx+Q(x,y)dy$</p>
+
+<blockquote>
+  <p>注意平面闭区域$D$的正向边界曲线$\partial D^+$是指逆时针的外曲线，顺时针的内曲线，<strong>两者的和</strong></p>
+</blockquote>
+
+<p><img src="../images/image-20230401160444415.png" alt="image-20230401160444415" /></p>
+
+<p><img src="../images/image-20230401160112749.png" alt="image-20230401160112749" /></p>
+
+<h4 id="二平面曲线积分与路径无关的条件"><font color="green">（二）平面曲线积分与路径无关的条件</font></h4>
+
+<h5 id="定理104-设g是单连通域overrightarrow-fxypxyqxyin-c1g则以下四个命题等价"><font color="lime">定理10.4</font> 设$G$是单连通域，($\overrightarrow F(x,y)=(P(x,y),Q(x,y))\in C^{(1)}(G)$，则以下<font color="orange">四个命题</font><font color="violet">等价</font>:</h5>
+
+<p>(1)$\forall 分段光滑闭曲线C\subset G,\oint_CPdx+Qdy=0;$</p>
+
+<p>(2)$\int_LPdx+Qdy$在$G$内与路径无关；</p>
+
+<p>(3)$\exists u=u(x,y),使du=Pdx+Qdy(\forall(x,y)\in G)$</p>
+
+<p>(4)<font color="deepskyblue">$在G内，\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$</font></p>
+
+<blockquote>
+  <p>定理中的单连通域和P、Q两函数的可导性缺一不可。</p>
+</blockquote>
+
+<h4 id="三平面曲线积分基本定理"><font color="green">（三）平面曲线积分基本定理</font></h4>
+
+<h5 id="定理105-若uxy是pxydxqxydy在单连通域g上的一个原函数则第二类曲线积分"><font color="lime">定理10.5</font> 若$u(x,y)$是$P(x,y)dx+Q(x,y)dy$在单连通域$G$上的一个原函数，则第二类曲线积分</h5>
+
+\[\int_{A(x_1,y_1)}^{B(x_2,y_2)}P(x,y)dx+Q(x,y)dy=u(x,y)|_{(x_1,y_1)}^{(x_2,y_2)}\]
+
+<font color="skyblue">即牛顿莱布尼兹公式</font>
+
+<p><img src="../images/image-20230402164222449.png" alt="image-20230402164222449" /></p>
+
+<h4 id="第四节-第一类曲面积分"><font color="doderblue">第四节 第一类曲面积分</font></h4>
+
+<blockquote>
+  <p>求曲面形构件的质量</p>
+</blockquote>
+
+<p>$\iint\limits_{\sum}f(x,y,z)dS$</p>
+
+<blockquote>
+  <p>只有当函数$f(x,y,z)$在曲面上$\sum$上连续时，曲面积分才存在</p>
+</blockquote>
+
+<font color="deepskyblue">性质</font>
+
+<p>1.线性性质</p>
+
+<p>2.可加性</p>
+
+<p>3.对称性</p>
+
+<p>​    如果积分区间是关于某个面对称的，则可以通过对于被积函数对称性的性质，快速解的答案。</p>
+
+<h5 id="定理106-设fxyz是定义在光滑曲面sum上的连续函数sum-zzxyxyin-d_xy函数zzxy在d_xy上具有连续的偏导数则"><font color="blue">定理10.6</font> 设$f(x,y,z)$是定义在光滑曲面$\sum$上的连续函数，$\sum :z=z(x,y),(x,y)\in D_{xy}$，函数$z=z(x,y)$在$D_{xy}$上具有连续的偏导数。则：</h5>
+
+\[\iint\limits_{\sum}f(x,y,z)dS=\iint\limits_{D_{xy}}f(x,y,z(x,y))·\sqrt{1+z_x^2(x,y)+z_y^2(x,y)}dxdy \\ =\iint\limits_{D_{yz}}f(x(y,z),y,z)·\sqrt{1+x_y^2(y,z)+x_z^2(y,z)}dydz\\ =\iint\limits_{D_{xz}}f(x,y(x,z),z)·\sqrt{1+y_x^2(x,z)+y_z^2(x,z)}dydz\]

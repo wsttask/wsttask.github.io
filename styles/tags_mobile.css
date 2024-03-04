@@ -40,9 +40,8 @@ a {
 }
 
 .category-item {
-    display: inline-block;
+    display: block;
     font-size: 18px;
-    vertical-align: bottom;
 }
 
 .category-name {
@@ -61,6 +60,14 @@ a {
 #archives {
     width: 100%;
     order: 2;
+}
+
+.footer {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 54px;
+    height: 54px;
 }
 
 .archive-group {

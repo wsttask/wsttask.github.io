@@ -2,19 +2,17 @@
 
 ## 定义和用法
 
-<!DOCTYPE> 声明必须位于 HTML5 文档中的第一行，也就是位于 <html> 标签之前。该标签告知浏览器文档所使用的 HTML 规范。
+<!DOCTYPE>
+
+ 声明必须位于 HTML5 文档中的第一行，也就是位于 <html> 标签之前。该标签告知浏览器文档所使用的 HTML 规范。
 
 doctype 声明不属于 HTML 标签；tag; 它是一条指令，告诉浏览器编写页面所用的标记的版本。
-
-
 
 doctype：document type
 
 **注释：**<!DOCTYPE> 标签没有结束标签！
 
 **提示：**<!DOCTYPE> 对大小写不敏感。
-
-
 
 ## 什么是 HTML5？
 
@@ -28,8 +26,6 @@ HTML5 提供的新元素和新的 API 简化了 web 应用程序的搭建。
 
 HTML5 是跨平台的，被设计为在不同类型的硬件（PC、平板、手机、电视机等等）之上运行。
 
-
-
 # head
 
 ```html
@@ -37,10 +33,10 @@ HTML5 是跨平台的，被设计为在不同类型的硬件（PC、平板、手
     <title>First webpage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
-		viewport窗口
+        viewport窗口
 meta name="viewport" content="width=device-width, initial-scale=1"
-	可以让网页的宽度自动适应手机屏幕的宽度	
-	-->
+    可以让网页的宽度自动适应手机屏幕的宽度    
+    -->
 </head>
 ```
 
@@ -54,18 +50,16 @@ meta name="viewport" content="width=device-width, initial-scale=1"
 
 # img
 
-属性|属性值|说明
--|-|-
-src|图片路径|必须属性
-alt|文本|替换文本。图像不能显示的文字
-title|文本|提示文本。鼠标悬停在图像上显示的文字
-width|像素|设置宽度
-height|像素|设置高度
-border|像素|设置边框粗细
+| 属性     | 属性值  | 说明                 |
+| ------ | ---- | ------------------ |
+| src    | 图片路径 | 必须属性               |
+| alt    | 文本   | 替换文本。图像不能显示的文字     |
+| title  | 文本   | 提示文本。鼠标悬停在图像上显示的文字 |
+| width  | 像素   | 设置宽度               |
+| height | 像素   | 设置高度               |
+| border | 像素   | 设置边框粗细             |
 
 当您同时指定height和 时width，图像可能会丢失其纵横比。您可以通过仅指定width并设置height为auto使用 CSS 属性来保留纵横比。
-
-
 
 # a
 
@@ -112,8 +106,6 @@ border|像素|设置边框粗细
 
 **优点**：控件无需定义id；标签和控件方便作为一个整体控制
 **缺点**：增加了标签嵌套层数；不能将标签和关联控件放到不同的位置
-
-
 
 # CSS类选择器和ID选择器的异同
 
@@ -224,7 +216,7 @@ body{
  width: 910px;
  margin-top: 20px;
  padding-bottom:20px;
- 
+
  }
 .left{
  background-color: #930;
@@ -268,7 +260,6 @@ body{
  width: 910px;
  margin-top: 20px;
 }
-
 ```
 
 # css调用
@@ -317,8 +308,6 @@ body{
     <div class="content">这是一个页面头部调用样式的示例。</div> <!--调用CSS样式-->
 </body>
 ```
-
-
 
 3.HTML元素中直接调用
 
@@ -403,9 +392,7 @@ submit提交按钮
 <input type="submit" value="提交按钮上字体">
 ```
 
-
-
-select option下拉菜单（selected 初始选择）	
+select option下拉菜单（selected 初始选择）    
 
 ```html
 下拉菜单
@@ -539,6 +526,4 @@ lable标签
 </body>
 
 </html>
-
 ```
-
