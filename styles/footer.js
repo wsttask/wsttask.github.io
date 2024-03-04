@@ -15,11 +15,11 @@ function gotoTop(minHeight){
         var s = $(window).scrollTop();
 
         // 当窗口的滚动条的垂直距离大于页面的最小高度时，让返回顶部图标渐现，否则渐隐
-        if( s > minHeight){
-            $("#gotoTop").fadeIn(500);
-        }else{
-            $("#gotoTop").fadeOut(500);
-        };
+        // if( s > minHeight){
+        //     $("#gotoTop").fadeIn(500);
+        // }else{
+        //     $("#gotoTop").fadeOut(500);
+        // };
     });
 };
 gotoTop();
