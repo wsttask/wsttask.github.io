@@ -1,3 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    
+<title>python学习</title>
+
+
+        <link rel="stylesheet" href="https://wsttask.github.io/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="https://wsttask.github.io/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/index.html">index</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/tags.html">Tags</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/readme.html">README</a>
+    </div>
+</div>
+ 
+        <div class="content-area">
+            <div class="title">
+                python学习
+            </div>
+            <div class="category-area">
+                「
+                <a href="https://wsttask.github.io/tags.html#python">
+                    <div class="category">
+                        python
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+              2024-03-05 8723字
+            </div>
+            <div class="content">
+                <p><a href="https://www.byhy.net/">简单的案例</a></p>
+
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">()</span>
 <span class="o">//</span><span class="n">输出到控制台</span>
 <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">我今年</span><span class="sh">"</span><span class="p">,</span><span class="n">age</span><span class="p">,</span><span class="sh">"</span><span class="s">岁了</span><span class="sh">"</span><span class="p">)</span>
@@ -281,12 +340,11 @@ ctrl+d:复制当前一行代码
 <span class="c1"># 判断语句的结果，必须是布尔类型True或False
 </span><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
 <span class="c1"># 需要一个冒号
-</span>	<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">我已经成年了</span><span class="sh">"</span><span class="p">)</span>
-	<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">我要上大学了</span><span class="sh">"</span><span class="p">)</span>
+</span>    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">我已经成年了</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">我要上大学了</span><span class="sh">"</span><span class="p">)</span>
 <span class="c1"># 归属于if判断的代码语句块，需要在前方填充4个空格缩进
 # Python通过缩进判断代码块的归属关系
 </span><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">时间过的真快</span><span class="sh">"</span><span class="p">)</span>
-
 </code></pre></div></div>
 
 <h5 id="if-else语句">if-else语句</h5>
@@ -305,11 +363,11 @@ ctrl+d:复制当前一行代码
 
 <p>for 临时变量 in 待处理数据集（可迭代对象）:</p>
 
-<p>​		循环满足条件时执行的代码</p>
+<p>​        循环满足条件时执行的代码</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">python</span><span class="sh">"</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
-	<span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">range</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
@@ -329,7 +387,8 @@ ctrl+d:复制当前一行代码
   <li>作用域</li>
 </ul>
 
-<p>​	注意for中定义的临时变量不可以在for循环的外面使用！</p>
+<p>​    注意for中定义的临时变量不可以在for循环的外面使用！</p>
+
 <h5 id="continue和break">continue和break</h5>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">continue</span><span class="p">:</span><span class="n">进入下一个循环</span>
@@ -340,7 +399,7 @@ ctrl+d:复制当前一行代码
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#  函数的定义
 </span><span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="n">variable</span><span class="p">):</span>
-	<span class="n">body</span>
+    <span class="n">body</span>
     <span class="k">return</span> <span class="n">value</span>
 <span class="c1"># 注意:python不用写返回类型，自动匹配
 </span></code></pre></div></div>
@@ -376,13 +435,13 @@ ctrl+d:复制当前一行代码
         </ul>
 
         <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">check_age</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
-	<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span>
-    	<span class="k">return</span> <span class="sh">"</span><span class="s">SUCCESS</span><span class="sh">"</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">SUCCESS</span><span class="sh">"</span>
     <span class="k">return</span> <span class="bp">None</span>
     
 <span class="n">result</span> <span class="o">=</span> <span class="nf">check_age</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span>
-	<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">未成年，不可进入</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">未成年，不可进入</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div>        </div>
 
         <ul>
@@ -403,6 +462,7 @@ ctrl+d:复制当前一行代码
   </li>
   <li>
     <p>函数的说明文档</p>
+
     <ul>
       <li>在PyCharm中可以通过鼠标悬停，查看调用函数的说明文档</li>
     </ul>
@@ -421,18 +481,22 @@ ctrl+d:复制当前一行代码
 </code></pre></div></div>
 
 <ul>
-  <li>局部变量与全局变量
+  <li>
+    <p>局部变量与全局变量</p>
+
     <ul>
       <li>在函数内部定义的就是局部变量</li>
       <li>在函数外定义的就是全局变量</li>
     </ul>
   </li>
-  <li>global 关键字可以在函数内部声明变量为全局变量</li>
+  <li>
+    <p>global 关键字可以在函数内部声明变量为全局变量</p>
+  </li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="k">def</span> <span class="nf">testB</span><span class="p">()</span>
-	<span class="c1"># global 关键字是声明a是全局变量
+    <span class="c1"># global 关键字是声明a是全局变量
 </span>    <span class="k">global</span> <span class="n">num</span>
     <span class="n">num</span> <span class="o">=</span> <span class="mi">200</span>
     <span class="nf">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
@@ -584,15 +648,15 @@ ctrl+d:复制当前一行代码
 </span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">(</span><span class="n">元素</span><span class="p">,</span><span class="n">元素</span><span class="p">,.....,</span><span class="n">元素</span><span class="p">)</span>
 
 <span class="c1"># 定义空元组
-</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">()</span>		<span class="c1"># 方式1
-</span><span class="n">变量名称</span> <span class="o">=</span> <span class="nf">tuple</span><span class="p">()</span> 	<span class="c1"># 方式2
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">()</span>        <span class="c1"># 方式1
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="nf">tuple</span><span class="p">()</span>     <span class="c1"># 方式2
 </span>
 <span class="n">注意</span><span class="err">！</span>
 <span class="c1"># 定义3个元素的元组
 </span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
 
 <span class="c1"># 定义1个元素的元组
-</span><span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="p">)</span>	<span class="c1"># 注意，必须带有逗号，否则不是元组类型，而括号内唯一元素的类型
+</span><span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="p">)</span>    <span class="c1"># 注意，必须带有逗号，否则不是元组类型，而括号内唯一元素的类型
 </span>
 <span class="c1"># 元组也支持嵌套
 </span><span class="n">t1</span>  <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
@@ -646,11 +710,11 @@ ctrl+d:复制当前一行代码
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">同元组一样</span><span class="err">，</span><span class="n">字符串是一个</span><span class="err">：</span><span class="n">无法修改的数据容器</span><span class="err">。</span>
 
 <span class="n">不能</span><span class="err">！</span>
-<span class="mf">1.</span> <span class="n">修改指定下表的字符</span>	<span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sh">'</span><span class="s">a</span><span class="sh">'</span><span class="p">)</span>
+<span class="mf">1.</span> <span class="n">修改指定下表的字符</span>    <span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sh">'</span><span class="s">a</span><span class="sh">'</span><span class="p">)</span>
 
-<span class="mf">2.</span> <span class="n">移除特定下表的字符</span>	<span class="p">(</span><span class="k">del</span> <span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="mf">2.</span> <span class="n">移除特定下表的字符</span>    <span class="p">(</span><span class="k">del</span> <span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="mf">3.</span> <span class="n">追加字符</span>				<span class="p">(</span><span class="nb">str</span><span class="p">.</span><span class="nf">append</span><span class="p">())</span>
+<span class="mf">3.</span> <span class="n">追加字符</span>                <span class="p">(</span><span class="nb">str</span><span class="p">.</span><span class="nf">append</span><span class="p">())</span>
 
 <span class="n">如果必须要进行以上操作</span><span class="err">，</span><span class="n">只能得到一个新的字符串</span><span class="err">，</span><span class="n">旧的字符串是无法修改的</span>
 </code></pre></div></div>
@@ -665,10 +729,10 @@ ctrl+d:复制当前一行代码
 </span><span class="n">name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">itheima itcast</span><span class="sh">"</span>
 <span class="n">new_name</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">"</span><span class="s">it</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">he</span><span class="sh">"</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">new_name</span><span class="p">)</span>			<span class="c1"># 结果，hetheiam hecast
-</span><span class="nf">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>				<span class="c1"># 结果，ittheiam itcast
+<span class="nf">print</span><span class="p">(</span><span class="n">new_name</span><span class="p">)</span>            <span class="c1"># 结果，hetheiam hecast
+</span><span class="nf">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>                <span class="c1"># 结果，ittheiam itcast
 </span>
-	<span class="n">可以看到</span><span class="err">，</span><span class="n">字符串name本身并没有发生变化</span>
+    <span class="n">可以看到</span><span class="err">，</span><span class="n">字符串name本身并没有发生变化</span>
     <span class="n">而是得到了一个新的字符串对象</span>
 
 <span class="c1"># 字符串的分割
@@ -676,21 +740,21 @@ ctrl+d:复制当前一行代码
 <span class="n">name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">it he she</span><span class="sh">"</span>
 <span class="n">name_list</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">)</span>		<span class="c1"># 结果，['it', 'he', 'she']
-</span><span class="nf">print</span><span class="p">(</span><span class="nf">type</span><span class="p">(</span><span class="n">name_list</span><span class="p">))</span> 	<span class="c1"># 结果：&lt;class 'list'&gt;
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">)</span>        <span class="c1"># 结果，['it', 'he', 'she']
+</span><span class="nf">print</span><span class="p">(</span><span class="nf">type</span><span class="p">(</span><span class="n">name_list</span><span class="p">))</span>     <span class="c1"># 结果：&lt;class 'list'&gt;
 </span>
 <span class="p">.</span><span class="n">split函数是将给定的分割符对字符串进行分割</span><span class="err">，</span><span class="n">变成多个子字符串</span><span class="err">，</span><span class="n">并存入一个列表对象中</span><span class="err">。</span>
 
 <span class="c1"># 字符串的规整操作1（去前后空格）
 </span>
 <span class="n">my_str</span> <span class="o">=</span> <span class="sh">"</span><span class="s"> itheima and itcast </span><span class="sh">"</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">.</span><span class="nf">strip</span><span class="p">())</span>			<span class="c1">#结果："itheima and itcast"
+<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">.</span><span class="nf">strip</span><span class="p">())</span>            <span class="c1">#结果："itheima and itcast"
 </span>
 
 <span class="c1"># 字符串的规整操作2（去前后指定字符串）
 </span>
 <span class="n">my_str</span> <span class="o">=</span> <span class="sh">"</span><span class="s">12itheima and itcast21</span><span class="sh">"</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">.</span><span class="nf">strip</span><span class="p">(</span><span class="sh">"</span><span class="s">12</span><span class="sh">"</span><span class="p">))</span> 		<span class="c1"># 结果："itheima and itcast"
+<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">.</span><span class="nf">strip</span><span class="p">(</span><span class="sh">"</span><span class="s">12</span><span class="sh">"</span><span class="p">))</span>         <span class="c1"># 结果："itheima and itcast"
 </span><span class="err">——————————————————————————————————————————————————————————————————————？</span>
 <span class="n">问题</span><span class="err">：</span>
 <span class="mf">1.</span> <span class="n">无论是12还是21都可以去除</span>
@@ -701,12 +765,12 @@ ctrl+d:复制当前一行代码
 <span class="c1"># 统计字符串中某字符串的出现次数
 </span>
 <span class="n">my_str</span> <span class="o">=</span> <span class="sh">"</span><span class="s">itheima and itcast</span><span class="sh">"</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">.</span><span class="nf">count</span><span class="p">(</span><span class="sh">"</span><span class="s">it</span><span class="sh">"</span><span class="p">))</span> 		<span class="c1"># 结果:2
+<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">.</span><span class="nf">count</span><span class="p">(</span><span class="sh">"</span><span class="s">it</span><span class="sh">"</span><span class="p">))</span>         <span class="c1"># 结果:2
 </span>
 <span class="c1"># 统计字符串的长度
 </span>
 <span class="n">my_str</span> <span class="o">=</span> <span class="sh">"</span><span class="s">1234 abcd !@#$</span><span class="sh">"</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">my_str</span><span class="p">))</span>				<span class="c1"># 结果:14
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">my_str</span><span class="p">))</span>                <span class="c1"># 结果:14
 </span></code></pre></div></div>
 
 <h5 id="字符串的特点-1">字符串的特点</h5>
@@ -731,15 +795,15 @@ ctrl+d:复制当前一行代码
 <span class="n">语法</span><span class="err">：</span><span class="n">序列</span><span class="p">[</span><span class="n">起始下标</span><span class="p">:</span><span class="n">结束下标</span><span class="p">:</span><span class="n">步长</span><span class="p">]</span>
 
 <span class="o">&gt;&gt;</span>
-	<span class="n">不是由函数实现功能</span><span class="err">，</span><span class="n">是根据两个中括号来实现</span><span class="err">，</span><span class="n">推测是把函数内嵌进入python编辑器里边</span><span class="err">。</span>
+    <span class="n">不是由函数实现功能</span><span class="err">，</span><span class="n">是根据两个中括号来实现</span><span class="err">，</span><span class="n">推测是把函数内嵌进入python编辑器里边</span><span class="err">。</span>
 
 <span class="o">-</span> <span class="n">首先所有的序列都可以使用这个切片功能</span><span class="err">，</span><span class="n">包括元组</span><span class="err">，</span><span class="n">字符串</span><span class="err">，</span><span class="n">列表都可以</span>
 
 <span class="o">-</span> <span class="n">步长的含义</span><span class="err">：</span><span class="mi">1</span><span class="p">:</span><span class="n">表示一个一个取元素</span>
-			<span class="mi">2</span><span class="p">:</span><span class="n">表示跳过一个元素取</span>
-    		<span class="mi">3</span><span class="p">:</span><span class="n">步长可以用负数表示</span><span class="err">，</span><span class="n">表示反向取</span><span class="err">，</span><span class="n">此时</span><span class="err">，</span><span class="n">起始下标和结束下标也要反向标记</span>
-        	<span class="mi">4</span><span class="p">:</span><span class="n">反向标记</span><span class="err">，</span><span class="n">可以用来反着取比如12345取54321</span>
-            
+            <span class="mi">2</span><span class="p">:</span><span class="n">表示跳过一个元素取</span>
+            <span class="mi">3</span><span class="p">:</span><span class="n">步长可以用负数表示</span><span class="err">，</span><span class="n">表示反向取</span><span class="err">，</span><span class="n">此时</span><span class="err">，</span><span class="n">起始下标和结束下标也要反向标记</span>
+            <span class="mi">4</span><span class="p">:</span><span class="n">反向标记</span><span class="err">，</span><span class="n">可以用来反着取比如12345取54321</span>
+
 <span class="err">！</span><span class="n">注意</span><span class="err">：</span><span class="n">步长不可以为0</span><span class="err">，</span><span class="n">其实想想就知道</span><span class="err">，</span><span class="n">走0步不就一直停在那了</span>
 </code></pre></div></div>
 
@@ -766,15 +830,15 @@ ctrl+d:复制当前一行代码
 <h5 id="集合的特点">集合的特点</h5>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span> <span class="n">不重复</span>
-	<span class="n">即使在定义集合变量的时候由重复的元素</span><span class="err">，</span><span class="n">也会自动去重</span>
+    <span class="n">即使在定义集合变量的时候由重复的元素</span><span class="err">，</span><span class="n">也会自动去重</span>
 
 <span class="o">-</span> <span class="n">没有顺序</span>
-	<span class="n">不能保证顺序与创建的时候一致</span>
+    <span class="n">不能保证顺序与创建的时候一致</span>
     <span class="n">不支持下标索引</span>
-    
+
 <span class="o">-</span> <span class="n">可以修改</span>
-	<span class="n">增加或删除元素等</span>
-    
+    <span class="n">增加或删除元素等</span>
+
 <span class="o">-</span> <span class="n">支持for循环</span>
 </code></pre></div></div>
 
@@ -788,18 +852,18 @@ ctrl+d:复制当前一行代码
 <span class="c1"># 移除
 </span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheima</span><span class="sh">"</span><span class="p">}</span>
 <span class="n">my_set</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span> 	<span class="c1"># 结果 {'hello', 'itheima'}
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>     <span class="c1"># 结果 {'hello', 'itheima'}
 </span>
 <span class="c1"># 随机取出元素
 </span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheiam</span><span class="sh">"</span><span class="p">}</span>
 <span class="n">element</span> <span class="o">=</span> <span class="n">my_set</span><span class="p">.</span><span class="nf">pop</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>	<span class="c1"># 结果 {'world', 'itheima'}
-</span><span class="nf">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>	<span class="c1"># 结果 'hello'
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>    <span class="c1"># 结果 {'world', 'itheima'}
+</span><span class="nf">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>    <span class="c1"># 结果 'hello'
 </span>
 <span class="c1"># 清空集合
 </span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheiam</span><span class="sh">"</span><span class="p">}</span>
 <span class="n">my_set</span><span class="p">.</span><span class="nf">clear</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>	<span class="c1"># 结果：set()	空集合
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>    <span class="c1"># 结果：set()    空集合
 </span>
 <span class="c1"># 取出两个集合的差集
 </span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
@@ -813,32 +877,31 @@ ctrl+d:复制当前一行代码
 </span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
 <span class="n">set1</span><span class="p">.</span><span class="nf">difference_update</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>	<span class="c1"># {2, 3}
-</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>	<span class="c1"># {1, 5, 6}
+<span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>    <span class="c1"># {2, 3}
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>    <span class="c1"># {1, 5, 6}
 </span><span class="err">！</span><span class="n">注意</span><span class="err">，</span><span class="n">此时集合1被修改</span><span class="err">，</span><span class="n">但是集合2不变</span>
 
 <span class="c1"># 两个集合合并
 </span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
 <span class="n">set3</span> <span class="o">=</span> <span class="n">set1</span><span class="p">.</span><span class="nf">union</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">set3</span><span class="p">)</span>	<span class="c1"># 结果：{1, 2, 3, 5, 6}，新集合
-</span><span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>	<span class="c1"># 结果：{1, 2, 3}，set1不变
-</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>	<span class="c1"># 结果：{1, 5, 6}，set2不变
+<span class="nf">print</span><span class="p">(</span><span class="n">set3</span><span class="p">)</span>    <span class="c1"># 结果：{1, 2, 3, 5, 6}，新集合
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>    <span class="c1"># 结果：{1, 2, 3}，set1不变
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>    <span class="c1"># 结果：{1, 5, 6}，set2不变
 </span>
 <span class="c1"># 查看集合的元素的数量
 </span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">set1</span><span class="p">))</span>	<span class="c1"># 结果：3
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">set1</span><span class="p">))</span>    <span class="c1"># 结果：3
 </span>
 <span class="c1"># 集合同样支持使用for循环遍历
 </span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">set1</span><span class="p">:</span>
     <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-   
+
 <span class="c1"># 结果
 </span><span class="mi">1</span>
 <span class="mi">2</span>
 <span class="mi">3</span>
-
 </code></pre></div></div>
 
 <h4 id="字典dict">字典（dict）</h4>
@@ -850,7 +913,7 @@ ctrl+d:复制当前一行代码
 <span class="c1"># 定义字典变量
 </span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="p">...,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">}</span>
 <span class="c1"># 定义空字典
-</span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{}</span>	<span class="c1"># 空字典定义方式1
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{}</span>    <span class="c1"># 空字典定义方式1
 </span><span class="n">my_dict</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span><span class="c1"># 空字典定义方式2
 </span>
 <span class="n">注意</span><span class="err">：</span>
@@ -865,9 +928,9 @@ ctrl+d:复制当前一行代码
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 语法，字典[key]可以取到对应的value
 </span><span class="n">stu_score</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> <span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">:</span> <span class="mi">77</span><span class="p">}</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">])</span>	<span class="c1"># 结果：99
-</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">])</span>	<span class="c1"># 结果：88
-</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">])</span>	<span class="c1"># 结果：77
+<span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：99
+</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：88
+</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：77
 </span></code></pre></div></div>
 
 <h5 id="字典可以嵌套">字典可以嵌套</h5>
@@ -878,7 +941,7 @@ ctrl+d:复制当前一行代码
     <span class="sh">"</span><span class="s">lin</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">chinese</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> <span class="sh">"</span><span class="s">math</span><span class="sh">"</span><span class="p">:</span> <span class="mi">96</span><span class="p">,</span> <span class="sh">"</span><span class="s">English</span><span class="sh">"</span><span class="p">:</span> <span class="mi">66</span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">])</span>	<span class="c1"># 结果：{"chinese": 77, "math": 66, "English": 33}
+<span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：{"chinese": 77, "math": 66, "English": 33}
 </span></code></pre></div></div>
 
 <h5 id="字典的操作">字典的操作</h5>
@@ -889,10 +952,12 @@ ctrl+d:复制当前一行代码
 <span class="c1"># 修改元素
 </span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
 
+
+
 <span class="c1"># 删除元素
 </span><span class="n">value</span> <span class="o">=</span> <span class="n">stu_score</span><span class="p">.</span><span class="nf">pop</span><span class="p">(</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>		<span class="c1"># 结果：77
-</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">)</span>	<span class="c1"># 结果：wang的key已经消失
+<span class="nf">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>        <span class="c1"># 结果：77
+</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">)</span>    <span class="c1"># 结果：wang的key已经消失
 </span>
 <span class="c1"># 清空字典
 </span><span class="n">stu_score</span><span class="p">.</span><span class="nf">clear</span><span class="p">()</span>
@@ -906,14 +971,17 @@ ctrl+d:复制当前一行代码
 <span class="n">keys</span> <span class="o">=</span> <span class="n">stu_score</span><span class="p">.</span><span class="nf">keys</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
     <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">学生:</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s">,分数:</span><span class="si">{</span><span class="n">stu_score</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-    
+
 <span class="c1"># 计算字典内键值对的数量
 </span><span class="n">stu_score</span> <span class="o">=</span> <span class="p">{</span>
     <span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> 
     <span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> 
     <span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">:</span> <span class="mi">77</span>
 <span class="p">}</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">stu_score</span><span class="p">))</span>		<span class="c1"># 结果：3
-</span>
-</code></pre></div></div>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">stu_score</span><span class="p">))</span>        <span class="c1"># 结果：3
+</span></code></pre></div></div>
 
+            </div>
+        </div>
+    </body>
+</html>
