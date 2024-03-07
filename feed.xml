@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-07T13:51:41+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">常用等价无穷小、积分公式</title><link href="https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html" rel="alternate" type="text/html" title="常用等价无穷小、积分公式" /><published>2024-03-07T13:51:33+08:00</published><updated>2024-03-07T13:51:33+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-07T14:08:33+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">常用等价无穷小、积分公式</title><link href="https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html" rel="alternate" type="text/html" title="常用等价无穷小、积分公式" /><published>2024-03-07T14:08:24+08:00</published><updated>2024-03-07T14:08:24+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
 
 <h4 id="与x相关">与x相关</h4>
 
@@ -16,7 +16,31 @@
 
 <h1 id="不定积分公式">不定积分公式</h1>
 
-<p>$\int tanx \,dx$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">markdown中使用LaTex数学公式</title><link href="https://wsttask.github.io/markdown/2024/03/07/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="markdown中使用LaTex数学公式" /><published>2024-03-07T13:50:16+08:00</published><updated>2024-03-07T13:50:16+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/07/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/07/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html"><![CDATA[<h3 id="在线latex编辑网站"><a href="https://www.latexlive.com/">在线LaTex编辑网站</a></h3>
+<p>${\color{green} \int \frac{1}{x} = ln\mid x \mid +C }$</p>
+
+<p><br /></p>
+
+\[\int tan\,x \,dx = -ln\mid cos\,x \mid +C\]
+
+<p><br /></p>
+
+<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">markdown中使用LaTex数学公式</title><link href="https://wsttask.github.io/markdown/2024/03/07/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="markdown中使用LaTex数学公式" /><published>2024-03-07T13:50:16+08:00</published><updated>2024-03-07T13:50:16+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/07/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/07/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html"><![CDATA[<h3 id="在线latex编辑网站"><a href="https://www.latexlive.com/">在线LaTex编辑网站</a></h3>
 
 <p><a href="https://blog.csdn.net/NSJim/article/details/109045914\">LaTeX数学公式-详细教程_latex怎么输入公式-CSDN博客</a></p>
 
