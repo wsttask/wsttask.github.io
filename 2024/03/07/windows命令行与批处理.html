@@ -210,9 +210,9 @@ find <span class="s2">"/"</span> &lt; 1.txt
 
 <h2 id="基本结构">基本结构</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off		<span class="c"># 关闭回显</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off        <span class="c"># 关闭回显</span>
 ......
-pause			<span class="c"># 暂停。或 pause &gt; nul</span>
+pause            <span class="c"># 暂停。或 pause &gt; nul</span>
 </code></pre></div></div>
 
 <h2 id="-命令">@ 命令</h2>
@@ -315,31 +315,31 @@ Sample：call test2.bat arg1 arg2 <span class="o">(</span>调用同目录下的 
 <h2 id="条件">条件</h2>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span>not] 条件 <span class="o">(</span>
-	语句块
+    语句块
 <span class="o">)</span> <span class="k">else</span> <span class="o">(</span>
-	语句块
+    语句块
 <span class="o">)</span>
 
 <span class="c"># 条件：</span>
-errorlevel number	<span class="c"># 上一个程序的返回值大于等于number则为true</span>
-<span class="nv">string1</span><span class="o">==</span>string2	<span class="c"># 两个字符串匹配则为true</span>
-exist filename		<span class="c"># 文件名存在则为true</span>
-<span class="o">[</span>/I] string1 compare-op string2		<span class="c"># 比较数值或字符串</span>
-	<span class="c"># /I	忽略大小写</span>
-	<span class="c"># compare-op包括：</span>
-	<span class="c">#	equ	等于</span>
-	<span class="c"># 	neq	不等于</span>
-	<span class="c">#	lss	小于</span>
-	<span class="c">#	leq	小于等于</span>
-	<span class="c">#	gtr	大于</span>
-	<span class="c">#	geq	大于等于</span>
-defined variable	<span class="c"># 如果定义了该变量则为true</span>
+errorlevel number    <span class="c"># 上一个程序的返回值大于等于number则为true</span>
+<span class="nv">string1</span><span class="o">==</span>string2    <span class="c"># 两个字符串匹配则为true</span>
+exist filename        <span class="c"># 文件名存在则为true</span>
+<span class="o">[</span>/I] string1 compare-op string2        <span class="c"># 比较数值或字符串</span>
+    <span class="c"># /I    忽略大小写</span>
+    <span class="c"># compare-op包括：</span>
+    <span class="c">#    equ    等于</span>
+    <span class="c">#     neq    不等于</span>
+    <span class="c">#    lss    小于</span>
+    <span class="c">#    leq    小于等于</span>
+    <span class="c">#    gtr    大于</span>
+    <span class="c">#    geq    大于等于</span>
+defined variable    <span class="c"># 如果定义了该变量则为true</span>
 </code></pre></div></div>
 
 <h2 id="跳转">跳转</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>goto label		<span class="c"># 跳转到标签所在行</span>
-:label			<span class="c"># 标签以冒号开头</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>goto label        <span class="c"># 跳转到标签所在行</span>
+:label            <span class="c"># 标签以冒号开头</span>
 </code></pre></div></div>
 
 <h2 id="循环">循环</h2>
@@ -347,7 +347,7 @@ defined variable	<span class="c"># 如果定义了该变量则为true</span>
 <p><strong>基本语法</strong></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
-	语句块
+    语句块
 <span class="o">)</span>
 
 <span class="c"># 循环变量用 %% 指定，只能是单字母</span>
@@ -363,36 +363,36 @@ defined variable	<span class="c"># 如果定义了该变量则为true</span>
   <li>
     <p>只遍历文件夹</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /d %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /d %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
 </code></pre></div>    </div>
   </li>
   <li>
     <p>遍历指定文件夹下的所有文件，不指定则表示当前目录。如果set为<code class="language-plaintext highlighter-rouge">.</code>表示枚举目录树</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /r <span class="o">[[</span>drive:]path] %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do
-    
-  for</span> /r %%i <span class="k">in</span> <span class="o">(</span><span class="k">*</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
-  <span class="k">for</span> /r d:<span class="se">\u</span>p %%i <span class="k">in</span> <span class="o">(</span>.<span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /r <span class="o">[[</span>drive:]path] %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do
+  
+for</span> /r %%i <span class="k">in</span> <span class="o">(</span><span class="k">*</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+<span class="k">for</span> /r d:<span class="se">\u</span>p %%i <span class="k">in</span> <span class="o">(</span>.<span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
 </code></pre></div>    </div>
   </li>
   <li>
     <p>遍历数字序列</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /l %%i <span class="k">in</span> <span class="o">(</span>start,step,end<span class="o">)</span> <span class="k">do</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /l %%i <span class="k">in</span> <span class="o">(</span>start,step,end<span class="o">)</span> <span class="k">do</span>
 </code></pre></div>    </div>
   </li>
   <li>
     <p>遍历文件内容</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">for</span> /f <span class="o">[</span><span class="s2">"options"</span><span class="o">]</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /f <span class="o">[</span><span class="s2">"options"</span><span class="o">]</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
 </code></pre></div>    </div>
   </li>
 </ul>
 
 <h2 id="通配符">通配符</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?		<span class="c"># 单个字符</span>
-<span class="k">*</span>		<span class="c"># 任意字符</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?        <span class="c"># 单个字符</span>
+<span class="k">*</span>        <span class="c"># 任意字符</span>
 </code></pre></div></div>
 
 <h2 id="例子">例子</h2>
@@ -410,4 +410,3 @@ setlocal enabledelayedexpansion
 <span class="o">)</span>
 pause
 </code></pre></div></div>
-

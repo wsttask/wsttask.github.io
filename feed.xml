@@ -1,4 +1,486 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-05T23:14:09+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">python学习</title><link href="https://wsttask.github.io/python/2024/03/05/python.html" rel="alternate" type="text/html" title="python学习" /><published>2024-03-05T23:05:31+08:00</published><updated>2024-03-05T23:05:31+08:00</updated><id>https://wsttask.github.io/python/2024/03/05/python</id><content type="html" xml:base="https://wsttask.github.io/python/2024/03/05/python.html"><![CDATA[<p><a href="https://www.byhy.net/">简单的案例</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-07T13:41:33+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">运行</title><link href="https://wsttask.github.io/2024/03/07/%E8%BF%90%E8%A1%8C.html" rel="alternate" type="text/html" title="运行" /><published>2024-03-07T13:35:05+08:00</published><updated>2024-03-07T13:35:05+08:00</updated><id>https://wsttask.github.io/2024/03/07/%E8%BF%90%E8%A1%8C</id><content type="html" xml:base="https://wsttask.github.io/2024/03/07/%E8%BF%90%E8%A1%8C.html"><![CDATA[<p>1.输入url可以直接打开该网站</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>windos+r
+输入
+https://fanyi.baidu.com/#en/zh/
+直接打开
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>taskmgr: 打开任务管理器
+ms-settings:wheel: 打开设置
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[1.输入url可以直接打开该网站]]></summary></entry><entry><title type="html">Windows命令行与批处理</title><link href="https://wsttask.github.io/2024/03/07/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86.html" rel="alternate" type="text/html" title="Windows命令行与批处理" /><published>2024-03-07T13:34:19+08:00</published><updated>2024-03-07T13:34:19+08:00</updated><id>https://wsttask.github.io/2024/03/07/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/2024/03/07/windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8E%E6%89%B9%E5%A4%84%E7%90%86.html"><![CDATA[<h1 id="命令行">命令行</h1>
+
+<h2 id="cmd与powershell">cmd与PowerShell</h2>
+
+<p>cmd是power shell的子集。</p>
+
+<h2 id="说明">说明</h2>
+
+<ul>
+  <li>不区分大小写</li>
+  <li>按上下键可以查看历史命令</li>
+  <li>Tab键可以自动补全</li>
+  <li>使用<code class="language-plaintext highlighter-rouge">/?</code>或<code class="language-plaintext highlighter-rouge">/help</code>可以查看命令用法，用法中的<code class="language-plaintext highlighter-rouge">[]</code>代表可选</li>
+  <li>命令基本格式<code class="language-plaintext highlighter-rouge">命令 参数列表 </code></li>
+</ul>
+
+<h2 id="基本命令">基本命令</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">echo</code></td>
+      <td>显示</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pause</code></td>
+      <td>暂停</td>
+      <td><code class="language-plaintext highlighter-rouge">pause &gt; nul</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cls</code></td>
+      <td>清屏</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">exit</code></td>
+      <td>退出</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="常用命令">常用命令</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>显示文件内容</td>
+      <td><code class="language-plaintext highlighter-rouge">type 1.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">find</code></td>
+      <td>查找字符串</td>
+      <td><code class="language-plaintext highlighter-rouge">find "abc" 2.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fc</code></td>
+      <td>比较文件内容</td>
+      <td><code class="language-plaintext highlighter-rouge">fc 1.txt 2.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>显示/修改日期</td>
+      <td><code class="language-plaintext highlighter-rouge">date /T</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time</code></td>
+      <td>显示/修改时间</td>
+      <td><code class="language-plaintext highlighter-rouge">time /T</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ping</code></td>
+      <td>网络连接测试</td>
+      <td><code class="language-plaintext highlighter-rouge">ping www.baidu.com</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ipconfig</code></td>
+      <td>TCP/IP信息</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">set /a</code></td>
+      <td>计算表达式</td>
+      <td><code class="language-plaintext highlighter-rouge">set /a 6%4</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">shutdown</code></td>
+      <td>关机</td>
+      <td><code class="language-plaintext highlighter-rouge">shutdown /s /t 60</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="多命令">多命令</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;  顺序执行多条命令，不管命令是否执行成功
+<span class="o">&amp;&amp;</span> 顺序执行多条命令，前面的命令错误则不执行后面的命令
+<span class="o">||</span> 顺序执行多条命令，碰到执行正确的命令后将不执行后面的命令
+
+abc &amp; <span class="nb">dir</span> &amp; bcd
+abc <span class="o">&amp;&amp;</span> <span class="nb">dir</span> <span class="o">&amp;&amp;</span> bcd
+abc <span class="o">||</span> <span class="nb">dir</span> <span class="o">||</span> bcd
+</code></pre></div></div>
+
+<h3 id="重定向">重定向</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span>  输出重定向
+<span class="o">&gt;&gt;</span> 追加重定向
+&lt;  输入重定向
+
+<span class="nb">date</span> /t <span class="o">&gt;</span> 1.txt
+<span class="nb">time</span> /t <span class="o">&gt;&gt;</span> 1.txt
+find <span class="s2">"/"</span> &lt; 1.txt
+</code></pre></div></div>
+
+<h3 id="管道">管道</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| 前一个命令的输出作为后一个命令的输入
+
+<span class="nb">dir</span> | find <span class="s2">"txt"</span>
+</code></pre></div></div>
+
+<h2 id="文件操作命令">文件操作命令</h2>
+
+<p><strong>路径分隔符</strong>：<code class="language-plaintext highlighter-rouge">\</code></p>
+
+<p><strong>当前目录</strong>：<code class="language-plaintext highlighter-rouge">.</code></p>
+
+<p><strong>上一级目录</strong>：<code class="language-plaintext highlighter-rouge">..</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dir</code></td>
+      <td>显示文件夹内容</td>
+      <td><code class="language-plaintext highlighter-rouge">dir /A</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tree</code></td>
+      <td>显示文件夹树形结构</td>
+      <td><code class="language-plaintext highlighter-rouge">tree /F</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">盘符:</code></td>
+      <td>进入指定磁盘</td>
+      <td><code class="language-plaintext highlighter-rouge">c:</code> <code class="language-plaintext highlighter-rouge">d:</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cd</code></td>
+      <td>切换目录</td>
+      <td><code class="language-plaintext highlighter-rouge">cd test</code> <code class="language-plaintext highlighter-rouge">cd ..</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mkdir</code>或<code class="language-plaintext highlighter-rouge">md</code></td>
+      <td>创建目录</td>
+      <td><code class="language-plaintext highlighter-rouge">mkdir test</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rmdir</code>或<code class="language-plaintext highlighter-rouge">rd</code></td>
+      <td>删除目录</td>
+      <td><code class="language-plaintext highlighter-rouge">rmdir test</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">del</code></td>
+      <td>删除文件</td>
+      <td><code class="language-plaintext highlighter-rouge">del 1.txt</code> <code class="language-plaintext highlighter-rouge">del /q/a/f *.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rename</code>或<code class="language-plaintext highlighter-rouge">ren</code></td>
+      <td>重命名</td>
+      <td><code class="language-plaintext highlighter-rouge">rename a.txt b.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">copy</code></td>
+      <td>复制文件</td>
+      <td><code class="language-plaintext highlighter-rouge">copy a\1.txt b\1.txt</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">move</code></td>
+      <td>移动文件/重命名</td>
+      <td><code class="language-plaintext highlighter-rouge">move a\1.txt 2.txt</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="批处理">批处理</h1>
+
+<h2 id="基本结构">基本结构</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off        <span class="c"># 关闭回显</span>
+......
+pause            <span class="c"># 暂停。或 pause &gt; nul</span>
+</code></pre></div></div>
+
+<h2 id="-命令">@ 命令</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>表示不显示@后面的命令，<span class="o">(</span>在入侵过程中自然不能让对方看到你使用的命令啦<span class="o">)</span>
+@ 与 <span class="nb">echo </span>off 相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行<span class="o">(</span>只能影响当前行<span class="o">)</span>。
+Sample： @echo off <span class="o">(</span>此语句常用于开头，表示不显示所有的命令行信息，包括此句<span class="o">)</span>
+Sample： @echo please <span class="nb">wait </span>a minite...
+Sample： @format X: /q/u/autoset
+<span class="o">(</span>format 这个命令是不可以使用/y这个参数的，可喜的是微软留了个autoset这个参数给我们，效果和/y是一样的。<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="call-命令">Call 命令</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>语法: call <span class="o">[[</span>Drive:][Path] FileName <span class="o">[</span>BatchParameters]] <span class="o">[</span>:label <span class="o">[</span>arguments]]
+参数: <span class="o">[</span>Drive:][Path] FileName 指定要调用的批处理程序的位置和名称。filename 参数必须具有 .bat 或 .cmd 扩展名。
+调用另一个批处理程序，并且不终止父批处理程序。
+如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令。
+call 命令接受用作调用目标的标签。如果在脚本或批处理文件外使用 Call，它将不会在命令行起作用。
+Sample：call<span class="o">=</span><span class="s2">"%cd%</span><span class="se">\t</span><span class="s2">est2.bat"</span> haha kkk aaa <span class="o">(</span>调用指定目录下的 test2.bat，且输入3个参数给他<span class="o">)</span>
+Sample：call test2.bat arg1 arg2 <span class="o">(</span>调用同目录下的 test2.bat，且输入2个参数给他<span class="o">)</span>
+注：可以调用自身<span class="o">(</span>死循环、递归<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="运行方式">运行方式</h2>
+
+<ul>
+  <li>双击运行</li>
+  <li>在cmd中运行（可以传参）</li>
+</ul>
+
+<h2 id="变量">变量</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 设置变量</span>
+<span class="nb">set </span>变量名<span class="o">=</span>变量值
+<span class="nb">set</span> /a 变量名<span class="o">=</span>表达式
+
+<span class="c"># 取消变量</span>
+<span class="nb">set </span>变量名<span class="o">=</span>
+
+<span class="c"># 打印变量</span>
+<span class="nb">set </span>变量名
+
+<span class="c"># 列出变量</span>
+<span class="nb">set</span>
+
+<span class="c"># 引用变量</span>
+%变量名%
+
+<span class="c"># 输入变量值</span>
+<span class="nb">set</span> /p 变量名<span class="o">=</span>提示文字
+</code></pre></div></div>
+
+<h3 id="预定义的变量">预定义的变量</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>变量名</th>
+      <th>值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%cd%</code></td>
+      <td>当前目录</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%date%</code></td>
+      <td>当前日期</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%time%</code></td>
+      <td>当前时间</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%random%</code></td>
+      <td>0~32767之间的随机数</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%path%</code></td>
+      <td>环境变量</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%errorlevel%</code></td>
+      <td>上一个命令的返回值，0表示执行成功</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%0</code>、<code class="language-plaintext highlighter-rouge">%1</code>、<code class="language-plaintext highlighter-rouge">%2</code>……</td>
+      <td>参数。<code class="language-plaintext highlighter-rouge">%0</code>表示命令名</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="调用">调用</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>call 可执行文件 <span class="o">[</span>参数列表]
+</code></pre></div></div>
+
+<h2 id="条件">条件</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span>not] 条件 <span class="o">(</span>
+    语句块
+<span class="o">)</span> <span class="k">else</span> <span class="o">(</span>
+    语句块
+<span class="o">)</span>
+
+<span class="c"># 条件：</span>
+errorlevel number    <span class="c"># 上一个程序的返回值大于等于number则为true</span>
+<span class="nv">string1</span><span class="o">==</span>string2    <span class="c"># 两个字符串匹配则为true</span>
+exist filename        <span class="c"># 文件名存在则为true</span>
+<span class="o">[</span>/I] string1 compare-op string2        <span class="c"># 比较数值或字符串</span>
+    <span class="c"># /I    忽略大小写</span>
+    <span class="c"># compare-op包括：</span>
+    <span class="c">#    equ    等于</span>
+    <span class="c">#     neq    不等于</span>
+    <span class="c">#    lss    小于</span>
+    <span class="c">#    leq    小于等于</span>
+    <span class="c">#    gtr    大于</span>
+    <span class="c">#    geq    大于等于</span>
+defined variable    <span class="c"># 如果定义了该变量则为true</span>
+</code></pre></div></div>
+
+<h2 id="跳转">跳转</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>goto label        <span class="c"># 跳转到标签所在行</span>
+:label            <span class="c"># 标签以冒号开头</span>
+</code></pre></div></div>
+
+<h2 id="循环">循环</h2>
+
+<p><strong>基本语法</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
+    语句块
+<span class="o">)</span>
+
+<span class="c"># 循环变量用 %% 指定，只能是单字母</span>
+<span class="c"># set表示文件集合（也可以是空文件），元素之间以逗号或空格分隔，支持通配符</span>
+
+<span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span>a,b,c<span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+<span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span><span class="k">*</span>.<span class="k">*</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+</code></pre></div></div>
+
+<p><strong>扩展语法</strong></p>
+
+<ul>
+  <li>
+    <p>只遍历文件夹</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /d %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>遍历指定文件夹下的所有文件，不指定则表示当前目录。如果set为<code class="language-plaintext highlighter-rouge">.</code>表示枚举目录树</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /r <span class="o">[[</span>drive:]path] %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do
+  
+for</span> /r %%i <span class="k">in</span> <span class="o">(</span><span class="k">*</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+<span class="k">for</span> /r d:<span class="se">\u</span>p %%i <span class="k">in</span> <span class="o">(</span>.<span class="o">)</span> <span class="k">do</span> <span class="o">(</span><span class="nb">echo</span> %%i<span class="o">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>遍历数字序列</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /l %%i <span class="k">in</span> <span class="o">(</span>start,step,end<span class="o">)</span> <span class="k">do</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>遍历文件内容</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> /f <span class="o">[</span><span class="s2">"options"</span><span class="o">]</span> %%i <span class="k">in</span> <span class="o">(</span><span class="nb">set</span><span class="o">)</span> <span class="k">do</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="通配符">通配符</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?        <span class="c"># 单个字符</span>
+<span class="k">*</span>        <span class="c"># 任意字符</span>
+</code></pre></div></div>
+
+<h2 id="例子">例子</h2>
+
+<p>按顺序为文件夹中的文件命名。</p>
+
+<p><a href="https://blog.csdn.net/Dandelion_gong/article/details/78067501">批处理中for循环的自增自减问题_Dandelion_gong的博客-CSDN博客_bat for 自增</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off
+setlocal enabledelayedexpansion
+<span class="nb">set </span><span class="nv">cnt</span><span class="o">=</span>0
+<span class="k">for</span> %%i <span class="k">in</span> <span class="o">(</span>%1<span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
+    rename %%i <span class="o">!</span>cnt!.txt
+    <span class="nb">set</span> /a <span class="nv">cnt</span><span class="o">=!</span>cnt! + 1
+<span class="o">)</span>
+pause
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[命令行]]></summary></entry><entry><title type="html">函数、方程、解析式等概念</title><link href="https://wsttask.github.io/calculus/2024/03/07/%E4%BB%A3%E6%95%B0%E5%BC%8F.html" rel="alternate" type="text/html" title="函数、方程、解析式等概念" /><published>2024-03-07T13:31:27+08:00</published><updated>2024-03-07T13:31:27+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/07/%E4%BB%A3%E6%95%B0%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/07/%E4%BB%A3%E6%95%B0%E5%BC%8F.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/659316224?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1748759430060257280&amp;utm_source=wechat_session">函数、方程、解析式、参数方程、等式、代数式、多项式、解析几何</a></p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[函数、方程、解析式、参数方程、等式、代数式、多项式、解析几何]]></summary></entry><entry><title type="html">excerpt one</title><link href="https://wsttask.github.io/excerpt/2024/03/07/1.html" rel="alternate" type="text/html" title="excerpt one" /><published>2024-03-07T13:22:47+08:00</published><updated>2024-03-07T13:22:47+08:00</updated><id>https://wsttask.github.io/excerpt/2024/03/07/1</id><content type="html" xml:base="https://wsttask.github.io/excerpt/2024/03/07/1.html"><![CDATA[<ol>
+  <li>
+    <p>骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。</p>
+  </li>
+  <li>
+    <p>太平本是将军定，不许将军见太平。</p>
+  </li>
+  <li>
+    <p>人生当如蜡烛一样，从头燃到尾，始终光明。</p>
+  </li>
+  <li>
+    <p>人少，则慕父母；知好色，则慕少艾；有妻子，则慕妻子；仕则慕君，不得于君则热中。大孝终身慕父母。五十而慕者，予于大舜见之矣。</p>
+  </li>
+  <li>
+    <p>朱泙漫学屠龙于支离益,殚千金之家,三年技成,而无所用其巧。</p>
+  </li>
+  <li>
+    <p>我还是从前那个少年，没有一丝丝改变，时间只不过是考验，种在心中信念丝毫未减，眼前这个少年，还是最初那张脸。</p>
+  </li>
+  <li>
+    <p>我希望躺在向日葵上，即使沮丧，也能朝着阳光。</p>
+  </li>
+  <li>
+    <p>喜欢是很贵的，哪有那么容易消费得起，所以要存起来，只给一个人，一瓶装的草莓味的喜欢。</p>
+  </li>
+  <li>
+    <p>我想不出来第一次看见你的时候，你穿的衣服是什么颜色，是晴天还是雨天，因为我从未想过，到那天之后我会喜欢你。</p>
+  </li>
+  <li>
+    <p>佛曰：人生有八苦，生，老，病，死；爱别离，怨长久，求不得，放不下。</p>
+  </li>
+  <li>
+    <p>何谓恩爱别苦？室家内外，兄弟妻子，共相恋慕，一朝破亡，为人抄劫，各自分张，父东子西，母南女北，非唯一处，为人奴婢，各自悲呼，心内断绝，窈窈冥冥，无有相见之期。”</p>
+  </li>
+  <li>
+    <p>也许努力有些煎熬，但真的，熬过去就好了。</p>
+  </li>
+  <li>
+    <p>想尝试一下早睡早起，规律三餐，晒半个小时太阳，日读两个小时书的生活。</p>
+  </li>
+  <li>
+    <p>我好像抱抱你闻闻你身上的味道，把下巴搁在你的肩上，然后乖乖睡着。</p>
+  </li>
+  <li>
+    <p>佛不要你皈依，佛要你欢喜。</p>
+  </li>
+  <li>
+    <p>世人慌慌张张，不过图碎银几两，偏偏着碎银几两，压断了多少人的脊梁。</p>
+  </li>
+  <li>
+    <p>剑气纵横三千里，一剑寒光十九州。</p>
+  </li>
+  <li>
+    <p>十八年风雨，半生鸿业，说与枯骨听。</p>
+  </li>
+  <li>
+    <p>世人多媚骨，唯有君如故。</p>
+  </li>
+  <li>
+    <p>不快乐的时候，你会借助很多东西来暂时麻醉，放纵啊，喝酒啊，喝得醉熏熏的，甚至抱头痛哭啊，干嘛干嘛，这些东西都很虚的。这些其实都是暂时麻醉来掩盖那种声音</p>
+  </li>
+</ol>]]></content><author><name></name></author><category term="excerpt" /><summary type="html"><![CDATA[骑士有句老话，千里路途我只陪他一程，从此风雪艳阳我都不再过问。]]></summary></entry><entry><title type="html">python学习</title><link href="https://wsttask.github.io/python/2024/03/05/python.html" rel="alternate" type="text/html" title="python学习" /><published>2024-03-05T23:05:31+08:00</published><updated>2024-03-05T23:05:31+08:00</updated><id>https://wsttask.github.io/python/2024/03/05/python</id><content type="html" xml:base="https://wsttask.github.io/python/2024/03/05/python.html"><![CDATA[<p><a href="https://www.byhy.net/">简单的案例</a></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">()</span>
 <span class="o">//</span><span class="n">输出到控制台</span>
@@ -1034,112 +1516,4 @@ ctrl+d:复制当前一行代码
       <li>二阶可导时，拐点一定能推出二阶导数为0，但是二阶导数为0不一定是拐点。</li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极值点、拐点、驻点、专题总结 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">jekyll blog</title><link href="https://wsttask.github.io/task/2024/03/04/jekyllBlog.html" rel="alternate" type="text/html" title="jekyll blog" /><published>2024-03-04T17:11:23+08:00</published><updated>2024-03-04T17:11:23+08:00</updated><id>https://wsttask.github.io/task/2024/03/04/jekyllBlog</id><content type="html" xml:base="https://wsttask.github.io/task/2024/03/04/jekyllBlog.html"><![CDATA[<h3 id="示例">示例</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>[Jekyll 的 Categories 设计</td>
-      <td>Cotes’ Blog](https://cotes.page/posts/jekyll-categroies-design/)</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="目标">目标</h3>
-
-<ul>
-  <li>
-    <p>读取_drafts中的目录结构，根据目录结构进行 jekyll 的Categories的设计</p>
-
-    <ul>
-      <li>懂每个文件的Front matter约定是怎么做的</li>
-      <li>然后python脚本撰写categories</li>
-    </ul>
-  </li>
-  <li>
-    <p>目录可以与文件共存</p>
-  </li>
-  <li>
-    <p>只允许markdown文件</p>
-  </li>
-  <li>
-    <p>注意表示参考文件</p>
-  </li>
-</ul>
-
-<h3 id="问题">问题</h3>
-
-<ul>
-  <li>文件资源过多会不会卡顿？
-    <ul>
-      <li>不至于吧，到时候卡顿再说</li>
-    </ul>
-  </li>
-  <li>每一级目录都需要进行一个页面设计？
-    <ul>
-      <li>方案1，干脆直接展示所有文件</li>
-      <li>方案2，像资源管理器那样展示本级目录下的所有文件</li>
-      <li>方案3，展示本级目录下的文件夹，不展示md文件</li>
-    </ul>
-  </li>
-</ul>
-
-<table>
-  <tbody>
-    <tr>
-      <td>[Jekyll 的 Categories 设计</td>
-      <td>Cotes’ Blog](https://cotes.page/posts/jekyll-categroies-design/)</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="设计">设计</h3>
-
-<ul>
-  <li>layout中设计categoires.html，展示categoires界面</li>
-  <li>layout中设计category.html，展示单级目录</li>
-</ul>
-
-<h3 id="学习">学习</h3>
-
-<ul>
-  <li>Liquid</li>
-  <li>python</li>
-  <li>箭头展开，应该是js</li>
-  <li>bootstrap</li>
-</ul>
-
-<h3 id="问题-1">问题</h3>
-
-<ul>
-  <li>无法做出多重嵌套的效果</li>
-</ul>
-
-<h3 id="方案">方案</h3>
-
-<ul>
-  <li>使用permalink，这样生成的_site就是多级结构的样子
-    <ul>
-      <li>如何做目录呢</li>
-    </ul>
-  </li>
-  <li>我想是通过python写一个脚本，生成一个目录文件，里面按照结构生成目录文件，这样不需要jekyll进行读取，</li>
-</ul>
-
-<p>js手机版可以，电脑版不行</p>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[示例]]></summary></entry><entry><title type="html">Zoomit</title><link href="https://wsttask.github.io/2024/03/04/zoomit.html" rel="alternate" type="text/html" title="Zoomit" /><published>2024-03-04T17:05:06+08:00</published><updated>2024-03-04T17:05:06+08:00</updated><id>https://wsttask.github.io/2024/03/04/zoomit</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/zoomit.html"><![CDATA[<p>zoomit</p>]]></content><author><name></name></author><summary type="html"><![CDATA[zoomit]]></summary></entry><entry><title type="html">符号网站</title><link href="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="符号网站" /><published>2024-03-04T16:27:23+08:00</published><updated>2024-03-04T16:27:23+08:00</updated><id>https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99</id><content type="html" xml:base="https://wsttask.github.io/2024/03/04/%E7%AC%A6%E5%8F%B7%E7%BD%91%E7%AB%99.html"><![CDATA[<p><a href="https://symbl.cc/cn/">SYMBL (◕‿◕) 符号、Emoji、字符、脚本、字母表、象形文字和整个Unicode</a></p>
-
-<p><a href="https://symbl.cc/cn/tools/emoji-keyboard/">表情符号键盘: 复制和粘贴任何表情符号 🔥 (◕‿◕) SYMBL</a></p>
-
-<p><a href="https://www.iconfont.cn/">iconfont-阿里巴巴矢量图标库</a></p>
-
-<p><a href="https://www.flaticon.com/">Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS (flaticon.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[SYMBL (◕‿◕) 符号、Emoji、字符、脚本、字母表、象形文字和整个Unicode]]></summary></entry><entry><title type="html">markdown中使用LaTex数学公式</title><link href="https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="markdown中使用LaTex数学公式" /><published>2024-03-04T16:19:24+08:00</published><updated>2024-03-04T16:19:24+08:00</updated><id>https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/markdown/2024/03/04/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.html"><![CDATA[<h3 id="在线latex编辑网站"><a href="https://www.latexlive.com/">在线LaTex编辑网站</a></h3>
-
-<p><a href="https://blog.csdn.net/NSJim/article/details/109045914\">LaTeX数学公式-详细教程_latex怎么输入公式-CSDN博客</a></p>
-
-<h3 id="插入latex的方法">插入LaTex的方法</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;</span> <span class="nt">img</span> <span class="na">src=</span><span class="s">"http://latex.codecogs.com/gif.latex?\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^2}"</span> <span class="nt">/&gt;</span>
-![](http://latex.codecogs.com/gif.latex?\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^2})
-</code></pre></div></div>
-
-<p><img src="http://latex.codecogs.com/gif.latex?%5Csqrt%7B%5Csum%5Climits_%7Bi=1%7D%5E%7Bn%7D(x_%7Bi%7D-y_%7Bi%7D)%5E2%7D" alt="" /></p>]]></content><author><name></name></author><category term="markdown" /><summary type="html"><![CDATA[在线LaTex编辑网站]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极值点、拐点、驻点、专题总结 - 知乎 (zhihu.com)]]></summary></entry></feed>
