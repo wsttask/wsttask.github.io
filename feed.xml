@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-08T13:16:59+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-08T13:16:40+08:00</published><updated>2024-03-08T13:16:40+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-08T16:59:55+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-08T16:59:38+08:00</published><updated>2024-03-08T16:59:38+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -21,6 +21,8 @@
 <h3 id="python"><a href="https://docs.python.org/">python</a></h3>
 
 <h3 id="qt-documentation"><a href="https://doc.qt.io/">Qt Documentation</a></h3>
+
+<h3 id="java"><a href="https://docs.oracle.com/">Java</a></h3>
 
 <h1 id="latex">LaTex</h1>
 
@@ -70,7 +72,11 @@
 
 <h1 id="中国考试教育网">中国考试教育网</h1>
 
-<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">Python</title><link href="https://wsttask.github.io/python/2024/03/08/python.html" rel="alternate" type="text/html" title="Python" /><published>2024-03-08T13:15:55+08:00</published><updated>2024-03-08T13:15:55+08:00</updated><id>https://wsttask.github.io/python/2024/03/08/python</id><content type="html" xml:base="https://wsttask.github.io/python/2024/03/08/python.html"><![CDATA[<p><a href="https://www.byhy.net/">python学习网站</a></p>
+<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">电脑如何控制手机</title><link href="https://wsttask.github.io/2024/03/08/%E7%94%B5%E8%84%91%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%89%8B%E6%9C%BA.html" rel="alternate" type="text/html" title="电脑如何控制手机" /><published>2024-03-08T16:09:29+08:00</published><updated>2024-03-08T16:09:29+08:00</updated><id>https://wsttask.github.io/2024/03/08/%E7%94%B5%E8%84%91%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%89%8B%E6%9C%BA</id><content type="html" xml:base="https://wsttask.github.io/2024/03/08/%E7%94%B5%E8%84%91%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%89%8B%E6%9C%BA.html"><![CDATA[<h1 id="小米手机">小米手机</h1>
+
+<p><a href="https://blog.csdn.net/2201_75758580/article/details/134587672">小米电脑管家-非小米电脑安装教程_小米电脑管家非小米电脑怎么安装-CSDN博客</a></p>
+
+<p><a href="https://xiaoyi.vc/xiaomipcmanager.html">非小米电脑使用「小米电脑管家」实现手机/平板等设备互联 - 小羿 (xiaoyi.vc)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[小米手机]]></summary></entry><entry><title type="html">Python</title><link href="https://wsttask.github.io/python/2024/03/08/python.html" rel="alternate" type="text/html" title="Python" /><published>2024-03-08T13:15:55+08:00</published><updated>2024-03-08T13:15:55+08:00</updated><id>https://wsttask.github.io/python/2024/03/08/python</id><content type="html" xml:base="https://wsttask.github.io/python/2024/03/08/python.html"><![CDATA[<p><a href="https://www.byhy.net/">python学习网站</a></p>
 
 <p><a href="https://docs.python.org/">Python Documentation</a></p>
 
@@ -1221,64 +1227,4 @@ ctrl+d:复制当前一行代码
 
 <p>我在2009年培训的时候，这个还写过游戏，还用在移动啊什么的开发上，可是后来你们应该知道了。。。安卓时代来临了。</p>
 
-<p>安卓中既然用的是Java，那么Java的语法应该都是适用的。所以SE是核心基础。其他的都是使用方法方式不同。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Java SE(Java Platform,Standard Edition)，应该先说这个，因为这个是标准版本。]]></summary></entry><entry><title type="html">常用等价无穷小、积分公式</title><link href="https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html" rel="alternate" type="text/html" title="常用等价无穷小、积分公式" /><published>2024-03-07T16:07:37+08:00</published><updated>2024-03-07T16:07:37+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/07/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
-
-<h4 id="与x相关">与x相关</h4>
-
-<p>$sin\,x \sim x$</p>
-
-<p>$tan\,x \sim x$</p>
-
-<p>$arcsin\,x \sim x$</p>
-
-<p>$arctan\,x \sim x$</p>
-
-<p>$ln(1+x) \sim x$</p>
-
-<p>$e^x -1 \sim x$</p>
-
-<h1 id="不定积分公式">不定积分公式</h1>
-
-<p>${\color{green} \int \frac{1}{x} \,dx = ln\mid x \mid +C }$</p>
-
-<p><br /></p>
-
-<p>$\int tan\,x \,dx = -ln\mid cos\,x \mid +C$</p>
-
-<p><br /></p>
-
-<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>
-
-<p><br /></p>
-
-<hr />
-
-<p>${\large \int \frac{1}{2\sqrt{x}}dx = \sqrt{x}}$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{1}{\sqrt{x}} =  2\sqrt{x}}$</p>
-
-<hr />
-
-<p>${\large \int \frac{1}{x^2}dx = -\frac{1}{x}}$</p>
-
-<p><br /></p>
-
-<p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry></feed>
+<p>安卓中既然用的是Java，那么Java的语法应该都是适用的。所以SE是核心基础。其他的都是使用方法方式不同。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Java SE(Java Platform,Standard Edition)，应该先说这个，因为这个是标准版本。]]></summary></entry></feed>
