@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-08T12:54:23+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-08T12:54:13+08:00</published><updated>2024-03-08T12:54:13+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-08T12:59:58+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">word 1</title><link href="https://wsttask.github.io/a-word/2024/03/08/word.html" rel="alternate" type="text/html" title="word 1" /><published>2024-03-08T12:59:38+08:00</published><updated>2024-03-08T12:59:38+08:00</updated><id>https://wsttask.github.io/a-word/2024/03/08/word</id><content type="html" xml:base="https://wsttask.github.io/a-word/2024/03/08/word.html"><![CDATA[<h4 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h4>]]></content><author><name></name></author><category term="A-word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">Word3</title><link href="https://wsttask.github.io/2024/03/08/word3.html" rel="alternate" type="text/html" title="Word3" /><published>2024-03-08T12:56:13+08:00</published><updated>2024-03-08T12:56:13+08:00</updated><id>https://wsttask.github.io/2024/03/08/word3</id><content type="html" xml:base="https://wsttask.github.io/2024/03/08/word3.html"><![CDATA[<p><a href="https://fanyi.baidu.com/#en/zh/delimit">delimit</a></p>
+
+<p><a href="https://fanyi.baidu.com/#en/zh/magnifier">magnifier</a></p>
+
+<p><a href="https://fanyi.baidu.com/#en/zh/directory">directory</a></p>
+
+<p><a href="https://fanyi.baidu.com/#en/zh/excerpt">excerpt</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[delimit]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-08T12:54:13+08:00</published><updated>2024-03-08T12:54:13+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
 
 <h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
 
@@ -1076,24 +1082,4 @@ ctrl+d:复制当前一行代码
 
 <p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">music 资源网站</title><link href="https://wsttask.github.io/website/music" rel="alternate" type="text/html" title="music 资源网站" /><published>2024-03-07T15:49:24+08:00</published><updated>2024-03-07T15:49:24+08:00</updated><id>https://wsttask.github.io/website/music%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99</id><content type="html" xml:base="https://wsttask.github.io/website/music"><![CDATA[<p><a href="https://tool.liumingye.cn/music/?page=searchPage#/">MyFreeMP3 (liumingye.cn)</a></p>]]></content><author><name></name></author><category term="website" /><summary type="html"><![CDATA[MyFreeMP3 (liumingye.cn)]]></summary></entry><entry><title type="html">Bilibili下载姬</title><link href="https://wsttask.github.io/2024/03/07/bilibili%E4%B8%8B%E8%BD%BD%E5%A7%AC.html" rel="alternate" type="text/html" title="Bilibili下载姬" /><published>2024-03-07T15:23:38+08:00</published><updated>2024-03-07T15:23:38+08:00</updated><id>https://wsttask.github.io/2024/03/07/bilibili%E4%B8%8B%E8%BD%BD%E5%A7%AC</id><content type="html" xml:base="https://wsttask.github.io/2024/03/07/bilibili%E4%B8%8B%E8%BD%BD%E5%A7%AC.html"><![CDATA[<p><a href="https://github.com/leiurayer/downkyi?tab=readme-ov-file">Releases · leiurayer/downkyi (github.com)</a></p>
 
-<p>这是一个github上面的项目</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Releases · leiurayer/downkyi (github.com)]]></summary></entry><entry><title type="html">数学符号的计算性质</title><link href="https://wsttask.github.io/math/2024/03/07/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html" rel="alternate" type="text/html" title="数学符号的计算性质" /><published>2024-03-07T14:36:09+08:00</published><updated>2024-03-07T14:36:09+08:00</updated><id>https://wsttask.github.io/math/2024/03/07/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8</id><content type="html" xml:base="https://wsttask.github.io/math/2024/03/07/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html"><![CDATA[<h2 id="绝对值">绝对值</h2>
-
-<ul>
-  <li>
-    <p>$\mid a \mid * \mid b \mid = \mid a b \mid$</p>
-  </li>
-  <li>
-    <p>${\Large \mid \frac{a}{b} \mid } = {\Large  \frac{\mid a \mid}{\mid b \mid} }$</p>
-  </li>
-</ul>
-
-<h2 id="不定积分">不定积分</h2>
-
-<ul>
-  <li>
-    <p>$\int [\,f(x) \, \pm \, g(x) \, ]\, dx = \int f(x)\, dx \, \pm \, \int g(x) \, dx$</p>
-  </li>
-  <li>
-    <p>$\int kf(x) \, dx = k\int f(x) \, dx$</p>
-  </li>
-</ul>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[绝对值]]></summary></entry><entry><title type="html">和差化积公式推导</title><link href="https://wsttask.github.io/2024/03/07/%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC.html" rel="alternate" type="text/html" title="和差化积公式推导" /><published>2024-03-07T14:29:52+08:00</published><updated>2024-03-07T14:29:52+08:00</updated><id>https://wsttask.github.io/2024/03/07/%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC</id><content type="html" xml:base="https://wsttask.github.io/2024/03/07/%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC.html"><![CDATA[<p><img src="../../math/images/QQ图片20230320230350.jpg" alt="" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
+<p>这是一个github上面的项目</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Releases · leiurayer/downkyi (github.com)]]></summary></entry></feed>
