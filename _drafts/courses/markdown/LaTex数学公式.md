@@ -15,4 +15,4 @@ categories: markdown
 ![](http://latex.codecogs.com/gif.latex?\sqrt{\sum\limits_{i=1}^{n}(x_{i}-y_{i})^2})
 ```
 
-![](http://latex.codecogs.com/gif.latex?%5Csqrt%7B%5Csum%5Climits_%7Bi=1%7D%5E%7Bn%7D(x_%7Bi%7D-y_%7Bi%7D)%5E2%7D)
+## [Latex 中的空格汇总_latex 空白-CSDN博客](https://blog.csdn.net/hysterisis/article/details/114123131)

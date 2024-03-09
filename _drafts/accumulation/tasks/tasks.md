@@ -13,6 +13,10 @@ permalink: /tasks
 
 ### [jekyll_blog](./jekyllBlog.md)
 
+python基本数据类型9
+
+使用python编写一个可以自动添加超链接的.exe文件
+
 使用达布中值定理证明。。。。
 
 证明柯西中值定理

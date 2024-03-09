@@ -23,6 +23,14 @@ permalink: /browser
 
 ### [openai](https://chat.openai.com/)
 
+# Documentation
+
+### [python](https://docs.python.org/)
+
+### [Qt Documentation](https://doc.qt.io/)
+
+### [Java](https://docs.oracle.com/)
+
 # LaTex
 
 ### [LaTex在线编辑器](https://www.latexlive.com/)
@@ -57,17 +65,19 @@ permalink: /browser
 
 ### [英语兔](https://www.bilibili.com/video/BV1iV411z7Nj/)
 
-# 视频
+# video
 
 ### [bilibili](https://www.bilibili.com/)
 
 ### [YouTube](https://www.youtube.com/)
 
-# 西工大
+# nwpu
 
 ### [翱翔门户](https://ecampus.nwpu.edu.cn/main.html#/Index)
 
 ### [西工大研招网](https://yzb.nwpu.edu.cn/info/1174/8628.htm)
+
+### [图书馆](https://ic.nwpu.edu.cn/)
 
 # 中国考试教育网
 

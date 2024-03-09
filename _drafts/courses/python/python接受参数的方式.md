@@ -1,0 +1,1 @@
+[运行python脚本时传入参数的几种方式（接收外部参数）_python脚本接收参数-CSDN博客](https://blog.csdn.net/weixin_44847326/article/details/112366677)

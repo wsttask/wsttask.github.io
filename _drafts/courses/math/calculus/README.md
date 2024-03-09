@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 公式集合
+title: 常用公式
 categories: calculus
 ---
 
