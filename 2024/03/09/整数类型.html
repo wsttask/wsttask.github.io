@@ -1,0 +1,33 @@
+<h3 id="1-python整数类型int详解">1. Python整数类型（int）详解</h3>
+
+<ul>
+  <li>整数就是没有小数部分的数字，<a href="http://c.biancheng.net/python/">Python</a> 中的整数包括正整数、0 和负整数。</li>
+  <li>有些强类型的编程语言会提供多种整数类型，每种类型的长度都不同，能容纳的整数的大小也不同，开发者要根据实际数字的大小选用不同的类型。例如<code class="language-plaintext highlighter-rouge">C语言</code>提供了 <code class="language-plaintext highlighter-rouge">short、int、long、long long</code> 四种类型的整数，它们的长度依次递增，初学者在选择整数类型时往往比较迷惑，有时候还会导致数值溢出。</li>
+  <li>而 Python 则不同，它的整数不分类型，或者说它只有一种类型的整数。<code class="language-plaintext highlighter-rouge">Python 整数的取值范围是无限的，不管多大或者多小的数字，Python 都能轻松处理</code>。</li>
+</ul>
+
+<h3 id="整数的不同进制">整数的不同进制</h3>
+
+<ol>
+  <li>十进制</li>
+  <li>二进制，使用 $0b$ 或 $0B$ 开头</li>
+  <li>八进制，使用 $0o$ 或 $0O$ 开头</li>
+  <li>十六进制，使用 $0x$ 或 $0X$ 开头</li>
+</ol>
+
+<blockquote>
+  <p>注意，不同进制存储的都是一个数据，使用format(num,’x’) 或 hex() 可当十六进制输出</p>
+</blockquote>
+
+<h3 id="数字分隔符">数字分隔符</h3>
+
+<ul>
+  <li>为了提高数字的的可读性，Python 3.x 允许使用下划线_作为数字（包括整数和小数）的分隔符。通常每隔三个数字添加一个下划线，类似于英文数字中的逗号。下划线不会影响数字本身的值。</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">click</span> <span class="o">=</span> <span class="mi">1_301_547</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="mi">384_000_000</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">click</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</code></pre></div></div>
+
