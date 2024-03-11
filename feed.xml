@@ -1,158 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-11T21:53:49+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">一些公式</title><link href="https://wsttask.github.io/calculus/2024/03/11/README.html" rel="alternate" type="text/html" title="一些公式" /><published>2024-03-11T21:53:23+08:00</published><updated>2024-03-11T21:53:23+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/11/README</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/11/README.html"><![CDATA[<h1 id="求导公式">求导公式</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/1.jpg" alt="" /></p>
-
-<h1 id="三角函数公式">三角函数公式</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/2.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/3.jpg" alt="" /></p>
-
-<h1 id="常用等价无穷小">常用等价无穷小</h1>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/4.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/5.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/6.jpg" alt="" /></p>
-
-<p><a href="https://www.zhihu.com/question/20829733">(63 封私信 / 81 条消息) 如何巧记「积化和差」与「和差化积」公式？ - 知乎 (zhihu.com)</a></p>
-
-<p>积化和差</p>
-
-<p>正余余正，正加正减；</p>
-
-<p>余余正正，余加负余减</p>
-
-<p>和差化积</p>
-
-<p>正加正，正在前；</p>
-
-<p>正减正，余在前；</p>
-
-<p>余加余，余并肩；</p>
-
-<p>余减余，负正弦。</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[求导公式]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-11T21:53:04+08:00</published><updated>2024-03-11T21:53:04+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
-
-<h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
-
-<p>$sin\,x \sim x$</p>
-
-<p>$tan\,x \sim x$</p>
-
-<p>$arcsin\,x \sim x$</p>
-
-<p>$arctan\,x \sim x$</p>
-
-<p>$ln(1+x) \sim x$</p>
-
-<p>$e^x -1 \sim x$</p>
-
-<p>$(1+x)^\alpha \sim \alpha x$</p>
-
-<p>$log_a(1+x) \sim \frac{x}{ln \,a}$</p>
-
-<h1 id="不定积分公式">不定积分公式</h1>
-
-<font color="red">$\int \frac{1}{x} \,dx = ln\mid x \mid +C $</font>
-
-<p><br /></p>
-
-<p>$\int tan\,x \,dx = -ln\mid cos\,x \mid +C$</p>
-
-<p><br /></p>
-
-<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>
-
-<p><br /></p>
-
-<hr />
-
-<p>${\large \int \frac{1}{2\sqrt{x}}dx = \sqrt{x}}$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{1}{\sqrt{x}} =  2\sqrt{x}}$</p>
-
-<hr />
-
-<p>${\large \int \frac{1}{x^2}dx = -\frac{1}{x}}$</p>
-
-<p><br /></p>
-
-<p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>
-
-<h1 id="常用泰勒展开">常用泰勒展开</h1>
-
-<p>$(1+x)^\alpha = 1+ \displaystyle\sum^{\infty}_{n=1}\frac{\alpha(\alpha-1)···(\alpha-n+1)}{n!}x^n = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
-
-<p><br /></p>
-
-<p>$(1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
-
-<hr />
-
-<p>$tan\,x = x + \frac13x^3+\frac{2}{15}x^5+o(n^5)$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-10T21:50:57+08:00</published><updated>2024-03-10T21:50:57+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-03-10T21:50:45+08:00</published><updated>2024-03-10T21:50:45+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<p>永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-11T22:02:32+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">数学符号的计算性质</title><link href="https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html" rel="alternate" type="text/html" title="数学符号的计算性质" /><published>2024-03-11T22:01:43+08:00</published><updated>2024-03-11T22:01:43+08:00</updated><id>https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8</id><content type="html" xml:base="https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html"><![CDATA[<h2 id="绝对值">绝对值</h2>
+
+<ul>
+  <li>
+    <p>$\mid a \mid * \mid b \mid = \mid a b \mid$</p>
+  </li>
+  <li>
+    <p>${\Large \mid \frac{a}{b} \mid } = {\Large  \frac{\mid a \mid}{\mid b \mid} }$</p>
+  </li>
+</ul>
+
+<h2 id="不定积分">不定积分</h2>
+
+<ul>
+  <li>
+    <p>$\int [\,f(x) \, \pm \, g(x) \, ]\, dx = \int f(x)\, dx \, \pm \, \int g(x) \, dx$</p>
+  </li>
+  <li>
+    <p>$\int kf(x) \, dx = k\int f(x) \, dx$</p>
+  </li>
+</ul>
+
+<h2 id="极限">极限</h2>
+
+<font color="red">若 $\lim \, f(x)=A,\quad \lim \, g(x)=B$</font>
+
+<ul>
+  <li>$\lim \, [f(x) \pm g(x)]=A \pm B$</li>
+  <li>$\lim \, [f(x)·g(x)] = A·B$</li>
+</ul>
+
+<p>乘除是一起证明的，除是一样的</p>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[绝对值]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-03-11T21:55:37+08:00</published><updated>2024-03-11T21:55:37+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<p>永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘</p>
 
 <h3 id="graduate"><a href="./tasks/graduate">graduate</a></h3>
 
@@ -160,7 +37,9 @@
 
 <h3 id="jekyll_blog"><a href="./tasks/jekyllBlog">jekyll_blog</a></h3>
 
-<p>andoridSoft</p>
+<h3 id="andoridsoft"><a href="./tasks/andoridSoft">andoridSoft</a></h3>
+
+<p>tanx的泰勒展开证明</p>
 
 <p>python基本数据类型9</p>
 
@@ -353,7 +232,170 @@ taskkill /f /im erwin.exe</p>
   <li>
     <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
   </li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘]]></summary></entry><entry><title type="html">pyqt</title><link href="https://wsttask.github.io/tasks/pyqt" rel="alternate" type="text/html" title="pyqt" /><published>2024-03-10T21:50:34+08:00</published><updated>2024-03-10T21:50:34+08:00</updated><id>https://wsttask.github.io/tasks/pyqt</id><content type="html" xml:base="https://wsttask.github.io/tasks/pyqt"><![CDATA[<p>首先看下相关的文章和视频，了解pyqt的基本使用方法。
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘]]></summary></entry><entry><title type="html">强制不外放声音</title><link href="https://wsttask.github.io/tasks/andoridSoft" rel="alternate" type="text/html" title="强制不外放声音" /><published>2024-03-11T21:55:15+08:00</published><updated>2024-03-11T21:55:15+08:00</updated><id>https://wsttask.github.io/tasks/andoridSoft</id><content type="html" xml:base="https://wsttask.github.io/tasks/andoridSoft"><![CDATA[<p>开发一个android软件，强制不外放声音</p>
+
+<p>需求：</p>
+
+<ul>
+  <li>手机音频使用电脑播放</li>
+  <li>电脑音频可以使用手机播放</li>
+  <li>我希望尽量使用电脑端，手机可以不使用</li>
+  <li>尽量使用蓝牙连接</li>
+</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[开发一个android软件，强制不外放声音]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-11T21:53:45+08:00</published><updated>2024-03-11T21:53:45+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">一些公式</title><link href="https://wsttask.github.io/calculus/2024/03/11/README.html" rel="alternate" type="text/html" title="一些公式" /><published>2024-03-11T21:53:23+08:00</published><updated>2024-03-11T21:53:23+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/11/README</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/11/README.html"><![CDATA[<h1 id="求导公式">求导公式</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/1.jpg" alt="" /></p>
+
+<h1 id="三角函数公式">三角函数公式</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/2.jpg" alt="" /></p>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/3.jpg" alt="" /></p>
+
+<h1 id="常用等价无穷小">常用等价无穷小</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/4.jpg" alt="" /></p>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/5.jpg" alt="" /></p>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/6.jpg" alt="" /></p>
+
+<p><a href="https://www.zhihu.com/question/20829733">(63 封私信 / 81 条消息) 如何巧记「积化和差」与「和差化积」公式？ - 知乎 (zhihu.com)</a></p>
+
+<p>积化和差</p>
+
+<p>正余余正，正加正减；</p>
+
+<p>余余正正，余加负余减</p>
+
+<p>和差化积</p>
+
+<p>正加正，正在前；</p>
+
+<p>正减正，余在前；</p>
+
+<p>余加余，余并肩；</p>
+
+<p>余减余，负正弦。</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[求导公式]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-11T21:53:04+08:00</published><updated>2024-03-11T21:53:04+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
+
+<h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
+
+<p>$sin\,x \sim x$</p>
+
+<p>$tan\,x \sim x$</p>
+
+<p>$arcsin\,x \sim x$</p>
+
+<p>$arctan\,x \sim x$</p>
+
+<p>$ln(1+x) \sim x$</p>
+
+<p>$e^x -1 \sim x$</p>
+
+<p>$(1+x)^\alpha \sim \alpha x$</p>
+
+<p>$log_a(1+x) \sim \frac{x}{ln \,a}$</p>
+
+<h1 id="不定积分公式">不定积分公式</h1>
+
+<font color="red">$\int \frac{1}{x} \,dx = ln\mid x \mid +C $</font>
+
+<p><br /></p>
+
+<p>$\int tan\,x \,dx = -ln\mid cos\,x \mid +C$</p>
+
+<p><br /></p>
+
+<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>
+
+<p><br /></p>
+
+<hr />
+
+<p>${\large \int \frac{1}{2\sqrt{x}}dx = \sqrt{x}}$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{1}{\sqrt{x}} =  2\sqrt{x}}$</p>
+
+<hr />
+
+<p>${\large \int \frac{1}{x^2}dx = -\frac{1}{x}}$</p>
+
+<p><br /></p>
+
+<p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>
+
+<h1 id="常用泰勒展开">常用泰勒展开</h1>
+
+<p>$(1+x)^\alpha = 1+ \displaystyle\sum^{\infty}_{n=1}\frac{\alpha(\alpha-1)···(\alpha-n+1)}{n!}x^n = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
+
+<p><br /></p>
+
+<p>$(1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
+
+<hr />
+
+<p>$tan\,x = x + \frac13x^3+\frac{2}{15}x^5+o(n^5)$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">pyqt</title><link href="https://wsttask.github.io/tasks/pyqt" rel="alternate" type="text/html" title="pyqt" /><published>2024-03-10T21:50:34+08:00</published><updated>2024-03-10T21:50:34+08:00</updated><id>https://wsttask.github.io/tasks/pyqt</id><content type="html" xml:base="https://wsttask.github.io/tasks/pyqt"><![CDATA[<p>首先看下相关的文章和视频，了解pyqt的基本使用方法。
 然后参考一下开源项目，理解每个模块的实现原理，最好能将其复现，然后做一些修改也能运行成功。
 最后需要实现一个识别系统（先不局限于文字，可以是物品等）。基本要求是：1.输入图片地址的按钮，能够加载图片；2.识别按钮，点击后在相应区域呈现识别的内容。；扩展要求：美化界面。</p>
 
@@ -470,16 +512,7 @@ taskkill /f /im erwin.exe</p>
 
 <h3 id="computer">computer</h3>
 
-<h3 id="politics">politics</h3>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[English]]></summary></entry><entry><title type="html">强制不外放声音</title><link href="https://wsttask.github.io/task/2024/03/10/andoridSoft.html" rel="alternate" type="text/html" title="强制不外放声音" /><published>2024-03-10T21:47:23+08:00</published><updated>2024-03-10T21:47:23+08:00</updated><id>https://wsttask.github.io/task/2024/03/10/andoridSoft</id><content type="html" xml:base="https://wsttask.github.io/task/2024/03/10/andoridSoft.html"><![CDATA[<p>开发一个android软件，强制不外放声音</p>
-
-<p>需求：</p>
-
-<ul>
-  <li>手机音频使用电脑播放</li>
-  <li>电脑音频可以使用手机播放</li>
-  <li>我希望尽量使用电脑端，手机可以不使用</li>
-  <li>尽量使用蓝牙连接</li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[开发一个android软件，强制不外放声音]]></summary></entry><entry><title type="html">手机与电脑音频链接</title><link href="https://wsttask.github.io/2024/03/10/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E9%9F%B3%E9%A2%91%E9%93%BE%E6%8E%A5.html" rel="alternate" type="text/html" title="手机与电脑音频链接" /><published>2024-03-10T21:44:36+08:00</published><updated>2024-03-10T21:44:36+08:00</updated><id>https://wsttask.github.io/2024/03/10/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E9%9F%B3%E9%A2%91%E9%93%BE%E6%8E%A5</id><content type="html" xml:base="https://wsttask.github.io/2024/03/10/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E9%9F%B3%E9%A2%91%E9%93%BE%E6%8E%A5.html"><![CDATA[<h2 id="bluetooth-audio-receiver">bluetooth audio receiver</h2>
+<h3 id="politics">politics</h3>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[English]]></summary></entry><entry><title type="html">手机与电脑音频链接</title><link href="https://wsttask.github.io/2024/03/10/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E9%9F%B3%E9%A2%91%E9%93%BE%E6%8E%A5.html" rel="alternate" type="text/html" title="手机与电脑音频链接" /><published>2024-03-10T21:44:36+08:00</published><updated>2024-03-10T21:44:36+08:00</updated><id>https://wsttask.github.io/2024/03/10/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E9%9F%B3%E9%A2%91%E9%93%BE%E6%8E%A5</id><content type="html" xml:base="https://wsttask.github.io/2024/03/10/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E9%9F%B3%E9%A2%91%E9%93%BE%E6%8E%A5.html"><![CDATA[<h2 id="bluetooth-audio-receiver">bluetooth audio receiver</h2>
 
 <p>最好用，$microsoft \quad store$ 上面的软件</p>
 
@@ -493,16 +526,4 @@ taskkill /f /im erwin.exe</p>
 
 <p><a href="https://blog.rom1v.com/2020/06/audio-forwarding-on-android-10/">Android 10 上的音频转发 ·~rom1v/博客</a></p>
 
-<p><a href="https://github.com/codeskyblue/audiowire">codeskyblue/audiowire：将 PC 音频（声音）传输到浏览器（测试版） (github.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[bluetooth audio receiver]]></summary></entry><entry><title type="html">运行</title><link href="https://wsttask.github.io/2024/03/10/%E8%BF%90%E8%A1%8C.html" rel="alternate" type="text/html" title="运行" /><published>2024-03-10T13:13:33+08:00</published><updated>2024-03-10T13:13:33+08:00</updated><id>https://wsttask.github.io/2024/03/10/%E8%BF%90%E8%A1%8C</id><content type="html" xml:base="https://wsttask.github.io/2024/03/10/%E8%BF%90%E8%A1%8C.html"><![CDATA[<p>1.输入url可以直接打开该网站</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>windos+r
-输入
-https://fanyi.baidu.com/#en/zh/
-直接打开
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>taskmgr: 打开任务管理器
-ms-settings:wheel: 打开设置
-ms-settings:sound: 打开声音设置
-sndvol: 打开音量合成器
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[1.输入url可以直接打开该网站]]></summary></entry></feed>
+<p><a href="https://github.com/codeskyblue/audiowire">codeskyblue/audiowire：将 PC 音频（声音）传输到浏览器（测试版） (github.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[bluetooth audio receiver]]></summary></entry></feed>
