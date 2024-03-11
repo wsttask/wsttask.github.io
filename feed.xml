@@ -1,4 +1,158 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-10T21:51:02+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-03-10T21:50:45+08:00</published><updated>2024-03-10T21:50:45+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<p>永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-11T21:53:49+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">一些公式</title><link href="https://wsttask.github.io/calculus/2024/03/11/README.html" rel="alternate" type="text/html" title="一些公式" /><published>2024-03-11T21:53:23+08:00</published><updated>2024-03-11T21:53:23+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/11/README</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/11/README.html"><![CDATA[<h1 id="求导公式">求导公式</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/1.jpg" alt="" /></p>
+
+<h1 id="三角函数公式">三角函数公式</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/2.jpg" alt="" /></p>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/3.jpg" alt="" /></p>
+
+<h1 id="常用等价无穷小">常用等价无穷小</h1>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/4.jpg" alt="" /></p>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/5.jpg" alt="" /></p>
+
+<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/6.jpg" alt="" /></p>
+
+<p><a href="https://www.zhihu.com/question/20829733">(63 封私信 / 81 条消息) 如何巧记「积化和差」与「和差化积」公式？ - 知乎 (zhihu.com)</a></p>
+
+<p>积化和差</p>
+
+<p>正余余正，正加正减；</p>
+
+<p>余余正正，余加负余减</p>
+
+<p>和差化积</p>
+
+<p>正加正，正在前；</p>
+
+<p>正减正，余在前；</p>
+
+<p>余加余，余并肩；</p>
+
+<p>余减余，负正弦。</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[求导公式]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-11T21:53:04+08:00</published><updated>2024-03-11T21:53:04+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/11/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
+
+<h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
+
+<p>$sin\,x \sim x$</p>
+
+<p>$tan\,x \sim x$</p>
+
+<p>$arcsin\,x \sim x$</p>
+
+<p>$arctan\,x \sim x$</p>
+
+<p>$ln(1+x) \sim x$</p>
+
+<p>$e^x -1 \sim x$</p>
+
+<p>$(1+x)^\alpha \sim \alpha x$</p>
+
+<p>$log_a(1+x) \sim \frac{x}{ln \,a}$</p>
+
+<h1 id="不定积分公式">不定积分公式</h1>
+
+<font color="red">$\int \frac{1}{x} \,dx = ln\mid x \mid +C $</font>
+
+<p><br /></p>
+
+<p>$\int tan\,x \,dx = -ln\mid cos\,x \mid +C$</p>
+
+<p><br /></p>
+
+<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>
+
+<p><br /></p>
+
+<hr />
+
+<p>${\large \int \frac{1}{2\sqrt{x}}dx = \sqrt{x}}$</p>
+
+<p><br /></p>
+
+<p>${\large \int \frac{1}{\sqrt{x}} =  2\sqrt{x}}$</p>
+
+<hr />
+
+<p>${\large \int \frac{1}{x^2}dx = -\frac{1}{x}}$</p>
+
+<p><br /></p>
+
+<p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>
+
+<h1 id="常用泰勒展开">常用泰勒展开</h1>
+
+<p>$(1+x)^\alpha = 1+ \displaystyle\sum^{\infty}_{n=1}\frac{\alpha(\alpha-1)···(\alpha-n+1)}{n!}x^n = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
+
+<p><br /></p>
+
+<p>$(1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
+
+<hr />
+
+<p>$tan\,x = x + \frac13x^3+\frac{2}{15}x^5+o(n^5)$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-10T21:50:57+08:00</published><updated>2024-03-10T21:50:57+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-03-10T21:50:45+08:00</published><updated>2024-03-10T21:50:45+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<p>永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘</p>
 
 <h3 id="graduate"><a href="./tasks/graduate">graduate</a></h3>
 
@@ -351,131 +505,4 @@ https://fanyi.baidu.com/#en/zh/
 ms-settings:wheel: 打开设置
 ms-settings:sound: 打开声音设置
 sndvol: 打开音量合成器
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[1.输入url可以直接打开该网站]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-09T16:47:45+08:00</published><updated>2024-03-09T16:47:45+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-09T16:45:58+08:00</published><updated>2024-03-09T16:45:58+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="gitee">gitee</h1>
-
-<h3 id="web"><a href="https://gitee.com/wsttask/web/tree/master">web</a></h3>
-
-<h1 id="github">github</h1>
-
-<h3 id="web-1"><a href="https://github.com/wsttask/web">web</a></h3>
-
-<h3 id="wsttaskgithubio"><a href="https://wsttask.github.io/index.html">wsttask.github.io</a></h3>
-
-<h1 id="tanslation">tanslation</h1>
-
-<h3 id="word"><a href="./word">word</a></h3>
-
-<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
-
-<h1 id="chatgpt">ChatGPT</h1>
-
-<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
-
-<h1 id="documentation">Documentation</h1>
-
-<h3 id="python"><a href="https://docs.python.org/">python</a></h3>
-
-<h3 id="qt-documentation"><a href="https://doc.qt.io/">Qt Documentation</a></h3>
-
-<h3 id="java"><a href="https://docs.oracle.com/">Java</a></h3>
-
-<h1 id="latex">LaTex</h1>
-
-<h3 id="latex在线编辑器"><a href="https://www.latexlive.com/">LaTex在线编辑器</a></h3>
-
-<h1 id="图形计算器">图形计算器</h1>
-
-<h3 id="desmos"><a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos</a></h3>
-
-<h1 id="wps">WPS</h1>
-
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
-
-<h1 id="搜索引擎">搜索引擎</h1>
-
-<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
-
-<h1 id="mail">Mail</h1>
-
-<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
-
-<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
-
-<h1 id="time">TIME</h1>
-
-<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
-
-<h1 id="game">GAME</h1>
-
-<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
-
-<h1 id="音标">音标</h1>
-
-<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
-
-<h1 id="video">video</h1>
-
-<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
-
-<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
-
-<h1 id="nwpu">nwpu</h1>
-
-<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
-
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>
-
-<h3 id="图书馆"><a href="https://ic.nwpu.edu.cn/">图书馆</a></h3>
-
-<h1 id="中国考试教育网">中国考试教育网</h1>
-
-<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[gitee]]></summary></entry><entry><title type="html">列表类型</title><link href="https://wsttask.github.io/2024/03/09/%E5%88%97%E8%A1%A8%E7%B1%BB%E5%9E%8B.html" rel="alternate" type="text/html" title="列表类型" /><published>2024-03-09T16:29:44+08:00</published><updated>2024-03-09T16:29:44+08:00</updated><id>https://wsttask.github.io/2024/03/09/%E5%88%97%E8%A1%A8%E7%B1%BB%E5%9E%8B</id><content type="html" xml:base="https://wsttask.github.io/2024/03/09/%E5%88%97%E8%A1%A8%E7%B1%BB%E5%9E%8B.html"><![CDATA[<ul>
-  <li>序列类型的一种，元素间的有序组合，类型不限，创建后可以随时被修改</li>
-  <li>列表使用中括号[]表示，元素间用逗号分隔，括号不可省略</li>
-  <li>列表可以将多个数据有序地组织在一起，更方便调用</li>
-  <li>如：ls = [“cat”, “tiger”, 1024]</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[序列类型的一种，元素间的有序组合，类型不限，创建后可以随时被修改 列表使用中括号[]表示，元素间用逗号分隔，括号不可省略 列表可以将多个数据有序地组织在一起，更方便调用 如：ls = [“cat”, “tiger”, 1024]]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[1.输入url可以直接打开该网站]]></summary></entry></feed>
