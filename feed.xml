@@ -1,16 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-13T13:35:08+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-13T13:34:45+08:00</published><updated>2024-03-13T13:34:45+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="极限的定义">极限的定义</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-13T23:49:51+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-13T23:49:39+08:00</published><updated>2024-03-13T23:49:39+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="极限的定义">极限的定义</h3>
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>设</strong> $f:\mathbb {D} \subset \mathbb {R} \rightarrow \mathbb {R}\displaystyle$ <strong>是一个定义在实数上的函数。 并在某个开区间</strong> $x&gt;A$ <strong>或</strong>$x&lt;A$ <strong>上有定义。</strong> $L$ <strong>是一个给定的实数。</strong> $c$ <strong>是一个实数，并且函数</strong> $f$ <strong>在</strong> $c$ <strong>的某个去心邻域上有定义。如果对任意的正实数</strong> $\epsilon$  <strong>，都存在一个正实数</strong> $\delta$  <strong>，使得对任意的实数</strong> $x$ <strong>，只要</strong> $f$ <strong>在点</strong> $x$ <strong>处有定义，并且</strong> $x$ <strong>在</strong> $c$ <strong>的某个</strong> $\delta$  <strong>（去心）邻域中（即</strong> $</td>
-      <td>x−c</td>
-      <td>⩽δ$  <strong>），就有</strong>$</td>
-      <td>f(x)−L</td>
-      <td>⩽ \epsilon$  <strong>，那么就称</strong> $L$ <strong>是函数</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限，或简称</strong> $L$ <strong>为</strong> $f$ <strong>在</strong> $c$ <strong>的极限，记为</strong> $\displaystyle \lim _{x\to c}f(x)=L$  <strong>。反之则称</strong> $L$ <strong>不是</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限</strong></td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>设</strong> $f:\mathbb {D} \subset \mathbb {R} \rightarrow \mathbb {R}\displaystyle$ <strong>是一个定义在实数上的函数。 并在某个开区间</strong> $x&gt;A$ <strong>或</strong>$x&lt;A$ <strong>上有定义。</strong> $L$ <strong>是一个给定的实数。</strong> $c$ <strong>是一个实数，并且函数</strong> $f$ <strong>在</strong> $c$ <strong>的某个去心邻域上有定义。如果对任意的正实数</strong> $\epsilon$  <strong>，都存在一个正实数</strong> $\delta$  <strong>，使得对任意的实数</strong> $x$ <strong>，只要</strong> $f$ <strong>在点</strong> $x$ <strong>处有定义，并且</strong> $x$ <strong>在</strong> $c$ <strong>的某个</strong> $\delta$  <strong>（去心）邻域中（即</strong> $\mid x−c \mid ⩽δ$  <strong>），就有</strong>$\mid f(x)−L \mid ⩽ \epsilon$  <strong>，那么就称</strong> $L$ <strong>是函数</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限，或简称</strong> $L$ <strong>为</strong> $f$ <strong>在</strong> $c$ <strong>的极限，记为</strong> $\displaystyle \lim _{x\to c}f(x)=L$  <strong>。反之则称</strong> $L$ <strong>不是</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限</strong></p>
 
 <blockquote>
   <p>极限为无穷，极限不存在</p>
@@ -60,7 +50,51 @@
 
 <p>可推出第二个重要极限 $\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
 
-<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极限的定义]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/2024/03/13/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-13T13:21:54+08:00</published><updated>2024-03-13T13:21:54+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/13/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/13/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
+<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极限的定义]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-13T13:35:04+08:00</published><updated>2024-03-13T13:35:04+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/2024/03/13/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-13T13:21:54+08:00</published><updated>2024-03-13T13:21:54+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/13/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/13/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F.html"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
 
 <h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
 
@@ -176,51 +210,7 @@ arcsin\,x
 
 <p><br /></p>
 
-<p>$e^x = 1 + \frac{1}{1!}x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + o(x^3)$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-11T22:02:28+08:00</published><updated>2024-03-11T22:02:28+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">数学符号的计算性质</title><link href="https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html" rel="alternate" type="text/html" title="数学符号的计算性质" /><published>2024-03-11T22:01:43+08:00</published><updated>2024-03-11T22:01:43+08:00</updated><id>https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8</id><content type="html" xml:base="https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html"><![CDATA[<h2 id="绝对值">绝对值</h2>
+<p>$e^x = 1 + \frac{1}{1!}x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + o(x^3)$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">数学符号的计算性质</title><link href="https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html" rel="alternate" type="text/html" title="数学符号的计算性质" /><published>2024-03-11T22:01:43+08:00</published><updated>2024-03-11T22:01:43+08:00</updated><id>https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8</id><content type="html" xml:base="https://wsttask.github.io/math/2024/03/11/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%AE%A1%E7%AE%97%E6%80%A7%E8%B4%A8.html"><![CDATA[<h2 id="绝对值">绝对值</h2>
 
 <ul>
   <li>
