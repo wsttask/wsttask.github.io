@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-14T16:15:32+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-14T16:15:24+08:00</published><updated>2024-03-14T16:15:24+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-14T16:16:51+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-14T16:16:42+08:00</published><updated>2024-03-14T16:16:42+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
 <p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
 
 <blockquote>
-  <p>24汤家凤</p>
+  <p>t24p3.3</p>
 
-  <p>p3</p>
-
-  <p>3</p>
+  <p><a href="#t24p3.3">click</a></p>
 </blockquote>
-
-<p><a href="#t24p3.3">click</a></p>
 
 <hr />
 
@@ -19,14 +15,10 @@
 <p>$\text{则当 }x\to0\text{ 时, 判断}\alpha 和 \beta 的无穷小是否等价$</p>
 
 <blockquote>
-  <p>24汤家凤</p>
+  <p>t24p3.3</p>
 
-  <p>p3</p>
-
-  <p>2</p>
+  <p><a href="#t24p3.2">click</a></p>
 </blockquote>
-
-<p><a href="#t24p3.2">click</a></p>
 
 <hr />
 
@@ -48,7 +40,7 @@
 
 <p>$\sqrt{1+x^{3}}-\sqrt{1-x^{3}} = \frac{2x^{3}}{\sqrt{1+x^{3}}+\sqrt{1-x^{3}}}$</p>
 
-<hr />]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-14T16:13:46+08:00</published><updated>2024-03-14T16:13:46+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<hr />]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-14T16:15:28+08:00</published><updated>2024-03-14T16:15:28+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
