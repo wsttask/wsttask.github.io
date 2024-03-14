@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-14 1573字
+              2024-03-14 2651字
             </div>
             <div class="content">
                 <p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
@@ -107,6 +107,46 @@
 
 <hr />
 
+<p>$\displaystyle\lim_{x\to0}\left(\frac{\arcsin x}{x}\right)^{\frac{1}{x^{2}}}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.2.4</code></p>
+
+<p><a href="#t24p5.2.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to+\infty}(\sqrt{x^2+4x+1}-\sqrt{x^2-2x+3})=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.3.1</code></p>
+
+<p><a href="#t24p5.3.1">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to+\infty}\left(x\arctan x-\frac\pi2x\right)=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.3.2</code></p>
+
+<p><a href="#t24p5.3.2">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to0}\left(\frac{1}{x}-\frac{1}{e^{x}-1}\right)=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.3.3</code></p>
+
+<p><a href="#t24p5.3.3">click</a></p>
+
+<hr />
+
 <hr />
 
 <p><a id="t24p3.3"></a></p>
@@ -149,6 +189,57 @@
     </tr>
   </tbody>
 </table>
+
+<hr />
+
+<p><a href="t24p5.2.4"></a></p>
+
+<p>如果不用$arcsinx$的泰勒展开：</p>
+
+<p>先用洛必达转成$\frac{1}{\sqrt{1-x^2}}$</p>
+
+<p>再用$(1+x)^\alpha-1$的等价无穷小</p>
+
+<hr />
+
+<p><a href="t24p5.3.1"></a></p>
+
+<p>$\displaystyle\lim_{x\to+\infty}\frac{6x-2}{\sqrt{x^2+4x+1}+\sqrt{x^2-2x+3}}$ 化成这一步之后</p>
+
+<p>可以直接用抓大头（抓高阶）把底部化成 $2x$</p>
+
+<p>不用的话可以同除 x</p>
+
+<p>$\displaystyle\lim_{x\to+\infty}\frac{6-\frac{2}{x}}{\sqrt{1+\frac{4}{x}+\frac{1}{x^{2}}+\sqrt{1-\frac{2}{x}+\frac{3}{x^{2}}}}}=3.$</p>
+
+<hr />
+
+<p><a href="t24p5.3.2"></a></p>
+
+<p>$\displaystyle\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}=\displaystyle\lim_{x\to+\infty}\frac{\frac{1}{1+x^{2}}}{-\frac{1}{x^{2}}}=-1$</p>
+
+<blockquote>
+  <p>很明显和上一题不一样，不能用泰勒展开</p>
+
+  <p>此时无穷减无穷，泰勒或洛必达</p>
+
+  <p>有arctanx，arcsinx，想办法化成分式用洛</p>
+</blockquote>
+
+<font color="red">泰勒一般只用于$x\rightarrow 0$时，千万注意</font>
+
+<hr />
+
+<p><a href="t24p5.3.3"></a></p>
+
+<p>$\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x\left(e^{x}-1\right)}=\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x^{2}}=\displaystyle\lim_{x\to0}\frac{e^{x}-1}{2x}$</p>
+
+<blockquote>
+  <p>如果用到不常用的泰勒展开</p>
+
+  <p>一定是需要洛必达出手了！</p>
+</blockquote>
+
 
             </div>
         </div>
