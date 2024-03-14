@@ -15,7 +15,7 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     
-<title>portal-inside</title>
+<title>定积分及其应用</title>
 <!-- <link rel="icon" href="../favicon.svg" type="image/svg+xml"/> -->
 <!-- <link rel="icon" href="../favicon.png" type="image/png"  />   -->
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -42,28 +42,44 @@
  
         <div class="content-area">
             <div class="title">
-                portal-inside
+                定积分及其应用
             </div>
             <div class="category-area">
-                「」
+                「
+                <a href="https://wsttask.github.io/tags.html#calculus">
+                    <div class="category">
+                        calculus
+                    </div>
+                </a>
+                」
             </div>
             <div class="char-counter">
-              2024-03-14 36字
+              2024-03-14 655字
             </div>
             <div class="content">
-                <p><a href="./calculus/exercises1" style="text-decoration: none; font-size: 40px">求极限练习</a></p>
+                <h3 id="定积分定义">定积分定义</h3>
 
-<p><br /></p>
+<p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
 
-<p><a href="./calculus/formula" style="text-decoration: none; font-size: 40px">常用公式</a></p>
+<h3 id="定积分的数列和形式">定积分的数列和形式</h3>
 
-<p><br /></p>
+<ul>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f\left(x\right)\mathrm{d}x$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{kn}f\left(\frac{i}{n}\right)=\int_{0}^{k}f\left(x\right)dx$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^{n}f\left[a+\frac{i}{n}\left(b-a\right)\right]=\int_{a}^{b}f\left(x\right)dx$</p>
+  </li>
+</ul>
 
-<p><a href="./math/algorithem" style="text-decoration: none; font-size: 40px">运算法则</a></p>
+<h3 id="柯西不等式">柯西不等式</h3>
 
-<p><br /></p>
-
-<p><a href="./dictation" style="text-decoration: none; font-size: 40px">Daily English Dictation</a></p>
+<p>设 $f(x),g(x)$ 在 $[a,b]$ 上连续，则
+\(\left(\int_a^bf\left(x\right)g\left(x\right)\mathrm{d}x\right)^2\leqslant\int_a^bf^2\left(x\right)\mathrm{d}x\int_a^bg^2\left(x\right)\mathrm{d}x\)
++</p>
 
             </div>
         </div>

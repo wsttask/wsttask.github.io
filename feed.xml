@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-14T20:27:39+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-14T20:27:20+08:00</published><updated>2024-03-14T20:27:20+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-14T21:04:14+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">定积分及其应用</title><link href="https://wsttask.github.io/calculus/2024/03/14/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="定积分及其应用" /><published>2024-03-14T21:03:08+08:00</published><updated>2024-03-14T21:03:08+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/14/%E7%AC%AC%E4%BA%94%E7%AB%A0%E3%80%81%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/14/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="定积分定义">定积分定义</h3>
+
+<p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
+
+<h3 id="定积分的数列和形式">定积分的数列和形式</h3>
+
+<ul>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f\left(x\right)\mathrm{d}x$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{kn}f\left(\frac{i}{n}\right)=\int_{0}^{k}f\left(x\right)dx$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^{n}f\left[a+\frac{i}{n}\left(b-a\right)\right]=\int_{a}^{b}f\left(x\right)dx$</p>
+  </li>
+</ul>
+
+<h3 id="柯西不等式">柯西不等式</h3>
+
+<p>设 $f(x),g(x)$ 在 $[a,b]$ 上连续，则
+\(\left(\int_a^bf\left(x\right)g\left(x\right)\mathrm{d}x\right)^2\leqslant\int_a^bf^2\left(x\right)\mathrm{d}x\int_a^bg^2\left(x\right)\mathrm{d}x\)
++</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[定积分定义]]></summary></entry><entry><title type="html">portal-inside</title><link href="https://wsttask.github.io/portal-inside" rel="alternate" type="text/html" title="portal-inside" /><published>2024-03-14T20:29:01+08:00</published><updated>2024-03-14T20:29:01+08:00</updated><id>https://wsttask.github.io/portal-inside</id><content type="html" xml:base="https://wsttask.github.io/portal-inside"><![CDATA[<p><a href="./calculus/exercises1" style="text-decoration: none; font-size: 40px">求极限练习</a></p>
+
+<p><br /></p>
+
+<p><a href="./calculus/formula" style="text-decoration: none; font-size: 40px">常用公式</a></p>
+
+<p><br /></p>
+
+<p><a href="./math/algorithem" style="text-decoration: none; font-size: 40px">运算法则</a></p>
+
+<p><br /></p>
+
+<p><a href="./dictation" style="text-decoration: none; font-size: 40px">Daily English Dictation</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[求极限练习]]></summary></entry><entry><title type="html">Daily English Dictation</title><link href="https://wsttask.github.io/dictation" rel="alternate" type="text/html" title="Daily English Dictation" /><published>2024-03-14T20:28:14+08:00</published><updated>2024-03-14T20:28:14+08:00</updated><id>https://wsttask.github.io/dailyEnglishDictation</id><content type="html" xml:base="https://wsttask.github.io/dictation"><![CDATA[<p>Mother Teresa, who received a Nobel Peace Price for her work on behalf of the poor. dies in Calcutta, India — she was 87 years old.</p>
+
+<p><br /></p>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[Mother Teresa, who received a Nobel Peace Price for her work on behalf of the poor. dies in Calcutta, India — she was 87 years old.]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-14T20:27:35+08:00</published><updated>2024-03-14T20:27:35+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-14T20:27:20+08:00</published><updated>2024-03-14T20:27:20+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
 <p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
 
@@ -208,53 +288,7 @@
   <p>如果不能泰勒，那一定是化成分式洛!</p>
 </blockquote>
 
-<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-14T19:33:30+08:00</published><updated>2024-03-14T19:33:30+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">Daily English Dictation</title><link href="https://wsttask.github.io/english/2024/03/14/dailyEnglishDictation.html" rel="alternate" type="text/html" title="Daily English Dictation" /><published>2024-03-14T19:33:22+08:00</published><updated>2024-03-14T19:33:22+08:00</updated><id>https://wsttask.github.io/english/2024/03/14/dailyEnglishDictation</id><content type="html" xml:base="https://wsttask.github.io/english/2024/03/14/dailyEnglishDictation.html"><![CDATA[<p>Mother Teresa, who received a Nobel Peace Price for her work on behalf of the poor. dies in Calcutta, India — she was 87 years old.</p>
-
-<p><br /></p>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[Mother Teresa, who received a Nobel Peace Price for her work on behalf of the poor. dies in Calcutta, India — she was 87 years old.]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/formula" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-14T17:52:19+08:00</published><updated>2024-03-14T17:52:19+08:00</updated><id>https://wsttask.github.io/calculus/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/formula"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
+<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/formula" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-14T17:52:19+08:00</published><updated>2024-03-14T17:52:19+08:00</updated><id>https://wsttask.github.io/calculus/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/formula"><![CDATA[<h1 id="常用等价无穷小">常用等价无穷小</h1>
 
 <h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
 
@@ -378,15 +412,7 @@
 
 <h2 id="其他公式">其他公式</h2>
 
-<p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">portal-inside</title><link href="https://wsttask.github.io/portal-inside" rel="alternate" type="text/html" title="portal-inside" /><published>2024-03-14T16:10:44+08:00</published><updated>2024-03-14T16:10:44+08:00</updated><id>https://wsttask.github.io/portal-inside</id><content type="html" xml:base="https://wsttask.github.io/portal-inside"><![CDATA[<p><a href="./calculus/exercises1" style="text-decoration: none; font-size: 40px">求极限练习</a></p>
-
-<p><br /></p>
-
-<p><a href="./calculus/formula" style="text-decoration: none; font-size: 40px">常用公式</a></p>
-
-<p><br /></p>
-
-<p><a href="./math/algorithem" style="text-decoration: none; font-size: 40px">运算法则</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[求极限练习]]></summary></entry><entry><title type="html">数学符号的运算法则</title><link href="https://wsttask.github.io/math/algorithm" rel="alternate" type="text/html" title="数学符号的运算法则" /><published>2024-03-14T16:10:16+08:00</published><updated>2024-03-14T16:10:16+08:00</updated><id>https://wsttask.github.io/math/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99</id><content type="html" xml:base="https://wsttask.github.io/math/algorithm"><![CDATA[<h2 id="绝对值">绝对值</h2>
+<p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">数学符号的运算法则</title><link href="https://wsttask.github.io/math/algorithm" rel="alternate" type="text/html" title="数学符号的运算法则" /><published>2024-03-14T16:10:16+08:00</published><updated>2024-03-14T16:10:16+08:00</updated><id>https://wsttask.github.io/math/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99</id><content type="html" xml:base="https://wsttask.github.io/math/algorithm"><![CDATA[<h2 id="绝对值">绝对值</h2>
 
 <ul>
   <li>
@@ -722,56 +748,4 @@ taskkill /f /im erwin.exe</p>
 
 <p>泰勒展开+极限的定义</p>
 
-<p>抓大头也是这样</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[等价无穷小是]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-13T23:49:39+08:00</published><updated>2024-03-13T23:49:39+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="极限的定义">极限的定义</h3>
-
-<p><strong>设</strong> $f:\mathbb {D} \subset \mathbb {R} \rightarrow \mathbb {R}\displaystyle$ <strong>是一个定义在实数上的函数。 并在某个开区间</strong> $x&gt;A$ <strong>或</strong>$x&lt;A$ <strong>上有定义。</strong> $L$ <strong>是一个给定的实数。</strong> $c$ <strong>是一个实数，并且函数</strong> $f$ <strong>在</strong> $c$ <strong>的某个去心邻域上有定义。如果对任意的正实数</strong> $\epsilon$  <strong>，都存在一个正实数</strong> $\delta$  <strong>，使得对任意的实数</strong> $x$ <strong>，只要</strong> $f$ <strong>在点</strong> $x$ <strong>处有定义，并且</strong> $x$ <strong>在</strong> $c$ <strong>的某个</strong> $\delta$  <strong>（去心）邻域中（即</strong> $\mid x−c \mid ⩽δ$  <strong>），就有</strong>$\mid f(x)−L \mid ⩽ \epsilon$  <strong>，那么就称</strong> $L$ <strong>是函数</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限，或简称</strong> $L$ <strong>为</strong> $f$ <strong>在</strong> $c$ <strong>的极限，记为</strong> $\displaystyle \lim _{x\to c}f(x)=L$  <strong>。反之则称</strong> $L$ <strong>不是</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限</strong></p>
-
-<blockquote>
-  <p>极限为无穷，极限不存在</p>
-</blockquote>
-
-<h3 id="极限的性质">极限的性质</h3>
-
-<ol>
-  <li>
-    <p><strong>唯一性</strong>：若极限存在，则极限一定唯一</p>
-  </li>
-  <li>
-    <p><strong>保号性</strong>：设 $\displaystyle\lim_{x\rightarrow a}f(x)=A&gt;0\quad(或\quad A&lt;0)$ ，则存在 $\delta&gt;0$ ，当$0&lt;\mid x-a \mid&lt;\delta$ 时，有$f(x)&gt;0\quad (或 \quad f(x)&lt;0)$</p>
-  </li>
-  <li>
-    <p><strong>有界性</strong>：</p>
-    <ol>
-      <li>
-        <p><strong>数列极限的有界性</strong></p>
-      </li>
-      <li>
-        <p><strong>函数极限的局部有界性</strong></p>
-      </li>
-    </ol>
-  </li>
-</ol>
-
-<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
-
-<ol>
-  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
-  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
-  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
-  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-  <li><strong>介值定理</strong>：设$a&lt;b$ ，$f:[a,b]\rightarrow R$ 是$[a,b]$ 上的连续函数，则对任意的 $\eta\in[f(a),f(b)]$ ，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-</ol>
-
-<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
-
-<p>准则1：夹逼准则</p>
-
-<p>可推出第一个重要极限 $\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
-
-<p>根据 $\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
-
-<p>准则2：单调有界准则</p>
-
-<p>可推出第二个重要极限 $\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
-
-<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极限的定义]]></summary></entry></feed>
+<p>抓大头也是这样</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[等价无穷小是]]></summary></entry></feed>
