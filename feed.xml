@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T19:31:26+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-15T19:31:19+08:00</published><updated>2024-03-15T19:31:19+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T19:36:01+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-15T19:35:54+08:00</published><updated>2024-03-15T19:35:54+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
 <p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
 
@@ -92,8 +92,6 @@
 
 <hr />
 
-<p><br /></p>
-
 <p>$求极限\displaystyle\lim_{x\to0^+}x^{\sin2x}$</p>
 
 <p><br /></p>
@@ -104,7 +102,7 @@
 
 <hr />
 
-<p><a id="t24p3.3"></a></p>
+<p><a id="t24p3.3">#</a></p>
 
 <p>这是数列极限，n取的是全体自然数</p>
 
@@ -114,7 +112,7 @@
 
 <hr />
 
-<p><a id="t24p3.2"></a></p>
+<p><a id="t24p3.2">#</a></p>
 
 <p>$\beta=\frac{\mathrm{e}^{\sqrt{1+x^3}}-\mathrm{e}^{\sqrt{1-x^3}}}{\mathrm{e}}=\frac{\mathrm{e}^{\sqrt{1+x^3}}}{\mathrm{e}}·(\mathrm{e}^{\sqrt{1+x^3}-\sqrt{1-x^3}}-1)$</p>
 
@@ -122,14 +120,14 @@
 
 <hr />
 
-<p><a id="t24p4.8"></a>
+<p><a id="t24p4.8">#</a>
 $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\infty}\frac{3\sqrt{n}}{\sqrt{n+2\sqrt{n}}+\sqrt{n-\sqrt{n}}} $</p>
 
 <p>$=3\lim_{n\to\infty}\frac{1}{\sqrt{1+\frac{2}{\sqrt{n}}}+\sqrt{1-\frac{1}{\sqrt{n}}}}=\frac{3}{2}$</p>
 
 <hr />
 
-<p><a id="t24p5.12"></a></p>
+<p><a id="t24p5.12">#</a></p>
 
 <p>夹逼定理</p>
 
@@ -141,7 +139,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
 
 <hr />
 
-<p><a href="t24p5.2.4"></a></p>
+<p><a id="t24p5.2.4">#</a></p>
 
 <p>如果不用$arcsinx$的泰勒展开：</p>
 
@@ -151,7 +149,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
 
 <hr />
 
-<p><a href="t24p5.3.1"></a></p>
+<p><a id="t24p5.3.1">#</a></p>
 
 <p>$\displaystyle\lim_{x\to+\infty}\frac{6x-2}{\sqrt{x^2+4x+1}+\sqrt{x^2-2x+3}}$ 化成这一步之后</p>
 
@@ -163,7 +161,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
 
 <hr />
 
-<p><a href="t24p5.3.2"></a></p>
+<p><a id="t24p5.3.2">#</a></p>
 
 <p>$\displaystyle\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}=\displaystyle\lim_{x\to+\infty}\frac{\frac{1}{1+x^{2}}}{-\frac{1}{x^{2}}}=-1$</p>
 
@@ -179,8 +177,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
 
 <hr />
 
-<p><a href="t24p5.3.3"></a>
-<a href="t24p5.3.3"></a></p>
+<p><a href="t24p5.3.3">#</a></p>
 
 <p>$\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x\left(e^{x}-1\right)}=\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x^{2}}=\displaystyle\lim_{x\to0}\frac{e^{x}-1}{2x}$</p>
 
@@ -192,7 +189,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
 
 <hr />
 
-<p><a href="t24p5.4"></a></p>
+<p><a href="t24p5.4">#</a></p>
 
 <blockquote>
   <p>$0^0$ 型，化成 e 的次方的形式，如果是 $1^\infty$ 那是第二个重要极限</p>
@@ -208,7 +205,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
   <p>如果不能泰勒，那一定是化成分式洛!</p>
 </blockquote>
 
-<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-15T19:28:52+08:00</published><updated>2024-03-15T19:28:52+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-15T19:31:22+08:00</published><updated>2024-03-15T19:31:22+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
