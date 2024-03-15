@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T19:45:51+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-15T19:45:43+08:00</published><updated>2024-03-15T19:45:43+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T20:39:56+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">t24p6.8引起的猜想</title><link href="https://wsttask.github.io/calculus/exercises/t24p6.8" rel="alternate" type="text/html" title="t24p6.8引起的猜想" /><published>2024-03-15T20:39:37+08:00</published><updated>2024-03-15T20:39:37+08:00</updated><id>https://wsttask.github.io/calculus/exercises/%E9%87%8D%E5%A4%8D%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E6%9C%89%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises/t24p6.8"><![CDATA[<p>$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$</p>
+
+<p>导数为 $\frac{1}{2\sqrt{1+x}}$</p>
+
+<p>斜率在x&gt;1时单调递减</p>
+
+<p>$a_{}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$]]></summary></entry><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-15T20:28:55+08:00</published><updated>2024-03-15T20:28:55+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
 <p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
 
@@ -101,6 +107,42 @@
 <p><code class="language-plaintext highlighter-rouge">t24p5.4</code></p>
 
 <p><a href="#t24p5.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{n\to\infty}\sqrt[n]{1+\frac13+\cdotp\cdotp\cdotp+\frac1{2n+1}}.$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.5.2</code></p>
+
+<p><a href="#t24p6.5.2">click</a></p>
+
+<hr />
+
+<p>设 $a_{1}&gt;0,a_{n+1}=\ln(1+a_{n})(n=1,2,\cdots)$</p>
+
+<p>（1）证明：$\displaystyle\lim_{n\rightarrow\infty}a_n$ 存在，并求此极限</p>
+
+<p>（2）求 $\displaystyle\lim_{n\rightarrow\infty}\frac{a_{n+1}-a_{n}}{a_na_{n+1}}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.6</code></p>
+
+<p><a href="#t24p6.6">click</a></p>
+
+<hr />
+
+<p>设 $a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$ ，证明$\displaystyle\lim_{n\rightarrow\infty}a_n$存在</p>
+
+<p><br /></p>
+
+<p><a href="./calculus/exercises/t24p6.8"><code class="language-plaintext highlighter-rouge">t24p6.8</code></a></p>
+
+<p><a href="#t24p6.8">click</a></p>
+
+<hr />
 
 <hr />
 
@@ -213,7 +255,61 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
   <p>如果不能泰勒，那一定是化成分式洛!</p>
 </blockquote>
 
-<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-15T19:45:14+08:00</published><updated>2024-03-15T19:45:14+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>
+
+<hr />
+
+<p><a id="t24p6.5.2">#</a></p>
+
+<blockquote>
+  <p>夹逼定理</p>
+</blockquote>
+
+<p>$1\leqslant\sqrt[n]{1+\frac{1}{3}+\cdots+\frac{1}{2n+1}}\leqslant n^{\frac{1}{n}}$</p>
+
+<blockquote>
+  <p>$\displaystyle\lim_{n\rightarrow\infty}n^{\frac1n}=1$ 使用指化对</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.6">#</a></p>
+
+<blockquote>
+  <p>有没有发现 $a_n$ 是个单调递减的数列？</p>
+
+  <p>$ln(1+a_n)&lt;a_n$ 然后 $a_n &gt; 0$ 可得证有极限</p>
+
+  <font color="red">大于零可是个很重要的条件</font>
+</blockquote>
+
+<p>当极限存在时，==直接令其等于A==</p>
+
+<p>$A=ln(1+A)$ 得到极限为0</p>
+
+<blockquote>
+  <p>第二问就是简单的极限计算了</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.8">#</a></p>
+
+<blockquote>
+  <p>数学归纳法证明单调递增和有界</p>
+</blockquote>
+
+<p>显然$a_1&lt;a_2$，设$a_k&lt;a_{k+1}$</p>
+
+<p>则$\sqrt{1+a_k}&lt;\sqrt{1+a_{k+1}}$</p>
+
+<p>推出$a_{k+1}&lt;a_{k+2}$</p>
+
+<blockquote>
+  <p>首先由第二项大于第一项猜测单调递增</p>
+
+  <p>然后猜上界，使用数学归纳证明上界</p>
+</blockquote>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-15T19:45:47+08:00</published><updated>2024-03-15T19:45:47+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
@@ -665,55 +761,4 @@ taskkill /f /im erwin.exe</p>
 
 <h2 id="其他公式">其他公式</h2>
 
-<p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">数学符号的运算法则</title><link href="https://wsttask.github.io/math/algorithm" rel="alternate" type="text/html" title="数学符号的运算法则" /><published>2024-03-14T16:10:16+08:00</published><updated>2024-03-14T16:10:16+08:00</updated><id>https://wsttask.github.io/math/%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99</id><content type="html" xml:base="https://wsttask.github.io/math/algorithm"><![CDATA[<h2 id="绝对值">绝对值</h2>
-
-<ul>
-  <li>
-    <p>$\mid a \mid * \mid b \mid = \mid a b \mid$</p>
-  </li>
-  <li>
-    <p>${\Large \mid \frac{a}{b} \mid } = {\Large  \frac{\mid a \mid}{\mid b \mid} }$</p>
-  </li>
-</ul>
-
-<h2 id="不定积分">不定积分</h2>
-
-<ul>
-  <li>
-    <p>$\int [\,f(x) \, \pm \, g(x) \, ]\, dx = \int f(x)\, dx \, \pm \, \int g(x) \, dx$</p>
-  </li>
-  <li>
-    <p>$\int kf(x) \, dx = k\int f(x) \, dx$</p>
-  </li>
-</ul>
-
-<h2 id="极限">极限</h2>
-
-<font color="red">若 $\lim \, f(x)=A,\quad \lim \, g(x)=B$</font>
-
-<ul>
-  <li>$\lim \, [f(x) \pm g(x)]=A \pm B$</li>
-  <li>$\lim \, [f(x)·g(x)] = A·B$</li>
-</ul>
-
-<p>乘除是一起证明的，除是一样的</p>
-
-<h2 id="导数">导数</h2>
-
-<ul>
-  <li>
-    <p>$\log_{a}MN =\log_{a}M+\log_{a}N$</p>
-  </li>
-  <li>
-    <p>$\log_{a}\frac{M}{N} =\log_{a}M-\log_{a}N$</p>
-  </li>
-  <li>
-    <p>$\log_{a}M^{n}=n\log_{a}M$</p>
-  </li>
-  <li>
-    <p>$\log_{a}mM^{n}=\frac{n}{m}\log_{a}M$</p>
-  </li>
-  <li>
-    <p>$\log_{a}b=\frac{\log_{c}b}{\log_{c}a}$</p>
-  </li>
-</ul>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[绝对值]]></summary></entry></feed>
+<p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry></feed>

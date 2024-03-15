@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-15 2989字
+              2024-03-15 3771字
             </div>
             <div class="content">
                 <p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
@@ -160,6 +160,42 @@
 <p><code class="language-plaintext highlighter-rouge">t24p5.4</code></p>
 
 <p><a href="#t24p5.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{n\to\infty}\sqrt[n]{1+\frac13+\cdotp\cdotp\cdotp+\frac1{2n+1}}.$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.5.2</code></p>
+
+<p><a href="#t24p6.5.2">click</a></p>
+
+<hr />
+
+<p>设 $a_{1}&gt;0,a_{n+1}=\ln(1+a_{n})(n=1,2,\cdots)$</p>
+
+<p>（1）证明：$\displaystyle\lim_{n\rightarrow\infty}a_n$ 存在，并求此极限</p>
+
+<p>（2）求 $\displaystyle\lim_{n\rightarrow\infty}\frac{a_{n+1}-a_{n}}{a_na_{n+1}}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.6</code></p>
+
+<p><a href="#t24p6.6">click</a></p>
+
+<hr />
+
+<p>设 $a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$ ，证明$\displaystyle\lim_{n\rightarrow\infty}a_n$存在</p>
+
+<p><br /></p>
+
+<p><a href="./calculus/exercises/t24p6.8"><code class="language-plaintext highlighter-rouge">t24p6.8</code></a></p>
+
+<p><a href="#t24p6.8">click</a></p>
+
+<hr />
 
 <hr />
 
@@ -273,6 +309,60 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 </blockquote>
 
 <p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>
+
+<hr />
+
+<p><a id="t24p6.5.2">#</a></p>
+
+<blockquote>
+  <p>夹逼定理</p>
+</blockquote>
+
+<p>$1\leqslant\sqrt[n]{1+\frac{1}{3}+\cdots+\frac{1}{2n+1}}\leqslant n^{\frac{1}{n}}$</p>
+
+<blockquote>
+  <p>$\displaystyle\lim_{n\rightarrow\infty}n^{\frac1n}=1$ 使用指化对</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.6">#</a></p>
+
+<blockquote>
+  <p>有没有发现 $a_n$ 是个单调递减的数列？</p>
+
+  <p>$ln(1+a_n)&lt;a_n$ 然后 $a_n &gt; 0$ 可得证有极限</p>
+
+  <font color="red">大于零可是个很重要的条件</font>
+</blockquote>
+
+<p>当极限存在时，==直接令其等于A==</p>
+
+<p>$A=ln(1+A)$ 得到极限为0</p>
+
+<blockquote>
+  <p>第二问就是简单的极限计算了</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.8">#</a></p>
+
+<blockquote>
+  <p>数学归纳法证明单调递增和有界</p>
+</blockquote>
+
+<p>显然$a_1&lt;a_2$，设$a_k&lt;a_{k+1}$</p>
+
+<p>则$\sqrt{1+a_k}&lt;\sqrt{1+a_{k+1}}$</p>
+
+<p>推出$a_{k+1}&lt;a_{k+2}$</p>
+
+<blockquote>
+  <p>首先由第二项大于第一项猜测单调递增</p>
+
+  <p>然后猜上界，使用数学归纳证明上界</p>
+</blockquote>
 
             </div>
         </div>
