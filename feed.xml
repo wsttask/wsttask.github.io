@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T19:40:46+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-15T19:40:37+08:00</published><updated>2024-03-15T19:40:37+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T19:43:17+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-15T19:43:11+08:00</published><updated>2024-03-15T19:43:11+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1"><![CDATA[<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
 <p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
 
@@ -121,7 +121,9 @@
 <hr />
 
 <p><a id="t24p4.8">#</a>
-$\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\infty}\frac{3\sqrt{n}}{\sqrt{n+2\sqrt{n}}+\sqrt{n-\sqrt{n}}} $</p>
+$\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
+
+<p>$=\lim_{n\to\infty}\frac{3\sqrt{n}}{\sqrt{n+2\sqrt{n}}+\sqrt{n-\sqrt{n}}} $</p>
 
 <p>$=3\lim_{n\to\infty}\frac{1}{\sqrt{1+\frac{2}{\sqrt{n}}}+\sqrt{1-\frac{1}{\sqrt{n}}}}=\frac{3}{2}$</p>
 
@@ -131,9 +133,13 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
 
 <p>夹逼定理</p>
 
-<p>$\text{当 }0&lt;x&lt;1\text{时,由 }x^n\leqslant x^n+x^{2n}\leqslant2x^n\text{得}x\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^\frac{1}{n}x,$</p>
+<p>$\text{当 }0&lt;x&lt;1\text{时,由 }x^n\leqslant x^n+x^{2n}\leqslant2x^n\text{得}$</p>
 
-<p>$\text{ 当 }x&gt;1\text{ 时,由 }x^{2n}\leqslant x^n+x^{2n}\leqslant2x^{2n}\text{ 得 }x^2\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^{\frac1n}x^2,$</p>
+<p>$x\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^\frac{1}{n}x,$</p>
+
+<p>$\text{ 当 }x&gt;1\text{ 时,由 }x^{2n}\leqslant x^n+x^{2n}\leqslant2x^{2n}\text{ 得 }$</p>
+
+<p>$x^2\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^{\frac1n}x^2,$</p>
 
 <p>$f(x)=\mid\begin{matrix}x,&amp;0&lt;x&lt;1,\x^{2},&amp;x\geqslant1.\end{matrix}$</p>
 
@@ -205,7 +211,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)=\lim_{n\to\
   <p>如果不能泰勒，那一定是化成分式洛!</p>
 </blockquote>
 
-<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-15T19:35:57+08:00</published><updated>2024-03-15T19:35:57+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-15T19:40:42+08:00</published><updated>2024-03-15T19:40:42+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
