@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-13 1228字
+              2024-03-16 1482字
             </div>
             <div class="content">
                 <h3 id="极限的定义">极限的定义</h3>
@@ -110,6 +110,24 @@
 <p>可推出第二个重要极限 $\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
 
 <p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>
+
+<h3 id="复合函数的极限和连续">复合函数的极限和连续</h3>
+
+<ol>
+  <li>”复合“保持连续性</li>
+</ol>
+
+<p><b>假设 $v(x)$ 在 $p$ 连续，$v(y)$ 在 $v(p)$ 连续，则 $f(x)=u(v(x))$ 在 $p$ 连续</b></p>
+
+<ol>
+  <li>“复合”不能保持极限</li>
+</ol>
+
+<p>$lim_{x\rightarrow p}v(x)=a$，$lim_{x\rightarrow a}v(x)=b$ 不能推出 $\lim_{x\rightarrow p}u(v(x))=b$</p>
+
+<p>反例：</p>
+
+<p>$v(x)=0$，$u(x)= \begin{cases} \frac{sinx}{x}\quad x\ne0 \ 0 \quad x=0\end{cases}$</p>
 
             </div>
         </div>
