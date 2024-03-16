@@ -1,76 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-16T16:09:17+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-16T16:09:09+08:00</published><updated>2024-03-16T16:09:09+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="极限的定义">极限的定义</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-16T17:33:55+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">等价无穷小代换原理</title><link href="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="等价无穷小代换原理" /><published>2024-03-16T17:33:21+08:00</published><updated>2024-03-16T17:33:21+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html"><![CDATA[<h3 id="等价无穷小">等价无穷小</h3>
 
-<p><strong>设</strong> $f:\mathbb {D} \subset \mathbb {R} \rightarrow \mathbb {R}\displaystyle$ <strong>是一个定义在实数上的函数。 并在某个开区间</strong> $x&gt;A$ <strong>或</strong>$x&lt;A$ <strong>上有定义。</strong> $L$ <strong>是一个给定的实数。</strong> $c$ <strong>是一个实数，并且函数</strong> $f$ <strong>在</strong> $c$ <strong>的某个去心邻域上有定义。如果对任意的正实数</strong> $\epsilon$  <strong>，都存在一个正实数</strong> $\delta$  <strong>，使得对任意的实数</strong> $x$ <strong>，只要</strong> $f$ <strong>在点</strong> $x$ <strong>处有定义，并且</strong> $x$ <strong>在</strong> $c$ <strong>的某个</strong> $\delta$  <strong>（去心）邻域中（即</strong> $\mid x−c \mid ⩽δ$  <strong>），就有</strong>$\mid f(x)−L \mid ⩽ \epsilon$  <strong>，那么就称</strong> $L$ <strong>是函数</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限，或简称</strong> $L$ <strong>为</strong> $f$ <strong>在</strong> $c$ <strong>的极限，记为</strong> $\displaystyle \lim _{x\to c}f(x)=L$  <strong>。反之则称</strong> $L$ <strong>不是</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限</strong></p>
+<p>泰勒展开+极限的定义</p>
 
-<blockquote>
-  <p>极限为无穷，极限不存在</p>
-</blockquote>
+<h3 id="抓大头">抓大头</h3>
 
-<h3 id="极限的性质">极限的性质</h3>
+<ul>
+  <li>无穷时</li>
+</ul>
 
-<ol>
-  <li>
-    <p><strong>唯一性</strong>：若极限存在，则极限一定唯一</p>
-  </li>
-  <li>
-    <p><strong>保号性</strong>：设 $\displaystyle\lim_{x\rightarrow a}f(x)=A&gt;0\quad(或\quad A&lt;0)$ ，则存在 $\delta&gt;0$ ，当$0&lt;\mid x-a \mid&lt;\delta$ 时，有$f(x)&gt;0\quad (或 \quad f(x)&lt;0)$</p>
-  </li>
-  <li>
-    <p><strong>有界性</strong>：</p>
-    <ol>
-      <li>
-        <p><strong>数列极限的有界性</strong></p>
-      </li>
-      <li>
-        <p><strong>函数极限的局部有界性</strong></p>
-      </li>
-    </ol>
-  </li>
-</ol>
+<p>$\sqrt{4x^2+x}$ 和 $2x$ 是等价无穷大的</p>
 
-<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
+<p>那我就需要求 $\sqrt{4x^2+x}-2x$ 的极限了</p>
 
-<ol>
-  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
-  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
-  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
-  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-  <li><strong>介值定理</strong>：设$a&lt;b$ ，$f:[a,b]\rightarrow R$ 是$[a,b]$ 上的连续函数，则对任意的 $\eta\in[f(a),f(b)]$ ，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-</ol>
+<p>最后结果是 $\frac14$</p>
 
-<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
+<p>等价无穷小相减是高阶的无穷小</p>
 
-<p>准则1：夹逼准则</p>
+<p>等价无穷大相减呢，是低阶的无穷大</p>
 
-<p>可推出第一个重要极限 $\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
+<p>常数既不是无穷大，也不是无穷小，为什么是$\frac14$</p>
 
-<p>根据 $\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
-
-<p>准则2：单调有界准则</p>
-
-<p>可推出第二个重要极限 $\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
-
-<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>
-
-<h3 id="复合函数的极限和连续">复合函数的极限和连续</h3>
-
-<ol>
-  <li>”复合“保持连续性</li>
-</ol>
-
-<p><b>假设 $v(x)$ 在 $p$ 连续，$v(y)$ 在 $v(p)$ 连续，则 $f(x)=u(v(x))$ 在 $p$ 连续</b></p>
-
-<ol>
-  <li>“复合”不能保持极限</li>
-</ol>
-
-<p>$lim_{x\rightarrow p}v(x)=a$，$lim_{x\rightarrow a}v(x)=b$ 不能推出 $\lim_{x\rightarrow p}u(v(x))=b$</p>
-
-<p>反例：</p>
-
-<p>$v(x)=0$，$u(x)= \begin{cases} \frac{sinx}{x}\quad x\ne0 \ 0 \quad x=0\end{cases}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[极限的定义]]></summary></entry><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-16T15:54:41+08:00</published><updated>2024-03-16T15:54:41+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p>a</p>
-
-<p><a href="#last">点此到达最后一题</a></p>
+<p>无穷大时的泰勒展开！！！</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[等价无穷小]]></summary></entry><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-16T17:32:52+08:00</published><updated>2024-03-16T17:32:52+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
 
 <p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
@@ -232,6 +182,12 @@
 
 <p><a href="#t24p6.10">click</a></p>
 
+<hr />
+
+<p>$\displaystyle\lim_{x\rightarrow 0}\frac{\sqrt{cos2x}-\sqrt[3]{cos3x}}{x^a}=b$</p>
+
+<p><br /></p>
+
 <p><a id="last">最后一题</a></p>
 
 <p><a href="#lastP">点此到达最后一题答案</a></p>
@@ -242,7 +198,13 @@
 
 <p>这是数列极限，n取的是全体自然数</p>
 
-<p>$\sqrt{4n^{2}+n}\quad\text{放缩成}\sqrt{4n^{2}+n+\frac{1}{16}}$</p>
+<blockquote>
+  <p>$\sqrt{4n^{2}+n}=2n\sqrt{1+\frac{1}{4n}}$</p>
+
+  <p>泰勒展开</p>
+
+  <p>$2n[1+\frac12\frac1{4n}+o(\frac1n)]=2n+\frac14$</p>
+</blockquote>
 
 <p>$最后结果是\frac{\sqrt{2}}{2}$</p>
 
@@ -374,7 +336,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
   <font color="red">大于零可是个很重要的条件</font>
 </blockquote>
 
-<p>当极限存在时，==直接令其等于A==</p>
+<p>当极限存在时，直接令其等于A</p>
 
 <p>$A=ln(1+A)$ 得到极限为0</p>
 
@@ -423,513 +385,268 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 <blockquote>
   <p>$\frac{(2x-1)(x+1)}{(x-1)(x+1)}e^{\frac1x}$ 可以约分</p>
 
-  <p>像这种初等函数</p>
+  <p>像这种初等函数的复合函数，化简约分更快</p>
+
+  <p>比如x+1被约去，相当于只多了一个当x=-1时无定义点</p>
+
+  <p>x-1约不去，多了一个无穷变换点，肯定是无穷间断点</p>
 </blockquote>
 
 <p><a href="#last">点此到达最后一题</a></p>
 
-<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[a]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-16T15:30:54+08:00</published><updated>2024-03-16T15:30:54+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/formula" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-16T17:29:39+08:00</published><updated>2024-03-16T17:29:39+08:00</updated><id>https://wsttask.github.io/calculus/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/formula"><![CDATA[<h3 id="常用等价无穷小">常用等价无穷小</h3>
 
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+<h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
 
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+<p>$sin\,x \sim x$</p>
 
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+<p>$tan\,x \sim x$</p>
 
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+<p>$arcsin\,x \sim x$</p>
 
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+<p>$arctan\,x \sim x$</p>
 
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+<p>$ln(1+x) \sim x$</p>
 
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+<p>$e^x -1 \sim x$</p>
 
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+<p>$(1+x)^\alpha \sim \alpha x$</p>
 
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+<p>$log_a(1+x) \sim \frac{x}{ln \,a}$</p>
 
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+<h3 id="不定积分公式">不定积分公式</h3>
 
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">t24p6.8引起的猜想</title><link href="https://wsttask.github.io/calculus/exercises/t24p6" rel="alternate" type="text/html" title="t24p6.8引起的猜想" /><published>2024-03-16T15:30:14+08:00</published><updated>2024-03-16T15:30:14+08:00</updated><id>https://wsttask.github.io/calculus/exercises/%E9%87%8D%E5%A4%8D%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E6%9C%89%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises/t24p6"><![CDATA[<p>$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$</p>
-
-<p>作 y = x 的直线，</p>
-
-<p>设存在交点 $x_1$</p>
-
-<p>如果，在 $0&lt;x&lt;x_1$ 时，$f(x)&gt;x$</p>
-
-<p>若 $a_1 &lt; x_1$ 最后会收敛到$x_1$</p>
-
-<p>如果，在 $x_1&lt;x$ 时，$f(x)&lt;x$</p>
-
-<p>若 $a_1 &gt; x_1$ 最后会收敛到$x_1$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$]]></summary></entry><entry><title type="html">单词重读规则</title><link href="https://wsttask.github.io/english/2024/03/16/%E9%87%8D%E8%AF%BB%E8%A7%84%E5%88%99.html" rel="alternate" type="text/html" title="单词重读规则" /><published>2024-03-16T15:17:23+08:00</published><updated>2024-03-16T15:17:23+08:00</updated><id>https://wsttask.github.io/english/2024/03/16/%E9%87%8D%E8%AF%BB%E8%A7%84%E5%88%99</id><content type="html" xml:base="https://wsttask.github.io/english/2024/03/16/%E9%87%8D%E8%AF%BB%E8%A7%84%E5%88%99.html"><![CDATA[<p><a href="https://www.bilibili.com/video/BV1T7411R7wE?p=1">单词重读音节</a></p>
-
-<p>10条单词重读规则</p>
-
-<ol>
-  <li>
-    <p>一个单词中只有一个音节能被重读，在一个长单词中，只能有一个主要重读音节和一个次读音节，一个元音是一个音节，辅音的数量不对音节造成影响。</p>
-  </li>
-  <li>
-    <p>在双音节名词中，第一个音节通常被重读。</p>
-  </li>
-  <li>
-    <p>在双音节形容词中，第一个音节通常被重读。</p>
-  </li>
-  <li>
-    <p>在双音节动词中，第二个音节通常被重读，但是存在例外。</p>
-  </li>
-  <li>
-    <p>三音节副词以ly，er结尾的，第一个音节通常被重读，但也存在例外。</p>
-  </li>
-  <li>
-    <p>后缀为sion，cian，ious，ic，ient，ial，able，ia，ish结尾的词，重音应在后缀前一个音节上，以able为后缀的一些词有例外。</p>
-  </li>
-  <li>
-    <p>后缀为cy，ty，phy，gy，al的单词，重音应在后缀前第二个音节上。</p>
-  </li>
-  <li>
-    <p>许多单词（不是所有）以ade，ee，eer，ese，que，oon结尾的，后缀本身应重读。</p>
-  </li>
-  <li>
-    <p>当两个单词组成一个名词（词组）时，第一个音节应被重读。</p>
-  </li>
-  <li>
-    <p>反身代词，第二个音节总被重读。</p>
-  </li>
-</ol>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[单词重读音节]]></summary></entry><entry><title type="html">重读非重读元音的发音的一些示例</title><link href="https://wsttask.github.io/english/2024/03/16/%E9%87%8D%E8%AF%BB%E9%9F%B3%E8%8A%82%E5%92%8C%E9%9D%9E%E9%87%8D%E8%AF%BB.html" rel="alternate" type="text/html" title="重读非重读元音的发音的一些示例" /><published>2024-03-16T15:12:17+08:00</published><updated>2024-03-16T15:12:17+08:00</updated><id>https://wsttask.github.io/english/2024/03/16/%E9%87%8D%E8%AF%BB%E9%9F%B3%E8%8A%82%E5%92%8C%E9%9D%9E%E9%87%8D%E8%AF%BB</id><content type="html" xml:base="https://wsttask.github.io/english/2024/03/16/%E9%87%8D%E8%AF%BB%E9%9F%B3%E8%8A%82%E5%92%8C%E9%9D%9E%E9%87%8D%E8%AF%BB.html"><![CDATA[<p>This is from https://www.bilibili.com/video/BV1Y14y1w7RM/?spm_id_from=333.1007.top_right_bar_window_history.content.click</p>
-
-<p>Let’s compare some words that begin with the letter <strong>a</strong>.</p>
-
-<p>If the syllable is stressed, the <strong>a</strong> has an <b>/æ/</b> sound; Otherwise, there is an <b>/ə/</b> sound.</p>
-
-<ol>
-  <li>Stressed and reduced <strong>a</strong></li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>Stressed</th>
-      <th>Reduced</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>absent</td>
-      <td>about</td>
-    </tr>
-    <tr>
-      <td>after</td>
-      <td>afford</td>
-    </tr>
-    <tr>
-      <td>address(noun)</td>  
-      <td>address(verb)</td>
-    </tr>
-    <tr>
-      <td>adverb</td>  
-      <td>admit</td>
-    </tr>
-    <tr>
-      <td>allergy</td>
-      <td>allergic</td>
-    </tr>
-    <tr>
-      <td>ally</td>
-      <td>allow</td>
-    </tr>
-    <tr>
-      <td>angry</td>
-      <td>annoyed</td>
-    </tr>
-    <tr>
-      <td>apple</td>
-      <td>apply</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Let’s compare some words that begin with the letter <strong>e</strong>.</p>
-
-<p>If the syllable is stressed, the <strong>e</strong> has an <b>/e/</b> sound; Otherwise, there is an <b>/ɪ/</b> sound.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Stressed</th>
-      <th>Reduced</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>envy</td>
-      <td>enjoy</td>
-    </tr>
-    <tr>
-      <td>edit</td>
-      <td>edition</td>
-    </tr>
-    <tr>
-      <td>extra</td>
-      <td>exact</td>
-    </tr>
-    <tr>
-      <td>enter</td>
-      <td>enough</td>
-    </tr>
-    <tr>
-      <td>enemy</td>
-      <td>explode</td>
-    </tr>
-    <tr>
-      <td>episode</td>
-      <td>escape</td>
-    </tr>
-    <tr>
-      <td>empty</td>
-      <td>employ</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Let’s compare some words that begin with the letter <strong>con</strong>.</p>
-
-<p>If the syllable is stressed, the <strong>con</strong> has an <b>/kɑn/</b> sound; Otherwise, there is an <b>/kən/</b> sound.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Stressed</th>
-      <th>Reduced</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>concert</td>
-      <td>concern</td>
-    </tr>
-    <tr>
-      <td>contact</td>
-      <td>conclude</td>
-    </tr>
-    <tr>
-      <td>conflict</td>
-      <td>confess</td>
-    </tr>
-    <tr>
-      <td>conscious</td>
-      <td>confirm</td>
-    </tr>
-    <tr>
-      <td>contrary</td>
-      <td>continue</td>
-    </tr>
-    <tr>
-      <td>concept</td>
-      <td>confuse</td>
-    </tr>
-    <tr>
-      <td>confident</td>
-      <td>convince</td>
-    </tr>
-    <tr>
-      <td>contract</td>
-      <td>connect</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Let’s compare some words that begin with the letter <strong>pro</strong>.</p>
-
-<p>If the syllable is stressed, the <strong>pro</strong> has an <b>/proʊ/</b> sound; Otherwise, there is an <b>/prə/</b> sound.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Stressed</th>
-      <th>Reduced</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>product</td>
-      <td>produce</td>
-    </tr>
-    <tr>
-      <td>process</td>
-      <td>proceed</td>
-    </tr>
-    <tr>
-      <td>problem</td>
-      <td>procedure</td>
-    </tr>
-    <tr>
-      <td>profit</td>
-      <td>professor</td>
-    </tr>
-    <tr>
-      <td>progress</td>
-      <td>professional</td>
-    </tr>
-    <tr>
-      <td>probably</td>
-      <td>pronounce</td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[This is from https://www.bilibili.com/video/BV1Y14y1w7RM/?spm_id_from=333.1007.top_right_bar_window_history.content.click]]></summary></entry><entry><title type="html">Daily English Dictation</title><link href="https://wsttask.github.io/dictation" rel="alternate" type="text/html" title="Daily English Dictation" /><published>2024-03-16T14:40:34+08:00</published><updated>2024-03-16T14:40:34+08:00</updated><id>https://wsttask.github.io/dailyEnglishDictation</id><content type="html" xml:base="https://wsttask.github.io/dictation"><![CDATA[<p>Mother Teresa, who received a Nobel Peace Price for her work on behalf of the poor. dies in Calcutta, India — she was 87 years old.</p>
+<font color="red">$\int \frac{1}{x} \,dx = ln\mid x \mid +C $</font>
 
 <p><br /></p>
 
-<p>Jerry, what time do you have?</p>
-
-<p>I have 5 o’clock.</p>
+<p>$\int tan\,x \,dx = -ln\mid cos\,x \mid +C$</p>
 
 <p><br /></p>
 
-<p>There are 3 things I have learned Never to discuss with people; religion, politics and the Great Pumpkin!</p>
+<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
 
 <p><br /></p>
 
-<p>Don’t ever let somebody tell you, you can’t do something.</p>
+<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
 
 <p><br /></p>
 
-<p>I have come here to chew bubblegum and kick ass … and I’m all out of bubblegum!</p>
+<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
 
 <p><br /></p>
 
-<p>The secret of life is just live every moment。</p>]]></content><author><name></name></author><category term="English" /><summary type="html"><![CDATA[Mother Teresa, who received a Nobel Peace Price for her work on behalf of the poor. dies in Calcutta, India — she was 87 years old.]]></summary></entry><entry><title type="html">微积分和线性代数</title><link href="https://wsttask.github.io/tasks/math" rel="alternate" type="text/html" title="微积分和线性代数" /><published>2024-03-15T19:19:17+08:00</published><updated>2024-03-15T19:19:17+08:00</updated><id>https://wsttask.github.io/tasks/math</id><content type="html" xml:base="https://wsttask.github.io/tasks/math"><![CDATA[<p>定积分中的换元积分法怎么用呢</p>]]></content><author><name></name></author><category term="tasks" /><summary type="html"><![CDATA[定积分中的换元积分法怎么用呢]]></summary></entry><entry><title type="html">Tasks</title><link href="https://wsttask.github.io/tasks" rel="alternate" type="text/html" title="Tasks" /><published>2024-03-15T19:15:53+08:00</published><updated>2024-03-15T19:15:53+08:00</updated><id>https://wsttask.github.io/tasks</id><content type="html" xml:base="https://wsttask.github.io/tasks"><![CDATA[<p>永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘</p>
+<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
 
-<h3 id="graduate"><a href="./tasks/graduate">graduate</a></h3>
+<p><br /></p>
 
-<h3 id="pyqt"><a href="./tasks/pyqt">pyqt</a></h3>
+<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>
 
-<h3 id="jekyll_blog"><a href="./tasks/jekyllBlog">jekyll_blog</a></h3>
+<p><br /></p>
 
-<h3 id="andoridsoft"><a href="./tasks/andoridSoft">andoridSoft</a></h3>
+<hr />
 
-<p>学习bootstrap</p>
+<p>${\large \int \frac{1}{2\sqrt{x}}dx = \sqrt{x}}$</p>
 
-<p>tanx的泰勒展开证明</p>
+<p><br /></p>
 
-<p>python基本数据类型9</p>
+<p>${\large \int \frac{1}{\sqrt{x}} =  2\sqrt{x}}$</p>
 
-<p>使用达布中值定理证明。。。。</p>
+<hr />
 
-<p>证明柯西中值定理</p>
+<p>${\large \int \frac{1}{x^2}dx = -\frac{1}{x}}$</p>
 
-<p>微信，qq聊天记录保存</p>
+<p><br /></p>
 
-<p>gitbook</p>
+<p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>
 
-<p>edge 的扩展上可以下载vpn？怎么搞的</p>
+<h3 id="常用泰勒展开">常用泰勒展开</h3>
 
-<p>在autohotkey中无法含参命令</p>
+<p>$(1+x)^\alpha
+= 1+ \displaystyle\sum^{\infty}_{n=1}\frac{\alpha(\alpha-1)···(\alpha-n+1)}{n!}x^n $</p>
 
-<p>通过命令杀死进程
-taskkill /f /im erwin.exe</p>
+<p>$= 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
 
-<p>这是测试行</p>
+<p><br /></p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">"content content-global"</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s">"width: 90%; margin: 0 auto;"</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="err">为什么</span><span class="n">div</span><span class="err">内标签与外标签宽度不一样？</span>
-</code></pre></div></div>
+<p>$tan\,x = x + \frac13x^3+\frac{2}{15}x^5+o(n^5)$</p>
 
-<p>如何快速比较两个文件内容之间的差异，有专门门的软件</p>
+<p><br /></p>
 
-<p><a href="https://venter.top/hopweb/index.html">HopWeb • 概述</a></p>
+<p>$sin\,x = x-\frac{1}{3!}x^3 +\frac{1}{5!}x^5+o(x^5)$</p>
 
-<p><a href="https://zhuanlan.zhihu.com/p/54907494">把网站放在手机桌面，像APP那样使用 - 知乎 (zhihu.com)</a></p>
+<p><br /></p>
 
-<p>微分方程齐次与非其次，线性与非线性</p>
+<p>$cos\,x=1-\frac{1}{2!}x^2 + \frac{1}{4!}x^4 + o(x^4)$</p>
 
-<p>在autohotkey中输入文件夹，自动查询并打开</p>
+<p><br /></p>
 
-<p>python自动化</p>
+<p>$ln\,(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 + o(x^3)$</p>
 
-<p>autohotkey</p>
+<p><br /></p>
 
-<p><a href="https://www.bilibili.com/video/BV1T34y1o73U/?spm_id_from=333.788.recommend_more_video.1&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">5分钟，教你做个自动化软件拿来办公、刷副本、回微信 </a></p>
+<p>$\frac{1}{1-x} = 1 + x + x^2 + x^3 + o(x^3)$</p>
 
-<p><a href="https://blog.csdn.net/m0_62881487/article/details/133833781?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1-133833781-blog-81017582.235^v40^pc_relevant_3m_sort_dl_base3&amp;utm_relevant_index=2">计算机算法分析与设计（10）—租用游艇问题(含C++代码)_租用游艇问题 复杂度分析-CSDN博客</a></p>
+<p><br /></p>
 
-<p><a href="https://blog.csdn.net/sinat_35678407/article/details/82874216">分治——最近点对问题_分治算法 closet pair of points-CSDN博客</a></p>
+<p>$\frac{1}{1+x} = 1-x+x^2-x^3 + o(x^3)$</p>
 
-<p><a href="https://blog.csdn.net/sinat_35678407/article/details/82874216">分治——最近点对问题_分治算法 closet pair of points-CSDN博客</a></p>
+<p><br /></p>
 
-<p><strong>华为云</strong></p>
+<p>$arcsin\,x= x + \frac{1}{6}x^3 + \frac{3}{40}x^5 + \frac{5}{112}x^7 + o(x^7)$</p>
 
-<p><a href="https://www.bilibili.com/video/BV1Y84y1L7Nn/?spm_id_from=333.337.search-card.all.click&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">黑马程序员前端JavaScript入门到精通全套视频教程，javascript核心进阶ES6语法、API、js高级等基础知识和实战教程_哔哩哔哩_bilibili</a></p>
+<p><br /></p>
 
-<p>AutoHotkey</p>
+<p>$arccos\,x= \frac{\pi}{2} - arcsin\,x$</p>
 
-<p>git提交gitee仓库显示太大了.git文件怎么清理</p>
+<p><br /></p>
 
-<p>gitee，github同步，背后原理是什么？</p>
+<p>$arctan\,x = x - \frac{1}{3}x^3 + \frac{1}{5}x^5 + o(x^5)$</p>
 
-<p>git仓库提交的原理是什么？</p>
+<p><br /></p>
 
-<p>1.git中保存着所有提交信息，git仓库与远程仓库是同步的，所以只上传更改信息，</p>
+<p>$e^x = 1 + \frac{1}{1!}x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + o(x^3)$</p>
 
-<p>最近和多人合作一个项目，</p>
+<h3 id="无穷大处的泰勒展开">无穷大处的泰勒展开</h3>
 
-<p>git pull 并不会删除掉自己的更改，这是怎么做到的</p>
+<p>$\displaystyle\lim_{x\to+\infty}\sqrt{x^2+1}=\displaystyle\lim_{x\to+\infty}x\sqrt{1+\frac1{x^2}}=x(1+\frac12\frac1{x^2}+\cdots)$</p>
 
-<p><strong>编码格式；运行中书写的字符串是什么格式，传到cmd是什么格式，传到powershell又是什么格式</strong></p>
+<h3 id="自然数的前n项的m次方和">自然数的前n项的m次方和</h3>
 
-<p><a href="https://blog.csdn.net/m0_50762431/article/details/130179618">电脑端(PC)按键精灵2023——入门小白 详细 教程_按键精灵pc-CSDN博客</a></p>
+<p>$1^2 + 2^2 + …+n^2 = \frac16n(n+1)(2n+1)$</p>
 
-<p>PowerToys</p>
+<p><br /></p>
 
-<p>运行中更改tasks.md添加新的文字.bat实现</p>
+<p>$1^3 + 2^3 + … + n^3 = \frac14n^2(n+1)^2$</p>
 
-<p>半角和全角的区别</p>
+<h2 id="其他公式">其他公式</h2>
 
-<p>输入法,中英文符号</p>
+<p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">一元函数微分学的应用</title><link href="https://wsttask.github.io/calculus/2024/03/16/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="一元函数微分学的应用" /><published>2024-03-16T16:52:48+08:00</published><updated>2024-03-16T16:52:48+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="泰勒中值定理的性质">泰勒中值定理的性质</h3>
 
-<p>寻找一个新的md文件编辑器</p>
+<font color="red">**泰勒中值定理是等式！**</font>
 
-<p>git 的push记录是怎么保存的</p>
+<ul>
+  <li>因此可以得出等价无穷小是可以进行代换的</li>
+</ul>
 
-<p><strong><a href="https://www.bilibili.com/video/BV1FN4y1r7Gv/?spm_id_from=pageDriver&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">上海年轻人万圣节发疯，“好得很”还是“糟得很”？_哔哩哔哩_bilibili</a></strong></p>
+<p>比如 $\sqrt{1-x^2}-1 \sim -\frac{1}{2}x^2$</p>
 
-<p>kindle使用的是什么系统?linux?这些插件是使用什么语言写的?</p>
+<p>但是要注意如果是代换 $x+1$ 这种两项的，一定要把后面的展开也带入，有可能前面的低次项的系数会变</p>
 
-<p>浏览器不解释换行符号\n</p>
+<ul>
+  <li>也可以先微分再积分</li>
+</ul>
 
-<p><strong><a href="https://zhuanlan.zhihu.com/p/440303039">对数运算性质公式推导 - 知乎 (zhihu.com)</a></strong></p>
+<p>比如 $\int_{0}^{x^2}ln(1+t^2)dt \sim \frac13x^6$</p>
 
-<p>扔六面色子，扔到2023的概率有多大</p>
+<p>等式嘛，怎么样都可以，只是注意皮亚诺型余项</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[泰勒中值定理的性质]]></summary></entry><entry><title type="html">微积分和线性代数</title><link href="https://wsttask.github.io/tasks/math" rel="alternate" type="text/html" title="微积分和线性代数" /><published>2024-03-16T16:48:12+08:00</published><updated>2024-03-16T16:48:12+08:00</updated><id>https://wsttask.github.io/tasks/math</id><content type="html" xml:base="https://wsttask.github.io/tasks/math"><![CDATA[<p>定积分中的换元积分法怎么用呢</p>]]></content><author><name></name></author><category term="tasks" /><summary type="html"><![CDATA[定积分中的换元积分法怎么用呢]]></summary></entry><entry><title type="html">定积分及其应用</title><link href="https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="定积分及其应用" /><published>2024-03-16T16:47:12+08:00</published><updated>2024-03-16T16:47:12+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="定积分定义">定积分定义</h3>
 
-<p>hibernate官方文档</p>
+<p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
 
-<p><a href="https://www.bilibili.com/video/BV1a34y167AZ?p=2&amp;vd_source=ec2d561dc8bd6d2bdcc13e464af382d0">01.初识Node-浏览器中的JavaScript运行环境_哔哩哔哩_bilibili</a></p>
-
-<p>javahash表实现</p>
-
-<p>wox + everything</p>
-
-<p>javase和javaee</p>
-
-<p>getCompleteTokenInBuffer先看matcher</p>
-
-<p>scanner源码解释</p>
-
-<p>java中的char基本数据类型是unicode编码，但是unicode编码大于两个字节了怎么办？</p>
-
-<p><a href="https://www.cnblogs.com/dragon2012/p/5020259.html">utf16编码格式 - c_dragon - 博客园 (cnblogs.com)</a></p>
-
-<p>idea使用git</p>
-
-<p>idea配置javaweb 项目，</p>
-
-<p><a href="http://10.216.217.131:9999/">oj</a></p>
-
-<p>mysql中sql语句</p>
-
-<p>注解开发hibernate</p>
-
-<p>mysql两张表互为外键</p>
-
-<p>idea查看错误提示</p>
-
-<p>贝叶斯公式</p>
-
-<p>mysql数据类型</p>
-
-<p>mysql索引</p>
-
-<p><a href="https://zhuanlan.zhihu.com/p/82320492">jar包的一些事儿 - 知乎 (zhihu.com)</a></p>
-
-<p>厉害数</p>
-
-<p>埃氏筛法</p>
-
-<p>JAVA 类型擦除<a href="https://zhuanlan.zhihu.com/p/346486993">Java泛型中的类型擦除详解 - 知乎 (zhihu.com)</a></p>
-
-<p>JAVA Arrays.asList 以数组作为底层实现</p>
-
-<p>JAVA 变长参数</p>
-
-<p>java 泛型能否为静态的？</p>
-
-<p><a href="https://www.jianshu.com/p/c738c8262087">分支限界法——对解空间的一种策略搜索（广度优先搜索） - 简书 (jianshu.com)</a></p>
-
-<p>ARP解析，socket编程</p>
-
-<p>汇编语言的学习</p>
-
-<p>软件测试中junit4.jar</p>
-
-<p>新建文档时，有md文件并且有快捷键</p>
-
-<p>word的用法（论文）</p>
-
-<p>开发者工具的用法</p>
-
-<p>电脑的组成，网卡，等知识</p>
-
-<p>VBScript脚本</p>
-
-<p>html文件格式，html文件编辑器（前端）</p>
-
-<p>JavaScript脚本</p>
-
-<p>安卓系统的简单软件（手机实现禅定空间）</p>
-
-<p><a href="https://blog.csdn.net/Daydream_Z/article/details/129788166?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-4-129788166-blog-83616085.235^v38^pc_relevant_anti_vip&amp;spm=1001.2101.3001.4242.3&amp;utm_relevant_index=7">(95条消息) 【Win10】Win10右键 新增/删除 新建文件_不·韦的博客-CSDN博客</a></p>
-
-<p>博客园</p>
-
-<p><a href="https://blog.csdn.net/qq_25593079/article/details/83616085?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=Win10使用快捷键新建文件夹和.txt文本文档&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-83616085.nonecase&amp;spm=1018.2226.3001.4187">(90条消息) Win10 利用快捷键，快速新建TXT文档_win10新建文本文档_funtty的博客-CSDN博客</a></p>
-
-<p><a href="https://zhuanlan.zhihu.com/p/34611958">Windows自定义运行 - 知乎 (zhihu.com)</a></p>
-
-<p>更改typora的原码，ctrl+k插入超链接的地方</p>
-
-<p>关机前自动上传代码，检查是否上传，并提示</p>
-
-<p>开机后自动拉代码</p>
-
-<h2 id="remote-tasks">remote tasks</h2>
+<h3 id="定积分的数列和形式">定积分的数列和形式</h3>
 
 <ul>
   <li>
-    <p>代码大全，深入浅出计算机网络</p>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f\left(x\right)\mathrm{d}x$</p>
   </li>
   <li>
-    <p><a href="https://kaoyan.eol.cn/e_ky/zt/common/zhenti/">2022年考研数学_英语_政治_专业课真题及答案下载_中国教育在线 (eol.cn)</a></p>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{kn}f\left(\frac{i}{n}\right)=\int_{0}^{k}f\left(x\right)dx$</p>
   </li>
-</ul>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[永远专注笔记目录的合理性，永远专注task的实用性，坚持github查看笔记基本盘]]></summary></entry><entry><title type="html">graduate tasks</title><link href="https://wsttask.github.io/tasks/graduate" rel="alternate" type="text/html" title="graduate tasks" /><published>2024-03-15T19:14:31+08:00</published><updated>2024-03-15T19:14:31+08:00</updated><id>https://wsttask.github.io/tasks/graduate</id><content type="html" xml:base="https://wsttask.github.io/tasks/graduate"><![CDATA[<h3 id="english">English</h3>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^{n}f\left[a+\frac{i}{n}\left(b-a\right)\right]=\int_{a}^{b}f\left(x\right)dx$</p>
+  </li>
+</ul>
 
-<h3 id="math">math</h3>
+<h3 id="柯西不等式">柯西不等式</h3>
 
-<h3 id="computer">computer</h3>
+<p>设 $f(x),g(x)$ 在 $[a,b]$ 上连续，则
+\(\left(\int_a^bf\left(x\right)g\left(x\right)\mathrm{d}x\right)^2\leqslant\int_a^bf^2\left(x\right)\mathrm{d}x\int_a^bg^2\left(x\right)\mathrm{d}x\)</p>
+<h3 id="三角函数定积分的性质">三角函数定积分的性质</h3>
 
-<h3 id="politics">politics</h3>]]></content><author><name></name></author><category term="task" /><summary type="html"><![CDATA[English]]></summary></entry></feed>
+<ul>
+  <li>
+    <p>$\int_0^{\frac{\pi}{2}}f\left(\sin x\right)\mathrm{d}x=\int_0^{\frac{\pi}{2}}f\left(\cos x\right)\mathrm{d}x,$</p>
+  </li>
+  <li>$I_{n}=\int_{0}^{\frac{\pi}{2}}\sin^{n}x\mathrm{d}x=\int_{0}^{\frac{\pi}{2}}\cos^{n}x\mathrm{d}x$</li>
+  <li>其中 $I_{2k}=\frac{\left(2k-1\right)!!}{\left(2k\right)!!}\cdot\frac{\pi}{2},I_{2k+1}=\frac{\left(2k\right)!!}{\left(2k+1\right)!!}.$</li>
+  <li>$I_n=\frac{n-1}{n}I_{n-2}$</li>
+</ul>
+
+<h3 id="积分基本定理">积分基本定理</h3>
+
+<p><strong>定理1：</strong> $\text{设 }f\left(x\right)\in C\left[a,b\right],\text{令 }\Phi\left(x\right)=\int_{a}^{x}f\left(t\right)\mathrm{d}t,\text{则 }\Phi^{\prime}\left(x\right)=f\left(x\right).$</p>
+
+<p><strong>定理2：(牛顿一莱布尼茨公式)</strong> $设f(x)\in C[a,b],且 F(x)为f(x)的一个原函数,则 $
+\(\int_a^bf(x) dx=F(b)-F(a)\)</p>
+
+<h3 id="常用定积分结论">常用定积分结论</h3>
+
+<ul>
+  <li>$\int_{0}^{\frac{\pi}{2}}sinx\,dx=\int_{0}^{\frac{\pi}{2}}cosx\,dx=1$</li>
+  <li>$\int_{0}^{a}\sqrt{a^{2}-x^{2}}dx=\frac{\pi}{4}a^{2}$</li>
+</ul>
+
+<h3 id="积分方法">积分方法</h3>
+
+<ol>
+  <li><strong>换元积分法</strong>，其中 $\varphi(t)$ 单调连续可导，且 $\varphi(\alpha)=a,\quad\varphi(\beta)=b$</li>
+</ol>
+
+<p><strong>$\int_{a}^{b}f\left(x\right)\mathrm{d}x=\int_{a}^{\beta}f\left[\varphi\left(t\right)\right]\varphi^{\prime}\left(t\right)\mathrm{d}t$</strong></p>
+
+<ol>
+  <li><strong>分布积分法</strong></li>
+</ol>
+
+<p>$\text{设 }u(x),v(x)\text{ 在}[a,b]\text{上连续可导,则}\int_a^bu\operatorname{d}v=vu\mid_a^b-\int_a^bv\operatorname{d}u.$</p>
+
+<h3 id="变上限积分函数求导">变上限积分函数求导</h3>
+
+<ul>
+  <li>$\frac{d}{dx}\int_{a}^{\psi(x)}f(t)dt=f[\psi(x)]\psi’(x)$</li>
+  <li>$\frac{d}{dx}\int_{\psi_1(x)}^{\psi_2(x)}f(t)dt=f[\psi_2(x)]\psi_2’(x)-f[\psi_1(x)]\psi_1’(x)$</li>
+</ul>
+
+<p>证明</p>
+
+<p>$\frac{du}{dx}\frac{d}{du}\int_{a}^{u}f(t)dt$</p>
+
+<blockquote>
+  <p>相当于复合函数求导而已</p>
+</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[定积分定义]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-16T16:35:18+08:00</published><updated>2024-03-16T16:35:18+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+
+<h4 id="导数定义">导数定义</h4>
+
+<blockquote>
+  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+
+  <p>​        $\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+
+  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+
+  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
+</blockquote>
+
+<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
+
+<blockquote>
+  <p>充分不必要条件：导函数是连续函数</p>
+</blockquote>
+
+<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
+
+<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">泰勒中值定理</title><link href="https://wsttask.github.io/theorem/2024/03/16/%E6%B3%B0%E5%8B%92%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="泰勒中值定理" /><published>2024-03-16T16:30:41+08:00</published><updated>2024-03-16T16:30:41+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/16/%E6%B3%B0%E5%8B%92%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/16/%E6%B3%B0%E5%8B%92%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="泰勒中值定理的性质">泰勒中值定理的性质</h3>
+
+<font color="red">**泰勒中值定理是等式！**</font>
+
+<p>因此可以得出等价无穷小是可以进行代换的</p>
+
+<p>比如 $\sqrt{1-x^2}-1 \sim -\frac{1}{2}x^2$</p>
+
+<p>但是要注意如果是代换$x+1$ 这种两项的，一定要把后面的展开也带入，有可能前面的低次项的系数会变</p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[泰勒中值定理的性质]]></summary></entry><entry><title type="html">达布中值定理</title><link href="https://wsttask.github.io/theorem/2024/03/16/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="达布中值定理" /><published>2024-03-16T16:26:50+08:00</published><updated>2024-03-16T16:26:50+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/16/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/16/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="达布中值定理">达布中值定理</h3>
+
+<blockquote>
+  <p>设 $y=f(x)$ 在 $(A,B)$ 区间可导，且 $[a,b]$ 包含于 $(A,B)$ ，$f’(a)&lt;f’(b)$ ，则对于任意给定的 $\eta \quad [f’(a)&lt;\eta&lt;f’(b)]$ ，都存在一点 $\xi\in(a,b)$ ，使得 $f’(\xi)=\eta$</p>
+</blockquote>
+
+<p><a href="https://zhuanlan.zhihu.com/p/486060686?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1745752610869686273&amp;utm_source=wechat_session">导数的介值定理(达布中值定理)的证明及应用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[达布中值定理]]></summary></entry><entry><title type="html">费马引理</title><link href="https://wsttask.github.io/theorem/2024/03/16/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html" rel="alternate" type="text/html" title="费马引理" /><published>2024-03-16T16:26:44+08:00</published><updated>2024-03-16T16:26:44+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/16/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/16/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86.html"><![CDATA[<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/3.jpg" alt="" /></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[]]></summary></entry></feed>

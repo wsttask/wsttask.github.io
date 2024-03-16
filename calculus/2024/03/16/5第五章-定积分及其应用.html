@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    
+<title>定积分及其应用</title>
+<!-- <link rel="icon" href="../favicon.svg" type="image/svg+xml"/> -->
+<!-- <link rel="icon" href="../favicon.png" type="image/png"  />   -->
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://wsttask.github.io/styles/font.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/post.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/post_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="https://wsttask.github.io/styles/navigatebar.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="https://wsttask.github.io/styles/navigatebar_mobile.css">
+        <link rel="stylesheet" href="https://wsttask.github.io/theme/highlight.css">
+    </head>
+    <body>
+        <div class="navigatebar">
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/index.html">index</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/tags.html">Tags</a>
+    </div>
+    <div class="navigatebar-button">
+        <a href="https://wsttask.github.io/tasks.html">task</a>
+    </div>
+</div>
+ 
+        <div class="content-area">
+            <div class="title">
+                定积分及其应用
+            </div>
+            <div class="category-area">
+                「
+                <a href="https://wsttask.github.io/tags.html#calculus">
+                    <div class="category">
+                        calculus
+                    </div>
+                </a>
+                」
+            </div>
+            <div class="char-counter">
+              2024-03-16 1946字
+            </div>
+            <div class="content">
+                <h3 id="定积分定义">定积分定义</h3>
+
+<p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
+
+<h3 id="定积分的数列和形式">定积分的数列和形式</h3>
+
+<ul>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f\left(x\right)\mathrm{d}x$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{kn}f\left(\frac{i}{n}\right)=\int_{0}^{k}f\left(x\right)dx$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^{n}f\left[a+\frac{i}{n}\left(b-a\right)\right]=\int_{a}^{b}f\left(x\right)dx$</p>
+  </li>
+</ul>
+
+<h3 id="柯西不等式">柯西不等式</h3>
+
+<p>设 $f(x),g(x)$ 在 $[a,b]$ 上连续，则
+\(\left(\int_a^bf\left(x\right)g\left(x\right)\mathrm{d}x\right)^2\leqslant\int_a^bf^2\left(x\right)\mathrm{d}x\int_a^bg^2\left(x\right)\mathrm{d}x\)</p>
+<h3 id="三角函数定积分的性质">三角函数定积分的性质</h3>
+
+<ul>
+  <li>
+    <p>$\int_0^{\frac{\pi}{2}}f\left(\sin x\right)\mathrm{d}x=\int_0^{\frac{\pi}{2}}f\left(\cos x\right)\mathrm{d}x,$</p>
+  </li>
+  <li>$I_{n}=\int_{0}^{\frac{\pi}{2}}\sin^{n}x\mathrm{d}x=\int_{0}^{\frac{\pi}{2}}\cos^{n}x\mathrm{d}x$</li>
+  <li>其中 $I_{2k}=\frac{\left(2k-1\right)!!}{\left(2k\right)!!}\cdot\frac{\pi}{2},I_{2k+1}=\frac{\left(2k\right)!!}{\left(2k+1\right)!!}.$</li>
+  <li>$I_n=\frac{n-1}{n}I_{n-2}$</li>
+</ul>
+
+<h3 id="积分基本定理">积分基本定理</h3>
+
+<p><strong>定理1：</strong> $\text{设 }f\left(x\right)\in C\left[a,b\right],\text{令 }\Phi\left(x\right)=\int_{a}^{x}f\left(t\right)\mathrm{d}t,\text{则 }\Phi^{\prime}\left(x\right)=f\left(x\right).$</p>
+
+<p><strong>定理2：(牛顿一莱布尼茨公式)</strong> $设f(x)\in C[a,b],且 F(x)为f(x)的一个原函数,则 $
+\(\int_a^bf(x) dx=F(b)-F(a)\)</p>
+
+<h3 id="常用定积分结论">常用定积分结论</h3>
+
+<ul>
+  <li>$\int_{0}^{\frac{\pi}{2}}sinx\,dx=\int_{0}^{\frac{\pi}{2}}cosx\,dx=1$</li>
+  <li>$\int_{0}^{a}\sqrt{a^{2}-x^{2}}dx=\frac{\pi}{4}a^{2}$</li>
+</ul>
+
+<h3 id="积分方法">积分方法</h3>
+
+<ol>
+  <li><strong>换元积分法</strong>，其中 $\varphi(t)$ 单调连续可导，且 $\varphi(\alpha)=a,\quad\varphi(\beta)=b$</li>
+</ol>
+
+<p><strong>$\int_{a}^{b}f\left(x\right)\mathrm{d}x=\int_{a}^{\beta}f\left[\varphi\left(t\right)\right]\varphi^{\prime}\left(t\right)\mathrm{d}t$</strong></p>
+
+<ol>
+  <li><strong>分布积分法</strong></li>
+</ol>
+
+<p>$\text{设 }u(x),v(x)\text{ 在}[a,b]\text{上连续可导,则}\int_a^bu\operatorname{d}v=vu\mid_a^b-\int_a^bv\operatorname{d}u.$</p>
+
+<h3 id="变上限积分函数求导">变上限积分函数求导</h3>
+
+<ul>
+  <li>$\frac{d}{dx}\int_{a}^{\psi(x)}f(t)dt=f[\psi(x)]\psi’(x)$</li>
+  <li>$\frac{d}{dx}\int_{\psi_1(x)}^{\psi_2(x)}f(t)dt=f[\psi_2(x)]\psi_2’(x)-f[\psi_1(x)]\psi_1’(x)$</li>
+</ul>
+
+<p>证明</p>
+
+<p>$\frac{du}{dx}\frac{d}{du}\int_{a}^{u}f(t)dt$</p>
+
+<blockquote>
+  <p>相当于复合函数求导而已</p>
+</blockquote>
+
+
+            </div>
+        </div>
+    </body>
+</html>
