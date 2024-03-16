@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-16T20:02:52+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-16T20:02:11+08:00</published><updated>2024-03-16T20:02:11+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-16T20:44:43+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-16T20:44:23+08:00</published><updated>2024-03-16T20:44:23+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
 
 <p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
@@ -170,6 +170,46 @@
 
 <p><a href="#t24p7.7">click</a></p>
 
+<hr />
+
+<p>$\lim_{x\to0}\frac{\tan\left(\sin x\right)-x}{x^{3}}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8.4</code></p>
+
+<p><a href="#t24p8.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\rightarrow\infty}\frac{ln(e^{x^2}+2x+1)}{2x^2+3}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8.11</code></p>
+
+<p><a href="#t24p8.11">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{i}{n^4}\sqrt{n^4-i^4}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8-12</code></p>
+
+<p><a href="#t24p8-12">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to0}\frac{\int_{0}^{x}f(x-t)\mathrm{d}t}{e^{x^2}-\cos x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8-16</code></p>
+
+<p><a href="#t24p8-16">click</a></p>
+
 <p><a id="last">最后一题</a></p>
 
 <p><a href="#lastP">点此到达最后一题答案</a></p>
@@ -251,9 +291,9 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 <p>$\displaystyle\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}=\displaystyle\lim_{x\to+\infty}\frac{\frac{1}{1+x^{2}}}{-\frac{1}{x^{2}}}=-1$</p>
 
 <blockquote>
-  <p>很明显和上一题不一样，不能用泰勒展开</p>
+  <p>很明显和上一题不一样，在无穷处不能用泰勒展开</p>
 
-  <p>此时无穷减无穷，泰勒或洛必达</p>
+  <p>此时无穷减无穷，洛必达</p>
 
   <p>有arctanx，arcsinx，想办法化成分式用洛</p>
 </blockquote>
@@ -297,7 +337,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 <p><a id="t24p6.5.2">#</a></p>
 
 <blockquote>
-  <p>夹逼定理</p>
+  <font color="red">夹逼定理</font>
 </blockquote>
 
 <p>$1\leqslant\sqrt[n]{1+\frac{1}{3}+\cdots+\frac{1}{2n+1}}\leqslant n^{\frac{1}{n}}$</p>
@@ -382,9 +422,178 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
   <p>$(1+x)^\alpha$ 的泰勒展开</p>
 </blockquote>
 
+<hr />
+
+<p><a id="t24p8.4">#</a></p>
+
+<blockquote>
+  <p>所有极限泰勒一定有办法做出来</p>
+
+  <p>一个是直接展开，一种是$(1+x)^\alpha$等</p>
+
+  <p>泰勒做的比较奇怪，用洛</p>
+
+  <p>洛不成用$\pm x^2$ 或加减常数，变得和分母一样</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8.11">#</a></p>
+
+<blockquote>
+  <font color="red">提 $e^{x^2}$ </font>
+  <p>关于 $ln()$</p>
+
+  <p>如果不想直接求导</p>
+
+  <p>那就得提出通项，让后利用对数性质，变成加</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8-12">#</a></p>
+
+<blockquote>
+  <p>和<font color="red">定积分的数列表示</font>有没有点像</p>
+
+  <p>重要的是 <font color="red">$\frac{1}{n}\sum\frac{i}{n}$</font> 以及 x</p>
+</blockquote>
+
+<p>$\displaystyle\lim_{n\rightarrow\infty}\frac1n\sum_{i=1}^{n}\frac{i}{n}\sqrt{1-(\frac{i}{n})^4}=\int_0^1x\sqrt{1-x^4}\,dx$</p>
+
+<hr />
+
+<p><a id="t24p8-16">#</a></p>
+
+<blockquote>
+  <p>已知f(0),f’(0)就可以构造泰勒展开式</p>
+
+  <p>换元法</p>
+</blockquote>
+
+<p>$\int_{0}^{x}f\left(x-t\right)\mathrm{d}t\xrightarrow{x-t=u}\int_{x}^{0}f\left(u\right)\left(-\mathrm{d}u\right)=\int_{0}^{x}f\left(u\right)\mathrm{d}u,$</p>
+
 <p><a href="#last">点此到达最后一题</a></p>
 
-<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/formula" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-16T19:47:05+08:00</published><updated>2024-03-16T19:47:05+08:00</updated><id>https://wsttask.github.io/calculus/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/formula"><![CDATA[<h3 id="常用等价无穷小">常用等价无穷小</h3>
+<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">定积分及其应用</title><link href="https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="定积分及其应用" /><published>2024-03-16T20:34:56+08:00</published><updated>2024-03-16T20:34:56+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="定积分定义">定积分定义</h3>
+
+<p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
+
+<h3 id="定积分的数列和形式">定积分的数列和形式</h3>
+
+<ul>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f\left(x\right)\mathrm{d}x$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{kn}f\left(\frac{i}{n}\right)=\int_{0}^{k}f\left(x\right)dx$</p>
+  </li>
+  <li>
+    <p>$\displaystyle\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^{n}f\left[a+\frac{i}{n}\left(b-a\right)\right]=\int_{a}^{b}f\left(x\right)dx$</p>
+  </li>
+</ul>
+
+<h3 id="柯西不等式">柯西不等式</h3>
+
+<p>设 $f(x),g(x)$ 在 $[a,b]$ 上连续，则
+\(\left(\int_a^bf\left(x\right)g\left(x\right)\mathrm{d}x\right)^2\leqslant\int_a^bf^2\left(x\right)\mathrm{d}x\int_a^bg^2\left(x\right)\mathrm{d}x\)</p>
+<h3 id="三角函数定积分的性质">三角函数定积分的性质</h3>
+
+<ul>
+  <li>
+    <p>$\int_0^{\frac{\pi}{2}}f\left(\sin x\right)\mathrm{d}x=\int_0^{\frac{\pi}{2}}f\left(\cos x\right)\mathrm{d}x,$</p>
+  </li>
+  <li>$I_{n}=\int_{0}^{\frac{\pi}{2}}\sin^{n}x\mathrm{d}x=\int_{0}^{\frac{\pi}{2}}\cos^{n}x\mathrm{d}x$</li>
+  <li>其中 $I_{2k}=\frac{\left(2k-1\right)!!}{\left(2k\right)!!}\cdot\frac{\pi}{2},I_{2k+1}=\frac{\left(2k\right)!!}{\left(2k+1\right)!!}.$</li>
+  <li>$I_n=\frac{n-1}{n}I_{n-2}$</li>
+</ul>
+
+<h3 id="积分基本定理">积分基本定理</h3>
+
+<p><strong>定理1：</strong> $\text{设 }f\left(x\right)\in C\left[a,b\right],\text{令 }\Phi\left(x\right)=\int_{a}^{x}f\left(t\right)\mathrm{d}t,\text{则 }\Phi^{\prime}\left(x\right)=f\left(x\right).$</p>
+
+<p><strong>定理2：(牛顿一莱布尼茨公式)</strong> $设f(x)\in C[a,b],且 F(x)为f(x)的一个原函数,则 $
+\(\int_a^bf(x) dx=F(b)-F(a)\)</p>
+
+<h3 id="常用定积分结论">常用定积分结论</h3>
+
+<ul>
+  <li>$\int_{0}^{\frac{\pi}{2}}sinx\,dx=\int_{0}^{\frac{\pi}{2}}cosx\,dx=1$</li>
+  <li>$\int_{0}^{a}\sqrt{a^{2}-x^{2}}dx=\frac{\pi}{4}a^{2}$</li>
+</ul>
+
+<h3 id="积分方法">积分方法</h3>
+
+<ol>
+  <li><strong>换元积分法</strong>，其中 $\varphi(t)$ 单调连续可导，且 $\varphi(\alpha)=a,\quad\varphi(\beta)=b$</li>
+</ol>
+
+<p><strong>$\int_{a}^{b}f\left(x\right)\mathrm{d}x=\int_{a}^{\beta}f\left[\varphi\left(t\right)\right]\varphi^{\prime}\left(t\right)\mathrm{d}t$</strong></p>
+
+<ol>
+  <li><strong>分布积分法</strong></li>
+</ol>
+
+<p>$\text{设 }u(x),v(x)\text{ 在}[a,b]\text{上连续可导,则}\int_a^bu\operatorname{d}v=vu\mid_a^b-\int_a^bv\operatorname{d}u.$</p>
+
+<h3 id="变上限积分函数求导">变上限积分函数求导</h3>
+
+<ul>
+  <li>$\frac{d}{dx}\int_{a}^{\psi(x)}f(t)dt=f[\psi(x)]\psi’(x)$</li>
+  <li>$\frac{d}{dx}\int_{\psi_1(x)}^{\psi_2(x)}f(t)dt=f[\psi_2(x)]\psi_2’(x)-f[\psi_1(x)]\psi_1’(x)$</li>
+</ul>
+
+<p>证明</p>
+
+<p>$\frac{du}{dx}\frac{d}{du}\int_{a}^{u}f(t)dt$</p>
+
+<blockquote>
+  <p>相当于复合函数求导而已</p>
+</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[定积分定义]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-16T20:02:48+08:00</published><updated>2024-03-16T20:02:48+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/formula" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-16T19:47:05+08:00</published><updated>2024-03-16T19:47:05+08:00</updated><id>https://wsttask.github.io/calculus/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/formula"><![CDATA[<h3 id="常用等价无穷小">常用等价无穷小</h3>
 
 <h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
 
@@ -513,51 +722,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
 <p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>
 
-<p>$arctan\,x+arctan\,\frac1x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-16T17:37:34+08:00</published><updated>2024-03-16T17:37:34+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">等价无穷小代换原理</title><link href="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="等价无穷小代换原理" /><published>2024-03-16T17:33:21+08:00</published><updated>2024-03-16T17:33:21+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html"><![CDATA[<h3 id="等价无穷小">等价无穷小</h3>
+<p>$arctan\,x+arctan\,\frac1x=\frac{\pi}{2}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">等价无穷小代换原理</title><link href="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="等价无穷小代换原理" /><published>2024-03-16T17:33:21+08:00</published><updated>2024-03-16T17:33:21+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html"><![CDATA[<h3 id="等价无穷小">等价无穷小</h3>
 
 <p>泰勒展开+极限的定义</p>
 
@@ -597,81 +762,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
 <p>比如 $\int_{0}^{x^2}ln(1+t^2)dt \sim \frac13x^6$</p>
 
-<p>等式嘛，怎么样都可以，只是注意皮亚诺型余项</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[泰勒中值定理的性质]]></summary></entry><entry><title type="html">微积分和线性代数</title><link href="https://wsttask.github.io/tasks/math" rel="alternate" type="text/html" title="微积分和线性代数" /><published>2024-03-16T16:48:12+08:00</published><updated>2024-03-16T16:48:12+08:00</updated><id>https://wsttask.github.io/tasks/math</id><content type="html" xml:base="https://wsttask.github.io/tasks/math"><![CDATA[<p>定积分中的换元积分法怎么用呢</p>]]></content><author><name></name></author><category term="tasks" /><summary type="html"><![CDATA[定积分中的换元积分法怎么用呢]]></summary></entry><entry><title type="html">定积分及其应用</title><link href="https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="定积分及其应用" /><published>2024-03-16T16:47:12+08:00</published><updated>2024-03-16T16:47:12+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="定积分定义">定积分定义</h3>
-
-<p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
-
-<h3 id="定积分的数列和形式">定积分的数列和形式</h3>
-
-<ul>
-  <li>
-    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f\left(x\right)\mathrm{d}x$</p>
-  </li>
-  <li>
-    <p>$\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{kn}f\left(\frac{i}{n}\right)=\int_{0}^{k}f\left(x\right)dx$</p>
-  </li>
-  <li>
-    <p>$\displaystyle\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^{n}f\left[a+\frac{i}{n}\left(b-a\right)\right]=\int_{a}^{b}f\left(x\right)dx$</p>
-  </li>
-</ul>
-
-<h3 id="柯西不等式">柯西不等式</h3>
-
-<p>设 $f(x),g(x)$ 在 $[a,b]$ 上连续，则
-\(\left(\int_a^bf\left(x\right)g\left(x\right)\mathrm{d}x\right)^2\leqslant\int_a^bf^2\left(x\right)\mathrm{d}x\int_a^bg^2\left(x\right)\mathrm{d}x\)</p>
-<h3 id="三角函数定积分的性质">三角函数定积分的性质</h3>
-
-<ul>
-  <li>
-    <p>$\int_0^{\frac{\pi}{2}}f\left(\sin x\right)\mathrm{d}x=\int_0^{\frac{\pi}{2}}f\left(\cos x\right)\mathrm{d}x,$</p>
-  </li>
-  <li>$I_{n}=\int_{0}^{\frac{\pi}{2}}\sin^{n}x\mathrm{d}x=\int_{0}^{\frac{\pi}{2}}\cos^{n}x\mathrm{d}x$</li>
-  <li>其中 $I_{2k}=\frac{\left(2k-1\right)!!}{\left(2k\right)!!}\cdot\frac{\pi}{2},I_{2k+1}=\frac{\left(2k\right)!!}{\left(2k+1\right)!!}.$</li>
-  <li>$I_n=\frac{n-1}{n}I_{n-2}$</li>
-</ul>
-
-<h3 id="积分基本定理">积分基本定理</h3>
-
-<p><strong>定理1：</strong> $\text{设 }f\left(x\right)\in C\left[a,b\right],\text{令 }\Phi\left(x\right)=\int_{a}^{x}f\left(t\right)\mathrm{d}t,\text{则 }\Phi^{\prime}\left(x\right)=f\left(x\right).$</p>
-
-<p><strong>定理2：(牛顿一莱布尼茨公式)</strong> $设f(x)\in C[a,b],且 F(x)为f(x)的一个原函数,则 $
-\(\int_a^bf(x) dx=F(b)-F(a)\)</p>
-
-<h3 id="常用定积分结论">常用定积分结论</h3>
-
-<ul>
-  <li>$\int_{0}^{\frac{\pi}{2}}sinx\,dx=\int_{0}^{\frac{\pi}{2}}cosx\,dx=1$</li>
-  <li>$\int_{0}^{a}\sqrt{a^{2}-x^{2}}dx=\frac{\pi}{4}a^{2}$</li>
-</ul>
-
-<h3 id="积分方法">积分方法</h3>
-
-<ol>
-  <li><strong>换元积分法</strong>，其中 $\varphi(t)$ 单调连续可导，且 $\varphi(\alpha)=a,\quad\varphi(\beta)=b$</li>
-</ol>
-
-<p><strong>$\int_{a}^{b}f\left(x\right)\mathrm{d}x=\int_{a}^{\beta}f\left[\varphi\left(t\right)\right]\varphi^{\prime}\left(t\right)\mathrm{d}t$</strong></p>
-
-<ol>
-  <li><strong>分布积分法</strong></li>
-</ol>
-
-<p>$\text{设 }u(x),v(x)\text{ 在}[a,b]\text{上连续可导,则}\int_a^bu\operatorname{d}v=vu\mid_a^b-\int_a^bv\operatorname{d}u.$</p>
-
-<h3 id="变上限积分函数求导">变上限积分函数求导</h3>
-
-<ul>
-  <li>$\frac{d}{dx}\int_{a}^{\psi(x)}f(t)dt=f[\psi(x)]\psi’(x)$</li>
-  <li>$\frac{d}{dx}\int_{\psi_1(x)}^{\psi_2(x)}f(t)dt=f[\psi_2(x)]\psi_2’(x)-f[\psi_1(x)]\psi_1’(x)$</li>
-</ul>
-
-<p>证明</p>
-
-<p>$\frac{du}{dx}\frac{d}{du}\int_{a}^{u}f(t)dt$</p>
-
-<blockquote>
-  <p>相当于复合函数求导而已</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[定积分定义]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-16T16:35:18+08:00</published><updated>2024-03-16T16:35:18+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+<p>等式嘛，怎么样都可以，只是注意皮亚诺型余项</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[泰勒中值定理的性质]]></summary></entry><entry><title type="html">微积分和线性代数</title><link href="https://wsttask.github.io/tasks/math" rel="alternate" type="text/html" title="微积分和线性代数" /><published>2024-03-16T16:48:12+08:00</published><updated>2024-03-16T16:48:12+08:00</updated><id>https://wsttask.github.io/tasks/math</id><content type="html" xml:base="https://wsttask.github.io/tasks/math"><![CDATA[<p>定积分中的换元积分法怎么用呢</p>]]></content><author><name></name></author><category term="tasks" /><summary type="html"><![CDATA[定积分中的换元积分法怎么用呢]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-16T16:35:18+08:00</published><updated>2024-03-16T16:35:18+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
 
 <h4 id="导数定义">导数定义</h4>
 

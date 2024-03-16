@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-16 4304字
+              2024-03-16 5116字
             </div>
             <div class="content">
                 <p><a href="#last">点此到达最后一题</a></p>
@@ -229,6 +229,46 @@
 
 <p><a href="#t24p7.7">click</a></p>
 
+<hr />
+
+<p>$\lim_{x\to0}\frac{\tan\left(\sin x\right)-x}{x^{3}}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8.4</code></p>
+
+<p><a href="#t24p8.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\rightarrow\infty}\frac{ln(e^{x^2}+2x+1)}{2x^2+3}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8.11</code></p>
+
+<p><a href="#t24p8.11">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{i}{n^4}\sqrt{n^4-i^4}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8-12</code></p>
+
+<p><a href="#t24p8-12">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to0}\frac{\int_{0}^{x}f(x-t)\mathrm{d}t}{e^{x^2}-\cos x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8-16</code></p>
+
+<p><a href="#t24p8-16">click</a></p>
+
 <p><a id="last">最后一题</a></p>
 
 <p><a href="#lastP">点此到达最后一题答案</a></p>
@@ -310,9 +350,9 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 <p>$\displaystyle\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}=\displaystyle\lim_{x\to+\infty}\frac{\frac{1}{1+x^{2}}}{-\frac{1}{x^{2}}}=-1$</p>
 
 <blockquote>
-  <p>很明显和上一题不一样，不能用泰勒展开</p>
+  <p>很明显和上一题不一样，在无穷处不能用泰勒展开</p>
 
-  <p>此时无穷减无穷，泰勒或洛必达</p>
+  <p>此时无穷减无穷，洛必达</p>
 
   <p>有arctanx，arcsinx，想办法化成分式用洛</p>
 </blockquote>
@@ -356,7 +396,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 <p><a id="t24p6.5.2">#</a></p>
 
 <blockquote>
-  <p>夹逼定理</p>
+  <font color="red">夹逼定理</font>
 </blockquote>
 
 <p>$1\leqslant\sqrt[n]{1+\frac{1}{3}+\cdots+\frac{1}{2n+1}}\leqslant n^{\frac{1}{n}}$</p>
@@ -440,6 +480,57 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 <blockquote>
   <p>$(1+x)^\alpha$ 的泰勒展开</p>
 </blockquote>
+
+<hr />
+
+<p><a id="t24p8.4">#</a></p>
+
+<blockquote>
+  <p>所有极限泰勒一定有办法做出来</p>
+
+  <p>一个是直接展开，一种是$(1+x)^\alpha$等</p>
+
+  <p>泰勒做的比较奇怪，用洛</p>
+
+  <p>洛不成用$\pm x^2$ 或加减常数，变得和分母一样</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8.11">#</a></p>
+
+<blockquote>
+  <font color="red">提 $e^{x^2}$ </font>
+  <p>关于 $ln()$</p>
+
+  <p>如果不想直接求导</p>
+
+  <p>那就得提出通项，让后利用对数性质，变成加</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8-12">#</a></p>
+
+<blockquote>
+  <p>和<font color="red">定积分的数列表示</font>有没有点像</p>
+
+  <p>重要的是 <font color="red">$\frac{1}{n}\sum\frac{i}{n}$</font> 以及 x</p>
+</blockquote>
+
+<p>$\displaystyle\lim_{n\rightarrow\infty}\frac1n\sum_{i=1}^{n}\frac{i}{n}\sqrt{1-(\frac{i}{n})^4}=\int_0^1x\sqrt{1-x^4}\,dx$</p>
+
+<hr />
+
+<p><a id="t24p8-16">#</a></p>
+
+<blockquote>
+  <p>已知f(0),f’(0)就可以构造泰勒展开式</p>
+
+  <p>换元法</p>
+</blockquote>
+
+<p>$\int_{0}^{x}f\left(x-t\right)\mathrm{d}t\xrightarrow{x-t=u}\int_{x}^{0}f\left(u\right)\left(-\mathrm{d}u\right)=\int_{0}^{x}f\left(u\right)\mathrm{d}u,$</p>
 
 <p><a href="#last">点此到达最后一题</a></p>
 
