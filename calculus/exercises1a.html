@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-16 5116字
+              2024-03-19 5608字
             </div>
             <div class="content">
                 <p><a href="#last">点此到达最后一题</a></p>
@@ -268,6 +268,18 @@
 <p><code class="language-plaintext highlighter-rouge">t24p8-16</code></p>
 
 <p><a href="#t24p8-16">click</a></p>
+
+<hr />
+
+<p>$\text{求极限}\displaystyle\lim_{x\to0}\frac{\ln(2+\sin x)-\ln(2+x)}{x^3}.$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p9-2</code></p>
+
+<p><a href="#t24p9-2">click</a></p>
+
+<hr />
 
 <p><a id="last">最后一题</a></p>
 
@@ -530,7 +542,45 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
   <p>换元法</p>
 </blockquote>
 
-<p>$\int_{0}^{x}f\left(x-t\right)\mathrm{d}t\xrightarrow{x-t=u}\int_{x}^{0}f\left(u\right)\left(-\mathrm{d}u\right)=\int_{0}^{x}f\left(u\right)\mathrm{d}u,$</p>
+<font color="red">$\int_{0}^{x}f\left(x-t\right)\mathrm{d}t\xrightarrow{x-t=u}\int_{x}^{0}f\left(u\right)\left(-\mathrm{d}u\right)=\int_{0}^{x}f\left(u\right)\mathrm{d}u$</font>
+
+<hr />
+
+<p><a id="t24p9-2">#</a></p>
+
+<blockquote>
+  <p>先求导再泰勒展开</p>
+
+  <p>$\frac{0}{0}$型幂函数多项式形式</p>
+
+  <p>关键是<font color="red">上下最低阶的幂函数的阶得一样</font></p>
+
+  <p>如果不一样，那就是无穷或零了</p>
+</blockquote>
+
+<p>$\displaystyle\frac{x^3+x}{x^4+x^2}$ 一旦同除 x ，当趋向于0 时，就会是正无穷了，</p>
+
+<p>$\displaystyle\frac{x^5+x^3+x}{x^4+x^3}$</p>
+
+<p>本题目答案的解法也很巧妙</p>
+
+<p>$f(t)=ln(2+t)\quad f’(t)=\frac1{2+t}$</p>
+
+<p>使用拉格朗日中值定理</p>
+
+<p>$ln(2+sinx)-ln(2+x)$</p>
+
+<p>$=f(sinx)-f(x)=f’(\xi)(sinx-x)$</p>
+
+<p>原式$=\displaystyle\lim_{x\rightarrow 0}\frac1{2+\xi}·\frac{sinx-x}{x^3}=-\frac1{12}$</p>
+
+<blockquote>
+  <font color="red">拉格朗日中值定理将复杂函数中的变量取了出来</font>
+
+  <font color="red">将$f(sinx)-f(x)$化成$sinx-x$ </font>
+
+  <font color="blue">拉格朗日定理可称为去函数化</font>
+</blockquote>
 
 <p><a href="#last">点此到达最后一题</a></p>
 
