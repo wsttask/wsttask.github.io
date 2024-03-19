@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-19T21:06:23+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">定积分及其应用</title><link href="https://wsttask.github.io/calculus/2024/03/19/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="定积分及其应用" /><published>2024-03-19T20:04:16+08:00</published><updated>2024-03-19T20:04:16+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/19/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/19/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="定积分定义">定积分定义</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-19T21:59:54+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">Pip</title><link href="https://wsttask.github.io/2024/03/19/pip.html" rel="alternate" type="text/html" title="Pip" /><published>2024-03-19T21:59:39+08:00</published><updated>2024-03-19T21:59:39+08:00</updated><id>https://wsttask.github.io/2024/03/19/pip</id><content type="html" xml:base="https://wsttask.github.io/2024/03/19/pip.html"><![CDATA[<p>什么是pip？<code class="language-plaintext highlighter-rouge">pip</code>是Python的包管理器。这意味着它是一个工具，允许您安装和管理未作为标准库的一部分分发的其他库和依赖项。</p>
+
+<p>软件包管理非常重要，<code class="language-plaintext highlighter-rouge">pip</code>自<code class="language-plaintext highlighter-rouge">3.4</code>Python 3和<code class="language-plaintext highlighter-rouge">2.7.9</code>Python 2 版本以来一直包含在Python安装程序中，并且它被许多Python项目使用，这使得它成为每个Pythonista的必备工具</p>
+
+<pre><code class="language-cmd">pip list
+# 查看都安装了哪些包
+
+pip install xx
+# 如果XX已经安装了，再次执行就会输出安装的目录
+# 一般安装在以下目录
+# C:\Users\用户\AppData\Local\Programs\Python\Python35\Lib\site-packages
+</code></pre>
+
+<p>可以直接在pycharm中点击+安装</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Python pip 安装与使用</td>
+      <td>菜鸟教程 (runoob.com)](https://www.runoob.com/w3cnote/python-pip-install-usage.html)</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name></name></author><summary type="html"><![CDATA[什么是pip？pip是Python的包管理器。这意味着它是一个工具，允许您安装和管理未作为标准库的一部分分发的其他库和依赖项。]]></summary></entry><entry><title type="html">Pyqt5包安装</title><link href="https://wsttask.github.io/2024/03/19/pyqt5%E5%8C%85%E5%AE%89%E8%A3%85.html" rel="alternate" type="text/html" title="Pyqt5包安装" /><published>2024-03-19T21:59:20+08:00</published><updated>2024-03-19T21:59:20+08:00</updated><id>https://wsttask.github.io/2024/03/19/pyqt5%E5%8C%85%E5%AE%89%E8%A3%85</id><content type="html" xml:base="https://wsttask.github.io/2024/03/19/pyqt5%E5%8C%85%E5%AE%89%E8%A3%85.html"><![CDATA[<h3 id="使用pip安装pytq5时出错">使用pip安装pytq5时出错</h3>
+
+<p><a href="https://cloud.tencent.com/developer/ask/sof/106666030">使用pip安装pytq5时出错:准备元数据(pyproject.toml)未成功运行-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
+
+<p>切换python3.11就可以了</p>
+
+<h3 id="pyqt5安装教程">PyQt5安装教程</h3>
+
+<p><a href="https://blog.csdn.net/Pan_peter/article/details/130606896">Python——PyQt5在PyCharm的配置与应用（保姆级教程）_pycharm qrc文件使用-CSDN博客</a></p>
+
+<p><a href="https://blog.csdn.net/lm_is_dc/article/details/123359253">pycharm安装与配置Pyqt5_pycharm安装pyqt5-CSDN博客</a></p>
+
+<p>这两个对照着看就没问题了</p>]]></content><author><name></name></author><summary type="html"><![CDATA[使用pip安装pytq5时出错]]></summary></entry><entry><title type="html">Pycharm安装与配置</title><link href="https://wsttask.github.io/2024/03/19/pycharm%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.html" rel="alternate" type="text/html" title="Pycharm安装与配置" /><published>2024-03-19T21:47:12+08:00</published><updated>2024-03-19T21:47:12+08:00</updated><id>https://wsttask.github.io/2024/03/19/pycharm%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE</id><content type="html" xml:base="https://wsttask.github.io/2024/03/19/pycharm%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.html"><![CDATA[<h3 id="专业版与社区版的区别">专业版与社区版的区别</h3>
+
+<p>[Pycharm 专业版与社区版到底有什么区别？<em>pycharm社区版够用吗-CSDN博客](https://blog.csdn.net/xff123456</em>/article/details/129881619)</p>
+
+<h3 id="下载地址">下载地址</h3>
+
+<p><a href="https://www.jetbrains.com/pycharm/download/?section=windows">Download PyCharm</a></p>
+
+<h3 id="pycharm汉化">Pycharm汉化</h3>
+
+<p><a href="https://blog.csdn.net/VeryDelicious/article/details/118976379">PyCharm汉化</a></p>
+
+<h3 id="pytharm更换解释器">Pytharm更换解释器</h3>
+
+<p><a href="https://blog.csdn.net/weixin_43490695/article/details/117673406">pycharm如何更换python解释器_pycharm更换解释器-CSDN博客</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[专业版与社区版的区别]]></summary></entry><entry><title type="html">主流编程语言对比</title><link href="https://wsttask.github.io/2024/03/19/%E4%B8%BB%E6%B5%81%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AF%B9%E6%AF%94.html" rel="alternate" type="text/html" title="主流编程语言对比" /><published>2024-03-19T21:07:28+08:00</published><updated>2024-03-19T21:07:28+08:00</updated><id>https://wsttask.github.io/2024/03/19/%E4%B8%BB%E6%B5%81%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AF%B9%E6%AF%94</id><content type="html" xml:base="https://wsttask.github.io/2024/03/19/%E4%B8%BB%E6%B5%81%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AF%B9%E6%AF%94.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/83811737">计算机目前九种编程语言大对比 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[计算机目前九种编程语言大对比 - 知乎 (zhihu.com)]]></summary></entry><entry><title type="html">Pyqt</title><link href="https://wsttask.github.io/2024/03/19/pyqt.html" rel="alternate" type="text/html" title="Pyqt" /><published>2024-03-19T21:06:27+08:00</published><updated>2024-03-19T21:06:27+08:00</updated><id>https://wsttask.github.io/2024/03/19/pyqt</id><content type="html" xml:base="https://wsttask.github.io/2024/03/19/pyqt.html"><![CDATA[<p><a href="https://blog.csdn.net/m0_57021623/article/details/123459038">PyQt5保姆级教程– 从入门到精通_pyqt5教程-CSDN博客</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[PyQt5保姆级教程– 从入门到精通_pyqt5教程-CSDN博客]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-19T21:06:19+08:00</published><updated>2024-03-19T21:06:19+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">定积分及其应用</title><link href="https://wsttask.github.io/calculus/2024/03/19/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="定积分及其应用" /><published>2024-03-19T20:04:16+08:00</published><updated>2024-03-19T20:04:16+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/19/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/19/5%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%AE%9A%E7%A7%AF%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="定积分定义">定积分定义</h3>
 
 <p>若 $\displaystyle\lim_{\lambda\rightarrow0}\sum_{i=1}^{n}f(\xi_i)\Delta x_i$ 存在，称 $f(x)$ 在 $[a,b]$ 上可积 。</p>
 
@@ -849,427 +941,4 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
 <p><a href="#last">点此到达最后一题</a></p>
 
-<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-19T15:00:20+08:00</published><updated>2024-03-19T15:00:20+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-19T14:30:43+08:00</published><updated>2024-03-19T14:30:43+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/1%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="数列极限与子数列的关系">数列极限与子数列的关系</h3>
-
-<p>定理：若 $\displaystyle\lim_{n\rightarrow\infty}x_n=a$，则${x_n}$ 的任意子数列${x_{n_k}}$ 也收敛，且 $\displaystyle\lim_{k\rightarrow\infty}x_{n_k}=a$</p>
-
-<blockquote>
-  <p>反之不一定成立，即子数列有极限不能推出原数列有极限</p>
-</blockquote>
-
-<h3 id="函数极限与数列极限的关系">函数极限与数列极限的关系</h3>
-
-<p>如果极限$\displaystyle\lim_{x\to x_0}f(x)$ 存在${x_n}$ 为函数 $f(x)$ 的定义域内任一收敛于 $x_0$ 的数列，且满足: $x_n\neq x_0(n\in\mathbb{Z}^+)$ 那么相应的函数值数列${f(x_n)}$必收敛，且$\displaystyle\lim_{n\to\infty}f(x_{n})=\displaystyle\lim_{x\to x_0}f(x)$</p>
-
-<h3 id="极限的定义">极限的定义</h3>
-
-<p><strong>设</strong> $f:\mathbb {D} \subset \mathbb {R} \rightarrow \mathbb {R}\displaystyle$ <strong>是一个定义在实数上的函数。 并在某个开区间</strong> $x&gt;A$ <strong>或</strong>$x&lt;A$ <strong>上有定义。</strong> $L$ <strong>是一个给定的实数。</strong> $c$ <strong>是一个实数，并且函数</strong> $f$ <strong>在</strong> $c$ <strong>的某个去心邻域上有定义。如果对任意的正实数</strong> $\epsilon$  <strong>，都存在一个正实数</strong> $\delta$  <strong>，使得对任意的实数</strong> $x$ <strong>，只要</strong> $f$ <strong>在点</strong> $x$ <strong>处有定义，并且</strong> $x$ <strong>在</strong> $c$ <strong>的某个</strong> $\delta$  <strong>（去心）邻域中（即</strong> $\mid x−c \mid ⩽δ$  <strong>），就有</strong>$\mid f(x)−L \mid ⩽ \epsilon$  <strong>，那么就称</strong> $L$ <strong>是函数</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限，或简称</strong> $L$ <strong>为</strong> $f$ <strong>在</strong> $c$ <strong>的极限，记为</strong> $\displaystyle \lim _{x\to c}f(x)=L$  <strong>。反之则称</strong> $L$ <strong>不是</strong> $f$ <strong>在</strong> $x$ <strong>趋于</strong> $c$ <strong>时的极限</strong></p>
-
-<blockquote>
-  <p>极限为无穷，极限不存在</p>
-</blockquote>
-
-<h3 id="极限的性质">极限的性质</h3>
-
-<ol>
-  <li>
-    <p><strong>唯一性</strong>：若极限存在，则极限一定唯一</p>
-  </li>
-  <li>
-    <p><strong>保号性</strong>：设 $\displaystyle\lim_{x\rightarrow a}f(x)=A&gt;0\quad(或\quad A&lt;0)$ ，则存在 $\delta&gt;0$ ，当$0&lt;\mid x-a \mid&lt;\delta$ 时，有$f(x)&gt;0\quad (或 \quad f(x)&lt;0)$</p>
-  </li>
-  <li>
-    <p><strong>有界性</strong>：</p>
-    <ol>
-      <li>
-        <p><strong>数列极限的有界性</strong></p>
-      </li>
-      <li>
-        <p><strong>函数极限的局部有界性</strong></p>
-      </li>
-    </ol>
-  </li>
-</ol>
-
-<h3 id="闭区间上连续函数的性质">闭区间上连续函数的性质</h3>
-
-<ol>
-  <li><strong>最值定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定存在最大值和最小值</li>
-  <li><strong>有界定理</strong>：若 $f(x) \in C[a,b]$ ，则 $f(x)$ 在 $[a,b]$ 上一定有界</li>
-  <li><strong>零点定理</strong>：若 $f(x) \in C[a,b]$ ，且 $f(a)f(b)&lt;0$ ，则存在  $\xi \in(a,b)$ ，使得$f(\xi)=0$</li>
-  <li><strong>介值定理</strong>：若$f(x)\in C[a,b]$，对任意的 $\eta\in[m,M]$ ，其中$m,M$ 分别为 $f(x)$ 在 $[a,b]$ 上取到的最小值和最大值，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-  <li><strong>介值定理</strong>：设$a&lt;b$ ，$f:[a,b]\rightarrow R$ 是$[a,b]$ 上的连续函数，则对任意的 $\eta\in[f(a),f(b)]$ ，则存在 $\xi\in[a,b]$，使得$f(\xi)=\eta$</li>
-</ol>
-
-<h3 id="极限存在准则与两个重要极限">极限存在准则与两个重要极限</h3>
-
-<p>准则1：夹逼准则</p>
-
-<p>可推出第一个重要极限 $\displaystyle\lim_{x\rightarrow0}{\frac{sinx}{x}}=1$</p>
-
-<p>根据 $\frac12sinx&lt;\frac12x&lt;\frac12tanx$</p>
-
-<p>准则2：单调有界准则</p>
-
-<p>可推出第二个重要极限 $\displaystyle\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x=e$</p>
-
-<p>放回抽样的没有被抽到的概率是$\frac1{e}$</p>
-
-<h3 id="复合函数的极限和连续">复合函数的极限和连续</h3>
-
-<ol>
-  <li>”复合“保持连续性</li>
-</ol>
-
-<p><b>假设 $v(x)$ 在 $p$ 连续，$v(y)$ 在 $v(p)$ 连续，则 $f(x)=u(v(x))$ 在 $p$ 连续</b></p>
-
-<ol>
-  <li>“复合”不能保持极限</li>
-</ol>
-
-<p>$lim_{x\rightarrow p}v(x)=a$，$lim_{x\rightarrow a}v(x)=b$ 不能推出 $\lim_{x\rightarrow p}u(v(x))=b$</p>
-
-<p>反例：</p>
-
-<p>$v(x)=0$，$u(x)= \begin{cases} \frac{sinx}{x}\quad x\ne0 \ 0 \quad x=0\end{cases}$</p>
-
-<p>必须多一个条件 $y=f[g(x)]$ 在 $x_0$ 的邻域内有意义，且在这个邻域内$g(x)\ne u_0$</p>
-
-<p><a href="https://www.zhihu.com/question/26162136/answer/1166944266">复合函数的极限中，后面的条件 g(x)≠u 为什么很重要？</a></p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[数列极限与子数列的关系]]></summary></entry><entry><title type="html">海涅定理</title><link href="https://wsttask.github.io/theorem/2024/03/19/%E6%B5%B7%E6%B6%85%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="海涅定理" /><published>2024-03-19T14:23:28+08:00</published><updated>2024-03-19T14:23:28+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/19/%E6%B5%B7%E6%B6%85%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/19/%E6%B5%B7%E6%B6%85%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="海涅定理">海涅定理</h3>
-
-<blockquote>
-  <p>$\displaystyle\lim_{n\to\infty}f(x)=L$ 存在的充要条件是：对属于函数 $f(x)\textbf{定义域}$的任意数列，且 $\displaystyle\lim_{n\to\infty}a_n=a$，$a_n$ 不等于$a$，有$\displaystyle\lim_{n\to\infty}f(a_n)=L$</p>
-</blockquote>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/v2-b778818d65b3a0b1f20a5412e825d979_r.jpg" alt="" /></p>
-
-<p><img src="https://wsttask.github.io/picture/images/courses/math/calculus/Theorem/Snipaste_2024-03-19_14-22-51.jpg" alt="" /></p>
-
-<p>换一句话来说，所有的实数可以表示为一个数列，并且这个数列还不唯一（这就是柯西数列，也是实数的形式化定义）。</p>
-
-<p>离散是连续的抽样，而<strong>所有</strong>的离散又重新组成了连续。</p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[海涅定理]]></summary></entry><entry><title type="html">级数</title><link href="https://wsttask.github.io/calculus/2024/03/19/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html" rel="alternate" type="text/html" title="级数" /><published>2024-03-19T13:59:26+08:00</published><updated>2024-03-19T13:59:26+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/19/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/19/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html"><![CDATA[<h3 id="第一节-常数项级数的基本概念和性质"><font color="blue">第一节 常数项级数的基本概念和性质</font></h3>
-
-<h4 id="一常数项级数的概念">（一）常数项级数的概念</h4>
-
-<h5 id="1定义"><font color="ForestGreen">1.定义</font></h5>
-
-<p>给定数列$u_1,u_2,u_3,…,u_n,…$</p>
-
-<font color="darkred">无穷级数</font>
-<p>：$\sum\limits_{n=1}^\infty u_n=u_1+u_2+u_3+…+u_n+…$</p>
-
-<font color="darkred">部分和</font>
-<p>：$S_n=\sum\limits_{k=1}^n u_k=u_1+u_2+u_3+…+u_n+…$</p>
-
-<p>无穷级数<font color="brown">收敛</font>：若$\lim\limits_{n\to\infty}S_n=S$存在，记作 $S=\displaystyle\sum^{\infty}_{n-1} u_n$</p>
-
-<p>无穷级数<font color="brown">发散</font>：若$\lim\limits_{n\to\infty}S_n=S$不存在</p>
-
-<p>级数的<font color="brown">余项</font>：$r_n=S-S_n=u_{n+1}+u_{n+2}+…$</p>
-
-<p>级数收敛时，$\lim\limits_{n\to\infty}r_n=0$</p>
-
-<h4 id="二收敛级数的性质">（二）收敛级数的性质</h4>
-
-<font color="deepskyblue">性质一</font>
-<p>：若$S=\sum\limits_{n=1}^{\infty}u_n$收敛，则$\sum\limits_{n=1}^\infty cu_n$收敛</p>
-
-<font color="blue">推论一</font>
-<p>：若$c\ne 0$，则$\sum\limits_{n=1}^\infty u_n$与$\sum\limits_{n=1}^\infty$敛散性相同</p>
-
-<font color="deepskyblue">性质二</font>
-<p>：设收敛级数$S=\sum\limits_{n=1}^\infty u_n,\sigma=\sum\limits_{n=1}^{\infty}v_n$，则$\sum\limits_{n=1}^{\infty}(u_n\pm v_n)$也收敛，其和为$S\pm\sigma$</p>
-
-<table><tr><td bgcolor="orange">收收为收，收发为发，发发不一定发</td></tr></table>
-
-<font color="deepskyblue">性质三</font>
-<p>：级数前面加上（去掉、或修改）<strong>有限项</strong>，不影响级数的敛散性</p>
-
-<font color="deepskyblue">性质四</font>
-<p>：收敛级数<strong>加括弧</strong>后形成的级数仍收敛于原级数的和。</p>
-
-<font color="blue">推论二</font>
-<p>：若加括弧后的级数发散，则原级数必发散。</p>
-
-<table><tr><td bgcolor="orange">收敛级数去括弧后形成的级数不一定收敛&lt;/tr&gt;</td>&lt;/table&gt;
-
-<font color="deepskyblue">性质五</font>：（级数收敛的==必要条件==）
-
-​    设$S=\sum\limits_{n=1}^\infty u_n$收敛，则$\lim\limits_{n\to\infty}u_n=0$ 
-
-<font color="gold">注意</font>：这只是必要条件！
-
-例如：调和级数$\sum\limits_{n=1}^\infty \frac{1}{n} = 1+\frac12+\frac13+...+\frac1n+...$发散
-
-​                            但$\lim\limits_{n\to\infty}u_n=0$ 
-
-<font color="deepskyblue">推论三</font>：若$u_n不趋向于0$，则级数$\sum\limits_{n=1}^\infty u_n$必发散。
-
-**等比级数（几何级数）**：$\sum\limits_{n=0}^{\infty}ar^n=a+ar+ar^2+...+ar^{n-1}+...$
-
-==当$|r|&lt;1$时收敛，当$|r|\ge 1$时发散。==
-
-**p级数**：$\sum\limits_{n=1}^{\infty}\frac1{n^p}=1+\frac1{2^p}+\frac1{3^p}+...+\frac1{n^p}+...$
-
-当$p=1$时，**p级数**为**调和级数**$\sum\limits_{n=1}^{\infty}\frac1n$，发散
-
-当$p\le1$时，发散
-
-当$p&gt;1$时，收敛
-
-### <font color="blue">第二节 正项级数及其审敛法</font>
-
-#### （一）正向级数收敛的充分必要条件
-
-<font color="ForestGreen">定义</font> 正向级数：$\sum\limits_{n=1}^{\infty}u_n \quad(u_n&gt;0)$
-
-<font color="forestgreen">定理11.2</font> 正项级数$\sum\limits_{n=1}^{\infty}u_n$收敛的充要条件是：==部分和数列$S_n$有上界。==
-
-#### （二）比较审敛法
-
-<font color="forestgreen">定理11.2（比较审敛法）</font> 设正项级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$ 
-
-(1)若$\sum\limits_{n=1}^{\infty}v_n$收敛，==$u_n\le v_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也收敛
-
-(2)若$\sum\limits_{n=1}^{\infty}v_n$发散，==$u_n\ge v_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也发散
-
-<font color="darkred">推论（比较审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$
-
-(i)若$\sum\limits_{n=1}^{\infty}v_n$收敛，==$u_n\le cv_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也收敛
-
-(ii)若$\sum\limits_{n=1}^{\infty}v_n$发散，==$u_n\ge cv_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也发散
-
-<font color="forestgreen">定理11.3（极限形式的比较审敛法）</font>设正项级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$ 满足==$\lim\limits_{n\rightarrow\infty}\frac{u_n}{v_n}=l \quad (0\le l\le +\infty)$==
-
-则有
-
-（1）当 $0&lt;l&lt;+\infty$时，两级数同敛散；
-
-（2）当$l=0$且$\sum\limits_{n=1}^{\infty}v_n$收敛时，$\sum\limits_{n=1}^{\infty}u_n$也收敛；
-
-（3）当$l=+\infty$且$\sum\limits_{n=1}^{\infty}v_n$发散时，$\sum\limits_{n=1}^{\infty}u_n$也发散。
-
-思考：本质上是找$u_n$的同阶无穷小
-
-#### （三）比值审敛法和根值审敛法
-
-<font color="lime">定理11.4（比值审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n$满足：==$\lim\limits_{n\rightarrow\infty}\frac{u_{n+1}}{u_n}=\rho$==$\quad 0\le\rho\le+\infty$
-
-则
-
-（1）当$\rho&lt;1$时，级数收敛；
-
-（2）当$\rho&gt;1$或$\rho=+\infty$时，级数发散
-
-（3）当$\rho=1$时，比值审敛法失效
-
-&gt; 通项中含有$n!,a^n$的级数适合用比值法判敛散
-
-<font color="lime">定理11.5（根植审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n$满足：$\lim\limits_{n\rightarrow\infty}\sqrt[n]{u_n}=\rho$$\quad 0\le\rho\le+\infty$
-
-（1）当$\rho&lt;1$时，级数收敛；
-
-（2）当$\rho&gt;1$或$\rho=+\infty$时，级数发散
-
-（3）当$\rho = 1$时，根植审敛法失效
-
-![image-20230408154838975](../images/image-20230408154838975.png)
-
-![image-20230408154903909](../images/image-20230408154903909.png)
-
-### <font color="blue">第三节 任意项级数的审敛法</font>
-
-#### <font color="darkred">交错级数</font>
-
-1.定义 
-
-$u_1-u_2+u_3-...+(-1)^{n-1}u_n+...\quad (u_n&gt;0)$
-
-2.定理（交错级数审敛法）
-
-若交错级数满足：
-
-1）$u_n\ge u_{n+1}\quad (n=1,2,...)$
-
-2）$\lim\limits_{n\rightarrow\infty}u_n=0$
-
-则$\sum\limits_{n=1}^{\infty}(-1)^{n-1}u_n$收敛，且其和$S\le u_1$
-
-其余项满足$|r_n|\le u_{n+1}$
-
-### <font color="blue">第四节 幂级数</font>
-
-#### <font color="green">（一）函数项级数的一般概念</font>
-
-函数项级数：$\sum\limits_{n=1}^{\infty}u_n(x)=u_1(x)+u_2(x)+...+u_n(x)+...$
-
-收敛点（发散点）$x_0$：若$\sum\limits_{n=1}^{\infty}u_n(x_0)$收敛（发散）
-
-收敛域（发散域）$U$：收敛点（发散点）的全体。
-
-和函数：$S(x)=\sum\limits_{n=1}^{\infty}u_n(x),\quad x\in U$    收敛域
-
-部分和：$S_n(x)=\sum\limits_{k=1}^{n}u_k(x)$，余项：$r_n(x)=S(x)-S_n(x)$
-
-<font color="red">函数项级数一般通过其和函数来求收敛域</font>
-
-![image-20230420215640073](../images/image-20230420215640073.png)
-
-#### <font color="green">（二）幂级数及其收敛性</font>
-
-##### 1.定义    $(x-x_0)$的幂级数
-
-$\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=a_0+a_1(x-x_0)+a_2(x-x_0)^2+...+a_n(x-x_0)^n+...$
-
-$x$的幂级数
-
-$\sum\limits_{n=0}^{\infty}a_nx^n=a_0+a_1x+a_2x^2+...+a_nx^n+...$
-
-##### 2.幂级数收敛域的结构
-
-==定理11.10（Abel定理）==
-
-（1）当$x=x_0\ne0$时，$\sum\limits_{n=1}^{\infty}a_nx^n$收敛，
-
-则$\sum\limits_{n=0}^{\infty}a_nx^n(|x|&lt;|x_0|)$==绝对收敛==
-
-（2）当$x=x_0$时，$\sum\limits_{n=1}^{\infty}a_nx^n$发散
-
-则$\sum\limits_{n=1}^{\infty}a_nx^n(|x|&gt;|x_0|)$发散
-
-<font color="red">结论</font>：
-
-​    $\sum\limits_{n=0}^{\infty}a_nx^n$的收敛域：以原点为中心的区间。幂级数==收敛与发散的分界点==：$\pm R$
-
-（1）$R=0$时，幂级数仅在$x=0$处收敛。
-
-（2）$R=+\infty$时，幂级数在$(-\infty,+\infty)$收敛
-
-（3）$0&lt;R&lt;+\infty$时，幂级数在$(-R,R)$收敛；在$[-R,R]$外发散；==在$x=\pm R$可能收敛==（发散）。
-
-##### 3.收敛半径$R$的求法
-
-<font color="red">定理11.11</font>
-
-​    设$\sum\limits_{n=1}^{\infty}a_nx^n$且$\lim\limits_{n\rightarrow\infty}|\frac{a_{n+1}}{a_n}|=\rho$ 或 $\lim\limits_{n\rightarrow\infty}\sqrt[n]{|a_n|}=\rho$
-
-收敛半径$R=\begin{cases} \frac1\rho,\quad当0&lt;\rho&lt;+\infty时 \\ +\infty,\quad当\rho=0时 \\ 0,\quad当\rho=+\infty \end{cases}$
-
-<font color="red">结论</font>
-
-$\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径：$R=\lim\limits_{n\rightarrow\infty}|\frac{a_n}{a_{n+1}}|$
-
-<font color="red">**缺项幂级数直接用比值法！**</font>
-
-![image-20230420215807292](../images/image-20230420215807292.png)
-
-#### （三）幂级数的运算与性质
-
-##### 1.幂级数的四则运算性质
-
-设$\sum\limits_{n=1}^{\infty}a_nx^n$及$\sum\limits_{n=1}^{\infty}b_nx^n$收敛半径分别为$R_1,R_2$，令$R=min\{R_1,R_2\}$，则
-
-（1）加减法：$\sum\limits_{n=0}^{\infty}a_nx^n\pm\sum\limits_{n=0}^{\infty}b_nx^n=\sum\limits_{n=1}^{\infty}(a_n\pm b_n)x^n,\quad |x|&lt;R$
-
-（2）乘法：$(\sum\limits_{n=0}^{\infty}a_nx^n)(\sum\limits_{n=0}^{\infty}b_nx^n)=\sum\limits_{n=0}^{\infty}c_nx^n,\quad |x|&lt;R$
-
-&gt; 两幂级数相除所得的幂级数的收敛半径R可能比原两幂级数的收敛半径$R_1,R_2$小的多。
-
-##### 2.幂级数的分析运算性质
-
-性质：若$\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径$R&gt;0$，则其和函数$S(x)$
-
-（1）在收敛域$I$上连续
-
-（2）在收敛区间内可逐项求导，逐项积分
-
-`我感觉学这个级数就是为了学函数展开成幂级数！把一些函数可以求导。`
-
-### <font color="blue">第五节、函数展开成幂级数</font>
-
-#### （一）函数的幂级数展开式
-
-<font color="green">1.函数展开成幂级数</font>
-
-<font color="darkred">定义</font>：若$f(x)=\sum\limits_{n=1}^{\infty}a_n(x-x_0)^n,\quad x\in I\quad (I为区间)$
-
-则称$f(x)$在$I$上可以展开成$(x-x_0)$的幂级数
-</tr></table>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节 常数项级数的基本概念和性质]]></summary></entry><entry><title type="html">t24p6.8引起的猜想</title><link href="https://wsttask.github.io/calculus/exercises/t24p6" rel="alternate" type="text/html" title="t24p6.8引起的猜想" /><published>2024-03-19T13:12:55+08:00</published><updated>2024-03-19T13:12:55+08:00</updated><id>https://wsttask.github.io/calculus/exercises/%E9%87%8D%E5%A4%8D%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E6%9C%89%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises/t24p6"><![CDATA[<p>$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$</p>
-
-<p>作 y = x 的直线，</p>
-
-<p>设存在交点 $x_1$</p>
-
-<p>如果，在 $0&lt;x&lt;x_1$ 时，$f(x)&gt;x$</p>
-
-<p>若 $a_1 &lt; x_1$ 最后会收敛到$x_1$</p>
-
-<p>如果，在 $x_1&lt;x$ 时，$f(x)&lt;x$</p>
-
-<p>若 $a_1 &gt; x_1$ 最后会收敛到$x_1$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$]]></summary></entry><entry><title type="html">等价无穷小代换原理</title><link href="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html" rel="alternate" type="text/html" title="等价无穷小代换原理" /><published>2024-03-16T17:33:21+08:00</published><updated>2024-03-16T17:33:21+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/16/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%BB%A3%E6%8D%A2%E5%8E%9F%E7%90%86.html"><![CDATA[<h3 id="等价无穷小">等价无穷小</h3>
-
-<p>泰勒展开+极限的定义</p>
-
-<h3 id="抓大头">抓大头</h3>
-
-<ul>
-  <li>无穷时</li>
-</ul>
-
-<p>$\sqrt{4x^2+x}$ 和 $2x$ 是等价无穷大的</p>
-
-<p>那我就需要求 $\sqrt{4x^2+x}-2x$ 的极限了</p>
-
-<p>最后结果是 $\frac14$</p>
-
-<p>等价无穷小相减是高阶的无穷小</p>
-
-<p>等价无穷大相减呢，是低阶的无穷大</p>
-
-<p>常数既不是无穷大，也不是无穷小，为什么是$\frac14$</p>
-
-<p>无穷大时的泰勒展开！！！</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[等价无穷小]]></summary></entry></feed>
+<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry></feed>
