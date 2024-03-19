@@ -1,4 +1,607 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-19T14:32:00+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-19T14:30:43+08:00</published><updated>2024-03-19T14:30:43+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/1%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="数列极限与子数列的关系">数列极限与子数列的关系</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-19T15:00:24+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-19T15:00:10+08:00</published><updated>2024-03-19T15:00:10+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
+
+<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
+
+<p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p3.3</code></p>
+
+<p><a href="#t24p3.3">click</a></p>
+
+<hr />
+
+<p>$\text{设 }\alpha=x^2-\ln^2(1+x),\beta=\frac{\mathrm{e}^{\sqrt{1+x^3}}-\mathrm{e}^{\sqrt{1-x^3}}}e$</p>
+
+<p>$\text{则当 }x\to0\text{ 时}$</p>
+
+<p>$(A)\,\alpha是\beta的高阶无穷小$</p>
+
+<p>$(B)\,\alpha是\beta的低阶无穷小$</p>
+
+<p>$(C)\,\alpha是\beta的同阶而非等价的无穷小$</p>
+
+<p>$(D)\,\alpha是\beta的等价无穷小$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p3.3</code></p>
+
+<p><a href="#t24p3.2">click</a></p>
+
+<hr />
+
+<p>$\lim_{n\to\infty}(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}})=\underline{\qquad}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p4.8</code></p>
+
+<p><a href="#t24p4.8">click</a></p>
+
+<hr />
+
+<p>$设f(x)=\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{x^n+x^{2n}}\quad(x&gt;0),则f(x)=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.12</code></p>
+
+<p><a href="#t24p5.12">click</a></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>$\displaystyle\lim_{x\to0}\left(\frac{\arcsin x}{x}\right)^{\frac{1}{x^{2}}}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.2.4</code></p>
+
+<p><a href="#t24p5.2.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to+\infty}(\sqrt{x^2+4x+1}-\sqrt{x^2-2x+3})=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.3.1</code></p>
+
+<p><a href="#t24p5.3.1">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to+\infty}\left(x\arctan x-\frac\pi2x\right)=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.3.2</code></p>
+
+<p><a href="#t24p5.3.2">click</a></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>$\displaystyle\lim_{x\to0}\left(\frac{1}{x}-\frac{1}{e^{x}-1}\right)=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.3.3</code></p>
+
+<p><a href="#t24p5.3.3">click</a></p>
+
+<hr />
+
+<p>$求极限\displaystyle\lim_{x\to0^+}x^{\sin2x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p5.4</code></p>
+
+<p><a href="#t24p5.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{n\to\infty}\sqrt[n]{1+\frac13+\cdotp\cdotp\cdotp+\frac1{2n+1}}.$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.5.2</code></p>
+
+<p><a href="#t24p6.5.2">click</a></p>
+
+<hr />
+
+<p>设 $a_{1}&gt;0,a_{n+1}=\ln(1+a_{n})(n=1,2,\cdots)$</p>
+
+<p>（1）证明：$\displaystyle\lim_{n\rightarrow\infty}a_n$ 存在，并求此极限</p>
+
+<p>（2）求 $\displaystyle\lim_{n\rightarrow\infty}\frac{a_{n+1}-a_{n}}{a_na_{n+1}}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.6</code></p>
+
+<p><a href="#t24p6.6">click</a></p>
+
+<hr />
+
+<p>设 $a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$ ，证明$\displaystyle\lim_{n\rightarrow\infty}a_n$存在</p>
+
+<p><br /></p>
+
+<p><a href="./calculus/exercises/t24p6"><code class="language-plaintext highlighter-rouge">t24p6.8</code></a></p>
+
+<p><a href="#t24p6.8">click</a></p>
+
+<hr />
+
+<p>设 $f(x)\in C[0,2]$ ，在 $(0,2)$ 内可导，且$3f(0)=f(1)+2f(2)$</p>
+
+<p>证明存在$\xi\in(0,2)$ ，使得 $f’(\xi)=0$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24jp60.1</code></p>
+
+<p><a href="#t24jp60.1">click</a></p>
+
+<hr />
+
+<p>求函数 $f(x)=\frac{2x^2+x-1}{x^2-1}e^{\frac1x}$ 的间断点</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p6.10</code></p>
+
+<p><a href="#t24p6.10">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\rightarrow 0}\frac{\sqrt{cos2x}-\sqrt[3]{cos3x}}{x^a}=b$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p7.7</code></p>
+
+<p><a href="#t24p7.7">click</a></p>
+
+<hr />
+
+<p>$\lim_{x\to0}\frac{\tan\left(\sin x\right)-x}{x^{3}}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8.4</code></p>
+
+<p><a href="#t24p8.4">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\rightarrow\infty}\frac{ln(e^{x^2}+2x+1)}{2x^2+3}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8.11</code></p>
+
+<p><a href="#t24p8.11">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{i}{n^4}\sqrt{n^4-i^4}=$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8-12</code></p>
+
+<p><a href="#t24p8-12">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to0}\frac{\int_{0}^{x}f(x-t)\mathrm{d}t}{e^{x^2}-\cos x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p8-16</code></p>
+
+<p><a href="#t24p8-16">click</a></p>
+
+<hr />
+
+<p>$\text{求极限}\displaystyle\lim_{x\to0}\frac{\ln(2+\sin x)-\ln(2+x)}{x^3}.$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p9-2</code></p>
+
+<p><a href="#t24p9-2">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to\infty}\frac{ln(3x^2+2x+1)}{ln(2x^6+x^2+3)}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p9-4-2</code></p>
+
+<p><a href="#24p9-4-2">click</a></p>
+
+<hr />
+
+<p><a id="last">最后一题</a></p>
+
+<p><a href="#lastP">点此到达最后一题答案</a></p>
+
+<hr />
+
+<p><a id="t24p3.3">#</a></p>
+
+<p>这是数列极限，n取的是全体自然数</p>
+
+<blockquote>
+  <p>$\sqrt{4n^{2}+n}=2n\sqrt{1+\frac{1}{4n}}$</p>
+
+  <p>泰勒展开</p>
+
+  <p>$2n[1+\frac12\frac1{4n}+o(\frac1n)]=2n+\frac14$</p>
+</blockquote>
+
+<p>$最后结果是\frac{\sqrt{2}}{2}$</p>
+
+<hr />
+
+<p><a id="t24p3.2">#</a></p>
+
+<p>$\beta=\frac{\mathrm{e}^{\sqrt{1+x^3}}-\mathrm{e}^{\sqrt{1-x^3}}}{\mathrm{e}}=\frac{\mathrm{e}^{\sqrt{1+x^3}}}{\mathrm{e}}·(\mathrm{e}^{\sqrt{1+x^3}-\sqrt{1-x^3}}-1)$</p>
+
+<p>$\sqrt{1+x^{3}}-\sqrt{1-x^{3}} = \frac{2x^{3}}{\sqrt{1+x^{3}}+\sqrt{1-x^{3}}}$</p>
+
+<hr />
+
+<p><a id="t24p4.8">#</a>
+$\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
+
+<p>$=\lim_{n\to\infty}\frac{3\sqrt{n}}{\sqrt{n+2\sqrt{n}}+\sqrt{n-\sqrt{n}}} $</p>
+
+<p>$=3\lim_{n\to\infty}\frac{1}{\sqrt{1+\frac{2}{\sqrt{n}}}+\sqrt{1-\frac{1}{\sqrt{n}}}}=\frac{3}{2}$</p>
+
+<hr />
+
+<p><a id="t24p5.12">#</a></p>
+
+<p>夹逼定理</p>
+
+<p>$\text{当 }0&lt;x&lt;1\text{时,由 }x^n\leqslant x^n+x^{2n}\leqslant2x^n\text{得}$</p>
+
+<p>$x\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^\frac{1}{n}x,$</p>
+
+<p>$\text{ 当 }x&gt;1\text{ 时,由 }x^{2n}\leqslant x^n+x^{2n}\leqslant2x^{2n}\text{ 得 }$</p>
+
+<p>$x^2\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^{\frac1n}x^2,$</p>
+
+<p>$f(x)=\mid\begin{matrix}x,&amp;0&lt;x&lt;1,\x^{2},&amp;x\geqslant1.\end{matrix}$</p>
+
+<hr />
+
+<p><a id="t24p5.2.4">#</a></p>
+
+<p>如果不用$arcsinx$的泰勒展开：</p>
+
+<p>先用洛必达转成$\frac{1}{\sqrt{1-x^2}}$</p>
+
+<p>再用$(1+x)^\alpha-1$的等价无穷小</p>
+
+<hr />
+<p><a id="t24p5.3.1">#</a></p>
+
+<p>$\displaystyle\lim_{x\to+\infty}\frac{6x-2}{\sqrt{x^2+4x+1}+\sqrt{x^2-2x+3}}$ 化成这一步之后</p>
+
+<p>可以直接用抓大头（抓高阶）把底部化成 $2x$</p>
+
+<p>不用的话可以同除 x</p>
+
+<p>$\displaystyle\lim_{x\to+\infty}\frac{6-\frac{2}{x}}{\sqrt{1+\frac{4}{x}+\frac{1}{x^{2}}+\sqrt{1-\frac{2}{x}+\frac{3}{x^{2}}}}}=3.$</p>
+
+<hr />
+
+<p><a id="t24p5.3.2">#</a></p>
+
+<p>$\displaystyle\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}=\displaystyle\lim_{x\to+\infty}\frac{\frac{1}{1+x^{2}}}{-\frac{1}{x^{2}}}=-1$</p>
+
+<blockquote>
+  <p>很明显和上一题不一样，在无穷处不能用泰勒展开</p>
+
+  <p>此时无穷减无穷，洛必达</p>
+
+  <p>有arctanx，arcsinx，想办法化成分式用洛</p>
+</blockquote>
+
+<font color="red">泰勒一般只用于$x\rightarrow 0$时，千万注意</font>
+
+<hr />
+
+<p><a id="t24p5.3.3">#</a></p>
+
+<p>$\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x\left(e^{x}-1\right)}=\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x^{2}}=\displaystyle\lim_{x\to0}\frac{e^{x}-1}{2x}$</p>
+
+<blockquote>
+  <p>如果用到<font color="red">不常用的泰勒展开</font></p>
+
+  <p>一定是需要洛必达出手了！</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p5.4">#</a></p>
+
+<blockquote>
+  <p>$0^0$ 型，化成 e 的次方的形式，如果是 $1^\infty$ 那是第二个重要极限</p>
+</blockquote>
+
+<p>$\displaystyle\lim_{x\to0^{+}}\sin2x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\sin2x}{2x}\cdot x\ln x$</p>
+
+<blockquote>
+  <p>此时无法泰勒展开，$x\rightarrow 0$而不是1</p>
+
+  <p>无穷乘零，肯定是要用洛或泰勒的，一定！</p>
+
+  <p>如果不能泰勒，那一定是化成分式洛!</p>
+</blockquote>
+
+<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>
+
+<hr />
+
+<p><a id="t24p6.5.2">#</a></p>
+
+<blockquote>
+  <font color="red">夹逼定理</font>
+</blockquote>
+
+<p>$1\leqslant\sqrt[n]{1+\frac{1}{3}+\cdots+\frac{1}{2n+1}}\leqslant n^{\frac{1}{n}}$</p>
+
+<blockquote>
+  <p>$\displaystyle\lim_{n\rightarrow\infty}n^{\frac1n}=1$ 使用指化对</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.6">#</a></p>
+
+<blockquote>
+  <p>有没有发现 $a_n$ 是个单调递减的数列？</p>
+
+  <p>$ln(1+a_n)&lt;a_n$ 然后 $a_n &gt; 0$ 可得证有极限</p>
+
+  <font color="red">大于零可是个很重要的条件</font>
+</blockquote>
+
+<p>当极限存在时，直接令其等于A</p>
+
+<p>$A=ln(1+A)$ 得到极限为0</p>
+
+<blockquote>
+  <p>第二问就是简单的极限计算了</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.8">#</a></p>
+
+<blockquote>
+  <p>数学归纳法证明单调递增和有界</p>
+</blockquote>
+
+<p>显然$a_1&lt;a_2$，设$a_k&lt;a_{k+1}$</p>
+
+<p>则$\sqrt{1+a_k}&lt;\sqrt{1+a_{k+1}}$</p>
+
+<p>推出$a_{k+1}&lt;a_{k+2}$</p>
+
+<blockquote>
+  <p>首先由第二项大于第一项猜测单调递增</p>
+
+  <p>然后猜上界，使用数学归纳证明上界</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24jp60.1">#</a></p>
+
+<blockquote>
+  <p>在[1,2]之间</p>
+
+  <p>$3m&lt;f(1)+2f(2)&lt;3M$，$m\leq f(0)\leq M$</p>
+
+  <p>得到在[1,2]之间有一个数等于f(0)</p>
+
+  <p>$3f(0)=f(1)+2f(2)$</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p6.10">#</a></p>
+
+<blockquote>
+  <p>$\frac{(2x-1)(x+1)}{(x-1)(x+1)}e^{\frac1x}$ 可以约分</p>
+
+  <p>像这种初等函数的复合函数，化简约分更快</p>
+
+  <p>比如x+1被约去，相当于只多了一个当x=-1时无定义点</p>
+
+  <p>x-1约不去，多了一个无穷变换点，肯定是无穷间断点</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p7.7">#</a></p>
+
+<blockquote>
+  <p>$(1+x)^\alpha$ 的泰勒展开</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8.4">#</a></p>
+
+<blockquote>
+  <p>所有极限泰勒一定有办法做出来</p>
+
+  <p>一个是直接展开，一种是$(1+x)^\alpha$等</p>
+
+  <p>泰勒做的比较奇怪，用洛</p>
+
+  <p>洛不成用$\pm x^2$ 或加减常数，变得和分母一样</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8.11">#</a></p>
+
+<blockquote>
+  <font color="red">提 $e^{x^2}$ </font>
+  <p>关于 $ln()$</p>
+
+  <p>如果不想直接求导</p>
+
+  <p>那就得提出通项，让后利用对数性质，变成加</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p8-12">#</a></p>
+
+<blockquote>
+  <p>和<font color="red">定积分的数列表示</font>有没有点像</p>
+
+  <p>重要的是 <font color="red">$\frac{1}{n}\sum\frac{i}{n}$</font> 以及 x</p>
+</blockquote>
+
+<p>$\displaystyle\lim_{n\rightarrow\infty}\frac1n\sum_{i=1}^{n}\frac{i}{n}\sqrt{1-(\frac{i}{n})^4}=\int_0^1x\sqrt{1-x^4}\,dx$</p>
+
+<hr />
+
+<p><a id="t24p8-16">#</a></p>
+
+<blockquote>
+  <p>已知f(0),f’(0)就可以构造泰勒展开式</p>
+
+  <p>换元法</p>
+</blockquote>
+
+<font color="red">$\int_{0}^{x}f\left(x-t\right)\mathrm{d}t\xrightarrow{x-t=u}\int_{x}^{0}f\left(u\right)\left(-\mathrm{d}u\right)=\int_{0}^{x}f\left(u\right)\mathrm{d}u$</font>
+
+<hr />
+
+<p><a id="t24p9-2">#</a></p>
+
+<blockquote>
+  <p>先求导再泰勒展开</p>
+
+  <p>$\frac{0}{0}$型幂函数多项式形式</p>
+
+  <p>关键是<font color="red">上下最低阶的幂函数的阶得一样</font></p>
+
+  <p>如果不一样，那就是无穷或零了</p>
+</blockquote>
+
+<p>$\displaystyle\frac{x^3+x}{x^4+x^2}$ 一旦同除 x ，当趋向于0 时，就会是正无穷了，</p>
+
+<p>$\displaystyle\frac{x^5+x^3+x}{x^4+x^3}$</p>
+
+<p>本题目答案的解法也很巧妙</p>
+
+<p>$f(t)=ln(2+t)\quad f’(t)=\frac1{2+t}$</p>
+
+<p>使用拉格朗日中值定理</p>
+
+<p>$ln(2+sinx)-ln(2+x)$</p>
+
+<p>$=f(sinx)-f(x)=f’(\xi)(sinx-x)$</p>
+
+<p>原式$=\displaystyle\lim_{x\rightarrow 0}\frac1{2+\xi}·\frac{sinx-x}{x^3}=-\frac1{12}$</p>
+
+<blockquote>
+  <font color="red">拉格朗日中值定理将复杂函数中的变量取了出来</font>
+
+  <font color="red">将$f(sinx)-f(x)$化成$sinx-x$ </font>
+
+  <font color="blue">拉格朗日定理可称为去函数化</font>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p9-4-2">#</a></p>
+
+<blockquote>
+  <p>洛必达，不要忘了复合函数求导！</p>
+</blockquote>
+
+<p>有趣的方法</p>
+
+<blockquote>
+  <font color="red">$\displaystyle\lim_{x\to\infty}\frac{ln(3x^2+2x+1)}{ln(2x^6+x^2+3)}=\displaystyle\lim_{x\to\infty}\frac{lnx^2+ln(3+\frac2x+\frac1{x^2})}{lnx^6+ln(2+\frac1{x^4}+\frac3{x^6})}$</font>
+
+  <p>$\displaystyle\frac26=\frac13$</p>
+</blockquote>
+
+<p>这种题目秒了</p>
+
+<blockquote>
+  <p>找到上下幂最大的幂函数，结果就是幂的比</p>
+</blockquote>
+
+<p><a href="#last">点此到达最后一题</a></p>
+
+<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-19T14:31:56+08:00</published><updated>2024-03-19T14:31:56+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">第一章、一元函数的极限与连续</title><link href="https://wsttask.github.io/courses/math/calculus/1" rel="alternate" type="text/html" title="第一章、一元函数的极限与连续" /><published>2024-03-19T14:30:43+08:00</published><updated>2024-03-19T14:30:43+08:00</updated><id>https://wsttask.github.io/courses/math/calculus/1%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD</id><content type="html" xml:base="https://wsttask.github.io/courses/math/calculus/1"><![CDATA[<h3 id="数列极限与子数列的关系">数列极限与子数列的关系</h3>
 
 <p>定理：若 $\displaystyle\lim_{n\rightarrow\infty}x_n=a$，则${x_n}$ 的任意子数列${x_{n_k}}$ 也收敛，且 $\displaystyle\lim_{k\rightarrow\infty}x_{n_k}=a$</p>
 
@@ -343,578 +946,7 @@ $\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径：$R=\lim\limits_{n\rightarrow
 <font color="darkred">定义</font>：若$f(x)=\sum\limits_{n=1}^{\infty}a_n(x-x_0)^n,\quad x\in I\quad (I为区间)$
 
 则称$f(x)$在$I$上可以展开成$(x-x_0)$的幂级数
-</tr></table>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节 常数项级数的基本概念和性质]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-19T13:32:13+08:00</published><updated>2024-03-19T13:32:13+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-19T13:31:55+08:00</published><updated>2024-03-19T13:31:55+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
-
-<p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
-
-<p>$(A)\, 0 \qquad (B)\,1 \qquad (C)\frac{\sqrt{2}}{2} \qquad (D)\,{\text 不存在}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p3.3</code></p>
-
-<p><a href="#t24p3.3">click</a></p>
-
-<hr />
-
-<p>$\text{设 }\alpha=x^2-\ln^2(1+x),\beta=\frac{\mathrm{e}^{\sqrt{1+x^3}}-\mathrm{e}^{\sqrt{1-x^3}}}e$</p>
-
-<p>$\text{则当 }x\to0\text{ 时}$</p>
-
-<p>$(A)\,\alpha是\beta的高阶无穷小$</p>
-
-<p>$(B)\,\alpha是\beta的低阶无穷小$</p>
-
-<p>$(C)\,\alpha是\beta的同阶而非等价的无穷小$</p>
-
-<p>$(D)\,\alpha是\beta的等价无穷小$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p3.3</code></p>
-
-<p><a href="#t24p3.2">click</a></p>
-
-<hr />
-
-<p>$\lim_{n\to\infty}(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}})=\underline{\qquad}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p4.8</code></p>
-
-<p><a href="#t24p4.8">click</a></p>
-
-<hr />
-
-<p>$设f(x)=\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{x^n+x^{2n}}\quad(x&gt;0),则f(x)=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p5.12</code></p>
-
-<p><a href="#t24p5.12">click</a></p>
-
-<hr />
-
-<p><br /></p>
-
-<p>$\displaystyle\lim_{x\to0}\left(\frac{\arcsin x}{x}\right)^{\frac{1}{x^{2}}}=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p5.2.4</code></p>
-
-<p><a href="#t24p5.2.4">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\to+\infty}(\sqrt{x^2+4x+1}-\sqrt{x^2-2x+3})=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p5.3.1</code></p>
-
-<p><a href="#t24p5.3.1">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\to+\infty}\left(x\arctan x-\frac\pi2x\right)=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p5.3.2</code></p>
-
-<p><a href="#t24p5.3.2">click</a></p>
-
-<hr />
-
-<p><br /></p>
-
-<p>$\displaystyle\lim_{x\to0}\left(\frac{1}{x}-\frac{1}{e^{x}-1}\right)=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p5.3.3</code></p>
-
-<p><a href="#t24p5.3.3">click</a></p>
-
-<hr />
-
-<p>$求极限\displaystyle\lim_{x\to0^+}x^{\sin2x}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p5.4</code></p>
-
-<p><a href="#t24p5.4">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{n\to\infty}\sqrt[n]{1+\frac13+\cdotp\cdotp\cdotp+\frac1{2n+1}}.$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p6.5.2</code></p>
-
-<p><a href="#t24p6.5.2">click</a></p>
-
-<hr />
-
-<p>设 $a_{1}&gt;0,a_{n+1}=\ln(1+a_{n})(n=1,2,\cdots)$</p>
-
-<p>（1）证明：$\displaystyle\lim_{n\rightarrow\infty}a_n$ 存在，并求此极限</p>
-
-<p>（2）求 $\displaystyle\lim_{n\rightarrow\infty}\frac{a_{n+1}-a_{n}}{a_na_{n+1}}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p6.6</code></p>
-
-<p><a href="#t24p6.6">click</a></p>
-
-<hr />
-
-<p>设 $a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$ ，证明$\displaystyle\lim_{n\rightarrow\infty}a_n$存在</p>
-
-<p><br /></p>
-
-<p><a href="./calculus/exercises/t24p6"><code class="language-plaintext highlighter-rouge">t24p6.8</code></a></p>
-
-<p><a href="#t24p6.8">click</a></p>
-
-<hr />
-
-<p>设 $f(x)\in C[0,2]$ ，在 $(0,2)$ 内可导，且$3f(0)=f(1)+2f(2)$</p>
-
-<p>证明存在$\xi\in(0,2)$ ，使得 $f’(\xi)=0$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24jp60.1</code></p>
-
-<p><a href="#t24jp60.1">click</a></p>
-
-<hr />
-
-<p>求函数 $f(x)=\frac{2x^2+x-1}{x^2-1}e^{\frac1x}$ 的间断点</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p6.10</code></p>
-
-<p><a href="#t24p6.10">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\rightarrow 0}\frac{\sqrt{cos2x}-\sqrt[3]{cos3x}}{x^a}=b$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p7.7</code></p>
-
-<p><a href="#t24p7.7">click</a></p>
-
-<hr />
-
-<p>$\lim_{x\to0}\frac{\tan\left(\sin x\right)-x}{x^{3}}=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p8.4</code></p>
-
-<p><a href="#t24p8.4">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\rightarrow\infty}\frac{ln(e^{x^2}+2x+1)}{2x^2+3}=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p8.11</code></p>
-
-<p><a href="#t24p8.11">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{i}{n^4}\sqrt{n^4-i^4}=$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p8-12</code></p>
-
-<p><a href="#t24p8-12">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\to0}\frac{\int_{0}^{x}f(x-t)\mathrm{d}t}{e^{x^2}-\cos x}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p8-16</code></p>
-
-<p><a href="#t24p8-16">click</a></p>
-
-<hr />
-
-<p>$\text{求极限}\displaystyle\lim_{x\to0}\frac{\ln(2+\sin x)-\ln(2+x)}{x^3}.$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p9-2</code></p>
-
-<p><a href="#t24p9-2">click</a></p>
-
-<hr />
-
-<p><a id="last">最后一题</a></p>
-
-<p><a href="#lastP">点此到达最后一题答案</a></p>
-
-<hr />
-
-<p><a id="t24p3.3">#</a></p>
-
-<p>这是数列极限，n取的是全体自然数</p>
-
-<blockquote>
-  <p>$\sqrt{4n^{2}+n}=2n\sqrt{1+\frac{1}{4n}}$</p>
-
-  <p>泰勒展开</p>
-
-  <p>$2n[1+\frac12\frac1{4n}+o(\frac1n)]=2n+\frac14$</p>
-</blockquote>
-
-<p>$最后结果是\frac{\sqrt{2}}{2}$</p>
-
-<hr />
-
-<p><a id="t24p3.2">#</a></p>
-
-<p>$\beta=\frac{\mathrm{e}^{\sqrt{1+x^3}}-\mathrm{e}^{\sqrt{1-x^3}}}{\mathrm{e}}=\frac{\mathrm{e}^{\sqrt{1+x^3}}}{\mathrm{e}}·(\mathrm{e}^{\sqrt{1+x^3}-\sqrt{1-x^3}}-1)$</p>
-
-<p>$\sqrt{1+x^{3}}-\sqrt{1-x^{3}} = \frac{2x^{3}}{\sqrt{1+x^{3}}+\sqrt{1-x^{3}}}$</p>
-
-<hr />
-
-<p><a id="t24p4.8">#</a>
-$\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
-
-<p>$=\lim_{n\to\infty}\frac{3\sqrt{n}}{\sqrt{n+2\sqrt{n}}+\sqrt{n-\sqrt{n}}} $</p>
-
-<p>$=3\lim_{n\to\infty}\frac{1}{\sqrt{1+\frac{2}{\sqrt{n}}}+\sqrt{1-\frac{1}{\sqrt{n}}}}=\frac{3}{2}$</p>
-
-<hr />
-
-<p><a id="t24p5.12">#</a></p>
-
-<p>夹逼定理</p>
-
-<p>$\text{当 }0&lt;x&lt;1\text{时,由 }x^n\leqslant x^n+x^{2n}\leqslant2x^n\text{得}$</p>
-
-<p>$x\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^\frac{1}{n}x,$</p>
-
-<p>$\text{ 当 }x&gt;1\text{ 时,由 }x^{2n}\leqslant x^n+x^{2n}\leqslant2x^{2n}\text{ 得 }$</p>
-
-<p>$x^2\leqslant\sqrt[n]{x^n+x^{2n}}\leqslant2^{\frac1n}x^2,$</p>
-
-<p>$f(x)=\mid\begin{matrix}x,&amp;0&lt;x&lt;1,\x^{2},&amp;x\geqslant1.\end{matrix}$</p>
-
-<hr />
-
-<p><a id="t24p5.2.4">#</a></p>
-
-<p>如果不用$arcsinx$的泰勒展开：</p>
-
-<p>先用洛必达转成$\frac{1}{\sqrt{1-x^2}}$</p>
-
-<p>再用$(1+x)^\alpha-1$的等价无穷小</p>
-
-<hr />
-<p><a id="t24p5.3.1">#</a></p>
-
-<p>$\displaystyle\lim_{x\to+\infty}\frac{6x-2}{\sqrt{x^2+4x+1}+\sqrt{x^2-2x+3}}$ 化成这一步之后</p>
-
-<p>可以直接用抓大头（抓高阶）把底部化成 $2x$</p>
-
-<p>不用的话可以同除 x</p>
-
-<p>$\displaystyle\lim_{x\to+\infty}\frac{6-\frac{2}{x}}{\sqrt{1+\frac{4}{x}+\frac{1}{x^{2}}+\sqrt{1-\frac{2}{x}+\frac{3}{x^{2}}}}}=3.$</p>
-
-<hr />
-
-<p><a id="t24p5.3.2">#</a></p>
-
-<p>$\displaystyle\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}=\displaystyle\lim_{x\to+\infty}\frac{\frac{1}{1+x^{2}}}{-\frac{1}{x^{2}}}=-1$</p>
-
-<blockquote>
-  <p>很明显和上一题不一样，在无穷处不能用泰勒展开</p>
-
-  <p>此时无穷减无穷，洛必达</p>
-
-  <p>有arctanx，arcsinx，想办法化成分式用洛</p>
-</blockquote>
-
-<font color="red">泰勒一般只用于$x\rightarrow 0$时，千万注意</font>
-
-<hr />
-
-<p><a id="t24p5.3.3">#</a></p>
-
-<p>$\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x\left(e^{x}-1\right)}=\displaystyle\lim_{x\to0}\frac{e^{x}-1-x}{x^{2}}=\displaystyle\lim_{x\to0}\frac{e^{x}-1}{2x}$</p>
-
-<blockquote>
-  <p>如果用到<font color="red">不常用的泰勒展开</font></p>
-
-  <p>一定是需要洛必达出手了！</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p5.4">#</a></p>
-
-<blockquote>
-  <p>$0^0$ 型，化成 e 的次方的形式，如果是 $1^\infty$ 那是第二个重要极限</p>
-</blockquote>
-
-<p>$\displaystyle\lim_{x\to0^{+}}\sin2x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\sin2x}{2x}\cdot x\ln x$</p>
-
-<blockquote>
-  <p>此时无法泰勒展开，$x\rightarrow 0$而不是1</p>
-
-  <p>无穷乘零，肯定是要用洛或泰勒的，一定！</p>
-
-  <p>如果不能泰勒，那一定是化成分式洛!</p>
-</blockquote>
-
-<p>$2\displaystyle\lim_{x\to0^{+}}x\ln x=2\displaystyle\lim_{x\to0^{+}}\frac{\ln x}{\frac{1}{x}}=2\displaystyle\lim_{x\to0^{+}}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}=0$</p>
-
-<hr />
-
-<p><a id="t24p6.5.2">#</a></p>
-
-<blockquote>
-  <font color="red">夹逼定理</font>
-</blockquote>
-
-<p>$1\leqslant\sqrt[n]{1+\frac{1}{3}+\cdots+\frac{1}{2n+1}}\leqslant n^{\frac{1}{n}}$</p>
-
-<blockquote>
-  <p>$\displaystyle\lim_{n\rightarrow\infty}n^{\frac1n}=1$ 使用指化对</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p6.6">#</a></p>
-
-<blockquote>
-  <p>有没有发现 $a_n$ 是个单调递减的数列？</p>
-
-  <p>$ln(1+a_n)&lt;a_n$ 然后 $a_n &gt; 0$ 可得证有极限</p>
-
-  <font color="red">大于零可是个很重要的条件</font>
-</blockquote>
-
-<p>当极限存在时，直接令其等于A</p>
-
-<p>$A=ln(1+A)$ 得到极限为0</p>
-
-<blockquote>
-  <p>第二问就是简单的极限计算了</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p6.8">#</a></p>
-
-<blockquote>
-  <p>数学归纳法证明单调递增和有界</p>
-</blockquote>
-
-<p>显然$a_1&lt;a_2$，设$a_k&lt;a_{k+1}$</p>
-
-<p>则$\sqrt{1+a_k}&lt;\sqrt{1+a_{k+1}}$</p>
-
-<p>推出$a_{k+1}&lt;a_{k+2}$</p>
-
-<blockquote>
-  <p>首先由第二项大于第一项猜测单调递增</p>
-
-  <p>然后猜上界，使用数学归纳证明上界</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24jp60.1">#</a></p>
-
-<blockquote>
-  <p>在[1,2]之间</p>
-
-  <p>$3m&lt;f(1)+2f(2)&lt;3M$，$m\leq f(0)\leq M$</p>
-
-  <p>得到在[1,2]之间有一个数等于f(0)</p>
-
-  <p>$3f(0)=f(1)+2f(2)$</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p6.10">#</a></p>
-
-<blockquote>
-  <p>$\frac{(2x-1)(x+1)}{(x-1)(x+1)}e^{\frac1x}$ 可以约分</p>
-
-  <p>像这种初等函数的复合函数，化简约分更快</p>
-
-  <p>比如x+1被约去，相当于只多了一个当x=-1时无定义点</p>
-
-  <p>x-1约不去，多了一个无穷变换点，肯定是无穷间断点</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p7.7">#</a></p>
-
-<blockquote>
-  <p>$(1+x)^\alpha$ 的泰勒展开</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p8.4">#</a></p>
-
-<blockquote>
-  <p>所有极限泰勒一定有办法做出来</p>
-
-  <p>一个是直接展开，一种是$(1+x)^\alpha$等</p>
-
-  <p>泰勒做的比较奇怪，用洛</p>
-
-  <p>洛不成用$\pm x^2$ 或加减常数，变得和分母一样</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p8.11">#</a></p>
-
-<blockquote>
-  <font color="red">提 $e^{x^2}$ </font>
-  <p>关于 $ln()$</p>
-
-  <p>如果不想直接求导</p>
-
-  <p>那就得提出通项，让后利用对数性质，变成加</p>
-</blockquote>
-
-<hr />
-
-<p><a id="t24p8-12">#</a></p>
-
-<blockquote>
-  <p>和<font color="red">定积分的数列表示</font>有没有点像</p>
-
-  <p>重要的是 <font color="red">$\frac{1}{n}\sum\frac{i}{n}$</font> 以及 x</p>
-</blockquote>
-
-<p>$\displaystyle\lim_{n\rightarrow\infty}\frac1n\sum_{i=1}^{n}\frac{i}{n}\sqrt{1-(\frac{i}{n})^4}=\int_0^1x\sqrt{1-x^4}\,dx$</p>
-
-<hr />
-
-<p><a id="t24p8-16">#</a></p>
-
-<blockquote>
-  <p>已知f(0),f’(0)就可以构造泰勒展开式</p>
-
-  <p>换元法</p>
-</blockquote>
-
-<font color="red">$\int_{0}^{x}f\left(x-t\right)\mathrm{d}t\xrightarrow{x-t=u}\int_{x}^{0}f\left(u\right)\left(-\mathrm{d}u\right)=\int_{0}^{x}f\left(u\right)\mathrm{d}u$</font>
-
-<hr />
-
-<p><a id="t24p9-2">#</a></p>
-
-<blockquote>
-  <p>先求导再泰勒展开</p>
-
-  <p>$\frac{0}{0}$型幂函数多项式形式</p>
-
-  <p>关键是<font color="red">上下最低阶的幂函数的阶得一样</font></p>
-
-  <p>如果不一样，那就是无穷或零了</p>
-</blockquote>
-
-<p>$\displaystyle\frac{x^3+x}{x^4+x^2}$ 一旦同除 x ，当趋向于0 时，就会是正无穷了，</p>
-
-<p>$\displaystyle\frac{x^5+x^3+x}{x^4+x^3}$</p>
-
-<p>本题目答案的解法也很巧妙</p>
-
-<p>$f(t)=ln(2+t)\quad f’(t)=\frac1{2+t}$</p>
-
-<p>使用拉格朗日中值定理</p>
-
-<p>$ln(2+sinx)-ln(2+x)$</p>
-
-<p>$=f(sinx)-f(x)=f’(\xi)(sinx-x)$</p>
-
-<p>原式$=\displaystyle\lim_{x\rightarrow 0}\frac1{2+\xi}·\frac{sinx-x}{x^3}=-\frac1{12}$</p>
-
-<blockquote>
-  <font color="red">拉格朗日中值定理将复杂函数中的变量取了出来</font>
-
-  <font color="red">将$f(sinx)-f(x)$化成$sinx-x$ </font>
-
-  <font color="blue">拉格朗日定理可称为去函数化</font>
-</blockquote>
-
-<p><a href="#last">点此到达最后一题</a></p>
-
-<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">t24p6.8引起的猜想</title><link href="https://wsttask.github.io/calculus/exercises/t24p6" rel="alternate" type="text/html" title="t24p6.8引起的猜想" /><published>2024-03-19T13:12:55+08:00</published><updated>2024-03-19T13:12:55+08:00</updated><id>https://wsttask.github.io/calculus/exercises/%E9%87%8D%E5%A4%8D%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E6%9C%89%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises/t24p6"><![CDATA[<p>$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$</p>
+</tr></table>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节 常数项级数的基本概念和性质]]></summary></entry><entry><title type="html">t24p6.8引起的猜想</title><link href="https://wsttask.github.io/calculus/exercises/t24p6" rel="alternate" type="text/html" title="t24p6.8引起的猜想" /><published>2024-03-19T13:12:55+08:00</published><updated>2024-03-19T13:12:55+08:00</updated><id>https://wsttask.github.io/calculus/exercises/%E9%87%8D%E5%A4%8D%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E6%9C%89%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises/t24p6"><![CDATA[<p>$a_{1}=1,a_{n+1}=\sqrt{1+a_{n}}$</p>
 
 <p>作 y = x 的直线，</p>
 
