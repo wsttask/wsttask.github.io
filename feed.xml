@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-21T20:25:09+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-21T17:19:51+08:00</published><updated>2024-03-21T17:19:51+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-21T21:31:44+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">求极限的习题</title><link href="https://wsttask.github.io/calculus/exercises1a" rel="alternate" type="text/html" title="求极限的习题" /><published>2024-03-21T21:31:08+08:00</published><updated>2024-03-21T21:31:08+08:00</updated><id>https://wsttask.github.io/calculus/%E6%B1%82%E6%9E%81%E9%99%90</id><content type="html" xml:base="https://wsttask.github.io/calculus/exercises1a"><![CDATA[<p><a href="#last">点此到达最后一题</a></p>
 
 <p>$\lim_{n\to\infty}\sin\sqrt{4n^{2}+n}\pi=(\quad)$</p>
 
@@ -259,6 +259,18 @@
 <p><code class="language-plaintext highlighter-rouge">t24p9-1-2</code></p>
 
 <p><a href="#t24p9-1-2">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to1}\frac{(\frac{1+2x}{3})^{(x-1)^2}-1}{sin^3\pi x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p9-1-4</code></p>
+
+<p><a href="#t24p9-1-4">click</a></p>
+
+<hr />
 
 <p><a id="last">最后一题</a></p>
 
@@ -632,9 +644,33 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
   <p>$\displaystyle\lim_{t\to0}\frac{t-sint}{t^3}$</p>
 </blockquote>
 
+<hr />
+
+<p><a id="t24p9-1-4">#</a></p>
+
+<blockquote>
+  <font color="blue">关于底数是$x^n$的极限，父母一定是与分子等同的</font>
+
+  <font color="blue">如果分子有常数，不同阶无穷小相减或其他情况</font>
+
+  <font color="blue">请记住，一定一定是通过等价无穷下替换等方式消去</font>
+</blockquote>
+
+<p>$\displaystyle\lim_{x\to1}\frac{e^{(x-1)^2\ln(\frac{1+2x}{3})}-1}{sin^3\pi x}$</p>
+
+<p>$\displaystyle\lim_{x\to1}\frac{(x-1)^2ln(\frac{1+2x}{3})}{sin^3\pi x}$</p>
+
+<p>$ln(\frac{1+2x}{3})=ln(1+\frac{2x-2}{3})=\frac{2x-2}{3}$</p>
+
+<p>注意$\lim_{x\to1}\frac{2x-2}{3}=0$</p>
+
+<p>$\lim_{x\to1}sin^3\pi x=sin^3(\pi+\pi(x-1))$</p>
+
+<p>最后全化成x-1了</p>
+
 <p><a href="#last">点此到达最后一题</a></p>
 
-<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-20T23:41:25+08:00</published><updated>2024-03-20T23:41:25+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="exercises" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-21T20:25:01+08:00</published><updated>2024-03-21T20:25:01+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
