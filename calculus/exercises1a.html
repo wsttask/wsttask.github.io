@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-19 6159字
+              2024-03-21 6586字
             </div>
             <div class="content">
                 <p><a href="#last">点此到达最后一题</a></p>
@@ -287,7 +287,7 @@
 
 <p><code class="language-plaintext highlighter-rouge">t24p9-4-2</code></p>
 
-<p><a href="#24p9-4-2">click</a></p>
+<p><a href="#t24p9-4-2">click</a></p>
 
 <hr />
 
@@ -298,6 +298,26 @@
 <p><code class="language-plaintext highlighter-rouge">t24p10-6-3</code></p>
 
 <p><a href="#t24p10-6-3">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to0}\frac{\sqrt{1+2x}-\sqrt[3]{1-2x}}{x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p9-1-1</code></p>
+
+<p><a href="#t24p9-1-1">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\lim_{x\to0}\frac{tan\,2x·[sin\,x-sin(sin\,x)]}{x^4}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p9-1-2</code></p>
+
+<p><a href="#t24p9-1-2">click</a></p>
 
 <p><a id="last">最后一题</a></p>
 
@@ -624,7 +644,7 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
 <hr />
 
-<p><a id="t24p10.10.3">#</a></p>
+<p><a id="t24p10-6-3">#</a></p>
 
 <blockquote>
   <p>和<code class="language-plaintext highlighter-rouge">t24p3.3</code>是同类型的题</p>
@@ -637,11 +657,38 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
   <p>可以利用<font color="red">平方差公式去根号</font></p>
 
-  <p>注意逆平法差公式可以让相减转化成相乘</p>
-
   <p>如果最高只是二次项，可以凑得平方</p>
 
   <p>凑平方来快速解题目</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p9-1-1">#</a></p>
+
+<blockquote>
+  <p>第一种方法是<font color="red">$(1+x)^\alpha$</font> 处的泰勒展开</p>
+
+  <p>第二：由泰勒展开可以得知，他们都有一次项和常数项</p>
+
+  <p>利用$(1+x)^{\alpha}-1$的等价无穷小，再加上$lim$的加法性质</p>
+</blockquote>
+
+<hr />
+
+<p><a id="t24p9-1-2">#</a></p>
+
+<blockquote>
+  <p>将sinx的泰勒的前两项带入sinx再进行一边泰勒展开</p>
+</blockquote>
+
+<p>上面是比较粗暴的方法，当非幂函数嵌套时可以尝试换元</p>
+
+<blockquote>
+  <p>$\displaystyle\lim_{x\to0}\frac{sinx-sin(sinx)}{x^3}=\lim_{x\to0}\frac{sinx-sin(sinx)}{sin^3x}$</p>
+
+  <font color="red">换元 </font>
+  <p>$\displaystyle\lim_{t\to0}\frac{t-sint}{t^3}$</p>
 </blockquote>
 
 <p><a href="#last">点此到达最后一题</a></p>
