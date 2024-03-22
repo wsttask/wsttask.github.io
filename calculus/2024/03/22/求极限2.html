@@ -54,7 +54,7 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-22 586字
+              2024-03-22 1402字
             </div>
             <div class="content">
                 <p>$\displaystyle\lim_{x\to\infty}\frac{(1+\frac1x)^{x^2}}{e^x}$</p>
@@ -77,6 +77,38 @@
 
 <hr />
 
+<p>$\displaystyle\lim_{x\to1}(\tan \frac\pi4x)^{\tan \frac\pi2x}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p10-8</code></p>
+
+<p><a href="#t24p10-8">click</a></p>
+
+<hr />
+
+<p>$\displaystyle\begin{aligned}&amp;\lim_{n\to\infty}\sqrt[n]{\left(1+\frac{1^2}{n^2}\right)\left(1+\frac{2^2}{n^2}\right)\cdots\left(1+\frac{n^2}{n^2}\right)}\end{aligned}$</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p10-17-2</code></p>
+
+<p><a href="#t24p10-17-2">click</a></p>
+
+<hr />
+
+<p>设$0&lt;a_1&lt;2$，又$a_{n+1}=\sqrt{a_n(2-a_n)}$</p>
+
+<p>证明：$\displaystyle\lim_{n\to\infty}a_n$存在</p>
+
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">t24p11-22</code></p>
+
+<p><a href="#t24p11-22">click</a></p>
+
+<hr />
+
 <p><a id="t24p9-4-5"></a></p>
 
 <blockquote>
@@ -87,7 +119,7 @@
   <p>幂指函数不能把的等价无穷小带入，极限没有这个运算性质</p>
 </blockquote>
 
-<p>$\displaystyle\lim_{x\to\infty}e^{x^2\ln(1+\frac1x)-x}$</p>
+<p>$\displaystyle\lim_{x\to\infty}e^{\displaystyle x^2\ln(1+\frac1x)-x}$</p>
 
 <p>再对其进行泰勒展开</p>
 
@@ -102,6 +134,40 @@
 <p>$=\displaystyle\lim_{x\to0}\frac{x+\sin x\cos x}{x}\cdot\frac{x-\sin x\cos x}{x^{^3}}$</p>
 
 <p>$\displaystyle=\frac43$</p>
+
+<hr />
+
+<p><a id="t24p10-8"></a></p>
+
+<blockquote>
+  <p>无论是$(1+x)^{\frac1x}$还是$e^{x\ln x}$都可以做出来</p>
+</blockquote>
+
+<p>关键步骤是$\displaystyle\tan\frac\pi2x=\frac{\sin\frac\pi2}{\cos\frac\pi2}$</p>
+
+<hr />
+
+<p><a id="t24p10-17-2"></a></p>
+
+<p>$\displaystyle e^{\displaystyle\lim_{n\to\infty}\frac1n\sum_{i=1}^n\ln\left(1+\frac{i^2}{n^2}\right)}$</p>
+
+<p>$e^{\displaystyle\ln2-2+\frac\pi2}$</p>
+
+<hr />
+
+<p><a id="t24p11-22"></a></p>
+
+<p>$\displaystyle a_{n}&gt;0,a_{n+1}=\sqrt{a_{n}(2-a_{n})}\leqslant\frac{a_{n}+(2-a_{n})}{2}=1$</p>
+
+<p>说明有界</p>
+
+<p>$a_{n+1}-a_n=\sqrt{a_n(2-a_n)}-a_n=\frac{2a_n(1-a_n)}{\sqrt{a_n(2-a_n)}+a_n}\geqslant0$</p>
+
+<p>说明单调递增</p>
+
+<blockquote>
+  <p>这个题目没有用归纳推理</p>
+</blockquote>
 
             </div>
         </div>
