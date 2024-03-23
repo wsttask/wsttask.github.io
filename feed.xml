@@ -1,4 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-23T16:00:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-23T15:59:56+08:00</published><updated>2024-03-23T15:59:56+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="knowledge">knowledge</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-23T20:12:28+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-23T20:12:13+08:00</published><updated>2024-03-23T20:12:13+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+
+<h4 id="导数定义">导数定义</h4>
+
+<blockquote>
+  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+
+  <p>​        $\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+
+  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+
+  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
+</blockquote>
+
+<h3 id="微分定义">微分定义</h3>
+
+<p>若$\Delta y=A\Delta x+o(\Delta x)$，称$y=f(x)$在$x=x_0$处可微，其中$A\Delta x$称为$y=f(x)$在$x=x_0$处的微分，记为 $dy\mid_{x=x_0}=A\Delta x$ 或 $dy\mid_{x=x_0}=Adx$</p>
+
+<blockquote>
+  <p>其中的$o(\Delta x)$为高阶无穷小</p>
+</blockquote>
+
+<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
+
+<blockquote>
+  <p>充分不必要条件：导函数是连续函数</p>
+</blockquote>
+
+<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
+
+<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>
+
+<h3 id="连续可导">连续可导</h3>
+
+<p>$f(x)=x^2\sin(\frac1x)\quad x\ne 0$</p>
+
+<p>$f(x)=0\quad x=0$</p>
+
+<iframe src="https://www.desmos.com/calculator/yg9yjjsbun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+
+<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续，但是f’(x)在x=0时存在。即可导，但不连续可导</p>
+
+<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
+
+<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
+
+<h3 id="关于displaystylelim_xto0fracfxx">关于$\displaystyle\lim_{x\to0}\frac{f(x)}{x}$</h3>
+
+<p>首先它不是f(x)在x=0时的导数</p>
+
+<p>但是如果题目中给了$\displaystyle\lim_{x\to0}\frac{f(x)}{x}=A$ 了，那么 $f’(0)=A$</p>
+
+<p>因为极限存在，说明 $\displaystyle\lim_{x\to0}f(0)=0$ 了，要是等于其他值则极限不可能存在</p>
+
+<p>该极限就也可以写成 $\displaystyle\lim_{x\to0}\frac{f(x)-f(0)}{x-0}$ 也就是f(x)在x=0时的导数f’(0)</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">达布中值定理</title><link href="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="达布中值定理" /><published>2024-03-23T20:12:05+08:00</published><updated>2024-03-23T20:12:05+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="达布中值定理">达布中值定理</h3>
+
+<blockquote>
+  <p>设 $y=f(x)$ 在 $(A,B)$ 区间可导，且 $[a,b]$ 包含于 $(A,B)$ ，$f’(a)&lt;f’(b)$ ，则对于任意给定的 $\eta \quad [f’(a)&lt;\eta&lt;f’(b)]$ ，都存在一点 $\xi\in(a,b)$ ，使得 $f’(\xi)=\eta$</p>
+</blockquote>
+
+<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
+
+<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点。</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/486060686?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1745752610869686273&amp;utm_source=wechat_session">导数的介值定理(达布中值定理)的证明及应用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[达布中值定理]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-23T16:00:06+08:00</published><updated>2024-03-23T16:00:06+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-23T15:59:56+08:00</published><updated>2024-03-23T15:59:56+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="knowledge">knowledge</h1>
 
 <h3 id="giteeweb"><a href="https://gitee.com/wsttask/web/tree/master">gitee.web</a></h3>
 
@@ -72,47 +180,7 @@
 
 <h1 id="中国考试教育网">中国考试教育网</h1>
 
-<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[knowledge]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-23T15:59:14+08:00</published><updated>2024-03-23T15:59:14+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
-
-<h4 id="导数定义">导数定义</h4>
-
-<blockquote>
-  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
-
-  <p>​        $\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
-
-  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
-
-  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
-</blockquote>
-
-<h3 id="微分定义">微分定义</h3>
-
-<p>若$\Delta y=A\Delta x+o(\Delta x)$，称$y=f(x)$在$x=x_0$处可微，其中$A\Delta x$称为$y=f(x)$在$x=x_0$处的微分，记为 $dy\mid_{x=x_0}=A\Delta x$ 或 $dy\mid_{x=x_0}=Adx$</p>
-
-<blockquote>
-  <p>其中的$o(\Delta x)$为高阶无穷小</p>
-</blockquote>
-
-<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
-
-<blockquote>
-  <p>充分不必要条件：导函数是连续函数</p>
-</blockquote>
-
-<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
-
-<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>
-
-<h3 id="关于displaystylelim_xto0fracfxx">关于$\displaystyle\lim_{x\to0}\frac{f(x)}{x}$</h3>
-
-<p>首先它不是f(x)在x=0时的导数</p>
-
-<p>但是如果题目中给了$\displaystyle\lim_{x\to0}\frac{f(x)}{x}=A$ 了，那么 $f’(0)=A$</p>
-
-<p>因为极限存在，说明 $\displaystyle\lim_{x\to0}f(0)=0$ 了，要是等于其他值则极限不可能存在</p>
-
-<p>该极限就也可以写成 $\displaystyle\lim_{x\to0}\frac{f(x)-f(0)}{x-0}$ 也就是f(x)在x=0时的导数f’(0)</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">常见函数图像</title><link href="https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F.html" rel="alternate" type="text/html" title="常见函数图像" /><published>2024-03-23T14:35:17+08:00</published><updated>2024-03-23T14:35:17+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F.html"><![CDATA[<iframe src="https://www.desmos.com/calculator/iqxl3krwib?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[knowledge]]></summary></entry><entry><title type="html">常见函数图像</title><link href="https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F.html" rel="alternate" type="text/html" title="常见函数图像" /><published>2024-03-23T14:35:17+08:00</published><updated>2024-03-23T14:35:17+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F.html"><![CDATA[<iframe src="https://www.desmos.com/calculator/iqxl3krwib?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
 
 <p>$x^{\frac1x}$</p>
 
@@ -156,51 +224,7 @@
   <p>当x趋于负无穷时，函数值趋于e</p>
 
   <p>当x趋于0时，函数值趋于1s</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-23T14:35:06+08:00</published><updated>2024-03-23T14:35:06+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">求极限2</title><link href="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902.html" rel="alternate" type="text/html" title="求极限2" /><published>2024-03-22T20:59:56+08:00</published><updated>2024-03-22T20:59:56+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902.html"><![CDATA[<p>$\displaystyle\lim_{x\to\infty}\frac{(1+\frac1x)^{x^2}}{e^x}$</p>
+</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">求极限2</title><link href="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902.html" rel="alternate" type="text/html" title="求极限2" /><published>2024-03-22T20:59:56+08:00</published><updated>2024-03-22T20:59:56+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902.html"><![CDATA[<p>$\displaystyle\lim_{x\to\infty}\frac{(1+\frac1x)^{x^2}}{e^x}$</p>
 
 <p><br /></p>
 
@@ -1181,100 +1205,4 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
 <blockquote>
   <p>加一减一化成这样，随后使用等价无穷小</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[洛必达]]></summary></entry><entry><title type="html">自然拼读</title><link href="https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB.html" rel="alternate" type="text/html" title="自然拼读" /><published>2024-03-22T12:49:47+08:00</published><updated>2024-03-22T12:49:47+08:00</updated><id>https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB</id><content type="html" xml:base="https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB.html"><![CDATA[<p><a href="https://www.bilibili.com/read/cv7989082/#:~:text=q 一般和u一起发音 [ kw ]。 x 在单词中间或结尾时发 [,y 在结尾，单词只有一个音节时 y 发长 [ ai ] 音，my、bye。">英语单词中辅音字母发音、元音字母发音、组合辅音发音、组合元音发音、重读规则 - 哔哩哔哩 (bilibili.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[英语单词中辅音字母发音、元音字母发音、组合辅音发音、组合元音发音、重读规则 - 哔哩哔哩 (bilibili.com)]]></summary></entry><entry><title type="html">gh发音不发音规律总结</title><link href="https://wsttask.github.io/2024/03/22/gh%E5%8F%91%E9%9F%B3%E4%B8%8D%E5%8F%91%E9%9F%B3.html" rel="alternate" type="text/html" title="gh发音不发音规律总结" /><published>2024-03-22T12:42:47+08:00</published><updated>2024-03-22T12:42:47+08:00</updated><id>https://wsttask.github.io/2024/03/22/gh%E5%8F%91%E9%9F%B3%E4%B8%8D%E5%8F%91%E9%9F%B3</id><content type="html" xml:base="https://wsttask.github.io/2024/03/22/gh%E5%8F%91%E9%9F%B3%E4%B8%8D%E5%8F%91%E9%9F%B3.html"><![CDATA[<p>gh字母组合的读音在中学英语课本中归纳起来主要有”发音”和”不发音”两种情况。</p>
-
-<p>一、gh在下列三种情况下发音</p>
-
-<p>1．gh在词首时，读作/g/。 例如：</p>
-
-<p>ghost /gəʊst/ n. 鬼，幽灵</p>
-
-<p>2．词首为字母1，且后跟字母组合augh时，gh读作/f/。 例如：</p>
-
-<p>laugh /lɑːf/ n. 笑</p>
-
-<p>laughter [‘lɑːftə] n. 笑；笑声</p>
-
-<p>3．词尾为字母组合ough时，gh读作/f/。例如：</p>
-
-<p>enough [ɪ’nʌf] adv. 足够地</p>
-
-<p>cough /kɔf/ n. 咳嗽，咳嗽声</p>
-
-<p>rough /rʌf/ adj. 粗糙的</p>
-
-<p>tough /tʌf/ adj. 艰苦的</p>
-
-<p>二、gh在下列五种情况下不发音</p>
-
-<p>1．gh在元音字母i后不发音。例如：</p>
-
-<p>bright [braɪt] adj. 明亮的</p>
-
-<p>fight [faɪt] vi. 打架</p>
-
-<p>frighten [‘fraɪt(ə)n] vt. 使惊吓</p>
-
-<p>high [haɪ] adj. 高的</p>
-
-<p>light [laɪt] n. 光；光线</p>
-
-<p>might [maɪt] n. 力量</p>
-
-<p>night [naɪt] n. 夜晚</p>
-
-<p>right [raɪt] adj. 正确的</p>
-
-<p>sight [saɪt] n. 视力</p>
-
-<p>slight [slaɪt] adj. 轻微的</p>
-
-<p>2．gh在元音字母组合ei和ai后不发音。例如：</p>
-
-<p>eight [eɪt] num. 八</p>
-
-<p>eighth [eɪtθ] adj. 第八的</p>
-
-<p>neighbor [‘neɪbə] n. 邻居</p>
-
-<p>straight [streɪt] adj. 直的</p>
-
-<p>weigh [weɪ] vt. 权衡</p>
-
-<p>weight [weɪt] n. 重量</p>
-
-<p>3．gh在字母组合ought中不发音。例如：</p>
-
-<p>bought [bɔːt] v. 买（buy的过去式和过去分词）</p>
-
-<p>brought [brɔːt] v. 带来</p>
-
-<p>fought [fɔːt] v. 战斗</p>
-
-<p>thought [θɔːt] n. 思想</p>
-
-<p>4．字母组合augh前面不是1时，gh不发音。例如：</p>
-
-<p>caught [kɔːt] v. 捕捉</p>
-
-<p>daughter [‘dɔːtə] n. 女儿</p>
-
-<p>naught [nɔːt] n. [数] 零</p>
-
-<p>naughty [‘nɔːtɪ] adj. 顽皮的</p>
-
-<p>taught [tɔːt] v. 教授</p>
-
-<p>5．词尾为ough的词，如以上所述，有的发/f/，但有时也不发音。 例如：</p>
-
-<p>although [ɔ:lˈðəu] conj.虽然; 尽管</p>
-
-<p>plough [plaʊ] n.耕作</p>
-
-<p>through [θru:] prep.透过</p>
-
-<p>though [ðəʊ] conj.即使</p>
-
-<p>thorough [ˈθʌrə] adj.彻底的</p>
-
-<p>注意：若gh不是字母组合，而是分属于前后两个不同的音节时，不适合以上规则。 例：dininghall/’dainiŋhɔ:l/</p>]]></content><author><name></name></author><summary type="html"><![CDATA[gh字母组合的读音在中学英语课本中归纳起来主要有”发音”和”不发音”两种情况。]]></summary></entry></feed>
+</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[洛必达]]></summary></entry><entry><title type="html">自然拼读</title><link href="https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB.html" rel="alternate" type="text/html" title="自然拼读" /><published>2024-03-22T12:49:47+08:00</published><updated>2024-03-22T12:49:47+08:00</updated><id>https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB</id><content type="html" xml:base="https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB.html"><![CDATA[<p><a href="https://www.bilibili.com/read/cv7989082/#:~:text=q 一般和u一起发音 [ kw ]。 x 在单词中间或结尾时发 [,y 在结尾，单词只有一个音节时 y 发长 [ ai ] 音，my、bye。">英语单词中辅音字母发音、元音字母发音、组合辅音发音、组合元音发音、重读规则 - 哔哩哔哩 (bilibili.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[英语单词中辅音字母发音、元音字母发音、组合辅音发音、组合元音发音、重读规则 - 哔哩哔哩 (bilibili.com)]]></summary></entry></feed>
