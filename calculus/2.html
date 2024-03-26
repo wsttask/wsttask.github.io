@@ -54,22 +54,32 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-23 1011字
+              2024-03-26 894字
             </div>
             <div class="content">
                 <h2 id="第一节基本概念">第一节、基本概念</h2>
 
-<h4 id="导数定义">导数定义</h4>
+<h3 id="导数定义">导数定义</h3>
 
-<blockquote>
-  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+<p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
 
-  <p>​        $\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+<p>$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
 
-  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+<p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
 
-  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
-</blockquote>
+<p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
+
+<table cellspacing="10">
+    <tr>
+        &lt;td bgcolor=#7DDA58&gt;保两侧：改变量Δx要保证从0的左右两侧趋于0&lt;/td&gt;
+    </tr>
+    <tr>
+    	&lt;td bgcolor=#7DDA58&gt;不能跨&lt;/td&gt;
+    </tr>
+    <tr>
+    	&lt;td bgcolor=#7DDA58&gt;阶相同&lt;/td&gt;
+    </tr>
+</table>
 
 <h3 id="微分定义">微分定义</h3>
 
@@ -97,21 +107,11 @@
 
 <iframe src="https://www.desmos.com/calculator/yg9yjjsbun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
 
-<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续，但是f’(x)在x=0时存在。即可导，但不连续可导</p>
+<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续（极限不存在），但是f’(x)在x=0时存在。即可导，但不连续可导</p>
 
 <p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
 
 <p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
-
-<h3 id="关于displaystylelim_xto0fracfxx">关于$\displaystyle\lim_{x\to0}\frac{f(x)}{x}$</h3>
-
-<p>首先它不是f(x)在x=0时的导数</p>
-
-<p>但是如果题目中给了$\displaystyle\lim_{x\to0}\frac{f(x)}{x}=A$ 了，那么 $f’(0)=A$</p>
-
-<p>因为极限存在，说明 $\displaystyle\lim_{x\to0}f(0)=0$ 了，要是等于其他值则极限不可能存在</p>
-
-<p>该极限就也可以写成 $\displaystyle\lim_{x\to0}\frac{f(x)-f(0)}{x-0}$ 也就是f(x)在x=0时的导数f’(0)</p>
 
 
             </div>

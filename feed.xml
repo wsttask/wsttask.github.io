@@ -1,16 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-23T20:12:28+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-23T20:12:13+08:00</published><updated>2024-03-23T20:12:13+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-26T15:41:37+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-26T15:41:23+08:00</published><updated>2024-03-26T15:41:23+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h2 id="第一节基本概念">第一节、基本概念</h2>
 
-<h4 id="导数定义">导数定义</h4>
+<h3 id="导数定义">导数定义</h3>
 
-<blockquote>
-  <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+<p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
 
-  <p>​        $\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+<p>$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
 
-  <p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+<p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
 
-  <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
-</blockquote>
+<p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
+
+<table cellspacing="10">
+    <tr>
+        &lt;td bgcolor=#7DDA58&gt;保两侧：改变量Δx要保证从0的左右两侧趋于0&lt;/td&gt;
+    </tr>
+    <tr>
+    	&lt;td bgcolor=#7DDA58&gt;不能跨&lt;/td&gt;
+    </tr>
+    <tr>
+    	&lt;td bgcolor=#7DDA58&gt;阶相同&lt;/td&gt;
+    </tr>
+</table>
 
 <h3 id="微分定义">微分定义</h3>
 
@@ -38,31 +48,266 @@
 
 <iframe src="https://www.desmos.com/calculator/yg9yjjsbun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
 
-<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续，但是f’(x)在x=0时存在。即可导，但不连续可导</p>
+<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续（极限不存在），但是f’(x)在x=0时存在。即可导，但不连续可导</p>
 
 <p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
 
-<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
+<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">级数</title><link href="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html" rel="alternate" type="text/html" title="级数" /><published>2024-03-26T15:21:25+08:00</published><updated>2024-03-26T15:21:25+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html"><![CDATA[<h3 id="第一节-常数项级数的基本概念和性质"><font color="blue">第一节 常数项级数的基本概念和性质</font></h3>
 
-<h3 id="关于displaystylelim_xto0fracfxx">关于$\displaystyle\lim_{x\to0}\frac{f(x)}{x}$</h3>
+<h4 id="一常数项级数的概念">（一）常数项级数的概念</h4>
 
-<p>首先它不是f(x)在x=0时的导数</p>
+<h5 id="1定义"><font color="ForestGreen">1.定义</font></h5>
 
-<p>但是如果题目中给了$\displaystyle\lim_{x\to0}\frac{f(x)}{x}=A$ 了，那么 $f’(0)=A$</p>
+<p>给定数列$u_1,u_2,u_3,…,u_n,…$</p>
 
-<p>因为极限存在，说明 $\displaystyle\lim_{x\to0}f(0)=0$ 了，要是等于其他值则极限不可能存在</p>
+<font color="darkred">无穷级数</font>
+<p>：$\sum\limits_{n=1}^\infty u_n=u_1+u_2+u_3+…+u_n+…$</p>
 
-<p>该极限就也可以写成 $\displaystyle\lim_{x\to0}\frac{f(x)-f(0)}{x-0}$ 也就是f(x)在x=0时的导数f’(0)</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节、基本概念]]></summary></entry><entry><title type="html">达布中值定理</title><link href="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="达布中值定理" /><published>2024-03-23T20:12:05+08:00</published><updated>2024-03-23T20:12:05+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="达布中值定理">达布中值定理</h3>
+<font color="darkred">部分和</font>
+<p>：$S_n=\sum\limits_{k=1}^n u_k=u_1+u_2+u_3+…+u_n+…$</p>
 
-<blockquote>
-  <p>设 $y=f(x)$ 在 $(A,B)$ 区间可导，且 $[a,b]$ 包含于 $(A,B)$ ，$f’(a)&lt;f’(b)$ ，则对于任意给定的 $\eta \quad [f’(a)&lt;\eta&lt;f’(b)]$ ，都存在一点 $\xi\in(a,b)$ ，使得 $f’(\xi)=\eta$</p>
-</blockquote>
+<p>无穷级数<font color="brown">收敛</font>：若$\lim\limits_{n\to\infty}S_n=S$存在，记作 $S=\displaystyle\sum^{\infty}_{n-1} u_n$</p>
 
-<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
+<p>无穷级数<font color="brown">发散</font>：若$\lim\limits_{n\to\infty}S_n=S$不存在</p>
 
-<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点。</p>
+<p>级数的<font color="brown">余项</font>：$r_n=S-S_n=u_{n+1}+u_{n+2}+…$</p>
 
-<p><a href="https://zhuanlan.zhihu.com/p/486060686?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1745752610869686273&amp;utm_source=wechat_session">导数的介值定理(达布中值定理)的证明及应用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[达布中值定理]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-23T16:00:06+08:00</published><updated>2024-03-23T16:00:06+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p>级数收敛时，$\lim\limits_{n\to\infty}r_n=0$</p>
+
+<h4 id="二收敛级数的性质">（二）收敛级数的性质</h4>
+
+<font color="deepskyblue">性质一</font>
+<p>：若$S=\sum\limits_{n=1}^{\infty}u_n$收敛，则$\sum\limits_{n=1}^\infty cu_n$收敛</p>
+
+<font color="blue">推论一</font>
+<p>：若$c\ne 0$，则$\sum\limits_{n=1}^\infty u_n$与$\sum\limits_{n=1}^\infty$敛散性相同</p>
+
+<font color="deepskyblue">性质二</font>
+<p>：设收敛级数$S=\sum\limits_{n=1}^\infty u_n,\sigma=\sum\limits_{n=1}^{\infty}v_n$，则$\sum\limits_{n=1}^{\infty}(u_n\pm v_n)$也收敛，其和为$S\pm\sigma$</p>
+
+<table><tr><td bgcolor="orange">收收为收，收发为发，发发不一定发</td></tr></table>
+
+<font color="deepskyblue">性质三</font>
+<p>：级数前面加上（去掉、或修改）<strong>有限项</strong>，不影响级数的敛散性</p>
+
+<font color="deepskyblue">性质四</font>
+<p>：收敛级数<strong>加括弧</strong>后形成的级数仍收敛于原级数的和。</p>
+
+<font color="blue">推论二</font>
+<p>：若加括弧后的级数发散，则原级数必发散。</p>
+
+<table><tr><td bgcolor="orange">收敛级数去括弧后形成的级数不一定收敛&lt;/tr&gt;</td>&lt;/table&gt;
+
+<font color="deepskyblue">性质五</font>：（级数收敛的==必要条件==）
+
+​    设$S=\sum\limits_{n=1}^\infty u_n$收敛，则$\lim\limits_{n\to\infty}u_n=0$ 
+
+<font color="gold">注意</font>：这只是必要条件！
+
+例如：调和级数$\sum\limits_{n=1}^\infty \frac{1}{n} = 1+\frac12+\frac13+...+\frac1n+...$发散
+
+​                            但$\lim\limits_{n\to\infty}u_n=0$ 
+
+<font color="deepskyblue">推论三</font>：若$u_n不趋向于0$，则级数$\sum\limits_{n=1}^\infty u_n$必发散。
+
+**等比级数（几何级数）**：$\sum\limits_{n=0}^{\infty}ar^n=a+ar+ar^2+...+ar^{n-1}+...$
+
+==当$|r|&lt;1$时收敛，当$|r|\ge 1$时发散。==
+
+**p级数**：$\sum\limits_{n=1}^{\infty}\frac1{n^p}=1+\frac1{2^p}+\frac1{3^p}+...+\frac1{n^p}+...$
+
+当$p=1$时，**p级数**为**调和级数**$\sum\limits_{n=1}^{\infty}\frac1n$，发散
+
+当$p\le1$时，发散
+
+当$p&gt;1$时，收敛
+
+### <font color="blue">第二节 正项级数及其审敛法</font>
+
+#### （一）正向级数收敛的充分必要条件
+
+<font color="ForestGreen">定义</font> 正向级数：$\sum\limits_{n=1}^{\infty}u_n \quad(u_n&gt;0)$
+
+<font color="forestgreen">定理11.2</font> 正项级数$\sum\limits_{n=1}^{\infty}u_n$收敛的充要条件是：==部分和数列$S_n$有上界。==
+
+#### （二）比较审敛法
+
+<font color="forestgreen">定理11.2（比较审敛法）</font> 设正项级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$ 
+
+(1)若$\sum\limits_{n=1}^{\infty}v_n$收敛，==$u_n\le v_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也收敛
+
+(2)若$\sum\limits_{n=1}^{\infty}v_n$发散，==$u_n\ge v_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也发散
+
+<font color="darkred">推论（比较审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$
+
+(i)若$\sum\limits_{n=1}^{\infty}v_n$收敛，==$u_n\le cv_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也收敛
+
+(ii)若$\sum\limits_{n=1}^{\infty}v_n$发散，==$u_n\ge cv_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也发散
+
+<font color="forestgreen">定理11.3（极限形式的比较审敛法）</font>设正项级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$ 满足==$\lim\limits_{n\rightarrow\infty}\frac{u_n}{v_n}=l \quad (0\le l\le +\infty)$==
+
+则有
+
+（1）当 $0&lt;l&lt;+\infty$时，两级数同敛散；
+
+（2）当$l=0$且$\sum\limits_{n=1}^{\infty}v_n$收敛时，$\sum\limits_{n=1}^{\infty}u_n$也收敛；
+
+（3）当$l=+\infty$且$\sum\limits_{n=1}^{\infty}v_n$发散时，$\sum\limits_{n=1}^{\infty}u_n$也发散。
+
+思考：本质上是找$u_n$的同阶无穷小
+
+#### （三）比值审敛法和根值审敛法
+
+<font color="lime">定理11.4（比值审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n$满足：==$\lim\limits_{n\rightarrow\infty}\frac{u_{n+1}}{u_n}=\rho$==$\quad 0\le\rho\le+\infty$
+
+则
+
+（1）当$\rho&lt;1$时，级数收敛；
+
+（2）当$\rho&gt;1$或$\rho=+\infty$时，级数发散
+
+（3）当$\rho=1$时，比值审敛法失效
+
+&gt; 通项中含有$n!,a^n$的级数适合用比值法判敛散
+
+<font color="lime">定理11.5（根植审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n$满足：$\lim\limits_{n\rightarrow\infty}\sqrt[n]{u_n}=\rho$$\quad 0\le\rho\le+\infty$
+
+（1）当$\rho&lt;1$时，级数收敛；
+
+（2）当$\rho&gt;1$或$\rho=+\infty$时，级数发散
+
+（3）当$\rho = 1$时，根植审敛法失效
+
+![image-20230408154838975](../images/image-20230408154838975.png)
+
+![image-20230408154903909](../images/image-20230408154903909.png)
+
+### <font color="blue">第三节 任意项级数的审敛法</font>
+
+#### <font color="darkred">交错级数</font>
+
+1.定义 
+
+$u_1-u_2+u_3-...+(-1)^{n-1}u_n+...\quad (u_n&gt;0)$
+
+2.定理（交错级数审敛法）
+
+若交错级数满足：
+
+1）$u_n\ge u_{n+1}\quad (n=1,2,...)$
+
+2）$\lim\limits_{n\rightarrow\infty}u_n=0$
+
+则$\sum\limits_{n=1}^{\infty}(-1)^{n-1}u_n$收敛，且其和$S\le u_1$
+
+其余项满足$|r_n|\le u_{n+1}$
+
+### <font color="blue">第四节 幂级数</font>
+
+#### <font color="green">（一）函数项级数的一般概念</font>
+
+函数项级数：$\sum\limits_{n=1}^{\infty}u_n(x)=u_1(x)+u_2(x)+...+u_n(x)+...$
+
+收敛点（发散点）$x_0$：若$\sum\limits_{n=1}^{\infty}u_n(x_0)$收敛（发散）
+
+收敛域（发散域）$U$：收敛点（发散点）的全体。
+
+和函数：$S(x)=\sum\limits_{n=1}^{\infty}u_n(x),\quad x\in U$    收敛域
+
+部分和：$S_n(x)=\sum\limits_{k=1}^{n}u_k(x)$，余项：$r_n(x)=S(x)-S_n(x)$
+
+<font color="red">函数项级数一般通过其和函数来求收敛域</font>
+
+![image-20230420215640073](../images/image-20230420215640073.png)
+
+#### <font color="green">（二）幂级数及其收敛性</font>
+
+##### 1.定义    $(x-x_0)$的幂级数
+
+$\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=a_0+a_1(x-x_0)+a_2(x-x_0)^2+...+a_n(x-x_0)^n+...$
+
+$x$的幂级数
+
+$\sum\limits_{n=0}^{\infty}a_nx^n=a_0+a_1x+a_2x^2+...+a_nx^n+...$
+
+##### 2.幂级数收敛域的结构
+
+==定理11.10（Abel定理）==
+
+（1）当$x=x_0\ne0$时，$\sum\limits_{n=1}^{\infty}a_nx^n$收敛，
+
+则$\sum\limits_{n=0}^{\infty}a_nx^n(|x|&lt;|x_0|)$==绝对收敛==
+
+（2）当$x=x_0$时，$\sum\limits_{n=1}^{\infty}a_nx^n$发散
+
+则$\sum\limits_{n=1}^{\infty}a_nx^n(|x|&gt;|x_0|)$发散
+
+<font color="red">结论</font>：
+
+​    $\sum\limits_{n=0}^{\infty}a_nx^n$的收敛域：以原点为中心的区间。幂级数==收敛与发散的分界点==：$\pm R$
+
+（1）$R=0$时，幂级数仅在$x=0$处收敛。
+
+（2）$R=+\infty$时，幂级数在$(-\infty,+\infty)$收敛
+
+（3）$0&lt;R&lt;+\infty$时，幂级数在$(-R,R)$收敛；在$[-R,R]$外发散；==在$x=\pm R$可能收敛==（发散）。
+
+##### 3.收敛半径$R$的求法
+
+<font color="red">定理11.11</font>
+
+​    设$\sum\limits_{n=1}^{\infty}a_nx^n$且$\lim\limits_{n\rightarrow\infty}|\frac{a_{n+1}}{a_n}|=\rho$ 或 $\lim\limits_{n\rightarrow\infty}\sqrt[n]{|a_n|}=\rho$
+
+收敛半径$R=\begin{cases} \frac1\rho,\quad当0&lt;\rho&lt;+\infty时 \\ +\infty,\quad当\rho=0时 \\ 0,\quad当\rho=+\infty \end{cases}$
+
+<font color="red">结论</font>
+
+$\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径：$R=\lim\limits_{n\rightarrow\infty}|\frac{a_n}{a_{n+1}}|$
+
+<font color="red">**缺项幂级数直接用比值法！**</font>
+
+![image-20230420215807292](../images/image-20230420215807292.png)
+
+#### （三）幂级数的运算与性质
+
+##### 1.幂级数的四则运算性质
+
+设$\sum\limits_{n=1}^{\infty}a_nx^n$及$\sum\limits_{n=1}^{\infty}b_nx^n$收敛半径分别为$R_1,R_2$，令$R=min\{R_1,R_2\}$，则
+
+（1）加减法：$\sum\limits_{n=0}^{\infty}a_nx^n\pm\sum\limits_{n=0}^{\infty}b_nx^n=\sum\limits_{n=1}^{\infty}(a_n\pm b_n)x^n,\quad |x|&lt;R$
+
+（2）乘法：$(\sum\limits_{n=0}^{\infty}a_nx^n)(\sum\limits_{n=0}^{\infty}b_nx^n)=\sum\limits_{n=0}^{\infty}c_nx^n,\quad |x|&lt;R$
+
+&gt; 两幂级数相除所得的幂级数的收敛半径R可能比原两幂级数的收敛半径$R_1,R_2$小的多。
+
+##### 2.幂级数的分析运算性质
+
+性质：若$\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径$R&gt;0$，则其和函数$S(x)$
+
+（1）在收敛域$I$上连续
+
+（2）在收敛区间内可逐项求导，逐项积分
+
+`我感觉学这个级数就是为了学函数展开成幂级数！把一些函数可以求导。`
+
+### <font color="blue">第五节、函数展开成幂级数</font>
+
+#### （一）函数的幂级数展开式
+
+<font color="green">1.函数展开成幂级数</font>
+
+<font color="darkred">定义</font>：若$f(x)=\sum\limits_{n=1}^{\infty}a_n(x-x_0)^n,\quad x\in I\quad (I为区间)$
+
+则称$f(x)$在$I$上可以展开成$(x-x_0)$的幂级数
+</tr></table>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节 常数项级数的基本概念和性质]]></summary></entry><entry><title type="html">Pyqt</title><link href="https://wsttask.github.io/2024/03/23/pyqt.html" rel="alternate" type="text/html" title="Pyqt" /><published>2024-03-23T20:25:04+08:00</published><updated>2024-03-23T20:25:04+08:00</updated><id>https://wsttask.github.io/2024/03/23/pyqt</id><content type="html" xml:base="https://wsttask.github.io/2024/03/23/pyqt.html"><![CDATA[<p>学会使用qtDesigner</p>
+
+<p>学习常见组件的属性</p>
+
+<p>学习窗口的构建</p>
+
+<p>学习如何添加事件</p>
+
+<p><a href="https://blog.csdn.net/m0_57021623/article/details/123459038">PyQt5保姆级教程– 从入门到精通_pyqt5教程-CSDN博客</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[学会使用qtDesigner]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-23T20:12:24+08:00</published><updated>2024-03-23T20:12:24+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
@@ -106,7 +351,17 @@
 
 <h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
 
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-23T15:59:56+08:00</published><updated>2024-03-23T15:59:56+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="knowledge">knowledge</h1>
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">达布中值定理</title><link href="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="达布中值定理" /><published>2024-03-23T20:12:05+08:00</published><updated>2024-03-23T20:12:05+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="达布中值定理">达布中值定理</h3>
+
+<blockquote>
+  <p>设 $y=f(x)$ 在 $(A,B)$ 区间可导，且 $[a,b]$ 包含于 $(A,B)$ ，$f’(a)&lt;f’(b)$ ，则对于任意给定的 $\eta \quad [f’(a)&lt;\eta&lt;f’(b)]$ ，都存在一点 $\xi\in(a,b)$ ，使得 $f’(\xi)=\eta$</p>
+</blockquote>
+
+<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
+
+<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点。</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/486060686?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1745752610869686273&amp;utm_source=wechat_session">导数的介值定理(达布中值定理)的证明及应用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[达布中值定理]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-23T15:59:56+08:00</published><updated>2024-03-23T15:59:56+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="knowledge">knowledge</h1>
 
 <h3 id="giteeweb"><a href="https://gitee.com/wsttask/web/tree/master">gitee.web</a></h3>
 
@@ -1187,22 +1442,4 @@ $\lim_{n\to\infty}\left(\sqrt{n+2\sqrt{n}}-\sqrt{n-\sqrt{n}}\right.)$</p>
 
 <p><a href="#last">点此到达最后一题</a></p>
 
-<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry><entry><title type="html">求极限方法总结</title><link href="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%90%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.html" rel="alternate" type="text/html" title="求极限方法总结" /><published>2024-03-22T19:27:47+08:00</published><updated>2024-03-22T19:27:47+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%90%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%90%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.html"><![CDATA[<p>洛必达</p>
-
-<p>泰勒公式展开</p>
-
-<p>极限运算性质</p>
-
-<h3 id="恒等变型">恒等变型</h3>
-
-<p>$cos^2x-1=(cos\,x+1)(cos\,x-1)$</p>
-
-<blockquote>
-  <p>随后使用等价无穷小</p>
-</blockquote>
-
-<p>$e^x-1$</p>
-
-<blockquote>
-  <p>加一减一化成这样，随后使用等价无穷小</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[洛必达]]></summary></entry><entry><title type="html">自然拼读</title><link href="https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB.html" rel="alternate" type="text/html" title="自然拼读" /><published>2024-03-22T12:49:47+08:00</published><updated>2024-03-22T12:49:47+08:00</updated><id>https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB</id><content type="html" xml:base="https://wsttask.github.io/2024/03/22/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB.html"><![CDATA[<p><a href="https://www.bilibili.com/read/cv7989082/#:~:text=q 一般和u一起发音 [ kw ]。 x 在单词中间或结尾时发 [,y 在结尾，单词只有一个音节时 y 发长 [ ai ] 音，my、bye。">英语单词中辅音字母发音、元音字母发音、组合辅音发音、组合元音发音、重读规则 - 哔哩哔哩 (bilibili.com)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[英语单词中辅音字母发音、元音字母发音、组合辅音发音、组合元音发音、重读规则 - 哔哩哔哩 (bilibili.com)]]></summary></entry></feed>
+<p><a id="lastP">最后一题答案</a></p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[点此到达最后一题]]></summary></entry></feed>
