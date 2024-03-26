@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-26T16:55:01+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-26T16:44:33+08:00</published><updated>2024-03-26T16:44:33+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h3 id="导数定义">导数定义</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-26T16:56:22+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-26T16:56:14+08:00</published><updated>2024-03-26T16:56:14+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h3 id="导数定义">导数定义</h3>
 
 <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
 
@@ -8,17 +8,13 @@
 
 <p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
 
-<table cellspacing="10">
-    <tr>
-        &lt;td bgcolor=#7DDA58&gt;保两侧：改变量Δx要保证从0的左右两侧趋于0&lt;/td&gt;
-    </tr>
-    <tr>
-    	&lt;td bgcolor=#7DDA58&gt;不能跨&lt;/td&gt;
-    </tr>
-    <tr>
-    	&lt;td bgcolor=#7DDA58&gt;阶相同&lt;/td&gt;
-    </tr>
-</table>
+<blockquote>
+  <p>保两侧：改变量Δx要保证从0的左右两侧趋于0</p>
+
+  <p>不能跨</p>
+
+  <p>阶相同</p>
+</blockquote>
 
 <h3 id="微分定义">微分定义</h3>
 
@@ -82,7 +78,7 @@
 
 <font color="red">反例：</font>
 
-<p>$f(x)=x+1,\quad x\ne0 \ f(x)=0,\quad x=0$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[导数定义]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-26T16:43:03+08:00</published><updated>2024-03-26T16:43:03+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<p>$f(x)=x+1,\quad x\ne0 \ f(x)=0,\quad x=0$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[导数定义]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-26T16:54:58+08:00</published><updated>2024-03-26T16:54:58+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
 
 <h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
 
