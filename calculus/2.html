@@ -54,12 +54,10 @@
                 」
             </div>
             <div class="char-counter">
-              2024-03-26 894字
+              2024-03-26 1402字
             </div>
             <div class="content">
-                <h2 id="第一节基本概念">第一节、基本概念</h2>
-
-<h3 id="导数定义">导数定义</h3>
+                <h3 id="导数定义">导数定义</h3>
 
 <p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
 
@@ -113,6 +111,37 @@
 
 <p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
 
+<h2 id="考察概念的题目">考察概念的题目</h2>
+
+<p>设 $\displaystyle\lim_{h\to0}\frac{f(\cos h)-f(1)}{h^2}=-2$ ，讨论 $f’(1)$ 是否存在？</p>
+
+<p><br /></p>
+
+<p>不一定。</p>
+
+<p>题目中的条件可推出</p>
+
+<p>$\displaystyle\lim_{h\to0}\frac{f[1+(\cos h-1)]-f(1)}{\cos h-1}\cdot \frac{\cos h-1}{h^2}=-2$</p>
+
+<p>只能保证 $f’_{-1}(1)$ 存在</p>
+
+<hr />
+
+<p>设 $\displaystyle\lim_{h\to0}\frac{f(2h)-f(h)}{h}$ 存在，$f(0)=0$，讨论 $f(x)$ 在 $x=0$ 处是否可导？</p>
+
+<p><br /></p>
+
+<p>不一定</p>
+
+<p>题目中条件可推出</p>
+
+<p>$\displaystyle\lim_{h\to0}\quad[\quad\frac{f(2h)-f(0)}{2h}\cdot 2+\frac{f(h)-f(0)}{h}\cdot(-1)\quad]$存在</p>
+
+<p>但是$\lim [f(x)+g(x)]$ 极限存在并不能推出 $\lim f(x)$ 和 $\lim g(x)$ 存在</p>
+
+<font color="red">反例：</font>
+
+<p>$f(x)=\left{ \begin{matrix} x+1,\quad x\ne0 \0,\quad x=0 \end{matrix} \right.$</p>
 
             </div>
         </div>
