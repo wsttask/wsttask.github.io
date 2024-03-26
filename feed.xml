@@ -1,4 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-26T16:43:07+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第三章、一元函数微分学的应用</title><link href="https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="第三章、一元函数微分学的应用" /><published>2024-03-26T16:43:00+08:00</published><updated>2024-03-26T16:43:00+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="渐近线">渐近线</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-26T16:55:01+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-26T16:44:33+08:00</published><updated>2024-03-26T16:44:33+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h3 id="导数定义">导数定义</h3>
+
+<p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
+
+<p>$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
+
+<p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
+
+<p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
+
+<table cellspacing="10">
+    <tr>
+        &lt;td bgcolor=#7DDA58&gt;保两侧：改变量Δx要保证从0的左右两侧趋于0&lt;/td&gt;
+    </tr>
+    <tr>
+    	&lt;td bgcolor=#7DDA58&gt;不能跨&lt;/td&gt;
+    </tr>
+    <tr>
+    	&lt;td bgcolor=#7DDA58&gt;阶相同&lt;/td&gt;
+    </tr>
+</table>
+
+<h3 id="微分定义">微分定义</h3>
+
+<p>若$\Delta y=A\Delta x+o(\Delta x)$，称$y=f(x)$在$x=x_0$处可微，其中$A\Delta x$称为$y=f(x)$在$x=x_0$处的微分，记为 $dy\mid_{x=x_0}=A\Delta x$ 或 $dy\mid_{x=x_0}=Adx$</p>
+
+<blockquote>
+  <p>其中的$o(\Delta x)$为高阶无穷小</p>
+</blockquote>
+
+<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
+
+<blockquote>
+  <p>充分不必要条件：导函数是连续函数</p>
+</blockquote>
+
+<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
+
+<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>
+
+<h3 id="连续可导">连续可导</h3>
+
+<p>$f(x)=x^2\sin(\frac1x)\quad x\ne 0$</p>
+
+<p>$f(x)=0\quad x=0$</p>
+
+<iframe src="https://www.desmos.com/calculator/yg9yjjsbun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+
+<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续（极限不存在），但是f’(x)在x=0时存在。即可导，但不连续可导</p>
+
+<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
+
+<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
+
+<h2 id="考察概念的题目">考察概念的题目</h2>
+
+<p>设 $\displaystyle\lim_{h\to0}\frac{f(\cos h)-f(1)}{h^2}=-2$ ，讨论 $f’(1)$ 是否存在？</p>
+
+<p><br /></p>
+
+<p>不一定。</p>
+
+<p>题目中的条件可推出</p>
+
+<p>$\displaystyle\lim_{h\to0}\frac{f[1+(\cos h-1)]-f(1)}{\cos h-1}\cdot \frac{\cos h-1}{h^2}=-2$</p>
+
+<p>只能保证 $f’_{-1}(1)$ 存在</p>
+
+<hr />
+
+<p>设 $\displaystyle\lim_{h\to0}\frac{f(2h)-f(h)}{h}$ 存在，$f(0)=0$，讨论 $f(x)$ 在 $x=0$ 处是否可导？</p>
+
+<p><br /></p>
+
+<p>不一定</p>
+
+<p>题目中条件可推出</p>
+
+<p>$\displaystyle\lim_{h\to0}\quad[\quad\frac{f(2h)-f(0)}{2h}\cdot 2+\frac{f(h)-f(0)}{h}\cdot(-1)\quad]$存在</p>
+
+<p>但是$\lim [f(x)+g(x)]$ 极限存在并不能推出 $\lim f(x)$ 和 $\lim g(x)$ 存在</p>
+
+<font color="red">反例：</font>
+
+<p>$f(x)=x+1,\quad x\ne0 \ f(x)=0,\quad x=0$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[导数定义]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-26T16:43:03+08:00</published><updated>2024-03-26T16:43:03+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+
+<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
+
+<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
+
+<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
+
+<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
+
+<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
+
+<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
+
+<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
+
+<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
+
+<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
+
+<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
+
+<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
+
+<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
+
+<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
+
+<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
+
+<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
+
+<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
+
+<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
+
+<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
+
+<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
+
+<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
+
+<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
+
+<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">第三章、一元函数微分学的应用</title><link href="https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="第三章、一元函数微分学的应用" /><published>2024-03-26T16:43:00+08:00</published><updated>2024-03-26T16:43:00+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="渐近线">渐近线</h3>
 
 <h5 id="水平渐近线">水平渐近线</h5>
 
@@ -191,135 +319,7 @@
 
 <p>$A_n=\displaystyle\frac{\displaystyle\sum_{i=1}^{n}x_i}{n}=\frac{x_1+x_2+···+x_n}{n}$</p>
 
-<p>$Q_n=\sqrt{\frac{\displaystyle\sum_{i=1}^{n}x^2_i}{\displaystyle n}}=\sqrt{\displaystyle\frac{x_1^2+x_2^2+···+x_n^2}{\displaystyle n}}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-26T16:06:38+08:00</published><updated>2024-03-26T16:06:38+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h3 id="导数定义">导数定义</h3>
-
-<p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
-
-<p>$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
-
-<p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
-
-<p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
-
-<table cellspacing="10">
-    <tr>
-        &lt;td bgcolor=#7DDA58&gt;保两侧：改变量Δx要保证从0的左右两侧趋于0&lt;/td&gt;
-    </tr>
-    <tr>
-    	&lt;td bgcolor=#7DDA58&gt;不能跨&lt;/td&gt;
-    </tr>
-    <tr>
-    	&lt;td bgcolor=#7DDA58&gt;阶相同&lt;/td&gt;
-    </tr>
-</table>
-
-<h3 id="微分定义">微分定义</h3>
-
-<p>若$\Delta y=A\Delta x+o(\Delta x)$，称$y=f(x)$在$x=x_0$处可微，其中$A\Delta x$称为$y=f(x)$在$x=x_0$处的微分，记为 $dy\mid_{x=x_0}=A\Delta x$ 或 $dy\mid_{x=x_0}=Adx$</p>
-
-<blockquote>
-  <p>其中的$o(\Delta x)$为高阶无穷小</p>
-</blockquote>
-
-<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
-
-<blockquote>
-  <p>充分不必要条件：导函数是连续函数</p>
-</blockquote>
-
-<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
-
-<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>
-
-<h3 id="连续可导">连续可导</h3>
-
-<p>$f(x)=x^2\sin(\frac1x)\quad x\ne 0$</p>
-
-<p>$f(x)=0\quad x=0$</p>
-
-<iframe src="https://www.desmos.com/calculator/yg9yjjsbun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-
-<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续（极限不存在），但是f’(x)在x=0时存在。即可导，但不连续可导</p>
-
-<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
-
-<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
-
-<h2 id="考察概念的题目">考察概念的题目</h2>
-
-<p>设 $\displaystyle\lim_{h\to0}\frac{f(\cos h)-f(1)}{h^2}=-2$ ，讨论 $f’(1)$ 是否存在？</p>
-
-<p><br /></p>
-
-<p>不一定。</p>
-
-<p>题目中的条件可推出</p>
-
-<p>$\displaystyle\lim_{h\to0}\frac{f[1+(\cos h-1)]-f(1)}{\cos h-1}\cdot \frac{\cos h-1}{h^2}=-2$</p>
-
-<p>只能保证 $f’_{-1}(1)$ 存在</p>
-
-<hr />
-
-<p>设 $\displaystyle\lim_{h\to0}\frac{f(2h)-f(h)}{h}$ 存在，$f(0)=0$，讨论 $f(x)$ 在 $x=0$ 处是否可导？</p>
-
-<p><br /></p>
-
-<p>不一定</p>
-
-<p>题目中条件可推出</p>
-
-<p>$\displaystyle\lim_{h\to0}\quad[\quad\frac{f(2h)-f(0)}{2h}\cdot 2+\frac{f(h)-f(0)}{h}\cdot(-1)\quad]$存在</p>
-
-<p>但是$\lim [f(x)+g(x)]$ 极限存在并不能推出 $\lim f(x)$ 和 $\lim g(x)$ 存在</p>
-
-<font color="red">反例：</font>
-
-<p>$f(x)=\left{ \begin{matrix} x+1,\quad x\ne0 \0,\quad x=0 \end{matrix} \right.$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[导数定义]]></summary></entry><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-26T16:06:25+08:00</published><updated>2024-03-26T16:06:25+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
-
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">级数</title><link href="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html" rel="alternate" type="text/html" title="级数" /><published>2024-03-26T15:21:25+08:00</published><updated>2024-03-26T15:21:25+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html"><![CDATA[<h3 id="第一节-常数项级数的基本概念和性质"><font color="blue">第一节 常数项级数的基本概念和性质</font></h3>
+<p>$Q_n=\sqrt{\frac{\displaystyle\sum_{i=1}^{n}x^2_i}{\displaystyle n}}=\sqrt{\displaystyle\frac{x_1^2+x_2^2+···+x_n^2}{\displaystyle n}}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">级数</title><link href="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html" rel="alternate" type="text/html" title="级数" /><published>2024-03-26T15:21:25+08:00</published><updated>2024-03-26T15:21:25+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html"><![CDATA[<h3 id="第一节-常数项级数的基本概念和性质"><font color="blue">第一节 常数项级数的基本概念和性质</font></h3>
 
 <h4 id="一常数项级数的概念">（一）常数项级数的概念</h4>
 
