@@ -1,811 +1,265 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-26T20:27:15+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">word</title><link href="https://wsttask.github.io/word" rel="alternate" type="text/html" title="word" /><published>2024-03-26T16:56:19+08:00</published><updated>2024-03-26T16:56:19+08:00</updated><id>https://wsttask.github.io/word</id><content type="html" xml:base="https://wsttask.github.io/word"><![CDATA[<h1 id="tutorial"><a href="https://m.youdao.com/result?word=tutorial&amp;lang=en">tutorial</a></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wsttask.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wsttask.github.io/" rel="alternate" type="text/html" /><updated>2024-03-27T16:03:10+08:00</updated><id>https://wsttask.github.io/feed.xml</id><entry><title type="html">字符串类型</title><link href="https://wsttask.github.io/2024/03/27/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B.html" rel="alternate" type="text/html" title="字符串类型" /><published>2024-03-27T15:37:41+08:00</published><updated>2024-03-27T15:37:41+08:00</updated><id>https://wsttask.github.io/2024/03/27/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B</id><content type="html" xml:base="https://wsttask.github.io/2024/03/27/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B.html"><![CDATA[<h3 id="1--字符串类型">1  字符串类型</h3>
 
-<h1 id="widget"><a href="https://m.youdao.com/result?word=widget&amp;lang=en">widget</a></h1>
-
-<h1 id="reason"><a href="https://m.youdao.com/result?word=reason&amp;lang=en">reason</a></h1>
-
-<h1 id="explore"><a href="https://m.youdao.com/result?word=explore&amp;lang=en">explore</a></h1>
-
-<h1 id="handle"><a href="https://m.youdao.com/result?word=handle&amp;lang=en">handle</a></h1>
-
-<h1 id="problem"><a href="https://m.youdao.com/result?word=problem&amp;lang=en">problem</a></h1>
-
-<h1 id="race"><a href="https://m.youdao.com/result?word=race&amp;lang=en">race</a></h1>
-
-<h1 id="fail"><a href="https://m.youdao.com/result?word=fail&amp;lang=en">fail</a></h1>
-
-<h1 id="fell"><a href="https://m.youdao.com/result?word=fell&amp;lang=en">fell</a></h1>
-
-<h1 id="curious"><a href="https://m.youdao.com/result?word=curious&amp;lang=en">curious</a></h1>
-
-<h1 id="economic"><a href="https://m.youdao.com/result?word=economic&amp;lang=en">economic</a></h1>
-
-<h1 id="application"><a href="https://m.youdao.com/result?word=application&amp;lang=en">application</a></h1>
-
-<h1 id="program"><a href="https://m.youdao.com/result?word=program&amp;lang=en">program</a></h1>
-
-<h1 id="interpreter"><a href="https://m.youdao.com/result?word=interpreter&amp;lang=en">interpreter</a></h1>
-
-<h1 id="school"><a href="https://m.youdao.com/result?word=school&amp;lang=en">school</a></h1>
-
-<h1 id="configuration"><a href="https://m.youdao.com/result?word=configuration&amp;lang=en">configuration</a></h1>
-
-<h1 id="click"><a href="https://m.youdao.com/result?word=click&amp;lang=en">click</a></h1>
-
-<h1 id="contact"><a href="https://m.youdao.com/result?word=contact&amp;lang=en">contact</a></h1>
-
-<h1 id="studio"><a href="https://m.youdao.com/result?word=studio&amp;lang=en">studio</a></h1>
-
-<h1 id="signal"><a href="https://m.youdao.com/result?word=signal&amp;lang=en">signal</a></h1>
-
-<h1 id="experience"><a href="https://m.youdao.com/result?word=experience&amp;lang=en">experience</a></h1>
-
-<h1 id="realize"><a href="https://m.youdao.com/result?word=realize&amp;lang=en">realize</a></h1>
-
-<h1 id="reality"><a href="https://m.youdao.com/result?word=reality&amp;lang=en">reality</a></h1>]]></content><author><name></name></author><category term="A_word" /><summary type="html"><![CDATA[tutorial]]></summary></entry><entry><title type="html">第二章、导数与微分</title><link href="https://wsttask.github.io/calculus/2" rel="alternate" type="text/html" title="第二章、导数与微分" /><published>2024-03-26T16:56:14+08:00</published><updated>2024-03-26T16:56:14+08:00</updated><id>https://wsttask.github.io/calculus/2%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86</id><content type="html" xml:base="https://wsttask.github.io/calculus/2"><![CDATA[<h3 id="导数定义">导数定义</h3>
-
-<p>设函数$y=f(x) \quad (x\in D)$，其中$x_0 \in D$，且$x_0+\Delta x \in D$，称</p>
-
-<p>$\Delta y=f(x_0+\Delta x)-f(x_0)$</p>
-
-<p>为函数 $y=f(x)$，在$x=x_0$ 处的增量</p>
-
-<p>若$\displaystyle\lim_{\Delta x \rightarrow 0}\frac{\Delta y}{\Delta x}$ 存在，则函数 $y=f(x)$ 在 $x=x_0$ 处可导，极限值成为函数 $y=f(x)$ 在$x=x_0$ 时的导数，记为 $f’(x_0)$ 或 $\frac{dy}{dx}\vert_{x=x_0}$</p>
-
-<blockquote>
-  <p>保两侧：改变量Δx要保证从0的左右两侧趋于0</p>
-
-  <p>不能跨</p>
-
-  <p>阶相同</p>
-</blockquote>
-
-<h3 id="微分定义">微分定义</h3>
-
-<p>若$\Delta y=A\Delta x+o(\Delta x)$，称$y=f(x)$在$x=x_0$处可微，其中$A\Delta x$称为$y=f(x)$在$x=x_0$处的微分，记为 $dy\mid_{x=x_0}=A\Delta x$ 或 $dy\mid_{x=x_0}=Adx$</p>
-
-<blockquote>
-  <p>其中的$o(\Delta x)$为高阶无穷小</p>
-</blockquote>
-
-<h3 id="导数存在原函数的条件">导数存在原函数的条件</h3>
-
-<blockquote>
-  <p>充分不必要条件：导函数是连续函数</p>
-</blockquote>
-
-<p>根据导数的介值性（达布中值定理），可得如果导函数具有第一类间断点或无穷间断点，其必定没有原函数</p>
-
-<p>如果导函数具有震荡间断点，不一定没有原函数？是不一定还是一定？怎么证明</p>
-
-<h3 id="连续可导">连续可导</h3>
-
-<p>$f(x)=x^2\sin(\frac1x)\quad x\ne 0$</p>
-
-<p>$f(x)=0\quad x=0$</p>
-
-<iframe src="https://www.desmos.com/calculator/yg9yjjsbun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-
-<p>注意f(x)原函数连续，但是f’(x)在x=0时是震荡间断点，f’(x)在x=0时不连续（极限不存在），但是f’(x)在x=0时存在。即可导，但不连续可导</p>
-
-<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
-
-<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点</p>
-
-<h2 id="考察概念的题目">考察概念的题目</h2>
-
-<p>设 $\displaystyle\lim_{h\to0}\frac{f(\cos h)-f(1)}{h^2}=-2$ ，讨论 $f’(1)$ 是否存在？</p>
-
-<p><br /></p>
-
-<p>不一定。</p>
-
-<p>题目中的条件可推出</p>
-
-<p>$\displaystyle\lim_{h\to0}\frac{f[1+(\cos h-1)]-f(1)}{\cos h-1}\cdot \frac{\cos h-1}{h^2}=-2$</p>
-
-<p>只能保证 $f’_{-1}(1)$ 存在</p>
-
-<hr />
-
-<p>设 $\displaystyle\lim_{h\to0}\frac{f(2h)-f(h)}{h}$ 存在，$f(0)=0$，讨论 $f(x)$ 在 $x=0$ 处是否可导？</p>
-
-<p><br /></p>
-
-<p>不一定</p>
-
-<p>题目中条件可推出</p>
-
-<p>$\displaystyle\lim_{h\to0}\quad[\quad\frac{f(2h)-f(0)}{2h}\cdot 2+\frac{f(h)-f(0)}{h}\cdot(-1)\quad]$存在</p>
-
-<p>但是$\lim [f(x)+g(x)]$ 极限存在并不能推出 $\lim f(x)$ 和 $\lim g(x)$ 存在</p>
-
-<font color="red">反例：</font>
-
-<p>$f(x)=x+1,\quad x\ne0 \ f(x)=0,\quad x=0$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[导数定义]]></summary></entry><entry><title type="html">第三章、一元函数微分学的应用</title><link href="https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html" rel="alternate" type="text/html" title="第三章、一元函数微分学的应用" /><published>2024-03-26T16:43:00+08:00</published><updated>2024-03-26T16:43:00+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/3%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html"><![CDATA[<h3 id="渐近线">渐近线</h3>
-
-<h5 id="水平渐近线">水平渐近线</h5>
-
-<p>若$\displaystyle\lim_{x\to\infty}f(x)=A$ ，称 $y=A$ 为 $L:y=f(x)$ 的水平渐近线。</p>
-
-<h5 id="铅直渐近线">铅直渐近线</h5>
-
-<p>若 $\displaystyle\lim_{x\to a}f(x)=\infty$ 或 $f(a-0)=\infty$ 或 $f(a+0)=\infty$ ，称 $x=a$ 为曲线 $y=f(x)$ 的铅直渐近线。</p>
-
-<h5 id="斜渐近线">斜渐近线</h5>
-
-<p>若 $\displaystyle\lim_{x\to\infty}\frac{f(x)}{x}=a\,(a\ne0,a\ne\infty)$，$\displaystyle\lim_{x\to\infty}[f(x)-ax]=b$，称 $y=ax+b$ 为曲线 $y=f(x)$ 的斜渐近线</p>
-
-<table>
-    <tr>
-    	&lt;td bgcolor=#7DDA58&gt;铅直渐近线只存在于间断点&lt;/td&gt;
-    </tr>
-</table>
-
-<table>
-    <tr>
-    	&lt;td bgcolor=#7DDA58&gt;水平渐近线只存在于无穷点&lt;/td&gt;
-    </tr>
-</table>
-
-<h3 id="泰勒中值定理的性质">泰勒中值定理的性质</h3>
-
-<font color="red">**泰勒中值定理是等式！**</font>
+<h4 id="1字符串定义">（1）字符串定义</h4>
 
 <ul>
-  <li>因此可以得出等价无穷小是可以进行代换的</li>
+  <li><strong>字符串</strong>：由0个或多个字符组成的有序字符序列，由一对单引号(‘ ‘)或一对双引号(“ “)表示，可对字符进行索引，用序号进行访问。</li>
+  <li><strong>表示方法</strong>：由一对单引号或双引号表示，仅表示单行字符串；由一对三单引号或三双引号表示，可表示多行字符串。</li>
 </ul>
 
-<p>比如 $\sqrt{1-x^2}-1 \sim -\frac{1}{2}x^2$</p>
-
-<p>但是要注意如果是代换 $x+1$ 这种两项的，一定要把后面的展开也带入，有可能前面的低次项的系数会变</p>
+<h4 id="2字符串的索引">（2）字符串的索引</h4>
 
 <ul>
-  <li>也可以先微分再积分</li>
+  <li>字符串的每个字符都是一个字符串类型</li>
 </ul>
 
-<p>比如 $\int_{0}^{x^2}ln(1+t^2)dt \sim \frac13x^6$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">str</span> <span class="o">=</span> <span class="sh">'</span><span class="s">abcdefghijklmnop</span><span class="sh">'</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># 编号是从0开始的
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># -1是字符串的最后一个，len(str)-1也是最后一个
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="o">-</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)])</span> <span class="c1"># 0是第一个，-len(str)也是第一个
+</span></code></pre></div></div>
 
-<p>等式嘛，怎么样都可以，只是注意皮亚诺型余项</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[渐近线]]></summary></entry><entry><title type="html">常用公式</title><link href="https://wsttask.github.io/calculus/formula" rel="alternate" type="text/html" title="常用公式" /><published>2024-03-26T16:25:23+08:00</published><updated>2024-03-26T16:25:23+08:00</updated><id>https://wsttask.github.io/calculus/%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/formula"><![CDATA[<h3 id="常用等价无穷小">常用等价无穷小</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python310</span>\<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">Desktop</span>\<span class="n">hyDM</span>\<span class="n">test</span><span class="p">.</span><span class="n">py</span> 
+<span class="mi">16</span>
+<span class="n">b</span>
+<span class="n">p</span>
+<span class="n">p</span>
+<span class="n">a</span>
+<span class="n">a</span>
 
-<h4 id="当-x-rightarrow-0-时"><font color="red">当 $x \rightarrow 0$ 时</font></h4>
+<span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="nb">exit</span> <span class="n">code</span> <span class="mi">0</span>
+</code></pre></div></div>
 
-<p>$sin\,x \sim x$</p>
+<h4 id="3字符串的使用">（3）字符串的使用</h4>
 
-<p>$tan\,x \sim x$</p>
+<ul>
+  <li>使用[ ] 获取字符串中一个或多个字符。</li>
+  <li>
+    <p><strong>字符串索引</strong>：s[N] 通过序号获取单个字符。</p>
+  </li>
+  <li><strong>字符串切片</strong>：s[M:N] 获取M到N(不含)子串，使用[M: N :K]根据步长对字符串切片，使用[::-1]对字符串进行逆序。其中，M缺失表示至开头，N缺失表示至结尾。</li>
+</ul>
 
-<p>$arcsin\,x \sim x$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">str</span> <span class="o">=</span> <span class="sh">'</span><span class="s">abcdefghijklmnop</span><span class="sh">'</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span> <span class="c1"># 表示取1-3 索引的字符
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="c1"># 表示取1-\infty 索引的字符
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># 表示取0-4索引的字符
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># 从1取到10，每隔3取一个，最后如果没取到不取
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># 将字符串反向
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">10</span><span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># -1代表反向，从10号索引开始反向取
+</span></code></pre></div></div>
 
-<p>$arctan\,x \sim x$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python310</span>\<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">Desktop</span>\<span class="n">hyDM</span>\<span class="n">test</span><span class="p">.</span><span class="n">py</span> 
+<span class="mi">16</span>
+<span class="n">bcd</span>
+<span class="n">bcdefghijklmnop</span>
+<span class="n">abcde</span>
+<span class="n">beh</span>
+<span class="n">kjihgfedcba</span>
 
-<p>$ln(1+x) \sim x$</p>
+<span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="nb">exit</span> <span class="n">code</span> <span class="mi">0</span>
+</code></pre></div></div>
 
-<p>$e^x -1 \sim x$</p>
+<h4 id="4字符串处理函数">（4）字符串处理函数</h4>
 
-<p>$(1+x)^\alpha \sim \alpha x$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 长度，返回字符串x的长度
+</span>
+<span class="nf">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 任意类型x所对应的字符串形式
+</span>
+<span class="nf">hex</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="n">或oct</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 整数x的十六进制或八进制小写形式字符串
+</span>
+<span class="nf">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># x为Unicode编码，返回其对应的字符
+</span>
+<span class="nf">ord</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># x为字符，返回其对应的Unicode编码
+</span></code></pre></div></div>
 
-<p>$log_a(1+x) \sim \frac{x}{ln \,a}$</p>
+<h4 id="5字符串处理方法">（5）字符串处理方法</h4>
 
-<h3 id="不定积分公式">不定积分公式</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">str</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span><span class="n">或str</span><span class="p">.</span><span class="nf">upper</span><span class="p">()</span>	<span class="n">返回字符串的副本</span><span class="err">，</span><span class="n">全部字符小写</span><span class="o">/</span><span class="n">大写</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>	<span class="n">返回一个列表</span><span class="err">，</span><span class="n">由str根据sep被分割的部分组成</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">count</span><span class="p">(</span><span class="n">sub</span><span class="p">)</span>	<span class="n">返回子串sub在str中出现的次数</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span><span class="n">new</span><span class="p">)</span>	<span class="n">返回字符串str的副本</span><span class="err">，</span><span class="n">所有old子串被替换为new</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">center</span><span class="p">(</span><span class="n">width</span><span class="p">[,</span><span class="n">fillchar</span><span class="p">])</span>	<span class="n">字符串str根据宽度width居中</span><span class="err">，</span><span class="n">fillchar可选</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">strip</span><span class="p">(</span><span class="n">chars</span><span class="p">)</span>	<span class="n">从str中去掉在其左侧和右侧chars中列出的字符</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="nb">iter</span><span class="p">)</span>	<span class="n">在iter变量除最后元素外每个元素后增加一个str</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[1 字符串类型]]></summary></entry><entry><title type="html">Ord</title><link href="https://wsttask.github.io/2024/03/27/ord.html" rel="alternate" type="text/html" title="Ord" /><published>2024-03-27T15:35:48+08:00</published><updated>2024-03-27T15:35:48+08:00</updated><id>https://wsttask.github.io/2024/03/27/ord</id><content type="html" xml:base="https://wsttask.github.io/2024/03/27/ord.html"><![CDATA[<h3 id="ordc"><code class="language-plaintext highlighter-rouge">ord(c)</code></h3>
 
-<font color="red">$\int \frac{1}{x} \,dx = ln\mid x \mid +C $</font>
+<p>对表示单个 Unicode 字符的字符串，返回代表它 Unicode 码点的整数。例如 <code class="language-plaintext highlighter-rouge">ord('a')</code> 返回整数 <code class="language-plaintext highlighter-rouge">97</code>， <code class="language-plaintext highlighter-rouge">ord('€')</code> （欧元符号）返回 <code class="language-plaintext highlighter-rouge">8364</code> 。这是 <a href="https://docs.python.org/zh-cn/3/library/functions.html#chr"><code class="language-plaintext highlighter-rouge">chr()</code></a> 的逆函数。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[ord(c)]]></summary></entry><entry><title type="html">Chr</title><link href="https://wsttask.github.io/2024/03/27/chr.html" rel="alternate" type="text/html" title="Chr" /><published>2024-03-27T15:35:04+08:00</published><updated>2024-03-27T15:35:04+08:00</updated><id>https://wsttask.github.io/2024/03/27/chr</id><content type="html" xml:base="https://wsttask.github.io/2024/03/27/chr.html"><![CDATA[<h3 id="chri"><code class="language-plaintext highlighter-rouge">chr(i)</code></h3>
 
-<p><br /></p>
+<p>返回 Unicode 码位为整数 <em>i</em> 的字符的字符串格式。例如，<code class="language-plaintext highlighter-rouge">chr(97)</code> 返回字符串 <code class="language-plaintext highlighter-rouge">'a'</code>，<code class="language-plaintext highlighter-rouge">chr(8364)</code> 返回字符串 <code class="language-plaintext highlighter-rouge">'€'</code>。这是 <a href="https://docs.python.org/zh-cn/3/library/functions.html#ord"><code class="language-plaintext highlighter-rouge">ord()</code></a> 的逆函数。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[chr(i)]]></summary></entry><entry><title type="html">Hex</title><link href="https://wsttask.github.io/2024/03/27/hex.html" rel="alternate" type="text/html" title="Hex" /><published>2024-03-27T15:31:38+08:00</published><updated>2024-03-27T15:31:38+08:00</updated><id>https://wsttask.github.io/2024/03/27/hex</id><content type="html" xml:base="https://wsttask.github.io/2024/03/27/hex.html"><![CDATA[<h3 id="hexx">hex(x)</h3>
 
-<p>$\int tan\,x \,dx = -ln\mid cos\,x \mid +C$</p>
+<p>将<strong>整数</strong>转换为带前缀 “0x” 前缀的<strong>小写十六进制数字符串</strong>。 如果 <em>x</em> 不是一个 Python <code class="language-plaintext highlighter-rouge">int</code>对象，则它必须定义返回一个整数的 <code class="language-plaintext highlighter-rouge">__index__()</code>方法。 下面是一些例子:</p>
 
-<p><br /></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">hex</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="sh">'</span><span class="s">0xff</span><span class="sh">'</span>
+<span class="nf">hex</span><span class="p">(</span><span class="o">-</span><span class="mi">42</span><span class="p">)</span>
+<span class="sh">'</span><span class="s">-0x2a</span><span class="sh">'</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[hex(x)]]></summary></entry><entry><title type="html">Type</title><link href="https://wsttask.github.io/2024/03/27/type.html" rel="alternate" type="text/html" title="Type" /><published>2024-03-27T15:26:08+08:00</published><updated>2024-03-27T15:26:08+08:00</updated><id>https://wsttask.github.io/2024/03/27/type</id><content type="html" xml:base="https://wsttask.github.io/2024/03/27/type.html"><![CDATA[<p><em>class</em> <strong>type</strong>(<em>name</em>, <em>bases</em>, <em>dict</em>, <em>**kwds</em>)</p>
 
-<p>$\int sec\,x \,dx=-ln \mid sec\,x + tan\,x \mid + C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{\sqrt{a^2-x^2}} } = arcsin\,\frac{x}{a} + C $</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{a^2+x^2} }=\frac1{a}arctan\,\frac{x}{a} +C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{x^2-a^2} = \frac{1}{2a}ln \mid \frac{x-a}{x+a} \mid } +C$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{dx}{\sqrt{x^2+a^2}} } = ln(x+\sqrt{x^2+a^2})+C$</p>
-
-<p><br /></p>
-
-<hr />
-
-<p>${\large \int \frac{1}{2\sqrt{x}}dx = \sqrt{x}}$</p>
-
-<p><br /></p>
-
-<p>${\large \int \frac{1}{\sqrt{x}} =  2\sqrt{x}}$</p>
-
-<hr />
-
-<p>${\large \int \frac{1}{x^2}dx = -\frac{1}{x}}$</p>
-
-<p><br /></p>
-
-<p>${\large \int -\frac{1}{x^2}dx = \frac{1}{x}}$</p>
-
-<h3 id="常用泰勒展开">常用泰勒展开</h3>
-
-<p>$(1+x)^\alpha
-= 1+ \displaystyle\sum^{\infty}_{n=1}\frac{\alpha(\alpha-1)···(\alpha-n+1)}{n!}x^n $</p>
-
-<p>$= 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
-
-<p><br /></p>
-
-<p>$tan\,x = x + \frac13x^3+\frac{2}{15}x^5+o(n^5)$</p>
-
-<p><br /></p>
-
-<p>$sin\,x = x-\frac{1}{3!}x^3 +\frac{1}{5!}x^5+o(x^5)$</p>
-
-<p><br /></p>
-
-<p>$cos\,x=1-\frac{1}{2!}x^2 + \frac{1}{4!}x^4 + o(x^4)$</p>
-
-<p><br /></p>
-
-<p>$ln\,(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 + o(x^3)$</p>
-
-<p><br /></p>
-
-<p>$\frac{1}{1-x} = 1 + x + x^2 + x^3 + o(x^3)$</p>
-
-<p><br /></p>
-
-<p>$\frac{1}{1+x} = 1-x+x^2-x^3 + o(x^3)$</p>
-
-<p><br /></p>
-
-<p>$arcsin\,x= x + \frac{1}{6}x^3 + \frac{3}{40}x^5 + \frac{5}{112}x^7 + o(x^7)$</p>
-
-<p><br /></p>
-
-<p>$arccos\,x= \frac{\pi}{2} - arcsin\,x$</p>
-
-<p><br /></p>
-
-<p>$arctan\,x = x - \frac{1}{3}x^3 + \frac{1}{5}x^5 + o(x^5)$</p>
-
-<p><br /></p>
-
-<p>$e^x = 1 + \frac{1}{1!}x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + o(x^3)$</p>
-
-<h3 id="无穷大处的泰勒展开">无穷大处的泰勒展开</h3>
-
-<p>$\displaystyle\lim_{x\to+\infty}\sqrt{x^2+1}=\displaystyle\lim_{x\to+\infty}x\sqrt{1+\frac1{x^2}}$</p>
-
-<h3 id="自然数的前n项的m次方和">自然数的前n项的m次方和</h3>
-
-<p>$1^2 + 2^2 + …+n^2 = \frac16n(n+1)(2n+1)$</p>
+<p>传入一个参数时，返回 <em>object</em> 的类型。 返回值是一个 type 对象，通常与 <a href="https://docs.python.org/zh-cn/3/library/stdtypes.html#instance.__class__"><code class="language-plaintext highlighter-rouge">object.__class__</code></a> 所返回的对象相同。</p>
 
 <blockquote>
-  <p>利用 $(n+1)^3-n^3=3n^2+3n+1$ 推导</p>
+  <p>注意type这个内置函数返回的是type对象，而非字符串</p>
 </blockquote>
 
-<p><br /></p>
+<p>在 Python 中，<code class="language-plaintext highlighter-rouge">type()</code> 函数返回对象的类型对象，而不是对象本身的 <code class="language-plaintext highlighter-rouge">__class__</code> 属性。因此，<code class="language-plaintext highlighter-rouge">type(str)</code> 返回的是表示字符串类型的 <code class="language-plaintext highlighter-rouge">type</code> 对象，而不是字符串对象本身的类型。</p>
 
-<p>$1^3 + 2^3 + … + n^3 = \frac14n^2(n+1)^2$</p>
+<p>可以输出<code class="language-plaintext highlighter-rouge">obj.__class__</code>，结果是一样的</p>]]></content><author><name></name></author><summary type="html"><![CDATA[class type(name, bases, dict, **kwds)]]></summary></entry><entry><title type="html">Print</title><link href="https://wsttask.github.io/2024/03/27/print.html" rel="alternate" type="text/html" title="Print" /><published>2024-03-27T15:14:02+08:00</published><updated>2024-03-27T15:14:02+08:00</updated><id>https://wsttask.github.io/2024/03/27/print</id><content type="html" xml:base="https://wsttask.github.io/2024/03/27/print.html"><![CDATA[<h1 id="print">print</h1>
 
-<h2 id="其他公式">其他公式</h2>
+<p>函数原型：</p>
 
-<p>$arcsin\,x+arccos\,x=\frac{\pi}{2}$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sh">'</span><span class="se">\n</span><span class="sh">'</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
 
-<p>$arctan\,x+arctan\,\frac1x=\frac{\pi}{2}\quad ,x&gt;0$</p>
+<span class="nf">print</span><span class="p">(</span><span class="o">*</span><span class="n">objects</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sh">'</span><span class="se">\n</span><span class="sh">'</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">sys</span><span class="p">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">objects</span> <span class="o">--</span> <span class="n">复数</span><span class="err">，</span><span class="n">表示可以一次输出多个对象</span><span class="err">。</span><span class="n">输出多个对象时</span><span class="err">，</span><span class="n">需要用</span> <span class="p">,</span> <span class="n">分隔</span><span class="err">。</span>
+<span class="n">sep</span> <span class="o">--</span> <span class="n">用来间隔多个对象</span><span class="err">，</span><span class="n">默认值是一个空格</span><span class="err">。</span>
+<span class="n">end</span> <span class="o">--</span> <span class="n">用来设定以什么结尾</span><span class="err">。</span><span class="n">默认值是换行符</span> \<span class="n">n</span><span class="err">，</span><span class="n">我们可以换成其他字符串</span><span class="err">。</span>
+<span class="nb">file</span> <span class="o">--</span> <span class="n">要写入的文件对象</span><span class="err">。</span>
+<span class="n">flush</span> <span class="o">--</span> <span class="n">输出是否被缓存通常决定于</span> <span class="nb">file</span><span class="err">，</span><span class="n">但如果</span> <span class="n">flush</span> <span class="n">关键字参数为</span> <span class="bp">True</span><span class="err">，</span><span class="n">流会被强制刷新</span><span class="err">。</span>
+<span class="n">正常情况下print到test</span><span class="p">.</span><span class="n">txt中的内容先从到内存中</span><span class="err">，</span><span class="n">当文件对象关闭时才把内容输出到</span>
+<span class="n">test</span><span class="p">.</span><span class="n">txt</span> <span class="n">中</span><span class="err">，</span><span class="n">当flush</span><span class="o">=</span><span class="n">True时它会立即把内容刷新存到</span> <span class="n">test</span><span class="p">.</span><span class="n">txt</span> <span class="n">中</span>
+</code></pre></div></div>
 
-<p>$arctan\,x+arctan\,\frac1x=-\frac{\pi}{2}\quad ,x&lt;0$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">www</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">runoob</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">com</span><span class="sh">"</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="sh">"</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
 
-<h3 id="均值不等式">均值不等式</h3>
+<span class="o">&gt;</span>
+<span class="n">www</span><span class="p">.</span><span class="n">runoob</span><span class="p">.</span><span class="n">com</span>
 
-<p>调和平均数，几何平均数，算术平均数，平方平均数。</p>
+<span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="nb">exit</span> <span class="n">code</span> <span class="mi">0</span>
 
-<p>$H_n\leq G_n\leq A_n\leq Q_n$</p>
+<span class="c1"># 注意这里的 sep/sequence 是指的是不同的对象之间用.隔开
+</span></code></pre></div></div>
 
-<p>$H_n=\displaystyle\frac{n}{\displaystyle\sum_{i=1}^{n}\frac{1}{x_i}}=\frac{n}{\displaystyle\frac1{x_1}+\frac{1}{x_2}+···+\frac{1}{x_n}}$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="sh">'</span><span class="s">abc</span><span class="sh">'</span><span class="p">;</span><span class="n">b</span> <span class="o">=</span> <span class="sh">'</span><span class="s">bcd</span><span class="sh">'</span><span class="p">;</span><span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span><span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
 
-<p>$G_n=\sqrt[n]{\displaystyle\prod_{i=1}^{n}x_i}=\sqrt[n]{\displaystyle x_1x_2···x_n}$</p>
+<span class="o">&gt;</span>
+<span class="n">abc</span> <span class="n">bcd</span>
+<span class="n">abcbcd</span>
 
-<p>$A_n=\displaystyle\frac{\displaystyle\sum_{i=1}^{n}x_i}{n}=\frac{x_1+x_2+···+x_n}{n}$</p>
+<span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="nb">exit</span> <span class="n">code</span> <span class="mi">0</span>
 
-<p>$Q_n=\sqrt{\frac{\displaystyle\sum_{i=1}^{n}x^2_i}{\displaystyle n}}=\sqrt{\displaystyle\frac{x_1^2+x_2^2+···+x_n^2}{\displaystyle n}}$</p>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[常用等价无穷小]]></summary></entry><entry><title type="html">级数</title><link href="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html" rel="alternate" type="text/html" title="级数" /><published>2024-03-26T15:21:25+08:00</published><updated>2024-03-26T15:21:25+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/26/11%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html"><![CDATA[<h3 id="第一节-常数项级数的基本概念和性质"><font color="blue">第一节 常数项级数的基本概念和性质</font></h3>
+<span class="c1"># 注意在print函数中可以用+号将多个对象连接起来
+</span></code></pre></div></div>
 
-<h4 id="一常数项级数的概念">（一）常数项级数的概念</h4>
+<h3 id="python-中的--号">python 中的 + 号</h3>
 
-<h5 id="1定义"><font color="ForestGreen">1.定义</font></h5>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mf">1.</span><span class="n">对于int类型</span><span class="err">，“</span><span class="o">+</span><span class="err">”</span><span class="n">表示两个数相加</span>
+<span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="n">结果是5</span>
 
-<p>给定数列$u_1,u_2,u_3,…,u_n,…$</p>
 
-<font color="darkred">无穷级数</font>
-<p>：$\sum\limits_{n=1}^\infty u_n=u_1+u_2+u_3+…+u_n+…$</p>
+<span class="mf">2.</span><span class="n">对于str类型</span><span class="err">，“</span><span class="o">+</span><span class="err">”</span><span class="n">表示字符串的连接</span>
 
-<font color="darkred">部分和</font>
-<p>：$S_n=\sum\limits_{k=1}^n u_k=u_1+u_2+u_3+…+u_n+…$</p>
+<span class="sh">'</span><span class="s">ab</span><span class="sh">'</span> <span class="o">+</span> <span class="sh">'</span><span class="s">cd</span><span class="sh">'</span>
+<span class="n">结果是</span><span class="sh">'</span><span class="s">abcd</span><span class="sh">'</span>
 
-<p>无穷级数<font color="brown">收敛</font>：若$\lim\limits_{n\to\infty}S_n=S$存在，记作 $S=\displaystyle\sum^{\infty}_{n-1} u_n$</p>
 
-<p>无穷级数<font color="brown">发散</font>：若$\lim\limits_{n\to\infty}S_n=S$不存在</p>
+<span class="mf">3.</span><span class="n">两个list相加</span><span class="err">，</span><span class="n">表示两个list相连</span>
 
-<p>级数的<font color="brown">余项</font>：$r_n=S-S_n=u_{n+1}+u_{n+2}+…$</p>
+<span class="n">python_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">python_list</span> <span class="o">+</span> <span class="n">python_list</span>
+<span class="n">结果是</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 
-<p>级数收敛时，$\lim\limits_{n\to\infty}r_n=0$</p>
 
-<h4 id="二收敛级数的性质">（二）收敛级数的性质</h4>
+<span class="mf">4.</span><span class="n">对于python中的numpy</span><span class="err">，“</span><span class="o">+</span><span class="err">”</span><span class="n">表示值相加</span>
 
-<font color="deepskyblue">性质一</font>
-<p>：若$S=\sum\limits_{n=1}^{\infty}u_n$收敛，则$\sum\limits_{n=1}^\infty cu_n$收敛</p>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">numpy_array</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">numpy_array</span> <span class="o">+</span> <span class="n">numpy_array</span> 
+<span class="n">结果是</span> <span class="nf">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 
-<font color="blue">推论一</font>
-<p>：若$c\ne 0$，则$\sum\limits_{n=1}^\infty u_n$与$\sum\limits_{n=1}^\infty$敛散性相同</p>
 
-<font color="deepskyblue">性质二</font>
-<p>：设收敛级数$S=\sum\limits_{n=1}^\infty u_n,\sigma=\sum\limits_{n=1}^{\infty}v_n$，则$\sum\limits_{n=1}^{\infty}(u_n\pm v_n)$也收敛，其和为$S\pm\sigma$</p>
+<span class="n">总之</span><span class="err">，</span><span class="n">在python中</span><span class="err">，</span><span class="n">对于</span><span class="err">“</span><span class="o">+</span><span class="err">”，</span><span class="n">不同的类型</span><span class="o">=</span><span class="n">不同的行为</span>
+</code></pre></div></div>
 
-<table><tr><td bgcolor="orange">收收为收，收发为发，发发不一定发</td></tr></table>
+<h3 id="print输出对象">print输出对象</h3>
 
-<font color="deepskyblue">性质三</font>
-<p>：级数前面加上（去掉、或修改）<strong>有限项</strong>，不影响级数的敛散性</p>
+<p>在 Python 中，<code class="language-plaintext highlighter-rouge">print()</code> 函数在输出对象时，实际上会调用该对象的 <code class="language-plaintext highlighter-rouge">__str__()</code> 方法。当你调用 <code class="language-plaintext highlighter-rouge">print(type(str))</code> 时，它会首先获取 <code class="language-plaintext highlighter-rouge">type(str)</code> 的返回值，即类型对象，然后调用该类型对象的 <code class="language-plaintext highlighter-rouge">__str__()</code> 方法，将其返回的字符串作为输出打印出来。</p>
 
-<font color="deepskyblue">性质四</font>
-<p>：收敛级数<strong>加括弧</strong>后形成的级数仍收敛于原级数的和。</p>
+<p><code class="language-plaintext highlighter-rouge">type</code> 对象的 <code class="language-plaintext highlighter-rouge">__str__()</code> 方法会返回该类型对象的名称，因此在这种情况下，<code class="language-plaintext highlighter-rouge">print(type(str))</code> 将输出 <code class="language-plaintext highlighter-rouge">&lt;class 'str'&gt;</code>，表示该对象是 <code class="language-plaintext highlighter-rouge">str</code> 类型的类型对象。</p>]]></content><author><name></name></author><summary type="html"><![CDATA[print]]></summary></entry><entry><title type="html">注释</title><link href="https://wsttask.github.io/2024/03/26/%E6%B3%A8%E9%87%8A.html" rel="alternate" type="text/html" title="注释" /><published>2024-03-26T21:18:36+08:00</published><updated>2024-03-26T21:18:36+08:00</updated><id>https://wsttask.github.io/2024/03/26/%E6%B3%A8%E9%87%8A</id><content type="html" xml:base="https://wsttask.github.io/2024/03/26/%E6%B3%A8%E9%87%8A.html"><![CDATA[<p>注释可以单独作为一行， 比如：</p>
 
-<font color="blue">推论二</font>
-<p>：若加括弧后的级数发散，则原级数必发散。</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># info 变量 记录 作者的信息，包括 名字，身高，体重
+</span><span class="n">info</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span> <span class="p">:</span><span class="sh">'</span><span class="s">黑羽白月</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">height</span><span class="sh">'</span><span class="p">:</span><span class="sh">'</span><span class="s">180cm</span><span class="sh">'</span><span class="p">}</span>
+</code></pre></div></div>
 
-<table><tr><td bgcolor="orange">收敛级数去括弧后形成的级数不一定收敛&lt;/tr&gt;</td>&lt;/table&gt;
+<p>也可以接在代码的后面，比如：</p>
 
-<font color="deepskyblue">性质五</font>：（级数收敛的==必要条件==）
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>  <span class="c1"># 打印身高到屏幕上
+</span></code></pre></div></div>
 
-​    设$S=\sum\limits_{n=1}^\infty u_n$收敛，则$\lim\limits_{n\to\infty}u_n=0$ 
+<p>也可以连续有多行的注释，比如：</p>
 
-<font color="gold">注意</font>：这只是必要条件！
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># info 变量 记录 作者的信息
+# 包括 名字，身高，体重
+</span><span class="n">info</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span> <span class="p">:</span><span class="sh">'</span><span class="s">黑羽白月</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">height</span><span class="sh">'</span><span class="p">:</span><span class="sh">'</span><span class="s">180cm</span><span class="sh">'</span><span class="p">}</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[注释可以单独作为一行， 比如：]]></summary></entry><entry><title type="html">复数类型</title><link href="https://wsttask.github.io/2024/03/26/%E5%A4%8D%E6%95%B0%E7%B1%BB%E5%9E%8B.html" rel="alternate" type="text/html" title="复数类型" /><published>2024-03-26T21:13:31+08:00</published><updated>2024-03-26T21:13:31+08:00</updated><id>https://wsttask.github.io/2024/03/26/%E5%A4%8D%E6%95%B0%E7%B1%BB%E5%9E%8B</id><content type="html" xml:base="https://wsttask.github.io/2024/03/26/%E5%A4%8D%E6%95%B0%E7%B1%BB%E5%9E%8B.html"><![CDATA[<h3 id="3-复数类型complex详解">3. 复数类型（complex）详解</h3>
 
-例如：调和级数$\sum\limits_{n=1}^\infty \frac{1}{n} = 1+\frac12+\frac13+...+\frac1n+...$发散
+<ul>
+  <li><strong>复数（Complex）</strong> 是 <a href="http://c.biancheng.net/">Python</a> 的内置类型，直接书写即可。换句话说，Python 语言本身就支持复数，而不依赖于标准库或者第三方库。</li>
+  <li><strong>复数由实部<code class="language-plaintext highlighter-rouge">（real）</code>和虚部<code class="language-plaintext highlighter-rouge">（imag）</code>构成，在 Python 中，复数的虚部以j或者J作为后缀</strong>，具体格式为：</li>
+</ul>
 
-​                            但$\lim\limits_{n\to\infty}u_n=0$ 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">+</span> <span class="n">bj</span>
+</code></pre></div></div>
 
-<font color="deepskyblue">推论三</font>：若$u_n不趋向于0$，则级数$\sum\limits_{n=1}^\infty u_n$必发散。
+<p>a 表示实部，b 表示虚部。</p>
 
-**等比级数（几何级数）**：$\sum\limits_{n=0}^{\infty}ar^n=a+ar+ar^2+...+ar^{n-1}+...$
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mf">2j</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div></div>
 
-==当$|r|&lt;1$时收敛，当$|r|\ge 1$时发散。==
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python310</span>\<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">Desktop</span>\<span class="n">hyDM</span>\<span class="n">test</span><span class="p">.</span><span class="n">py</span> 
+<span class="p">(</span><span class="mi">10</span><span class="o">+</span><span class="mf">2j</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">complex</span><span class="sh">'</span><span class="s">&gt;
+</span></code></pre></div></div>
 
-**p级数**：$\sum\limits_{n=1}^{\infty}\frac1{n^p}=1+\frac1{2^p}+\frac1{3^p}+...+\frac1{n^p}+...$
+<p><strong>可以发现，复数在 Python 内部的类型是 complex，<code class="language-plaintext highlighter-rouge">Python 默认支持对复数的简单计算</code>。</strong></p>]]></content><author><name></name></author><summary type="html"><![CDATA[3. 复数类型（complex）详解]]></summary></entry><entry><title type="html">浮点数类型</title><link href="https://wsttask.github.io/2024/03/26/%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B1%BB%E5%9E%8B.html" rel="alternate" type="text/html" title="浮点数类型" /><published>2024-03-26T21:10:26+08:00</published><updated>2024-03-26T21:10:26+08:00</updated><id>https://wsttask.github.io/2024/03/26/%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B1%BB%E5%9E%8B</id><content type="html" xml:base="https://wsttask.github.io/2024/03/26/%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B1%BB%E5%9E%8B.html"><![CDATA[<h3 id="2-python小数浮点数float详解">2. Python小数/浮点数（float）详解</h3>
 
-当$p=1$时，**p级数**为**调和级数**$\sum\limits_{n=1}^{\infty}\frac1n$，发散
+<ul>
+  <li>在编程语言中，小数通常以浮点数的形式存储。浮点数和定点数是相对的：小数在存储过程中如果小数点发生移动，就称为浮点数；如果小数点不动，就称为定点数。</li>
+  <li><a href="http://c.biancheng.net/">Python</a> 中的小数有两种书写形式：</li>
+</ul>
 
-当$p\le1$时，发散
+<p><strong>1. 十进制形式</strong></p>
 
-当$p&gt;1$时，收敛
+<ul>
+  <li>这种就是我们平时看到的小数形式，例如 34.6、346.0、0.346。</li>
+  <li>书写小数时必须包含一个小数点，否则会被 Python 当作整数处理。</li>
+</ul>
 
-### <font color="blue">第二节 正项级数及其审敛法</font>
+<p><strong>2. 指数形式</strong></p>
 
-#### （一）正向级数收敛的充分必要条件
-
-<font color="ForestGreen">定义</font> 正向级数：$\sum\limits_{n=1}^{\infty}u_n \quad(u_n&gt;0)$
-
-<font color="forestgreen">定理11.2</font> 正项级数$\sum\limits_{n=1}^{\infty}u_n$收敛的充要条件是：==部分和数列$S_n$有上界。==
-
-#### （二）比较审敛法
-
-<font color="forestgreen">定理11.2（比较审敛法）</font> 设正项级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$ 
-
-(1)若$\sum\limits_{n=1}^{\infty}v_n$收敛，==$u_n\le v_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也收敛
-
-(2)若$\sum\limits_{n=1}^{\infty}v_n$发散，==$u_n\ge v_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也发散
-
-<font color="darkred">推论（比较审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$
-
-(i)若$\sum\limits_{n=1}^{\infty}v_n$收敛，==$u_n\le cv_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也收敛
-
-(ii)若$\sum\limits_{n=1}^{\infty}v_n$发散，==$u_n\ge cv_n$==，则$\sum\limits_{n=1}^{\infty}u_n$也发散
-
-<font color="forestgreen">定理11.3（极限形式的比较审敛法）</font>设正项级数$\sum\limits_{n=1}^{\infty}u_n,\sum\limits_{n=1}^{\infty}v_n$ 满足==$\lim\limits_{n\rightarrow\infty}\frac{u_n}{v_n}=l \quad (0\le l\le +\infty)$==
-
-则有
-
-（1）当 $0&lt;l&lt;+\infty$时，两级数同敛散；
-
-（2）当$l=0$且$\sum\limits_{n=1}^{\infty}v_n$收敛时，$\sum\limits_{n=1}^{\infty}u_n$也收敛；
-
-（3）当$l=+\infty$且$\sum\limits_{n=1}^{\infty}v_n$发散时，$\sum\limits_{n=1}^{\infty}u_n$也发散。
-
-思考：本质上是找$u_n$的同阶无穷小
-
-#### （三）比值审敛法和根值审敛法
-
-<font color="lime">定理11.4（比值审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n$满足：==$\lim\limits_{n\rightarrow\infty}\frac{u_{n+1}}{u_n}=\rho$==$\quad 0\le\rho\le+\infty$
-
-则
-
-（1）当$\rho&lt;1$时，级数收敛；
-
-（2）当$\rho&gt;1$或$\rho=+\infty$时，级数发散
-
-（3）当$\rho=1$时，比值审敛法失效
-
-&gt; 通项中含有$n!,a^n$的级数适合用比值法判敛散
-
-<font color="lime">定理11.5（根植审敛法）</font> 设正向级数$\sum\limits_{n=1}^{\infty}u_n$满足：$\lim\limits_{n\rightarrow\infty}\sqrt[n]{u_n}=\rho$$\quad 0\le\rho\le+\infty$
-
-（1）当$\rho&lt;1$时，级数收敛；
-
-（2）当$\rho&gt;1$或$\rho=+\infty$时，级数发散
-
-（3）当$\rho = 1$时，根植审敛法失效
-
-![image-20230408154838975](../images/image-20230408154838975.png)
-
-![image-20230408154903909](../images/image-20230408154903909.png)
-
-### <font color="blue">第三节 任意项级数的审敛法</font>
-
-#### <font color="darkred">交错级数</font>
-
-1.定义 
-
-$u_1-u_2+u_3-...+(-1)^{n-1}u_n+...\quad (u_n&gt;0)$
-
-2.定理（交错级数审敛法）
-
-若交错级数满足：
-
-1）$u_n\ge u_{n+1}\quad (n=1,2,...)$
-
-2）$\lim\limits_{n\rightarrow\infty}u_n=0$
-
-则$\sum\limits_{n=1}^{\infty}(-1)^{n-1}u_n$收敛，且其和$S\le u_1$
-
-其余项满足$|r_n|\le u_{n+1}$
-
-### <font color="blue">第四节 幂级数</font>
-
-#### <font color="green">（一）函数项级数的一般概念</font>
-
-函数项级数：$\sum\limits_{n=1}^{\infty}u_n(x)=u_1(x)+u_2(x)+...+u_n(x)+...$
-
-收敛点（发散点）$x_0$：若$\sum\limits_{n=1}^{\infty}u_n(x_0)$收敛（发散）
-
-收敛域（发散域）$U$：收敛点（发散点）的全体。
-
-和函数：$S(x)=\sum\limits_{n=1}^{\infty}u_n(x),\quad x\in U$    收敛域
-
-部分和：$S_n(x)=\sum\limits_{k=1}^{n}u_k(x)$，余项：$r_n(x)=S(x)-S_n(x)$
-
-<font color="red">函数项级数一般通过其和函数来求收敛域</font>
-
-![image-20230420215640073](../images/image-20230420215640073.png)
-
-#### <font color="green">（二）幂级数及其收敛性</font>
-
-##### 1.定义    $(x-x_0)$的幂级数
-
-$\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=a_0+a_1(x-x_0)+a_2(x-x_0)^2+...+a_n(x-x_0)^n+...$
-
-$x$的幂级数
-
-$\sum\limits_{n=0}^{\infty}a_nx^n=a_0+a_1x+a_2x^2+...+a_nx^n+...$
-
-##### 2.幂级数收敛域的结构
-
-==定理11.10（Abel定理）==
-
-（1）当$x=x_0\ne0$时，$\sum\limits_{n=1}^{\infty}a_nx^n$收敛，
-
-则$\sum\limits_{n=0}^{\infty}a_nx^n(|x|&lt;|x_0|)$==绝对收敛==
-
-（2）当$x=x_0$时，$\sum\limits_{n=1}^{\infty}a_nx^n$发散
-
-则$\sum\limits_{n=1}^{\infty}a_nx^n(|x|&gt;|x_0|)$发散
-
-<font color="red">结论</font>：
-
-​    $\sum\limits_{n=0}^{\infty}a_nx^n$的收敛域：以原点为中心的区间。幂级数==收敛与发散的分界点==：$\pm R$
-
-（1）$R=0$时，幂级数仅在$x=0$处收敛。
-
-（2）$R=+\infty$时，幂级数在$(-\infty,+\infty)$收敛
-
-（3）$0&lt;R&lt;+\infty$时，幂级数在$(-R,R)$收敛；在$[-R,R]$外发散；==在$x=\pm R$可能收敛==（发散）。
-
-##### 3.收敛半径$R$的求法
-
-<font color="red">定理11.11</font>
-
-​    设$\sum\limits_{n=1}^{\infty}a_nx^n$且$\lim\limits_{n\rightarrow\infty}|\frac{a_{n+1}}{a_n}|=\rho$ 或 $\lim\limits_{n\rightarrow\infty}\sqrt[n]{|a_n|}=\rho$
-
-收敛半径$R=\begin{cases} \frac1\rho,\quad当0&lt;\rho&lt;+\infty时 \\ +\infty,\quad当\rho=0时 \\ 0,\quad当\rho=+\infty \end{cases}$
-
-<font color="red">结论</font>
-
-$\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径：$R=\lim\limits_{n\rightarrow\infty}|\frac{a_n}{a_{n+1}}|$
-
-<font color="red">**缺项幂级数直接用比值法！**</font>
-
-![image-20230420215807292](../images/image-20230420215807292.png)
-
-#### （三）幂级数的运算与性质
-
-##### 1.幂级数的四则运算性质
-
-设$\sum\limits_{n=1}^{\infty}a_nx^n$及$\sum\limits_{n=1}^{\infty}b_nx^n$收敛半径分别为$R_1,R_2$，令$R=min\{R_1,R_2\}$，则
-
-（1）加减法：$\sum\limits_{n=0}^{\infty}a_nx^n\pm\sum\limits_{n=0}^{\infty}b_nx^n=\sum\limits_{n=1}^{\infty}(a_n\pm b_n)x^n,\quad |x|&lt;R$
-
-（2）乘法：$(\sum\limits_{n=0}^{\infty}a_nx^n)(\sum\limits_{n=0}^{\infty}b_nx^n)=\sum\limits_{n=0}^{\infty}c_nx^n,\quad |x|&lt;R$
-
-&gt; 两幂级数相除所得的幂级数的收敛半径R可能比原两幂级数的收敛半径$R_1,R_2$小的多。
-
-##### 2.幂级数的分析运算性质
-
-性质：若$\sum\limits_{n=1}^{\infty}a_nx^n$的收敛半径$R&gt;0$，则其和函数$S(x)$
-
-（1）在收敛域$I$上连续
-
-（2）在收敛区间内可逐项求导，逐项积分
-
-`我感觉学这个级数就是为了学函数展开成幂级数！把一些函数可以求导。`
-
-### <font color="blue">第五节、函数展开成幂级数</font>
-
-#### （一）函数的幂级数展开式
-
-<font color="green">1.函数展开成幂级数</font>
-
-<font color="darkred">定义</font>：若$f(x)=\sum\limits_{n=1}^{\infty}a_n(x-x_0)^n,\quad x\in I\quad (I为区间)$
-
-则称$f(x)$在$I$上可以展开成$(x-x_0)$的幂级数
-</tr></table>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[第一节 常数项级数的基本概念和性质]]></summary></entry><entry><title type="html">Pyqt</title><link href="https://wsttask.github.io/2024/03/23/pyqt.html" rel="alternate" type="text/html" title="Pyqt" /><published>2024-03-23T20:25:04+08:00</published><updated>2024-03-23T20:25:04+08:00</updated><id>https://wsttask.github.io/2024/03/23/pyqt</id><content type="html" xml:base="https://wsttask.github.io/2024/03/23/pyqt.html"><![CDATA[<p>学会使用qtDesigner</p>
-
-<p>学习常见组件的属性</p>
-
-<p>学习窗口的构建</p>
-
-<p>学习如何添加事件</p>
-
-<p><a href="https://blog.csdn.net/m0_57021623/article/details/123459038">PyQt5保姆级教程– 从入门到精通_pyqt5教程-CSDN博客</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[学会使用qtDesigner]]></summary></entry><entry><title type="html">达布中值定理</title><link href="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html" rel="alternate" type="text/html" title="达布中值定理" /><published>2024-03-23T20:12:05+08:00</published><updated>2024-03-23T20:12:05+08:00</updated><id>https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86</id><content type="html" xml:base="https://wsttask.github.io/theorem/2024/03/23/%E8%BE%BE%E5%B8%83%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86.html"><![CDATA[<h3 id="达布中值定理">达布中值定理</h3>
+<p>Python 小数的指数形式的写法为：</p>
 
 <blockquote>
-  <p>设 $y=f(x)$ 在 $(A,B)$ 区间可导，且 $[a,b]$ 包含于 $(A,B)$ ，$f’(a)&lt;f’(b)$ ，则对于任意给定的 $\eta \quad [f’(a)&lt;\eta&lt;f’(b)]$ ，都存在一点 $\xi\in(a,b)$ ，使得 $f’(\xi)=\eta$</p>
+  <p>aEn 或 aen</p>
 </blockquote>
 
-<p>达布中值定理可以证明处处可导函数的导函数一定没有第一类间断点和无穷间断点，只可能有震荡间断点</p>
+<ul>
+  <li>a 为尾数部分，是一个十进制数；n 为指数部分，是一个十进制整数；E或e是固定的字符，用于分割尾数部分和指数部分。整个表达式等价于 a×10n。</li>
+</ul>
 
-<p>如果一个函数可导,则它的导函数要么是连续的,要么有震荡间断点。</p>
+<p><strong>例子</strong></p>
 
-<p><a href="https://zhuanlan.zhihu.com/p/486060686?utm_campaign=shareopn&amp;utm_medium=social&amp;utm_oi=1233072458213298176&amp;utm_psn=1745752610869686273&amp;utm_source=wechat_session">导数的介值定理(达布中值定理)的证明及应用 - 知乎 (zhihu.com)</a></p>]]></content><author><name></name></author><category term="Theorem" /><summary type="html"><![CDATA[达布中值定理]]></summary></entry><entry><title type="html">移动端浏览器主页</title><link href="https://wsttask.github.io/browser" rel="alternate" type="text/html" title="移动端浏览器主页" /><published>2024-03-23T15:59:56+08:00</published><updated>2024-03-23T15:59:56+08:00</updated><id>https://wsttask.github.io/portal</id><content type="html" xml:base="https://wsttask.github.io/browser"><![CDATA[<h1 id="knowledge">knowledge</h1>
-
-<h3 id="giteeweb"><a href="https://gitee.com/wsttask/web/tree/master">gitee.web</a></h3>
-
-<h3 id="githubweb"><a href="https://github.com/wsttask/web">github.web</a></h3>
-
-<h3 id="stackoverflow"><a href="https://stackoverflow.com/">stackoverflow</a></h3>
-
-<h1 id="tanslation">tanslation</h1>
-
-<h3 id="youdao"><a href="https://m.youdao.com/">youdao</a></h3>
-
-<h1 id="chatgpt">ChatGPT</h1>
-
-<h3 id="openai"><a href="https://chat.openai.com/">openai</a></h3>
-
-<h1 id="documentation">Documentation</h1>
-
-<h3 id="python"><a href="https://docs.python.org/">python</a></h3>
-
-<h3 id="qt-documentation"><a href="https://doc.qt.io/">Qt Documentation</a></h3>
-
-<h3 id="java"><a href="https://docs.oracle.com/">Java</a></h3>
-
-<h1 id="latex">LaTex</h1>
-
-<h3 id="latex在线编辑器"><a href="https://www.latexlive.com/">LaTex在线编辑器</a></h3>
-
-<h1 id="图形计算器">图形计算器</h1>
-
-<h3 id="desmos"><a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos</a></h3>
-
-<h1 id="wps">WPS</h1>
-
-<h3 id="tasks"><a href="https://www.kdocs.cn/l/coVFRqQ7x1UZ">tasks</a></h3>
-
-<h1 id="搜索引擎">搜索引擎</h1>
-
-<h3 id="baidu"><a href="https://www.baidu.com/">baidu</a></h3>
-
-<h1 id="mail">Mail</h1>
-
-<h3 id="outlook"><a href="https://outlook.live.com/mail">outlook</a></h3>
-
-<h3 id="gmail"><a href="https://mail.google.com/mail">gmail</a></h3>
-
-<h1 id="time">TIME</h1>
-
-<h3 id="北京时间"><a href="https://beijing-time.org/">北京时间</a></h3>
-
-<h1 id="game">GAME</h1>
-
-<h3 id="aknight"><a href="https://ak.hypergryph.com/">aknight</a></h3>
-
-<h1 id="音标">音标</h1>
-
-<h3 id="英语兔"><a href="https://www.bilibili.com/video/BV1iV411z7Nj/">英语兔</a></h3>
-
-<h1 id="video">video</h1>
-
-<h3 id="bilibili"><a href="https://www.bilibili.com/">bilibili</a></h3>
-
-<h3 id="youtube"><a href="https://www.youtube.com/">YouTube</a></h3>
-
-<h1 id="nwpu">nwpu</h1>
-
-<h3 id="翱翔门户"><a href="https://ecampus.nwpu.edu.cn/main.html#/Index">翱翔门户</a></h3>
-
-<h3 id="西工大研招网"><a href="https://yzb.nwpu.edu.cn/info/1174/8628.htm">西工大研招网</a></h3>
-
-<h3 id="图书馆"><a href="https://ic.nwpu.edu.cn/">图书馆</a></h3>
-
-<h1 id="中国考试教育网">中国考试教育网</h1>
-
-<h3 id="四六级查分"><a href="https://cjcx.neea.edu.cn/">四六级查分</a></h3>]]></content><author><name></name></author><category term="portal" /><summary type="html"><![CDATA[knowledge]]></summary></entry><entry><title type="html">常见函数图像</title><link href="https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F.html" rel="alternate" type="text/html" title="常见函数图像" /><published>2024-03-23T14:35:17+08:00</published><updated>2024-03-23T14:35:17+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/23/%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F.html"><![CDATA[<iframe src="https://www.desmos.com/calculator/iqxl3krwib?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-
-<p>$x^{\frac1x}$</p>
+<ul>
+  <li>2.1E5 = 2.1×105，其中 2.1 是尾数，5 是指数。</li>
+  <li>3.7E-2 = 3.7×10-2，其中 3.7 是尾数，-2 是指数。</li>
+  <li>0.5E7 = 0.5×107，其中 0.5 是尾数，7 是指数。</li>
+</ul>
 
 <blockquote>
-  <p>当x趋于0时，函数值趋于0</p>
-
-  <p>当x趋于正无穷时，函数趋于1</p>
+  <p><strong>注意，只要写成指数形式就是小数，即使它的最终值看起来像一个整数。例如 14E3 等价于 14000，但 14E3 是一个小数。</strong></p>
 </blockquote>
 
-<iframe src="https://www.desmos.com/calculator/xjxqz05obg?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-
-<p>$(\frac1x)^x$</p>
-
-<blockquote>
-  <p>当x趋于0时，函数趋近于1</p>
-
-  <p>当x趋于正无穷时，函数趋于0</p>
-</blockquote>
-
-<iframe src="https://www.desmos.com/calculator/zaiwo5ke1n?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-
-<p>$(1+x)^{\frac1x}$</p>
-
-<blockquote>
-  <p>0点无定义，当函数趋近于0时值为e</p>
-
-  <p>当函数趋近于-1时，值为正无穷</p>
-
-  <p>当函数趋近于正无穷时，值为1</p>
-
-  <p>指数函数底数不能为负数，则当x&lt;-1时无定义</p>
-</blockquote>
-
-<iframe src="https://www.desmos.com/calculator/10eafnm64m?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-
-<p>$(1+\frac1x)^x$</p>
-
-<blockquote>
-  <p>当x趋于正无穷时，函数值趋于e</p>
-
-  <p>当x趋于负无穷时，函数值趋于e</p>
-
-  <p>当x趋于0时，函数值趋于1s</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">求极限2</title><link href="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902.html" rel="alternate" type="text/html" title="求极限2" /><published>2024-03-22T20:59:56+08:00</published><updated>2024-03-22T20:59:56+08:00</updated><id>https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902</id><content type="html" xml:base="https://wsttask.github.io/calculus/2024/03/22/%E6%B1%82%E6%9E%81%E9%99%902.html"><![CDATA[<p>$\displaystyle\lim_{x\to\infty}\frac{(1+\frac1x)^{x^2}}{e^x}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p9-4-5</code></p>
-
-<p><a href="#t24p9-4-5">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\to0}(\frac1{sin^2x}-\frac{cos^2x}{x^2})$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p10-6-2</code></p>
-
-<p><a href="#t24p10-6-2">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\lim_{x\to1}(\tan \frac\pi4x)^{\tan \frac\pi2x}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p10-8</code></p>
-
-<p><a href="#t24p10-8">click</a></p>
-
-<hr />
-
-<p>$\displaystyle\begin{aligned}&amp;\lim_{n\to\infty}\sqrt[n]{\left(1+\frac{1^2}{n^2}\right)\left(1+\frac{2^2}{n^2}\right)\cdots\left(1+\frac{n^2}{n^2}\right)}\end{aligned}$</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p10-17-2</code></p>
-
-<p><a href="#t24p10-17-2">click</a></p>
-
-<hr />
-
-<p>设$0&lt;a_1&lt;2$，又$a_{n+1}=\sqrt{a_n(2-a_n)}$</p>
-
-<p>证明：$\displaystyle\lim_{n\to\infty}a_n$存在</p>
-
-<p><br /></p>
-
-<p><code class="language-plaintext highlighter-rouge">t24p11-22</code></p>
-
-<p><a href="#t24p11-22">click</a></p>
-
-<hr />
-
-<p><a id="t24p9-4-5"></a></p>
-
-<blockquote>
-  <p>易错题</p>
-
-  <p>不能将 $\displaystyle\lim_{x\to\infty}(1+\frac1x)^x=e$ 代入</p>
-
-  <p>幂指函数不能把的等价无穷小带入，极限没有这个运算性质</p>
-</blockquote>
-
-<p>$\displaystyle\lim_{x\to\infty}e^{\displaystyle x^2\ln(1+\frac1x)-x}$</p>
-
-<p>再对其进行泰勒展开</p>
-
-<p>$\displaystyle e^{-\frac12}$</p>
-
-<hr />
-
-<p><a id="t24p10-6-2"></a></p>
-
-<p>$\displaystyle\operatorname<em>{lim}_{x\to0}{\frac{x^{2}-\sin^{2}x\cos^{2}x}{x^{2}\sin^{2}x}}=\operatorname</em>{lim}_{x\to0}{\frac{x^{2}-\sin^{2}x\cos^{2}x}{x^{4}}}$</p>
-
-<p>$=\displaystyle\lim_{x\to0}\frac{x+\sin x\cos x}{x}\cdot\frac{x-\sin x\cos x}{x^{^3}}$</p>
-
-<p>$\displaystyle=\frac43$</p>
-
-<hr />
-
-<p><a id="t24p10-8"></a></p>
-
-<blockquote>
-  <p>无论是$(1+x)^{\frac1x}$还是$e^{x\ln x}$都可以做出来</p>
-</blockquote>
-
-<p>关键步骤是$\displaystyle\tan\frac\pi2x=\frac{\sin\frac\pi2}{\cos\frac\pi2}$</p>
-
-<hr />
-
-<p><a id="t24p10-17-2"></a></p>
-
-<p>$\displaystyle e^{\displaystyle\lim_{n\to\infty}\frac1n\sum_{i=1}^n\ln\left(1+\frac{i^2}{n^2}\right)}$</p>
-
-<p>$e^{\displaystyle\ln2-2+\frac\pi2}$</p>
-
-<hr />
-
-<p><a id="t24p11-22"></a></p>
-
-<p>$\displaystyle a_{n}&gt;0,a_{n+1}=\sqrt{a_{n}(2-a_{n})}\leqslant\frac{a_{n}+(2-a_{n})}{2}=1$</p>
-
-<p>说明有界</p>
-
-<p>$a_{n+1}-a_n=\sqrt{a_n(2-a_n)}-a_n=\frac{2a_n(1-a_n)}{\sqrt{a_n(2-a_n)}+a_n}\geqslant0$</p>
-
-<p>说明单调递增</p>
-
-<blockquote>
-  <p>这个题目没有用归纳推理</p>
-</blockquote>]]></content><author><name></name></author><category term="calculus" /><summary type="html"><![CDATA[$\displaystyle\lim_{x\to\infty}\frac{(1+\frac1x)^{x^2}}{e^x}$]]></summary></entry></feed>
+<ul>
+  <li>&lt;font color=#900&gt;<code class="language-plaintext highlighter-rouge">Python 只有一种小数类型，就是 float</code>&lt;/font&gt;。<strong>C语言有两种小数类型，分别是 float 和 double：float
+能容纳的小数范围比较小，double 能容纳的小数范围比较大。</strong></li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[2. Python小数/浮点数（float）详解]]></summary></entry><entry><title type="html">集合类型</title><link href="https://wsttask.github.io/2024/03/26/%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B.html" rel="alternate" type="text/html" title="集合类型" /><published>2024-03-26T21:03:58+08:00</published><updated>2024-03-26T21:03:58+08:00</updated><id>https://wsttask.github.io/2024/03/26/%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B</id><content type="html" xml:base="https://wsttask.github.io/2024/03/26/%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B.html"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry></feed>

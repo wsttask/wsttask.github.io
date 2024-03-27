@@ -1,0 +1,93 @@
+<h3 id="1--字符串类型">1  字符串类型</h3>
+
+<h4 id="1字符串定义">（1）字符串定义</h4>
+
+<ul>
+  <li><strong>字符串</strong>：由0个或多个字符组成的有序字符序列，由一对单引号(‘ ‘)或一对双引号(“ “)表示，可对字符进行索引，用序号进行访问。</li>
+  <li><strong>表示方法</strong>：由一对单引号或双引号表示，仅表示单行字符串；由一对三单引号或三双引号表示，可表示多行字符串。</li>
+</ul>
+
+<h4 id="2字符串的索引">（2）字符串的索引</h4>
+
+<ul>
+  <li>字符串的每个字符都是一个字符串类型</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">str</span> <span class="o">=</span> <span class="sh">'</span><span class="s">abcdefghijklmnop</span><span class="sh">'</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># 编号是从0开始的
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># -1是字符串的最后一个，len(str)-1也是最后一个
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="o">-</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)])</span> <span class="c1"># 0是第一个，-len(str)也是第一个
+</span></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python310</span>\<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">Desktop</span>\<span class="n">hyDM</span>\<span class="n">test</span><span class="p">.</span><span class="n">py</span> 
+<span class="mi">16</span>
+<span class="n">b</span>
+<span class="n">p</span>
+<span class="n">p</span>
+<span class="n">a</span>
+<span class="n">a</span>
+
+<span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="nb">exit</span> <span class="n">code</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<h4 id="3字符串的使用">（3）字符串的使用</h4>
+
+<ul>
+  <li>使用[ ] 获取字符串中一个或多个字符。</li>
+  <li>
+    <p><strong>字符串索引</strong>：s[N] 通过序号获取单个字符。</p>
+  </li>
+  <li><strong>字符串切片</strong>：s[M:N] 获取M到N(不含)子串，使用[M: N :K]根据步长对字符串切片，使用[::-1]对字符串进行逆序。其中，M缺失表示至开头，N缺失表示至结尾。</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">str</span> <span class="o">=</span> <span class="sh">'</span><span class="s">abcdefghijklmnop</span><span class="sh">'</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span> <span class="c1"># 表示取1-3 索引的字符
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="c1"># 表示取1-\infty 索引的字符
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># 表示取0-4索引的字符
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># 从1取到10，每隔3取一个，最后如果没取到不取
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># 将字符串反向
+</span><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">10</span><span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># -1代表反向，从10号索引开始反向取
+</span></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python310</span>\<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">Desktop</span>\<span class="n">hyDM</span>\<span class="n">test</span><span class="p">.</span><span class="n">py</span> 
+<span class="mi">16</span>
+<span class="n">bcd</span>
+<span class="n">bcdefghijklmnop</span>
+<span class="n">abcde</span>
+<span class="n">beh</span>
+<span class="n">kjihgfedcba</span>
+
+<span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="nb">exit</span> <span class="n">code</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<h4 id="4字符串处理函数">（4）字符串处理函数</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 长度，返回字符串x的长度
+</span>
+<span class="nf">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 任意类型x所对应的字符串形式
+</span>
+<span class="nf">hex</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="n">或oct</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># 整数x的十六进制或八进制小写形式字符串
+</span>
+<span class="nf">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># x为Unicode编码，返回其对应的字符
+</span>
+<span class="nf">ord</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># x为字符，返回其对应的Unicode编码
+</span></code></pre></div></div>
+
+<h4 id="5字符串处理方法">（5）字符串处理方法</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">str</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span><span class="n">或str</span><span class="p">.</span><span class="nf">upper</span><span class="p">()</span>	<span class="n">返回字符串的副本</span><span class="err">，</span><span class="n">全部字符小写</span><span class="o">/</span><span class="n">大写</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>	<span class="n">返回一个列表</span><span class="err">，</span><span class="n">由str根据sep被分割的部分组成</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">count</span><span class="p">(</span><span class="n">sub</span><span class="p">)</span>	<span class="n">返回子串sub在str中出现的次数</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span><span class="n">new</span><span class="p">)</span>	<span class="n">返回字符串str的副本</span><span class="err">，</span><span class="n">所有old子串被替换为new</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">center</span><span class="p">(</span><span class="n">width</span><span class="p">[,</span><span class="n">fillchar</span><span class="p">])</span>	<span class="n">字符串str根据宽度width居中</span><span class="err">，</span><span class="n">fillchar可选</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">strip</span><span class="p">(</span><span class="n">chars</span><span class="p">)</span>	<span class="n">从str中去掉在其左侧和右侧chars中列出的字符</span>
+<span class="nb">str</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="nb">iter</span><span class="p">)</span>	<span class="n">在iter变量除最后元素外每个元素后增加一个str</span>
+</code></pre></div></div>
+

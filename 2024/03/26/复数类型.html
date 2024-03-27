@@ -1,0 +1,23 @@
+<h3 id="3-复数类型complex详解">3. 复数类型（complex）详解</h3>
+
+<ul>
+  <li><strong>复数（Complex）</strong> 是 <a href="http://c.biancheng.net/">Python</a> 的内置类型，直接书写即可。换句话说，Python 语言本身就支持复数，而不依赖于标准库或者第三方库。</li>
+  <li><strong>复数由实部<code class="language-plaintext highlighter-rouge">（real）</code>和虚部<code class="language-plaintext highlighter-rouge">（imag）</code>构成，在 Python 中，复数的虚部以j或者J作为后缀</strong>，具体格式为：</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">+</span> <span class="n">bj</span>
+</code></pre></div></div>
+
+<p>a 表示实部，b 表示虚部。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mf">2j</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python310</span>\<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">zhao</span><span class="o">-</span>\<span class="n">Desktop</span>\<span class="n">hyDM</span>\<span class="n">test</span><span class="p">.</span><span class="n">py</span> 
+<span class="p">(</span><span class="mi">10</span><span class="o">+</span><span class="mf">2j</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">complex</span><span class="sh">'</span><span class="s">&gt;
+</span></code></pre></div></div>
+
+<p><strong>可以发现，复数在 Python 内部的类型是 complex，<code class="language-plaintext highlighter-rouge">Python 默认支持对复数的简单计算</code>。</strong></p>

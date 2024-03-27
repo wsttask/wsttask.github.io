@@ -1,0 +1,11 @@
+<p><em>class</em> <strong>type</strong>(<em>name</em>, <em>bases</em>, <em>dict</em>, <em>**kwds</em>)</p>
+
+<p>传入一个参数时，返回 <em>object</em> 的类型。 返回值是一个 type 对象，通常与 <a href="https://docs.python.org/zh-cn/3/library/stdtypes.html#instance.__class__"><code class="language-plaintext highlighter-rouge">object.__class__</code></a> 所返回的对象相同。</p>
+
+<blockquote>
+  <p>注意type这个内置函数返回的是type对象，而非字符串</p>
+</blockquote>
+
+<p>在 Python 中，<code class="language-plaintext highlighter-rouge">type()</code> 函数返回对象的类型对象，而不是对象本身的 <code class="language-plaintext highlighter-rouge">__class__</code> 属性。因此，<code class="language-plaintext highlighter-rouge">type(str)</code> 返回的是表示字符串类型的 <code class="language-plaintext highlighter-rouge">type</code> 对象，而不是字符串对象本身的类型。</p>
+
+<p>可以输出<code class="language-plaintext highlighter-rouge">obj.__class__</code>，结果是一样的</p>
