@@ -1,0 +1,65 @@
+<h3 id="元组的定义">元组的定义</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 定义元组字面量
+</span><span class="p">(</span><span class="n">元素</span><span class="err">，</span><span class="n">元素</span><span class="err">，</span><span class="p">......</span><span class="err">，</span><span class="n">元素</span><span class="p">)</span>
+
+<span class="c1"># 定义元组变量
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">(</span><span class="n">元素</span><span class="p">,</span><span class="n">元素</span><span class="p">,.....,</span><span class="n">元素</span><span class="p">)</span>
+
+<span class="c1"># 定义空元组
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">()</span>        <span class="c1"># 方式1
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="nf">tuple</span><span class="p">()</span>     <span class="c1"># 方式2
+</span>
+<span class="n">注意</span><span class="err">！</span>
+<span class="c1"># 定义3个元素的元组
+</span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># 定义1个元素的元组
+</span><span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="p">)</span>    <span class="c1"># 注意，必须带有逗号，否则不是元组类型，而括号内唯一元素的类型
+</span>
+<span class="c1"># 元组也支持嵌套
+</span><span class="n">t1</span>  <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="元组的相关操作">元组的相关操作</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 根据下标（索引）去除数据
+</span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="c1"># 根据index(),查找特定元素的的第一个匹配项
+</span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">t1</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">))</span>
+
+<span class="c1"># 统计某个数据在元组内出现的次数
+</span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="sh">'</span><span class="s">ehllo</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">t1</span><span class="p">.</span><span class="nf">count</span><span class="p">(</span><span class="sh">'</span><span class="s">hello</span><span class="sh">'</span><span class="p">))</span>
+
+<span class="c1"># 统计元组内的元素的个数
+</span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">t1</span><span class="p">))</span>
+
+<span class="n">注意</span><span class="err">！</span>
+
+<span class="mf">1.</span> <span class="n">不可以修改元组的内容</span><span class="err">，</span><span class="n">否则会直接报错</span>
+
+<span class="mf">2.</span> <span class="n">可以修改元组内的list的内容</span>
+
+<span class="mf">3.</span> <span class="n">不可以替换list为其他的list或其他类型</span>
+</code></pre></div></div>
+
+<h3 id="元组的特点">元组的特点</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mf">1.</span> <span class="n">可以容纳多个数据</span>
+
+<span class="mf">2.</span> <span class="n">可以容纳不同类型的数据</span><span class="err">（</span><span class="n">混装</span><span class="err">）</span>
+
+<span class="mf">3.</span> <span class="n">数据是有序存储的</span><span class="err">（</span><span class="n">下标索引</span><span class="err">）</span>
+
+<span class="mf">4.</span> <span class="n">允许重复数据存在</span>
+
+<span class="mf">5.</span> <span class="n">不可以修改</span><span class="err">（</span><span class="n">most</span> <span class="n">important</span><span class="err">）</span>
+
+<span class="mf">6.</span> <span class="n">支持for循环</span>
+</code></pre></div></div>
+
+<p>####</p>

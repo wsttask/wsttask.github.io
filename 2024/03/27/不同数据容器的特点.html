@@ -1,0 +1,139 @@
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span> <span class="n">元组</span><span class="err">：</span><span class="p">()</span>
+<span class="c1"># 定义元组字面量
+</span><span class="p">(</span><span class="n">元素</span><span class="err">，</span><span class="n">元素</span><span class="err">，</span><span class="p">......</span><span class="err">，</span><span class="n">元素</span><span class="p">)</span>
+
+<span class="c1"># 定义元组变量
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">(</span><span class="n">元素</span><span class="p">,</span><span class="n">元素</span><span class="p">,.....,</span><span class="n">元素</span><span class="p">)</span>
+
+<span class="c1"># 定义空元组
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">()</span>        <span class="c1"># 方式1
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="nf">tuple</span><span class="p">()</span>     <span class="c1"># 方式2
+</span>
+<span class="o">-</span> <span class="n">集合</span><span class="err">：</span><span class="p">{}</span>
+<span class="c1"># 定义集合字面量
+</span><span class="p">{</span><span class="n">元素</span><span class="p">,</span> <span class="n">元素</span><span class="p">,</span> <span class="p">......,</span> <span class="n">元素</span><span class="p">}</span>
+
+<span class="c1"># 定义集合变量
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">{</span><span class="n">元素</span><span class="p">,</span> <span class="n">元素</span><span class="p">,</span> <span class="p">......,</span> <span class="n">元素</span><span class="p">}</span>
+
+<span class="c1"># 定义空集合
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="nf">set</span><span class="p">()</span>
+
+<span class="o">-</span> <span class="n">列表</span><span class="err">：</span><span class="p">[]</span>
+<span class="c1"># 字面量
+</span><span class="p">[</span><span class="n">元素1</span><span class="p">,</span> <span class="n">元素2</span><span class="p">,</span> <span class="n">元素3</span><span class="p">,</span> <span class="n">元素4</span><span class="p">,</span> <span class="p">...]</span>
+
+<span class="c1"># 定义变量
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">[</span><span class="n">元素1</span><span class="p">,</span> <span class="n">元素2</span><span class="p">,</span> <span class="n">元素3</span><span class="p">,</span> <span class="n">元素4</span><span class="p">,</span> <span class="p">...]</span>
+
+<span class="c1"># 定义空列表
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">变量名称</span> <span class="o">=</span> <span class="nf">list</span><span class="p">()</span>
+
+<span class="o">-</span> <span class="n">字典</span>
+<span class="c1"># 定义字典字面量
+</span><span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="p">...,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">}</span>
+
+<span class="c1"># 定义字典变量
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="p">...,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">}</span>
+
+<span class="c1"># 定义空字典
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{}</span>    <span class="c1"># 空字典定义方式1
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span><span class="c1"># 空字典定义方式2
+</span></code></pre></div></div>
+
+<p>数据容器可以从以下视角进行简单的分类：</p>
+
+<ul>
+  <li>是否支持下标索引
+    <ul>
+      <li>支持：列表、元组、字符串 - <strong>序列类型</strong></li>
+      <li>不支持：集合、字典 - <strong>非序列类型</strong></li>
+    </ul>
+  </li>
+  <li>是否支持重复元素：
+    <ul>
+      <li>支持：列表、元组、字符串 - <strong>序列类型</strong></li>
+      <li>不支持：集合、字典 - <strong>非序列类型</strong></li>
+    </ul>
+  </li>
+  <li>是否可以修改
+    <ul>
+      <li>支持：列表、集合、字典</li>
+      <li>不支持：元组、字符串</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>数据容器/特点</strong></th>
+      <th><strong>列表</strong></th>
+      <th><strong>元组</strong></th>
+      <th style="text-align: left"><strong>字符串</strong></th>
+      <th><strong>集合</strong></th>
+      <th><strong>字典</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>元素数量</td>
+      <td>支持多个</td>
+      <td>支持多个</td>
+      <td style="text-align: left">支持多个</td>
+      <td>支持多个</td>
+      <td>支持多个</td>
+    </tr>
+    <tr>
+      <td>元素类型</td>
+      <td>任意</td>
+      <td>任意</td>
+      <td style="text-align: left">仅字符</td>
+      <td>任意</td>
+      <td>Key非字典</td>
+    </tr>
+    <tr>
+      <td>下标索引</td>
+      <td>支持</td>
+      <td>支持</td>
+      <td style="text-align: left">支持</td>
+      <td>不支持</td>
+      <td>不支持</td>
+    </tr>
+    <tr>
+      <td>重复元素</td>
+      <td>支持</td>
+      <td>支持</td>
+      <td style="text-align: left">支持</td>
+      <td>不支持</td>
+      <td>不支持</td>
+    </tr>
+    <tr>
+      <td>可修改性</td>
+      <td>支持</td>
+      <td>不支持</td>
+      <td style="text-align: left">不支持</td>
+      <td>支持</td>
+      <td>支持</td>
+    </tr>
+    <tr>
+      <td>数据有序</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="text-align: left">是</td>
+      <td>否</td>
+      <td>否</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>基于各类数据容器的特点，它们的应用场景如下：</p>
+
+<ul>
+  <li>列表：一批数据，可修改、可重复的存储场景</li>
+  <li>元组：一批数据，不可修改、可重复的存储场景</li>
+  <li>字符串：一串字符串的存储场景</li>
+  <li>集合：一批数据，去重存储场景</li>
+  <li>字典：一批数据，可用Key检索Value的存储场景</li>
+</ul>

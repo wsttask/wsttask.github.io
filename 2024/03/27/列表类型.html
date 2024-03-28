@@ -1,0 +1,127 @@
+<h3 id="列表list">列表（list）</h3>
+
+<h4 id="列表的定义">列表的定义</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 字面量
+</span><span class="p">[</span><span class="n">元素1</span><span class="p">,</span> <span class="n">元素2</span><span class="p">,</span> <span class="n">元素3</span><span class="p">,</span> <span class="n">元素4</span><span class="p">,</span> <span class="p">...]</span>
+
+<span class="c1"># 定义变量
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">[</span><span class="n">元素1</span><span class="p">,</span> <span class="n">元素2</span><span class="p">,</span> <span class="n">元素3</span><span class="p">,</span> <span class="n">元素4</span><span class="p">,</span> <span class="p">...]</span>
+
+<span class="c1"># 定义空列表
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">变量名称</span> <span class="o">=</span> <span class="nf">list</span><span class="p">()</span>
+</code></pre></div></div>
+
+<ul>
+  <li>以 [] 作为标识</li>
+  <li>列表内每一个元素之间用 ，逗号 隔开</li>
+</ul>
+
+<p>注意：列表可以一次存储多个数据，<strong>且可以为不同的数据类型，支持嵌套</strong></p>
+
+<h4 id="列表的下标索引">列表的下标（索引）</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 语法： 列表[下表索引]
+</span>
+<span class="n">name_list</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">Tom</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Lily</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Rose</span><span class="sh">'</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="o">&gt;</span>
+<span class="n">Tom</span>
+<span class="n">Lily</span>
+<span class="n">Rose</span>
+
+<span class="c1"># 支持反向索引
+</span>
+<span class="n">name_list</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">Tom</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Lily</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Rose</span><span class="sh">'</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">name_list</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+<span class="o">&gt;</span>
+<span class="n">Rose</span>
+<span class="n">Lily</span>
+<span class="n">Tom</span>
+
+<span class="c1"># 支持嵌套索引
+</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h4 id="列表的常用方法">列表的常用方法</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 查询
+# 语法：列表.index(元素)
+# 功能：查找指定元素在列表的下标
+</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="sh">"</span><span class="s">itheima</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itcast</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">python</span><span class="sh">"</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="sh">"</span><span class="s">itcast</span><span class="sh">"</span><span class="p">))</span>
+
+<span class="o">&gt;</span>
+<span class="mi">1</span>
+
+<span class="c1"># 修改
+</span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+
+
+<span class="c1"># 插入
+</span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_list</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheima</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+
+<span class="o">&gt;</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">itheima</span><span class="sh">'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># 追加
+</span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_list</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="o">&gt;</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_list</span><span class="p">.</span><span class="nf">append</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+
+<span class="c1"># 追加元素2
+</span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_list</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="o">&gt;</span> 
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="c1"># 删除元素
+</span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="k">del</span> <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span>
+
+<span class="n">my_list</span><span class="p">.</span><span class="nf">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="列表的特点">列表的特点</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mf">1.</span> <span class="n">可以容纳多个数据</span><span class="err">（</span><span class="n">上限是2</span><span class="o">**</span><span class="mi">63</span><span class="o">-</span><span class="mi">1</span><span class="err">）</span>
+
+<span class="mf">2.</span> <span class="n">可以容纳不同类型的数据</span><span class="err">（</span><span class="n">混装</span><span class="err">）</span>
+
+<span class="mf">3.</span> <span class="n">数据是有序存储的</span>
+
+<span class="mf">4.</span> <span class="n">允许重复数据存在</span>
+
+<span class="mf">5.</span> <span class="n">可以修改</span>
+</code></pre></div></div>
+

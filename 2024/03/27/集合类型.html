@@ -1,0 +1,95 @@
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span> <span class="n">列表</span><span class="err">：</span><span class="p">[]</span>
+<span class="o">-</span> <span class="n">元组</span><span class="err">：</span><span class="p">()</span>
+<span class="o">-</span> <span class="n">字符串</span><span class="err">：</span><span class="sh">""</span> <span class="o">/</span> <span class="sh">''</span>
+<span class="o">-</span> <span class="n">集合</span><span class="err">：</span><span class="p">{}</span>
+</code></pre></div></div>
+
+<h3 id="集合的定义">集合的定义</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 定义集合字面量
+</span><span class="p">{</span><span class="n">元素</span><span class="p">,</span> <span class="n">元素</span><span class="p">,</span> <span class="p">......,</span> <span class="n">元素</span><span class="p">}</span>
+
+<span class="c1"># 定义集合变量
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="p">{</span><span class="n">元素</span><span class="p">,</span> <span class="n">元素</span><span class="p">,</span> <span class="p">......,</span> <span class="n">元素</span><span class="p">}</span>
+
+<span class="c1"># 定义空集合
+</span><span class="n">变量名称</span> <span class="o">=</span> <span class="nf">set</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="集合的特点">集合的特点</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span> <span class="n">不重复</span>
+    <span class="n">即使在定义集合变量的时候由重复的元素</span><span class="err">，</span><span class="n">也会自动去重</span>
+
+<span class="o">-</span> <span class="n">没有顺序</span>
+    <span class="n">不能保证顺序与创建的时候一致</span>
+    <span class="n">不支持下标索引</span>
+
+<span class="o">-</span> <span class="n">可以修改</span>
+    <span class="n">增加或删除元素等</span>
+
+<span class="o">-</span> <span class="n">支持for循环</span>
+</code></pre></div></div>
+
+<h5 id="集合的常用操作">集合的常用操作</h5>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 修改
+</span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">my_set</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="sh">"</span><span class="s">itheima</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span> <span class="c1"># 结果{'hello', 'itheima', world}
+</span>
+<span class="c1"># 移除
+</span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheima</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">my_set</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>     <span class="c1"># 结果 {'hello', 'itheima'}
+</span>
+<span class="c1"># 随机取出元素
+</span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheiam</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">my_set</span><span class="p">.</span><span class="nf">pop</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>    <span class="c1"># 结果 {'world', 'itheima'}
+</span><span class="nf">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>    <span class="c1"># 结果 'hello'
+</span>
+<span class="c1"># 清空集合
+</span><span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">hello</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">itheiam</span><span class="sh">"</span><span class="p">}</span>
+<span class="n">my_set</span><span class="p">.</span><span class="nf">clear</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>    <span class="c1"># 结果：set()    空集合
+</span>
+<span class="c1"># 取出两个集合的差集
+</span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
+<span class="n">set3</span> <span class="o">=</span> <span class="n">set1</span><span class="p">.</span><span class="nf">difference</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span> <span class="c1"># set3 = set1 - set2
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set3</span><span class="p">)</span> 	<span class="c1"># {2, 3}
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>		<span class="c1"># {1, 2, 3}
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>		<span class="c1"># {1, 5, 6}
+</span>
+<span class="c1"># 消除两个集合的差集
+</span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
+<span class="n">set1</span><span class="p">.</span><span class="nf">difference_update</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>    <span class="c1"># {2, 3}
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>    <span class="c1"># {1, 5, 6}
+</span><span class="err">！</span><span class="n">注意</span><span class="err">，</span><span class="n">此时集合1被修改</span><span class="err">，</span><span class="n">但是集合2不变</span>
+
+<span class="c1"># 两个集合合并
+</span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
+<span class="n">set3</span> <span class="o">=</span> <span class="n">set1</span><span class="p">.</span><span class="nf">union</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">set3</span><span class="p">)</span>    <span class="c1"># 结果：{1, 2, 3, 5, 6}，新集合
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>    <span class="c1"># 结果：{1, 2, 3}，set1不变
+</span><span class="nf">print</span><span class="p">(</span><span class="n">set2</span><span class="p">)</span>    <span class="c1"># 结果：{1, 5, 6}，set2不变
+</span>
+<span class="c1"># 查看集合的元素的数量
+</span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">set1</span><span class="p">))</span>    <span class="c1"># 结果：3
+</span>
+<span class="c1"># 集合同样支持使用for循环遍历
+</span><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">set1</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># 结果
+</span><span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+</code></pre></div></div>
+

@@ -1,0 +1,95 @@
+<h3 id="字典dict">字典（dict）</h3>
+
+<h4 id="字典的定义">字典的定义</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 定义字典字面量
+</span><span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="p">...,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">}</span>
+<span class="c1"># 定义字典变量
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">,</span> <span class="p">...,</span> <span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">}</span>
+<span class="c1"># 定义空字典
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{}</span>    <span class="c1"># 空字典定义方式1
+</span><span class="n">my_dict</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span><span class="c1"># 空字典定义方式2
+</span>
+<span class="n">注意</span><span class="err">：</span>
+<span class="o">-</span> <span class="n">使用</span><span class="p">{}</span><span class="n">存储原始</span><span class="err">，</span><span class="n">每一个元素是一个键值对</span>
+<span class="o">-</span> <span class="n">每一个键值对包含Key和Value</span><span class="err">（</span><span class="n">用冒号分隔</span><span class="err">）</span>
+<span class="o">-</span> <span class="n">键值对之间使用逗号分隔</span>
+<span class="o">-</span> <span class="n">Key和Value可以是任意类型的数据</span><span class="err">（</span><span class="n">key不可为字典</span><span class="err">）</span>
+<span class="o">-</span> <span class="n">Key不可重复</span><span class="err">，</span><span class="n">重复会对原有数据覆盖</span>
+</code></pre></div></div>
+
+<h4 id="字典数据的获取">字典数据的获取</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 语法，字典[key]可以取到对应的value
+</span><span class="n">stu_score</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> <span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">:</span> <span class="mi">77</span><span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：99
+</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：88
+</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：77
+</span></code></pre></div></div>
+
+<h4 id="字典可以嵌套">字典可以嵌套</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stu_score</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">chinese</span><span class="sh">"</span><span class="p">:</span> <span class="mi">77</span><span class="p">,</span> <span class="sh">"</span><span class="s">math</span><span class="sh">"</span><span class="p">:</span> <span class="mi">66</span><span class="p">,</span> <span class="sh">"</span><span class="s">English</span><span class="sh">"</span><span class="p">:</span> <span class="mi">33</span><span class="p">}</span>
+    <span class="sh">"</span><span class="s">zhou</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">chinese</span><span class="sh">"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="sh">"</span><span class="s">math</span><span class="sh">"</span><span class="p">:</span> <span class="mi">86</span><span class="p">,</span> <span class="sh">"</span><span class="s">English</span><span class="sh">"</span><span class="p">:</span> <span class="mi">55</span><span class="p">}</span>
+    <span class="sh">"</span><span class="s">lin</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">chinese</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> <span class="sh">"</span><span class="s">math</span><span class="sh">"</span><span class="p">:</span> <span class="mi">96</span><span class="p">,</span> <span class="sh">"</span><span class="s">English</span><span class="sh">"</span><span class="p">:</span> <span class="mi">66</span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">])</span>    <span class="c1"># 结果：{"chinese": 77, "math": 66, "English": 33}
+</span></code></pre></div></div>
+
+<h4 id="字典的操作">字典的操作</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 新增元素
+</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">zhang</span><span class="sh">"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">66</span>
+
+<span class="c1"># 修改元素
+</span><span class="n">stu_score</span><span class="p">[</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+
+
+
+<span class="c1"># 删除元素
+</span><span class="n">value</span> <span class="o">=</span> <span class="n">stu_score</span><span class="p">.</span><span class="nf">pop</span><span class="p">(</span><span class="sh">"</span><span class="s">wang</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>        <span class="c1"># 结果：77
+</span><span class="nf">print</span><span class="p">(</span><span class="n">stu_score</span><span class="p">)</span>    <span class="c1"># 结果：wang的key已经消失
+</span>
+<span class="c1"># 清空字典
+</span><span class="n">stu_score</span><span class="p">.</span><span class="nf">clear</span><span class="p">()</span>
+
+<span class="c1"># 获取字典中的全部的key
+</span><span class="n">keys</span> <span class="o">=</span> <span class="n">stu_score</span><span class="p">.</span><span class="nf">keys</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span> <span class="c1"># 结果：dict_keys(['wang', 'zhou', 'lin'])
+</span>
+<span class="c1"># 遍历字典
+</span><span class="n">stu_score</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> <span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">:</span> <span class="mi">77</span><span class="p">}</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">stu_score</span><span class="p">.</span><span class="nf">keys</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">学生:</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s">,分数:</span><span class="si">{</span><span class="n">stu_score</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># 计算字典内键值对的数量
+</span><span class="n">stu_score</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">"</span><span class="s">王力宏</span><span class="sh">"</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span> 
+    <span class="sh">"</span><span class="s">周杰伦</span><span class="sh">"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> 
+    <span class="sh">"</span><span class="s">林俊杰</span><span class="sh">"</span><span class="p">:</span> <span class="mi">77</span>
+<span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">stu_score</span><span class="p">))</span>        <span class="c1"># 结果：3
+</span></code></pre></div></div>
+
+<h4 id="字典的特点">字典的特点</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">经过上述对字典的学习</span><span class="err">，</span><span class="n">可以总结出字典有如下特点</span><span class="err">：</span>
+
+<span class="mf">1.</span> <span class="n">可以容纳多个数据</span>
+
+<span class="mf">2.</span> <span class="n">可以容纳不同类型的数据</span>
+
+<span class="mf">3.</span> <span class="n">每一份数据是KeyValue键值对</span>
+
+<span class="mf">4.</span> <span class="n">可以通过Key获取到Value</span><span class="err">，</span><span class="n">Key不可重复</span><span class="err">（</span><span class="n">重复会覆盖</span><span class="err">）</span>
+
+<span class="mf">5.</span> <span class="n">不支持下标索引</span>
+
+<span class="mf">6.</span> <span class="n">可以修改</span><span class="err">（</span><span class="n">增加或删除更新元素等</span><span class="err">）</span>
+
+<span class="mf">7.</span> <span class="n">支持for循环</span><span class="err">，</span><span class="n">不支持while循环</span>
+</code></pre></div></div>
